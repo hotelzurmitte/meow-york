@@ -1,4 +1,7 @@
 extends Node
+## Die Signale werden von anderen Systemen gesendet (EventBus.x.emit), nie hier selbst –
+## daher die Warnung UNUSED_SIGNAL für diese Datei abschalten.
+@warning_ignore_start("unused_signal")
 ## EventBus: nur Signale, keine Logik. Systeme melden sich hier, statt sich gegenseitig zu kennen.
 
 signal flag_geaendert(name: String, wert)
