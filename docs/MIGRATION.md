@@ -63,14 +63,14 @@ docs/        dieses Dokument, Entscheidungen
 
 | Entscheidung | Begründung | Erwogene Alternative |
 |---|---|---|
-| **Orthografische Kamera**, fester Iso-Winkel, Zoom in festen Stufen, Drehung in 90°-Schritten | Pixel bleiben gleich groß und scharf, das ist deine Regel „nur ganzzahlig skalieren“. Perspektive ginge nur mit Unschärfe | Perspektive wie im Prototyp: schöner Tiefeneindruck, aber krumme Pixelgrößen |
+| **Frei drehbare Perspektivkamera** wie im Prototyp: stufenlos drehen (Q/E oder rechte Maustaste), zoomen (Mausrad), Höhe/Neigung mit der mittleren Maustaste | Entscheidung von dir (12.11.): Räumlichkeit und freies Drehen sind wichtiger als exakt gleich große Pixel. Pixel bleiben scharf (Nearest-Filter), sind aber je nach Abstand nicht exakt ganzzahlig skaliert | Orthografische Kamera mit 90°-Schritten: pixelgenau, aber starrer – verworfen |
 | **Sprite3D** mit Nearest-Filter, Alpha-Schnitt, Billboard nur um die Hochachse | Der Tiefenpuffer sortiert Figuren korrekt gegen Wände und andere Figuren. Alpha-Schnitt statt weicher Transparenz, sonst sortiert es falsch | AnimatedSprite3D: gut für feste Animationen, aber die Richtungswahl (8 bzw. 4 Ansichten, Spiegeln) ist mit eigenem Code klarer |
 | **Pivot unten mittig**, Sprite-Unterkante = Fußpunkt | wie für den Atlas festgelegt | – |
 | **Kollision** als kleine Kapsel an den Füßen (`CharacterBody3D`) | deine Regel 14 × 6 px statt ganzer Zelle | – |
 | **Durchsicht** (BG3-Kreis) als Shader auf den Gebäudematerialien, die Figuren-Positionen werden pro Bild hineingegeben | im Prototyp schon bewährt; in Godot sauberer, weil ein Shader für alle Häuser gilt | Häuser ausblenden: grober, man verliert den Raum |
 | **Pixelraster**: Figuren-Positionen auf ganze Sprite-Pixel runden | ruhigere Pixel beim Laufen | – |
 
-**Maßstab:** Alle Atlas-NPCs teilen sich einen festen Wert (Pixel pro Meter). Ren hat im Prototyp einen feineren Sprite als deine 32 × 80-Version. Bis diese kommt, gilt dasselbe Größenverhältnis wie im Prototyp. Danach haben alle denselben Maßstab, echtes 1:1.
+**Maßstab:** Mit der Perspektivkamera ist „ganzzahlig skalieren“ nur näherungsweise möglich (Entscheidung oben). Alle Atlas-NPCs teilen sich einen festen Wert (Pixel pro Meter). Ren hat im Prototyp einen feineren Sprite als deine 32 × 80-Version. Bis diese kommt, gilt dasselbe Größenverhältnis wie im Prototyp. Danach haben alle denselben Maßstab, echtes 1:1.
 
 ### 3.4 Level-Workflow (du baust, ich generiere)
 
@@ -127,8 +127,8 @@ Jede neue Version bringt eine Funktion mit, die den Stand der Vorgängerversion 
 | Risiko | Gegenmaßnahme |
 |---|---|
 | Sortierfehler bei halbtransparenten Pixeln (Rauch, Glas) | Figuren nur mit Alpha-Schnitt; Halbtransparentes als eigene Ebene, sparsam |
-| Sprite steht schräg zur Wand, wenn die Kamera dreht | Drehung nur in 90°-Schritten; Billboard nur um die Hochachse |
-| Pixel flimmern beim Laufen und Scrollen | Kamera und Figuren auf das Pixelraster rasten |
+| Sprite steht schräg zur Wand, wenn die Kamera dreht | Billboard nur um die Hochachse; die Figur bleibt senkrecht, ihre Höhe wird passend zur Kameraneigung gestreckt, damit sie nicht gestaucht wirkt |
+| Pixel flimmern beim Laufen und Drehen | Figuren-Positionen auf ganze Sprite-Pixel runden; Nearest-Filter. Leichtes Flimmern bei schrägen Winkeln ist der akzeptierte Preis der freien Kamera |
 | Schatten von flachen Sprites wirken dünn | zusätzlich ein weicher Bodenschatten (Blob) unter jeder Figur |
 | Web-Vorschau sieht anders aus als der PC (einfacherer Renderer) | maßgeblich sind Screenshots mit dem Vulkan-Renderer und der Windows-Build |
 | Konvertierung der Dialoge: JavaScript-Bedingungen sind nicht alle übersetzbar | Konverter übersetzt die häufigen Muster, markiert den Rest mit `TODO`. Die markierten Stellen gehe ich von Hand durch |
