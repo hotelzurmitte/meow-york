@@ -10,3 +10,5 @@ signal dialog_gestartet(sprecher: Node)
 signal dialog_beendet()
 signal ereignis(name: String)                    ## Kampf, Zwischensequenz, Szenenwechsel usw.
 signal bereich_betreten(name: String)
+signal lp_geaendert()                            ## Lebenspunkte der Gruppe
+signal einstellung_geaendert(name: String)      ## Grafik-/Effektschalter (Einstellungen)

@@ -23,8 +23,15 @@ var fokus_override: Node3D = null      ## z. B. Gesprächspartner oder Fahrt
 
 @onready var pcam = $SpielKamera
 
+var _dof: CameraAttributesPractical
+var _gespraech: Node3D = null          ## Gesprächspartner: Kamera rückt zwischen beide und etwas näher
+var _zoom_faktor := 1.0
+
 func _ready() -> void:
+	add_to_group("kamera")
 	ziel = get_node_or_null(ziel_pfad)
+	EventBus.dialog_gestartet.connect(func(wer): _gespraech = wer if wer is Node3D else null)
+	EventBus.dialog_beendet.connect(func(): _gespraech = null)
 	_yaw_ziel = yaw; _k = iso
 	_berechnen(0.0, true)
 
@@ -64,9 +71,14 @@ func _berechnen(dt: float, sofort: bool) -> void:
 	var f: Node3D = fokus_override if fokus_override else ziel
 	var tp := Vector3.ZERO
 	if f: tp = Vector3(f.global_position.x, f.global_position.y * 0.85, f.global_position.z) + _versatz
+	# Im Gespräch: Mitte zwischen Spieler und Gegenüber, Zoom × 0,8 (DL.focus im Prototyp)
+	var im_gespraech := is_instance_valid(_gespraech) and _gespraech.is_inside_tree() and fokus_override == null and ziel != null
+	if im_gespraech:
+		tp = (ziel.global_position + _gespraech.global_position) * 0.5; tp.y = 0
+	_zoom_faktor = lerpf(_zoom_faktor, 0.8 if im_gespraech else 1.0, 1.0 if sofort else min(1.0, dt * 3.0))
 	var hd := 17.5 + _k * 4.5
 	var hy := 8.6 + _k * 15.4
-	var off := Vector3(sin(yaw) * hd, hy, cos(yaw) * hd) * zoom
+	var off := Vector3(sin(yaw) * hd, hy, cos(yaw) * hd) * zoom * _zoom_faktor
 	var a := 1.0 if sofort else 1.0 - exp(-dt * 4.0)
 	_pos = _pos.lerp(tp + off, a)
 	_blick = _blick.lerp(tp + Vector3(0, 2.1 - _k * 1.1, 0), a)
@@ -74,11 +86,30 @@ func _berechnen(dt: float, sofort: bool) -> void:
 		pcam.global_position = _pos
 		pcam.look_at(_blick, Vector3.UP)
 		pcam.set_fov(34.0 - _k * 4.0)
+	_tiefenschaerfe()
 	# Pixel-Figuren und Sprites zur Kamera ausrichten
 	PixelFigur.kam_yaw = yaw
 	PixelFigur.kam_neigung = min(_k, 1.3) * 0.5
 	for s in get_tree().get_nodes_in_group("billboard"):
 		s.rotation = Vector3(-PixelFigur.kam_neigung, yaw, 0)
+
+## Tiefenunschärfe wie im Prototyp: scharf um den Blickpunkt (focus = Abstand Kamera–Blickpunkt,
+## range = 4,8 × Zoom). Davor wird es ab focus − range/2 unscharf, dahinter ab focus + range, weich über 3,4 × range.
+func _tiefenschaerfe() -> void:
+	var cam := get_viewport().get_camera_3d()
+	if cam == null: return
+	if _dof == null or cam.attributes != _dof:
+		_dof = cam.attributes as CameraAttributesPractical
+		if _dof == null:
+			_dof = CameraAttributesPractical.new(); cam.attributes = _dof
+	var an := Einstellungen.an("unschaerfe")
+	_dof.dof_blur_far_enabled = an; _dof.dof_blur_near_enabled = an
+	if not an: return
+	var fokus := _pos.distance_to(_blick)
+	var weite := 4.8 * zoom * _zoom_faktor
+	_dof.dof_blur_amount = 0.12
+	_dof.dof_blur_far_distance = fokus + weite; _dof.dof_blur_far_transition = weite * 3.4
+	_dof.dof_blur_near_distance = max(0.1, fokus - weite * 0.5); _dof.dof_blur_near_transition = weite * 0.9
 
 ## Bildschirmpunkt → Punkt auf dem Boden (y = 0)
 func boden_unter_maus(maus: Vector2) -> Variant:

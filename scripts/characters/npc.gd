@@ -4,6 +4,8 @@ extends Node3D
 ## Beim Ansprechen dreht sie sich zum Spieler und danach zurück in ihre Standardrichtung.
 
 @export var anzeigename := "NPC"
+## Weitere Namen, unter denen die Figur in Dialogen spricht (z. B. Ilse ↔ Denise)
+@export var sprechernamen: PackedStringArray = []
 @export var figur := "atlas:Fuchs":
 	set(v):
 		figur = v
@@ -31,11 +33,15 @@ func _ready() -> void:
 		if Engine.is_editor_hint() and get_tree().edited_scene_root: f.owner = get_tree().edited_scene_root
 	$Figur.figur = figur; $Figur.blick = blick
 	if Engine.is_editor_hint(): return
+	add_to_group("npcs")
 	if ansprechbar: add_to_group("interaktiv")
 	EventBus.dialog_beendet.connect(_dialog_ende)
 
 var hinweis: String:
-	get: return "Sprechen mit " + anzeigename
+	get: return "Sprechen: " + anzeigename
+
+## Höhe für die Mauswahl auf dem Bildschirm (Meter)
+var hoehe := 2.9
 
 func benutzen(wer: Node3D) -> void:
 	_redet = true
@@ -43,9 +49,8 @@ func benutzen(wer: Node3D) -> void:
 	if dialog:
 		Dialog.starten(dialog, dialog_start, self)
 	elif sprueche.size() > 0:
-		EventBus.meldung.emit("%s: %s" % [anzeigename, sprueche[randi() % sprueche.size()]])
-		await get_tree().create_timer(2.5).timeout
-		_dialog_ende()
+		# wie im Prototyp: ein einzelner Spruch im Dialogfeld
+		Dialog.einzeln(anzeigename, sprueche[randi() % sprueche.size()], self)
 
 func _dialog_ende() -> void:
 	if _redet:

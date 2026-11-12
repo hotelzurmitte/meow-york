@@ -35,6 +35,8 @@ var anim := "idle"
 var anim_bild := 0.0          ## fortlaufender Bildzähler (Bruchteile erlaubt)
 var umgekippt := false
 var _bob := 0.0
+## Goldenes Aufleuchten unter der Maus (0 … 1), klingt von selbst ab
+var gold := 0.0
 
 static func _json(pfad: String) -> Dictionary:
 	if not _json_cache.has(pfad):
@@ -85,6 +87,23 @@ func _aufbauen() -> void:
 	_aktualisieren()
 
 ## Blick setzen (Weltrichtung x/z)
+## Goldener Schimmer unter der Maus wie im Prototyp (emissive 1,6/1,3/0,5 × Stärke 0,8).
+## Nur solange er sichtbar ist, bekommt das Sprite ein eigenes Material; die Pixel bleiben unverändert.
+var _glanz_mat: StandardMaterial3D
+func _glanz() -> void:
+	if gold <= 0.01:
+		if spr.material_override: spr.material_override = null
+		return
+	if _glanz_mat == null:
+		_glanz_mat = StandardMaterial3D.new()
+		_glanz_mat.albedo_texture = spr.texture; _glanz_mat.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
+		_glanz_mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA_SCISSOR; _glanz_mat.alpha_scissor_threshold = 0.5
+		_glanz_mat.cull_mode = BaseMaterial3D.CULL_DISABLED
+		_glanz_mat.emission_enabled = true; _glanz_mat.emission_texture = spr.texture
+		_glanz_mat.emission = Color(1.6, 1.3, 0.5)
+	_glanz_mat.emission_energy_multiplier = gold * 0.3      # Godot wertet Emission stärker als Three.js
+	spr.material_override = _glanz_mat
+
 func schaue(dx: float, dz: float) -> void:
 	if abs(dx) + abs(dz) < 0.0001: return
 	blick = Vector2(dx, dz)
@@ -100,6 +119,7 @@ func _sektor() -> int:
 func _process(dt: float) -> void:
 	_bob += dt
 	_aktualisieren()
+	gold = max(0.0, gold - dt * 3.0)      # erst nach dem Anzeigen abklingen lassen (Zeiger setzt jedes Bild neu)
 
 func _aktualisieren() -> void:
 	if spr == null or conf.is_empty(): return
@@ -119,5 +139,6 @@ func _aktualisieren() -> void:
 		var z: Vector2i = conf.zelle
 		spr.region_rect = Rect2((idx % 40) * z.x, s[0] * z.y, z.x, z.y)
 		spr.flip_h = s[1] < 0
+	_glanz()
 	# zur Kamera drehen und leicht nach hinten neigen (wie im Prototyp)
 	spr.rotation = Vector3(-kam_neigung, kam_yaw, PI / 2 * (1 if blick.x < 0 else -1) if umgekippt else 0.0)

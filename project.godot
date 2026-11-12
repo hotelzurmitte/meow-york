@@ -20,6 +20,7 @@ EventBus="*res://scripts/core/event_bus.gd"
 GameState="*res://scripts/core/game_state.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
+Einstellungen="*res://scripts/einstellungen/einstellungen.gd"
 Dialog="*res://scripts/dialogue/dialog.gd"
 Kapitel="*res://scripts/story/kapitel.gd"
 TestHilfe="*res://scripts/core/test_hilfe.gd"
@@ -43,4 +44,4 @@ textures/canvas_textures/default_texture_filter=0
 
 [dialogue_manager]
 
-runtime/balloon_path="res://scenes/ui/sprechblase.tscn"
+runtime/balloon_path="res://scenes/ui/dialogfeld.tscn"

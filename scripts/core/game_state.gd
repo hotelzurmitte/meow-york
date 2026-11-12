@@ -1,7 +1,7 @@
 extends Node
 ## GameState: die einzige Quelle für den Spielzustand. Wird als JSON gespeichert (versioniert).
 
-const VERSION := 1
+const VERSION := 2
 
 var flags: Dictionary = {}
 var geld: int = 0
@@ -13,6 +13,7 @@ var gesinnung: Dictionary = {"gut": 0, "gesetz": 0}
 var letzte_probe_ok := false
 var letzter_wurf := 0
 var naechster_spawn := ""             ## Spawnpunkt im nächsten Level
+var lade_position = null               ## [x, y, z] nach dem Laden eines Spielstands
 var belohnung: int = 0                 ## Nuggets Belohnung für den Ghettoblaster
 var job_tag: int = 0                   ## Tag, an dem Hummel den Job vergeben hat
 var fehl_tag: int = 0                  ## Tag, an dem die Schicht verpasst wurde
@@ -49,6 +50,8 @@ func schon(schluessel: String) -> bool:
 
 # ---------- Gruppe ----------
 var gruppe: Array = ["ren", "dig", "corvin"]
+## Lebenspunkte je Gruppenmitglied: id -> [aktuell, maximal] (Werte aus data/characters/gruppe.json)
+var lp: Dictionary = {}
 func mitglied(wer: String) -> bool:
 	return wer in gruppe
 
@@ -89,11 +92,22 @@ func gesinnung_aendern(achse: String, d: int) -> void:
 	EventBus.hinweis.emit("Gesinnung ↑ " + t, "info")
 
 # ---------- Quests ----------
+var _quest_zaehler := 0
 func quest(id: String, name: String, ziel: String, erledigt := false, neben := false) -> void:
-	quests[id] = {"name": name, "ziel": ziel, "erledigt": erledigt, "neben": neben}
-	aktuelle_quest = id
+	var alt: Dictionary = quests.get(id, {})
+	var log: Array = alt.get("log", [])
+	if log.is_empty() or log[-1] != ziel: log.append(ziel)
+	_quest_zaehler += 1
+	quests[id] = {"name": name, "ziel": ziel, "erledigt": erledigt, "neben": neben, "log": log, "nr": _quest_zaehler}
+	# Wie im Prototyp: eine Nebenaufgabe verdrängt die laufende Hauptaufgabe nicht aus der Anzeige
+	var cur: Dictionary = quests.get(aktuelle_quest, {})
+	var haupt_bleibt: bool = neben and not cur.is_empty() and not cur.erledigt and not cur.neben and aktuelle_quest != id
+	if haupt_bleibt:
+		EventBus.hinweis.emit(("Nebenaufgabe abgeschlossen: " if erledigt else "Nebenaufgabe: ") + name, "quest")
+	else:
+		aktuelle_quest = id
+		EventBus.hinweis.emit(("Aufgabe abgeschlossen: " if erledigt else "Aufgabe: ") + name, "quest")
 	EventBus.quest_geaendert.emit(id)
-	EventBus.hinweis.emit(("Aufgabe abgeschlossen: " if erledigt else "Aufgabe: ") + name, "quest")
 
 func quest_erledigt(id: String) -> bool:
 	return quests.has(id) and quests[id].erledigt
@@ -102,6 +116,9 @@ func quest_erledigt(id: String) -> bool:
 func quest_ziel_setzen(text: String) -> void:
 	if quests.has(aktuelle_quest):
 		quests[aktuelle_quest].ziel = text
+		var log: Array = quests[aktuelle_quest].get("log", [])
+		if log.is_empty() or log[-1] != text: log.append(text)
+		quests[aktuelle_quest]["log"] = log
 		EventBus.quest_geaendert.emit(aktuelle_quest)
 
 func quest_aktiv(id: String) -> bool:
@@ -117,10 +134,25 @@ func probe(wer: String, fertigkeit: String, sg: int) -> bool:
 
 # ---------- Regeln aus dem Prototyp ----------
 func heilen(n: int) -> void:
+	for k in lp: lp[k][0] = mini(lp[k][1], lp[k][0] + n)
+	EventBus.lp_geaendert.emit()
 	EventBus.ereignis.emit("heilen:%d" % n)
 
 func schaden(wer: String, n: int) -> void:
+	if lp.has(wer): lp[wer][0] = maxi(1, lp[wer][0] - n)
+	EventBus.lp_geaendert.emit()
 	EventBus.ereignis.emit("schaden:%s:%d" % [wer, n])
+
+## Gruppendaten (Name, Art, Klasse, LP, Gesicht) aus data/
+static var _gruppen_daten := {}
+static func gruppen_daten() -> Dictionary:
+	if _gruppen_daten.is_empty():
+		_gruppen_daten = JSON.parse_string(FileAccess.get_file_as_string("res://data/characters/gruppe.json"))
+	return _gruppen_daten
+
+func lp_auffuellen() -> void:
+	for k in gruppen_daten():
+		if not lp.has(k): lp[k] = [int(gruppen_daten()[k].lp), int(gruppen_daten()[k].lp)]
 
 func katzen_sauer() -> bool:
 	return (flag("stoleBoom") or flag("beatCats")) and not flag("catsMadeUp")
@@ -192,9 +224,18 @@ func oder(a, b):
 func als_dict() -> Dictionary:
 	return {"version": VERSION, "flags": flags, "geld": geld, "tag": tag, "quests": quests,
 		"zuneigung": zuneigung, "ansehen": ansehen, "gesinnung": gesinnung, "notizen": notizen, "gruppe": gruppe,
-		"belohnung": belohnung, "job_tag": job_tag, "fehl_tag": fehl_tag, "aktuelle_quest": aktuelle_quest, "quest_ziel_figur": quest_ziel_figur}
+		"belohnung": belohnung, "job_tag": job_tag, "fehl_tag": fehl_tag, "aktuelle_quest": aktuelle_quest, "quest_ziel_figur": quest_ziel_figur, "lp": lp}
 
 func aus_dict(d: Dictionary) -> void:
 	# Ältere Stände hier hochrechnen, wenn VERSION steigt
 	flags = d.get("flags", {}); geld = d.get("geld", 0); tag = d.get("tag", 0); quests = d.get("quests", {})
 	zuneigung = d.get("zuneigung", zuneigung); ansehen = d.get("ansehen", {}); gesinnung = d.get("gesinnung", gesinnung)
+	notizen = d.get("notizen", []); gruppe = d.get("gruppe", gruppe)
+	belohnung = d.get("belohnung", 0); job_tag = d.get("job_tag", 0); fehl_tag = d.get("fehl_tag", 0)
+	aktuelle_quest = d.get("aktuelle_quest", ""); quest_ziel_figur = d.get("quest_ziel_figur", "")
+	# Version 1 → 2: Lebenspunkte kamen hinzu
+	lp = d.get("lp", {}); lp_auffuellen()
+	EventBus.geld_geaendert.emit(geld); EventBus.lp_geaendert.emit(); EventBus.quest_geaendert.emit(aktuelle_quest)
+
+func _ready() -> void:
+	lp_auffuellen()

@@ -11,6 +11,8 @@ func _fig(k: String) -> Node3D:
 
 func _ready() -> void:
 	EventBus.ereignis.connect(_ereignis)
+	# Regen erst ab der Whisker Avenue (wie im Prototyp: Gasse trocken, danach Abend mit Regen)
+	Einstellungen.setze("regen", GameState.flag("ch1street"))
 	await get_tree().process_frame     # Level fertig aufbauen lassen
 	var ilse := _fig("louse")
 	if ilse:
@@ -77,4 +79,5 @@ func _process(_dt: float) -> void:
 		if s and s.global_position.x < 36.0:
 			GameState.set_flag("ch1street")
 			lvl.get_node("Stimmung").setze("dusk", 3.0)
+			Einstellungen.setze("regen", true)
 			EventBus.meldung.emit("Die Whisker Avenue. Es dämmert, und es beginnt zu regnen.")

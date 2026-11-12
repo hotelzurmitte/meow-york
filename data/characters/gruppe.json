@@ -1,0 +1,5 @@
+{
+  "ren":    {"name": "Ren",     "art": "Fuchs",    "klasse": "Ronin",     "lp": 28, "figur": "ren",    "gesicht": [62, 14, 36, 32]},
+  "dig":    {"name": "Big Dig", "art": "Maulwurf", "klasse": "Wrestler",  "lp": 35, "figur": "dig",    "gesicht": [32, 24, 22, 18]},
+  "corvin": {"name": "Corvin",  "art": "Krähe",    "klasse": "Vigilante", "lp": 21, "figur": "corvin", "gesicht": [33, 2, 20, 18]}
+}

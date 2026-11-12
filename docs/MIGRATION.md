@@ -55,7 +55,15 @@ docs/        dieses Dokument, Entscheidungen
 - **Autoloads** (überall erreichbar, aber schmal):
   - `GameState`: Flags, Geld, Gruppe, Ansehen, Tag. Einzige Quelle für den Spielzustand.
   - `EventBus`: nur Signale, keine Logik. Beispiele: `dialogue_started`, `flag_changed`, `quest_updated`, `area_entered`.
-  - `SaveSystem`: schreibt `GameState` als versioniertes JSON und kann alte Stände hochrechnen.
+  - `Einstellungen`: Effektschalter (Unschärfe, Bloom, Spiegelungen, Leistung) in `user://einstellungen.cfg`; Regen als Laufzeitzustand der Szene.
+  - `Dialog`: startet Gespräche im eigenen Dialogfeld (`scenes/ui/dialogfeld.tscn`).
+  - Spielstände: `scripts/speichern/spielstand.gd` schreibt `GameState` als versioniertes JSON (`user://spielstand_<platz>.json`).
+- **Oberfläche** (`scripts/ui/`, alles nach dem Vorbild von `shell.html` im Prototyp):
+  - `hud.gd` Geld und Aufgabe oben links, Hilfe unten rechts, Einblendungen, Meldungen, Kapitelkarte, Zwischensequenz-Modus (`kino()`).
+  - `hud_gruppe.gd` Gruppenkarten mit Gesicht und LP · `hud_leiste.gd` Knopfleiste und Tastenkürzel · `fenster.gd` Questlog, Speichern/Laden, Einstellungen.
+  - `zeiger.gd` Maus über Figuren/Türen: goldenes Aufleuchten, Namensschild, Klick → hinlaufen und ansprechen; Alt beschriftet alles.
+  - `stil.gd` Schriften (Pixelify Sans, Yellowtail, Monoton – OFL/Apache, in `assets/fonts/`) und Farben · `portraet.gd` Gesichtsausschnitte.
+- **Effekte:** Tiefenunschärfe in `kamera.gd` (Fokus = Abstand Kamera–Blickpunkt, Bereich 4,8 × Zoom), nasse Straßen + SSR in `stimmung.gd` (Stärke aus `wet` der Voreinstellung), Regen in `scripts/wetter/regen.gd`. SSR und Unschärfe wirken nur mit Forward+ (Desktop), nicht im Web-Export.
 - **Systeme kennen sich nicht gegenseitig.** Der Dialog setzt ein Flag über `GameState`, die Questverwaltung hört über `EventBus` mit. So lässt sich jedes System einzeln testen und austauschen.
 - **Szenen statt Monolithen:** Figur, NPC, Tür, Haus und Interaktionspunkt sind jeweils eigene Szenen, die man im Editor in ein Level zieht.
 
@@ -135,8 +143,10 @@ do GameState.set_flag("ke")
 ### 4.3 Spielstand
 
 ```json
-{ "version": 1, "tag": 2, "geld": 40, "flags": {}, "quests": {}, "gruppe": [], "level": "hairlem", "position": [0,0] }
+{ "version": 2, "tag": 2, "geld": 40, "flags": {}, "quests": {}, "gruppe": [], "lp": {"ren": [28, 28]}, "szene": "res://scenes/world/hairlem.tscn", "pos": [0, 0, 0] }
 ```
+
+Version 2 hat Lebenspunkte (`lp`) dazubekommen; ältere Stände werden beim Laden mit vollen LP aufgefüllt.
 
 Jede neue Version bringt eine Funktion mit, die den Stand der Vorgängerversion hochrechnet.
 

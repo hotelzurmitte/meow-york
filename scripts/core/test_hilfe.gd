@@ -3,6 +3,8 @@ extends Node
 ##   --shot=<datei.png>   Screenshot nach --warte Sekunden (Standard 2) speichern und beenden
 ##   --pos=x,z            Gruppe an diese Stelle setzen
 ##   --yaw=<rad>          Kameradrehung
+##   --maus=x,y           Mauszeiger dorthin setzen (Hover testen)
+##   --klick=x,y          dort klicken (nach --klick_nach Sekunden, Standard 2)
 
 func _ready() -> void:
 	var args := {}
@@ -34,6 +36,20 @@ func _ready() -> void:
 		var n := get_tree().current_scene.find_child(String(args["sprich"]), true, false)
 		var sp := get_tree().get_first_node_in_group("spieler")
 		if n and sp: n.benutzen(sp)
+	if args.has("maus"):
+		var mp: PackedStringArray = String(args["maus"]).split(",")
+		get_tree().create_timer(float(args.get("warte", "2")) - 0.4).timeout.connect(func():
+			Input.warp_mouse(Vector2(float(mp[0]), float(mp[1]))))
+	if args.has("klick"):
+		var kp: PackedStringArray = String(args["klick"]).split(",")
+		get_tree().create_timer(float(args.get("klick_nach", "2"))).timeout.connect(func():
+			var pos := Vector2(float(kp[0]), float(kp[1]))
+			Input.warp_mouse(pos)
+			await get_tree().process_frame; await get_tree().process_frame
+			for an in [true, false]:
+				var ev := InputEventMouseButton.new(); ev.button_index = MOUSE_BUTTON_LEFT; ev.pressed = an
+				ev.position = pos; ev.global_position = pos
+				Input.parse_input_event(ev))
 	if args.has("shot"):
 		await get_tree().create_timer(float(args.get("warte", "2"))).timeout
 		await RenderingServer.frame_post_draw

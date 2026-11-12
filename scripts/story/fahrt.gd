@@ -14,6 +14,8 @@ func _ready() -> void:
 		if n.has_meta("stueck"): n.visible = false
 	_strasse_mat = _finde_material($Kulissen/Strasse)
 	EventBus.ereignis.connect(_ereignis)
+	Einstellungen.setze("regen", false)
+	$HUD.kino(true)
 	$HUD.zeige_ueberspringen(true)
 	$HUD.ueberspringen.connect(_ueberspringen)
 	await get_tree().create_timer(4.6).timeout
