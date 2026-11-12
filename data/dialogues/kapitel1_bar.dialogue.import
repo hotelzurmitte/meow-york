@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bsu6gu7840s2q"
+path="res://.godot/imported/kapitel1_bar.dialogue-e6793802380c2ff7ca4c6c30b881ceaa.tres"
+
+[deps]
+
+source_file="res://data/dialogues/kapitel1_bar.dialogue"
+dest_files=["res://.godot/imported/kapitel1_bar.dialogue-e6793802380c2ff7ca4c6c30b881ceaa.tres"]
+
+[params]
+
+defaults=true

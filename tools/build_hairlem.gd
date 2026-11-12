@@ -38,7 +38,7 @@ func _ready() -> void:
 	e.fog_enabled = true; e.fog_light_color = _farbe(pre.fog); e.fog_density = pre.fogD * 0.6
 	e.tonemap_mode = Environment.TONE_MAPPER_FILMIC; e.tonemap_exposure = pre.exp
 	e.glow_enabled = true; e.glow_intensity = pre.bloom; e.glow_bloom = 0.05; e.glow_hdr_threshold = 0.9
-	env.environment = e; _add(wurzel, env, "Umgebung")
+	env.environment = e; env.set_script(load("res://scripts/world/stimmung.gd")); env.set("voreinstellung", "dusk"); _add(wurzel, env, "Stimmung")
 	var sonne := DirectionalLight3D.new(); sonne.light_color = _farbe(pre.sun); sonne.light_energy = pre.sunI * 0.35
 	sonne.shadow_enabled = true; sonne.directional_shadow_max_distance = 80.0
 	_add(wurzel, sonne, "Sonne")
@@ -108,7 +108,7 @@ func _ready() -> void:
 	var alt_npcs := DirAccess.get_files_at("res://assets/characters/npcs_alt/")
 	i = 0
 	for n in welt.npcs:
-		if n.area != "street" or not n.sichtbar: continue
+		if n.area != "street": continue
 		var npc := Node3D.new(); npc.set_script(load("res://scripts/characters/npc.gd"))
 		var fig := ""
 		if n.atlas: fig = "atlas:" + n.atlas
@@ -117,7 +117,14 @@ func _ready() -> void:
 		elif n.key == "antonia": fig = "npc:ant"
 		else: fig = "atlas:Fuchs"
 		npc.set("anzeigename", n.name); npc.set("figur", fig); npc.set("blick", Vector2(n.fx, n.fz))
-		npc.position = Vector3(n.x, n.y, n.z)
+		# Dialog wie im Prototyp, sonst die Sprüche
+		if n.get("talk"):
+			var t := String(n.talk)
+			npc.set("dialog", load("res://data/dialogues/%s.dialogue" % _dialogdatei(t)))
+			npc.set("dialog_start", t.replace(".", "_").replace("-", "_"))
+		elif n.get("lines") is Array:
+			npc.set("sprueche", PackedStringArray(n.lines))
+		npc.position = Vector3(n.x, n.y, n.z); npc.visible = n.sichtbar
 		_add(fi, npc, ("%s" % (n.key if n.key else n.name)).replace(" ", "_"))
 		i += 1
 	# ---------- Spawnpunkte ----------
@@ -142,6 +149,8 @@ func _ready() -> void:
 	var host := PhantomCameraHost.new(); _add(cam, host, "PhantomCameraHost")
 	var pc := PhantomCamera3D.new(); pc.priority = 10; var cr := Camera3DResource.new(); cr.fov = 30; cr.far = 400; pc.camera_3d_resource = cr
 	_add(kr, pc, "SpielKamera")
+	# ---------- Ablauf Kapitel 1 ----------
+	var ab := Node.new(); ab.set_script(load("res://scripts/story/kapitel1_hairlem.gd")); _add(wurzel, ab, "Ablauf")
 	# ---------- Oberfläche ----------
 	var hud := CanvasLayer.new(); hud.set_script(load("res://scripts/ui/hud.gd")); _add(wurzel, hud, "HUD")
 	# ---------- Handgebaut (gehört dem Nutzer) ----------
@@ -157,3 +166,10 @@ func _own_hand(n: Node) -> void:
 	n.owner = wurzel
 	if n.scene_file_path != "" and n != wurzel: return
 	for c in n.get_children(): _own_hand(c)
+
+## Welche Dialogdatei einen Prototyp-Knoten enthält (wie im Konverter gruppiert)
+func _dialogdatei(id: String) -> String:
+	for p in ["c1.", "ke."]: if id.begins_with(p): return "kapitel1_ankunft"
+	for p in ["hu.", "kn.", "ng.", "dn.", "de.", "ma.", "da.", "sh.", "mo."]: if id.begins_with(p): return "kapitel1_bar"
+	for p in ["r3", "or.", "ad.", "hq.", "go.", "hw.", "ho.", "tp.link"]: if id.begins_with(p): return "kapitel1_branx"
+	return "kapitel1_strasse"

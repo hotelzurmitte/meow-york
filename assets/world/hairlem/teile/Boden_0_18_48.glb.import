@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b5efmno4nggof"
-path="res://.godot/imported/Boden_0481.glb-5cc15b0548bd367eecbcbe2d20c1df9b.scn"
+uid="uid://cq44e1y1dvreg"
+path="res://.godot/imported/Boden_0_18_48.glb-683356c2e7eb983b9e3e182159ea111a.scn"
 
 [deps]
 
-source_file="res://assets/world/hairlem/teile/Boden_0481.glb"
-dest_files=["res://.godot/imported/Boden_0481.glb-5cc15b0548bd367eecbcbe2d20c1df9b.scn"]
+source_file="res://assets/world/hairlem/teile/Boden_0_18_48.glb"
+dest_files=["res://.godot/imported/Boden_0_18_48.glb-683356c2e7eb983b9e3e182159ea111a.scn"]
 
 [params]
 

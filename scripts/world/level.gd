@@ -14,5 +14,5 @@ func _ready() -> void:
 		for g in get_tree().get_nodes_in_group("gruppe"):
 			g.global_position = m.global_position + Vector3(-1.3 * i, 0, 0.5 * i)
 			i += 1
-	if bereichsname != "":
+	if bereichsname != "" and not (GameState.flag("ueberfall") and not GameState.flag("ch1robbed")):
 		EventBus.meldung.emit(bereichsname)

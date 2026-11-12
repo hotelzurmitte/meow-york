@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://xmykxbnfyn7n"
+path="res://.godot/imported/kapitel1_branx.dialogue-19c92378d2dcdbb77e1c93700f28a3b0.tres"
+
+[deps]
+
+source_file="res://data/dialogues/kapitel1_branx.dialogue"
+dest_files=["res://.godot/imported/kapitel1_branx.dialogue-19c92378d2dcdbb77e1c93700f28a3b0.tres"]
+
+[params]
+
+defaults=true

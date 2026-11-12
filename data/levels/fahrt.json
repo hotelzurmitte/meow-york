@@ -1,0 +1,399 @@
+[
+ {
+  "name": "Kulisse_0",
+  "pos": [
+   -1170,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_1",
+  "pos": [
+   -1157,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_2",
+  "pos": [
+   -1144,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_3",
+  "pos": [
+   -1131,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_4",
+  "pos": [
+   -1118,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_5",
+  "pos": [
+   -1105,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_6",
+  "pos": [
+   -1092,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_7",
+  "pos": [
+   -1079,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_8",
+  "pos": [
+   -1066,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_9",
+  "pos": [
+   -1053,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_10",
+  "pos": [
+   -1040,
+   0,
+   0
+  ],
+  "k": 1,
+  "span": 140,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_11",
+  "pos": [
+   -1190,
+   0,
+   0
+  ],
+  "k": 0.18,
+  "span": 210,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_12",
+  "pos": [
+   -1160,
+   0,
+   0
+  ],
+  "k": 0.18,
+  "span": 210,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_13",
+  "pos": [
+   -1130,
+   0,
+   0
+  ],
+  "k": 0.18,
+  "span": 210,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_14",
+  "pos": [
+   -1100,
+   0,
+   0
+  ],
+  "k": 0.18,
+  "span": 210,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_15",
+  "pos": [
+   -1070,
+   0,
+   0
+  ],
+  "k": 0.18,
+  "span": 210,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_16",
+  "pos": [
+   -1040,
+   0,
+   0
+  ],
+  "k": 0.18,
+  "span": 210,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_17",
+  "pos": [
+   -1010,
+   0,
+   0
+  ],
+  "k": 0.18,
+  "span": 210,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_18",
+  "pos": [
+   -60,
+   0,
+   11
+  ],
+  "k": 1.15,
+  "span": 150,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_19",
+  "pos": [
+   -30,
+   0,
+   11
+  ],
+  "k": 1.15,
+  "span": 150,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_20",
+  "pos": [
+   0,
+   0,
+   11
+  ],
+  "k": 1.15,
+  "span": 150,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_21",
+  "pos": [
+   30,
+   0,
+   11
+  ],
+  "k": 1.15,
+  "span": 150,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Kulisse_22",
+  "pos": [
+   60,
+   0,
+   11
+  ],
+  "k": 1.15,
+  "span": 150,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Bruecke",
+  "pos": [
+   -1030,
+   0,
+   0
+  ],
+  "k": 0,
+  "span": 0,
+  "stueck": true,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Bar",
+  "pos": [
+   -1030,
+   0,
+   0
+  ],
+  "k": 0,
+  "span": 0,
+  "stueck": true,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Auto",
+  "pos": [
+   0,
+   0,
+   3.4
+  ],
+  "k": 0,
+  "span": 0,
+  "stueck": false,
+  "auto": true,
+  "strasse": false,
+  "textur": null
+ },
+ {
+  "name": "Strasse",
+  "pos": [
+   0,
+   0,
+   2.5
+  ],
+  "k": 0,
+  "span": 0,
+  "stueck": false,
+  "auto": false,
+  "strasse": true,
+  "textur": {
+   "rep": [
+    30,
+    1
+   ]
+  }
+ },
+ {
+  "name": "Boden_27",
+  "pos": [
+   0,
+   -0.05,
+   0
+  ],
+  "k": 0,
+  "span": 0,
+  "stueck": false,
+  "auto": false,
+  "strasse": false,
+  "textur": null
+ }
+]

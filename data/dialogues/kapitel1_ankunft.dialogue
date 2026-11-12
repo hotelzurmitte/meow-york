@@ -1,0 +1,381 @@
+# Aus dem Prototyp konvertiert und von Hand nachgearbeitet – nicht neu generieren.
+
+~ c1_0
+Meow-York, 1980. Sechzehn Uhr. Drei Fremde, eingequetscht auf der Rückbank eines Familienwagens, der mindestens zehn Jahre zu alt ist.
+=> c1_1
+
+~ c1_1
+Die Fenster sind halb heruntergekurbelt, trotzdem brennt kalter Zigarettenqualm in der Nase. Vorn sitzt ein junger, leicht angespeckter Kakerlak im engen schwarzen Tanktop. Auf dem Beifahrersitz\: eine muskelbepackte Ameise, der Blick stur nach vorn.
+=> c1_1b
+
+~ c1_1b
+Im Rückspiegel treffen sich eure Blicke.
+=> c1_2
+
+~ c1_2
+Papa Roach: Glück, dass ich nochmal tanken musste, he? Habt ihr Glück gehabt, dass Papa Roach in der Nähe war. Bruder … diese Stadt. Hier macht jeder nur seins. Naja. Wer seid ihr überhaupt?
+- Ren. Der Große ist Big Dig, die Krähe heißt Corvin.
+	do GameState.set_flag("gaveNames")
+	=> c1_3
+- (Täuschen 12) Touristen. Ganz normale Touristen.
+	if GameState.probe("ren", "Täuschen", 12)
+		=> c1_2t
+	else
+		=> c1_2tf
+- *Big Dig starrt wortlos in den Rückspiegel* [if GameState.mitglied("dig") and not GameState.schon("c1dig") /]
+	do GameState.einmal("c1dig")
+	=> c1_2d
+- (Wahrnehmung 13) *Die Ameise beobachten* [if not GameState.schon("c1w") /]
+	do GameState.einmal("c1w")
+	if GameState.probe("corvin", "Wahrnehmung", 13)
+		=> c1_w
+	else
+		=> c1_wf
+
+~ c1_2t
+Papa Roach: Touristen. *grinst* Klar, Bruder. Und ich bin der Bürgermeister.
+=> c1_3
+
+~ c1_2tf
+Papa Roach: Touristen mit so 'nem Blick? Bruder, ich fahr seit zehn Jahren Leute rum. Ihr seid keine Touristen.
+=> c1_3
+
+~ c1_2d
+do GameState.set_flag("roachSusDig")
+Papa Roach: *kneift die Augen zusammen* … Bruder, du kommst mir bekannt vor. Warst du nicht mal … ach, egal. Alle Maulwürfe sehen gleich aus.
+=> c1_2
+
+~ c1_w
+Corvin sieht, wie sich unter dem Tanktop der Ameise etwas Kantiges abzeichnet. Und wie sie im Seitenspiegel prüft, ob jemand folgt. Niemand folgt.
+=> c1_w2
+
+~ c1_w2
+do GameState.set_flag("warned")
+do GameState.zuneigung_aendern("corvin", 1)
+Corvin: *kaum hörbar* Die Ameise trägt eine Waffe. Und das hier ist nicht der Weg ins Zentrum. Haltet euch bereit.
+=> c1_2
+
+~ c1_wf
+Die Ameise rührt sich nicht. Corvin auch nicht.
+=> c1_2
+
+~ c1_3
+Papa Roach: *zündet sich eine Zigarette an und hält die Packung nach hinten* Rauchen? Und was macht ihr hier? Seht nicht aus wie die Touris, die hier sonst hinkommen.
+- *Eine Zigarette nehmen* Danke.
+	do GameState.set_flag("tookSmoke")
+	do GameState.zuneigung_aendern("corvin", 1)
+	=> c1_4
+- Wir suchen das große Wollknäuel.
+	do GameState.set_flag("toldWool")
+	=> c1_5
+- Geschäftlich.
+	=> c1_3e
+- (Einschüchtern 14) Fahr einfach. [if GameState.mitglied("dig") and not GameState.schon("c1i") /]
+	do GameState.einmal("c1i")
+	if GameState.probe("dig", "Einschüchtern", 14)
+		=> c1_3i
+	else
+		=> c1_3if
+
+~ c1_3e
+Papa Roach: Ich nehm euch mit und ihr macht auf geheimnisvoll? Was seid ihr denn für welche?
+- Leute, die gern ankommen würden.
+	=> c1_4
+- Leute auf der Suche nach dem großen Wollknäuel.
+	do GameState.set_flag("toldWool")
+	=> c1_5
+
+~ c1_3i
+do GameState.set_flag("digCowed")
+do GameState.zuneigung_aendern("dig", 1)
+Papa Roach: *schluckt, die Zigarette wippt* Schon gut, schon gut, Bruder. Ich fahr ja.
+=> c1_6
+
+~ c1_3if
+Papa Roach: Uuuh. Harter Kerl. *lacht, die Ameise lacht nicht* Entspann dich, Bruder. Bist in Meow-York.
+=> c1_6
+
+~ c1_4
+Papa Roach: *bläst Rauch an die Decke* Na, jeder hat seine Gründe. Hauptsache, ihr habt Kohle dabei. Ohne Kohle ist diese Stadt kein guter Ort, Bruder.
+=> c1_6
+
+~ c1_5
+Papa Roach: Das KNÄUEL! *haut lachend aufs Lenkrad* Bruder! Jede Woche kommen Pilger und wollen ein Stück vom Knäuel. Das Knäuel ist ein Märchen. Für Leute mit Geld. *Blick in den Rückspiegel* … Ihr habt doch Geld, oder?
+=> c1_6
+
+~ c1_6
+do EventBus.ereignis.emit("ridePiece:bridge")
+Hinter heruntergekommenen Häuserfassaden schieben sich die Wolkenkratzer von Cathattan ins Bild. Dann eine Brücke – und darunter, groß an den Pfeiler gesprüht\: eine schwarze Katzenpfote, zur Faust geballt, gegen den Himmel gereckt.
+- Was bedeutet das Zeichen?
+	=> c1_6b
+- *Schweigen*
+	=> c1_7
+
+~ c1_6b
+do GameState.set_flag("pawSeen")
+Papa Roach: Die Pfote? Unzähmbare Biester, Bruder. Alte Geschichte, siebzig Jahre her. Die Kinder malen das heute noch, ohne zu wissen, was es heißt. *leiser* Und die, die wissen, was es heißt, malen es nicht.
+=> c1_7
+
+~ c1_7
+do EventBus.ereignis.emit("ridePiece:bar")
+do GameState.set_flag("sawBar")
+Ihr passiert eine Bar, deren Leuchtreklame selbst um diese Uhrzeit den Himmel zu erhellen scheint\: „Cuckoo's Nest – Bar & Motel“. Davor Harleys, ein paar rauchende Gestalten, jemand am Münztelefon. An der Tür ein Schild\: Aushilfe gesucht.
+=> c1_8
+
+~ c1_8
+do EventBus.ereignis.emit("fahrt:abbiegen")
+Kaum liegt die Bar hinter euch, reißt Papa Roach das Steuer herum. Quietschende Reifen. Eine Gasse. Hohe Hauswände links und rechts.
+if GameState.flag("warned")
+	=> c1_8w
+else
+	=> c1_9
+
+~ c1_8w
+Corvin: Jetzt.
+- (Athletik 13) *Die Tür aufreißen, bevor die Kindersicherung greift*
+	if GameState.probe("dig", "Athletik", 13)
+		=> c1_8ok
+	else
+		=> c1_9
+- *Abwarten, was passiert*
+	=> c1_9
+
+~ c1_8ok
+do GameState.set_flag("doorOpen")
+do GameState.zuneigung_aendern("dig", 1)
+Big Digs Pranke reißt die Tür auf – das Schloss knackt eine halbe Sekunde zu spät. Ihr stolpert aus dem rollenden Wagen, bevor er steht.
+=> c1_9b
+
+~ c1_9
+Klack. Papa Roach drückt die Kindersicherung runter. Die Ameise dreht sich um – und hält euch eine Pistole ins Gesicht.
+=> c1_9b
+
+~ c1_9b
+do EventBus.ereignis.emit("alleyCut")
+…
+=> c1_10
+
+~ c1_10
+Papa Roach: Was seid ihr für Idioten, alter? Lasst euch von irgendeinem einfach so mitnehmen … *schnippt die Kippe weg* Her mit der Kohle, alter.
+=> c1_11
+
+~ c1_11
+if GameState.flag("doorOpen")
+	Ihr steht schon in der Gasse, als die Schatten lebendig werden. Vier Insekten treten aus den Schatten, zwei links, zwei rechts. Ein Käfer mit Baseballschläger, eine Wespe mit Messer. Die Ameise hält die Pistole ruhig wie ein Uhrwerk.
+else
+	Zwei Fliegen zerren euch aus dem Wagen und werfen euch in den Dreck. Vier Insekten treten aus den Schatten, zwei links, zwei rechts. Ein Käfer mit Baseballschläger, eine Wespe mit Messer. Die Ameise hält die Pistole ruhig wie ein Uhrwerk.
+=> c1_12
+
+~ c1_12
+Papa Roach: Ich zähl bis drei, Bruder. Eins …
+- Okay. Okay. Nehmt es.
+	=> c1_give
+- (Fingerfertigkeit 14) *Einen Teil der Scheine im Ärmel verschwinden lassen* [if not GameState.schon("c1s") /]
+	do GameState.einmal("c1s")
+	if GameState.probe("ren", "Fingerfertigkeit", 14)
+		=> c1_hide
+	else
+		=> c1_hidef
+- (Einschüchtern 15) Schau mich genau an, Roach. [if GameState.mitglied("dig") and not GameState.schon("c1d") /]
+	do GameState.einmal("c1d")
+	if GameState.probe("dig", "Einschüchtern", 15)
+		=> c1_dig
+	else
+		=> c1_digf
+- (Einsicht 14) Du arbeitest nicht für dich. Für wen? [if not GameState.schon("c1c") /]
+	do GameState.einmal("c1c")
+	if GameState.probe("corvin", "Einsicht", 14)
+		=> c1_cor
+	else
+		=> c1_corf
+- Ihr wollt Kohle? Holt sie euch.
+	=> c1_f
+
+~ c1_give
+do GameState.rauben(120)
+do GameState.zuneigung_aendern("dig", -1)
+Papa Roach: Siehste. Geht doch, Bruder. *blättert die Scheine durch* Hundertzwanzig. Nicht schlecht für Pilger.
+=> c1_out
+
+~ c1_hide
+do GameState.rauben(70)
+do GameState.zuneigung_aendern("corvin", -1)
+do GameState.zuneigung_aendern("dig", 1)
+do GameState.set_flag("hidMoney")
+Ren reicht das Bündel nach vorn – leichter, als es sein sollte. Fünfzig Collar sind im Ärmel verschwunden, bevor die Ameise blinzelt.
+=> c1_hidee
+
+~ c1_hidee
+Papa Roach: Siebzig? *zählt nochmal* Armselig, Bruder. Ganz armselig.
+=> c1_out
+
+~ c1_hidef
+do GameState.rauben(120)
+do GameState.set_flag("ren_schaden", 4)
+do EventBus.hinweis.emit("Die Wespe bringt Ren mit einem Schlag in die Knie. −4 TP", "quest")
+Papa Roach: Bruder. *seufzt* Ärmel. Ich seh dich.
+=> c1_out
+
+~ c1_dig
+do GameState.rauben(60)
+do GameState.set_flag("roachKnowsDig")
+do GameState.zuneigung_aendern("dig", 1)
+do GameState.ansehen_aendern("insects", 1)
+if GameState.flag("roachSusDig")
+	Papa Roach: *die Zigarette fällt ihm aus dem Mund* Ich WUSSTE es! Big Dig! Aus der Mulberry! … Bruder. Bruder! Nimm's nicht persönlich. Geschäft ist Geschäft. *nimmt nur die Hälfte* Wir haben uns nie gesehen, ja?
+else
+	Papa Roach: *die Zigarette fällt ihm aus dem Mund* B-Big Dig? DER Big Dig? Aus der Mulberry? … Bruder. Bruder! Nimm's nicht persönlich. Geschäft ist Geschäft. *nimmt nur die Hälfte* Wir haben uns nie gesehen, ja?
+=> c1_out
+
+~ c1_digf
+do GameState.rauben(120)
+Papa Roach: Ich schau dich an, Bruder. Ich seh 'nen Maulwurf, der gleich ohne Geld dasteht.
+=> c1_out
+
+~ c1_cor
+do GameState.rauben(120)
+do GameState.set_flag("roachHint")
+do GameState.zuneigung_aendern("corvin", 1)
+do EventBus.hinweis.emit("Hinweis: Wer nach dem Knäuel fragt, verschwindet", "quest")
+Papa Roach: *zuckt* … Pfoten weg von Sachen, die dich nichts angehen, Federvieh. *wirft der Ameise einen Blick zu, dann leiser* Leute, die nach dem Knäuel fragen, verschwinden in dieser Stadt. Wir nehmen nur die Kohle. Die anderen nehmen den Rest.
+=> c1_out
+
+~ c1_corf
+do GameState.rauben(120)
+Papa Roach: Für mich, Federvieh. Und für meine Kinder. Hab sieben. *grinst* Kohle.
+=> c1_out
+
+~ c1_f
+do Kapitel.kampf(["flyA","flyB","beetle","wasp"], "Papa Roachs Gang")
+do GameState.set_flag("beatRoachGang")
+=> c1_won
+
+~ c1_won
+do GameState.geld_aendern(40)
+do EventBus.ereignis.emit("insectsLeave")
+Die letzte Fliege schwirrt surrend davon und lässt einen zerknitterten Umschlag fallen. Vierzig Collar. Der Wagen ist längst um die Ecke – Papa Roachs Lachen hängt noch in der Luft.
+=> END
+
+~ c1_lost
+do EventBus.ereignis.emit("insectsLeave")
+Als ihr wieder zu euch kommt, ist die Gasse leer. Eure Taschen auch.
+=> END
+
+~ c1_out
+do EventBus.ereignis.emit("insectsLeave")
+if GameState.flag("roachKnowsDig")
+	Papa Roach: *lacht, steigt ein, die Ameise zuletzt* Willkommen in Meow-York, Big Dig!
+else
+	Papa Roach: *lacht, steigt ein, die Ameise zuletzt* Willkommen in Meow-York, Bruder!
+=> c1_out2
+
+~ c1_out2
+Der Wagen biegt mit quietschenden Reifen um die Ecke. Die Insekten verschwinden in den Schatten, als hätte es sie nie gegeben. Papa Roachs Lachen hallt noch nach, als der Motor längst verklungen ist.
+=> c1_out3
+
+~ c1_out3
+Am Eingang der Gasse steht eine kleine Kellerassel und schüttelt mit einem bitteren Lächeln den Kopf.
+=> END
+
+~ ke_0
+if GameState.flag("ke")
+	=> ke_0_wieder
+do GameState.set_flag("ke")
+if GameState.quest_aktiv("arrive")
+	do GameState.quest("arrive", "Pleite in Meow-York", "Geht ins Cuckoo's Nest an der Whisker Avenue und fragt nach Arbeit.")
+Ilse: *schüttelt den Kopf* Papa Roach. Jeden Tag ein paar Neue. Ihr seid nicht die Ersten. Und nicht die Letzten.
+- Wo bunkert Roach eigentlich sein Geld? [if not GameState.quests.has("garage") /]
+	=> ke_gar
+- *Das Geld der anderen Pilger übergeben* [if GameState.flag("pilgerGeld") and not GameState.flag("pilgerGeldDone") /]
+	=> ke_geld
+- Wer ist dieser Papa Roach? [if not GameState.schon("ke1") /]
+	do GameState.einmal("ke1")
+	=> ke_1
+- Wo kriegen wir hier Geld her? [if not GameState.schon("ke2") /]
+	do GameState.einmal("ke2")
+	=> ke_2
+- Ilse? Bist du das? [if GameState.mitglied("dig") and not GameState.schon("ke3") /]
+	do GameState.einmal("ke3")
+	=> ke_3
+- (Straßenwissen 13) Hier verschwinden Leute, oder? [if not GameState.schon("ke4") /]
+	do GameState.einmal("ke4")
+	if GameState.probe("corvin", "Straßenwissen", 13)
+		=> ke_4
+	else
+		=> ke_4f
+- Danke. Wir gehen.
+	=> END
+
+~ ke_0_wieder
+if GameState.flag("ilseNoCop")
+	Ilse: *ohne Corvin anzusehen* Noch was, ihr zwei?
+else
+	Ilse: Noch was, ihr drei?
+- Wo bunkert Roach eigentlich sein Geld? [if not GameState.quests.has("garage") /]
+	=> ke_gar
+- *Das Geld der anderen Pilger übergeben* [if GameState.flag("pilgerGeld") and not GameState.flag("pilgerGeldDone") /]
+	=> ke_geld
+- Wer ist dieser Papa Roach? [if not GameState.schon("ke1") /]
+	do GameState.einmal("ke1")
+	=> ke_1
+- Wo kriegen wir hier Geld her? [if not GameState.schon("ke2") /]
+	do GameState.einmal("ke2")
+	=> ke_2
+- Ilse? Bist du das? [if GameState.mitglied("dig") and not GameState.schon("ke3") /]
+	do GameState.einmal("ke3")
+	=> ke_3
+- (Straßenwissen 13) Hier verschwinden Leute, oder? [if not GameState.schon("ke4") /]
+	do GameState.einmal("ke4")
+	if GameState.probe("corvin", "Straßenwissen", 13)
+		=> ke_4
+	else
+		=> ke_4f
+- Danke. Wir gehen.
+	=> END
+
+~ ke_1
+Ilse: Ein Kakerlak mit großem Mund und kleinem Herzen. Fährt Pilger vom Bahnhof in die Stadt – und durch diese Gasse. Er gehört zu niemandem. Sagt er.
+=> ke_0
+
+~ ke_2
+do GameState.set_flag("kellerRef")
+Ilse: *deutet mit dem Kinn die Straße hinunter* Das Cuckoo's Nest. Hummel sucht eine Aushilfe. Und wo die Nomapes trinken, gibt's immer Arbeit – für die, die keine Fragen stellen. Sagt Hummel, Ilse schickt euch. *tippt sich an den Panzer* Ilse, das bin ich.
+=> ke_0
+
+~ ke_3
+do GameState.set_flag("ilseDig")
+do GameState.zuneigung_aendern("dig", 1)
+Ilse: *erstarrt* … Dig. Du bist zurück. *sieht sich um, leiser* Die Leute, die damals nach dir gefragt haben … die fragen immer noch. Gute Mäntel. Keine Polizei. Schlimmer.
+=> ke_3b
+
+~ ke_3b
+Big Dig: *leise* Und die Kleine? Hat sie jemand …
+=> ke_3c
+
+~ ke_3c
+Ilse: Keiner hat sie je wiedergefunden, Dig. Keiner hat gesucht. Außer dir.
+=> ke_0
+
+~ ke_4
+do GameState.set_flag("ilseCases")
+do GameState.zuneigung_aendern("corvin", 1)
+do EventBus.hinweis.emit("Hinweis: Pilger und Kinder verschwinden – zur selben Zeit", "quest")
+Ilse: *mustert Corvin lange* Mehr als früher. Erst die Pilger, Fremde, die zu laut nach dem Knäuel fragen. Dann die Kinder. Seit die einen verschwinden, verschwinden auch die anderen. Ich sag nicht, dass es zusammenhängt. Ich sag nur, wann.
+=> ke_0
+
+~ ke_4f
+do GameState.set_flag("ilseNoCop")
+Ilse: Du riechst nach Polizei, Federvieh. Mit Polizei red ich nicht.
+=> ke_0
+
+~ ke_gar
+do GameState.quest("garage", "Roachs Garage", "Holt euer Geld aus Roachs Geldschrank im Garagenkeller. Antonia bewacht die Kellertür – oder ihr kommt durch die Kanalisation.", false, true)
+Ilse: In seiner Garage, drüben am Rand vom Insektenviertel. Unten im Keller steht ein Geldschrank. Antonia bewacht die Tür, den Schlüssel trägt sie am Gürtel. *leiser* Oder ihr nehmt den Kanal. Da unten schaut keiner hin.
+=> ke_0
+
+~ ke_geld
+do GameState.set_flag("pilgerGeldDone")
+do GameState.ansehen_aendern("insects", 3)
+do GameState.quest("garage", "Roachs Garage", "Erledigt. Ilse verteilt das Geld an die Pilger.", true, true)
+Ilse: *nimmt das Bündel, lange still* … Davon kann die Hälfte vom Bahnhof heute Nacht ein Zimmer bezahlen. Ich vergesse das nicht. Keiner von uns.
+=> ke_0

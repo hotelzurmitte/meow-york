@@ -10,6 +10,7 @@ extends Node3D
 @export var yaw := 0.0                 ## 0 = Kamera steht im Süden (+z) und schaut nach Norden
 @export var iso := 1.0                 ## 0 nah … 1 isometrisch … 1.7 hoch
 @export var zoom := 1.0
+@export var steuerbar := true          ## false in Zwischensequenzen
 
 var ziel: Node3D
 var _yaw_ziel := 0.0
@@ -28,6 +29,7 @@ func _ready() -> void:
 	_berechnen(0.0, true)
 
 func _unhandled_input(e: InputEvent) -> void:
+	if not steuerbar: return
 	if e is InputEventMouseButton:
 		if e.button_index == MOUSE_BUTTON_MIDDLE: _mitte_drag = e.pressed
 		elif e.pressed and e.button_index == MOUSE_BUTTON_WHEEL_UP: zoom = clamp(zoom * 0.9, 0.45, 1.8)
@@ -39,6 +41,8 @@ func _unhandled_input(e: InputEvent) -> void:
 		_versatz = Vector3.ZERO
 
 func _process(dt: float) -> void:
+	if not steuerbar:
+		_berechnen(dt, false); return
 	var dreh := 0.0
 	if Input.is_key_pressed(KEY_Q): dreh += 1.0
 	if Input.is_key_pressed(KEY_E): dreh -= 1.0

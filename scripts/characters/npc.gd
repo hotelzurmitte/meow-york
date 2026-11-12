@@ -16,7 +16,12 @@ extends Node3D
 @export var dialog_start := ""
 ## Sprüche, wenn es keinen Dialog gibt (einer davon zufällig)
 @export var sprueche: PackedStringArray = []
-@export var ansprechbar := true
+@export var ansprechbar := true:
+	set(v):
+		ansprechbar = v
+		if is_inside_tree() and not Engine.is_editor_hint():
+			if v: add_to_group("interaktiv")
+			elif is_in_group("interaktiv"): remove_from_group("interaktiv")
 
 var _redet := false
 

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bwrnus7twy5q5"
-path="res://.godot/imported/Boden_3e4e.glb-195eecd389e5a4dbe9b87539f0ffc7b5.scn"
+uid="uid://xp5nx1rv3ahd"
+path="res://.godot/imported/Kulisse_21.glb-53ac4fec08f2a918bc5560fb0fc55158.scn"
 
 [deps]
 
-source_file="res://assets/world/hairlem/teile/Boden_3e4e.glb"
-dest_files=["res://.godot/imported/Boden_3e4e.glb-195eecd389e5a4dbe9b87539f0ffc7b5.scn"]
+source_file="res://assets/world/fahrt/teile/Kulisse_21.glb"
+dest_files=["res://.godot/imported/Kulisse_21.glb-53ac4fec08f2a918bc5560fb0fc55158.scn"]
 
 [params]
 

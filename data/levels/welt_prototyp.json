@@ -1919,7 +1919,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "gar.ant",
+"lines": [
+"Weitergehen."
+]
 },
 {
 "key": null,
@@ -1934,7 +1938,13 @@
 "sheet": "cop",
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Na, Rotpelz? Halt die Schnauze sauber, solange ich Dienst hab.",
+"Die Kanalratten haben sich im Hinterhof hinter dem Arcade eingenistet. Gnasher, ihr Boss, ist ein übler Brocken.",
+"Und lass das Schwert in der Scheide, solange du auf meiner Straße bist. Klar?"
+]
 },
 {
 "key": null,
@@ -1949,7 +1959,13 @@
 "sheet": "mona",
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Nette Sonnenbrille. Nachts. Mutig, Fuchs.",
+"Ein Maulwurf und eine Krähe? Ihr seid die seltsamste Crew in ganz Meow-York.",
+"Im Hinterhof hinter dem Arcade hockt Gnasher mit seinen Ratten. Wenn ihr Ärger sucht …"
+]
 },
 {
 "key": null,
@@ -1964,7 +1980,12 @@
 "sheet": "rocco",
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Hot Dogs! Frisch aus dem Wasser – seit 1962!",
+"Einen Collar das Stück. Kein Geld? Dann komm wieder, wenn du was verdient hast."
+]
 },
 {
 "key": null,
@@ -1982,6 +2003,10 @@
 "patrol": [
 -21,
 -7
+],
+"talk": null,
+"lines": [
+"Keine Zeit, keine Zeit. Meow-York frisst dich auf, wenn du stehen bleibst."
 ]
 },
 {
@@ -2000,6 +2025,10 @@
 "patrol": [
 0,
 21
+],
+"talk": null,
+"lines": [
+"*keuch* … Bin gleich … wieder da …"
 ]
 },
 {
@@ -2015,7 +2044,9 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "bk.0",
+"lines": null
 },
 {
 "key": "bikerB",
@@ -2030,7 +2061,12 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Die Bar ist offen. Der Ärger auch.",
+"Hast du ein Problem mit Schimpansen? Nein? Gut."
+]
 },
 {
 "key": "puma",
@@ -2045,7 +2081,9 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "bc.0",
+"lines": null
 },
 {
 "key": "leo",
@@ -2060,7 +2098,9 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "leo.0",
+"lines": null
 },
 {
 "key": "jag",
@@ -2075,7 +2115,9 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "jag.0",
+"lines": null
 },
 {
 "key": "hummel",
@@ -2090,7 +2132,9 @@
 "sheet": "hummel",
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "hu.0",
+"lines": null
 },
 {
 "key": "maria",
@@ -2108,7 +2152,9 @@
 "patrol": [
 97.6,
 102.4
-]
+],
+"talk": "ma.0",
+"lines": null
 },
 {
 "key": "knuck",
@@ -2123,7 +2169,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "hu.5w",
+"lines": [
+"*hicks* Wassuguckstu?"
+]
 },
 {
 "key": "dartA",
@@ -2138,7 +2188,9 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "da.0",
+"lines": null
 },
 {
 "key": "dartB",
@@ -2153,7 +2205,9 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "da.0",
+"lines": null
 },
 {
 "key": "nugget",
@@ -2168,7 +2222,9 @@
 "sheet": "nugget",
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "ng.pre",
+"lines": null
 },
 {
 "key": "roach",
@@ -2183,7 +2239,11 @@
 "sheet": "roach",
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"…"
+]
 },
 {
 "key": "ant",
@@ -2198,7 +2258,9 @@
 "sheet": "ant",
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "flyA",
@@ -2213,7 +2275,9 @@
 "sheet": "flyA",
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "flyB",
@@ -2228,7 +2292,9 @@
 "sheet": "flyB",
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "beetle",
@@ -2243,7 +2309,9 @@
 "sheet": "beetle",
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "wasp",
@@ -2258,7 +2326,9 @@
 "sheet": "wasp",
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "louse",
@@ -2273,7 +2343,9 @@
 "sheet": "louse",
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "ke.0",
+"lines": null
 },
 {
 "key": "denise",
@@ -2291,7 +2363,9 @@
 "patrol": [
 96.4,
 99.2
-]
+],
+"talk": "de.0",
+"lines": null
 },
 {
 "key": "adikatzA",
@@ -2306,7 +2380,9 @@
 "sheet": "adikatz",
 "sichtbar": false,
 "sc": 1.35,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "catA1",
@@ -2321,7 +2397,9 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "catA2",
@@ -2336,7 +2414,9 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "orangoA",
@@ -2351,7 +2431,9 @@
 "sheet": "orango",
 "sichtbar": false,
 "sc": 1.35,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "gorillaA",
@@ -2366,7 +2448,9 @@
 "sheet": "gorilla",
 "sichtbar": false,
 "sc": 1.15,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "chimpA1",
@@ -2381,7 +2465,9 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "throwA",
@@ -2396,7 +2482,9 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": null
 },
 {
 "key": "orangoH",
@@ -2411,7 +2499,9 @@
 "sheet": "orango",
 "sichtbar": true,
 "sc": 1.35,
-"patrol": null
+"patrol": null,
+"talk": "or.0",
+"lines": null
 },
 {
 "key": "gorillaH",
@@ -2426,7 +2516,9 @@
 "sheet": "gorilla",
 "sichtbar": true,
 "sc": 1.15,
-"patrol": null
+"patrol": null,
+"talk": "go.0",
+"lines": null
 },
 {
 "key": "chimpH1",
@@ -2441,7 +2533,9 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "hw.m1",
+"lines": null
 },
 {
 "key": "chimpH2",
@@ -2459,7 +2553,9 @@
 "patrol": [
 1295,
 1300
-]
+],
+"talk": "hw.m2",
+"lines": null
 },
 {
 "key": "adikatzH",
@@ -2474,7 +2570,9 @@
 "sheet": "adikatz",
 "sichtbar": true,
 "sc": 1.35,
-"patrol": null
+"patrol": null,
+"talk": "ad.0",
+"lines": null
 },
 {
 "key": "rexH",
@@ -2489,7 +2587,9 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "ho.m1",
+"lines": null
 },
 {
 "key": "lolaH",
@@ -2504,7 +2604,9 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "ho.m2",
+"lines": null
 },
 {
 "key": "mira",
@@ -2519,7 +2621,9 @@
 "sheet": "mothV",
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "iq.mira",
+"lines": null
 },
 {
 "key": "gustl",
@@ -2534,7 +2638,9 @@
 "sheet": "grassV",
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "iq.gustl",
+"lines": null
 },
 {
 "key": "honigA",
@@ -2549,7 +2655,9 @@
 "sheet": "antV",
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "iq.honig",
+"lines": null
 },
 {
 "key": "pips",
@@ -2567,7 +2675,9 @@
 "patrol": [
 -46,
 -34
-]
+],
+"talk": "iq.pips",
+"lines": null
 },
 {
 "key": "kiki",
@@ -2585,6 +2695,11 @@
 "patrol": [
 -44,
 -30
+],
+"talk": null,
+"lines": [
+"Fang mich doch!",
+"Hihi! Der Fuchs ist zu langsam!"
 ]
 },
 {
@@ -2600,7 +2715,9 @@
 "sheet": "cricketB",
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": "iq.grimm",
+"lines": null
 },
 {
 "key": "p_taube",
@@ -2615,7 +2732,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Gurr. Hast du Krümel?"
+]
 },
 {
 "key": "p_waschbaer",
@@ -2630,7 +2751,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Das ist MEIN Müll. Such dir deinen eigenen."
+]
 },
 {
 "key": "p_eule",
@@ -2645,7 +2770,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Ich arbeite nachts. Ich sehe alles. Ich sage nichts."
+]
 },
 {
 "key": "p_hase",
@@ -2663,6 +2792,10 @@
 "patrol": [
 -16,
 8
+],
+"talk": null,
+"lines": [
+"*keucht* Kann nicht reden – Runde zwölf!"
 ]
 },
 {
@@ -2678,7 +2811,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Ich wart trotzdem. Man weiß nie."
+]
 },
 {
 "key": "p_ratte",
@@ -2693,7 +2830,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Ihr seid die Pilger von heute Mittag, oder? Roach war schnell, was?"
+]
 },
 {
 "key": "p_fuchs",
@@ -2708,7 +2849,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Noch ein Fuchs? Die Stadt wird voll."
+]
 },
 {
 "key": "p_eichhoernchen",
@@ -2723,7 +2868,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Nüsse? Nein. Kronkorken. Die sind mehr wert."
+]
 },
 {
 "key": "p_spatz",
@@ -2738,7 +2887,11 @@
 "sheet": null,
 "sichtbar": true,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Pssst. Die Katzen da hinten tanzen jeden Abend. Kostet nix zum Gucken."
+]
 },
 {
 "key": "p_moewe",
@@ -2753,7 +2906,11 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Hier riecht's fast wie am Hafen. Nach Fisch und schlechten Entscheidungen."
+]
 },
 {
 "key": "p_perser",
@@ -2768,7 +2925,11 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"*rümpft die Nase* Lieferanteneingang ist hinten."
+]
 },
 {
 "key": "p_ragdoll",
@@ -2783,7 +2944,11 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Wir kennen uns nicht. Und das bleibt so."
+]
 },
 {
 "key": "p_loewe",
@@ -2801,6 +2966,10 @@
 "patrol": [
 284,
 300
+],
+"talk": null,
+"lines": [
+"Ein guter Mantel ist eine Frage der Haltung, Junge."
 ]
 },
 {
@@ -2816,7 +2985,11 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Krah. Hier zahlt man an den Don. Oder man zahlt anders."
+]
 },
 {
 "key": "p_tigerkatze",
@@ -2831,7 +3004,11 @@
 "sheet": null,
 "sichtbar": false,
 "sc": 1,
-"patrol": null
+"patrol": null,
+"talk": null,
+"lines": [
+"Respekt, Fremder. Den gibt's hier umsonst – einmal."
+]
 }
 ],
 "surf": [

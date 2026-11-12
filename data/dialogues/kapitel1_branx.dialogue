@@ -1,0 +1,512 @@
+# Aus dem Prototyp konvertiert (2026-11-12). TODO-Stellen von Hand prüfen.
+
+~ r3c_0
+Ein Bass, so tief, dass die Pfützen zittern. Ein Lowrider rollt im Schritttempo heran. Auf der Schulter des Tigers, der aussteigt, wummert eine Boombox.
+=> r3c_1
+
+~ r3c_1
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Adikatz: *dreht die Musik leiser* Ihr seid also Nuggets neue Laufburschen. Der Ghettoblaster gehörte meinem kleinen Bruder, Fuchs. Mein Bruder ist tot. Das Ding ist alles, was von ihm übrig war.
+- (Überzeugen 14) Nugget hat uns belogen. Wir wussten nicht, wem er gehört. [if not GameState.flag("knowTruth") and not GameState.flag("nuggetLie") /]
+	if GameState.probe("ren", "Überzeugen", 14)
+		=> r3c_ok
+	else
+		=> r3c_no
+- (Überzeugen 16) Wir wussten es. Es tut mir leid. Wir brauchten das Geld. [if GameState.flag("knowTruth") or GameState.flag("nuggetLie") /]
+	if GameState.probe("ren", "Überzeugen", 16)
+		=> r3c_ok2
+	else
+		=> r3c_no
+- (Einschüchtern 17) *Big Dig tritt vor* Willst du das wirklich, Großer? [if GameState.mitglied("dig") /]
+	if GameState.probe("dig", "Einschüchtern", 17)
+		=> r3c_dig
+	else
+		=> r3c_no
+- Dann klären wir das hier und jetzt.
+	=> r3c_f
+
+~ r3c_ok
+do GameState.set_flag("s3talk")
+do GameState.ansehen_aendern("cats", 1)
+Adikatz: … *mustert euch lange* Ihr seid nicht von hier. Ihr wisst nicht, wie Nugget spielt. *klopft auf die Boombox* Kommt mit in die Branx. Ich zeig euch, wer hier lügt.
+=> r3_go
+
+~ r3c_ok2
+do GameState.set_flag("s3talk")
+do GameState.ansehen_aendern("cats", 1)
+do GameState.zuneigung_aendern("corvin", 1)
+Adikatz: *lange Stille* … Ehrlich. Das hört man selten in dieser Stadt. Geld braucht jeder. Respekt ist teurer. Kommt mit. Wir reden in der Branx.
+=> r3_go
+
+~ r3c_dig
+do GameState.set_flag("s3talk")
+do GameState.zuneigung_aendern("dig", 1)
+Adikatz: *grinst* Ein Maulwurf mit Eiern. Gut. Ich mag Leute, die nicht weglaufen. Kommt mit – bevor Nuggets Affen hier aufkreuzen.
+=> r3_go
+
+~ r3c_no
+Adikatz: Worte. *setzt die Boombox ab, dreht den Bass bis zum Anschlag* Dann lass uns tanzen.
+=> r3c_f
+
+~ r3c_f
+do Kapitel.kampf(["adikatzA","catA1","catA2"], "Adikatz & die Breaking Cats")
+do GameState.set_flag("s3won")
+=> r3_after
+
+~ r3n_0
+Motoren. Viele Motoren. Harleys schieben sich von beiden Seiten in die Whisker Avenue. Von der Feuertreppe über euch lacht jemand und schwenkt eine Flasche.
+=> r3n_1
+
+~ r3n_1
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Don Orango: *steigt von der Maschine, der Nagelknüppel schleift über den Asphalt* Ihr seid die, die Nugget den Ghettoblaster versprochen haben. Und ihn dann den Kätzchen zurückgebracht haben. In meiner Straße. *leiser* Der Kasten ist mir egal. Mir geht's um das, was drin war.
+- (Überzeugen 16) Er gehörte ihnen. Nugget hat gelogen.
+	if GameState.probe("ren", "Überzeugen", 16)
+		=> r3n_ok
+	else
+		=> r3n_no
+- (Täuschen 15) Nugget hat den Deal versaut, nicht wir. Er wollte uns übers Ohr hauen.
+	if GameState.probe("ren", "Täuschen", 15)
+		=> r3n_ok2
+	else
+		=> r3n_no
+- (Einsicht 14) *Corvin* Du bist nicht wegen eines Ghettoblasters hier, Don.
+	if GameState.probe("corvin", "Einsicht", 14)
+		=> r3n_cor
+	else
+		=> r3n_no
+- Komm her, Don. Mal sehen, ob du so hart bist wie dein Knüppel.
+	=> r3n_f
+
+~ r3n_ok
+do GameState.set_flag("s3talk")
+do GameState.ansehen_aendern("nomapes", 1)
+Don Orango: *schnaubt* Nugget lügt, seit er laufen kann. Das macht ihn nützlich. Aber ihr … ihr habt Rückgrat. *wirft den Knüppel dem Gorilla zu* Steigt auf. Wir fahren in die Branx.
+=> r3_go
+
+~ r3n_ok2
+do GameState.set_flag("s3talk")
+do GameState.gesinnung_aendern("gesetz", -1)
+Don Orango: Nugget? *lacht dröhnend* Den knöpf ich mir später vor. Ihr gefallt mir. Frech und dumm genug, um nützlich zu sein. Steigt auf.
+=> r3_go
+
+~ r3n_cor
+do GameState.set_flag("s3talk")
+do GameState.zuneigung_aendern("corvin", 1)
+Don Orango: *kneift die Augen zusammen* … Kluger Vogel. Nein. Ich bin hier, weil die Kätzchen Freunde gefunden haben. Und weil ich Freunde brauche, die sie nicht haben. Steigt auf.
+=> r3_go
+
+~ r3n_no
+Don Orango: Reden kann jeder. *hebt den Nagelknüppel* Gorilla. Mach den Weg frei.
+=> r3n_f
+
+~ r3n_f
+do Kapitel.kampf(["orangoA","gorillaA","chimpA1","throwA"], "Don Orango & die Nomapes")
+do GameState.set_flag("s3won")
+=> r3_after
+
+~ r3_after
+do EventBus.ereignis.emit("s3Rescuers")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Ihr liegt auf dem Asphalt. Da rollt ein Lowrider mit wummerndem Bass heran – die Nomapes geben Gas. Ein Tiger mit Boombox auf der Schulter steigt aus.
+if GameState.flag("playedBoth")
+	=> r3_cap
+else
+	=> r3_res
+
+~ r3_res
+do GameState.set_flag("s3rescued")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Adikatz: Yo. Wer Don Orangos Affen standhält, hat sich ein Dach verdient. Kommt mit. Die Branx wartet.
+=> r3_go
+
+~ r3_cap
+do GameState.set_flag("prisoner")
+Ein Sack über den Kopf. Kabelbinder. Ein Motor. Irgendwann ein Rolltor, das hinter euch herunterrattert.
+=> r3_go
+
+~ r3_go
+# TODO Effekt aus dem Prototyp: setTimeout(goBranx,100)
+…
+=> END
+
+~ or_0
+do GameState.set_flag("or")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Don Orango: *breitet die Arme aus* Willkommen bei den Nomapes. Hier gibt's Bier, Matratzen und keine Bullen. Setzt euch.
+- *Orango die Kassette geben* [if GameState.flag("hasTape") /]
+	=> or_tape
+- Warum helft ihr uns? [if not GameState.schon("or1") /]
+	do GameState.einmal("or1")
+	=> or_1
+- Wer ist Malcolm Snax? [if GameState.flag("snaxHeard") and not GameState.schon("or2") /]
+	do GameState.einmal("or2")
+	=> or_2
+- Was willst du von uns? [if not GameState.flag("auftrag") /]
+	=> or_3
+- (Einsicht 15) *Den Don genau beobachten* [if not GameState.schon("or4") /]
+	do GameState.einmal("or4")
+	if GameState.probe("corvin", "Einsicht", 15)
+		=> or_4
+	else
+		=> or_4f
+- Später.
+	=> END
+
+~ or_1
+Don Orango: Helfen? *lacht* Die Nomapes helfen niemandem. Der Feind meines Feindes ist mein Freund, Fuchs. Und die Kätzchen sind meine Feinde. Bis zum letzten Schnurrhaar.
+=> or_1b
+
+~ or_1b
+do GameState.set_flag("snaxHeard")
+Don Orango: Außerdem … es gibt da jemanden. Malcolm Snax. Der war mal ganz oben und könnte diese Stadt verändern. Der bringt uns Geld und Macht. Und der mag keine Kätzchen. Noch nicht.
+if GameState.flag("heardTape") and not GameState.flag("tapeLinked")
+	=> tp_linkO
+else
+	=> or_0
+
+~ or_2
+do GameState.set_flag("snax")
+do EventBus.hinweis.emit("Spur: Malcolm Snax – Ziehsohn von Meister Pfötchen", "quest")
+Don Orango: Malcolm Snax. Ein Lux. Ziehsohn vom alten Pfötchen persönlich – der Perser, der auf dem Wollknäuel sitzt. Malcolm hat irgendwelche alten Tagebücher gelesen und will jetzt „Gleichheit für alle“. *spuckt* Mir egal, was er will. Er zahlt.
+=> or_2b
+
+~ or_2b
+Don Orango: Hier mal jemanden verschwinden lassen, da mal Angst einjagen. Das Übliche. *klopft auf den Knüppel* Aber er arbeitet auch mit den Kätzchen. Und das passt mir nicht.
+=> or_0
+
+~ or_3
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Don Orango: Adikatz muss weg. Nicht verprügelt. WEG. Solange der Tiger lebt, gehört die halbe Branx den Kätzchen. Ihr seid neu, keiner kennt euch – ihr kommt an ihn ran.
+- Wir machen es.
+	do GameState.ansehen_aendern("nomapes", 2)
+	do GameState.zuneigung_aendern("dig", -1)
+	do GameState.gesinnung_aendern("gut", -1)
+	=> or_3a
+- (Überzeugen 15) Für 200 Collar Vorschuss.
+	if GameState.probe("ren", "Überzeugen", 15)
+		=> or_3b
+	else
+		=> or_3c
+- Wir sind keine Mörder.
+	do GameState.gesinnung_aendern("gut", 1)
+	do GameState.zuneigung_aendern("dig", 1)
+	=> or_3d
+- Und wenn wir es nicht tun? [if GameState.flag("prisoner") /]
+	=> or_3e
+
+~ or_3a
+# TODO Effekt aus dem Prototyp: const other=side==='nomapes'?'Adikatz':'Don Orango'
+do GameState.set_flag("auftrag", side)
+do GameState.quest("branx", "Willkommen in der Branx", "Angekommen.", true, false)
+do GameState.quest("auftrag", "Der Auftrag", "", false, false)
+Don Orango: Gut. *wirft euch eine Schlüsselkarte zu* Ihr braucht einen Plan vom Lager der Kätzchen. Vincenzo Frankinetti – Flughörnchen, Kamera um den Hals – fotografiert die ganze Branx von oben. Findet ihn. In Cathattan.
+=> END
+
+~ or_3b
+do GameState.geld_aendern(100)
+do GameState.ansehen_aendern("nomapes", 1)
+Don Orango: *grinst breit* Hundert jetzt. Hundert, wenn der Tiger schweigt. *zählt Scheine auf den Tisch*
+=> or_3a
+
+~ or_3c
+Don Orango: Vorschuss? Der Vorschuss ist, dass ihr noch atmet.
+=> or_3a
+
+~ or_3d
+do GameState.set_flag("refusedOr")
+do GameState.quest("auftrag", "Der Auftrag", "Ihr habt den Mordauftrag abgelehnt – vorerst. Don Orango wartet.", false, false)
+Don Orango: *Stille. Dann lacht er* Keine Mörder. In der Branx. Schlaft eine Nacht drüber. Morgen sieht die Welt anders aus. Sie sieht hier immer anders aus.
+=> END
+
+~ or_3e
+Gorilla: *knackt mit allen zehn Fingern gleichzeitig*
+=> or_3e2
+
+~ or_3e2
+Don Orango: Dann bleibt ihr meine Gäste. Für immer. Also?
+=> or_3
+
+~ or_4
+Bei „Malcolm“ wandert der Blick des Dons kurz zur Tür. Corvin kennt das\: Der König der Branx hat Angst vor jemandem, der nicht hier ist.
+=> or_4b
+
+~ or_4b
+# TODO Effekt aus dem Prototyp: {setF('orFearsSnax');FX_.appr('corvin',1);}
+# TODO Effekt aus dem Prototyp: ()=>clue('Don Orango hat Angst vor Malcolm Snax')
+Corvin: *leise* Snax hält ihn an der Leine. Und Orango weiß es.
+=> or_0
+
+~ or_4f
+Der Don kratzt sich mit dem Knüppel am Rücken. Sonst verrät er nichts.
+=> or_0
+
+~ go_0
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Gorilla: *schiebt die Sonnenbrille hoch, mustert euch, schiebt sie wieder runter*
+=> END
+
+~ hw_m1
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Nomape: Snax? Der Typ mit den teuren Schuhen? Der war letzte Woche hier. Hat dem Don einen Umschlag gegeben.
+=> END
+
+~ hw_m2
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Nomape: Früher war die Branx eins. Dann kam der Krieg. Keiner weiß mehr genau, wer angefangen hat.
+=> END
+
+~ ad_0
+do GameState.set_flag("ad")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Adikatz: *nickt im Takt* Willkommen bei den Breaking Cats. Hier gilt Respekt. Wer ihn gibt, kriegt ihn. Esst was. Schlaft. Dann reden wir.
+- Wir haben etwas, das deinem Bruder gehört. [if GameState.flag("hasTape") /]
+	=> ad_tape
+- Pounce sagt, wir schulden euch was. [if GameState.flag("owesCats") and not GameState.flag("owesPaid") /]
+	=> ad_owe
+- Warum helft ihr uns? [if not GameState.schon("ad1") /]
+	do GameState.einmal("ad1")
+	=> ad_1
+- Wer ist Malcolm Snax? [if GameState.flag("snaxHeard") and not GameState.schon("ad2") /]
+	do GameState.einmal("ad2")
+	=> ad_2
+- Was willst du von uns? [if not GameState.flag("auftrag") /]
+	=> ad_3
+- Dein Bruder … was ist passiert? [if GameState.flag("knowTruth") or GameState.flag("s3talk") and not GameState.schon("ad5") /]
+	do GameState.einmal("ad5")
+	=> ad_5
+- (Einsicht 15) *Adikatz genau beobachten* [if not GameState.schon("ad4") /]
+	do GameState.einmal("ad4")
+	if GameState.probe("corvin", "Einsicht", 15)
+		=> ad_4
+	else
+		=> ad_4f
+- Später.
+	=> END
+
+~ ad_1
+do GameState.set_flag("snaxHeard")
+Adikatz: Weil Don Orango euch sonst gefressen hätte. Und weil es da jemanden gibt, der die Straße respektiert. Malcolm Snax. Der war mal ganz oben. Der sagt, die Branx gehört denen, die hier leben. Nicht den Sofa-Katzen.
+if GameState.flag("heardTape") and not GameState.flag("tapeLinked")
+	=> tp_linkA
+else
+	=> ad_0
+
+~ ad_2
+do GameState.set_flag("snax")
+do EventBus.hinweis.emit("Spur: Malcolm Snax – ein Lux, losgesagt vom Orden", "quest")
+Adikatz: Malcolm. Malcolm Snax. Ein Lux, aufgewachsen beim alten Pfötchen, im Orden. Hat sich losgesagt. Er hat Bücher gelesen, die keiner lesen soll, und will, dass alle das Gleiche kriegen. *dreht an der Boombox* Er hört zu. Das macht sonst keiner.
+=> ad_2b
+
+~ ad_2b
+Adikatz: Klar, er bezahlt auch die Affen. Für die Jobs, bei denen man sich die Hände schmutzig macht. Das gefällt mir nicht. Aber er hat seine Gründe. Sagt er.
+=> ad_0
+
+~ ad_3
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Adikatz: *macht die Musik aus* Don Orango. Solange der Affe lebt, schlägt sich die Branx die Köpfe ein. Ihr seid Fremde. Keiner rechnet mit euch. Ihr bringt das zu Ende.
+- Wir machen es.
+	do GameState.ansehen_aendern("cats", 2)
+	do GameState.zuneigung_aendern("dig", -1)
+	do GameState.gesinnung_aendern("gut", -1)
+	=> ad_3a
+- (Überzeugen 14) Und was springt dabei raus?
+	if GameState.probe("ren", "Überzeugen", 14)
+		=> ad_3b
+	else
+		=> ad_3c
+- Wir sind keine Mörder.
+	do GameState.gesinnung_aendern("gut", 1)
+	do GameState.zuneigung_aendern("dig", 1)
+	=> ad_3d
+
+~ ad_3a
+# TODO Effekt aus dem Prototyp: const other=side==='nomapes'?'Adikatz':'Don Orango'
+do GameState.set_flag("auftrag", side)
+do GameState.quest("branx", "Willkommen in der Branx", "Angekommen.", true, false)
+do GameState.quest("auftrag", "Der Auftrag", "", false, false)
+Adikatz: Respekt. Ihr braucht einen Plan vom Lager der Affen. Vincenzo Frankinetti, das Flughörnchen mit der Kamera – der hat die ganze Branx von oben fotografiert. Er hängt in Cathattan rum. Findet ihn.
+=> END
+
+~ ad_3b
+do GameState.geld_aendern(60)
+do GameState.ansehen_aendern("cats", 1)
+Adikatz: Eine Straße, in der ihr nie wieder Miete zahlt. Und ein Platz am Tisch der Breaking Cats. *drückt euch 60 Collar in die Pfote* Und das hier für den Anfang.
+=> ad_3a
+
+~ ad_3c
+Adikatz: Rausspringen? Der Frieden, Fuchs. Das ist alles.
+=> ad_3a
+
+~ ad_3d
+do GameState.set_flag("refusedAd")
+do GameState.quest("auftrag", "Der Auftrag", "Ihr habt den Mordauftrag abgelehnt – vorerst. Adikatz wartet.", false, false)
+Adikatz: … *lange Pause* Das respektier ich. Wirklich. Aber Respekt hält den Affen nicht auf. Schlaft drüber.
+=> END
+
+~ ad_4
+Adikatz spricht über Malcolm wie über einen großen Bruder. Corvin sieht die Hand des Tigers zur Boombox wandern, als er „Bruder“ denkt. Die Wunde ist frisch.
+=> ad_4b
+
+~ ad_4b
+# TODO Effekt aus dem Prototyp: {setF('adTrustsSnax');FX_.appr('corvin',1);}
+# TODO Effekt aus dem Prototyp: ()=>clue('Adikatz vertraut Malcolm Snax blind')
+Corvin: *leise* Er vertraut Snax blind. Und er trauert. Eine gefährliche Mischung.
+=> ad_0
+
+~ ad_4f
+Adikatz wippt im Takt. Sein Gesicht ist ein Beat, den ihr nicht lesen könnt.
+=> ad_0
+
+~ ad_5
+do GameState.set_flag("brotherKnaeuel")
+do EventBus.hinweis.emit("Spur: Adikatz' Bruder fragte nach dem Knäuel – und verschwand", "quest")
+do GameState.zuneigung_aendern("corvin", 1)
+Adikatz: Mein kleiner Bruder, Riff, hat Musik gemacht. Auf genau diesem Ghettoblaster. Vor zwei Monaten ist er nicht nach Hause gekommen. Die Bullen sagen: Bandenkrieg. *leise* Er war in keiner Bande. Er hat nur zu laut nach dem Knäuel gefragt.
+=> ad_0
+
+~ ho_m1
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Rex: Die Affen fahren, wir tanzen. Rate mal, wer mehr Spaß hat.
+=> END
+
+~ ho_m2
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Lola: Früher war die Branx eins. Dann kam der Krieg. Keiner weiß mehr, wer angefangen hat.
+=> END
+
+~ hq_sleep
+Eine durchgelegene Matratze. Irgendwo tropft ein Rohr. Trotzdem\: Schlafen?
+- Schlafen bis zum Morgen.
+	=> hq_sleep2
+- Noch nicht.
+	=> END
+
+~ hq_sleep2
+# TODO Effekt aus dem Prototyp: for(const u of party)u.hp=u.max
+# TODO Effekt aus dem Prototyp: outsideKey='morning'
+do GameState.set_flag("slept")
+do EventBus.hinweis.emit("Die Gruppe ist ausgeruht (volle TP)", "quest")
+# TODO Effekt aus dem Prototyp: if(typeof saveGame==='function')setTimeout(()=>saveGame('auto',true),500)
+# TODO Effekt aus dem Prototyp: };()=>{GAME.day=(GAME.day||0)+1
+do EventBus.ereignis.emit("checkShift")
+# TODO Effekt aus dem Prototyp: if(shiftOpen())toast('Heute Abend: <b>Schicht im Cuckoo\'s Nest</b>','quest')
+Ihr schlaft wie Steine. Als ihr aufwacht, fällt graues Morgenlicht durch die Oberlichter.
+=> END
+
+~ hq_eat
+# TODO Effekt aus dem Prototyp: for(const u of party)u.hp=Math.min(u.max,u.hp+6)
+do EventBus.hinweis.emit("+6 TP", "quest")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Auf dem Tisch\: Pizza von gestern, Limo, Thunfisch aus der Dose. Ihr esst.
+=> END
+
+~ or_nephew
+do GameState.set_flag("nephewJoke")
+do GameState.ansehen_aendern("nomapes", 1)
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Don Orango: *mustert Ren von oben bis unten* Mein NEFFE, ja? Knuckles erzählt das jedem. Ein Fuchs! In MEINER Familie! *dröhnendes Lachen, der Gorilla lacht pflichtschuldig mit* … Wobei. Wenn ich mir Nugget so ansehe …
+=> or_0
+
+~ ad_owe
+Adikatz: Bei den Breaking Cats bezahlt man Schulden. Mit Kohle oder mit Respekt. Was darf's sein?
+- Hier, 20 Collar. [if GameState.geld>=20 /]
+	do GameState.geld_aendern(-20)
+	=> ad_owe1
+- (Akrobatik 12) *Ren tanzt eine Runde für die Crew*
+	if GameState.probe("ren", "Akrobatik", 12)
+		=> ad_owe2
+	else
+		=> ad_owe3
+- Wir schulden niemandem was.
+	=> ad_owe4
+
+~ ad_owe1
+do GameState.set_flag("owesPaid")
+do GameState.ansehen_aendern("cats", 1)
+Adikatz: *steckt die Scheine weg* Sauber. Wir sind quitt.
+=> ad_0
+
+~ ad_owe2
+do GameState.set_flag("owesPaid")
+do GameState.ansehen_aendern("cats", 2)
+Adikatz: *die Crew johlt* Respekt, Fuchs. Wir sind quitt.
+=> ad_0
+
+~ ad_owe3
+Adikatz: *lacht* Das war nichts. Kohle ist auch okay.
+=> ad_owe
+
+~ ad_owe4
+do GameState.set_flag("owesPaid")
+do GameState.ansehen_aendern("cats", -2)
+Adikatz: *macht die Musik aus* … Notiert.
+=> ad_0
+
+~ or_tapeAsk
+do GameState.set_flag("orTapeAsk")
+Don Orango: Nugget sagt, ihr habt ein Band. Eins, das mir gehört.
+- *Die Kassette rausrücken*
+	=> or_tape
+- (Täuschen 16) Welches Band?
+	if GameState.probe("ren", "Täuschen", 16)
+		=> or_tapeOk
+	else
+		=> or_tapeNo
+
+~ or_tapeOk
+Don Orango: *lange Pause* … Nugget sieht Gespenster. Vergesst es.
+=> or_0
+
+~ or_tapeNo
+do GameState.set_flag("hasTape", 0)
+do GameState.set_flag("tapeToOr")
+do GameState.ansehen_aendern("nomapes", -1)
+do EventBus.hinweis.emit("Verloren: Lil' Riffs Kassette", "quest")
+Gorilla: *greift wortlos in Rens Jacke und zieht die Kassette heraus*
+=> or_tape2
+
+~ or_tape
+do GameState.set_flag("hasTape", 0)
+do GameState.set_flag("tapeToOr")
+do GameState.geld_aendern(50)
+do GameState.ansehen_aendern("nomapes", 2)
+do GameState.zuneigung_aendern("dig", -1)
+Don Orango: *nimmt das Band, wiegt es in der Pranke* … Gut. Sehr gut. Das hier hat nie existiert, verstanden?
+=> or_tape2
+
+~ or_tape2
+do GameState.notiz("Don Orango sammelt Lil' Riffs Band für Malcolm Snax ein")
+Corvin: *leise* Er hat es nicht mal angehört. Er wusste, was drauf ist. Und für wen er es aufhebt.
+=> or_0
+
+~ ad_tape
+Adikatz legt die Kassette in die Boombox auf seiner Schulter. Der Beat setzt ein. „Lil' Riff, Take drei …“ Die Ohren des Tigers zucken. Er hört bis zum Rauschen, ohne sich zu bewegen.
+=> ad_tape2
+
+~ ad_tape2
+Adikatz: *sehr leise* Das ist Riff. Das ist sein Beat. … Und das ist Malcolm.
+=> ad_tape3
+
+~ ad_tape3
+do GameState.set_flag("hasTape", 0)
+do GameState.set_flag("tapeToAd")
+do GameState.set_flag("adDoubtsSnax")
+do GameState.ansehen_aendern("cats", 2)
+do GameState.zuneigung_aendern("corvin", 1)
+do GameState.zuneigung_aendern("dig", 1)
+do GameState.notiz("Adikatz zweifelt an Malcolm Snax")
+Adikatz: *schaltet aus* „Die Katzen glauben an mich.“ *lange Stille* … Ich hab ihm geglaubt, Fuchs. Ich hab ihm wirklich geglaubt.
+=> ad_0
+
+~ tp_linkO
+do GameState.set_flag("tapeLinked")
+do GameState.notiz("Der Malcolm auf Lil' Riffs Band ist vermutlich Malcolm Snax")
+Corvin: *leise, nur für Ren und Dig* Malcolm. Wie auf dem Band.
+=> or_0
+
+~ tp_linkA
+do GameState.set_flag("tapeLinked")
+do GameState.notiz("Der Malcolm auf Lil' Riffs Band ist vermutlich Malcolm Snax")
+Corvin: *leise, nur für Ren und Dig* Malcolm. Wie auf dem Band.
+=> ad_0

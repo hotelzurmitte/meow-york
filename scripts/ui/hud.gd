@@ -1,4 +1,6 @@
 extends CanvasLayer
+
+signal ueberspringen
 ## Anzeige: Geld, Steuerungshinweis, „F – …“-Hinweis in der Nähe, Einblendungen und Meldungen.
 
 var _geld: Label
@@ -47,3 +49,30 @@ func _process(dt: float) -> void:
 			var d: float = Vector2(n.global_position.x - s.global_position.x, n.global_position.z - s.global_position.z).length()
 			if d < bd: bd = d; best = n
 		if best: _hinweis.text = "F – " + best.hinweis
+
+# ---------- Kapitelkarte, Abblenden, Überspringen ----------
+var _blende: ColorRect
+var _skip: Button
+
+func kapitelkarte(titel: String, unter: String) -> void:
+	var box := VBoxContainer.new(); box.anchor_left = 0.5; box.anchor_right = 0.5; box.anchor_top = 0.38
+	box.offset_left = -400; box.offset_right = 400; box.alignment = BoxContainer.ALIGNMENT_CENTER
+	var u := Label.new(); u.text = unter; u.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER; u.add_theme_font_size_override("font_size", 16)
+	var t := Label.new(); t.text = titel; t.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER; t.add_theme_font_size_override("font_size", 44)
+	for l in [u, t]:
+		l.add_theme_color_override("font_outline_color", Color(0, 0, 0)); l.add_theme_constant_override("outline_size", 8); box.add_child(l)
+	box.modulate.a = 0.0; add_child(box)
+	var tw := create_tween(); tw.tween_property(box, "modulate:a", 1.0, 0.8); tw.tween_interval(2.0); tw.tween_property(box, "modulate:a", 0.0, 0.6); tw.tween_callback(box.queue_free)
+
+func abblenden(dauer := 0.5) -> void:
+	if _blende == null:
+		_blende = ColorRect.new(); _blende.color = Color(0, 0, 0, 0); _blende.set_anchors_preset(Control.PRESET_FULL_RECT)
+		_blende.mouse_filter = Control.MOUSE_FILTER_IGNORE; add_child(_blende)
+	var tw := create_tween(); tw.tween_property(_blende, "color:a", 1.0, dauer)
+	await tw.finished
+
+func zeige_ueberspringen(an: bool) -> void:
+	if _skip == null:
+		_skip = Button.new(); _skip.text = "Szene überspringen"; _skip.anchor_left = 1; _skip.anchor_right = 1; _skip.offset_left = -190; _skip.offset_top = 12; _skip.offset_right = -14
+		_skip.pressed.connect(func(): ueberspringen.emit()); add_child(_skip)
+	_skip.visible = an

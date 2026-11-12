@@ -1,0 +1,226 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/story/fahrt.gd" id="1_8n4o2"]
+[ext_resource type="Script" path="res://scripts/world/stimmung.gd" id="2_j6nfb"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_0.glb" id="3_0bt1r"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_1.glb" id="4_yfj1c"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_2.glb" id="5_sehwf"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_3.glb" id="6_w5wgu"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_4.glb" id="7_yiwvj"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_5.glb" id="8_mxbyr"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_6.glb" id="9_sgmbn"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_7.glb" id="10_i6ilw"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_8.glb" id="11_s1v10"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_9.glb" id="12_p4byt"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_10.glb" id="13_wlsko"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_11.glb" id="14_e75jj"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_12.glb" id="15_lxs5m"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_13.glb" id="16_kicts"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_14.glb" id="17_5118y"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_15.glb" id="18_fftqf"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_16.glb" id="19_x1io7"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_17.glb" id="20_gtr6d"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_18.glb" id="21_f64ed"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_19.glb" id="22_ow3l8"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_20.glb" id="23_bynr2"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_21.glb" id="24_t4xgn"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Kulisse_22.glb" id="25_tm4rt"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Bruecke.glb" id="26_a70pr"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Bar.glb" id="27_l6us5"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Auto.glb" id="28_3ddx2"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Strasse.glb" id="29_gf2qc"]
+[ext_resource type="PackedScene" path="res://assets/world/fahrt/teile/Boden_27.glb" id="30_vax64"]
+[ext_resource type="Script" path="res://scripts/world/kamera.gd" id="31_q6li3"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="32_rlsp1"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="33_e5mt8"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="34_esj62"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="35_qaku6"]
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="36_jy2d5"]
+
+[sub_resource type="Environment" id="Environment_8ij1r"]
+background_mode = 1
+ambient_light_source = 2
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+
+[sub_resource type="Resource" id="Resource_rdvgs"]
+script = ExtResource("34_esj62")
+
+[sub_resource type="Resource" id="Resource_8flkx"]
+script = ExtResource("35_qaku6")
+fov = 30.0
+far = 600.0
+
+[node name="Fahrt" type="Node3D" unique_id=1098938404]
+script = ExtResource("1_8n4o2")
+
+[node name="Stimmung" type="WorldEnvironment" parent="." unique_id=2146261894]
+environment = SubResource("Environment_8ij1r")
+script = ExtResource("2_j6nfb")
+voreinstellung = "day"
+
+[node name="Sonne" type="DirectionalLight3D" parent="." unique_id=309638557]
+shadow_enabled = true
+directional_shadow_max_distance = 80.0
+
+[node name="Kulissen" type="Node3D" parent="." unique_id=1143482961]
+
+[node name="Kulisse_0" type="Node3D" parent="Kulissen" unique_id=616274176 instance=ExtResource("3_0bt1r")]
+metadata/basis_x = -70.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_1" type="Node3D" parent="Kulissen" unique_id=490251732 instance=ExtResource("4_yfj1c")]
+metadata/basis_x = -57.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_2" type="Node3D" parent="Kulissen" unique_id=1319088169 instance=ExtResource("5_sehwf")]
+metadata/basis_x = -44.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_3" type="Node3D" parent="Kulissen" unique_id=1015945798 instance=ExtResource("6_w5wgu")]
+metadata/basis_x = -31.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_4" type="Node3D" parent="Kulissen" unique_id=348110983 instance=ExtResource("7_yiwvj")]
+metadata/basis_x = -18.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_5" type="Node3D" parent="Kulissen" unique_id=242370679 instance=ExtResource("8_mxbyr")]
+metadata/basis_x = -5.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_6" type="Node3D" parent="Kulissen" unique_id=922049497 instance=ExtResource("9_sgmbn")]
+metadata/basis_x = 8.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_7" type="Node3D" parent="Kulissen" unique_id=1208630219 instance=ExtResource("10_i6ilw")]
+metadata/basis_x = 21.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_8" type="Node3D" parent="Kulissen" unique_id=1943470876 instance=ExtResource("11_s1v10")]
+metadata/basis_x = 34.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_9" type="Node3D" parent="Kulissen" unique_id=1471780951 instance=ExtResource("12_p4byt")]
+metadata/basis_x = 47.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_10" type="Node3D" parent="Kulissen" unique_id=216763984 instance=ExtResource("13_wlsko")]
+metadata/basis_x = 60.0
+metadata/span = 140.0
+metadata/k = 1.0
+
+[node name="Kulisse_11" type="Node3D" parent="Kulissen" unique_id=1902937412 instance=ExtResource("14_e75jj")]
+metadata/basis_x = -90.0
+metadata/span = 210.0
+metadata/k = 0.18
+
+[node name="Kulisse_12" type="Node3D" parent="Kulissen" unique_id=2067028514 instance=ExtResource("15_lxs5m")]
+metadata/basis_x = -60.0
+metadata/span = 210.0
+metadata/k = 0.18
+
+[node name="Kulisse_13" type="Node3D" parent="Kulissen" unique_id=1780430712 instance=ExtResource("16_kicts")]
+metadata/basis_x = -30.0
+metadata/span = 210.0
+metadata/k = 0.18
+
+[node name="Kulisse_14" type="Node3D" parent="Kulissen" unique_id=1158325546 instance=ExtResource("17_5118y")]
+metadata/basis_x = 0.0
+metadata/span = 210.0
+metadata/k = 0.18
+
+[node name="Kulisse_15" type="Node3D" parent="Kulissen" unique_id=1822811763 instance=ExtResource("18_fftqf")]
+metadata/basis_x = 30.0
+metadata/span = 210.0
+metadata/k = 0.18
+
+[node name="Kulisse_16" type="Node3D" parent="Kulissen" unique_id=1724409872 instance=ExtResource("19_x1io7")]
+metadata/basis_x = 60.0
+metadata/span = 210.0
+metadata/k = 0.18
+
+[node name="Kulisse_17" type="Node3D" parent="Kulissen" unique_id=296832429 instance=ExtResource("20_gtr6d")]
+metadata/basis_x = 90.0
+metadata/span = 210.0
+metadata/k = 0.18
+
+[node name="Kulisse_18" type="Node3D" parent="Kulissen" unique_id=745581728 instance=ExtResource("21_f64ed")]
+metadata/basis_x = 1040.0
+metadata/span = 150.0
+metadata/k = 1.15
+
+[node name="Kulisse_19" type="Node3D" parent="Kulissen" unique_id=967535973 instance=ExtResource("22_ow3l8")]
+metadata/basis_x = 1070.0
+metadata/span = 150.0
+metadata/k = 1.15
+
+[node name="Kulisse_20" type="Node3D" parent="Kulissen" unique_id=2083404449 instance=ExtResource("23_bynr2")]
+metadata/basis_x = 1100.0
+metadata/span = 150.0
+metadata/k = 1.15
+
+[node name="Kulisse_21" type="Node3D" parent="Kulissen" unique_id=494368516 instance=ExtResource("24_t4xgn")]
+metadata/basis_x = 1130.0
+metadata/span = 150.0
+metadata/k = 1.15
+
+[node name="Kulisse_22" type="Node3D" parent="Kulissen" unique_id=697727172 instance=ExtResource("25_tm4rt")]
+metadata/basis_x = 1160.0
+metadata/span = 150.0
+metadata/k = 1.15
+
+[node name="Bruecke" type="Node3D" parent="Kulissen" unique_id=710968526 instance=ExtResource("26_a70pr")]
+metadata/basis_x = 70.0
+metadata/stueck = true
+metadata/start_x = 70.0
+
+[node name="Bar" type="Node3D" parent="Kulissen" unique_id=526316744 instance=ExtResource("27_l6us5")]
+metadata/basis_x = 70.0
+metadata/stueck = true
+metadata/start_x = 70.0
+
+[node name="Auto" type="Node3D" parent="Kulissen" unique_id=85219280 instance=ExtResource("28_3ddx2")]
+metadata/basis_x = 1100.0
+
+[node name="Strasse" type="Node3D" parent="Kulissen" unique_id=1442088806 instance=ExtResource("29_gf2qc")]
+metadata/basis_x = 1100.0
+
+[node name="Boden_27" type="Node3D" parent="Kulissen" unique_id=118565835 instance=ExtResource("30_vax64")]
+metadata/basis_x = 1100.0
+
+[node name="Fokus" type="Marker3D" parent="." unique_id=564955130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3.4)
+
+[node name="Kamerasystem" type="Node3D" parent="." unique_id=1198860840 groups=["kamera"]]
+script = ExtResource("31_q6li3")
+ziel_pfad = NodePath("../Fokus")
+zoom = 1.4
+steuerbar = false
+
+[node name="Kamera" type="Camera3D" parent="Kamerasystem" unique_id=1444602028]
+current = true
+far = 600.0
+
+[node name="PhantomCameraHost" type="Node" parent="Kamerasystem/Kamera" unique_id=1203078031]
+script = ExtResource("32_rlsp1")
+
+[node name="SpielKamera" type="Node3D" parent="Kamerasystem" unique_id=1043669185]
+script = ExtResource("33_e5mt8")
+priority = 10
+tween_resource = SubResource("Resource_rdvgs")
+camera_3d_resource = SubResource("Resource_8flkx")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=587368079]
+script = ExtResource("36_jy2d5")

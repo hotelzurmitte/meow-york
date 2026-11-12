@@ -1,0 +1,697 @@
+# Aus dem Prototyp konvertiert (2026-11-12). TODO-Stellen von Hand prüfen.
+
+~ bk_0
+do GameState.set_flag("bk")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Nomape-Biker: Finger weg von den Maschinen, Rotpelz. Das sind Nomapes-Bikes.
+- Schicke Harleys. Selbst geschraubt? [if not GameState.schon("bk1") /]
+	do GameState.einmal("bk1")
+	do GameState.ansehen_aendern("nomapes", 1)
+	=> bk_1
+- (Einschüchtern 13) Ich fass an, was ich will. [if not GameState.schon("bk2") /]
+	do GameState.einmal("bk2")
+	if GameState.probe("ren", "Einschüchtern", 13)
+		=> bk_2
+	else
+		=> bk_3
+- (Straßenwissen 12) Nomapes … ihr hängt im Cuckoo's Nest ab, oder? [if not GameState.schon("bk3") /]
+	do GameState.einmal("bk3")
+	if GameState.probe("corvin", "Straßenwissen", 12)
+		=> bk_4
+	else
+		=> bk_5
+- Schon gut. Wir gehen ja schon.
+	=> END
+
+~ bk_1
+do GameState.set_flag("knowNugget")
+do EventBus.hinweis.emit("Hinweis: Nugget im Cuckoo's Nest", "quest")
+Nomape-Biker: Jede Schraube. Jeder Tropfen Chrom. *streicht über den Tank* Wenn ihr Arbeit sucht: Fragt drinnen nach Nugget. Aber benehmt euch.
+=> bk_0
+
+~ bk_2
+# TODO Effekt aus dem Prototyp: {FX_.rep('nomapes',1);FX_.align('law',-1);FX_.appr('corvin',-1);}
+# TODO Effekt aus dem Prototyp: ()=>setF('bkCowed')
+Nomape-Biker: *schluckt* … Okay, okay. Ganz ruhig. Du hast Mumm, Fuchs, das muss man dir lassen.
+=> END
+
+~ bk_3
+do GameState.ansehen_aendern("nomapes", -1)
+# TODO Effekt aus dem Prototyp: ()=>setF('bkMock')
+Nomape-Biker: *lacht* Süß. Noch so ein Spruch, und du kratzt deine Zähne vom Asphalt.
+=> END
+
+~ bk_4
+do GameState.set_flag("knowNugget")
+do GameState.zuneigung_aendern("corvin", 1)
+do EventBus.hinweis.emit("Hinweis: Nugget im Cuckoo's Nest", "quest")
+Nomape-Biker: Kluger Vogel. Ja. Nugget hat drinnen das Sagen, solange der Don nicht da ist. Graues Fell, Narbe überm Auge. Wenn ihr Kohle braucht – Nugget hat immer was.
+=> bk_0
+
+~ bk_5
+Nomape-Biker: Wer will das wissen? Bist du ein Bulle mit Federn?
+=> bk_0
+
+~ bc_0
+do GameState.set_flag("bc")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Pounce: Yo! Das ist unser Floor. Wollt ihr zusehen oder mitmachen?
+- Ich will das wiedergutmachen. [if (GameState.flag("stoleBoom") or GameState.flag("beatCats")) and not GameState.flag("catsMadeUp") /]
+	=> bc_mk
+# TODO Bedingung der nächsten Antwort im Prototyp: !catsAngry()&&(!if0||if0())
+- Nugget plant, euch den Ghettoblaster heute Nacht abzunehmen. Was ist euch die Warnung wert? [if true and not GameState.schon("bcS") /]
+	do GameState.einmal("bcS")
+	=> bc_sell
+# TODO Bedingung der nächsten Antwort im Prototyp: !catsAngry()&&(!if0||if0())
+- Ihr seid gut. Wer seid ihr? [if true and not GameState.schon("bc1") /]
+	do GameState.einmal("bc1")
+	=> bc_1
+# TODO Bedingung der nächsten Antwort im Prototyp: !catsAngry()&&(!if0||if0())
+- (Wahrnehmung 13) *Die Umgebung absuchen* [if true and not GameState.schon("bc2") /]
+	do GameState.einmal("bc2")
+	if GameState.probe("corvin", "Wahrnehmung", 13)
+		=> bc_2
+	else
+		=> bc_3
+# TODO Bedingung der nächsten Antwort im Prototyp: !catsAngry()&&(!if0||if0())
+- Der goldene Ghettoblaster. Nugget will ihn zurück. [if true /]
+	=> bc_10
+# TODO Bedingung der nächsten Antwort im Prototyp: !catsAngry()&&(!if0||if0())
+- Hier. Euer Ghettoblaster. Er gehört euch. [if true /]
+	=> bc_20
+- Weitermachen.
+	=> END
+
+~ bc_1
+Pounce: Die Breaking Cats. Ich bin Pounce. Der auf dem Kopf da ist Spotz. Wir breaken nur – niemand stört, keiner wird gestört.
+=> bc_1b
+
+~ bc_1b
+do GameState.set_flag("pounceRef")
+do GameState.ansehen_aendern("cats", 1)
+do EventBus.hinweis.emit("Hinweis: Aushilfe im Cuckoo's Nest – frag Hummel", "quest")
+Pounce: Wenn ihr Kohle braucht: In der Bar drüben suchen sie eine Aushilfe. Sagt Hummel, Pounce schickt euch.
+=> bc_0
+
+~ bc_2
+do EventBus.ereignis.emit("revealJag")
+do GameState.zuneigung_aendern("corvin", 1)
+Corvin legt den Kopf schief. Oben auf dem Dach des Kiosks liegt ein Jaguar flach auf dem Bauch – ein dickes Veilchen am Auge, den Blick fest auf euch.
+=> bc_2b
+
+~ bc_2b
+Corvin: Euer Späher da oben ist nicht halb so unsichtbar, wie er denkt.
+=> bc_2c
+
+~ bc_2c
+do GameState.ansehen_aendern("cats", 1)
+Pounce: *grinst* Das ist Shiner. Passt auf, dass uns keine Nomapes überraschen. Respekt, Vogel.
+=> bc_0
+
+~ bc_3
+Ihr seht Tauben, Pappe und einen goldenen Ghettoblaster, der den Takt in die Nacht pumpt. Sonst nichts.
+=> bc_0
+
+~ bc_10
+do GameState.set_flag("knowTruth")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Pounce: ZURÜCK?! Nugget hat ihn UNS geklaut! Das Ding gehörte Adikatz' kleinem Bruder. Wir haben ihn uns nur wiedergeholt.
+- (Überzeugen 16) Gebt ihn mir. Ich regle das mit Nugget – ohne dass jemand blutet. [if not GameState.schon("bc11") /]
+	do GameState.einmal("bc11")
+	if GameState.probe("ren", "Überzeugen", 16)
+		=> bc_11
+	else
+		=> bc_12
+- (Akrobatik 14) Dance-Off. Wenn ich gewinne, gehört er mir. [if not GameState.schon("bc13") /]
+	do GameState.einmal("bc13")
+	if GameState.probe("ren", "Akrobatik", 14)
+		=> bc_13
+	else
+		=> bc_14
+- (Fingerfertigkeit 15) *Unauffällig zum Ghettoblaster schleichen …* [if not GameState.schon("bc15") /]
+	do GameState.einmal("bc15")
+	if GameState.probe("ren", "Fingerfertigkeit", 15)
+		=> bc_15
+	else
+		=> bc_16
+- Dann holen wir ihn uns eben.
+	do GameState.gesinnung_aendern("gut", -1)
+	do GameState.zuneigung_aendern("corvin", -1)
+	=> bc_f
+- Nugget hat gelogen. Behaltet ihn.
+	=> bc_17
+- Ich denk drüber nach.
+	=> END
+
+~ bc_11
+do EventBus.ereignis.emit("giveBoom")
+do GameState.set_flag("owesCats")
+do GameState.set_flag("catsDone")
+do GameState.zuneigung_aendern("corvin", 1)
+Pounce: … Du hast ehrliche Augen, Fuchs. Gut. Nimm ihn. Aber wenn das schiefgeht, schuldest du den Breaking Cats was.
+=> END
+
+~ bc_12
+Pounce: Netter Versuch. Nein.
+=> bc_10
+
+~ bc_13
+Ren lässt sich fallen, wirbelt auf einer Hand, der Schweif zieht einen Kreis – und friert in einem Freeze ein, exakt auf dem Beat.
+=> bc_13b
+
+~ bc_13b
+do EventBus.ereignis.emit("giveBoom")
+do GameState.set_flag("catsDone")
+do GameState.ansehen_aendern("cats", 1)
+do GameState.zuneigung_aendern("dig", 1)
+Pounce: WAS?! … Okay. Okay! Deal ist Deal. Nimm das Ding, bevor ich's mir anders überlege.
+=> END
+
+~ bc_14
+Ren dreht sich, verliert den Halt und landet mit dem Hintern auf der Pappe. Spotz pfeift anerkennend – oder spöttisch.
+=> bc_14b
+
+~ bc_14b
+Pounce: Hahaha! Komm wieder, wenn du laufen kannst, Kleiner.
+=> END
+
+~ bc_15
+do EventBus.ereignis.emit("giveBoom")
+do GameState.set_flag("catsDone")
+do GameState.set_flag("stoleBoom")
+do GameState.ansehen_aendern("cats", -2)
+do GameState.gesinnung_aendern("gesetz", -1)
+do GameState.gesinnung_aendern("gut", -1)
+do GameState.zuneigung_aendern("corvin", -1)
+Während Spotz auf dem Kopf kreiselt, greift Ren den Ghettoblaster – und ist um die Ecke, bevor der Beat aussetzt.
+=> END
+
+~ bc_16
+do EventBus.ereignis.emit("revealJag:true")
+Ren greift zu – genau in dem Moment, als Shiner vom Kioskdach springt.
+=> bc_16b
+
+~ bc_16b
+Pounce: DIEB! Breaking Cats – ZERLEGT SIE!
+=> bc_f
+
+~ bc_f
+do Kapitel.kampf(["puma","leo","jag"], "Breaking Cats")
+do GameState.set_flag("catsDone")
+do GameState.set_flag("beatCats")
+=> bc_fw
+
+~ bc_fw
+do GameState.set_flag("hasBoom")
+do GameState.set_flag("boomTaken")
+# TODO Effekt aus dem Prototyp: if(boombox)boombox.g.visible=false
+# TODO Effekt aus dem Prototyp: GAME.quest&&(GAME.quest.obj='Bring den Ghettoblaster zu Nugget ins Cuckoo\'s Nest.',GAME.quest.target='nugget')
+do EventBus.ereignis.emit("updateHUD")
+do EventBus.hinweis.emit("Erhalten: Goldener Ghettoblaster", "quest")
+Pounce hält sich die Rippen und winkt ab. Der goldene Ghettoblaster liegt neben der Pappe.
+=> END
+
+~ bc_17
+do GameState.set_flag("catsDone")
+do GameState.set_flag("sidedCats")
+do GameState.ansehen_aendern("cats", 2)
+do GameState.gesinnung_aendern("gut", 1)
+do GameState.zuneigung_aendern("corvin", 1)
+do GameState.zuneigung_aendern("dig", 1)
+# TODO Effekt aus dem Prototyp: GAME.quest.obj='Sag Nugget, dass die Breaking Cats den Ghettoblaster behalten.'
+# TODO Effekt aus dem Prototyp: GAME.quest.target='nugget'
+do EventBus.ereignis.emit("updateHUD")
+Pounce: … Ernsthaft? Du bist der Erste, der das sagt. Wenn Adikatz davon hört – ihr habt bei den Breaking Cats was gut.
+=> END
+
+~ bc_20
+# TODO Effekt aus dem Prototyp: {setF('hasBoom',0);if(boombox){boombox.g.visible=true;setF('boomTaken',0);}FX_.money(20);FX_.rep('cats',3);FX_.align('good',1);FX_.appr('dig',1); FX_.quest({id:
+do GameState.set_flag("boomTo", "cats")
+Pounce: Du … bringst ihn zurück? *dreht den Ghettoblaster in den Pfoten* Hier, 20 Collar. Nicht viel, aber ehrlich verdient. Die Breaking Cats vergessen das nicht.
+=> END
+
+~ leo_0
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Spotz: *dreht sich* Yo … yo … yo …
+=> END
+
+~ jag_0
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Shiner: Was guckst du? Noch nie 'n Veilchen gesehen? … Die Nomapes waren das. Drei gegen einen. Feiglinge.
+=> END
+
+~ bc_sell
+do GameState.set_flag("soldNomapes")
+do GameState.geld_aendern(20)
+do GameState.ansehen_aendern("cats", 1)
+# TODO Effekt aus dem Prototyp: if(F('soldCats'))setF('playedBoth')
+Pounce: *hört auf zu tanzen* … Danke für die Warnung, Fuchs. *drückt dir 20 Collar in die Pfote* Wir verstecken das Ding heute Nacht woanders. Und Shiner bleibt wach.
+=> bc_0
+
+~ iq_mira
+do GameState.set_flag("mira")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Motte Mira: Käferkäse! Frisch gereift im Kellerschacht! *flattert* Ihr seid neu. Seid ihr die, die Roach ausgenommen hat? Alle reden davon.
+- Alle reden davon? [if not GameState.schon("mi1") /]
+	do GameState.einmal("mi1")
+	=> iq_mira1
+- Was gibt es Neues im Viertel? [if not GameState.schon("mi2") /]
+	do GameState.einmal("mi2")
+	=> iq_mira2
+- Tschüss.
+	=> END
+
+~ iq_mira1
+Motte Mira: Hairlem ist klein, Schätzchen. Wenn hier einer niest, sagt jemand drei Straßen weiter Gesundheit. Und wenn ein Maulwurf zurückkommt … *zwinkert Big Dig zu*
+=> iq_mira
+
+~ iq_mira2
+do GameState.set_flag("coatsSeen")
+# TODO Effekt aus dem Prototyp: ()=>clue('Männer in guten Mänteln beobachten die Pilger in Hairlem')
+Motte Mira: Die Pilger werden mehr. Und die Männer in den guten Mänteln auch. Sie kaufen nie was. Sie gucken nur.
+=> iq_mira
+
+~ iq_gustl
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Grashüpfer Gustl: Probiert mal! Na gut, dann nicht.
+- Einen Becher, bitte. (1 Collar) [if GameState.geld>=1 /]
+	=> iq_gustl1
+- Nein danke.
+	=> END
+
+~ iq_gustl1
+do GameState.geld_aendern(-1)
+# TODO Effekt aus dem Prototyp: for(const u of party)u.hp=Math.min(u.max,u.hp+2)
+do EventBus.hinweis.emit("+2 TP", "quest")
+Grashüpfer Gustl: Prost! *der Saft schmeckt nach Wiese und Reue*
+=> END
+
+~ iq_honig
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Ameise Annegret: Honig, billig! … Na ja. Eigentlich ist der Honig für Hummel. Aber seit Roach hier rumfährt, trau ich mich nicht mehr allein zur Bar.
+- Wir bringen ihn hin. [if not GameState.flag("hasHoney") and not GameState.flag("honeyDone") /]
+	=> iq_honig1
+- Bis dann.
+	=> END
+
+~ iq_honig1
+do GameState.set_flag("hasHoney")
+do GameState.quest("honey", "Honig für Hummel", "Bring das Honigglas von Annegret zu Hummel ins Cuckoo's Nest.", false, true)
+do EventBus.hinweis.emit("Erhalten: Honigglas", "quest")
+Ameise Annegret: Wirklich? *drückt euch ein schweres Glas in die Pfoten* Hummel weiß Bescheid. Er zahlt euch was dafür.
+=> END
+
+~ iq_pips
+# TODO Effekt aus dem Prototyp: if(hasDig()&&(F('ilseDig')||F('digKnown')||F('roachKnowsDig')))setF('pips')
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Pips: *rennt im Kreis* Fang mich doch! … Du bist zu langsam, Fuchs!
+- *Big Dig zeigt Pips die Zeichnung* [if GameState.flag("mimiFound") and GameState.mitglied("dig") and not GameState.schon("pipsDraw") /]
+	do GameState.einmal("pipsDraw")
+	=> iq_pips2
+- *Big Dig kniet sich hin* Wo hat Mimi geschlafen? [if GameState.flag("pips") and not GameState.flag("mimiQuest") /]
+	=> iq_pips1
+- Lauf weiter, Kleiner.
+	=> END
+
+~ iq_pips1
+do GameState.set_flag("mimiQuest")
+do GameState.zuneigung_aendern("dig", 1)
+do GameState.quest("mimi", "Die Kleine aus der Mulberry Street", "Untersucht Mimis Pappkarton-Unterschlupf hinter Papa Roachs Garage (Südwesten).", false, true)
+Pips: Im Pappkarton hinter Roachs Garage! Da hat sie gemalt. Jeden Tag. Dann war sie weg, und ein Mann im guten Mantel hat den Karton durchsucht. Ich hab mich versteckt. Ich bin gut im Verstecken.
+=> END
+
+~ mimi_0
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Ein alter Pappkarton. Jemand hat darin gewohnt.
+- *Das Blatt auseinanderfalten* [if GameState.flag("mimiQuest") and not GameState.flag("mimiFound") /]
+	=> mimi_1
+- Weitergehen.
+	=> END
+
+~ mimi_1
+do GameState.set_flag("mimiFound")
+do GameState.quest("mimi", "Die Kleine aus der Mulberry Street", "Mimis Zeichnung gefunden: ein Mann im Mantel, ein Auto, das Wollknäuel. Wer hat sie mitgenommen?", false, true)
+do EventBus.hinweis.emit("Hinweis: Mimis Zeichnung – „Der Mann sagt, ich darf mit zum Knäuel“", "quest")
+Eine Kinderzeichnung\: eine große Gestalt im Mantel, ein Auto, und oben ein dicker Kreis mit Fäden – ein Wollknäuel. Darunter in krakeliger Schrift\: „DER MANN SAGT ICH DARF MIT ZUM KNEUL“.
+if GameState.mitglied("dig")
+	=> mimi_2
+else
+	=> END
+
+~ mimi_2
+do GameState.zuneigung_aendern("dig", 2)
+Big Dig: *faltet das Blatt sehr vorsichtig wieder zusammen und steckt es in die Brusttasche* … Ich find dich, Kleine.
+if GameState.mitglied("corvin")
+	=> mimi_3
+else
+	=> END
+
+~ mimi_3
+do GameState.set_flag("casesLink")
+# TODO Effekt aus dem Prototyp: ()=>clue('Mimis Zeichnung ähnelt Corvins Akte: Mantel, Auto, Knäuel')
+Corvin: *leise* Ein Mann im Mantel. Ein Auto. Das Knäuel. Das sieht aus wie meine Akte, Dig. Genau wie meine Akte.
+=> END
+
+~ iq_grimm
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Grille Grimm: *zittrige Stimme* Ein Collar für eine alte Grille? Ich erzähl euch auch was, das sonst keiner erzählt.
+- Hier. (1 Collar) [if GameState.geld>=1 and not GameState.flag("grimm") /]
+	do GameState.geld_aendern(-1)
+	do GameState.gesinnung_aendern("gut", 1)
+	=> iq_grimm1
+- (Überzeugen 12) Erzähl einfach. [if not GameState.flag("grimm") /]
+	if GameState.probe("ren", "Überzeugen", 12)
+		=> iq_grimm1
+	else
+		=> iq_grimm2
+- Heute nicht.
+	=> END
+
+~ iq_grimm1
+do GameState.set_flag("grimm")
+do EventBus.hinweis.emit("Hinweis: Die Insekten kämpften beim Aufstand mit", "quest")
+Grille Grimm: Die schwarze Pfote, die Faust gen Himmel – die haben die Unzähmbaren Biester gemalt, vor siebzig Jahren. Ich war ein Larvenkind damals. Die Biester haben die Insekten mitkämpfen lassen. Danach … danach waren wir Ungeziefer. Merkt euch das.
+=> END
+
+~ iq_grimm2
+Grille Grimm: Nix umsonst, Söhnchen. Nicht mal Geschichte.
+=> END
+
+~ bc_mk
+Pounce: Wiedergutmachen? *lacht bitter* Worte kosten nichts. Dance-Off. Gewinnst du, sind wir quitt. Verlierst du, verschwindest du von unserem Floor.
+- (Akrobatik 14) Dance-Off. Jetzt.
+	if GameState.probe("ren", "Akrobatik", 14)
+		=> bc_mk1
+	else
+		=> bc_mk2
+- Ein andermal.
+	=> END
+
+~ bc_mk1
+Ren lässt sich fallen, wirbelt auf einer Hand und friert exakt auf dem Beat ein. Spotz hört auf zu schmollen und pfeift.
+=> bc_mk1b
+
+~ bc_mk1b
+do GameState.set_flag("catsMadeUp")
+do GameState.ansehen_aendern("cats", 2)
+Pounce: *nickt langsam* … Okay. Quitt. Aber fass nie wieder was an, das dir nicht gehört.
+=> END
+
+~ bc_mk2
+Pounce: Hahaha! Komm wieder, wenn du laufen kannst.
+=> END
+
+~ iq_pips2
+Pips: Das ist von Mimi! Sie hat immer Knäuel gemalt. Immer. … Findest du sie, Big Dig? Versprochen?
+=> iq_pips3
+
+~ iq_pips3
+do GameState.zuneigung_aendern("dig", 1)
+Big Dig: *nickt langsam* Versprochen.
+=> END
+
+~ tp_0
+do GameState.set_flag("tapeSeen")
+Als Ren den Ghettoblaster schultert, klappert etwas im Kassettenfach.
+- *Auf Play drücken*
+	=> tp_1
+- Nicht jetzt.
+	do GameState.set_flag("tapeLeft")
+	=> END
+
+~ tp_1
+Ein Beat, roh und selbstgebastelt, mit Hall wie in einem Tunnel. Eine junge Stimme flüstert\: „Lil' Riff, Take drei …“ Dann mischen sich zwei andere Stimmen dazu. Der Beat läuft weiter.
+=> tp_2
+
+~ tp_2
+Kühle Stimme: Die Tagebücher sagen, es liegt noch da unten. Hundert Jahre, und keiner hat nachgesehen.
+=> tp_3
+
+~ tp_3
+Raue Stimme: Tagebücher. Märchen von alten Katzen. Der Meister sagt, es ist nur eine Legende.
+=> tp_4
+
+~ tp_4
+Kühle Stimme: Der Meister sagt vieles. Warum trägt er dann Tag und Nacht einen Schlüssel um den Hals? Für eine Legende?
+=> tp_5
+
+~ tp_5
+Raue Stimme: … Niemand kommt näher an ihn ran als du, Malcolm. Er hat dich aufgezogen wie sein eigenes Blut.
+=> tp_6
+
+~ tp_6
+Kühle Stimme: *lacht leise* Wie sein eigenes Blut. Ja. So kann man's sagen.
+=> tp_7
+
+~ tp_7
+Raue Stimme: Und die Gangs?
+=> tp_8
+
+~ tp_8
+Kühle Stimme: Die Affen erledigen meine Drecksarbeit, die Katzen glauben an mich. Keiner von beiden muss wissen, wofür.
+=> tp_9
+
+~ tp_9
+*Ein Knacken. Schritte.* „Da ist jemand.“ Der Beat bricht ab. Rauschen.
+=> tp_10
+
+~ tp_10
+do GameState.set_flag("heardTape")
+do GameState.zuneigung_aendern("corvin", 1)
+do EventBus.ereignis.emit("clue:TAPE_CLUE")
+Corvin: *leise* Ein Malcolm. Und einer, der von einem „Meister“ mit Schlüssel redet. Ich kenne keinen von beiden. Aber wer so redet, will nicht, dass ihn jemand hört. Vielleicht ist Nugget deshalb so scharf auf diesen Kasten.
+- *Die Kassette einstecken*
+	do GameState.set_flag("hasTape")
+	=> tp_11
+- *Die Kassette im Ghettoblaster lassen*
+	do GameState.set_flag("tapeLeft")
+	=> END
+
+~ tp_11
+do EventBus.hinweis.emit("Erhalten: Lil' Riffs Kassette", "quest")
+Big Dig: *brummt* Gut. Wer immer das Band will – er muss erst an uns vorbei.
+=> END
+
+~ gar_ant
+do GameState.set_flag("garAntMet")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Antonia: *mustert euch, dann ein schiefes Grinsen* Die Pilger aus der Gasse. Euer Geld ist weg, Fuchs. Und das hier ist Roachs Garage. Weitergehen.
+- (Täuschen 15) Roach sucht dich. Er wartet im Cuckoo's Nest – und er ist sauer. [if not GameState.schon("garBluff") /]
+	do GameState.einmal("garBluff")
+	if GameState.probe("ren", "Täuschen", 15)
+		=> gar_bluff1
+	else
+		=> gar_bluff2
+- (Einschüchtern 14) *Big Dig baut sich vor ihr auf* Gib uns den Schlüssel. [if GameState.mitglied("dig") and not GameState.schon("garScare") /]
+	do GameState.einmal("garScare")
+	if GameState.probe("dig", "Einschüchtern", 14)
+		=> gar_scare1
+	else
+		=> gar_scare2
+- Schon gut. Wir gehen.
+	=> END
+
+~ gar_bluff1
+do EventBus.ereignis.emit("antGone")
+do EventBus.hinweis.emit("Die Kellertür ist unbewacht – aber abgeschlossen.", "quest")
+Antonia: *kratzt sich am Fühler* … Im Cuckoo's? Jetzt? *flucht* Wenn ihr lügt, finde ich euch. *läuft los Richtung Avenue*
+=> END
+
+~ gar_bluff2
+# TODO Effekt aus dem Prototyp: if(ANT)ANT.cool=40
+Antonia: Roach schickt niemanden in den Keller. Niemals. *hält die Hand an den Gürtel* Verschwindet.
+=> END
+
+~ gar_scare1
+do GameState.set_flag("garageKey")
+do EventBus.ereignis.emit("antGone")
+do GameState.zuneigung_aendern("dig", 1)
+do EventBus.hinweis.emit("Erhalten: Kellerschlüssel", "quest")
+Antonia: *wirft den Schlüssel auf den Boden* N-nimm ihn! Ich hab nichts gesehen! *rennt Richtung Markt*
+=> END
+
+~ gar_scare2
+Antonia: *zittert, bleibt aber stehen* Roach … Roach macht schlimmere Sachen mit mir als du. Verschwinde.
+=> END
+
+~ gar_pick
+Ren schleicht sich hinter die Ameise. Am Gürtel baumelt ein schwerer Schlüssel.
+- (Fingerfertigkeit 13) *Den Schlüssel vom Gürtel lösen*
+	if GameState.probe("ren", "Fingerfertigkeit", 13)
+		=> gar_pick1
+	else
+		=> gar_pick2
+- *Lieber zurückziehen*
+	=> gar_pick0
+
+~ gar_pick0
+# TODO Effekt aus dem Prototyp: ANT.hold=false
+Ren lässt die Pfote sinken und tritt zurück in den Schatten.
+=> END
+
+~ gar_pick1
+# TODO Effekt aus dem Prototyp: ANT.hold=false
+do GameState.set_flag("garageKey")
+do GameState.set_flag("garPick")
+do EventBus.hinweis.emit("Erhalten: Kellerschlüssel", "quest")
+Ein leises Klicken, und der Schlüssel liegt in Rens Pfote. Antonia läuft weiter, als wäre nichts gewesen.
+=> END
+
+~ gar_pick2
+# TODO Effekt aus dem Prototyp: ANT.hold=false
+# TODO Effekt aus dem Prototyp: ANT.alert=true
+# TODO Effekt aus dem Prototyp: ANT.sus=1
+Antonia: *fährt herum* HEY! Pfoten weg!
+if GameState.flag("garCaught")
+	=> gar_caught2
+else
+	=> gar_caught
+
+~ gar_caught
+do GameState.set_flag("garCaught")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Antonia: Weg von der Tür! Der Keller ist Roachs Sache!
+- (Täuschen 13) Wir haben uns verlaufen. Wo geht's zum Markt?
+	if GameState.probe("ren", "Täuschen", 13)
+		=> gar_c1
+	else
+		=> gar_c2
+- (Einschüchtern 14) *Big Dig knackt mit den Knöcheln* [if GameState.mitglied("dig") /]
+	if GameState.probe("dig", "Einschüchtern", 14)
+		=> gar_scare1
+	else
+		=> gar_c2
+- Dann eben auf die harte Tour.
+	=> gar_fight
+
+~ gar_c1
+# TODO Effekt aus dem Prototyp: if(!ANT)return
+# TODO Effekt aus dem Prototyp: ANT.alert=false
+# TODO Effekt aus dem Prototyp: ANT.sus=0
+# TODO Effekt aus dem Prototyp: ANT.cool=30
+Antonia: *zeigt mit drei Beinen gleichzeitig* Da lang. Und kommt nicht wieder.
+=> END
+
+~ gar_c2
+Antonia: Verlaufen. Klar. *greift zum Holster – leer, die Pistole hat Roach* … Dann eben so. *zieht ein Messer*
+=> gar_fight
+
+~ gar_caught2
+Antonia: IHR schon wieder! Jetzt reicht's!
+=> gar_fight
+
+~ gar_fight
+do Kapitel.kampf(["antonia"], "Antonia")
+do GameState.set_flag("garageKey")
+do GameState.set_flag("antDown")
+# TODO Effekt aus dem Prototyp: setTimeout(antGone,1800)
+do EventBus.hinweis.emit("Antonia lässt den Kellerschlüssel fallen.", "quest")
+=> END
+
+~ gar_door
+Ein schweres Vorhängeschloss, rostig, aber stabil.
+# TODO Bedingung der nächsten Antwort im Prototyp: !ANT||ANT.gone||ANT.sus<.3||ANT.n.state==='down'
+- (Fingerfertigkeit 15) *Ren knackt das Schloss* [if true /]
+	if GameState.probe("ren", "Fingerfertigkeit", 15)
+		=> gar_door1
+	else
+		=> gar_door2
+- Lassen wir das.
+	=> END
+
+~ gar_door1
+do GameState.set_flag("garDoorOpen")
+Klick. Das Schloss springt auf. Eine Treppe führt hinab in muffige Dunkelheit.
+=> END
+
+~ gar_door2
+# TODO Effekt aus dem Prototyp: if(ANT&&!ANT.gone)ANT.sus=Math.min(1,ANT.sus+.6)
+Der Dietrich rutscht ab und klirrt auf den Beton.
+=> END
+
+~ gar_safe
+Ein alter grüner Geldschrank mit Zahlenrad. Daneben ein leerer Teller und eine Zigarettenkippe mit Fühlerabdruck.
+- (Fingerfertigkeit 14) *Ren lauscht am Zahlenrad* [if not GameState.schon("garSafeR") /]
+	do GameState.einmal("garSafeR")
+	if GameState.probe("ren", "Fingerfertigkeit", 14)
+		=> gar_safe1
+	else
+		=> gar_safe2
+- (Athletik 15) *Big Dig reißt die Tür aus den Angeln* [if GameState.mitglied("dig") /]
+	if GameState.probe("dig", "Athletik", 15)
+		=> gar_safe1b
+	else
+		=> gar_safe3
+- Später.
+	=> END
+
+~ gar_safe2
+Das Rad klickt an der falschen Stelle. Ren schüttelt den Kopf\: Das wird so nichts.
+=> gar_safe
+
+~ gar_safe3
+Big Dig: *keucht* … Das Ding ist im Boden verschraubt.
+=> gar_safe
+
+~ gar_safe1b
+do GameState.set_flag("garLoud")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Mit einem Kreischen gibt die Tür nach. Oben poltern Schritte – dann Stille. Jemand wartet.
+=> gar_safe1
+
+~ gar_safe1
+do GameState.set_flag("garSafe")
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+Im Schrank\: Geldbündel, sauber nach Tagen sortiert – eures ist dabei, mit Rens Knoten im Gummiband. Daneben noch mehr\: das Geld anderer Pilger. Und eine Liste.
+- *Nur euer Geld nehmen* (40 Collar)
+	=> gar_loot1
+- *Alles nehmen* (130 Collar)
+	=> gar_loot2
+- *Das Geld der anderen Pilger Ilse bringen*
+	=> gar_loot3
+
+~ gar_loot1
+do GameState.geld_aendern(0) # TODO Betrag: robbedBack()
+do GameState.gesinnung_aendern("gut", 1)
+Ren: Unseres. Nicht mehr.
+=> gar_list
+
+~ gar_loot2
+do GameState.geld_aendern(0) # TODO Betrag: robbedBack()+90
+do GameState.gesinnung_aendern("gut", -1)
+do GameState.zuneigung_aendern("corvin", -1)
+do GameState.zuneigung_aendern("dig", -1)
+Corvin: *sieht zu, wie Ren alles einsteckt* … Roach hat es ihnen genommen. Jetzt nimmst du es ihm. Für die Pilger ändert das nichts.
+=> gar_list
+
+~ gar_loot3
+do GameState.geld_aendern(0) # TODO Betrag: robbedBack()
+do GameState.set_flag("pilgerGeld")
+do GameState.gesinnung_aendern("gut", 2)
+do GameState.zuneigung_aendern("dig", 2)
+do GameState.zuneigung_aendern("corvin", 1)
+Big Dig: *nickt* Ilse weiß, wem was gehört. Gut so.
+=> gar_list
+
+~ gar_list
+do GameState.notiz("Roachs Pilgerliste: Namen und Preise, ein Eintrag „Mantel – Do.“")
+do EventBus.hinweis.emit("Erhalten: Roachs Pilgerliste", "quest")
+do GameState.quest("garage", "Roachs Garage", "", false, true)
+Corvin: *hält ein Blatt ins Licht* Eine Liste. Pilgernamen, Ankunftszeiten, daneben Preise. Ein Name ist durchgestrichen. Daneben steht: „Mantel – Do.“ Roach nimmt nicht nur Geld. Er verkauft, wer ankommt.
+=> END
+
+~ gar_loud
+Antonia: *steht oben an der Treppe, das Messer in der Hand* Ich hab's bis auf die Straße gehört.
+if GameState.flag("garCaught")
+	=> gar_caught2
+else
+	=> gar_caught
+
+~ gar_safeE
+Der Geldschrank steht offen und leer.
+=> END
+
+~ npc_platzhalter
+# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
+NPC\: (Platzhalter-Dialog)
+=> END

@@ -40,6 +40,24 @@ func einmal(schluessel: String) -> bool:
 func schon(schluessel: String) -> bool:
 	return flags.has("o:" + schluessel)
 
+# ---------- Gruppe ----------
+var gruppe: Array = ["ren", "dig", "corvin"]
+func mitglied(wer: String) -> bool:
+	return wer in gruppe
+
+# ---------- Notizen (Hinweise im Tagebuch) ----------
+var notizen: Array = []
+func notiz(text: String) -> void:
+	if text in notizen: return
+	notizen.append(text)
+	EventBus.hinweis.emit("Hinweis: " + text, "quest")
+
+## Raub: nimmt bis zu `betrag` Collar und merkt sich, wie viel
+func rauben(betrag: int) -> void:
+	var t: int = min(geld, betrag)
+	if t > 0: geld_aendern(-t)
+	set_flag("robbed", t)
+
 # ---------- Geld, Beziehungen ----------
 func geld_aendern(betrag: int) -> void:
 	geld = max(0, geld + betrag)
@@ -76,7 +94,7 @@ func probe(wer: String, fertigkeit: String, sg: int) -> bool:
 # ---------- Speichern ----------
 func als_dict() -> Dictionary:
 	return {"version": VERSION, "flags": flags, "geld": geld, "tag": tag, "quests": quests,
-		"zuneigung": zuneigung, "ansehen": ansehen, "gesinnung": gesinnung}
+		"zuneigung": zuneigung, "ansehen": ansehen, "gesinnung": gesinnung, "notizen": notizen, "gruppe": gruppe}
 
 func aus_dict(d: Dictionary) -> void:
 	# Ältere Stände hier hochrechnen, wenn VERSION steigt
