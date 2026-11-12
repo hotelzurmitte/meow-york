@@ -1,13 +1,40 @@
-# Aus dem Prototyp konvertiert (2026-11-12). TODO-Stellen von Hand prüfen.
+# Automatisch aus dem Prototyp übersetzt (tools/dialog_konverter). Stellen mit TODO von Hand prüfen.
 
 ~ hu_0
-do GameState.set_flag("hu")
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Hummel: Willkommen im Cuckoo's Nest! Bitte, wie kann ich helfen?
-# TODO Bedingung der nächsten Antwort im Prototyp: F('job')&&!F('shiftDone')&&!F('shiftMissed')&&(GAME.day||0)>(GAME.jobDay||0)
-- Wir sind zur Schicht da. [if true /]
+if GameState.erneut("hu_0")
+	=> hu_0__wieder
+if ((GameState.flag("shiftMissed") and (GameState.tag < (GameState.fehl_tag + 2))) and not (GameState.flag("hasHoney")))
+	Hummel: *dreht euch den Rücken zu und poliert ein Glas, sehr gründlich*
+	=> END
+if not (((((GameState.flag("job") and not (GameState.flag("shiftDone"))) and not (GameState.flag("shiftMissed"))) and (GameState.tag > GameState.job_tag))) or (not (GameState.flag("roomKey"))) or (GameState.flag("hasHoney")) or (GameState.flag("kellerRef") and not GameState.schon("huI")) or (GameState.flag("ch1robbed") and not GameState.schon("huR")) or ((GameState.flag("roachKnowsDig") or GameState.flag("ilseDig")) and not GameState.schon("huD")) or (GameState.flag("heard7") and not GameState.schon("hu1")) or (not (GameState.flag("job"))) or (GameState.flag("pounceRef") and not GameState.schon("hu7")) or (not (GameState.flag("woolAsked"))) or (not GameState.schon("hu8")))
+	Hummel: *poliert ein Glas* Sagt Bescheid, wenn ihr was braucht.
+	=> END
+if (((not (GameState.flag("hu")) and GameState.wurde_beraubt()) and GameState.flag("gaveNames")) and not (GameState.flag("beatRoachGang")))
+	do GameState.set_flag("hu")
+	Hummel: Willkommen im Cuckoo's Nest! … *mustert eure leeren Taschen* Ren? Big Dig? Roach war schon hier und hat mit euren Namen angegeben. Oh nein.
+elif not (not (GameState.flag("hu"))) and GameState.flag("shiftMissed")
+	do GameState.set_flag("hu")
+	Hummel: Ach. Die Schwänzer. *poliert ein Glas* Was darf's sein?
+elif not (not (GameState.flag("hu"))) and not (GameState.flag("shiftMissed")) and (GameState.flag("taxman") and not (GameState.flag("taxSeen")))
+	do GameState.set_flag("hu")
+	do GameState.set_flag("taxSeen")
+	Hummel: *flüstert* Die Kasse stimmt immer noch! Auf den Cent!
+elif not (not (GameState.flag("hu"))) and not (GameState.flag("shiftMissed")) and not ((GameState.flag("taxman") and not (GameState.flag("taxSeen")))) and (GameState.flag("taxFail") and not (GameState.flag("taxFailSeen")))
+	do GameState.set_flag("hu")
+	do GameState.set_flag("taxFailSeen")
+	Hummel: *flüstert* Steuerberater … wirklich? Bitte nicht nochmal.
+elif (not (GameState.flag("hu")) and GameState.wurde_beraubt())
+	do GameState.set_flag("hu")
+	Hummel: Willkommen im Cuckoo's Nest! … *mustert eure leeren Taschen* Oh. Oh nein. Papa Roach?
+elif GameState.flag("hu")
+	do GameState.set_flag("hu")
+	Hummel: Na, was darf's sein?
+elif not (GameState.flag("hu"))
+	do GameState.set_flag("hu")
+	Hummel: Willkommen im Cuckoo's Nest! Bitte, wie kann ich helfen?
+- Wir sind zur Schicht da. [if (((GameState.flag("job") and not (GameState.flag("shiftDone"))) and not (GameState.flag("shiftMissed"))) and (GameState.tag > GameState.job_tag)) /]
 	=> sh_0
-- Habt ihr ein Zimmer für die Nacht? [if not GameState.flag("roomKey") /]
+- Habt ihr ein Zimmer für die Nacht? [if not (GameState.flag("roomKey")) /]
 	=> mo_room
 - Wir haben Honig von Annegret. [if GameState.flag("hasHoney") /]
 	=> hu_honey
@@ -17,18 +44,51 @@ Hummel: Willkommen im Cuckoo's Nest! Bitte, wie kann ich helfen?
 - Was weißt du über Papa Roach? [if GameState.flag("ch1robbed") and not GameState.schon("huR") /]
 	do GameState.einmal("huR")
 	=> hu_roach
-- Kennst du Big Dig? [if GameState.flag("roachKnowsDig") or GameState.flag("ilseDig") and not GameState.schon("huD") /]
+- Kennst du Big Dig? [if (GameState.flag("roachKnowsDig") or GameState.flag("ilseDig")) and not GameState.schon("huD") /]
 	do GameState.einmal("huD")
 	=> hu_dig
 - Was ist mit Zimmer 7? [if GameState.flag("heard7") and not GameState.schon("hu1") /]
 	do GameState.einmal("hu1")
 	=> hu_1
-- Ihr sucht eine Aushilfe? [if not GameState.flag("job") /]
+- Ihr sucht eine Aushilfe? [if not (GameState.flag("job")) /]
 	=> hu_3
 - Pounce schickt uns. [if GameState.flag("pounceRef") and not GameState.schon("hu7") /]
 	do GameState.einmal("hu7")
 	=> hu_7
-- Was weißt du über das große Wollknäuel? [if not GameState.flag("woolAsked") /]
+- Was weißt du über das große Wollknäuel? [if not (GameState.flag("woolAsked")) /]
+	=> hu_5
+- Drei Bier, bitte. [if not GameState.schon("hu8") /]
+	do GameState.einmal("hu8")
+	=> hu_8
+- Nichts, danke.
+	=> END
+
+~ hu_0__wieder
+Hummel: …
+- Wir sind zur Schicht da. [if (((GameState.flag("job") and not (GameState.flag("shiftDone"))) and not (GameState.flag("shiftMissed"))) and (GameState.tag > GameState.job_tag)) /]
+	=> sh_0
+- Habt ihr ein Zimmer für die Nacht? [if not (GameState.flag("roomKey")) /]
+	=> mo_room
+- Wir haben Honig von Annegret. [if GameState.flag("hasHoney") /]
+	=> hu_honey
+- Ilse schickt uns. Wir brauchen Arbeit. [if GameState.flag("kellerRef") and not GameState.schon("huI") /]
+	do GameState.einmal("huI")
+	=> hu_ilse
+- Was weißt du über Papa Roach? [if GameState.flag("ch1robbed") and not GameState.schon("huR") /]
+	do GameState.einmal("huR")
+	=> hu_roach
+- Kennst du Big Dig? [if (GameState.flag("roachKnowsDig") or GameState.flag("ilseDig")) and not GameState.schon("huD") /]
+	do GameState.einmal("huD")
+	=> hu_dig
+- Was ist mit Zimmer 7? [if GameState.flag("heard7") and not GameState.schon("hu1") /]
+	do GameState.einmal("hu1")
+	=> hu_1
+- Ihr sucht eine Aushilfe? [if not (GameState.flag("job")) /]
+	=> hu_3
+- Pounce schickt uns. [if GameState.flag("pounceRef") and not GameState.schon("hu7") /]
+	do GameState.einmal("hu7")
+	=> hu_7
+- Was weißt du über das große Wollknäuel? [if not (GameState.flag("woolAsked")) /]
 	=> hu_5
 - Drei Bier, bitte. [if not GameState.schon("hu8") /]
 	do GameState.einmal("hu8")
@@ -54,7 +114,24 @@ An der Dartscheibe wird es schlagartig still. Jedes Schimpansenauge im Raum dreh
 => hu_1e
 
 ~ hu_1e
+if GameState.erneut("hu_1e")
+	=> hu_1e__wieder
 Hummel: *hüstel* … Zimmer 7 ist, äh, belegt. Dauerhaft.
+- (Einsicht 12) *Hummel genauer beobachten*
+	if GameState.probe("corvin", "Einsicht", 12)
+		=> hu_2a
+	else
+		=> hu_2b
+- (Täuschen 15) Don Orango erwartet uns. Wir sind seine … Steuerberater.
+	if GameState.probe("ren", "Täuschen", 15)
+		=> hu_2c
+	else
+		=> hu_2d
+- Verstanden. Kein Zimmer 7.
+	=> hu_0
+
+~ hu_1e__wieder
+Hummel: …
 - (Einsicht 12) *Hummel genauer beobachten*
 	if GameState.probe("corvin", "Einsicht", 12)
 		=> hu_2a
@@ -90,13 +167,25 @@ Hummel: S-Steuerberater? Dann … sagt ihm, die Kasse stimmt! Auf den Cent! *sch
 
 ~ hu_2d
 do GameState.ansehen_aendern("nomapes", -1)
-# TODO Effekt aus dem Prototyp: ()=>setF('taxFail')
+do GameState.set_flag("taxFail")
 Nomape: Steuerberater? Der Don zahlt keine Steuern, Rotpelz. Der Don IST die Steuer.
 => END
 
 ~ hu_3
-# TODO Effekt aus dem Prototyp: if(GAME.quest&&GAME.quest.id==='arrive'&&!GAME.quest.done)FX_.quest({id:'arrive',n:'Pleite in Meow-York',obj:'Arbeit im Cuckoo\'s Nest gefunden.',done:true})
+if GameState.erneut("hu_3")
+	=> hu_3__wieder
+if (((GameState.aktuelle_quest != "") and GameState.gleich(GameState.aktuelle_quest, "arrive")) and not (GameState.quest_erledigt(GameState.aktuelle_quest)))
+	do GameState.quest("arrive", "Pleite in Meow-York", "Arbeit im Cuckoo's Nest gefunden.", GameState.wahr(true), false)
 Hummel: Oh! Ja! Zehn Collar pro Abend. Gläser spülen, Gäste bedienen, keine Fragen stellen. *leiser* Vor allem keine Fragen stellen.
+- Wir sind dabei.
+	=> hu_3a
+- Keine Fragen? Warum?
+	=> hu_3b
+- Vielleicht später.
+	=> hu_0
+
+~ hu_3__wieder
+Hummel: …
 - Wir sind dabei.
 	=> hu_3a
 - Keine Fragen? Warum?
@@ -107,13 +196,13 @@ Hummel: Oh! Ja! Zehn Collar pro Abend. Gläser spülen, Gäste bedienen, keine F
 ~ hu_3a
 do GameState.set_flag("job")
 do EventBus.hinweis.emit("Notiert: Aushilfe im Cuckoo's Nest (morgen Abend)", "quest")
-# TODO Effekt aus dem Prototyp: };()=>{GAME.jobDay=GAME.day||0
-do GameState.quest("shift", "Schicht im Cuckoo's Nest", "Hummel erwartet euch zur Schicht – nach einer Nacht Schlaf. Verpasst sie nicht.", false, true)
+set GameState.job_tag = GameState.tag
+do GameState.quest("shift", "Schicht im Cuckoo's Nest", "Hummel erwartet euch zur Schicht – nach einer Nacht Schlaf. Verpasst sie nicht.", false, GameState.wahr(1))
+set GameState.quest_ziel_figur = "hummel"
 Hummel: Wunderbar! Morgen Abend, Schichtbeginn bei Sonnenuntergang. Schürze liegt bereit!
 => END
 
 ~ hu_3b
-# TODO Effekt aus dem Prototyp: if(f)f()
 do GameState.set_flag("heard7")
 Hummel: *flüstert* Weil die, die Fragen stellen, irgendwann in Zimmer 7 landen. Und aus Zimmer 7 kommt keiner zum Frühstück.
 => hu_3
@@ -124,11 +213,30 @@ Hummel: Pounce! Der Gute. Bringt mir jeden Sonntag Blumen für die Theke. Dann g
 => hu_0
 
 ~ hu_8
-# TODO Effekt aus dem Prototyp: if(!F('o:hu7')&&GAME.money>=beerPrice())FX_.money(-beerPrice())
-# TODO Effekt aus dem Prototyp: for(const u of party)u.hp=Math.min(u.max,u.hp+3)
-do EventBus.hinweis.emit("Die Gruppe erholt sich ein wenig (+3 TP)", "quest")
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Hummel: Drei Bier … *mustert euch* … geht aufs Haus. Ihr seht aus, als hättet ihr's nötig.
+if GameState.flag("o:hu7")
+	if (not (GameState.flag("o:hu7")) and (GameState.geld >= GameState.bierpreis()))
+		do GameState.geld_aendern((0 - GameState.bierpreis()))
+	do GameState.heilen(3)
+	do EventBus.hinweis.emit("Die Gruppe erholt sich ein wenig (+3 TP)", "gut")
+	Hummel: Drei Bier – aufs Haus, wie versprochen. Freunde von Pounce sind meine Freunde.
+elif (GameState.geld >= GameState.bierpreis()) and (GameState.bierpreis() > 3)
+	if (not (GameState.flag("o:hu7")) and (GameState.geld >= GameState.bierpreis()))
+		do GameState.geld_aendern((0 - GameState.bierpreis()))
+	do GameState.heilen(3)
+	do EventBus.hinweis.emit("Die Gruppe erholt sich ein wenig (+3 TP)", "gut")
+	Hummel: Drei Bier. Sechs Collar. Schwänzer-Preis.
+elif (GameState.geld >= 3)
+	if (not (GameState.flag("o:hu7")) and (GameState.geld >= GameState.bierpreis()))
+		do GameState.geld_aendern((0 - GameState.bierpreis()))
+	do GameState.heilen(3)
+	do EventBus.hinweis.emit("Die Gruppe erholt sich ein wenig (+3 TP)", "gut")
+	Hummel: Drei Bier, kommt sofort! Macht drei Collar.
+else
+	if (not (GameState.flag("o:hu7")) and (GameState.geld >= GameState.bierpreis()))
+		do GameState.geld_aendern((0 - GameState.bierpreis()))
+	do GameState.heilen(3)
+	do EventBus.hinweis.emit("Die Gruppe erholt sich ein wenig (+3 TP)", "gut")
+	Hummel: Drei Bier … *mustert euch* … geht aufs Haus. Ihr seht aus, als hättet ihr's nötig.
 => END
 
 ~ hu_5
@@ -145,7 +253,32 @@ Ein Schimpanse mit einem Bierkrug in der Faust baut sich vor Ren auf. Er riecht 
 => kn_1
 
 ~ kn_1
+if GameState.erneut("kn_1")
+	=> kn_1__wieder
 Knuckles: Du da. Fuchs. Du hast 'ne ganz schön große Klappe für so 'n kleinen Schwanz.
+- (Einschüchtern 14) Setz dich hin, bevor du umfällst.
+	if GameState.probe("ren", "Einschüchtern", 14)
+		=> kn_2
+	else
+		=> kn_3
+- (Athletik 12) *Big Dig tritt vor und lässt die Knöchel knacken*
+	if GameState.probe("dig", "Athletik", 12)
+		=> kn_4
+	else
+		=> kn_5
+- (Täuschen 13) Ich bin Don Orangos Neffe. Willst du, dass er davon hört? [if GameState.flag("knowDon") /]
+	if GameState.probe("ren", "Täuschen", 13)
+		=> kn_6
+	else
+		=> kn_3
+- *Katana ziehen*
+	do GameState.zuneigung_aendern("corvin", -1)
+	=> kn_f
+- *Ihn ignorieren und weggehen*
+	=> kn_7
+
+~ kn_1__wieder
+Knuckles: …
 - (Einschüchtern 14) Setz dich hin, bevor du umfällst.
 	if GameState.probe("ren", "Einschüchtern", 14)
 		=> kn_2
@@ -210,18 +343,33 @@ Knuckles grunzt und torkelt weiter – direkt auf Denise zu, die gerade Gläser 
 => dn_1
 
 ~ kn_7b
+if GameState.erneut("kn_7b")
+	=> kn_7b__wieder
 Knuckles: Heeey, Süße … bring Onkel Knuckles noch 'n Bier … und setz dich dazu …
 - *Einschreiten*
 	do GameState.gesinnung_aendern("gut", 1)
 	=> kn_1
 - Geht mich nichts an.
-	# TODO Effekt aus dem Prototyp: {FX_.align('good',-1);FX_.appr('dig',-2);}
+	do GameState.gesinnung_aendern("gut", -1)
+	do GameState.zuneigung_aendern("dig", -2)
+	do GameState.set_flag("ignoredMaria")
+	=> ng_0
+
+~ kn_7b__wieder
+Knuckles: …
+- *Einschreiten*
+	do GameState.gesinnung_aendern("gut", 1)
+	=> kn_1
+- Geht mich nichts an.
+	do GameState.gesinnung_aendern("gut", -1)
+	do GameState.zuneigung_aendern("dig", -2)
 	do GameState.set_flag("ignoredMaria")
 	=> ng_0
 
 ~ kn_f
 do Kapitel.kampf(["knuck","dartA","dartB"], "Nomapes im Cuckoo's Nest")
-do GameState.set_flag("beatBar")
+if GameState.flag("letzter_kampf_gewonnen")
+	do GameState.set_flag("beatBar")
 => ng_w
 
 ~ ng_0
@@ -237,14 +385,50 @@ Nugget: Genug. *klatscht langsam* Ihr könnt austeilen, das muss man euch lassen
 => ng_2
 
 ~ ng_2
-do GameState.set_flag("metNugget")
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Nugget: Ihr seid neu hier. Ich bin Nugget. Und ich hab ein Problem, das gut zu Leuten passt, die neu hier sind.
+if GameState.flag("taxman")
+	do GameState.set_flag("metNugget")
+	Nugget: Ihr seid neu hier. Ich bin Nugget. *grinst* Steuerberater, ja? Hummel hat's mir erzählt. Und ich hab ein Problem, das gut zu Leuten passt, die neu hier sind.
+elif GameState.flag("roachKnowsDig")
+	do GameState.set_flag("metNugget")
+	Nugget: Ihr seid neu hier. Na ja – einer von euch nicht. *mustert Big Dig* Ich bin Nugget. Und ich hab ein Problem, das gut zu Leuten passt, die neu hier sind.
+else
+	do GameState.set_flag("metNugget")
+	Nugget: Ihr seid neu hier. Ich bin Nugget. Und ich hab ein Problem, das gut zu Leuten passt, die neu hier sind.
 => ng_3
 
 ~ ng_3
+if GameState.erneut("ng_3")
+	=> ng_3__wieder
 Nugget: Draußen auf dem Parkplatz neben dem Wohnhaus hocken ein paar Samtpfoten. Die haben was, das uns gehört: einen goldenen Ghettoblaster. Bringt ihn mir, und ich geb euch 50 Collar.
-- Papa Roach sagt, wer nach dem Knäuel fragt, verschwindet. [if GameState.flag("roachHint") or GameState.flag("roachSells") and not GameState.schon("ngR") /]
+- Papa Roach sagt, wer nach dem Knäuel fragt, verschwindet. [if (GameState.flag("roachHint") or GameState.flag("roachSells")) and not GameState.schon("ngR") /]
+	do GameState.einmal("ngR")
+	=> ng_roach
+- (Einsicht 14) Wer ist der Typ im guten Mantel, mit dem Roach redet? [if GameState.flag("coatMan") and not GameState.schon("ngC") /]
+	do GameState.einmal("ngC")
+	if GameState.probe("corvin", "Einsicht", 14)
+		=> ng_coat
+	else
+		=> ng_coatF
+- Abgemacht.
+	=> ng_4
+- (Überzeugen 15) 50 für einen Job gegen eine ganze Gang? 80. [if not GameState.schon("ng5") /]
+	do GameState.einmal("ng5")
+	if GameState.probe("ren", "Überzeugen", 15)
+		=> ng_5
+	else
+		=> ng_6
+- (Einsicht 13) *Nugget genau beobachten* [if not GameState.schon("ng7") /]
+	do GameState.einmal("ng7")
+	if GameState.probe("corvin", "Einsicht", 13)
+		=> ng_7
+	else
+		=> ng_7f
+- Wir sind keine Laufburschen.
+	=> ng_8
+
+~ ng_3__wieder
+Nugget: …
+- Papa Roach sagt, wer nach dem Knäuel fragt, verschwindet. [if (GameState.flag("roachHint") or GameState.flag("roachSells")) and not GameState.schon("ngR") /]
 	do GameState.einmal("ngR")
 	=> ng_roach
 - (Einsicht 14) Wer ist der Typ im guten Mantel, mit dem Roach redet? [if GameState.flag("coatMan") and not GameState.schon("ngC") /]
@@ -271,14 +455,16 @@ Nugget: Draußen auf dem Parkplatz neben dem Wohnhaus hocken ein paar Samtpfoten
 	=> ng_8
 
 ~ ng_4
-# TODO Effekt aus dem Prototyp: GAME.reward=GAME.reward||50
-do GameState.quest("boom", "Der goldene Ghettoblaster", "Hol den Ghettoblaster von den Breaking Cats auf dem Parkplatz (Belohnung: ", false, false)
+set GameState.belohnung = GameState.oder(GameState.belohnung, 50)
+do GameState.quest("boom", "Der goldene Ghettoblaster", (("Hol den Ghettoblaster von den Breaking Cats auf dem Parkplatz (Belohnung: " + GameState.text(GameState.belohnung)) + " Collar)."), false, false)
+set GameState.quest_ziel_figur = "puma"
 Nugget: Gut. Und, Fuchs – wenn du die Kätzchen kratzen musst: Kratz sie.
 => END
 
 ~ ng_5
-# TODO Effekt aus dem Prototyp: GAME.reward=80
+set GameState.belohnung = 80
 do GameState.quest("boom", "Der goldene Ghettoblaster", "Hol den Ghettoblaster von den Breaking Cats auf dem Parkplatz (Belohnung: 80 Collar).", false, false)
+set GameState.quest_ziel_figur = "puma"
 Nugget: *lacht* Frech. Gefällt mir. 80. Aber nur, wenn das Ding heil ist. Und jetzt raus mit euch.
 => END
 
@@ -308,33 +494,81 @@ Nugget: Wie ihr meint. Das Angebot steht – bis es das nicht mehr tut.
 => END
 
 ~ ng_back
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Nugget: Überlegt? Das Angebot steht noch.
-- Ich weiß, wo der Späher der Breaking Cats sitzt. Was ist dir das wert? [if GameState.flag("jagSeen") and not GameState.flag("soldCats") and not GameState.schon("ngS") /]
+if GameState.erneut("ng_back")
+	=> ng_back__wieder
+if not (((GameState.flag("jagSeen") and not (GameState.flag("soldCats"))) and not GameState.schon("ngS")) or (GameState.flag("hasBoom")) or (((GameState.flag("hasBoom") and (GameState.flag("nuggetLie") or GameState.flag("knowTruth"))) and not (GameState.flag("confess")))) or (GameState.flag("hasBoom")) or (((GameState.flag("sidedCats") and not (GameState.flag("hasBoom"))) and not (((GameState.aktuelle_quest != "") and GameState.quest_erledigt(GameState.aktuelle_quest))))) or (not (GameState.quests.has("boom"))))
+	if (GameState.quests.has("boom") and GameState.quest_erledigt("boom"))
+		Nugget: Der Deal ist durch, Fuchs. *mischt die Karten*
+	else
+		Nugget: Ohne Ghettoblaster brauchst du gar nicht wiederkommen.
+	=> END
+if not ((GameState.flag("hasBoom") or GameState.flag("sidedCats"))) and not (GameState.quests.has("boom")) and GameState.flag("refusedNugget")
+	Nugget: *ohne aufzusehen* Doch Hunger gekriegt?
+elif not ((GameState.flag("hasBoom") or GameState.flag("sidedCats"))) and not (GameState.quests.has("boom"))
+	Nugget: Überlegt? Das Angebot steht noch.
+elif not ((GameState.flag("hasBoom") or GameState.flag("sidedCats"))) and GameState.quest_erledigt("boom")
+	Nugget: Der Deal ist durch, Fuchs. *mischt die Karten*
+elif not ((GameState.flag("hasBoom") or GameState.flag("sidedCats"))) and not (GameState.quest_erledigt("boom"))
+	Nugget: Ohne Ghettoblaster brauchst du gar nicht wiederkommen.
+elif GameState.flag("hasBoom")
+	Nugget: Na? Hast du ihn?
+elif GameState.flag("sidedCats")
+	Nugget: Und? Wo ist mein Ghettoblaster?
+elif not (GameState.flag("sidedCats")) and (GameState.aktuelle_quest != "")
+	Nugget: Ohne Ghettoblaster brauchst du gar nicht wiederkommen.
+elif not (GameState.flag("sidedCats")) and not ((GameState.aktuelle_quest != ""))
+	Nugget: Überlegt? Das Angebot steht noch.
+- Ich weiß, wo der Späher der Breaking Cats sitzt. Was ist dir das wert? [if (GameState.flag("jagSeen") and not (GameState.flag("soldCats"))) and not GameState.schon("ngS") /]
 	do GameState.einmal("ngS")
 	=> ng_sell
 - Hier ist euer Ghettoblaster. [if GameState.flag("hasBoom") /]
 	=> ng_pay
-- (Einschüchtern 14) Erst sagst du mir, wem er wirklich gehört. [if GameState.flag("hasBoom") and (GameState.flag("nuggetLie") or GameState.flag("knowTruth")) and not GameState.flag("confess") /]
+- (Einschüchtern 14) Erst sagst du mir, wem er wirklich gehört. [if ((GameState.flag("hasBoom") and (GameState.flag("nuggetLie") or GameState.flag("knowTruth"))) and not (GameState.flag("confess"))) /]
 	if GameState.probe("ren", "Einschüchtern", 14)
 		=> ng_conf
 	else
 		=> ng_confF
 - Hab's mir anders überlegt. Der geht zurück an die Breaking Cats. [if GameState.flag("hasBoom") /]
 	=> ng_ret
-# TODO Bedingung der nächsten Antwort im Prototyp: F('sidedCats')&&!F('hasBoom')&&!(GAME.quest&&GAME.quest.done)
-- Die Cats behalten ihn. Er gehörte ihnen. [if true /]
+- Die Cats behalten ihn. Er gehörte ihnen. [if ((GameState.flag("sidedCats") and not (GameState.flag("hasBoom"))) and not (((GameState.aktuelle_quest != "") and GameState.quest_erledigt(GameState.aktuelle_quest)))) /]
 	=> ng_ret2
-- Erzähl mir nochmal von dem Job. [if not GameState.quests.has("boom") /]
+- Erzähl mir nochmal von dem Job. [if not (GameState.quests.has("boom")) /]
+	=> ng_3
+- Später.
+	=> END
+
+~ ng_back__wieder
+Nugget: …
+- Ich weiß, wo der Späher der Breaking Cats sitzt. Was ist dir das wert? [if (GameState.flag("jagSeen") and not (GameState.flag("soldCats"))) and not GameState.schon("ngS") /]
+	do GameState.einmal("ngS")
+	=> ng_sell
+- Hier ist euer Ghettoblaster. [if GameState.flag("hasBoom") /]
+	=> ng_pay
+- (Einschüchtern 14) Erst sagst du mir, wem er wirklich gehört. [if ((GameState.flag("hasBoom") and (GameState.flag("nuggetLie") or GameState.flag("knowTruth"))) and not (GameState.flag("confess"))) /]
+	if GameState.probe("ren", "Einschüchtern", 14)
+		=> ng_conf
+	else
+		=> ng_confF
+- Hab's mir anders überlegt. Der geht zurück an die Breaking Cats. [if GameState.flag("hasBoom") /]
+	=> ng_ret
+- Die Cats behalten ihn. Er gehörte ihnen. [if ((GameState.flag("sidedCats") and not (GameState.flag("hasBoom"))) and not (((GameState.aktuelle_quest != "") and GameState.quest_erledigt(GameState.aktuelle_quest)))) /]
+	=> ng_ret2
+- Erzähl mir nochmal von dem Job. [if not (GameState.quests.has("boom")) /]
 	=> ng_3
 - Später.
 	=> END
 
 ~ ng_pay
-# TODO Effekt aus dem Prototyp: {setF('hasBoom',0);FX_.money(GAME.reward);FX_.rep('nomapes',2); if(F('nuggetLie')||F('knowTruth'))FX_.appr('corvin',-1);FX_.quest({id:'boom',n:'Der goldene Ghet
+if (GameState.flag("hasTape") and not (GameState.flag("tapeAsked")))
+	=> ng_tape
+do GameState.set_flag("hasBoom", 0)
+do GameState.geld_aendern(GameState.belohnung)
+do GameState.ansehen_aendern("nomapes", 2)
+if (GameState.flag("nuggetLie") or GameState.flag("knowTruth"))
+	do GameState.zuneigung_aendern("corvin", -1)
+do GameState.quest("boom", "Der goldene Ghettoblaster", "An Nugget übergeben.", GameState.wahr(true), false)
 do GameState.set_flag("boomTo", "nomapes")
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Nugget: Sauber. *dreht den Ghettoblaster, prüft jede Ecke* undefined Collar, wie abgemacht. Ihr habt bei den Nomapes jetzt einen Fuß in der Tür.
+Nugget: Sauber. *dreht den Ghettoblaster, prüft jede Ecke* {{GameState.belohnung}} Collar, wie abgemacht. Ihr habt bei den Nomapes jetzt einen Fuß in der Tür.
 => END
 
 ~ ng_conf
@@ -351,26 +585,36 @@ Nugget: Du stellst die Fragen nicht, Fuchs. Du lieferst.
 do GameState.set_flag("returnCats")
 do GameState.ansehen_aendern("nomapes", -2)
 do GameState.gesinnung_aendern("gut", 1)
-# TODO Effekt aus dem Prototyp: GAME.quest.obj='Bring den Ghettoblaster zurück zu den Breaking Cats.'
-# TODO Effekt aus dem Prototyp: GAME.quest.target='puma'
-do EventBus.ereignis.emit("updateHUD")
+do GameState.quest_ziel_setzen("Bring den Ghettoblaster zurück zu den Breaking Cats.")
+set GameState.quest_ziel_figur = "puma"
 Nugget: … Du hast dir gerade die falschen Freunde ausgesucht.
 => END
 
 ~ ng_ret2
-# TODO Effekt aus dem Prototyp: {FX_.rep('nomapes',-2);FX_.quest({id:'boom',n:'Der goldene Ghettoblaster',obj:'Die Breaking Cats behalten ihn. Nugget ist sauer.',done:true});}
+do GameState.ansehen_aendern("nomapes", -2)
+do GameState.quest("boom", "Der goldene Ghettoblaster", "Die Breaking Cats behalten ihn. Nugget ist sauer.", GameState.wahr(true), false)
 do GameState.set_flag("boomTo", "cats")
 Nugget: … Du hast dir gerade die falschen Freunde ausgesucht, Fuchs. Merk dir mein Gesicht.
 => END
 
 ~ ma_0
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Maria: Ich bin Maria. Wenn Hummel fragt: Ich hab nichts gesagt. Egal was.
+if ((GameState.flag("ignoredMaria") and not (GameState.flag("knCalm"))) and not (GameState.flag("beatBar")))
+	Maria: *sieht durch euch hindurch* Schon gut. Ihr seid ja nicht von hier.
+elif (GameState.flag("knCalm") or GameState.flag("beatBar"))
+	Maria: Danke wegen Knuckles. Der wird jeden Abend so, sobald der Don nicht da ist.
+elif GameState.flag("knowDon")
+	Maria: Danke, dass ihr nichts gesagt habt. Hier drin ist jedes Ohr ein Nomapes-Ohr.
+elif not (GameState.flag("knowDon"))
+	Maria: Ich bin Maria. Wenn Hummel fragt: Ich hab nichts gesagt. Egal was.
 => END
 
 ~ da_0
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Nomape: Bullseye. Wie dein Kopf gleich.
+if GameState.flag("beatBar")
+	Nomape: *hält sich den Kiefer* … Lass gut sein, Fuchs.
+else
+	% Nomape: Siehst du nicht, dass wir spielen?
+	% Nomape: Noch ein Wort, und du bist die Dartscheibe.
+	% Nomape: Bullseye. Wie dein Kopf gleich.
 => END
 
 ~ hu_5w
@@ -382,28 +626,58 @@ Nugget: *ohne aufzusehen* Ich spiel Karten. Rede mit Hummel, wenn du was trinken
 => END
 
 ~ hu_ilse
-# TODO Effekt aus dem Prototyp: for(const u of party)u.hp=u.max
-do EventBus.hinweis.emit("Die Gruppe isst sich satt (volle TP)", "quest")
+do GameState.heilen(999)
+do EventBus.hinweis.emit("Die Gruppe isst sich satt (volle TP)", "gut")
 do GameState.ansehen_aendern("insects", 1)
 Hummel: Ilse! Die gute alte Assel. Wenn Ilse euch schickt, seid ihr in Ordnung. *stellt drei Teller hin* Erstmal was zu essen – geht aufs Haus. Und dann reden wir über Arbeit.
 => hu_3
 
 ~ hu_roach
 do GameState.set_flag("roachSells")
-# TODO Effekt aus dem Prototyp: if(F('roachHint'))toast('Corvin notiert: <b>Roach verkauft Namen von Pilgern</b>','quest')
+if GameState.flag("roachHint")
+	do EventBus.hinweis.emit("Corvin notiert: Roach verkauft Namen von Pilgern", "quest")
 Hummel: *senkt die Stimme* Roach fährt jeden Tag zum Bahnhof und sammelt Pilger ein. Was er ihnen abnimmt, ist nur das Geld. Aber er verkauft auch, wer nach dem Knäuel fragt. An wen? *summt nervös* Ich will's nicht wissen.
 => hu_0
 
 ~ hu_dig
-do GameState.set_flag("digKnown")
-# TODO Effekt aus dem Prototyp: FX_.appr('dig',F('roachKnowsDig')?-1:1)
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Hummel: Big Dig … Den Namen hab ich lange nicht gehört. Ilse hat immer gesagt, er kommt zurück.
+if GameState.flag("roachKnowsDig")
+	do GameState.set_flag("digKnown")
+	do GameState.zuneigung_aendern("dig", GameState.wenn(GameState.flag("roachKnowsDig"), -1, 1))
+	Hummel: *Flügel zittern* Big Dig ist zurück – das summt schon durch ganz Hairlem. Roach hat's rumerzählt, keine Stunde nach eurem … Treffen. Pass auf dich auf, Dig. Nicht alle freuen sich.
+else
+	do GameState.set_flag("digKnown")
+	do GameState.zuneigung_aendern("dig", GameState.wenn(GameState.flag("roachKnowsDig"), -1, 1))
+	Hummel: Big Dig … Den Namen hab ich lange nicht gehört. Ilse hat immer gesagt, er kommt zurück.
 => hu_0
 
 ~ de_0
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Denise: Hi! Ich bin Denise. Bier kommt gleich, Hummel ist heute etwas … nervös.
+if GameState.erneut("de_0")
+	=> de_0__wieder
+if not ((not GameState.schon("de1")) or (GameState.flag("ch1robbed") and not GameState.schon("de2")))
+	if GameState.flag("deniseSaved")
+		Denise: Danke nochmal. Die meisten hier gucken weg.
+	elif GameState.flag("deniseIgnored")
+		Denise: *wischt einen Tisch ab, ohne aufzusehen*
+	elif not (GameState.flag("deniseIgnored"))
+		Denise: Bier kommt gleich!
+	=> END
+if GameState.flag("deniseSaved")
+	Denise: Danke nochmal. Die meisten hier gucken weg.
+elif GameState.flag("deniseIgnored")
+	Denise: *wischt einen Tisch ab, ohne aufzusehen*
+elif not (GameState.flag("deniseIgnored"))
+	Denise: Hi! Ich bin Denise. Bier kommt gleich, Hummel ist heute etwas … nervös.
+- Was ist hier los? [if not GameState.schon("de1") /]
+	do GameState.einmal("de1")
+	=> de_1
+- Kennst du Papa Roach? [if GameState.flag("ch1robbed") and not GameState.schon("de2") /]
+	do GameState.einmal("de2")
+	=> de_2
+- Bis später.
+	=> END
+
+~ de_0__wieder
+Denise: …
 - Was ist hier los? [if not GameState.schon("de1") /]
 	do GameState.einmal("de1")
 	=> de_1
@@ -415,13 +689,12 @@ Denise: Hi! Ich bin Denise. Bier kommt gleich, Hummel ist heute etwas … nervö
 
 ~ de_1
 do GameState.set_flag("heard7")
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
 Denise: Der Don ist nicht da. Wenn der Don nicht da ist, trinken die Nomapes doppelt. Und wenn die Nomapes doppelt trinken, hab ich doppelt so viele Hände am Hintern. *lächelt müde* Und frag bloß nicht nach Zimmer 7.
 => de_0
 
 ~ de_2
 do GameState.set_flag("coatMan")
-# TODO Effekt aus dem Prototyp: ()=>clue('Roach traf sich mit einem Fremden im guten Mantel')
+do GameState.notiz("Roach traf sich mit einem Fremden im guten Mantel")
 Denise: Roach? Der kommt manchmal rein, zahlt mit fremden Scheinen. Mit DEINEN Scheinen wahrscheinlich. *grinst* Letzte Woche hat er mit einem Typen im guten Mantel geredet. Keiner von hier.
 => de_0
 
@@ -434,13 +707,33 @@ Knuckles: Heeey, Püppchen … *hicks* … bring Onkel Knuckles noch 'n Bier …
 => dn_2
 
 ~ dn_2
+if GameState.erneut("dn_2")
+	=> dn_2__wieder
 Denise: Lass los, Knuckles. Bitte.
 - *Einschreiten* Du hast sie gehört.
 	do GameState.set_flag("deniseSaved")
 	do GameState.gesinnung_aendern("gut", 1)
 	do GameState.zuneigung_aendern("dig", 1)
 	=> kn_1
-- *Big Dig stellt sich wortlos zwischen die beiden* [if GameState.mitglied("dig") /]
+- *Big Dig stellt sich wortlos zwischen die beiden* [if (GameState.mitglied("dig") and GameState.mitglied("dig")) /]
+	do GameState.set_flag("deniseSaved")
+	do GameState.gesinnung_aendern("gut", 1)
+	do GameState.zuneigung_aendern("dig", 2)
+	=> kn_4
+- Geht mich nichts an.
+	do GameState.set_flag("deniseIgnored")
+	do GameState.gesinnung_aendern("gut", -1)
+	do GameState.zuneigung_aendern("dig", -2)
+	=> dn_3
+
+~ dn_2__wieder
+Denise: …
+- *Einschreiten* Du hast sie gehört.
+	do GameState.set_flag("deniseSaved")
+	do GameState.gesinnung_aendern("gut", 1)
+	do GameState.zuneigung_aendern("dig", 1)
+	=> kn_1
+- *Big Dig stellt sich wortlos zwischen die beiden* [if (GameState.mitglied("dig") and GameState.mitglied("dig")) /]
 	do GameState.set_flag("deniseSaved")
 	do GameState.gesinnung_aendern("gut", 1)
 	do GameState.zuneigung_aendern("dig", 2)
@@ -467,8 +760,9 @@ Bei „guter Mantel“ wird Nuggets Gesicht für einen Herzschlag leer. Corvin k
 => ng_coat2
 
 ~ ng_coat2
-# TODO Effekt aus dem Prototyp: {setF('nuggetFears');FX_.appr('corvin',1);}
-# TODO Effekt aus dem Prototyp: ()=>clue('Nugget fürchtet den Mann im guten Mantel')
+do GameState.set_flag("nuggetFears")
+do GameState.zuneigung_aendern("corvin", 1)
+do GameState.notiz("Nugget fürchtet den Mann im guten Mantel")
 Corvin: *leise* Er weiß, wer das ist. Und er wird es uns nicht sagen. Noch nicht.
 => ng_3
 
@@ -482,7 +776,8 @@ do GameState.geld_aendern(30)
 do GameState.ansehen_aendern("nomapes", 1)
 do GameState.gesinnung_aendern("gut", -1)
 do GameState.zuneigung_aendern("dig", -1)
-# TODO Effekt aus dem Prototyp: if(F('soldNomapes'))setF('playedBoth')
+if GameState.flag("soldNomapes")
+	do GameState.set_flag("playedBoth")
 Nugget: *Augenbraue hoch* Der Jaguar mit dem Veilchen, ja? Oben auf dem Kiosk. *schiebt 30 Collar rüber* Gute Ware. Wir besuchen ihn heute Nacht.
 => ng_back
 
@@ -491,7 +786,7 @@ do GameState.set_flag("hasHoney", 0)
 do GameState.set_flag("honeyDone")
 do GameState.geld_aendern(15)
 do GameState.ansehen_aendern("insects", 1)
-do GameState.quest("honey", "Honig für Hummel", "Abgeliefert.", true, true)
+do GameState.quest("honey", "Honig für Hummel", "Abgeliefert.", GameState.wahr(true), GameState.wahr(1))
 Hummel: Annegrets Honig! *summt glücklich* Endlich! Hier, 15 Collar. Und richtet ihr aus: Ab jetzt hol ich ihn selbst ab. Roach hin oder her.
 => hu_0
 
@@ -504,7 +799,19 @@ Der Abend rollt an. Die Bar füllt sich mit Nomapes, Pilgern und zwei Glühwürm
 => sh_2
 
 ~ sh_2
+if GameState.erneut("sh_2")
+	=> sh_2__wieder
 Knuckles: *hicks* Fuchs! Bier! Und zwar … zwei!
+- (Täuschen 12) *Ihm unauffällig ein Wasser hinstellen*
+	if GameState.probe("ren", "Täuschen", 12)
+		=> sh_2a
+	else
+		=> sh_2b
+- *Ihm zwei Bier zapfen*
+	=> sh_2c
+
+~ sh_2__wieder
+Knuckles: …
 - (Täuschen 12) *Ihm unauffällig ein Wasser hinstellen*
 	if GameState.probe("ren", "Täuschen", 12)
 		=> sh_2a
@@ -528,7 +835,19 @@ Knuckles: *leert beide auf einmal* Du bist mein neuer Lieblingsfuchs.
 => sh_3
 
 ~ sh_3
+if GameState.erneut("sh_3")
+	=> sh_3__wieder
 Gegen Mitternacht, beim Gläserspülen, hört Corvin zwei Dartspieler hinter der Säule flüstern.
+- (Wahrnehmung 13) *Corvin lauscht*
+	if GameState.probe("corvin", "Wahrnehmung", 13)
+		=> sh_3a
+	else
+		=> sh_3b
+- *Weiterspülen. Geht uns nichts an.*
+	=> sh_4
+
+~ sh_3__wieder
+…
 - (Wahrnehmung 13) *Corvin lauscht*
 	if GameState.probe("corvin", "Wahrnehmung", 13)
 		=> sh_3a
@@ -555,14 +874,26 @@ Ein Glas klirrt. Als Corvin wieder hinhört, reden die beiden über Darts.
 do GameState.set_flag("shiftDone")
 do GameState.geld_aendern(10)
 do GameState.ansehen_aendern("insects", 1)
-do GameState.quest("shift", "Schicht im Cuckoo's Nest", "Schicht erledigt. Hummel ist zufrieden.", true, true)
-# TODO Effekt aus dem Prototyp: };()=>{outsideKey='night'
+do GameState.quest("shift", "Schicht im Cuckoo's Nest", "Schicht erledigt. Hummel ist zufrieden.", GameState.wahr(true), GameState.wahr(1))
+do EventBus.ereignis.emit("stimmung:night")
 Hummel: *zählt Scheine ab* Zehn Collar, wie abgemacht. Und … *summt* … ihr wart gut. Kommt wieder, wenn ihr wollt.
 => END
 
 ~ ng_tape
+if GameState.erneut("ng_tape")
+	=> ng_tape__wieder
 do GameState.set_flag("tapeAsked")
 Nugget: *öffnet das Kassettenfach* … Leer. *Blick wie ein Messer* Da war ein Band drin. Wo ist es?
+- (Täuschen 15) Da war kein Band.
+	if GameState.probe("ren", "Täuschen", 15)
+		=> ng_tape1
+	else
+		=> ng_tape2
+- *Die Kassette rausrücken*
+	=> ng_tape3
+
+~ ng_tape__wieder
+Nugget: …
 - (Täuschen 15) Da war kein Band.
 	if GameState.probe("ren", "Täuschen", 15)
 		=> ng_tape1
@@ -577,7 +908,7 @@ Nugget: *mustert euch lange* … Muss wohl rausgefallen sein. *zuckt die Schulte
 
 ~ ng_tape2
 do GameState.set_flag("tapeLied")
-# TODO Effekt aus dem Prototyp: GAME.reward=Math.floor((GAME.reward||50)/2)
+set GameState.belohnung = GameState.abrunden((GameState.oder(GameState.belohnung, 50) / 2))
 Nugget: Lügen kannst du nicht, Fuchs. Behalt dein Band. Aber dann gibt's nur die Hälfte. Und der Don wird davon hören.
 => ng_pay
 
@@ -589,41 +920,67 @@ Nugget: *steckt die Kassette ein, ohne sie anzusehen* Klug. Für Klugheit gibt's
 => ng_pay
 
 ~ mo_room
-# TODO Text ist im Prototyp dynamisch – hier die Standardfassung
-Hummel: Zimmer 3 ist frei. Zehn Collar die Nacht, Frühstück gibt's nicht, Ruhe auch nicht.
-# TODO Bedingung der nächsten Antwort im Prototyp: GAME.money>=roomPrice()
-- Wir nehmen es. (10 Collar) [if true /]
+if GameState.erneut("mo_room")
+	=> mo_room__wieder
+if GameState.flag("job")
+	Hummel: Für Personal? Zimmer 3, umsonst. *schiebt einen Schlüssel über die Theke* Nur nicht Zimmer 7 aufschließen. Der passt da eh nicht.
+else
+	Hummel: Zimmer 3 ist frei. Zehn Collar die Nacht, Frühstück gibt's nicht, Ruhe auch nicht.
+- Wir nehmen es. (10 Collar) [if GameState.zimmerpreis() and (GameState.geld >= GameState.zimmerpreis()) /]
 	=> mo_key
-# TODO Bedingung der nächsten Antwort im Prototyp: roomPrice()>0
-- Zu teuer. Vielleicht später. [if true /]
+- Danke, Hummel. [if not (GameState.zimmerpreis()) and (GameState.geld >= GameState.zimmerpreis()) /]
+	=> mo_key
+- Zu teuer. Vielleicht später. [if (GameState.zimmerpreis() > 0) /]
 	=> hu_0
-# TODO Bedingung der nächsten Antwort im Prototyp: roomPrice()===0
-- Später. [if true /]
+- Später. [if GameState.gleich(GameState.zimmerpreis(), 0) /]
+	=> hu_0
+
+~ mo_room__wieder
+Hummel: …
+- Wir nehmen es. (10 Collar) [if GameState.zimmerpreis() and (GameState.geld >= GameState.zimmerpreis()) /]
+	=> mo_key
+- Danke, Hummel. [if not (GameState.zimmerpreis()) and (GameState.geld >= GameState.zimmerpreis()) /]
+	=> mo_key
+- Zu teuer. Vielleicht später. [if (GameState.zimmerpreis() > 0) /]
+	=> hu_0
+- Später. [if GameState.gleich(GameState.zimmerpreis(), 0) /]
 	=> hu_0
 
 ~ mo_key
-# TODO Effekt aus dem Prototyp: if(roomPrice())FX_.money(-roomPrice())
+if GameState.zimmerpreis()
+	do GameState.geld_aendern((0 - GameState.zimmerpreis()))
 do GameState.set_flag("roomKey")
 do EventBus.hinweis.emit("Erhalten: Schlüssel zu Zimmer 3", "quest")
 Ein Messingschlüssel mit einem Holzanhänger\: „3“. Die Treppe zum Motel ist rechts neben der Theke.
 => END
 
 ~ mo_sleep
+if GameState.erneut("mo_sleep")
+	=> mo_sleep__wieder
 Zimmer 3. Ein Bett, ein Sessel, eine Neonreklame, die durch die Jalousie blinkt. Durch die Wand hört man die Bar.
 - Schlafen bis zum Morgen.
 	=> mo_sleep2
 - Noch nicht.
 	=> END
 
+~ mo_sleep__wieder
+…
+- Schlafen bis zum Morgen.
+	=> mo_sleep2
+- Noch nicht.
+	=> END
+
 ~ mo_sleep2
-# TODO Effekt aus dem Prototyp: for(const u of party)u.hp=u.max
-# TODO Effekt aus dem Prototyp: outsideKey='morning'
+do GameState.heilen(999)
+do EventBus.ereignis.emit("stimmung:morning")
 do GameState.set_flag("slept")
 do GameState.set_flag("roomKey", 0)
-# TODO Effekt aus dem Prototyp: GAME.day=(GAME.day||0)+1
+set GameState.tag = (GameState.tag + 1)
 do EventBus.ereignis.emit("checkShift")
-do EventBus.hinweis.emit("Die Gruppe ist ausgeruht (volle TP)", "quest")
-# TODO Effekt aus dem Prototyp: if(shiftOpen())toast('Heute Abend: <b>Schicht im Cuckoo\'s Nest</b>','quest')
-# TODO Effekt aus dem Prototyp: if(typeof saveGame==='function')setTimeout(()=>saveGame('auto',true),500)
+do EventBus.hinweis.emit("Die Gruppe ist ausgeruht (volle TP)", "gut")
+if GameState.schicht_offen()
+	do EventBus.hinweis.emit("Heute Abend: Schicht im Cuckoo's Nest", "quest")
+if true
+	do EventBus.ereignis.emit("autosave")
 Irgendwann verstummt die Bar. Als ihr aufwacht, liegt der Schlüssel auf dem Nachttisch und draußen hupt jemand. Ein neuer Tag in Meow-York.
 => END
