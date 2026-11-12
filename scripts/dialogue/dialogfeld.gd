@@ -88,7 +88,10 @@ func _naechste(id: String) -> void:
 ## Ein einzelner Spruch ohne Dialogdatei (NPCs mit „sprueche“)
 func einzeln(name: String, text: String) -> void:
 	_einzeln = true
-	var z := DialogueLine.new({"type": DMConstants.TYPE_DIALOGUE, "character": name, "text": text, "next_id": DMConstants.ID_END})
+	# Leere Zeile anlegen und Felder setzen (der Konstruktor erwartet interne Compilerdaten)
+	var z := DialogueLine.new()
+	z.id = "einzeln"; z.type = DMConstants.TYPE_DIALOGUE
+	z.character = name; z.text = text; z.next_id = DMConstants.ID_END
 	zeile = z
 	_zeige(name, text)
 	_text.dialogue_line = z
