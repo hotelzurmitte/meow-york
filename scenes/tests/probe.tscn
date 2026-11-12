@@ -1,6 +1,90 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3]
 
-[ext_resource type="Script" path="res://scripts/tests/probe.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/tests/probe.gd" id="1_vekpo"]
+[ext_resource type="Texture2D" path="res://assets/characters/npcs/atlas_npcs.png" id="2_4bhu5"]
 
-[node name="Probe" type="Node3D"]
-script = ExtResource("1")
+[sub_resource type="Environment" id="Environment_elvu0"]
+background_mode = 1
+background_color = Color(0.12, 0.12, 0.16, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.5, 0.5, 0.6, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4lbc4"]
+albedo_color = Color(0.35, 0.33, 0.38, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dqqjj"]
+size = Vector2(20, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gufqr"]
+albedo_color = Color(0.55, 0.25, 0.2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x7xn6"]
+size = Vector3(4, 5, 3)
+
+[node name="Probe" type="Node3D" unique_id=1173805995]
+script = ExtResource("1_vekpo")
+
+[node name="Umgebung" type="WorldEnvironment" parent="." unique_id=163329379]
+environment = SubResource("Environment_elvu0")
+
+[node name="Sonne" type="DirectionalLight3D" parent="." unique_id=1685756032]
+transform = Transform3D(0.8660254, -0.38302222, 0.32139382, 0, 0.64278764, 0.76604444, -0.5, -0.66341394, 0.5566704, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Boden" type="MeshInstance3D" parent="." unique_id=1936259307]
+material_override = SubResource("StandardMaterial3D_4lbc4")
+mesh = SubResource("PlaneMesh_dqqjj")
+
+[node name="Haus" type="MeshInstance3D" parent="." unique_id=1502499949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.5, -3)
+material_override = SubResource("StandardMaterial3D_gufqr")
+mesh = SubResource("BoxMesh_x7xn6")
+
+[node name="Fuchs" type="Sprite3D" parent="." unique_id=852866833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -1.2)
+offset = Vector2(0, 33)
+pixel_size = 0.034891836
+billboard = 2
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("2_4bhu5")
+region_enabled = true
+region_rect = Rect2(0, 1254, 34, 66)
+
+[node name="Schimpanse" type="Sprite3D" parent="." unique_id=1766238697]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9, 0, -0.4)
+offset = Vector2(0, 33)
+pixel_size = 0.034891836
+billboard = 2
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("2_4bhu5")
+region_enabled = true
+region_rect = Rect2(0, 1188, 34, 66)
+
+[node name="Otter" type="Sprite3D" parent="." unique_id=2072707990]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0, -1.2)
+offset = Vector2(0, 33)
+pixel_size = 0.034891836
+billboard = 2
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("2_4bhu5")
+region_enabled = true
+region_rect = Rect2(0, 792, 34, 66)
+
+[node name="Panther" type="Sprite3D" parent="." unique_id=371236621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3, 0, 1.6)
+offset = Vector2(0, 33)
+pixel_size = 0.034891836
+billboard = 2
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("2_4bhu5")
+region_enabled = true
+region_rect = Rect2(0, 990, 34, 66)
+
+[node name="Kamera" type="Camera3D" parent="." unique_id=1718154854]
+transform = Transform3D(0.70710677, -0.40824828, 0.57735026, 0, 0.81649655, 0.57735026, -0.70710677, -0.40824828, 0.57735026, 8, 9, 8)
+current = true
+fov = 40.0
