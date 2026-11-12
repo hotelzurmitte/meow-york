@@ -1,0 +1,11 @@
+# Godot
+.godot/
+*.import.tmp
+# Exporte
+build/
+*.exe
+*.pck
+*.zip
+# System
+.DS_Store
+Thumbs.db
