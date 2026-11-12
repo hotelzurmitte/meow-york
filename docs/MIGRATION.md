@@ -41,7 +41,7 @@ scripts/
   core/        GameState, EventBus, SaveSystem (Autoloads)
   characters/  Figur, Sprite-Richtungen, Bewegung, Gruppe
   world/       Generator, Türen, Interaktion, Durchsicht
-  dialogue/    Dialog-Laufzeit + Regelsprache
+  dialogue/    Anbindung an Dialogue Manager (Sprecher, Proben, Sprechblase)
   quests/      Questverwaltung
   combat/      Rundenkampf (Phase 3)
   stealth/     Wachen, Sichtkegel (Phase 3)
@@ -58,6 +58,20 @@ docs/        dieses Dokument, Entscheidungen
   - `SaveSystem`: schreibt `GameState` als versioniertes JSON und kann alte Stände hochrechnen.
 - **Systeme kennen sich nicht gegenseitig.** Der Dialog setzt ein Flag über `GameState`, die Questverwaltung hört über `EventBus` mit. So lässt sich jedes System einzeln testen und austauschen.
 - **Szenen statt Monolithen:** Figur, NPC, Tür, Haus und Interaktionspunkt sind jeweils eigene Szenen, die man im Editor in ein Level zieht.
+
+### 3.2a Plugins (Stand 12.11.2026, alle MIT-Lizenz, liegen in `addons/`)
+
+| Plugin | Version | Wofür wir es nutzen |
+|---|---|---|
+| **Dialogue Manager** (Nathan Hoad) | 4.2.0 | Alle Dialoge als `.dialogue`-Dateien mit eigenem Editor in Godot. Ersetzt das eigene Dialogsystem aus diesem Plan (siehe 4.2) |
+| **Phantom Camera** (Marcus Skov) | 0.11.0.4 | Die frei drehbare Kamera: folgt Ren, Drehen, Neigen und Zoom über unser Eingabeskript. Später Kamerafahrten für Zwischensequenzen und den Kampf |
+| **Godot Asset Placer** (Roman Levinzon) | 1.7.0-beta1 | Dein Werkzeug für die Level: Häuser, Laternen, Mülltonnen usw. aus einer Palette per Klick ins Level setzen. Jedes Haus und jede Requisite ist dafür eine eigene Szene |
+
+**Nicht übernommen:**
+- **Lit:** Beleuchtung nur für 2D-Szenen; unsere Welt ist 3D, es hätte keine Wirkung.
+- **Ragdoll Generator:** Ragdolls für 3D-Skelette; unsere Figuren sind Pixel-Sprites.
+- **Sprite StaticBody Builder:** Kollision für 2D-Sprites, bei uns ohne Wirkung.
+- **Terrain3D:** Höhenlandschaften. Die Stadt ist flach. Kommt dazu, falls wir später Parks, Ufer oder Hügel brauchen; der Asset Placer kann dann direkt darauf platzieren.
 
 ### 3.3 Darstellung (Hybrid 3D + Pixel)
 
@@ -95,24 +109,28 @@ Level (Node3D)
   "level": "cuckoos_nest", "position": [99.0, 1.05], "dialog": "maria", "wandern": [97.6, 102.4] }
 ```
 
-### 4.2 Dialoge (`data/dialogues/<datei>.json`)
+### 4.2 Dialoge (Dialogue Manager, `data/dialogues/*.dialogue`)
 
-```json
-{ "id": "ke.0", "sprecher": "louse",
-  "text": "Papa Roach. Jeden Tag ein paar Neue.",
-  "effekte": ["flag ke"],
-  "optionen": [
-    { "text": "Wo bunkert Roach sein Geld?", "wenn": "!quest garage", "weiter": "ke.gar" },
-    { "text": "Hier verschwinden Leute, oder?", "einmal": true,
-      "probe": { "fertigkeit": "Straßenwissen", "sg": 13, "wer": "corvin" },
-      "erfolg": "ke.4", "misserfolg": "ke.4f" } ] }
+Dialoge schreibt man im Dialog-Editor von Godot in einem lesbaren Skriptformat. Bedingungen und Effekte greifen auf `GameState` zu:
+
+```
+~ ilse_start
+Ilse: Papa Roach. Jeden Tag ein paar Neue.
+do GameState.set_flag("ke")
+- Wo bunkert Roach sein Geld? [if not GameState.quest_aktiv("garage")] => ilse_garage
+- Hier verschwinden Leute, oder? [if not GameState.einmal("ke4")]
+	do GameState.probe("corvin", "Straßenwissen", 13)
+	if GameState.letzte_probe_ok
+		=> ilse_verschwinden
+	else
+		Ilse: Du riechst nach Polizei, Federvieh.
+- Danke. Wir gehen. => END
 ```
 
-**Regelsprache**, absichtlich klein:
-- **Bedingungen:** `flag x`, `!flag x`, `flag x = wert`, `geld >= 20`, `quest garage`, `mitglied dig`, verknüpft mit `und` / `oder`.
-- **Effekte:** `flag x`, `flag x = 0`, `geld +15`, `ansehen insekten +1`, `zuneigung dig -1`, `quest garage "Text"`, `hinweis "…"`.
-
-Was sich nicht in Regeln fassen lässt (zum Beispiel Kampf starten oder eine Zwischensequenz), wird als benanntes **Ereignis** aufgerufen (`"ereignis": "kampf_antonia"`). Das Ereignis ist dann Code, aber an genau einer Stelle.
+- **Proben** (W20 + Wert gegen Schwierigkeit) laufen über `GameState.probe(...)`. Die Oberfläche zeigt den Wurf an.
+- **Kämpfe, Zwischensequenzen und Szenenwechsel** sind Signale: `do EventBus.ereignis("kampf_antonia")`.
+- **Der Konverter** aus dem Prototyp schreibt die 296 Knoten in dieses Format. Was er nicht übersetzen kann, markiert er mit `# TODO`.
+- **Sprechblase:** Die Beispiel-Sprechblase des Plugins wird ins Projekt kopiert und im Meow-York-Stil umgebaut.
 
 ### 4.3 Spielstand
 

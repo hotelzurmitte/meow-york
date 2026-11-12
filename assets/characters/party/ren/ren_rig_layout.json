@@ -1,0 +1,1 @@
+{"idle": [0, 4], "walk": [4, 8], "jog": [12, 8], "run": [20, 8], "runStart": [28, 4], "brake": [32, 4], "stepIn": [36, 2], "stepOut": [38, 2]}
