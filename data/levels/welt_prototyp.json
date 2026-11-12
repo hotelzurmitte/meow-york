@@ -1,0 +1,3581 @@
+{
+"aabb": [
+{
+"x0": -24,
+"x1": -14,
+"z0": -14,
+"z1": -3.5,
+"area": "street"
+},
+{
+"x0": -14,
+"x1": -5,
+"z0": -16,
+"z1": -3.5,
+"area": "street"
+},
+{
+"x0": -1,
+"x1": 9,
+"z0": -16,
+"z1": -3.5,
+"area": "street"
+},
+{
+"x0": 9,
+"x1": 18,
+"z0": -27,
+"z1": -3.5,
+"area": "street"
+},
+{
+"x0": 18,
+"x1": 28,
+"z0": -27,
+"z1": -3.5,
+"area": "street"
+},
+{
+"x0": -14,
+"x1": 9,
+"z0": -40,
+"z1": -27,
+"area": "street"
+},
+{
+"x0": -62,
+"x1": -46,
+"z0": -36,
+"z1": -20,
+"area": "street"
+},
+{
+"x0": -46,
+"x1": -24,
+"z0": -36,
+"z1": -20,
+"area": "street"
+},
+{
+"x0": 44,
+"x1": 63.5,
+"z0": -30,
+"z1": -3.5,
+"area": "street"
+},
+{
+"x0": 28,
+"x1": 44,
+"z0": -40,
+"z1": -20,
+"area": "street"
+},
+{
+"x0": 21.7,
+"x1": 24.3,
+"z0": -3.5,
+"z1": -1.2,
+"area": "street"
+},
+{
+"x0": -21.35,
+"x1": -16.65,
+"z0": 0.1499999999999999,
+"z1": 2.15,
+"area": "street"
+},
+{
+"x0": -12.95,
+"x1": -8.25,
+"z0": 0.1499999999999999,
+"z1": 2.15,
+"area": "street"
+},
+{
+"x0": -10.35,
+"x1": -5.65,
+"z0": 6.85,
+"z1": 8.85,
+"area": "street"
+},
+{
+"x0": 15.65,
+"x1": 20.35,
+"z0": 6.85,
+"z1": 8.85,
+"area": "street"
+},
+{
+"x0": -24,
+"x1": 24,
+"z0": 17.9,
+"z1": 18.5,
+"area": "street"
+},
+{
+"x0": -4.15,
+"x1": -1.85,
+"z0": 14,
+"z1": 15.2,
+"area": "street"
+},
+{
+"x0": -13.1,
+"x1": -10.9,
+"z0": 16.099999999999998,
+"z1": 16.7,
+"area": "street"
+},
+{
+"x0": 8.9,
+"x1": 11.1,
+"z0": 16.099999999999998,
+"z1": 16.7,
+"area": "street"
+},
+{
+"x0": 11.5,
+"x1": 12.5,
+"z0": 10.6,
+"z1": 11.6,
+"area": "street"
+},
+{
+"x0": -12.4,
+"x1": -9.6,
+"z0": -26.15,
+"z1": -24.65,
+"area": "street"
+},
+{
+"x0": 4.1,
+"x1": 6.9,
+"z0": -26.25,
+"z1": -24.75,
+"area": "street"
+},
+{
+"x0": -7.6,
+"x1": -5.4,
+"z0": -26.4,
+"z1": -25.2,
+"area": "street"
+},
+{
+"x0": -62,
+"x1": -58,
+"z0": 20,
+"z1": 32.6,
+"area": "street"
+},
+{
+"x0": -58,
+"x1": -44,
+"z0": 30,
+"z1": 32.6,
+"area": "street"
+},
+{
+"x0": -44,
+"x1": -24,
+"z0": 20,
+"z1": 32.6,
+"area": "street"
+},
+{
+"x0": -24,
+"x1": 28,
+"z0": 18.5,
+"z1": 32.6,
+"area": "street"
+},
+{
+"x0": 37,
+"x1": 62.6,
+"z0": 9.5,
+"z1": 32.6,
+"area": "street"
+},
+{
+"x0": 62.6,
+"x1": 64,
+"z0": -3.5,
+"z1": 9.5,
+"area": "street"
+},
+{
+"x0": 44,
+"x1": 62.6,
+"z0": -40,
+"z1": -30,
+"area": "street"
+},
+{
+"x0": -62,
+"x1": -60,
+"z0": -20,
+"z1": 20,
+"area": "street"
+},
+{
+"x0": 40.6,
+"x1": 43.4,
+"z0": -3.4,
+"z1": -1.8,
+"area": "street"
+},
+{
+"x0": 51.6,
+"x1": 54.4,
+"z0": -3.4,
+"z1": -1.8,
+"area": "street"
+},
+{
+"x0": 55.5,
+"x1": 57.55,
+"z0": -3.1,
+"z1": -2.05,
+"area": "street"
+},
+{
+"x0": 40,
+"x1": 43.6,
+"z0": -18,
+"z1": -15,
+"area": "street"
+},
+{
+"x0": 28.65,
+"x1": 33.35,
+"z0": -18.2,
+"z1": -16.2,
+"area": "street"
+},
+{
+"x0": -53.5,
+"x1": -50.5,
+"z0": -12.7,
+"z1": -11.4,
+"area": "street"
+},
+{
+"x0": -45.5,
+"x1": -42.5,
+"z0": -14.7,
+"z1": -13.4,
+"area": "street"
+},
+{
+"x0": -36.5,
+"x1": -33.5,
+"z0": -12.7,
+"z1": -11.4,
+"area": "street"
+},
+{
+"x0": -49.5,
+"x1": -46.5,
+"z0": 14.8,
+"z1": 16.1,
+"area": "street"
+},
+{
+"x0": -37.5,
+"x1": -34.5,
+"z0": 15.3,
+"z1": 16.6,
+"area": "street"
+},
+{
+"x0": -54.35,
+"x1": -49.65,
+"z0": 25.5,
+"z1": 27.5,
+"area": "street"
+},
+{
+"x0": -20.8,
+"x1": -18.2,
+"z0": 9.4,
+"z1": 12.15,
+"area": "street"
+},
+{
+"x0": 96.4,
+"x1": 103.6,
+"z0": -2.55,
+"z1": -1.75,
+"area": "bar"
+},
+{
+"x0": 102.9,
+"x1": 105.5,
+"z0": 1,
+"z1": 2.4,
+"area": "bar"
+},
+{
+"x0": 105.1,
+"x1": 106.1,
+"z0": -4.4,
+"z1": -3.8,
+"area": "bar"
+},
+{
+"x0": 266,
+"x1": 280,
+"z0": -24,
+"z1": -4,
+"area": "mancatten"
+},
+{
+"x0": 280,
+"x1": 293,
+"z0": -20,
+"z1": -4,
+"area": "mancatten"
+},
+{
+"x0": 293,
+"x1": 309,
+"z0": -26,
+"z1": -5,
+"area": "mancatten"
+},
+{
+"x0": 309,
+"x1": 321,
+"z0": -24,
+"z1": -4,
+"area": "mancatten"
+},
+{
+"x0": 321,
+"x1": 334,
+"z0": -24,
+"z1": -4,
+"area": "mancatten"
+},
+{
+"x0": 283.5,
+"x1": 289.5,
+"z0": -4,
+"z1": -3.6,
+"area": "mancatten"
+},
+{
+"x0": 283.5,
+"x1": 289.5,
+"z0": -4,
+"z1": -3.6,
+"area": "mancatten"
+},
+{
+"x0": 283.5,
+"x1": 289.5,
+"z0": -4,
+"z1": -3.6,
+"area": "mancatten"
+},
+{
+"x0": 297,
+"x1": 305,
+"z0": -4,
+"z1": -3.6,
+"area": "mancatten"
+},
+{
+"x0": 297,
+"x1": 305,
+"z0": -4,
+"z1": -3.6,
+"area": "mancatten"
+},
+{
+"x0": 297,
+"x1": 305,
+"z0": -4,
+"z1": -3.6,
+"area": "mancatten"
+},
+{
+"x0": 283.65,
+"x1": 288.35,
+"z0": 0.1499999999999999,
+"z1": 2.15,
+"area": "mancatten"
+},
+{
+"x0": 302.65,
+"x1": 307.35,
+"z0": 5.85,
+"z1": 7.85,
+"area": "mancatten"
+},
+{
+"x0": 314.65,
+"x1": 319.35,
+"z0": 0.1499999999999999,
+"z1": 2.15,
+"area": "mancatten"
+},
+{
+"x0": 305,
+"x1": 307,
+"z0": 9.75,
+"z1": 11.05,
+"area": "mancatten"
+},
+{
+"x0": 314.7,
+"x1": 317.3,
+"z0": 9.200000000000001,
+"z1": 11.950000000000001,
+"area": "mancatten"
+},
+{
+"x0": 466,
+"x1": 481,
+"z0": -22,
+"z1": -4,
+"area": "branxW"
+},
+{
+"x0": 481,
+"x1": 497,
+"z0": -20,
+"z1": -4,
+"area": "branxW"
+},
+{
+"x0": 497,
+"x1": 509,
+"z0": -22,
+"z1": -4,
+"area": "branxW"
+},
+{
+"x0": 509,
+"x1": 520,
+"z0": -20,
+"z1": -4,
+"area": "branxW"
+},
+{
+"x0": 520,
+"x1": 534,
+"z0": -22,
+"z1": -4,
+"area": "branxW"
+},
+{
+"x0": 508.65,
+"x1": 513.35,
+"z0": 5.85,
+"z1": 7.85,
+"area": "branxW"
+},
+{
+"x0": 477,
+"x1": 497,
+"z0": 14.45,
+"z1": 14.75,
+"area": "branxW"
+},
+{
+"x0": 503,
+"x1": 523,
+"z0": 14.45,
+"z1": 14.75,
+"area": "branxW"
+},
+{
+"x0": 481.5,
+"x1": 483.55,
+"z0": 9.9,
+"z1": 10.950000000000001,
+"area": "branxW"
+},
+{
+"x0": 512.7,
+"x1": 515.3,
+"z0": 9.200000000000001,
+"z1": 11.950000000000001,
+"area": "branxW"
+},
+{
+"x0": 666,
+"x1": 683,
+"z0": -22,
+"z1": -4,
+"area": "branxO"
+},
+{
+"x0": 683,
+"x1": 700,
+"z0": -20,
+"z1": -4,
+"area": "branxO"
+},
+{
+"x0": 700,
+"x1": 712,
+"z0": -22,
+"z1": -4,
+"area": "branxO"
+},
+{
+"x0": 712,
+"x1": 734,
+"z0": -22,
+"z1": -4,
+"area": "branxO"
+},
+{
+"x0": 685.65,
+"x1": 690.35,
+"z0": 0.1499999999999999,
+"z1": 2.15,
+"area": "branxO"
+},
+{
+"x0": 701.65,
+"x1": 706.35,
+"z0": 5.85,
+"z1": 7.85,
+"area": "branxO"
+},
+{
+"x0": 717.65,
+"x1": 722.35,
+"z0": 0.1499999999999999,
+"z1": 2.15,
+"area": "branxO"
+},
+{
+"x0": 677,
+"x1": 696,
+"z0": 14.45,
+"z1": 14.75,
+"area": "branxO"
+},
+{
+"x0": 704,
+"x1": 723,
+"z0": 14.45,
+"z1": 14.75,
+"area": "branxO"
+},
+{
+"x0": 693.5,
+"x1": 695.55,
+"z0": 9.7,
+"z1": 10.75,
+"area": "branxO"
+},
+{
+"x0": 716.7,
+"x1": 719.3,
+"z0": 9.200000000000001,
+"z1": 11.950000000000001,
+"area": "branxO"
+},
+{
+"x0": 42.65,
+"x1": 47.35,
+"z0": 3.2,
+"z1": 5.2,
+"area": "street"
+},
+{
+"x0": 1290.6,
+"x1": 1309.4,
+"z0": -4.6,
+"z1": -4.2,
+"area": "hqW"
+},
+{
+"x0": 1290.6,
+"x1": 1291.1,
+"z0": -4.4,
+"z1": 4.4,
+"area": "hqW"
+},
+{
+"x0": 1308.9,
+"x1": 1309.4,
+"z0": -4.4,
+"z1": 4.4,
+"area": "hqW"
+},
+{
+"x0": 1300.7,
+"x1": 1303.3,
+"z0": 1.8,
+"z1": 3,
+"area": "hqW"
+},
+{
+"x0": 1490.6,
+"x1": 1509.4,
+"z0": -4.6,
+"z1": -4.2,
+"area": "hqO"
+},
+{
+"x0": 1490.6,
+"x1": 1491.1,
+"z0": -4.4,
+"z1": 4.4,
+"area": "hqO"
+},
+{
+"x0": 1508.9,
+"x1": 1509.4,
+"z0": -4.4,
+"z1": 4.4,
+"area": "hqO"
+},
+{
+"x0": 1498.4,
+"x1": 1500.8,
+"z0": -3.7,
+"z1": -2.9,
+"area": "hqO"
+},
+{
+"x0": 1503.9,
+"x1": 1506.9,
+"z0": -3.9,
+"z1": -2.6,
+"area": "hqO"
+},
+{
+"x0": 1505,
+"x1": 1507,
+"z0": 1.9,
+"z1": 2.9,
+"area": "hqO"
+},
+{
+"x0": -57.3,
+"x1": -55.5,
+"z0": 28.7,
+"z1": 30.1,
+"area": "street"
+},
+{
+"x0": 1840,
+"x1": 1958,
+"z0": -16,
+"z1": -14,
+"area": "unter"
+},
+{
+"x0": 1840,
+"x1": 1908,
+"z0": -14,
+"z1": 2,
+"area": "unter"
+},
+{
+"x0": 1919,
+"x1": 1958,
+"z0": -14,
+"z1": 2,
+"area": "unter"
+},
+{
+"x0": 1908,
+"x1": 1912,
+"z0": -5,
+"z1": 2,
+"area": "unter"
+},
+{
+"x0": 1915,
+"x1": 1919,
+"z0": -5,
+"z1": 2,
+"area": "unter"
+},
+{
+"x0": 1840,
+"x1": 1842,
+"z0": 2,
+"z1": 20,
+"area": "unter"
+},
+{
+"x0": 1956,
+"x1": 1958,
+"z0": 2,
+"z1": 30,
+"area": "unter"
+},
+{
+"x0": 1842,
+"x1": 1845,
+"z0": 7,
+"z1": 20,
+"area": "unter"
+},
+{
+"x0": 1850,
+"x1": 1879,
+"z0": 7,
+"z1": 12,
+"area": "unter"
+},
+{
+"x0": 1883,
+"x1": 1956,
+"z0": 7,
+"z1": 12,
+"area": "unter"
+},
+{
+"x0": 1850,
+"x1": 1876,
+"z0": 12,
+"z1": 20,
+"area": "unter"
+},
+{
+"x0": 1950,
+"x1": 1956,
+"z0": 12,
+"z1": 30,
+"area": "unter"
+},
+{
+"x0": 1876,
+"x1": 1950,
+"z0": 16,
+"z1": 30,
+"area": "unter"
+},
+{
+"x0": 1840,
+"x1": 1841,
+"z0": 20,
+"z1": 30,
+"area": "unter"
+},
+{
+"x0": 1853,
+"x1": 1876,
+"z0": 20,
+"z1": 30,
+"area": "unter"
+},
+{
+"x0": 1841,
+"x1": 1853,
+"z0": 29,
+"z1": 30,
+"area": "unter"
+},
+{
+"x0": 1929.2,
+"x1": 1930.8,
+"z0": 12.3,
+"z1": 13.1,
+"area": "unter"
+},
+{
+"x0": 1842,
+"x1": 1844,
+"z0": 21,
+"z1": 23,
+"area": "unter"
+},
+{
+"x0": 1851,
+"x1": 1852.2,
+"z0": 20.5,
+"z1": 21.5,
+"area": "unter"
+}
+],
+"circ": [
+{
+"x": -18,
+"z": -0.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -2,
+"z": -0.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": 14,
+"z": -0.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -10,
+"z": 9.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": 7,
+"z": 9.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -5.3,
+"z": -0.7,
+"r": 0.15,
+"area": "street"
+},
+{
+"x": -6,
+"z": -0.6,
+"r": 0.42,
+"area": "street"
+},
+{
+"x": 8.6,
+"z": -0.6,
+"r": 0.42,
+"area": "street"
+},
+{
+"x": -15,
+"z": 10.1,
+"r": 0.42,
+"area": "street"
+},
+{
+"x": 19,
+"z": -0.7,
+"r": 0.42,
+"area": "street"
+},
+{
+"x": -3.5,
+"z": -15,
+"r": 0.42,
+"area": "street"
+},
+{
+"x": -2.5,
+"z": -21,
+"r": 0.55,
+"area": "street"
+},
+{
+"x": -16,
+"z": 14.8,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": -8,
+"z": 16,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 8,
+"z": 14.6,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 16,
+"z": 15.8,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 21,
+"z": 13.8,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": -16,
+"z": -0.5,
+"r": 0.3,
+"area": "street"
+},
+{
+"x": 3,
+"z": 9.7,
+"r": 0.3,
+"area": "street"
+},
+{
+"x": -4.4,
+"z": -3,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": -1.5,
+"z": -3.1,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": 17.2,
+"z": -3.1,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": -13,
+"z": -16.8,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": -8,
+"z": -26.3,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": 7.8,
+"z": -17,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": 28.6,
+"z": 14,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": 36.4,
+"z": 24,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": 29,
+"z": 10,
+"r": 0.15,
+"area": "street"
+},
+{
+"x": 45,
+"z": -3.1,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": 47.4,
+"z": -3.2,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": 58,
+"z": -3.1,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": 61,
+"z": 6,
+"r": 0.6,
+"area": "street"
+},
+{
+"x": 60.5,
+"z": 8,
+"r": 0.55,
+"area": "street"
+},
+{
+"x": 50,
+"z": -0.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": 29,
+"z": -10,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -42,
+"z": -0.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -54,
+"z": 9.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -30,
+"z": 9.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -56,
+"z": -3,
+"r": 0.55,
+"area": "street"
+},
+{
+"x": -29,
+"z": 15,
+"r": 0.55,
+"area": "street"
+},
+{
+"x": -46,
+"z": 24.5,
+"r": 0.55,
+"area": "street"
+},
+{
+"x": -56,
+"z": 26,
+"r": 0.55,
+"area": "street"
+},
+{
+"x": -57.6,
+"z": 22.4,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -44.4,
+"z": 22.4,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -57.6,
+"z": 29.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": -44.4,
+"z": 29.6,
+"r": 0.25,
+"area": "street"
+},
+{
+"x": 10.668888487132728,
+"z": 1.3374779759118627,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 9.73111151286727,
+"z": 0.7625220240881374,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 12.368888487132729,
+"z": 1.3374779759118627,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 11.431111512867272,
+"z": 0.7625220240881374,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 14.068888487132728,
+"z": 1.3374779759118627,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 13.131111512867271,
+"z": 0.7625220240881374,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 15.76888848713273,
+"z": 1.3374779759118627,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 14.831111512867272,
+"z": 0.7625220240881374,
+"r": 0.45,
+"area": "street"
+},
+{
+"x": 32.4,
+"z": -10.9,
+"r": 0.4,
+"area": "street"
+},
+{
+"x": 97.2,
+"z": -1.35,
+"r": 0.25,
+"area": "bar"
+},
+{
+"x": 98.6,
+"z": -1.35,
+"r": 0.25,
+"area": "bar"
+},
+{
+"x": 100,
+"z": -1.35,
+"r": 0.25,
+"area": "bar"
+},
+{
+"x": 101.4,
+"z": -1.35,
+"r": 0.25,
+"area": "bar"
+},
+{
+"x": 102.8,
+"z": -1.35,
+"r": 0.25,
+"area": "bar"
+},
+{
+"x": 96.6,
+"z": 2.2,
+"r": 0.6,
+"area": "bar"
+},
+{
+"x": 100.6,
+"z": 2.9,
+"r": 0.6,
+"area": "bar"
+},
+{
+"x": 280,
+"z": -0.6,
+"r": 0.25,
+"area": "mancatten"
+},
+{
+"x": 300,
+"z": -0.6,
+"r": 0.25,
+"area": "mancatten"
+},
+{
+"x": 320,
+"z": -0.6,
+"r": 0.25,
+"area": "mancatten"
+},
+{
+"x": 292,
+"z": 8.6,
+"r": 0.25,
+"area": "mancatten"
+},
+{
+"x": 310,
+"z": 8.6,
+"r": 0.25,
+"area": "mancatten"
+},
+{
+"x": 288,
+"z": 14.6,
+"r": 3.1,
+"area": "mancatten"
+},
+{
+"x": 302,
+"z": 14.4,
+"r": 0.45,
+"area": "mancatten"
+},
+{
+"x": 278,
+"z": 14.2,
+"r": 0.45,
+"area": "mancatten"
+},
+{
+"x": 309,
+"z": 14.8,
+"r": 0.45,
+"area": "mancatten"
+},
+{
+"x": 322,
+"z": 14.2,
+"r": 0.45,
+"area": "mancatten"
+},
+{
+"x": 295.4,
+"z": -0.7,
+"r": 0.15,
+"area": "mancatten"
+},
+{
+"x": 485.46888848713274,
+"z": 1.3374779759118627,
+"r": 0.45,
+"area": "branxW"
+},
+{
+"x": 484.53111151286726,
+"z": 0.7625220240881374,
+"r": 0.45,
+"area": "branxW"
+},
+{
+"x": 487.16888848713273,
+"z": 1.3374779759118627,
+"r": 0.45,
+"area": "branxW"
+},
+{
+"x": 486.23111151286724,
+"z": 0.7625220240881374,
+"r": 0.45,
+"area": "branxW"
+},
+{
+"x": 488.8688884871327,
+"z": 1.3374779759118627,
+"r": 0.45,
+"area": "branxW"
+},
+{
+"x": 487.93111151286723,
+"z": 0.7625220240881374,
+"r": 0.45,
+"area": "branxW"
+},
+{
+"x": 490.56888848713277,
+"z": 1.3374779759118627,
+"r": 0.45,
+"area": "branxW"
+},
+{
+"x": 489.6311115128673,
+"z": 0.7625220240881374,
+"r": 0.45,
+"area": "branxW"
+},
+{
+"x": 486,
+"z": -0.6,
+"r": 0.25,
+"area": "branxW"
+},
+{
+"x": 506,
+"z": -0.6,
+"r": 0.25,
+"area": "branxW"
+},
+{
+"x": 496,
+"z": 8.6,
+"r": 0.25,
+"area": "branxW"
+},
+{
+"x": 500,
+"z": 15.6,
+"r": 0.55,
+"area": "branxW"
+},
+{
+"x": 497.8,
+"z": 15.2,
+"r": 0.55,
+"area": "branxW"
+},
+{
+"x": 506,
+"z": 13.4,
+"r": 0.55,
+"area": "branxW"
+},
+{
+"x": 498.5,
+"z": -3.1,
+"r": 0.6,
+"area": "branxW"
+},
+{
+"x": 518,
+"z": -3.1,
+"r": 0.6,
+"area": "branxW"
+},
+{
+"x": 480,
+"z": -3.2,
+"r": 0.6,
+"area": "branxW"
+},
+{
+"x": 500.5,
+"z": -0.7,
+"r": 0.15,
+"area": "branxW"
+},
+{
+"x": 690,
+"z": -0.6,
+"r": 0.25,
+"area": "branxO"
+},
+{
+"x": 710,
+"z": -0.6,
+"r": 0.25,
+"area": "branxO"
+},
+{
+"x": 702,
+"z": 8.6,
+"r": 0.25,
+"area": "branxO"
+},
+{
+"x": 707.6,
+"z": 13.6,
+"r": 0.4,
+"area": "branxO"
+},
+{
+"x": 684,
+"z": 13.2,
+"r": 0.55,
+"area": "branxO"
+},
+{
+"x": 680,
+"z": 13,
+"r": 0.45,
+"area": "branxO"
+},
+{
+"x": 700.6,
+"z": -0.7,
+"r": 0.15,
+"area": "branxO"
+},
+{
+"x": 1294.0472522909029,
+"z": -2.8549083791557552,
+"r": 0.45,
+"area": "hqW"
+},
+{
+"x": 1292.9527477090971,
+"z": -2.7450916208442444,
+"r": 0.45,
+"area": "hqW"
+},
+{
+"x": 1295.747252290903,
+"z": -2.8549083791557552,
+"r": 0.45,
+"area": "hqW"
+},
+{
+"x": 1294.6527477090972,
+"z": -2.7450916208442444,
+"r": 0.45,
+"area": "hqW"
+},
+{
+"x": 1298.8,
+"z": -3.4,
+"r": 0.55,
+"area": "hqW"
+},
+{
+"x": 1306.8,
+"z": -3.4,
+"r": 0.55,
+"area": "hqW"
+},
+{
+"x": 1909,
+"z": -13,
+"r": 0.55,
+"area": "unter"
+},
+{
+"x": 1910,
+"z": -13,
+"r": 0.55,
+"area": "unter"
+},
+{
+"x": 1911,
+"z": -13,
+"r": 0.55,
+"area": "unter"
+},
+{
+"x": 1917.5,
+"z": -6,
+"r": 0.55,
+"area": "unter"
+},
+{
+"x": 1917.5,
+"z": -7.2,
+"r": 0.55,
+"area": "unter"
+},
+{
+"x": -11,
+"z": -2.2,
+"r": 0.5,
+"area": "street"
+}
+],
+"doors": [
+{
+"area": "street",
+"x": 13.3,
+"z": -2.75,
+"r": 1.3,
+"label": "E – Cuckoo's Nest betreten"
+},
+{
+"area": "bar",
+"x": 94,
+"z": 2.6,
+"r": 1.2,
+"label": "E – Hinaus auf die Whisker Avenue"
+},
+{
+"area": "bar",
+"x": 106,
+"z": -1.6,
+"r": 1.2,
+"label": "E – Zur Motel-Treppe"
+},
+{
+"area": "street",
+"x": -10,
+"z": 3.2,
+"r": 1.1,
+"label": "E – Gullydeckel anheben (Kanalisation)"
+},
+{
+"area": "unter",
+"x": 1890,
+"z": 3.2,
+"r": 1.3,
+"label": "E – Leiter hinauf (Whisker Avenue)"
+},
+{
+"area": "street",
+"x": 6,
+"z": 6,
+"r": 1.1,
+"label": "E – Gullydeckel anheben (Kanalisation)"
+},
+{
+"area": "unter",
+"x": 1906,
+"z": 6,
+"r": 1.3,
+"label": "E – Leiter hinauf (Whisker Avenue)"
+},
+{
+"area": "street",
+"x": 18,
+"z": 2.5,
+"r": 1.1,
+"label": "E – Gullydeckel anheben (Kanalisation)"
+},
+{
+"area": "unter",
+"x": 1918,
+"z": 2.5,
+"r": 1.3,
+"label": "E – Leiter hinauf (Whisker Avenue)"
+},
+{
+"area": "street",
+"x": -17.2,
+"z": 11.6,
+"r": 1.1,
+"label": "E – Wartungsschacht (alter Tunnel 125 ST)"
+},
+{
+"area": "unter",
+"x": 1881,
+"z": 10,
+"r": 1.3,
+"label": "E – Leiter hinauf (Subway 125 ST)"
+},
+{
+"area": "street",
+"x": -45.6,
+"z": 28.4,
+"r": 1.2,
+"label": "E – Kellertür von Roachs Garage"
+},
+{
+"area": "unter",
+"x": 1850,
+"z": 27.5,
+"r": 1.3,
+"label": "E – Treppe hinauf (Garage)"
+},
+{
+"area": "bar",
+"x": 105,
+"z": 2.8,
+"r": 1.1,
+"label": "E – Bodenluke (Keller)"
+},
+{
+"area": "unter",
+"x": 1913.5,
+"z": -12,
+"r": 1.3,
+"label": "E – Leiter hinauf (Cuckoo's Nest)"
+},
+{
+"area": "—",
+"x": -56.3,
+"z": 21.4,
+"r": 1.4,
+"label": "E – Antonia den Schlüssel stehlen (Fingerfertigkeit)"
+},
+{
+"area": "unter",
+"x": 1851.6,
+"z": 21.9,
+"r": 1.4,
+"label": "E – Roachs Geldschrank"
+},
+{
+"area": "street",
+"x": -19.5,
+"z": 12.899999999999999,
+"r": 1.8,
+"label": "E – Subway (Schnellreise)"
+},
+{
+"area": "mancatten",
+"x": 316,
+"z": 12.7,
+"r": 1.8,
+"label": "E – Subway (Schnellreise)"
+},
+{
+"area": "branxW",
+"x": 514,
+"z": 12.7,
+"r": 1.8,
+"label": "E – Subway (Schnellreise)"
+},
+{
+"area": "branxO",
+"x": 718,
+"z": 12.7,
+"r": 1.8,
+"label": "E – Subway (Schnellreise)"
+},
+{
+"area": "hqW",
+"x": 1308.4,
+"z": 2.4,
+"r": 1.6,
+"label": "E – Hinaus in die Branx"
+},
+{
+"area": "hqO",
+"x": 1508.4,
+"z": 2.4,
+"r": 1.6,
+"label": "E – Hinaus in die Branx"
+},
+{
+"area": "branxW",
+"x": 490.9,
+"z": -3,
+"r": 1.8,
+"label": "E – Lagerhaus der Nomapes"
+},
+{
+"area": "branxO",
+"x": 690.6,
+"z": -3,
+"r": 1.8,
+"label": "E – Lagerhaus der Breaking Cats"
+},
+{
+"area": "hqW",
+"x": 1294.8,
+"z": 2.8,
+"r": 1.6,
+"label": "E – Schlafen"
+},
+{
+"area": "hqO",
+"x": 1495,
+"z": 2.8,
+"r": 1.6,
+"label": "E – Schlafen"
+},
+{
+"area": "hqW",
+"x": 1302,
+"z": 1.4,
+"r": 1.6,
+"label": "E – Essen"
+},
+{
+"area": "hqO",
+"x": 1506,
+"z": 1.6,
+"r": 1.6,
+"label": "E – Essen"
+},
+{
+"area": "street",
+"x": -56.4,
+"z": 28.4,
+"r": 1.6,
+"label": "E – Pappkarton-Unterschlupf untersuchen"
+}
+],
+"areas": {
+"street": {
+"x0": -60,
+"x1": 62.6,
+"z0": -40,
+"z1": 32.6
+},
+"bar": {
+"x0": 93.6,
+"x1": 106.5,
+"z0": -4.1,
+"z1": 4.1
+},
+"mancatten": {
+"x0": 278.5,
+"x1": 321.5,
+"z0": -3.4,
+"z1": 15.4
+},
+"branxW": {
+"x0": 478.5,
+"x1": 521.5,
+"z0": -3.4,
+"z1": 15.4
+},
+"branxO": {
+"x0": 678.5,
+"x1": 721.5,
+"z0": -3.4,
+"z1": 15.4
+},
+"ride": {
+"x0": 1080,
+"x1": 1120,
+"z0": -2,
+"z1": 8
+},
+"hqW": {
+"x0": 1291.6,
+"x1": 1308.4,
+"z0": -3.6,
+"z1": 3.6
+},
+"hqO": {
+"x0": 1491.6,
+"x1": 1508.4,
+"z0": -3.6,
+"z1": 3.6
+},
+"unter": {
+"x0": 1840,
+"x1": 1958,
+"z0": -16,
+"z1": 30
+},
+"npctest": {
+"x0": 2297,
+"x1": 2338,
+"z0": -6,
+"z1": 8
+}
+},
+"presets": {
+"night": {
+"name": "Nacht",
+"sun": "#8fa8ff",
+"sunI": 0.75,
+"dir": [
+0.45,
+1,
+0.65
+],
+"sky": "#1c2444",
+"gnd": "#0c0a10",
+"hemiI": 0.5,
+"fog": "#0b0f1c",
+"fogD": 0.012,
+"win": 0.85,
+"neon": 1,
+"lamp": 1,
+"fire": 1,
+"exp": 1.1,
+"bloom": 0.75,
+"steam": 1,
+"steamC": "#a8b0c8",
+"wet": 1
+},
+"morning": {
+"name": "Morgen",
+"sun": "#ffcfa0",
+"sunI": 3.1,
+"dir": [
+0.9,
+0.5,
+0.55
+],
+"sky": "#b0bcd8",
+"gnd": "#6a5a4c",
+"hemiI": 1.25,
+"fog": "#c0a8a8",
+"fogD": 0.009,
+"win": 0.12,
+"neon": 0.3,
+"lamp": 0.1,
+"fire": 0.5,
+"exp": 1,
+"bloom": 0.6,
+"steam": 1.3,
+"steamC": "#f4e4dc",
+"wet": 0.7
+},
+"day": {
+"name": "Tag",
+"sun": "#fff2dc",
+"sunI": 4.2,
+"dir": [
+0.3,
+1,
+0.45
+],
+"sky": "#9cc4f0",
+"gnd": "#7a6a58",
+"hemiI": 1.7,
+"fog": "#b8cce4",
+"fogD": 0.005,
+"win": 0.04,
+"neon": 0.18,
+"lamp": 0,
+"fire": 0.35,
+"exp": 1.05,
+"bloom": 0.4,
+"steam": 0.4,
+"steamC": "#f0f0f0",
+"wet": 0.3
+},
+"dusk": {
+"name": "Abend",
+"sun": "#ffa060",
+"sunI": 3,
+"dir": [
+-0.85,
+0.6,
+0.8
+],
+"sky": "#7a86b0",
+"gnd": "#4a3428",
+"hemiI": 0.85,
+"fog": "#5a4450",
+"fogD": 0.009,
+"win": 0.35,
+"neon": 0.55,
+"lamp": 0.3,
+"fire": 0.7,
+"exp": 0.95,
+"bloom": 0.75,
+"steam": 0.7,
+"steamC": "#e8c8b8",
+"wet": 0.8
+},
+"bar": {
+"name": "Bar",
+"sun": "#ffcf9a",
+"sunI": 0.55,
+"dir": [
+0.15,
+1,
+0.55
+],
+"sky": "#6a4a3a",
+"gnd": "#1a100c",
+"hemiI": 0.55,
+"fog": "#0a0706",
+"fogD": 0.02,
+"win": 0.6,
+"neon": 1,
+"lamp": 0,
+"fire": 0,
+"exp": 1.05,
+"bloom": 0.8,
+"steam": 0,
+"steamC": "#a8b0c8",
+"wet": 0.32
+},
+"unter": {
+"name": "Unten",
+"sun": "#9ab8aa",
+"sunI": 0.5,
+"dir": [
+0.2,
+1,
+0.4
+],
+"sky": "#2a3a34",
+"gnd": "#0a100e",
+"hemiI": 0.65,
+"fog": "#06100c",
+"fogD": 0.006,
+"win": 0,
+"neon": 1,
+"lamp": 0,
+"fire": 0,
+"exp": 1.05,
+"bloom": 0.9,
+"steam": 0,
+"steamC": "#a8b0c8",
+"wet": 0.6
+},
+"npctest": {
+"name": "Testraum",
+"sun": "#ffffff",
+"sunI": 1.1,
+"dir": [
+0.3,
+1,
+0.6
+],
+"sky": "#8a8a92",
+"gnd": "#5a5a60",
+"hemiI": 1.2,
+"fog": "#70707a",
+"fogD": 0.0001,
+"win": 0,
+"neon": 0,
+"lamp": 0,
+"fire": 0,
+"exp": 1,
+"bloom": 0,
+"steam": 0,
+"steamC": "#a8b0c8",
+"wet": 0
+}
+},
+"npcs": [
+{
+"key": "antonia",
+"name": "Antonia",
+"x": -56.3,
+"z": 21.4,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "street",
+"atlas": null,
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": null,
+"name": "Officer Barkley",
+"x": -15,
+"z": 10.8,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": null,
+"sheet": "cop",
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": null,
+"name": "Mona",
+"x": 1.6,
+"z": -2.5,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": null,
+"sheet": "mona",
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": null,
+"name": "Rocco",
+"x": -3,
+"z": 13.6,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": null,
+"sheet": "rocco",
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": null,
+"name": "Passant",
+"x": -11.935,
+"z": -1.5,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "street",
+"atlas": null,
+"sheet": "passant",
+"sichtbar": true,
+"sc": 1,
+"patrol": [
+-21,
+-7
+]
+},
+{
+"key": null,
+"name": "Jogger",
+"x": 8.17,
+"z": 10.8,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "street",
+"atlas": null,
+"sheet": "jogger",
+"sichtbar": true,
+"sc": 1,
+"patrol": [
+0,
+21
+]
+},
+{
+"key": "bikerA",
+"name": "Nomape-Biker",
+"x": 10.5,
+"z": -1.3,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Schimpanse",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "bikerB",
+"name": "Nomape-Biker",
+"x": 16.4,
+"z": -1.2,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Schimpanse",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "puma",
+"name": "Pounce",
+"x": 35.4,
+"z": -10.2,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Katze",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "leo",
+"name": "Spotz",
+"x": 33.6,
+"z": -11.8,
+"y": 0,
+"fx": 0.479425538604203,
+"fz": 0.8775825618903728,
+"area": "street",
+"atlas": "Leopard",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "jag",
+"name": "Shiner",
+"x": 41.7,
+"z": -16.6,
+"y": 3.22,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Panther",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "hummel",
+"name": "Hummel",
+"x": 100.4,
+"z": -3.25,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "bar",
+"atlas": null,
+"sheet": "hummel",
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "maria",
+"name": "Maria",
+"x": 99.045,
+"z": 1.05,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "bar",
+"atlas": "Otter",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": [
+97.6,
+102.4
+]
+},
+{
+"key": "knuck",
+"name": "Knuckles",
+"x": 97.7,
+"z": -0.75,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "bar",
+"atlas": "Schimpanse",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "dartA",
+"name": "Nomape",
+"x": 94.5,
+"z": -3.1,
+"y": 0,
+"fx": 0,
+"fz": -1,
+"area": "bar",
+"atlas": "Schimpanse",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "dartB",
+"name": "Nomape",
+"x": 95.8,
+"z": -2.5,
+"y": 0,
+"fx": -0.6,
+"fz": -1,
+"area": "bar",
+"atlas": "Schimpanse",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "nugget",
+"name": "Nugget",
+"x": 95.4,
+"z": 1.4,
+"y": 0,
+"fx": 1,
+"fz": 0.6,
+"area": "bar",
+"atlas": null,
+"sheet": "nugget",
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "roach",
+"name": "Papa Roach",
+"x": 47.6,
+"z": 2.6,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": null,
+"sheet": "roach",
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "ant",
+"name": "Ameise",
+"x": 48.8,
+"z": 6,
+"y": 0,
+"fx": -1,
+"fz": 0.3,
+"area": "street",
+"atlas": null,
+"sheet": "ant",
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "flyA",
+"name": "Fliege",
+"x": 40,
+"z": 2.6,
+"y": 0,
+"fx": 1,
+"fz": 0.3,
+"area": "street",
+"atlas": null,
+"sheet": "flyA",
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "flyB",
+"name": "Fliege",
+"x": 39.6,
+"z": 6.4,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "street",
+"atlas": null,
+"sheet": "flyB",
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "beetle",
+"name": "Käfer",
+"x": 51.6,
+"z": 2.8,
+"y": 0,
+"fx": -1,
+"fz": 0.3,
+"area": "street",
+"atlas": null,
+"sheet": "beetle",
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "wasp",
+"name": "Wespe",
+"x": 52,
+"z": 6.8,
+"y": 0,
+"fx": -1,
+"fz": 0,
+"area": "street",
+"atlas": null,
+"sheet": "wasp",
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "louse",
+"name": "Ilse",
+"x": 35.6,
+"z": 5.4,
+"y": 0,
+"fx": 1,
+"fz": 0.2,
+"area": "street",
+"atlas": null,
+"sheet": "louse",
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "denise",
+"name": "Denise",
+"x": 98.44000000000001,
+"z": 3.5,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "bar",
+"atlas": null,
+"sheet": "denise",
+"sichtbar": true,
+"sc": 1,
+"patrol": [
+96.4,
+99.2
+]
+},
+{
+"key": "adikatzA",
+"name": "Adikatz",
+"x": 13,
+"z": 10.2,
+"y": 0,
+"fx": 0,
+"fz": -1,
+"area": "street",
+"atlas": null,
+"sheet": "adikatz",
+"sichtbar": false,
+"sc": 1.35,
+"patrol": null
+},
+{
+"key": "catA1",
+"name": "Breaking Cat",
+"x": 9,
+"z": 8.6,
+"y": 0,
+"fx": 0,
+"fz": -1,
+"area": "street",
+"atlas": "Siamkatze",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "catA2",
+"name": "Breaking Cat (Schleuder)",
+"x": 4.6,
+"z": -2.8,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Schwarzkatze",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "orangoA",
+"name": "Don Orango",
+"x": 13,
+"z": 10.2,
+"y": 0,
+"fx": 0,
+"fz": -1,
+"area": "street",
+"atlas": null,
+"sheet": "orango",
+"sichtbar": false,
+"sc": 1.35,
+"patrol": null
+},
+{
+"key": "gorillaA",
+"name": "Gorilla",
+"x": 17.4,
+"z": 8.4,
+"y": 0,
+"fx": 0,
+"fz": -1,
+"area": "street",
+"atlas": null,
+"sheet": "gorilla",
+"sichtbar": false,
+"sc": 1.15,
+"patrol": null
+},
+{
+"key": "chimpA1",
+"name": "Nomape",
+"x": 8.6,
+"z": 8.8,
+"y": 0,
+"fx": 0,
+"fz": -1,
+"area": "street",
+"atlas": "Schimpanse",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "throwA",
+"name": "Nomape (Flaschenwerfer)",
+"x": 23.6,
+"z": -2.8,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Schimpanse",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "orangoH",
+"name": "Don Orango",
+"x": 1303.2,
+"z": -2.4,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "hqW",
+"atlas": null,
+"sheet": "orango",
+"sichtbar": true,
+"sc": 1.35,
+"patrol": null
+},
+{
+"key": "gorillaH",
+"name": "Gorilla",
+"x": 1305.6,
+"z": -1.9,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "hqW",
+"atlas": null,
+"sheet": "gorilla",
+"sichtbar": true,
+"sc": 1.15,
+"patrol": null
+},
+{
+"key": "chimpH1",
+"name": "Nomape",
+"x": 1295.4,
+"z": 1.2,
+"y": 0,
+"fx": 1,
+"fz": 1,
+"area": "hqW",
+"atlas": "Schimpanse",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "chimpH2",
+"name": "Nomape",
+"x": 1297.645,
+"z": -2.2,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "hqW",
+"atlas": "Schimpanse",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": [
+1295,
+1300
+]
+},
+{
+"key": "adikatzH",
+"name": "Adikatz",
+"x": 1502.6,
+"z": -2.3,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "hqO",
+"atlas": null,
+"sheet": "adikatz",
+"sichtbar": true,
+"sc": 1.35,
+"patrol": null
+},
+{
+"key": "rexH",
+"name": "Rex",
+"x": 1496.2,
+"z": 1.4,
+"y": 0,
+"fx": 1,
+"fz": 1,
+"area": "hqO",
+"atlas": "Schwarzkatze",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "lolaH",
+"name": "Lola",
+"x": 1498.8,
+"z": -2.4,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "hqO",
+"atlas": "Siamkatze",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "mira",
+"name": "Motte Mira",
+"x": -52,
+"z": -10.6,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": null,
+"sheet": "mothV",
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "gustl",
+"name": "Grashüpfer Gustl",
+"x": -44,
+"z": -12.6,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": null,
+"sheet": "grassV",
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "honigA",
+"name": "Ameise Annegret",
+"x": -35,
+"z": -10.6,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": null,
+"sheet": "antV",
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "pips",
+"name": "Pips",
+"x": -39.89,
+"z": 4.5,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "street",
+"atlas": null,
+"sheet": "larvaK",
+"sichtbar": true,
+"sc": 0.85,
+"patrol": [
+-46,
+-34
+]
+},
+{
+"key": "kiki",
+"name": "Kiki",
+"x": -37.87,
+"z": 6,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "street",
+"atlas": null,
+"sheet": "larvaK",
+"sichtbar": true,
+"sc": 0.8,
+"patrol": [
+-44,
+-30
+]
+},
+{
+"key": "grimm",
+"name": "Grille Grimm",
+"x": -28.4,
+"z": 11.6,
+"y": 0,
+"fx": 0,
+"fz": -1,
+"area": "street",
+"atlas": null,
+"sheet": "cricketB",
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_taube",
+"name": "Taube",
+"x": -8.5,
+"z": 10.8,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Taube",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_waschbaer",
+"name": "Waschbär",
+"x": 19.6,
+"z": -2.4,
+"y": 0,
+"fx": -1,
+"fz": 0,
+"area": "street",
+"atlas": "Waschbaer",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_eule",
+"name": "Eule",
+"x": 6.2,
+"z": -2.4,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Eule",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_hase",
+"name": "Hase",
+"x": -11.88,
+"z": 11.4,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "street",
+"atlas": "Hase",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": [
+-16,
+8
+]
+},
+{
+"key": "p_maus",
+"name": "Maus",
+"x": -23.5,
+"z": 11,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Maus",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_ratte",
+"name": "Ratte",
+"x": 52.5,
+"z": 7.6,
+"y": 0,
+"fx": -1,
+"fz": 0,
+"area": "street",
+"atlas": "Ratte",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_fuchs",
+"name": "Fuchs",
+"x": 31.6,
+"z": 16.5,
+"y": 0,
+"fx": -1,
+"fz": 0,
+"area": "street",
+"atlas": "Fuchs",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_eichhoernchen",
+"name": "Eichhörnchen",
+"x": -2.5,
+"z": 15.6,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "street",
+"atlas": "Eichhoernchen",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_spatz",
+"name": "Spatz",
+"x": 29.6,
+"z": -7.2,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "street",
+"atlas": "Spatz",
+"sheet": null,
+"sichtbar": true,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_moewe",
+"name": "Möwe",
+"x": 103.2,
+"z": 2.8,
+"y": 0,
+"fx": -1,
+"fz": 0,
+"area": "bar",
+"atlas": "Moewe",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_perser",
+"name": "Perserkatze",
+"x": 296,
+"z": 0,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "mancatten",
+"atlas": "Perserkatze",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_ragdoll",
+"name": "Ragdoll",
+"x": 309,
+"z": -1,
+"y": 0,
+"fx": -1,
+"fz": 0,
+"area": "mancatten",
+"atlas": "Ragdoll",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_loewe",
+"name": "Löwe",
+"x": 288.05,
+"z": 10.5,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "mancatten",
+"atlas": "Loewe",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": [
+284,
+300
+]
+},
+{
+"key": "p_rabe",
+"name": "Rabe",
+"x": 494,
+"z": 12,
+"y": 0,
+"fx": 0,
+"fz": 1,
+"area": "branxW",
+"atlas": "Rabe",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+},
+{
+"key": "p_tigerkatze",
+"name": "Tigerkatze",
+"x": 706,
+"z": 12,
+"y": 0,
+"fx": 1,
+"fz": 0,
+"area": "branxO",
+"atlas": "Tigerkatze",
+"sheet": null,
+"sichtbar": false,
+"sc": 1,
+"patrol": null
+}
+],
+"surf": [
+{
+"x0": 40.2,
+"x1": 43.4,
+"z0": -17.8,
+"z1": -15.2,
+"y": 3.22,
+"name": "Kioskdach"
+},
+{
+"x0": -20.799999999999997,
+"x1": -15.999999999999998,
+"z0": -3.3,
+"z1": -2.3,
+"y": 4.52,
+"name": "Feuertreppe"
+},
+{
+"x0": -20.799999999999997,
+"x1": -15.999999999999998,
+"z0": -3.3,
+"z1": -2.3,
+"y": 8.02,
+"name": "Feuertreppe"
+},
+{
+"x0": -20.799999999999997,
+"x1": -15.999999999999998,
+"z0": -3.3,
+"z1": -2.3,
+"y": 11.52,
+"name": "Feuertreppe"
+},
+{
+"x0": -20.799999999999997,
+"x1": -15.999999999999998,
+"z0": -3.3,
+"z1": -2.3,
+"y": 15.02,
+"name": "Feuertreppe"
+},
+{
+"x0": -23.6,
+"x1": -14.4,
+"z0": -13.6,
+"z1": -3.9,
+"y": 18.52,
+"name": "Dach"
+},
+{
+"x0": 2.1999999999999997,
+"x1": 7,
+"z0": -3.3,
+"z1": -2.3,
+"y": 4.52,
+"name": "Feuertreppe"
+},
+{
+"x0": 2.1999999999999997,
+"x1": 7,
+"z0": -3.3,
+"z1": -2.3,
+"y": 8.02,
+"name": "Feuertreppe"
+},
+{
+"x0": 2.1999999999999997,
+"x1": 7,
+"z0": -3.3,
+"z1": -2.3,
+"y": 11.52,
+"name": "Feuertreppe"
+},
+{
+"x0": 2.1999999999999997,
+"x1": 7,
+"z0": -3.3,
+"z1": -2.3,
+"y": 15.02,
+"name": "Feuertreppe"
+},
+{
+"x0": 2.1999999999999997,
+"x1": 7,
+"z0": -3.3,
+"z1": -2.3,
+"y": 18.52,
+"name": "Feuertreppe"
+},
+{
+"x0": -0.6,
+"x1": 8.6,
+"z0": -15.6,
+"z1": -3.9,
+"y": 22.02,
+"name": "Dach"
+},
+{
+"x0": 21.200000000000003,
+"x1": 26,
+"z0": -3.3,
+"z1": -2.3,
+"y": 4.52,
+"name": "Feuertreppe"
+},
+{
+"x0": 21.200000000000003,
+"x1": 26,
+"z0": -3.3,
+"z1": -2.3,
+"y": 8.02,
+"name": "Feuertreppe"
+},
+{
+"x0": 21.200000000000003,
+"x1": 26,
+"z0": -3.3,
+"z1": -2.3,
+"y": 11.52,
+"name": "Feuertreppe"
+},
+{
+"x0": 18.4,
+"x1": 27.6,
+"z0": -26.6,
+"z1": -3.9,
+"y": 12.42,
+"name": "Dach"
+},
+{
+"x0": 1.1,
+"x1": 5.9,
+"z0": -26.8,
+"z1": -25.8,
+"y": 4.52,
+"name": "Feuertreppe"
+},
+{
+"x0": 1.1,
+"x1": 5.9,
+"z0": -26.8,
+"z1": -25.8,
+"y": 8.02,
+"name": "Feuertreppe"
+},
+{
+"x0": 1.1,
+"x1": 5.9,
+"z0": -26.8,
+"z1": -25.8,
+"y": 11.52,
+"name": "Feuertreppe"
+},
+{
+"x0": 1.1,
+"x1": 5.9,
+"z0": -26.8,
+"z1": -25.8,
+"y": 15.02,
+"name": "Feuertreppe"
+},
+{
+"x0": 1.1,
+"x1": 5.9,
+"z0": -26.8,
+"z1": -25.8,
+"y": 18.52,
+"name": "Feuertreppe"
+},
+{
+"x0": -13.6,
+"x1": 8.6,
+"z0": -39.6,
+"z1": -27.4,
+"y": 22.02,
+"name": "Dach"
+},
+{
+"x0": -31.4,
+"x1": -26.6,
+"z0": -19.8,
+"z1": -18.8,
+"y": 4.52,
+"name": "Feuertreppe"
+},
+{
+"x0": -31.4,
+"x1": -26.6,
+"z0": -19.8,
+"z1": -18.8,
+"y": 8.02,
+"name": "Feuertreppe"
+},
+{
+"x0": -31.4,
+"x1": -26.6,
+"z0": -19.8,
+"z1": -18.8,
+"y": 11.52,
+"name": "Feuertreppe"
+},
+{
+"x0": -45.6,
+"x1": -24.4,
+"z0": -35.6,
+"z1": -20.4,
+"y": 15.02,
+"name": "Dach"
+},
+{
+"x0": 57.35,
+"x1": 62.15,
+"z0": -3.3,
+"z1": -2.3,
+"y": 4.52,
+"name": "Feuertreppe"
+},
+{
+"x0": 57.35,
+"x1": 62.15,
+"z0": -3.3,
+"z1": -2.3,
+"y": 8.02,
+"name": "Feuertreppe"
+},
+{
+"x0": 57.35,
+"x1": 62.15,
+"z0": -3.3,
+"z1": -2.3,
+"y": 11.52,
+"name": "Feuertreppe"
+},
+{
+"x0": 57.35,
+"x1": 62.15,
+"z0": -3.3,
+"z1": -2.3,
+"y": 15.02,
+"name": "Feuertreppe"
+},
+{
+"x0": 44.4,
+"x1": 63.1,
+"z0": -29.6,
+"z1": -3.9,
+"y": 18.52,
+"name": "Dach"
+},
+{
+"x0": -13.6,
+"x1": -5.4,
+"z0": -15.3,
+"z1": -4.4,
+"y": 15.02,
+"name": "Dach"
+},
+{
+"x0": 9.4,
+"x1": 17.6,
+"z0": -26.3,
+"z1": -4.4,
+"y": 18.52,
+"name": "Dach"
+},
+{
+"x0": -1.95,
+"x1": -1.05,
+"z0": -10.2,
+"z1": -7.8,
+"y": 15.02,
+"name": "Sims"
+}
+],
+"links": [
+{
+"type": "ladder",
+"a": {
+"x": 40.3,
+"z": -14.3,
+"lv": -1
+},
+"b": {
+"x": 40.3,
+"z": -15.6,
+"lv": 0
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": -16.349999999999998,
+"z": -1.75,
+"lv": -1
+},
+"b": {
+"x": -16.349999999999998,
+"z": -2.75,
+"lv": 1
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": -20.299999999999997,
+"z": -2.75,
+"lv": 1
+},
+"b": {
+"x": -16.9,
+"z": -2.75,
+"lv": 2
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": -20.299999999999997,
+"z": -2.75,
+"lv": 2
+},
+"b": {
+"x": -16.9,
+"z": -2.75,
+"lv": 3
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": -20.299999999999997,
+"z": -2.75,
+"lv": 3
+},
+"b": {
+"x": -16.9,
+"z": -2.75,
+"lv": 4
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": -20.45,
+"z": -2.75,
+"lv": 4
+},
+"b": {
+"x": -20.45,
+"z": -4.3,
+"lv": 5
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 6.6499999999999995,
+"z": -1.75,
+"lv": -1
+},
+"b": {
+"x": 6.6499999999999995,
+"z": -2.75,
+"lv": 6
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 2.6999999999999997,
+"z": -2.75,
+"lv": 6
+},
+"b": {
+"x": 6.1,
+"z": -2.75,
+"lv": 7
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 2.6999999999999997,
+"z": -2.75,
+"lv": 7
+},
+"b": {
+"x": 6.1,
+"z": -2.75,
+"lv": 8
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 2.6999999999999997,
+"z": -2.75,
+"lv": 8
+},
+"b": {
+"x": 6.1,
+"z": -2.75,
+"lv": 9
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 2.6999999999999997,
+"z": -2.75,
+"lv": 9
+},
+"b": {
+"x": 6.1,
+"z": -2.75,
+"lv": 10
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 2.55,
+"z": -2.75,
+"lv": 10
+},
+"b": {
+"x": 2.55,
+"z": -4.3,
+"lv": 11
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 25.650000000000002,
+"z": -1.75,
+"lv": -1
+},
+"b": {
+"x": 25.650000000000002,
+"z": -2.75,
+"lv": 12
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 21.700000000000003,
+"z": -2.75,
+"lv": 12
+},
+"b": {
+"x": 25.1,
+"z": -2.75,
+"lv": 13
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 21.700000000000003,
+"z": -2.75,
+"lv": 13
+},
+"b": {
+"x": 25.1,
+"z": -2.75,
+"lv": 14
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 21.55,
+"z": -2.75,
+"lv": 14
+},
+"b": {
+"x": 21.55,
+"z": -4.3,
+"lv": 15
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 5.55,
+"z": -25.25,
+"lv": -1
+},
+"b": {
+"x": 5.55,
+"z": -26.25,
+"lv": 16
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 1.6,
+"z": -26.25,
+"lv": 16
+},
+"b": {
+"x": 5,
+"z": -26.25,
+"lv": 17
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 1.6,
+"z": -26.25,
+"lv": 17
+},
+"b": {
+"x": 5,
+"z": -26.25,
+"lv": 18
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 1.6,
+"z": -26.25,
+"lv": 18
+},
+"b": {
+"x": 5,
+"z": -26.25,
+"lv": 19
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 1.6,
+"z": -26.25,
+"lv": 19
+},
+"b": {
+"x": 5,
+"z": -26.25,
+"lv": 20
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 1.4500000000000002,
+"z": -26.25,
+"lv": 20
+},
+"b": {
+"x": 1.4500000000000002,
+"z": -27.8,
+"lv": 21
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": -26.95,
+"z": -18.25,
+"lv": -1
+},
+"b": {
+"x": -26.95,
+"z": -19.25,
+"lv": 22
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": -30.9,
+"z": -19.25,
+"lv": 22
+},
+"b": {
+"x": -27.5,
+"z": -19.25,
+"lv": 23
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": -30.9,
+"z": -19.25,
+"lv": 23
+},
+"b": {
+"x": -27.5,
+"z": -19.25,
+"lv": 24
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": -31.05,
+"z": -19.25,
+"lv": 24
+},
+"b": {
+"x": -31.05,
+"z": -20.8,
+"lv": 25
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 61.8,
+"z": -1.75,
+"lv": -1
+},
+"b": {
+"x": 61.8,
+"z": -2.75,
+"lv": 26
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 57.85,
+"z": -2.75,
+"lv": 26
+},
+"b": {
+"x": 61.25,
+"z": -2.75,
+"lv": 27
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 57.85,
+"z": -2.75,
+"lv": 27
+},
+"b": {
+"x": 61.25,
+"z": -2.75,
+"lv": 28
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": 57.85,
+"z": -2.75,
+"lv": 28
+},
+"b": {
+"x": 61.25,
+"z": -2.75,
+"lv": 29
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 57.7,
+"z": -2.75,
+"lv": 29
+},
+"b": {
+"x": 57.7,
+"z": -4.3,
+"lv": 30
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": -13.5,
+"z": -9,
+"lv": 31
+},
+"b": {
+"x": -14.5,
+"z": -9,
+"lv": 5
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 9.5,
+"z": -10,
+"lv": 32
+},
+"b": {
+"x": 8.5,
+"z": -10,
+"lv": 11
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": 18.5,
+"z": -15,
+"lv": 15
+},
+"b": {
+"x": 17.5,
+"z": -15,
+"lv": 32
+}
+},
+{
+"type": "stairs",
+"a": {
+"x": -5.4,
+"z": -9,
+"lv": 31
+},
+"b": {
+"x": -1.6,
+"z": -9,
+"lv": 33
+}
+},
+{
+"type": "ladder",
+"a": {
+"x": -1.3,
+"z": -9,
+"lv": 33
+},
+"b": {
+"x": -0.6,
+"z": -9,
+"lv": 11
+}
+}
+]
+}

@@ -1,0 +1,1516 @@
+{
+"gruppen": [
+{
+"name": "Boden_0481",
+"datei": "Boden_0481.glb",
+"anker": [
+1,
+0,
+-4
+]
+},
+{
+"name": "Boden_3e4e",
+"datei": "Boden_3e4e.glb",
+"anker": [
+0,
+0,
+0
+]
+},
+{
+"name": "Haus_pizza_1",
+"datei": "Haus_pizza_1.glb",
+"anker": [
+-18.996041297912598,
+0,
+-8.087875008583069
+]
+},
+{
+"name": "Haus_dojo_2",
+"datei": "Haus_dojo_2.glb",
+"anker": [
+-9.499377727508545,
+0,
+-9.202425360679626
+]
+},
+{
+"name": "Haus_arcade_3",
+"datei": "Haus_arcade_3.glb",
+"anker": [
+4.004015564918518,
+0,
+-9.08787453174591
+]
+},
+{
+"name": "Haus_bar_4",
+"datei": "Haus_bar_4.glb",
+"anker": [
+13.500640153884888,
+0,
+-14.701626420021057
+]
+},
+{
+"name": "Haus_stoop_5",
+"datei": "Haus_stoop_5.glb",
+"anker": [
+23.003798484802246,
+0,
+-14.071472465991974
+]
+},
+{
+"name": "Haus_back_6",
+"datei": "Haus_back_6.glb",
+"anker": [
+-2.5169925689697266,
+0,
+-32.83787441253662
+]
+},
+{
+"name": "Haus_stoop_7",
+"datei": "Haus_stoop_7.glb",
+"anker": [
+-54.007402420043945,
+0,
+-26.820850372314453
+]
+},
+{
+"name": "Haus_back_8",
+"datei": "Haus_back_8.glb",
+"anker": [
+-35.00472068786621,
+0,
+-27.33787441253662
+]
+},
+{
+"name": "Haus_back_9",
+"datei": "Haus_back_9.glb",
+"anker": [
+53.74026107788086,
+0,
+-16.08787453174591
+]
+},
+{
+"name": "Haus_back_10",
+"datei": "Haus_back_10.glb",
+"anker": [
+36.00111961364746,
+0,
+-28.766990661621094
+]
+},
+{
+"name": "Neon_1",
+"datei": "Neon_1.glb",
+"anker": [
+-19.5,
+0,
+-2.7799999993294477
+]
+},
+{
+"name": "Neon_2",
+"datei": "Neon_2.glb",
+"anker": [
+4,
+0,
+-2.7799999993294477
+]
+},
+{
+"name": "Neon_3",
+"datei": "Neon_3.glb",
+"anker": [
+11.8,
+0,
+-2.7799999993294477
+]
+},
+{
+"name": "Neon_4",
+"datei": "Neon_4.glb",
+"anker": [
+15.899999999999999,
+0,
+-3.18
+]
+},
+{
+"name": "Neon_5",
+"datei": "Neon_5.glb",
+"anker": [
+15.899999999999999,
+0,
+-3.18
+]
+},
+{
+"name": "Detail_-10_0",
+"datei": "Detail_-10_0.glb",
+"anker": [
+-8.559999996423722,
+0,
+-1.4771690487861635
+]
+},
+{
+"name": "Laterne_1",
+"datei": "Laterne_1.glb",
+"anker": [
+-18,
+0,
+0.5499999999999998
+]
+},
+{
+"name": "Laterne_2",
+"datei": "Laterne_2.glb",
+"anker": [
+-2,
+0,
+0.5499999999999998
+]
+},
+{
+"name": "Laterne_3",
+"datei": "Laterne_3.glb",
+"anker": [
+14,
+0,
+0.5499999999999998
+]
+},
+{
+"name": "Laterne_4",
+"datei": "Laterne_4.glb",
+"anker": [
+-10,
+0,
+8.45
+]
+},
+{
+"name": "Laterne_5",
+"datei": "Laterne_5.glb",
+"anker": [
+7,
+0,
+8.45
+]
+},
+{
+"name": "Auto_1",
+"datei": "Auto_1.glb",
+"anker": [
+-19,
+0,
+1.15
+]
+},
+{
+"name": "Auto_2",
+"datei": "Auto_2.glb",
+"anker": [
+-10.6,
+0,
+1.15
+]
+},
+{
+"name": "Auto_3",
+"datei": "Auto_3.glb",
+"anker": [
+-8,
+0,
+7.85
+]
+},
+{
+"name": "Auto_4",
+"datei": "Auto_4.glb",
+"anker": [
+18,
+0,
+7.85
+]
+},
+{
+"name": "Boden_219f",
+"datei": "Boden_219f.glb",
+"anker": [
+0,
+0,
+18.2
+]
+},
+{
+"name": "Detail_0_10",
+"datei": "Detail_0_10.glb",
+"anker": [
+-3,
+0,
+14.600000000000001
+]
+},
+{
+"name": "Detail_-10_20",
+"datei": "Detail_-10_20.glb",
+"anker": [
+-12,
+0,
+16.4
+]
+},
+{
+"name": "Detail_10_20",
+"datei": "Detail_10_20.glb",
+"anker": [
+10,
+0,
+16.4
+]
+},
+{
+"name": "Detail_10_10",
+"datei": "Detail_10_10.glb",
+"anker": [
+12,
+0,
+11.1
+]
+},
+{
+"name": "Detail_10_0",
+"datei": "Detail_10_0.glb",
+"anker": [
+8.6,
+0,
+-0.6
+]
+},
+{
+"name": "Detail_-10_10",
+"datei": "Detail_-10_10.glb",
+"anker": [
+-15,
+0,
+10.1
+]
+},
+{
+"name": "Detail_20_0",
+"datei": "Detail_20_0.glb",
+"anker": [
+19,
+0,
+-0.7
+]
+},
+{
+"name": "Detail_0_-10",
+"datei": "Detail_0_-10.glb",
+"anker": [
+-3.049999976158142,
+0,
+-11.5799999833107
+]
+},
+{
+"name": "Detail_-10_-30",
+"datei": "Detail_-10_-30.glb",
+"anker": [
+-8.975000020861625,
+0,
+-25.44928517360246
+]
+},
+{
+"name": "Detail_10_-30",
+"datei": "Detail_10_-30.glb",
+"anker": [
+5.5,
+0,
+-25.5
+]
+},
+{
+"name": "Detail_0_-20",
+"datei": "Detail_0_-20.glb",
+"anker": [
+-2.5,
+0,
+-21
+]
+},
+{
+"name": "Block_1",
+"datei": "Block_1.glb",
+"anker": [
+-60.002647399902344,
+0,
+26.474675178527832
+]
+},
+{
+"name": "Block_2",
+"datei": "Block_2.glb",
+"anker": [
+-50.99443435668945,
+0,
+31.473308563232422
+]
+},
+{
+"name": "Block_3",
+"datei": "Block_3.glb",
+"anker": [
+-33.99285411834717,
+0,
+26.477356910705566
+]
+},
+{
+"name": "Block_4",
+"datei": "Block_4.glb",
+"anker": [
+2.003154754638672,
+0,
+25.722420692443848
+]
+},
+{
+"name": "Block_5",
+"datei": "Block_5.glb",
+"anker": [
+49.80000114440918,
+0,
+21.05000066757202
+]
+},
+{
+"name": "Block_6",
+"datei": "Block_6.glb",
+"anker": [
+63.290916442871094,
+0,
+3.174507737159729
+]
+},
+{
+"name": "Block_7",
+"datei": "Block_7.glb",
+"anker": [
+53.30027961730957,
+0,
+-34.82133865356445
+]
+},
+{
+"name": "Block_8",
+"datei": "Block_8.glb",
+"anker": [
+-61.00912284851074,
+0,
+0.175628662109375
+]
+},
+{
+"name": "Laterne_6",
+"datei": "Laterne_6.glb",
+"anker": [
+28.6,
+0,
+15.149999999999999
+]
+},
+{
+"name": "Laterne_7",
+"datei": "Laterne_7.glb",
+"anker": [
+36.4,
+0,
+22.85
+]
+},
+{
+"name": "Detail_30_10",
+"datei": "Detail_30_10.glb",
+"anker": [
+29,
+0,
+10
+]
+},
+{
+"name": "Detail_40_0",
+"datei": "Detail_40_0.glb",
+"anker": [
+42,
+0,
+-2.6
+]
+},
+{
+"name": "Detail_50_0",
+"datei": "Detail_50_0.glb",
+"anker": [
+53,
+0,
+-2.6
+]
+},
+{
+"name": "Detail_60_0",
+"datei": "Detail_60_0.glb",
+"anker": [
+59,
+0,
+0.599999976158142
+]
+},
+{
+"name": "Fass_1",
+"datei": "Fass_1.glb",
+"anker": [
+60.5,
+0,
+8
+]
+},
+{
+"name": "Laterne_8",
+"datei": "Laterne_8.glb",
+"anker": [
+50,
+0,
+0.5499999999999998
+]
+},
+{
+"name": "Detail_40_-20",
+"datei": "Detail_40_-20.glb",
+"anker": [
+41.8,
+0,
+-16.5
+]
+},
+{
+"name": "Schild_1",
+"datei": "Schild_1.glb",
+"anker": [
+41.8,
+0,
+-14.98
+]
+},
+{
+"name": "Leiter_1",
+"datei": "Leiter_1.glb",
+"anker": [
+40.3,
+0,
+-14.85
+]
+},
+{
+"name": "Auto_5",
+"datei": "Auto_5.glb",
+"anker": [
+31,
+0,
+-17.2
+]
+},
+{
+"name": "Laterne_9",
+"datei": "Laterne_9.glb",
+"anker": [
+29,
+0,
+-8.85
+]
+},
+{
+"name": "Stand_1",
+"datei": "Stand_1.glb",
+"anker": [
+-52,
+0,
+-11.9
+]
+},
+{
+"name": "Stand_2",
+"datei": "Stand_2.glb",
+"anker": [
+-44,
+0,
+-13.9
+]
+},
+{
+"name": "Stand_3",
+"datei": "Stand_3.glb",
+"anker": [
+-35,
+0,
+-11.9
+]
+},
+{
+"name": "Stand_4",
+"datei": "Stand_4.glb",
+"anker": [
+-48,
+0,
+15.6
+]
+},
+{
+"name": "Stand_5",
+"datei": "Stand_5.glb",
+"anker": [
+-36,
+0,
+16.1
+]
+},
+{
+"name": "Waesche_1",
+"datei": "Waesche_1.glb",
+"anker": [
+-53,
+0,
+-5.997500000055879
+]
+},
+{
+"name": "Waesche_2",
+"datei": "Waesche_2.glb",
+"anker": [
+-34,
+0,
+-6.997500000055879
+]
+},
+{
+"name": "Laterne_10",
+"datei": "Laterne_10.glb",
+"anker": [
+-42,
+0,
+0.5499999999999998
+]
+},
+{
+"name": "Laterne_11",
+"datei": "Laterne_11.glb",
+"anker": [
+-54,
+0,
+8.45
+]
+},
+{
+"name": "Laterne_12",
+"datei": "Laterne_12.glb",
+"anker": [
+-30,
+0,
+8.45
+]
+},
+{
+"name": "Fass_2",
+"datei": "Fass_2.glb",
+"anker": [
+-56,
+0,
+-3
+]
+},
+{
+"name": "Fass_3",
+"datei": "Fass_3.glb",
+"anker": [
+-29,
+0,
+15
+]
+},
+{
+"name": "Reifen_1",
+"datei": "Reifen_1.glb",
+"anker": [
+-45.96,
+0,
+24.5
+]
+},
+{
+"name": "Reifen_2",
+"datei": "Reifen_2.glb",
+"anker": [
+-55.96,
+0,
+26
+]
+},
+{
+"name": "Detail_-50_30",
+"datei": "Detail_-50_30.glb",
+"anker": [
+-51,
+0,
+26
+]
+},
+{
+"name": "Detail_-60_20",
+"datei": "Detail_-60_20.glb",
+"anker": [
+-57.6,
+0,
+22.4
+]
+},
+{
+"name": "Detail_-40_20",
+"datei": "Detail_-40_20.glb",
+"anker": [
+-44.4,
+0,
+22.4
+]
+},
+{
+"name": "Detail_-60_30",
+"datei": "Detail_-60_30.glb",
+"anker": [
+-57.6,
+0,
+29.6
+]
+},
+{
+"name": "Detail_-40_30",
+"datei": "Detail_-40_30.glb",
+"anker": [
+-44.4,
+0,
+29.6
+]
+},
+{
+"name": "Schild_2",
+"datei": "Schild_2.glb",
+"anker": [
+-51,
+0,
+22
+]
+},
+{
+"name": "Auto_6",
+"datei": "Auto_6.glb",
+"anker": [
+-52,
+0,
+26.5
+]
+},
+{
+"name": "Leiter_2",
+"datei": "Leiter_2.glb",
+"anker": [
+-16.349999999999998,
+0,
+-2.25
+]
+},
+{
+"name": "Leiter_3",
+"datei": "Leiter_3.glb",
+"anker": [
+-20.45,
+0,
+-3.4
+]
+},
+{
+"name": "Leiter_4",
+"datei": "Leiter_4.glb",
+"anker": [
+6.6499999999999995,
+0,
+-2.25
+]
+},
+{
+"name": "Leiter_5",
+"datei": "Leiter_5.glb",
+"anker": [
+2.55,
+0,
+-3.4
+]
+},
+{
+"name": "Leiter_6",
+"datei": "Leiter_6.glb",
+"anker": [
+25.650000000000002,
+0,
+-2.25
+]
+},
+{
+"name": "Leiter_7",
+"datei": "Leiter_7.glb",
+"anker": [
+21.55,
+0,
+-3.4
+]
+},
+{
+"name": "Leiter_8",
+"datei": "Leiter_8.glb",
+"anker": [
+5.55,
+0,
+-25.75
+]
+},
+{
+"name": "Leiter_9",
+"datei": "Leiter_9.glb",
+"anker": [
+1.4500000000000002,
+0,
+-26.9
+]
+},
+{
+"name": "Leiter_10",
+"datei": "Leiter_10.glb",
+"anker": [
+-26.95,
+0,
+-18.75
+]
+},
+{
+"name": "Leiter_11",
+"datei": "Leiter_11.glb",
+"anker": [
+-31.05,
+0,
+-19.9
+]
+},
+{
+"name": "Leiter_12",
+"datei": "Leiter_12.glb",
+"anker": [
+61.8,
+0,
+-2.25
+]
+},
+{
+"name": "Leiter_13",
+"datei": "Leiter_13.glb",
+"anker": [
+57.7,
+0,
+-3.4
+]
+},
+{
+"name": "Leiter_14",
+"datei": "Leiter_14.glb",
+"anker": [
+-14,
+0,
+-9
+]
+},
+{
+"name": "Leiter_15",
+"datei": "Leiter_15.glb",
+"anker": [
+9,
+0,
+-10
+]
+},
+{
+"name": "Leiter_16",
+"datei": "Leiter_16.glb",
+"anker": [
+18,
+0,
+-15
+]
+},
+{
+"name": "Leiter_17",
+"datei": "Leiter_17.glb",
+"anker": [
+-0.95,
+0,
+-9
+]
+},
+{
+"name": "Detail_-10_-40",
+"datei": "Detail_-10_-40.glb",
+"anker": [
+-9,
+0,
+-37
+]
+},
+{
+"name": "Detail_-20_10",
+"datei": "Detail_-20_10.glb",
+"anker": [
+-17.2,
+0,
+11.6
+]
+},
+{
+"name": "Harley_1",
+"datei": "Harley_1.glb",
+"anker": [
+10.259906382602878,
+0,
+1.1780833315207762
+]
+},
+{
+"name": "Harley_2",
+"datei": "Harley_2.glb",
+"anker": [
+11.959906382602881,
+0,
+1.1780833315207762
+]
+},
+{
+"name": "Harley_3",
+"datei": "Harley_3.glb",
+"anker": [
+13.65990638260288,
+0,
+1.1780833315207762
+]
+},
+{
+"name": "Harley_4",
+"datei": "Harley_4.glb",
+"anker": [
+15.35990638260288,
+0,
+1.1780833315207762
+]
+},
+{
+"name": "Detail_30_-10",
+"datei": "Detail_30_-10.glb",
+"anker": [
+33.81595980959005,
+0,
+-11.4
+]
+},
+{
+"name": "UBahn_1",
+"datei": "UBahn_1.glb",
+"anker": [
+-19.5,
+0,
+10.54916019424796
+]
+}
+],
+"sprites": [
+{
+"pos": [
+32.8,
+10,
+-32
+],
+"breite": 3.4000000953674316,
+"hoehe": 5.5,
+"unten": 0,
+"png": "sprite_000.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": false
+},
+{
+"pos": [
+-16,
+0,
+14.8
+],
+"breite": 4,
+"hoehe": 6,
+"unten": 0,
+"png": "sprite_001.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+-8,
+0,
+16
+],
+"breite": 4,
+"hoehe": 6,
+"unten": 0,
+"png": "sprite_002.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+8,
+0,
+14.6
+],
+"breite": 4,
+"hoehe": 6,
+"unten": 0,
+"png": "sprite_003.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+16,
+0,
+15.8
+],
+"breite": 4,
+"hoehe": 6,
+"unten": 0,
+"png": "sprite_004.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+21,
+0,
+13.8
+],
+"breite": 4,
+"hoehe": 6,
+"unten": 0,
+"png": "sprite_005.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+-16,
+0,
+-0.5
+],
+"breite": 1.25,
+"hoehe": 1.625,
+"unten": -0.125,
+"png": "sprite_006.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+3,
+0,
+9.7
+],
+"breite": 1.25,
+"hoehe": 1.625,
+"unten": -0.125,
+"png": "sprite_007.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+-4.4,
+0,
+-3
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_008.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+-1.5,
+0,
+-3.1
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_009.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+17.2,
+0,
+-3.1
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_010.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+-13,
+0,
+-16.8
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_011.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+-8,
+0,
+-26.3
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_012.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+7.8,
+0,
+-17
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_013.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+45,
+0,
+-3.1
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_014.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+47.4,
+0,
+-3.2
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_015.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+58,
+0,
+-3.1
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_016.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+},
+{
+"pos": [
+61,
+0,
+6
+],
+"breite": 1.875,
+"hoehe": 1.25,
+"unten": -0.125,
+"png": "sprite_017.png",
+"rep": [
+1,
+1,
+0,
+0
+],
+"sway": false,
+"schatten": true
+}
+],
+"lichter": [
+{
+"typ": "punkt",
+"pos": [
+-19.5,
+5.5,
+-1.6
+],
+"farbe": "#ff5030",
+"staerke": 22,
+"reichweite": 10,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+4,
+5.5,
+-1.5
+],
+"farbe": "#ff3ad0",
+"staerke": 22,
+"reichweite": 10,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+11.8,
+5.4,
+-1.6
+],
+"farbe": "#38ff88",
+"staerke": 22,
+"reichweite": 10,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+-9.5,
+3.5,
+-1.8
+],
+"farbe": "#ff3020",
+"staerke": 18.7,
+"reichweite": 9,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+-18,
+5.1,
+0.5499999999999999
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+-2,
+5.1,
+0.5499999999999999
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+14,
+5.1,
+0.5499999999999999
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+-10,
+5.1,
+8.45
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+7,
+5.1,
+8.45
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+28.6,
+5.1,
+15.15
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+36.4,
+5.1,
+22.85
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+50,
+5.1,
+0.5499999999999999
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+29,
+5.1,
+-8.85
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+-42,
+5.1,
+0.5499999999999999
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+-54,
+5.1,
+8.45
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+-30,
+5.1,
+8.45
+],
+"farbe": "#ffb060",
+"staerke": 40,
+"reichweite": 16,
+"abfall": 2,
+"schatten": false
+},
+{
+"typ": "punkt",
+"pos": [
+-19.5,
+2.2,
+9
+],
+"farbe": "#60ff90",
+"staerke": 8,
+"reichweite": 6,
+"abfall": 2,
+"schatten": false
+}
+]
+}

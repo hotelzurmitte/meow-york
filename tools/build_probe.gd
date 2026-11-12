@@ -1,4 +1,4 @@
-extends SceneTree
+extends Node
 # Baut die Probe-Szene als echte Knoten und speichert sie, damit sie im Editor sichtbar und bearbeitbar ist.
 # Aufruf: godot --headless --path . --script res://tools/build_probe.gd
 
@@ -6,7 +6,7 @@ func _own(n: Node, root: Node) -> void:
 	n.owner = root
 	for c in n.get_children(): _own(c, root)
 
-func _init():
+func _ready():
 	var root := Node3D.new(); root.name = "Probe"
 	root.set_script(load("res://scripts/tests/probe.gd"))
 	var env := WorldEnvironment.new(); env.name = "Umgebung"; var e := Environment.new()
@@ -31,4 +31,4 @@ func _init():
 	_own(root, root); for c in root.get_children(): c.owner = root
 	var ps := PackedScene.new(); var err := ps.pack(root)
 	print("pack ", err, " save ", ResourceSaver.save(ps, "res://scenes/tests/probe.tscn"))
-	quit()
+	get_tree().quit()
