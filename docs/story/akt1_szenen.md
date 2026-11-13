@@ -147,6 +147,13 @@ Spannung entsteht, wenn der Spieler Fragen hat, die das Spiel nach und nach bean
 - Die Expedition am Freitag zählt nur einmal für `juno_spur`, egal ob gelauscht, mitgetragen oder gefragt.
 - Den Sprung ohne Anlass sieht jeder, der mit ihr redet, genau einmal (`odile_moment_gesehen`). Der Weg über die Dächer gehört in die Spielwelt, nicht in den Dialog.
 
+**In Hairlem eingebaut** (`scripts/story/akt1_juno.gd`, Daten in `data/levels/hairlem/story_akt1.json`). Die Figuren werden zur Laufzeit eingesetzt, `hairlem.tscn` bleibt unverändert:
+- Junos Haus ist das Wohnhaus mit Treppe neben dem Cuckoo's Nest.
+- **Morgens:** Odile, Bruder Hopp (Hase) und eine Helferin (Maus) räumen aus, dazu der Punkt „Im Hausflur lauschen“. **Tag und Abend:** Odile verteilt Suppe vor dem Haus (`odile_mission`). **Nachts:** niemand.
+- Die Helfer und der Lauschpunkt verschwinden, sobald das Gespräch mit Odile gelaufen ist.
+- Odile ist vorerst eine Möwe, weil der NPC-Atlas keine Gans hat. Position ändern: unter „Handgebaut“ einen Marker3D „Story_odile“ (bzw. `Story_helfer_hopp`, `Story_helfer_maus`, `Story_lauschen`) setzen.
+- Testen: `godot --path . scenes/world/hairlem.tscn -- --flag=ch1robbed,ch1street --zeit=morning --pos=24,1 --sprich=Story_odile`
+
 **Prüfung:**
 - *Spaß:* eine warme Figur, die man mögen will und der man misstrauen muss. Der seltsame Moment bleibt hängen.
 - *Nachvollziehbarkeit:* Sie ist der natürliche nächste Schritt nach der Wohnung.

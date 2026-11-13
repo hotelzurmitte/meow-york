@@ -5,6 +5,7 @@ extends Node
 ##   --yaw=<rad>          Kameradrehung
 ##   --maus=x,y           Mauszeiger dorthin setzen (Hover testen)
 ##   --klick=x,y          dort klicken (nach --klick_nach Sekunden, Standard 2)
+##   --zeit=<morning|day|dusk|night>  Tageszeit setzen
 ##   --szenario=<name>    Test-Spielstand aus data/zustaende/szenarien/<name>.json laden
 
 func _ready() -> void:
@@ -22,6 +23,9 @@ func _ready() -> void:
 			for e in String(args["ereignis"]).split(","): EventBus.ereignis.emit(e))
 	await get_tree().process_frame
 	await get_tree().process_frame
+	if args.has("zeit"):
+		var st := get_tree().current_scene.get_node_or_null("Stimmung")
+		if st: st.setze(String(args["zeit"]), 0.0)
 	if args.has("pos"):
 		var p: PackedStringArray = String(args["pos"]).split(",")
 		var i := 0

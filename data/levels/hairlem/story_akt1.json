@@ -1,0 +1,11 @@
+{
+ "beschreibung": "Story-Figuren für Akt 1 in Hairlem, zur Laufzeit eingesetzt von scripts/story/akt1_juno.gd. Position anpassen: im Editor unter „Handgebaut“ einen Marker3D namens „Story_<schluessel>“ setzen, der hat Vorrang.",
+ "figuren": [
+  {"schluessel": "odile", "name": "Schwester Odile", "figur": "atlas:Moewe", "platzhalter": "Gans fehlt im Atlas, Möwe als Platzhalter", "pos": [25.4, 0, -0.6], "blick": [-1, 1], "sprechernamen": ["Odile"]},
+  {"schluessel": "helfer_hopp", "name": "Bruder Hopp", "figur": "atlas:Hase", "pos": [22.2, 0, -1.4], "blick": [1, 1], "sprechernamen": ["Ordenshelfer"], "sprueche": ["Ich hab keinen Rücken. Hab ich nicht.", "Die Kommode hat Kanten. Überall Kanten."]},
+  {"schluessel": "helfer_maus", "name": "Ordenshelferin", "figur": "atlas:Maus", "pos": [23.6, 0, -2.4], "blick": [0, 1], "sprechernamen": ["Zweiter Ordenshelfer"], "sprueche": ["Nicht im Weg stehen, bitte. Das ist alles für die Kleiderkammer."]}
+ ],
+ "orte": [
+  {"schluessel": "lauschen", "beschriftung": "Im Hausflur lauschen", "pos": [21.0, 0, -3.0], "cue": "wohnung_lauschen"}
+ ]
+}

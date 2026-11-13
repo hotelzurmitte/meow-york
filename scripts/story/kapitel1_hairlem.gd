@@ -11,6 +11,8 @@ func _fig(k: String) -> Node3D:
 
 func _ready() -> void:
 	EventBus.ereignis.connect(_ereignis)
+	# Quest 1 (Junos Spur): Odile und die Ordenshelfer
+	lvl.add_child.call_deferred(load("res://scripts/story/akt1_juno.gd").new())
 	# Regen erst ab der Whisker Avenue (wie im Prototyp: Gasse trocken, danach Abend mit Regen)
 	Einstellungen.setze("regen", GameState.flag("ch1street"))
 	await get_tree().process_frame     # Level fertig aufbauen lassen
