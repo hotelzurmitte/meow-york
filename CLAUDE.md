@@ -23,5 +23,7 @@ Sprache: Kommentare, Commit-Nachrichten und Dokumente auf Deutsch.
 ## Code
 - Keine Monolithen: ein System pro Ordner unter `scripts/`, Kommunikation über Signale.
 - Inhalte (Dialoge, Quests, Figuren, Gegenstände) als Daten in `data/`, nicht im Code. Dialoge im Dialogue-Manager-Format.
+- Figuren, Quests und Beziehungen: `docs/story/` (Einstieg `docs/story/README.md`). Dort steht auch, was der Nutzer schon entschieden hat.
+- Story-Variablen stehen im Zustandsregister `data/zustaende/zustaende.json` (siehe `docs/zustaende.md`). Neue Variablen dort zuerst eintragen. Nach Änderungen an Dialogen prüfen: `godot --headless --path . res://tools/pruefe_zustaende.tscn`
 - Vom Nutzer im Editor gebaute Level nicht überschreiben. Generatoren erzeugen nur eigene Knoten und lassen von Hand Geändertes in Ruhe.
 - Spielstände versioniert.

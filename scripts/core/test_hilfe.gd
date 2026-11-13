@@ -5,6 +5,7 @@ extends Node
 ##   --yaw=<rad>          Kameradrehung
 ##   --maus=x,y           Mauszeiger dorthin setzen (Hover testen)
 ##   --klick=x,y          dort klicken (nach --klick_nach Sekunden, Standard 2)
+##   --szenario=<name>    Test-Spielstand aus data/zustaende/szenarien/<name>.json laden
 
 func _ready() -> void:
 	var args := {}
@@ -12,6 +13,7 @@ func _ready() -> void:
 		var kv := a.trim_prefix("--").split("=", true, 1)
 		args[kv[0]] = kv[1] if kv.size() > 1 else ""
 	if args.is_empty(): return
+	if args.has("szenario"): GameState.szenario_laden(String(args["szenario"]))
 	if args.has("flag"):
 		for f in String(args["flag"]).split(","): GameState.set_flag(f)
 	if args.has("spawn"): GameState.naechster_spawn = String(args["spawn"])

@@ -1,0 +1,15 @@
+{
+ "titel": "Akt 4, Hazel hat Mercys Akten",
+ "erwartet": "Hazel weiß früher Bescheid, Pfötchen verliert seine Leitung früh",
+ "gruppe": [
+  "ren",
+  "mercy",
+  "dig",
+  "corvin"
+ ],
+ "flags": {
+  "akt": 4,
+  "mercy_akten": "presse_hazel",
+  "hazel_status": "wissend"
+ }
+}

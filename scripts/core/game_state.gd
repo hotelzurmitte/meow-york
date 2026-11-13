@@ -31,11 +31,59 @@ var fertigkeiten: Dictionary = {
 
 # ---------- Flags ----------
 func flag(name: String, standard = false):
-	return flags.get(name, standard)
+	if flags.has(name): return flags[name]
+	# Story-Variablen aus dem Zustandsregister: Standardwert bzw. berechneter Wert
+	if Zustaende.hat(name):
+		return _abgeleitet(name) if Zustaende.ist_abgeleitet(name) else Zustaende.standard(name)
+	return standard
 
 func set_flag(name: String, wert = true) -> void:
+	# Im Debug-Build prüfen, ob Name und Wert zum Zustandsregister passen (nur Warnung, nie Absturz)
+	if OS.is_debug_build():
+		var f := Zustaende.pruefe_wert(name, wert)
+		if f == "": f = Zustaende.pruefe_einmal(name, flags.get(name), wert)
+		if f == "": f = Zustaende.pruefe_voraussetzungen(name, wert, flag)
+		if f != "": push_warning("Zustand: " + f)
 	flags[name] = wert
 	EventBus.flag_geaendert.emit(name, wert)
+
+## Abgeleitete Story-Variablen werden berechnet, nicht gespeichert
+func _abgeleitet(name: String):
+	if name.ends_with("_in_gruppe"):
+		return mitglied(name.trim_suffix("_in_gruppe"))
+	if name.ends_with("_zuneigung"):
+		var z: int = int(zuneigung.get(name.trim_suffix("_zuneigung"), 0))
+		return "niedrig" if z < -3 else ("hoch" if z > 5 else "mittel")
+	if name == "unruhen_hairlem":
+		return flag("naeherinnen") == "befreit"
+	push_warning("Zustand: keine Berechnung für „%s“" % name)
+	return Zustaende.standard(name)
+
+## Point of no Return: offene Kapitel des alten Akts werden „verpasst“, dann beginnt der neue Akt
+func akt_wechseln(neuer_akt: int) -> void:
+	var alt: int = int(flag("akt"))
+	for n in Zustaende.verfallende(alt):
+		if flag(n) == "offen": set_flag(n, "verpasst")
+	set_flag("akt", neuer_akt)
+
+## Test-Spielstand laden (data/zustaende/szenarien/<name>.json), z. B. über --szenario=<name>
+func szenario_laden(name: String) -> void:
+	var d := Zustaende.szenario(name)
+	if d.is_empty(): return
+	aus_dict({})
+	if d.has("gruppe"): gruppe = Array(d.gruppe)
+	for k in d.get("zuneigung", {}): zuneigung[k] = int(d.zuneigung[k])
+	# Erst alles setzen, dann prüfen – so spielt die Reihenfolge in der Datei keine Rolle
+	var f: Dictionary = d.get("flags", {})
+	for k in f: flags[k] = Zustaende.normalisiere(f[k])
+	for k in f:
+		var fehler := Zustaende.pruefe_wert(k, flags[k])
+		if fehler == "": fehler = Zustaende.pruefe_voraussetzungen(k, flags[k], flag)
+		if fehler != "": push_warning("Szenario %s: %s" % [name, fehler])
+		EventBus.flag_geaendert.emit(k, flags[k])
+	if d.has("spawn"): naechster_spawn = String(d.spawn)
+	print("Szenario geladen: %s (Akt %s, Gruppe %s)" % [d.get("titel", name), str(flag("akt")), ", ".join(gruppe)])
+	EventBus.hinweis.emit("Szenario geladen: " + String(d.get("titel", name)), "info")
 
 ## Gibt beim ersten Aufruf false zurück und merkt sich den Schlüssel (für einmalige Antworten)
 func einmal(schluessel: String) -> bool:

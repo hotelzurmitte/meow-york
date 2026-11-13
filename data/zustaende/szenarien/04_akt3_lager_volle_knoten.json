@@ -1,0 +1,18 @@
+{
+ "titel": "Akt 3, das Lager knotet voll",
+ "erwartet": "juno_knoten_lager = 3, die Weberin kann Juno nicht mehr auftrennen",
+ "gruppe": [
+  "ren",
+  "shiner",
+  "deltamae",
+  "fitz"
+ ],
+ "flags": {
+  "akt": 3,
+  "gang_wahl": "breaking_cats",
+  "shiner_galerie": "angenommen",
+  "deltamae_lager_auftritt": true,
+  "fitz_show": "geflogen",
+  "juno_knoten_lager": 3
+ }
+}

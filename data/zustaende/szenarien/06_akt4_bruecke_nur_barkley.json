@@ -1,0 +1,14 @@
+{
+ "titel": "Akt 4, Brücke nur mit Barkley",
+ "erwartet": "Barkley greift sofort an, danach vale = tot",
+ "gruppe": [
+  "ren",
+  "barkley",
+  "fitz",
+  "mercy"
+ ],
+ "flags": {
+  "akt": 4,
+  "vale": "lebt"
+ }
+}

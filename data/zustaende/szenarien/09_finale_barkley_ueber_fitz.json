@@ -1,0 +1,17 @@
+{
+ "titel": "Finale, Pfötchen greift Barkley über Fitz",
+ "erwartet": "Barkley wird gewendet, weil Fitz keinen Knoten hat",
+ "gruppe": [
+  "ren",
+  "barkley",
+  "fitz",
+  "corvin"
+ ],
+ "flags": {
+  "akt": 4,
+  "barkley_zweite_schlinge": "fitz",
+  "barkley_ausgang": "mehr_als_eine_liebe",
+  "fitz_knoten": false,
+  "barkley_knoten": true
+ }
+}

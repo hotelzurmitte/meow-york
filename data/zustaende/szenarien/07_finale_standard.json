@@ -1,0 +1,13 @@
+{
+ "titel": "Finale mit Standardwerten",
+ "erwartet": "der ungünstigste Durchlauf läuft ohne Abstürze durch",
+ "gruppe": [
+  "ren",
+  "dig",
+  "corvin",
+  "barkley"
+ ],
+ "flags": {
+  "akt": 4
+ }
+}

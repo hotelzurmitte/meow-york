@@ -1,0 +1,12 @@
+{
+ "titel": "Ende Akt 1, alles offen",
+ "erwartet": "Nach akt_wechseln(2) ist tauben = verpasst",
+ "gruppe": [
+  "ren",
+  "dig",
+  "corvin"
+ ],
+ "flags": {
+  "akt": 1
+ }
+}

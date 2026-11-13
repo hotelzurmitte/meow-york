@@ -1,0 +1,1213 @@
+{
+ "version": 1,
+ "beschreibung": "Zustandsregister für Meow York. Jede Story-Variable steht hier mit Werten, Standard, Setz- und Lesestellen. Gespeichert werden die Werte in GameState.flags. Prüfung: res://tools/pruefe_zustaende.tscn Voraussetzungen: Wert → Liste von [Variable, Vergleich, Wert], alle müssen gelten ('*' = jeder Wert).",
+ "gefaehrten": [
+  "dig",
+  "corvin",
+  "shiner",
+  "knuckles",
+  "weberin",
+  "barkley",
+  "deltamae",
+  "mercy",
+  "fitz"
+ ],
+ "variablen": [
+  {
+   "name": "akt",
+   "akt": "alle",
+   "gesetzt_von": "Aktübergang",
+   "gelesen_von": "überall",
+   "hinweis": "5 = Finale (nach dem letzten Point of no Return)",
+   "typ": "int",
+   "min": 1,
+   "max": 5,
+   "standard": 1,
+   "werte_text": "1–4 Akte, 5 = Finale"
+  },
+  {
+   "name": "gang_wahl",
+   "akt": "1",
+   "gesetzt_von": "Hauptquest A1: Gang-Wahl",
+   "gelesen_von": "Gefährte Shiner/Knuckles, Finale (Gangs)",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "keine",
+    "breaking_cats",
+    "nomapes"
+   ],
+   "standard": "keine"
+  },
+  {
+   "name": "tauben",
+   "akt": "1",
+   "gesetzt_von": "Corvin K1 (Tauben-Quest)",
+   "gelesen_von": "Corvin K4 (Beweise), Finale (Taubennetz), Juno-Spur A1",
+   "hinweis": "verpasst = Züchter behält Netz, keine Hilfe im Finale; beim Aktübergang: offen → verpasst",
+   "typ": "enum",
+   "werte": [
+    "offen",
+    "netz_genutzt",
+    "befreit",
+    "verpasst"
+   ],
+   "standard": "offen",
+   "verfaellt_nach_akt": 1
+  },
+  {
+   "name": "naeherinnen",
+   "akt": "2",
+   "gesetzt_von": "Weberin K2",
+   "gelesen_von": "unruhen_hairlem, Pfötchen-Gegenzüge, Nebenwirkungs-Begegnungen A3–A4",
+   "hinweis": "verpasst wirkt wie zurueckgelassen; beim Aktübergang: offen → verpasst",
+   "typ": "enum",
+   "werte": [
+    "offen",
+    "befreit",
+    "zurueckgelassen",
+    "verpasst"
+   ],
+   "standard": "offen",
+   "verfaellt_nach_akt": 2
+  },
+  {
+   "name": "unruhen_hairlem",
+   "akt": "2–4",
+   "gesetzt_von": "abgeleitet: naeherinnen == befreit",
+   "gelesen_von": "hazel_status (früher unter Druck), Benny-Gefahr A4",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.flag(\"naeherinnen\") == \"befreit\""
+  },
+  {
+   "name": "pfoetchen_gegenzuege",
+   "akt": "2–4",
+   "gesetzt_von": "Aktbeginn; +1 wenn unruhen_hairlem",
+   "gelesen_von": "Gegenzug-Ereignisse",
+   "hinweis": "",
+   "typ": "int",
+   "min": 0,
+   "max": 5,
+   "standard": 3
+  },
+  {
+   "name": "vale",
+   "akt": "4",
+   "gesetzt_von": "Barkley K4 / Corvin K4",
+   "gelesen_von": "rook, Corvin-Ausgang, Barkley-Ausgang",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "lebt",
+    "vor_gericht",
+    "tot"
+   ],
+   "standard": "lebt",
+   "einmal": true
+  },
+  {
+   "name": "rook",
+   "akt": "4",
+   "gesetzt_von": "Corvin K4",
+   "gelesen_von": "Epilog, Tauben im Finale",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "in_haft",
+    "frei"
+   ],
+   "standard": "in_haft",
+   "einmal": true
+  },
+  {
+   "name": "malcolm_risse",
+   "akt": "1–4",
+   "gesetzt_von": "Corvin misstraut (+1), Gang-Enttarnung (+1), Weberin-Gespräch (+1)",
+   "gelesen_von": "Malcolm-Szenen A3, Erlösungsmöglichkeit A4",
+   "hinweis": "",
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0
+  },
+  {
+   "name": "hazel_status",
+   "akt": "3–4",
+   "gesetzt_von": "mercy_akten / Hauptquest A4",
+   "gelesen_von": "Hazel-Szenen, Finale, Pfötchens Leitung",
+   "hinweis": "verraten = Knoten gerutscht, unlenkbar",
+   "typ": "enum",
+   "werte": [
+    "ahnungslos",
+    "wissend",
+    "verraten"
+   ],
+   "standard": "ahnungslos"
+  },
+  {
+   "name": "weberin_auftrennungen",
+   "akt": "4",
+   "gesetzt_von": "Weberin K4 (max. 2)",
+   "gelesen_von": "Juno-Bogen, Gangs, Barkley-Plan, Big-Dig-Ausgang",
+   "hinweis": "nur wenn weberin_ausgang != verweigerin",
+   "typ": "liste",
+   "werte": [
+    "juno",
+    "tauben",
+    "gangs",
+    "garde",
+    "pip"
+   ],
+   "standard": [],
+   "max_eintraege": 2
+  },
+  {
+   "name": "held_anknuepfen",
+   "akt": "2–4",
+   "gesetzt_von": "jedes Anknüpfen",
+   "gelesen_von": "Fadensicht-Freischaltung, Finale (Ende ‚Der Sohn‘)",
+   "hinweis": "",
+   "typ": "int",
+   "min": 0,
+   "max": null,
+   "standard": 0
+  },
+  {
+   "name": "held_hebel_genutzt",
+   "akt": "1–4",
+   "gesetzt_von": "Muster erkannt → Nutzen",
+   "gelesen_von": "Zuneigung aller, Gefährten-Kommentare, Finale",
+   "hinweis": "ZUSATZ: kann gestrichen werden",
+   "typ": "int",
+   "min": 0,
+   "max": null,
+   "standard": 0
+  },
+  {
+   "name": "juno_kontakt",
+   "akt": "3",
+   "gesetzt_von": "Fitz K3 (Bote)",
+   "gelesen_von": "Juno-Szenen A3–A4",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "juno_knoten_lager",
+   "akt": "3",
+   "gesetzt_von": "+1 shiner_galerie angenommen, +1 deltamae_lager_auftritt, +1 fitz_show geflogen",
+   "gelesen_von": "Weberin kann Juno nur auftrennen wenn < 2",
+   "hinweis": "",
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0
+  },
+  {
+   "name": "juno_offenheit",
+   "akt": "3–4",
+   "gesetzt_von": "Mercy-Urteil (hart −1 / gnädig +1), Delta-Mae-Szene (+1), Held-Szenen",
+   "gelesen_von": "juno_bogen",
+   "hinweis": "",
+   "typ": "int",
+   "min": -2,
+   "max": 2,
+   "standard": 0
+  },
+  {
+   "name": "juno_bogen",
+   "akt": "4",
+   "gesetzt_von": "A4 berechnet aus juno_offenheit, Auftrennung, Kindheitsszenen",
+   "gelesen_von": "Finale (Gastfigur), Epilog",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "verloren",
+    "frei_bleibt",
+    "frei_kommt_mit"
+   ],
+   "standard": "verloren",
+   "einmal": true
+  },
+  {
+   "name": "dig_in_gruppe",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.mitglied(\"dig\")",
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung / Verlassen",
+   "gelesen_von": "Szenen, Paarmomente",
+   "hinweis": ""
+  },
+  {
+   "name": "dig_zuneigung",
+   "typ": "enum",
+   "werte": [
+    "niedrig",
+    "mittel",
+    "hoch"
+   ],
+   "standard": "mittel",
+   "abgeleitet": "GameState.zuneigung[\"dig\"]: < -3 niedrig, > 5 hoch",
+   "akt": "alle",
+   "gesetzt_von": "Gefährten-Reaktionen",
+   "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
+   "hinweis": ""
+  },
+  {
+   "name": "dig_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
+   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
+   "hinweis": ""
+  },
+  {
+   "name": "corvin_in_gruppe",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.mitglied(\"corvin\")",
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung / Verlassen",
+   "gelesen_von": "Szenen, Paarmomente",
+   "hinweis": ""
+  },
+  {
+   "name": "corvin_zuneigung",
+   "typ": "enum",
+   "werte": [
+    "niedrig",
+    "mittel",
+    "hoch"
+   ],
+   "standard": "mittel",
+   "abgeleitet": "GameState.zuneigung[\"corvin\"]: < -3 niedrig, > 5 hoch",
+   "akt": "alle",
+   "gesetzt_von": "Gefährten-Reaktionen",
+   "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
+   "hinweis": ""
+  },
+  {
+   "name": "corvin_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
+   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
+   "hinweis": ""
+  },
+  {
+   "name": "shiner_in_gruppe",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.mitglied(\"shiner\")",
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung / Verlassen",
+   "gelesen_von": "Szenen, Paarmomente",
+   "hinweis": ""
+  },
+  {
+   "name": "shiner_zuneigung",
+   "typ": "enum",
+   "werte": [
+    "niedrig",
+    "mittel",
+    "hoch"
+   ],
+   "standard": "mittel",
+   "abgeleitet": "GameState.zuneigung[\"shiner\"]: < -3 niedrig, > 5 hoch",
+   "akt": "alle",
+   "gesetzt_von": "Gefährten-Reaktionen",
+   "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
+   "hinweis": ""
+  },
+  {
+   "name": "shiner_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
+   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
+   "hinweis": ""
+  },
+  {
+   "name": "knuckles_in_gruppe",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.mitglied(\"knuckles\")",
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung / Verlassen",
+   "gelesen_von": "Szenen, Paarmomente",
+   "hinweis": ""
+  },
+  {
+   "name": "knuckles_zuneigung",
+   "typ": "enum",
+   "werte": [
+    "niedrig",
+    "mittel",
+    "hoch"
+   ],
+   "standard": "mittel",
+   "abgeleitet": "GameState.zuneigung[\"knuckles\"]: < -3 niedrig, > 5 hoch",
+   "akt": "alle",
+   "gesetzt_von": "Gefährten-Reaktionen",
+   "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
+   "hinweis": ""
+  },
+  {
+   "name": "knuckles_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
+   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
+   "hinweis": ""
+  },
+  {
+   "name": "weberin_in_gruppe",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.mitglied(\"weberin\")",
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung / Verlassen",
+   "gelesen_von": "Szenen, Paarmomente",
+   "hinweis": ""
+  },
+  {
+   "name": "weberin_zuneigung",
+   "typ": "enum",
+   "werte": [
+    "niedrig",
+    "mittel",
+    "hoch"
+   ],
+   "standard": "mittel",
+   "abgeleitet": "GameState.zuneigung[\"weberin\"]: < -3 niedrig, > 5 hoch",
+   "akt": "alle",
+   "gesetzt_von": "Gefährten-Reaktionen",
+   "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
+   "hinweis": ""
+  },
+  {
+   "name": "weberin_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
+   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
+   "hinweis": ""
+  },
+  {
+   "name": "barkley_in_gruppe",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.mitglied(\"barkley\")",
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung / Verlassen",
+   "gelesen_von": "Szenen, Paarmomente",
+   "hinweis": ""
+  },
+  {
+   "name": "barkley_zuneigung",
+   "typ": "enum",
+   "werte": [
+    "niedrig",
+    "mittel",
+    "hoch"
+   ],
+   "standard": "mittel",
+   "abgeleitet": "GameState.zuneigung[\"barkley\"]: < -3 niedrig, > 5 hoch",
+   "akt": "alle",
+   "gesetzt_von": "Gefährten-Reaktionen",
+   "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
+   "hinweis": ""
+  },
+  {
+   "name": "barkley_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
+   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
+   "hinweis": ""
+  },
+  {
+   "name": "deltamae_in_gruppe",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.mitglied(\"deltamae\")",
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung / Verlassen",
+   "gelesen_von": "Szenen, Paarmomente",
+   "hinweis": ""
+  },
+  {
+   "name": "deltamae_zuneigung",
+   "typ": "enum",
+   "werte": [
+    "niedrig",
+    "mittel",
+    "hoch"
+   ],
+   "standard": "mittel",
+   "abgeleitet": "GameState.zuneigung[\"deltamae\"]: < -3 niedrig, > 5 hoch",
+   "akt": "alle",
+   "gesetzt_von": "Gefährten-Reaktionen",
+   "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
+   "hinweis": ""
+  },
+  {
+   "name": "deltamae_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
+   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
+   "hinweis": ""
+  },
+  {
+   "name": "mercy_in_gruppe",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.mitglied(\"mercy\")",
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung / Verlassen",
+   "gelesen_von": "Szenen, Paarmomente",
+   "hinweis": ""
+  },
+  {
+   "name": "mercy_zuneigung",
+   "typ": "enum",
+   "werte": [
+    "niedrig",
+    "mittel",
+    "hoch"
+   ],
+   "standard": "mittel",
+   "abgeleitet": "GameState.zuneigung[\"mercy\"]: < -3 niedrig, > 5 hoch",
+   "akt": "alle",
+   "gesetzt_von": "Gefährten-Reaktionen",
+   "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
+   "hinweis": ""
+  },
+  {
+   "name": "mercy_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
+   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
+   "hinweis": ""
+  },
+  {
+   "name": "fitz_in_gruppe",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "GameState.mitglied(\"fitz\")",
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung / Verlassen",
+   "gelesen_von": "Szenen, Paarmomente",
+   "hinweis": ""
+  },
+  {
+   "name": "fitz_zuneigung",
+   "typ": "enum",
+   "werte": [
+    "niedrig",
+    "mittel",
+    "hoch"
+   ],
+   "standard": "mittel",
+   "abgeleitet": "GameState.zuneigung[\"fitz\"]: < -3 niedrig, > 5 hoch",
+   "akt": "alle",
+   "gesetzt_von": "Gefährten-Reaktionen",
+   "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
+   "hinweis": ""
+  },
+  {
+   "name": "fitz_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
+   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
+   "hinweis": ""
+  },
+  {
+   "name": "dig_k2_wendung",
+   "akt": "2",
+   "gesetzt_von": "Big Dig K2 (abhängig von dig_knoten)",
+   "gelesen_von": "dig_in_gruppe A2–A3",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "zurueckgeholt",
+    "verlassen"
+   ],
+   "standard": "verlassen",
+   "einmal": true
+  },
+  {
+   "name": "dig_fitz_einsicht",
+   "akt": "3",
+   "gesetzt_von": "Bogen Big Dig/Fitz A3",
+   "gelesen_von": "dig_ausgang (Voraussetzung neu_verknotet)",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "dig_pip_szenen",
+   "akt": "3",
+   "gesetzt_von": "Big Dig K3 Strand-Szenen",
+   "gelesen_von": "dig_ausgang",
+   "hinweis": "",
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0
+  },
+  {
+   "name": "dig_ausgang",
+   "akt": "4",
+   "gesetzt_von": "Big Dig K4",
+   "gelesen_von": "Finale (Tunnel / fehlt / wendbar)",
+   "hinweis": "neu_verknotet braucht dig_fitz_einsicht UND (pip_szenen==3 ODER 'pip' in weberin_auftrennungen)",
+   "typ": "enum",
+   "werte": [
+    "neu_verknotet",
+    "entfuehrt",
+    "losgelassen"
+   ],
+   "standard": "losgelassen",
+   "einmal": true,
+   "voraussetzungen": {
+    "neu_verknotet": [
+     [
+      "dig_fitz_einsicht",
+      "==",
+      true
+     ]
+    ]
+   }
+  },
+  {
+   "name": "corvin_k2_musterbuch",
+   "akt": "2",
+   "gesetzt_von": "Corvin K2",
+   "gelesen_von": "Corvin-Stimmbruch, Weberin-Bogen",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "corvin_vale_ermittlung",
+   "akt": "3",
+   "gesetzt_von": "Corvin K3 mit Barkley",
+   "gelesen_von": "vale, Bogen Corvin/Barkley",
+   "hinweis": "beim Aktübergang: offen → verpasst",
+   "typ": "enum",
+   "werte": [
+    "offen",
+    "gemeinsam",
+    "allein",
+    "verpasst"
+   ],
+   "standard": "offen",
+   "verfaellt_nach_akt": 3
+  },
+  {
+   "name": "corvin_ausgang",
+   "akt": "4",
+   "gesetzt_von": "Corvin K4",
+   "gelesen_von": "Finale (Taubennetz / wendbar)",
+   "hinweis": "Beweise: tauben==netz_genutzt ODER Hazel-Begnadigung",
+   "typ": "enum",
+   "werte": [
+    "ganze_wahrheit",
+    "halbe_wahrheit",
+    "keine_wahrheit"
+   ],
+   "standard": "keine_wahrheit",
+   "einmal": true
+  },
+  {
+   "name": "shiner_k2_station",
+   "akt": "2",
+   "gesetzt_von": "Shiner K2",
+   "gelesen_von": "Weberin-Kommentar, shiner_ausgang",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "shiner_galerie",
+   "akt": "3",
+   "gesetzt_von": "Shiner K3",
+   "gelesen_von": "juno_knoten_lager, Bogen Shiner/Delta Mae",
+   "hinweis": "beim Aktübergang: offen → verpasst",
+   "typ": "enum",
+   "werte": [
+    "offen",
+    "angenommen",
+    "abgelehnt",
+    "verpasst"
+   ],
+   "standard": "offen",
+   "verfaellt_nach_akt": 3
+  },
+  {
+   "name": "shiner_uebermalt_gestanden",
+   "akt": "3",
+   "gesetzt_von": "Bogen Shiner/Corvin A3",
+   "gelesen_von": "shiner_galerie (Ablehnung leichter)",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "shiner_ausgang",
+   "akt": "4",
+   "gesetzt_von": "Shiner K4",
+   "gelesen_von": "Ende ‚Verknotung‘",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "knotenmalerin",
+    "ausverkauft",
+    "einzelgaengerin"
+   ],
+   "standard": "einzelgaengerin",
+   "einmal": true
+  },
+  {
+   "name": "knuckles_nugget",
+   "akt": "2–4",
+   "gesetzt_von": "Knuckles K2–K4",
+   "gelesen_von": "knuckles_ausgang",
+   "hinweis": "verpasst wirkt wie gedeckt; beim Übergang ins Finale: offen → verpasst",
+   "typ": "enum",
+   "werte": [
+    "offen",
+    "enttarnt",
+    "gedeckt",
+    "verpasst"
+   ],
+   "standard": "offen",
+   "verfaellt_nach_akt": 4
+  },
+  {
+   "name": "knuckles_vertrag",
+   "akt": "3",
+   "gesetzt_von": "Knuckles K3",
+   "gelesen_von": "knuckles_ausgang",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "behalten",
+    "gekuendigt"
+   ],
+   "standard": "behalten",
+   "einmal": true
+  },
+  {
+   "name": "knuckles_luege_gebeichtet",
+   "akt": "3",
+   "gesetzt_von": "Bogen Knuckles/Big Dig A3",
+   "gelesen_von": "knuckles_zuneigung",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "knuckles_ausgang",
+   "akt": "4",
+   "gesetzt_von": "Knuckles K4",
+   "gelesen_von": "Finale (Gangs)",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "nachfolgerin",
+    "geschaeftsfrau",
+    "treue_nichte"
+   ],
+   "standard": "treue_nichte",
+   "einmal": true
+  },
+  {
+   "name": "weberin_luege_gestanden",
+   "akt": "3",
+   "gesetzt_von": "Bogen Weberin/Corvin A3 oder Mercy-Akten",
+   "gelesen_von": "mercy_weberin_behandelt, Auftrennung pip",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "weberin_ausgang",
+   "akt": "4",
+   "gesetzt_von": "Weberin K4",
+   "gelesen_von": "Finale (Ketten lockern), Ende ‚Wegsperren‘/‚Zerstörung‘",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "hueterin",
+    "zerstoererin",
+    "verweigerin"
+   ],
+   "standard": "verweigerin",
+   "einmal": true
+  },
+  {
+   "name": "barkley_befreiung",
+   "akt": "2",
+   "gesetzt_von": "Barkley K2",
+   "gelesen_von": "Zuneigung mehrerer, Gefährten-Kommentare",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "natuerlich",
+    "inszeniert"
+   ],
+   "standard": "natuerlich",
+   "einmal": true
+  },
+  {
+   "name": "barkley_zweite_schlinge",
+   "akt": "3–4",
+   "gesetzt_von": "Bögen Barkley/Fitz bzw. Barkley/Delta Mae",
+   "gelesen_von": "barkley_ausgang, Finale (über wen Pfötchen greift)",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "keine",
+    "fitz",
+    "deltamae"
+   ],
+   "standard": "keine"
+  },
+  {
+   "name": "barkley_verrate_inszeniert",
+   "akt": "3",
+   "gesetzt_von": "Barkley K3",
+   "gelesen_von": "Zuneigung, barkley_ausgang",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "barkley_ausgang",
+   "akt": "4",
+   "gesetzt_von": "Barkley K4",
+   "gelesen_von": "Finale, Epilog",
+   "hinweis": "mehr_als_eine_liebe braucht zweite_schlinge != keine",
+   "typ": "enum",
+   "werte": [
+    "mehr_als_eine_liebe",
+    "fanatiker",
+    "raecher"
+   ],
+   "standard": "fanatiker",
+   "einmal": true,
+   "voraussetzungen": {
+    "mehr_als_eine_liebe": [
+     [
+      "barkley_zweite_schlinge",
+      "!=",
+      "keine"
+     ]
+    ]
+   }
+  },
+  {
+   "name": "deltamae_pakt",
+   "akt": "2",
+   "gesetzt_von": "Delta Mae K2",
+   "gelesen_von": "Zuneigung, Finale (Stimme behalten?)",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "fremde_stimme",
+    "eigene_stimme",
+    "andere_loesung"
+   ],
+   "standard": "eigene_stimme",
+   "einmal": true
+  },
+  {
+   "name": "deltamae_lager_auftritt",
+   "akt": "3",
+   "gesetzt_von": "Delta Mae K3",
+   "gelesen_von": "juno_knoten_lager, Bogen Shiner/Delta Mae",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "deltamae_ausgang",
+   "akt": "4",
+   "gesetzt_von": "Delta Mae K4",
+   "gelesen_von": "Finale (letztes Lied)",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "ehrliches_lied",
+    "legende",
+    "verkaufte"
+   ],
+   "standard": "legende",
+   "einmal": true
+  },
+  {
+   "name": "mercy_urteil_juno",
+   "akt": "3",
+   "gesetzt_von": "Mercy K3",
+   "gelesen_von": "juno_offenheit",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "hart",
+    "gnaedig"
+   ],
+   "standard": "hart",
+   "einmal": true
+  },
+  {
+   "name": "mercy_weberin_behandelt",
+   "akt": "3",
+   "gesetzt_von": "Mercy K3",
+   "gelesen_von": "Auftrennung pip möglich",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "mercy_akten",
+   "akt": "4",
+   "gesetzt_von": "Mercy K4",
+   "gelesen_von": "hazel_status, mercy_ausgang",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "ordensrat",
+    "presse_hazel",
+    "zurueckgehalten"
+   ],
+   "standard": "zurueckgehalten"
+  },
+  {
+   "name": "mercy_ausgang",
+   "akt": "4",
+   "gesetzt_von": "Mercy K4",
+   "gelesen_von": "Finale",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "reformerin",
+    "abtruennige",
+    "schweigende"
+   ],
+   "standard": "schweigende",
+   "einmal": true
+  },
+  {
+   "name": "fitz_show",
+   "akt": "3",
+   "gesetzt_von": "Fitz K3",
+   "gelesen_von": "juno_knoten_lager, Zirkus-Vertrag",
+   "hinweis": "",
+   "typ": "enum",
+   "werte": [
+    "geflogen",
+    "sabotiert",
+    "umgedeutet"
+   ],
+   "standard": "geflogen",
+   "einmal": true
+  },
+  {
+   "name": "fitz_weberin_trost",
+   "akt": "4",
+   "gesetzt_von": "Bogen Fitz/Weberin A4",
+   "gelesen_von": "fitz_ausgang",
+   "hinweis": "",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "fitz_ausgang",
+   "akt": "4",
+   "gesetzt_von": "Fitz K4",
+   "gelesen_von": "Finale",
+   "hinweis": "letzter_flug braucht fitz_weberin_trost",
+   "typ": "enum",
+   "werte": [
+    "letzter_flug",
+    "trotzig",
+    "bodenstaendig"
+   ],
+   "standard": "trotzig",
+   "einmal": true,
+   "voraussetzungen": {
+    "letzter_flug": [
+     [
+      "fitz_weberin_trost",
+      "==",
+      true
+     ]
+    ]
+   }
+  }
+ ],
+ "prototyp_flags": [
+  "ad",
+  "adDoubtsSnax",
+  "adTrustsSnax",
+  "antDown",
+  "antGone",
+  "auftrag",
+  "bc",
+  "beatBar",
+  "beatCats",
+  "beatRoachGang",
+  "bk",
+  "bkCowed",
+  "bkMock",
+  "boomTaken",
+  "boomTo",
+  "brotherKnaeuel",
+  "casesLink",
+  "catsDone",
+  "catsMadeUp",
+  "ch1",
+  "ch1robbed",
+  "ch1street",
+  "coatMan",
+  "coatsSeen",
+  "confess",
+  "deniseIgnored",
+  "deniseSaved",
+  "digCowed",
+  "digKnown",
+  "doorOpen",
+  "fakeNephew",
+  "garAntMet",
+  "garCaught",
+  "garDoorOpen",
+  "garLoud",
+  "garPick",
+  "garSafe",
+  "garageKey",
+  "gaveNames",
+  "grimm",
+  "hasBoom",
+  "hasHoney",
+  "hasTape",
+  "heard7",
+  "heardTape",
+  "hidMoney",
+  "honeyDone",
+  "hqSide",
+  "hu",
+  "ignoredMaria",
+  "ilseCases",
+  "ilseDig",
+  "ilseNoCop",
+  "jagSeen",
+  "job",
+  "ke",
+  "kellerRef",
+  "knCalm",
+  "knowDon",
+  "knowNugget",
+  "knowTruth",
+  "letzter_kampf_gewonnen",
+  "metNugget",
+  "mimiFound",
+  "mimiQuest",
+  "mira",
+  "miraGar",
+  "nephewJoke",
+  "nuggetCoats",
+  "nuggetFears",
+  "nuggetLie",
+  "or",
+  "orFearsSnax",
+  "orTapeAsk",
+  "owesCats",
+  "owesPaid",
+  "pawSeen",
+  "pilgerGeld",
+  "pilgerGeldDone",
+  "pips",
+  "playedBoth",
+  "pounceRef",
+  "prisoner",
+  "refusedAd",
+  "refusedNugget",
+  "refusedOr",
+  "ren_schaden",
+  "returnCats",
+  "roachHint",
+  "roachKnowsDig",
+  "roachSells",
+  "roachSusDig",
+  "robbed",
+  "roomKey",
+  "s3lost",
+  "s3rescued",
+  "s3talk",
+  "s3won",
+  "sawBar",
+  "shiftDone",
+  "shiftMissed",
+  "sidedCats",
+  "slept",
+  "snax",
+  "snaxHeard",
+  "soldCats",
+  "soldNomapes",
+  "stoleBoom",
+  "tapeAsked",
+  "tapeLeft",
+  "tapeLied",
+  "tapeLinked",
+  "tapeSeen",
+  "tapeToAd",
+  "tapeToNugget",
+  "tapeToOr",
+  "taxFail",
+  "taxFailSeen",
+  "taxSeen",
+  "taxman",
+  "toldWool",
+  "tookSmoke",
+  "ueberfall",
+  "warned",
+  "woolAsked"
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "titel": "Akt 2, Näherinnen befreit",
+ "erwartet": "unruhen_hairlem = ja, Hazel früher unter Druck, mehr Gegenzüge",
+ "gruppe": [
+  "ren",
+  "weberin",
+  "corvin",
+  "barkley"
+ ],
+ "flags": {
+  "akt": 2,
+  "naeherinnen": "befreit",
+  "pfoetchen_gegenzuege": 4
+ }
+}

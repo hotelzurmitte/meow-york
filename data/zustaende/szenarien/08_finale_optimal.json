@@ -1,0 +1,49 @@
+{
+ "titel": "Finale, alles optimal",
+ "erwartet": "Ende „Verknotung“ ist erreichbar",
+ "gruppe": [
+  "ren",
+  "shiner",
+  "barkley",
+  "fitz"
+ ],
+ "flags": {
+  "akt": 4,
+  "gang_wahl": "breaking_cats",
+  "tauben": "netz_genutzt",
+  "rook": "frei",
+  "vale": "vor_gericht",
+  "hazel_status": "verraten",
+  "juno_kontakt": true,
+  "juno_offenheit": 2,
+  "juno_bogen": "frei_bleibt",
+  "dig_fitz_einsicht": true,
+  "dig_pip_szenen": 3,
+  "dig_ausgang": "neu_verknotet",
+  "corvin_ausgang": "ganze_wahrheit",
+  "shiner_galerie": "abgelehnt",
+  "shiner_ausgang": "knotenmalerin",
+  "weberin_luege_gestanden": true,
+  "weberin_ausgang": "hueterin",
+  "barkley_zweite_schlinge": "fitz",
+  "barkley_ausgang": "mehr_als_eine_liebe",
+  "deltamae_pakt": "andere_loesung",
+  "deltamae_ausgang": "ehrliches_lied",
+  "mercy_urteil_juno": "gnaedig",
+  "mercy_ausgang": "reformerin",
+  "fitz_weberin_trost": true,
+  "fitz_ausgang": "letzter_flug",
+  "dig_knoten": true,
+  "corvin_knoten": true,
+  "shiner_knoten": true,
+  "weberin_knoten": true,
+  "barkley_knoten": true,
+  "deltamae_knoten": true,
+  "mercy_knoten": true,
+  "fitz_knoten": true
+ },
+ "zuneigung": {
+  "dig": 8,
+  "corvin": 8
+ }
+}

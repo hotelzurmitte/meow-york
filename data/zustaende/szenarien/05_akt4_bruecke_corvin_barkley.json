@@ -1,0 +1,15 @@
+{
+ "titel": "Akt 4, Brücke mit Corvin und Barkley",
+ "erwartet": "gemeinsame Konfrontation, Prozess gegen Vale möglich",
+ "gruppe": [
+  "ren",
+  "corvin",
+  "barkley",
+  "mercy"
+ ],
+ "flags": {
+  "akt": 4,
+  "vale": "lebt",
+  "corvin_vale_ermittlung": "gemeinsam"
+ }
+}
