@@ -175,7 +175,7 @@ Die Beispielsätze sind Tonproben, keine fertigen Dialogzeilen. Sie sollen zeige
 
 | Paar | Worum es geht | Entwicklung |
 | --- | --- | --- |
-| Corvin und Barkley | Barkleys letzter Herr war früher Corvins Vorgesetzter bei der Polizei, bevor er zur Ordensgarde wechselte. Barkley hält Corvin für einen Komplizen | Gemeinsame Ermittlung gegen den Herrn. Aus Misstrauen wird Respekt unter Ermittlern |
+| Corvin und Barkley | Barkley hält jeden Ex-Polizisten für einen Handlanger der Garde, und Corvin hält Barkley für einen Fanatiker | Gemeinsame Ermittlung gegen den Herrn. Aus Misstrauen wird Respekt unter Ermittlern |
 | Barkley und die Weberin | Sie hat das System gepflegt, das ihn achtzig Jahre gefangen hielt. Er würde sie opfern | Eine der härtesten Lager-Szenen. Lösbar nur, wenn Barkley mehr als eine Liebe gelernt hat |
 | Malcolm und die Weberin | Sie hat für ihn gearbeitet und ihn verraten. Er hat sie benutzt | Sie ist die Einzige, die ihn als Kind kannte. Ihr Gespräch über den Jungen, der in den Kammern spielte |
 | Corvin und Fitz | Was bedeutet „fliegen“? Ein Streit, der das ganze Spiel durchzieht | Running Gag. Am Ende gibt Corvin ihm recht, nur ein einziges Mal |

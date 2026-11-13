@@ -272,8 +272,8 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 
 **Folgeszenen:**
 - **Lagerszene Corvin (Pflicht):** Notizbuch und Rooks Foto, erzählt als Justizirrtum. Im Büro steht er dabei vor der Pinnwand.
-- **Die Dächer:** Corvin öffnet die zweite Ebene. Vincenzo Frankinetti fotografiert dort. **Eins seiner Fotos zeigt Lil' Riff vor zwei Monaten am U-Bahn-Gitter, neben einer Gestalt mit Kapuze und zu vielen Armen.** Das ist die Weberin, aber das weiß noch niemand.
-- **Die Tauben (Fenster Akt 1–2):** Augustin „Gus“ Rook, Rooks Bruder. Der Spieler kann das Netz nutzen und erfährt dann, wo die Expedition unten hingeht, oder die Tauben befreien. Corvin schlägt vor, eine Taube unter Druck zu setzen. Das ist dieselbe Methode wie im Fall Rook.
+- **Die Dächer:** Corvin öffnet die zweite Ebene. Vincenzo Frankinetti, ein Chamäleon, klebt dort an den Fassaden und fotografiert die Stadt, ohne dass ihn jemand bemerkt. **Eins seiner Fotos zeigt Lil' Riff vor zwei Monaten am U-Bahn-Gitter, neben einer Gestalt mit Kapuze und zu vielen Armen.** Das ist die Weberin, aber das weiß noch niemand.
+- **Die Tauben (Fenster Akt 1–2):** Augustin „Gus“ Rook, Rooks Bruder. Corvin weiß das seit zwölf Jahren und hat die Dächer deshalb gemieden. Keine Enthüllung, sondern seine Vorgeschichte: Er geht nur hinauf, weil der Fall es verlangt. Der Spieler kann das Netz nutzen und erfährt dann, wo die Expedition unten hingeht, oder die Tauben befreien. Corvin schlägt vor, eine Taube unter Druck zu setzen. Das ist dieselbe Methode wie im Fall Rook.
 
 **Prüfung:**
 - *Spaß:* Beschattung über die Dächer, Einbruch auf fünf Arten, eine Figur zum Mögen, die eigentlich Täter ist.
@@ -292,7 +292,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 
 **Die beiden Seiten:**
 - **Künstlerviertel, Breaking Cats:** Der Ghettoblaster gehörte **Lil' Riff**, Adikatz' kleinem Bruder. Riff kam vor zwei Monaten nicht nach Hause. **Shiner** malt kopfüber an einer Wand und fordert jeden zum Wettklettern heraus.
-- **Industrie und Hafen, Nomapes:** Don Orango, Nugget, **Knuckles** unter einem Motorrad. **Benny Hopkins** bringt das Kreditangebot aus Hazels Programm, wenn die Nomapes Frieden schließen. Malcolm war letzte Woche da, mit teuren Schuhen.
+- **Industrie und Hafen, Nomapes:** Don Orango, Nugget, **Knuckles** unter einem Motorrad. **Benny**, ein Mechaniker, schwärmt für Hazel. Über ihn kommt ein Beamter aus ihrem Wohnungsprogramm mit einem Kreditangebot, wenn die Nomapes Frieden schließen. Malcolm war letzte Woche da, mit teuren Schuhen.
 
 **Wege zum Ghettoblaster:**
 
@@ -550,10 +550,10 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | --- | --- | --- |
 | Honig für Hummel (Prototyp) | Nest | Hummels Schlüssel für Zimmer 7 |
 | Grille Grimm | Whisker Avenue | zeigt, was das Lager aus Menschen macht |
-| Vincenzo Frankinetti | Dächer | Foto von Riff und der Kapuzengestalt; Fitz' Onkel (Vorschlag) |
+| Vincenzo Frankinetti | Dächer, an Fassaden geklebt | Chamäleon und Paparazzo. Sein Foto zeigt Riff und die Kapuzengestalt am Gitter |
 | Gus Rook und die Tauben | Dächer | Corvin, Juno-Spur, Finale |
 | Antonia | Garage | Informantin, wenn überredet |
-| Hazels Wahlkampfauftritt | Platz vor dem Bezirksamt, aus der Ferne | Benny, Big Dig arbeitet für ihr Programm |
+| Hazels Wahlkampfauftritt | Platz vor dem Bezirksamt, aus der Ferne | Benny jubelt in der ersten Reihe, Big Dig arbeitet für ihr Programm |
 | Shiners Wettklettern | Künstlerviertel | Corvin, Shiners Rivalität |
 
 ---
@@ -594,7 +594,7 @@ Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die D
 - Die Branx gibt es nicht mehr. Die Cats sitzen im Künstlerviertel, die Nomapes in Industrie und Hafen.
 - Die Kassette wird erst nach der Schlägerei gefunden, im aufgesprungenen Gehäuse. Die raue Stimme gehört der Weberin.
 - Neu: Junos Wohnung als Ereignis, Schwester Odile, die Ordensmission, Junos Zettel, Bruder Ansgar, Vincenzos Foto.
-- Vincenzo sitzt auf den Dächern von Hairlem.
+- Vincenzo ist ein Chamäleon statt eines Flughörnchens und sitzt auf den Dächern von Hairlem.
 
 ## Was sich gegenüber dem GDD ändert
 
@@ -603,10 +603,13 @@ Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die D
 
 ---
 
+## Grundsatz: Verbindungen über Systeme, nicht über Zufälle *(entschieden)*
+
+Figuren begegnen sich über den Orden, das Knäuel, die Mission und den Bandenkrieg, denn die berühren ganz Hairlem. Verwandtschaften und alte Bekanntschaften sind Zufälle und werden sparsam eingesetzt, höchstens eine persönliche Verbindung pro Gefährte. Die meisten Figuren bleiben Fremde mit eigenem Leben.
+
 ## Zur Freigabe
 
 - **Neue Figuren und Namen:** Schwester Odile (Gans), Bruder Ansgar (Dachs), Augustin „Gus“ Rook (Taubenzüchter).
 - **Corvins Hausverbot im Nest** wegen der Verhöre zum Fall Rook.
-- **Vincenzo Frankinetti** ist Fitz' Onkel.
 - **Lil' Riff** wurde der Ordensgarde übergeben (Cpt. V., also Vale). Das verbindet den Bandenkrieg mit Barkleys und Corvins Geschichte.
 - **Warum der Orden nach unten geht:** Die Expedition bringt den Ausgestoßenen Suppe und Predigten. Dadurch entstehen Schlingen, an denen Pfötchen später ziehen kann.

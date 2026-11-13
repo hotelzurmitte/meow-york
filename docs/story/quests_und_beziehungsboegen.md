@@ -110,14 +110,15 @@ Die Einstiege der Gefährten sind solche Pflichtszenen. Corvin zum Beispiel holt
 **Stationen:**
 
 - **Akt 1, Lagerszene (fest):** Bei der ersten langen Rast nach seinem Beitritt schlägt Corvin das Notizbuch auf, zeigt Rooks Foto und erzählt den Fall, noch als Geschichte über einen Fehler der Justiz, nicht über seinen eigenen.
-- **Akt 1 oder 2, die Tauben:** Corvin öffnet die Dachebene. Dort stößt die Gruppe auf den Taubenzüchter. Sein Name verrät mehr, als Corvin lieb ist: Er ist Rooks Bruder. *Tauben-Quest aus dem GDD:* das Netz des Züchters für die Juno-Spur nutzen oder die Tauben befreien. Wer den Züchter in Hairlem nicht findet, bekommt in Akt 2 eine Botentaube: Der Orden lässt die Tauben jagen, und der Züchter hat sich mit seinen Tieren in einem Lüftungsschacht der Subfurs versteckt. Gleiche Entscheidung, anderer Ort. Für die Juno-Spur ist es dann zu spät, das Netz hilft nur noch im Finale.
+- **Akt 1 oder 2, die Tauben:** Corvin öffnet die Dachebene. Dort oben lebt Gus Rook, der Taubenzüchter und Rooks Bruder. Corvin weiß das seit zwölf Jahren und meidet die Dächer genau deshalb. Jetzt muss er hinauf. *Tauben-Quest aus dem GDD:* das Netz des Züchters für die Juno-Spur nutzen oder die Tauben befreien. Wer den Züchter in Hairlem nicht findet, bekommt in Akt 2 eine Botentaube: Der Orden lässt die Tauben jagen, und der Züchter hat sich mit seinen Tieren in einem Lüftungsschacht der Subfurs versteckt. Gleiche Entscheidung, anderer Ort. Für die Juno-Spur ist es dann zu spät, das Netz hilft nur noch im Finale.
 - **Akt 1, Malcolm:** Malcolm ist Corvins bester Informant, charmant und immer zu gut informiert. Corvin traut ihm, weil seine Informationen stimmen. Das ist sein blinder Fleck.
 - **Akt 2, The Subfurs:** Die Weberin hat eine Abschrift ihres Musterbuchs bei sich. Corvin verlangt, den Fall Rook nachzuschlagen. Ergebnis: Unter dem Datum des Lagerhausbrandes steht ein Eintrag, aber nicht über Corvin. Die Wut der ganzen Stadt wurde damals auf die Tauben verschoben. Corvins eigenes Vorurteil war schon vorher da. Der Orden hat es nur genutzt.
 - **Akt 2, Wendepunkt:** Corvin hat seine Ausrede verloren. Der Noir-Erzähler verstummt für einige Szenen.
-- **Akt 3 oder 4, die Ermittlung:** Barkley erkennt in den Ermittlungsakten den Namen seines letzten Herrn: Captain Vale, damals Corvins Vorgesetzter, heute Kommandant der Ordensgarde. Vale hat den Brand legen lassen, um ein Vorgehen gegen die Tauben zu rechtfertigen. Corvin und Barkley ermitteln gemeinsam. Am besten auf Boney Island, wo Vales Garde das Lager bewacht. Wer es dort verpasst, findet die Spur in Akt 4 in Cathattan, mit weniger Beweisen.
-- **Akt 4, Cathattan:** Rook sitzt im Gefängnis von Cathattan. Corvin kann den Fall neu aufrollen, braucht aber Beweise, die er nur durch das Taubennetz bekommt, falls es in Akt 1 nicht befreit wurde, oder durch eine Begnadigung von Hazel.
+- **Akt 3 oder 4, die Ermittlung gegen Vale:** Corvin bringt den Detektivblick, Barkley die Nase. Gemeinsam verfolgen sie, wohin die Garde Lil' Riff gebracht hat und wo die Monsterhunde gehalten werden. Am besten auf Boney Island, wo Vales Garde das Lager bewacht. Wer es dort verpasst, findet die Spur in Akt 4 in Cathattan, mit weniger Beweisen.
+- **Der Brand selbst:** Der Lagerhausbrand war ein gewöhnlicher Versicherungsbetrug des Besitzers, heute ein feiner Herr in Cathattan. Rook wurde beschuldigt, weil man Tauben eben verachtet. Hinter Corvins Schuld steckt keine Verschwörung, nur sein Vorurteil.
+- **Akt 4, Cathattan:** Rook sitzt im Gefängnis von Cathattan. Corvin kann den Fall neu aufrollen, braucht aber Beweise gegen den Besitzer. Die Tauben haben damals alles gesehen: Wer ihr Netz gewonnen hat (genutzt oder befreit), bekommt ihre Aussage. Ohne sie bleibt nur eine Begnadigung durch Hazel.
 
-**Entscheidung:** Vor Gericht die ganze Wahrheit sagen, also auch die gefälschte Aussage und das eigene Vorurteil, oder nur Vale belasten und sich selbst schonen.
+**Entscheidung:** Vor Gericht die ganze Wahrheit sagen, also auch die gefälschte Aussage und das eigene Vorurteil, oder nur den Besitzer belasten und sich selbst schonen.
 
 **Ausgänge:**
 
@@ -170,7 +171,7 @@ Die Einstiege der Gefährten sind solche Pflichtszenen. Corvin zum Beispiel holt
 
 **Stationen:**
 
-- **Akt 1, Hairlem:** Einer ihrer Mechaniker ist Hazels jüngster Bruder Benny. Über Benny kommt die Gruppe an einen Termin bei der Bürgermeisterin. Hazel bietet einen Kredit aus ihrem Wohnungsprogramm an, wenn die Nomapes Frieden mit den Breaking Cats schließen. Don Orango lehnt ab. Malcolm dagegen bietet Geld ohne Bedingungen.
+- **Akt 1, Hairlem:** Einer ihrer Mechaniker, Benny, glaubt fest an Hazel. Über ihn kommt die Gruppe an einen Beamten aus Hazels Wohnungsprogramm. Der bietet einen Kredit an, wenn die Nomapes Frieden mit den Breaking Cats schließen. Don Orango lehnt ab. Malcolm dagegen bietet Geld ohne Bedingungen.
 - **Akt 2, The Subfurs:** Die Nomapes schmuggeln durch alte Tunnel. Knuckles beobachtet Nugget bei einem Treffen mit einem Mann in Weiß. Nugget ist die Zwischenperson des Ordens.
 - **Akt 3, Boney Island:** Die Nomapes liefern Motorräder und Material für das Erweckungslager. Das Geschäft rettet die Werkstatt. Knuckles weiß inzwischen, wofür das Lager da ist.
 - **Akt 4, Cathattan:** Knuckles bringt Don Orango und Adikatz' Vater an einen Tisch. Die beiden alten Männer müssen sich nach dreißig Jahren über das sabotierte Hafenrennen aussprechen. Wenn Nugget vorher entfernt wurde, gelingt es. Wenn nicht, schürt er im letzten Moment.
@@ -187,7 +188,7 @@ Die Einstiege der Gefährten sind solche Pflichtszenen. Corvin zum Beispiel holt
 
 **Unschöne Seite:** Egoismus. Knuckles will die Werkstatt für sich. In Akt 3 lügt sie die Gruppe über den Lagervertrag an, bis der Held es selbst herausfindet.
 
-**Kreuzungen:** Hazel (Benny, Kredit) · Malcolm (Geldgeber) · Big Dig (die ruhigste Freundschaft) · Mercy (die Erste, die sie fragt, wie es ihr geht)
+**Kreuzungen:** Hazel (ihr Programm, Kredit) · Malcolm (Geldgeber) · Big Dig (die ruhigste Freundschaft) · Mercy (die Erste, die sie fragt, wie es ihr geht)
 
 ---
 ## Die Weberin: „Lose Fäden“
@@ -238,7 +239,7 @@ Juno und Fitz kann sie nicht herausschneiden, weil beide außerhalb von Meow Yor
 - **Akt 2, die Rückverwandlung:** Der Knoten ist gelöst, aber der Körper bleibt ein Monster. Den Körper hat Magie verändert, nicht das Knäuel. Delta Mae kennt diesen Zauber: Seine Abwässer haben sie selbst verändert. Mit ihr und einem Ritual in den Kanälen wird Barkley zurückverwandelt. Weil das Ritual nicht vollständig gelingt, bleibt die Monsterform in ihm, und er kann sie später wie ein Druide abrufen.
 - **Akt 2, die Gräber:** Barkley führt die Gruppe zu einem Massengrab aus dem Hundekrieg. Hier erzählt er, warum die Katzen die Hunde auslöschen wollten: Hunde sind treu. Ihre Schlingen sind stark, und weil sie ihr Leben mit denen teilen, die sie lieben, verknoten sie schnell und fest. Was verknotet ist, kann niemand verschieben. Eine Stadt voller Hunde war für das Knäuel kaum zu erreichen, und für einen Orden, der über das Knäuel herrscht, war das die größte Bedrohung. Deshalb wurden ihre Körper verwandelt und ihre Treue an die Herren gebunden. Ihre Stärke, die Treue, wurde zu ihrer Kette.
 - **Akt 3, Boney Island:** Monsterhunde bewachen das Lager. Barkley will sie befreien und weiß, wie: Ihre Herren müssen sie verraten. Er bittet den Helden, solche Verrate zu inszenieren, notfalls auf Kosten unbeteiligter Katzen.
-- **Akt 3, mit Corvin:** Vale war Corvins Vorgesetzter und hat den Lagerhausbrand legen lassen. Barkley und Corvin ermitteln gemeinsam.
+- **Akt 3, mit Corvin:** Barkley und Corvin ermitteln gemeinsam gegen Vale: wohin er Lil' Riff gebracht hat und wo die Monsterhunde gehalten werden.
 - **Akt 4, Cathattan:** Vale kommandiert die Brücken. Barkley hat einen Plan für das Finale: alle Monsterhunde der Stadt auf einmal befreien, indem der Orden sie geschlossen opfern muss. Das Ergebnis wäre eine Armee, die nur noch die Hunde liebt.
 
 **Entscheidung:** Vale töten oder vor Gericht bringen, zusammen mit Corvin. Und: den Massenplan unterstützen, bremsen oder verhindern.
@@ -452,7 +453,7 @@ Malcolm, Juno und Hazel sind keine Gefährten. Sie bekommen keine Pflicht aus Re
 ### Hazel
 | Gefährte | Verbindung | Wirkung |
 | --- | --- | --- |
-| Knuckles | Hazels Bruder Benny arbeitet in der Werkstatt | Wenn Pfötchen in Akt 4 den Zorn auf Hazel lenkt, ist Benny in Gefahr |
+| Knuckles | Benny aus der Werkstatt ist einer von Hazels treuesten Anhängern | Wenn Pfötchen in Akt 4 den Zorn auf Hazel lenkt, ist Benny in Gefahr |
 | Big Dig | Arbeitet für ihr Wohnungsprogramm | Er hält sie für die einzige ehrliche Politikerin und ist der Erste, der sie in Akt 4 verteidigt |
 | Corvin | Sie kann Rook begnadigen | Ohne Taubennetz ist Hazel die einzige Chance für „Ganze Wahrheit“ |
 | Mercy | Kann ihr die Akten geben | Dann erfährt Hazel früher, dass sie die Leitung ist, und der Ausgang „Die Wissende“ wird wahrscheinlicher |
@@ -500,7 +501,7 @@ Die Gruppe hat bis zu vier Figuren inklusive Held, also drei Gefährten. Szenen 
 
 | Szene | Mit wem | Was sich ändert |
 | --- | --- | --- |
-| Rooks Zelle (Akt 4) | Barkley | Er erkennt Vales Handschrift in den Akten. Neue Spur |
+| Rooks Zelle (Akt 4) | Barkley | Er riecht an der alten Akte Lampenöl, das passt zum Versicherungsbetrug. Neue Spur |
 | | Fitz | Er fragt Corvin schlicht: „Hast du ihm wehgetan?“ Corvin kann nicht lügen |
 | | Weberin | Sie kann den Musterbuch-Eintrag als Beweis vorlegen |
 | Junos Rede (Akt 3) | Fitz | Juno sieht ihn und verhaspelt sich |
@@ -534,9 +535,10 @@ Die Gruppe hat bis zu vier Figuren inklusive Held, also drei Gefährten. Szenen 
 
 ## Neue Namen zur Freigabe
 
-- **Captain Vale:** Barkleys letzter Herr, früher Corvins Vorgesetzter, heute Kommandant der Ordensgarde
-- **Benny Hopkins:** Hazels jüngster Bruder, Mechaniker bei den Nomapes
-- **Rook:** der unschuldig Verurteilte, Bruder des Taubenzüchters
+- **Captain Vale:** Kommandant der Ordensgarde, Barkleys letzter Herr, hat Lil' Riff abgeholt
+- **Benny:** Mechaniker bei den Nomapes, glühender Anhänger von Hazel
+- **Rook:** der unschuldig Verurteilte, Bruder des Taubenzüchters Gus Rook. Corvin kennt beide seit zwölf Jahren
+- **Vincenzo Frankinetti:** Chamäleon, Fotograf auf den Dächern von Hairlem
 - **Lucien:** Siamkater, Besitzer des Velvet Paw
 - **Die Näherinnen:** Lehrlinge der Weberin
 - **Gertrud:** ein Stützpfeiler

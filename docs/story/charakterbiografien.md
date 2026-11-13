@@ -340,7 +340,7 @@ Zwei Jahre später fand Corvin heraus, dass Rook unschuldig war. Er gestand, flo
 
 **B. Keine Ausrede.** Corvin findet heraus, dass niemand ihn gelenkt hat. Seine Wut war seine eigene, sein Vorurteil gegen Tauben auch. Das Knäuel brauchte ihn gar nicht.
 
-**C. Rookfreiheit.** In der Tauben-Quest stellt sich heraus, dass Rook der Bruder des Taubenzüchters ist. Corvin kann den Fall vor Gericht neu aufrollen, muss dafür aber die Beweise des Taubennetzes nutzen und Juno als Spur aufgeben.
+**C. Rookfreiheit.** Rooks Bruder Gus ist der Taubenzüchter auf den Dächern, und Corvin meidet ihn seit zwölf Jahren. Corvin kann den Fall vor Gericht neu aufrollen, muss dafür aber die Beweise des Taubennetzes nutzen und Juno als Spur aufgeben.
 
 | Variante | Tragik | Wendepunkt | Philosophie |
 | --- | --- | --- | --- |

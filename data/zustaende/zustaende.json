@@ -75,7 +75,7 @@
    "name": "unruhen_hairlem",
    "akt": "2–4",
    "gesetzt_von": "abgeleitet: naeherinnen == befreit",
-   "gelesen_von": "hazel_status (früher unter Druck), Benny-Gefahr A4",
+   "gelesen_von": "hazel_status (früher unter Druck), Gefahr für Hazels Anhänger wie Benny in A4",
    "hinweis": "",
    "typ": "bool",
    "werte": [
@@ -100,7 +100,7 @@
    "name": "vale",
    "akt": "4",
    "gesetzt_von": "Barkley K4 / Corvin K4",
-   "gelesen_von": "rook, Corvin-Ausgang, Barkley-Ausgang",
+   "gelesen_von": "Barkley-Ausgang, Riffs Schicksal, Epilog",
    "hinweis": "",
    "typ": "enum",
    "werte": [
