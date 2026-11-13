@@ -163,6 +163,7 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
   2. **Schwester Odile,** wenn er sie gewonnen oder getäuscht hat. „Herzchen. Bitte. Lass ihn dich doch lieben.“
   3. **Bruder Ansgar,** wenn der Held ihn in Akt 1 nicht verprügelt hat.
   4. **Der junge Kater aus Malcolms Bewegung,** der ihn in Akt 1 ins Lazarett geführt und vor Nugget gewarnt hat.
+  *Offen:* Die Liste wird mit Figuren aus Akt 2 bis 4 erweitert (siehe „Offene Punkte“ in der README).
 - **Wege:** zurückholen (Überzeugen oder Einsicht, leichter mit Junos Stimme), bewusstlos schlagen oder töten (`bekanntes_gesicht`). Danach sind die Gefährten dran.
 - **Juno:** Ist ihr Bogen verloren, steht sie als Rednerin neben Pfötchen und spricht zur Halle. Der Held kann sie nicht bekämpfen, nur zu ihr reden. Dabei zählt der Kindheitsknoten, und das angefangene „Schraubensch…“ aus Akt 1 bekommt sein Echo.
 - **Die Leitung:** Hat Pfötchen Hazel verloren (herausgeschnitten oder unlenkbar geworden), fließt der Nachhall durch den, der ihn jetzt am meisten liebt: Juno, wenn sie verloren ist, sonst Malcolm. Man sieht ihn leiden, während Pfötchen zieht.

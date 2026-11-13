@@ -46,6 +46,12 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 - **Point of no Return nach dem Vorbild von BG3:** Die Geschichte kommt zum Spieler. Jeder Gefährte hat pro Akt eine Pflicht-Lagerszene, die nachgeholt wird, falls sie fehlt. Ortsgebundene Kapitel haben ein Fenster über zwei Akte, Schlüsselfiguren wandern mit, und „verpasst“ gibt es nur für Nebenzweige.
 - **Kein festes Lager:** Die Gruppe rastet in wechselnden Unterschlüpfen, etwa im Zimmer über dem Cuckoo's Nest, im U-Bahn-Waggon, im Wohnwagen der Acorns oder im Hotel in Cathattan. Die Figuren tragen ihre Requisiten bei sich. Corvin hat unterwegs ein Notizbuch statt der Pinnwand, die in seinem Büro bleibt.
 
+## Offene Punkte (bei jedem neuen Akt prüfen)
+
+- [ ] **Bekannte Gesichter im Finale erweitern:** Bisher kommen nur Figuren aus Akt 1 in Frage (Station 5, `bekanntes_gesicht_wer`: Benny, Pounce, Odile, Ansgar, Malcolms junger Kater). Beim Schreiben von Akt 2, 3 und 4 prüfen, welche neue Nebenfigur dort stark genug wird, um im Finale gegen den Helden zu stehen. Dann die Liste in `enden.md` und die Berechnung in `GameState` ergänzen. *(Wunsch des Nutzers, 13.11.)*
+- [ ] **Riff:** was mit ihm passiert und wo man ihn rettet (Akt 2), entscheidet das Opfer der Cats im Finale.
+- [ ] **Große Knoten:** Liste in `data/zustaende/grosse_knoten.json` mit jedem Akt erweitern, Cathattan braucht mehr als zwei positive.
+
 ## Namen (freigegeben)
 
 Tessa Strand (Weberin), Delta Mae (Alligatorin), Schwester Mercy (Gottesanbeterin), Fitz Acorn (Flughörnchen), Captain Vale, Benny, Rook, Vincenzo Frankinetti (Chamäleon), Lucien, Pips, die Näherinnen, Gertrud.
