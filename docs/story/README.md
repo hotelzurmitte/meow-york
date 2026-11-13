@@ -10,7 +10,8 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 2. `charakterbiografien.md`: ausführliche Biografien mit bewerteten Entwicklungen
 3. `stimmen_und_beziehungen.md`: Sprechweisen, Stimmbruch unter Druck, Beziehungen
 4. `quests_und_beziehungsboegen.md`: persönliche Quests über alle Akte, Beziehungsbögen, Wirkungsketten
-5. `zustandsplan.md`: alle Story-Variablen und der Testplan. Die technische Fassung ist `data/zustaende/zustaende.json`, die Bedienung steht in `docs/zustaende.md`.
+5. `akt1_szenen.md`: Akt 1 Szene für Szene (Vorschlag, noch nicht freigegeben)
+6. `zustandsplan.md`: alle Story-Variablen und der Testplan. Die technische Fassung ist `data/zustaende/zustaende.json`, die Bedienung steht in `docs/zustaende.md`.
 
 ## Vom Nutzer im Chat entschieden
 
