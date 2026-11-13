@@ -23,7 +23,7 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 - **Kern:** Frommer Pflichtmensch. Die Stadt geht vor, mit einer Ausnahme: sein Sohn.
 - **Wesen:** würdevoll, langsam, sanft im Ton, unerbittlich in der Sache. Mitleid ändert nie seine Entscheidungen.
 - **Will:** Frieden, kein zweiter Hundekrieg. **Braucht:** seinen Sohn zurück.
-- **Wunde:** Seine Frau war seine erste Leitung und nahm sich, zermürbt vom Nachhall, das Leben.
+- **Wunde:** Seine Frau war seine erste Leitung und nahm sich, zermürbt vom Nachhall, das Leben. Sie hatte die Art des Helden, die der Spieler wählt.
 - **Knäuel:** schnitt den Sohn heraus, nahm Malcolm als Leitung, ohne ihn je zu lieben. Zog Hazel als nächste Leitung heran.
 - **Bogen:** B „Der verzweifelte Vater“ im Finale. Ausgänge: verschonen, bekehren, besiegen.
 - **Spiegel:** Mercy.

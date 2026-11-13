@@ -1,131 +1,292 @@
 {
- "beschreibung": "Wählbare Tierarten des Helden und wie die Welt auf sie reagiert. Erklärung: docs/story/tierarten.md. ansehen = Startwerte je Fraktion, preis = Faktor für Bar, Läden, Zimmer, garde_ab = ab welchem orden_wachsam die Garde ihn anhält.",
- "arten": {
-  "gestrandet": {
-   "tiere": [
-    "Fuchs",
-    "Waschbaer",
-    "Otter"
-   ],
-   "ansehen": {},
-   "preis": 1.0,
-   "garde_ab": 2,
-   "anrede": "Fremder"
+ "beschreibung": "Wählbare Tiergruppen des Helden (10) mit Unterarten und Formen. Reaktionen hängen an der Form: ansehen = Startwerte je Fraktion, preis = Faktor, garde_ab = ab welchem orden_wachsam die Garde ihn anhält, sonstige Zahlen = Änderung des Schwierigkeitsgrads. Pfötchens Frau hat die Unterart des Helden. Erklärung: docs/story/tierarten.md schimpfwort = abfälliger Straßenname, den nur voreingenommene Figuren benutzen (siehe Abschnitt Straßennamen).",
+ "standard": {
+  "gruppe": "fuechse",
+  "unterart": "Rotfuchs"
+ },
+ "gruppen": {
+  "katzenartige": {
+   "unterarten": {
+    "Katze": "hauskatze",
+    "Schwarzkatze": "hauskatze",
+    "Tigerkatze": "hauskatze",
+    "Siamkatze": "hauskatze",
+    "Perserkatze": "hauskatze",
+    "Ragdoll": "hauskatze",
+    "Loewe": "grosskatze",
+    "Tiger": "grosskatze",
+    "Leopard": "grosskatze",
+    "Puma": "grosskatze",
+    "Panther": "grosskatze",
+    "Luchs": "grosskatze"
+   },
+   "formen": {
+    "hauskatze": {
+     "ansehen": {
+      "insekten": -1,
+      "breaking_cats": -1,
+      "nomapes": -1,
+      "orden": 1
+     },
+     "preis": 1.2,
+     "garde_ab": 4,
+     "anrede": "Fremder",
+     "schimpfwort": "Samtpfote"
+    },
+    "grosskatze": {
+     "ansehen": {
+      "breaking_cats": 1,
+      "nomapes": -1
+     },
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Katze",
+     "schimpfwort": "Fleckfell"
+    }
+   },
+   "verwandt": [
+    "shiner",
+    "orden"
+   ]
   },
-  "hauskatze": {
-   "tiere": [
-    "Katze",
-    "Schwarzkatze",
-    "Tigerkatze",
-    "Siamkatze",
-    "Perserkatze",
-    "Ragdoll"
-   ],
-   "ansehen": {
-    "insekten": -1,
-    "breaking_cats": -1,
-    "nomapes": -1,
-    "orden": 1
+  "voegel": {
+   "unterarten": {
+    "Rabe": "vogel",
+    "Spatz": "vogel",
+    "Eule": "vogel",
+    "Moewe": "vogel",
+    "Taube": "taube"
    },
-   "preis": 1.2,
-   "garde_ab": 4,
-   "anrede": "Sofakissen"
+   "formen": {
+    "vogel": {
+     "ansehen": {
+      "tauben": 1
+     },
+     "zuneigung": {
+      "corvin": 2
+     },
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Vogel",
+     "schimpfwort": "Federvieh"
+    },
+    "taube": {
+     "ansehen": {
+      "tauben": 2,
+      "breaking_cats": -1,
+      "nomapes": -1
+     },
+     "zuneigung": {
+      "corvin": 2
+     },
+     "preis": 1.5,
+     "garde_ab": 1,
+     "anrede": "Taube",
+     "hinweis_wahl": "Tauben haben es in Meow York schwer. Manche Türen bleiben zu.",
+     "schimpfwort": "Flugratte"
+    }
+   },
+   "verwandt": [
+    "corvin",
+    "tauben"
+   ]
   },
-  "grosskatze": {
-   "tiere": [
-    "Loewe",
-    "Leopard",
-    "Panther"
-   ],
-   "ansehen": {
-    "breaking_cats": 1,
-    "nomapes": -1
+  "krokodile": {
+   "unterarten": {
+    "Alligator": "krokodil",
+    "Krokodil": "krokodil",
+    "Kaiman": "krokodil"
    },
-   "preis": 1.0,
-   "garde_ab": 2,
-   "anrede": "Katze"
+   "formen": {
+    "krokodil": {
+     "ansehen": {
+      "breaking_cats": 1,
+      "nomapes": 1,
+      "insekten": -1
+     },
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Kanalmann",
+     "einschuechtern": -2,
+     "ueberzeugen": 2,
+     "schimpfwort": "Kanalmaul"
+    }
+   },
+   "verwandt": [
+    "deltamae"
+   ]
   },
-  "insekt": {
-   "tiere": [
-    "Kakerlake",
-    "Ameise",
-    "Kaefer",
-    "Hummel"
-   ],
-   "ansehen": {
-    "insekten": 2
+  "kaengurus": {
+   "unterarten": {
+    "Kaenguru": "kaenguru",
+    "Wallaby": "kaenguru",
+    "Quokka": "kaenguru"
    },
-   "preis": 1.0,
-   "preis_insekten": 0.8,
-   "garde_ab": 1,
-   "anrede": "Kleiner"
+   "formen": {
+    "kaenguru": {
+     "ansehen": {},
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Zugereister",
+     "schimpfwort": "Beutler"
+    }
+   },
+   "verwandt": [
+    "schausteller",
+    "fitz"
+   ]
   },
-  "affe": {
-   "tiere": [
-    "Schimpanse"
-   ],
-   "ansehen": {
-    "nomapes": 1,
-    "breaking_cats": -1
+  "maeuse_ratten": {
+   "unterarten": {
+    "Maus": "nager",
+    "Ratte": "nager",
+    "Hamster": "nager",
+    "Maulwurf": "nager"
    },
-   "preis": 1.0,
-   "garde_ab": 2,
-   "anrede": "Affe"
+   "formen": {
+    "nager": {
+     "ansehen": {
+      "insekten": 1
+     },
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Kleiner",
+     "schimpfwort": "Pieper"
+    }
+   },
+   "verwandt": [
+    "dig"
+   ]
   },
-  "vogel": {
-   "tiere": [
-    "Rabe",
-    "Spatz",
-    "Eule",
-    "Moewe"
-   ],
-   "ansehen": {
-    "tauben": 1
+  "fuechse": {
+   "unterarten": {
+    "Rotfuchs": "fuchs",
+    "Polarfuchs": "fuchs",
+    "Fennek": "fuchs"
    },
-   "zuneigung": {
-    "corvin": 2
+   "formen": {
+    "fuchs": {
+     "ansehen": {},
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Fremder",
+     "schimpfwort": "Rotpelz"
+    }
    },
-   "preis": 1.0,
-   "garde_ab": 2,
-   "anrede": "Vogel"
+   "verwandt": []
   },
-  "taube": {
-   "tiere": [
-    "Taube"
-   ],
-   "ansehen": {
-    "tauben": 2,
-    "breaking_cats": -1,
-    "nomapes": -1
+  "marder": {
+   "unterarten": {
+    "Dachs": "dachs",
+    "Marder": "marder",
+    "Otter": "marder",
+    "Stinktier": "marder",
+    "Waschbaer": "waschbaer"
    },
-   "preis": 1.5,
-   "garde_ab": 1,
-   "anrede": "Taube",
-   "hinweis_wahl": "Tauben haben es in Meow York schwer. Manche Türen bleiben zu."
+   "formen": {
+    "marder": {
+     "ansehen": {},
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Fremder",
+     "schimpfwort": "Stinker"
+    },
+    "dachs": {
+     "ansehen": {},
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Fremder",
+     "schimpfwort": "Stinker"
+    },
+    "waschbaer": {
+     "ansehen": {},
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Fremder",
+     "odile_taeuschen": 3,
+     "schimpfwort": "Maske"
+    }
+   },
+   "verwandt": [
+    "juno",
+    "ansgar"
+   ]
   },
-  "nager": {
-   "tiere": [
-    "Maus",
-    "Ratte",
-    "Eichhoernchen"
-   ],
-   "ansehen": {
-    "insekten": 1
+  "insekten": {
+   "unterarten": {
+    "Kakerlake": "insekt",
+    "Ameise": "insekt",
+    "Biene": "insekt",
+    "Kaefer": "insekt",
+    "Motte": "insekt",
+    "Grille": "insekt"
    },
-   "preis": 1.0,
-   "garde_ab": 2,
-   "anrede": "Kleiner"
+   "formen": {
+    "insekt": {
+     "ansehen": {
+      "insekten": 2
+     },
+     "preis": 1.0,
+     "preis_insekten": 0.8,
+     "garde_ab": 1,
+     "anrede": "Kleiner",
+     "taeuschen_gangs": -2,
+     "schimpfwort": "Krabbler"
+    }
+   },
+   "verwandt": [
+    "mercy",
+    "hummel",
+    "ilse",
+    "roach"
+   ]
   },
-  "hase": {
-   "tiere": [
-    "Hase"
-   ],
-   "ansehen": {
-    "rathaus": 1
+  "spinnen": {
+   "unterarten": {
+    "Webspinne": "spinne",
+    "Springspinne": "spinne",
+    "Vogelspinne": "spinne",
+    "Tarantel": "spinne"
    },
-   "preis": 1.0,
-   "garde_ab": 3,
-   "anrede": "Hase"
+   "formen": {
+    "spinne": {
+     "ansehen": {
+      "insekten": -1
+     },
+     "preis": 1.0,
+     "garde_ab": 1,
+     "anrede": "Fremder",
+     "einschuechtern": -2,
+     "ueberzeugen_fremde": 2,
+     "hinweis_wahl": "Spinnen werden in Meow York gefürchtet. Man wird dir aus dem Weg gehen.",
+     "schimpfwort": "Achtauge"
+    }
+   },
+   "verwandt": [
+    "weberin"
+   ]
+  },
+  "primaten": {
+   "unterarten": {
+    "Schimpanse": "primat",
+    "Gorilla": "primat",
+    "OrangUtan": "primat"
+   },
+   "formen": {
+    "primat": {
+     "ansehen": {
+      "nomapes": 1,
+      "breaking_cats": -1
+     },
+     "preis": 1.0,
+     "garde_ab": 2,
+     "anrede": "Affe",
+     "schimpfwort": "Schaukler"
+    }
+   },
+   "verwandt": [
+    "knuckles"
+   ]
   }
  },
  "gesperrt": {
@@ -135,7 +296,8 @@
     "Bruder. Einen Hund fahr ich nicht über die Brücke. Keiner tut das. Hunde gibt's nicht mehr, verstehst du? Nicht in Meow York. Nicht seit achtzig Jahren.",
     "Hast du mich nicht gehört? Draußen am Pfeiler steht's dran: BEWARE OF THE BEASTS.",
     "*schweigt eine Weile* Du bist mir unheimlich, Bruder."
-   ]
+   ],
+   "schimpfwort": "Bestie"
   }
  }
 }

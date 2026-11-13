@@ -85,7 +85,7 @@ Pfötchen wurde wenige Jahre nach dem Hundekrieg geboren, in eine Familie von Or
 
 Er wurde Halter, weil er der Frömmste war, nicht der Ehrgeizigste. Das ist wichtig: **Pfötchen wollte die Macht nie.** Er glaubt, dass Meow York ohne Lenkung zurück in den Krieg fällt. Jede Verschiebung empfindet er als Pflicht, manche als Sünde, die er nachts beichtet. Er sieht sich als Gärtner, der Unkraut nicht ausreißt, sondern umsetzt.
 
-**Die Familie:** Pfötchens Frau war seine erste Leitung. Sie liebte ihn mehr als irgendwen, also floss alles über sie. Der Nachhall zermürbte sie über Jahre: fremde Wut in ihren Nächten, fremde Angst an ihren Tagen, bis kaum noch etwas Eigenes übrig war. Kurz nach der Geburt ihres Sohnes nahm sie sich das Leben. *(Festgelegt)*
+**Die Familie:** Pfötchens Frau war seine erste Leitung. Sie hatte die Art, die der Spieler für den Helden wählt, denn in Meow York kommen Kinder nach einem Elternteil (siehe `tierarten.md`). War sie keine Katze, hat der Orden die Ehe verschwiegen, und Cathattan hat sie nie als eine der Ihren angesehen. Sie liebte ihn mehr als irgendwen, also floss alles über sie. Der Nachhall zermürbte sie über Jahre: fremde Wut in ihren Nächten, fremde Angst an ihren Tagen, bis kaum noch etwas Eigenes übrig war. Kurz nach der Geburt ihres Sohnes nahm sie sich das Leben. *(Festgelegt)*
 
 Pfötchen begriff, was kommen würde: Sein Sohn würde ihn lieben, mehr als alle anderen, und damit die nächste Leitung werden. Also schnitt er ihn aus dem Faden, um ihn unerreichbar zu machen, und brachte ihn selbst fort, damit er nie der Nächste wird. Es ist die einzige Entscheidung seines Lebens, bei der er sein Herz über die Stadt gestellt hat.
 

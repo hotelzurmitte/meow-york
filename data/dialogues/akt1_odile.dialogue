@@ -3,6 +3,7 @@
 #   odile_wohnung   vormittags in Junos Wohnung, die Helfer räumen aus
 #   odile_mission   später: in der Mission oder über die Nachbarin
 #   wohnung_lauschen  der Held versteckt sich in der Wohnung und hört zu
+# Waschbären sehen Juno ähnlich: Täuschen bei Odile SG 15 statt 12 (docs/story/tierarten.md)
 # Zustände: odile, juno_spur, orden_wachsam, juno_sachen_gerettet,
 #           odile_moment_gesehen, odile_schluessel, suppenmarke
 
@@ -14,8 +15,8 @@ Odile: Langsam, langsam! Das ist Kiefer, das ist gutes Holz. Das kommt in die Kl
 Odile: *bemerkt dich und strahlt sofort* Oh! Wollen Sie die Wohnung ansehen? Die ist noch nicht frei, Herzchen. Wir räumen noch.
 - Das sind Junos Sachen. Ich bin ihr Bruder.
 	=> bruder
-- (Täuschen 12) Die Mission schickt mich. Ich soll mittragen.
-	if GameState.probe("ren", "Täuschen", 12)
+- (Täuschen {{GameState.wenn(GameState.gleich(GameState.flag("held_unterart"), "Waschbaer"), 15, 12)}}) Die Mission schickt mich. Ich soll mittragen.
+	if GameState.probe("ren", "Täuschen", GameState.wenn(GameState.gleich(GameState.flag("held_unterart"), "Waschbaer"), 15, 12))
 		=> helfer
 	else
 		=> helfer_durchschaut
@@ -183,8 +184,8 @@ if not GameState.gleich(GameState.flag("odile"), "unbekannt")
 Odile: *mit einer Kelle in der Hand* Hunger, Herzchen? Hinten anstellen, vorne wird's warm.
 - Ich suche Juno. Ich bin ihr Bruder.
 	=> bruder
-- (Täuschen 12) Ich hab gehört, hier hat jeder einen Platz.
-	if GameState.probe("ren", "Täuschen", 12)
+- (Täuschen {{GameState.wenn(GameState.gleich(GameState.flag("held_unterart"), "Waschbaer"), 15, 12)}}) Ich hab gehört, hier hat jeder einen Platz.
+	if GameState.probe("ren", "Täuschen", GameState.wenn(GameState.gleich(GameState.flag("held_unterart"), "Waschbaer"), 15, 12))
 		Odile: *strahlt* Genau so ist es!
 		=> helfer_odile
 	else
