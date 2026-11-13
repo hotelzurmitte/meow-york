@@ -24,6 +24,7 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 - Keine Monsterhunde als sichtbare Wächter: Kontrollposten der Ordensgarde an den Brücken, Monsterhunde nur im Verborgenen, „BEWARE OF THE BEASTS!“ als Graffiti.
 - Malcolm hat die gestohlenen Papiere des Helden bei Roach gekauft. Er gibt sie später scheinbar freundlich zurück.
 - Was der Spieler wann über den Helden erfährt: siehe die Enthüllungstreppe in `akt1_szenen.md`.
+- **Akt 1, freigegeben am 13.11.:** Schwester Odile (Gans), Bruder Ansgar (Dachs), Gus Rook. Corvin hat Hausverbot im Nest. Lil' Riff wurde der Garde unter Vale übergeben. Der Orden geht nach unten, um bei den Ausgestoßenen Schlingen zu knüpfen.
 - **Verbindungen über Systeme, nicht über Zufälle:** Vincenzo ist kein Onkel von Fitz, Benny nicht Hazels Bruder, Vale nicht Corvins früherer Chef. Der Lagerhausbrand war ein Versicherungsbetrug, Corvin kennt Gus Rook seit zwölf Jahren.
 - Das Bild für Spieler: Schlingen sind Taschen, Gefühl ist Geld, Pfötchen schiebt nur zwischen den eigenen Taschen einer Person, Knoten nähen Taschen zu.
 - Hazels Bogen: Erst weiß sie die Wahrheit und liebt trotzdem weiter. Dann verrät Pfötchen sie, ihr Knoten rutscht, und ihre Liebe legt sich auf die Stadt.

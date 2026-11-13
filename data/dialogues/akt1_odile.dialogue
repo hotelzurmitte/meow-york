@@ -1,0 +1,208 @@
+# Akt 1, Quest 1.2: Schwester Odile (Testszene, siehe docs/story/akt1_szenen.md)
+# Einstiege:
+#   odile_wohnung   vormittags in Junos Wohnung, die Helfer räumen aus
+#   odile_mission   später: in der Mission oder über die Nachbarin
+#   wohnung_lauschen  der Held versteckt sich in der Wohnung und hört zu
+# Zustände: odile, juno_spur, orden_wachsam, juno_sachen_gerettet,
+#           odile_moment_gesehen, odile_schluessel, suppenmarke
+
+~ odile_wohnung
+if not GameState.gleich(GameState.flag("odile"), "unbekannt")
+	=> odile_wieder
+Ordenshelfer: *schiebt eine Kommode rückwärts durch die Tür* Vorsicht, Schwester, die hat Kanten.
+Odile: Langsam, langsam! Das ist Kiefer, das ist gutes Holz. Das kommt in die Kleiderkammer. Sie braucht es ja nicht mehr.
+Odile: *bemerkt dich und strahlt sofort* Oh! Wollen Sie die Wohnung ansehen? Die ist noch nicht frei, Herzchen. Wir räumen noch.
+- Das sind Junos Sachen. Ich bin ihr Bruder.
+	=> bruder
+- (Täuschen 12) Die Mission schickt mich. Ich soll mittragen.
+	if GameState.probe("ren", "Täuschen", 12)
+		=> helfer
+	else
+		=> helfer_durchschaut
+- (Einschüchtern 13) Stellt das hin. Alles. Sofort. [if not GameState.mitglied("dig") /]
+	if GameState.probe("ren", "Einschüchtern", 13)
+		=> verjagt
+	else
+		=> nicht_verjagt
+- (Big Dig, Einschüchtern 13) *Big Dig nicken lassen.* [if GameState.mitglied("dig") /]
+	if GameState.probe("dig", "Einschüchtern", 13)
+		=> verjagt
+	else
+		=> nicht_verjagt
+- Nichts. Falsche Tür.
+	Odile: Gott segne Sie trotzdem!
+	=> END
+
+~ bruder
+Odile: *lässt das Klemmbrett sinken* Ihr Bruder?
+Odile: *mustert dich von den Ohren bis zu den Pfoten* Ja. Ja! Dieselben Ohren. Und dieser Blick, als müsste man gleich für etwas bezahlen.
+=> bruder_kern
+
+~ bruder_kern
+Odile: Sie hat von Ihnen erzählt! „Der Stille.“ So hat sie Sie genannt.
+Odile: *zu den Helfern* Tragt das wieder rein. Alles. Das gehört der Familie.
+Ordenshelfer: *seufzt tief und dreht mit der Kommode um*
+do GameState.set_flag("odile", "gewonnen")
+do GameState.set_flag("juno_sachen_gerettet", true)
+=> gespraech
+
+~ helfer_durchschaut
+Odile: *legt den Kopf schief* Die Mission schickt Sie.
+Odile: *eine lange Pause* Herzchen, Sie haben genau dieselbe Falte zwischen den Augen wie Juno, wenn sie flunkert.
+Odile: Sie sind ihr Bruder, nicht wahr?
+- Erwischt.
+	=> bruder_kern
+- [Schweigen]
+	Odile: *lächelt* Dann eben der Stille.
+	=> bruder_kern
+
+~ helfer
+Odile: Ach, wunderbar, endlich jemand mit Armen! Bruder Hopp hat Rücken.
+Ordenshelfer: Hab ich nicht.
+Odile: Hast du doch, ich hab's beim Abendgebet gehört.
+Ordenshelfer: *keucht unter einem Karton* … am Freitag dann die Expedition. Die Kleine soll da unten sprechen. Vor allen.
+Zweiter Ordenshelfer: Die Juno? Die hat vor einem Monat beim Tischgebet noch geflüstert.
+Ordenshelfer: Tja. Der Meister sieht was in den Leuten.
+if not GameState.einmal("spur_expedition")
+	do GameState.erhoehen("juno_spur")
+- *Einen Karton unauffällig hinter die Tür schieben.*
+	do GameState.set_flag("juno_sachen_gerettet", true)
+	Zweiter Ordenshelfer: *zählt die Kartons, zählt noch einmal, zuckt mit den Schultern*
+	=> helfer_odile
+- *Einfach weitertragen.*
+	=> helfer_odile
+
+~ helfer_odile
+Odile: *tippt mit dem Stift aufs Klemmbrett* Sie sind neu, oder? Ich kenne eigentlich alle Gesichter.
+- Ich suche … Anschluss. Seit Langem schon.
+	do GameState.set_flag("odile", "getaeuscht")
+	Odile: *legt dir einen Flügel auf den Arm und wartet* … Hm.
+	Odile: Merkwürdig. Bei den meisten spürt man sofort etwas. Sie sind sehr … verschlossen.
+	Odile: *drückt fester* Das ist nicht schlimm. Das kriegen wir hin. Wir kriegen alle hin.
+	=> gespraech
+- Eigentlich bin ich Junos Bruder.
+	Odile: *lacht laut auf* Ich wusste es! Kein Helfer trägt so ungern.
+	=> bruder_kern
+
+~ verjagt
+Ordenshelfer: *stellt die Kommode ab, sehr vorsichtig, und geht rückwärts*
+Zweiter Ordenshelfer: Komm, Hopp. Komm.
+Odile: *zischt, die Flügel halb gespreizt, dann fängt sie sich* Gut. Gut.
+Odile: Ich bete für Sie. Ehrlich. Und ich erzähle Bruder Ansgar davon, auch ehrlich.
+do GameState.set_flag("odile", "verletzt")
+do GameState.set_flag("juno_sachen_gerettet", true)
+do GameState.erhoehen("orden_wachsam")
+=> END
+
+~ nicht_verjagt
+Ordenshelfer: *trägt die Kommode einfach um dich herum*
+Zweiter Ordenshelfer: *trägt den nächsten Karton ebenfalls um dich herum*
+Odile: *kühl* Wir sind hier fertig. Gott segne Sie. Irgendwann.
+do GameState.set_flag("odile", "verletzt")
+do GameState.erhoehen("orden_wachsam")
+=> END
+
+~ gespraech
+if GameState.gleich(GameState.flag("odile"), "gewonnen")
+	Odile: Setzen Sie sich, Herzchen. Na ja, auf den Boden. Die Stühle sind schon weg.
+else
+	Odile: Fragen Sie ruhig. Wer fragt, ist schon halb da.
+=> fragen
+
+~ fragen
+- Wo ist Juno? [if not GameState.schon("odile_wo") /]
+	do GameState.einmal("odile_wo")
+	if GameState.gleich(GameState.flag("odile"), "gewonnen")
+		Odile: Bei uns! In der Mission. Und am Freitag geht sie mit der Expedition. Sie wird da unten sprechen. Unsere Juno!
+		if not GameState.einmal("spur_expedition")
+			do GameState.erhoehen("juno_spur")
+	else
+		Odile: Bei ihrer Familie. Bei uns. Mehr müssen Sie noch nicht wissen.
+	=>< moment
+	=> fragen
+- Wie geht es ihr? [if not GameState.schon("odile_wie") /]
+	do GameState.einmal("odile_wie")
+	Odile: Besser als je zuvor. *wird leiser* Wissen Sie, was sie am ersten Abend gesagt hat? Dass sie nie jemand gefragt hat, wie es ihr geht.
+	- Ich hab gefragt.
+		Odile: *nickt freundlich, glaubt dir aber nicht ganz* Dann hat sie es vielleicht nicht gehört.
+	- Ich hätte öfter fragen sollen.
+		Odile: *sanft* Jetzt fragen Sie ja.
+	- [Schweigen]
+		Odile: *wartet, dann tätschelt sie dein Knie* Der Stille. Sie hatte recht.
+	=>< moment
+	=> fragen
+- Was ist das für ein Orden? [if not GameState.schon("odile_orden") /]
+	do GameState.einmal("odile_orden")
+	Odile: Ein Tisch, an dem jeder einen Platz hat. Suppe, ein Dach, jemand, der Ihren Namen kennt. Mehr ist es nicht. Und das ist mehr, als diese Stadt sonst hergibt.
+	Odile: Und bald gehen wir dahin, wo sonst keiner hingeht. Nach unten. Zu denen, die nicht mal mehr Hairlem will.
+	=>< moment
+	=> fragen
+- (Fingerfertigkeit 14) *In ihre Kutte greifen, wo der Schlüsselbund klimpert.* [if not GameState.schon("odile_griff") /]
+	do GameState.einmal("odile_griff")
+	if GameState.probe("ren", "Fingerfertigkeit", 14)
+		do GameState.set_flag("odile_schluessel", true)
+		do GameState.notiz("Odiles Missionsschlüssel: Damit komme ich nachts hinein.")
+		Odile: *merkt nichts und redet einfach weiter*
+	else
+		Odile: *fängt deine Pfote mit dem Flügel und hält sie fest* Oh, Herzchen.
+		Odile: *drückt dir stattdessen ein Kärtchen in die Pfote* Eine Suppenmarke. Damit müssen Sie nicht anstehen. Niemand muss bei uns stehlen.
+		do GameState.set_flag("suppenmarke", true)
+	=> fragen
+- Ich muss los.
+	=> abschied
+
+~ moment
+if not GameState.flag("odile_moment_gesehen")
+	do GameState.set_flag("odile_moment_gesehen", true)
+	Odile: *Draußen im Hof läuft ein fremder Junge vorbei. Odile verstummt mitten im Satz.*
+	Odile: *Ihre Augen werden feucht. Sie sieht ihm nach, wie man einem eigenen Kind nachsieht.*
+	Odile: *blinzelt* Verzeihung. Das passiert mir in letzter Zeit öfter. Ich weiß nicht, was mit mir los ist.
+	if GameState.mitglied("corvin")
+		Corvin: *schreibt etwas in sein Notizbuch, ohne aufzusehen* Hab ich bei drei anderen auch gesehen. Alle aus der Mission.
+		do GameState.notiz("Odile hat grundlos geweint, als ein fremder Junge vorbeiging. Corvin kennt drei solche Fälle, alle aus der Mission.")
+	else
+		do GameState.notiz("Odile hat grundlos geweint, als ein fremder Junge vorbeiging.")
+
+~ abschied
+if GameState.gleich(GameState.flag("odile"), "gewonnen")
+	Odile: Kommen Sie heute Abend zur Andacht. Sie wird sich freuen. *zögert* Vielleicht nicht sofort. Aber sie wird sich freuen.
+	do GameState.notiz("Odile lädt mich zur Abendandacht in die Mission ein.")
+else
+	Odile: Kommen Sie morgen früh zur Aufnahme. Ich hole Sie an der Tür ab. Und bringen Sie Hunger mit!
+	do GameState.notiz("Odile nimmt mich morgen zur Aufnahme in die Mission mit.")
+=> END
+
+~ odile_mission
+if GameState.gleich(GameState.flag("odile"), "verletzt")
+	Odile: *sieht dich, dreht sich weg und rührt sehr energisch in einem Suppentopf*
+	=> END
+if not GameState.gleich(GameState.flag("odile"), "unbekannt")
+	=> odile_wieder
+Odile: *mit einer Kelle in der Hand* Hunger, Herzchen? Hinten anstellen, vorne wird's warm.
+- Ich suche Juno. Ich bin ihr Bruder.
+	=> bruder
+- (Täuschen 12) Ich hab gehört, hier hat jeder einen Platz.
+	if GameState.probe("ren", "Täuschen", 12)
+		Odile: *strahlt* Genau so ist es!
+		=> helfer_odile
+	else
+		=> helfer_durchschaut
+- Nur gucken.
+	Odile: Gucken ist der erste Schritt!
+	=> END
+
+~ odile_wieder
+if GameState.gleich(GameState.flag("odile"), "verletzt")
+	Odile: *spricht an dir vorbei* Gott segne Sie.
+	=> END
+Odile: Da ist er ja wieder! Noch Fragen, Herzchen?
+=> fragen
+
+~ wohnung_lauschen
+Ordenshelfer: *aus dem Flur* … am Freitag dann die Expedition. Die Kleine soll da unten sprechen.
+Zweiter Ordenshelfer: Die Juno? Die hat vor einem Monat noch beim Tischgebet geflüstert.
+Odile: Psst. Wir reden nicht hinter dem Rücken unserer Schwestern. *eine Pause* Aber ja. Sie wird wunderbar sein.
+if not GameState.einmal("spur_expedition")
+	do GameState.erhoehen("juno_spur")
+do GameState.notiz("Juno soll am Freitag mit einer „Expedition“ des Ordens weg und dort sprechen.")
+=> END

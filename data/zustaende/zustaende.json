@@ -1353,6 +1353,95 @@
      ]
     ]
    }
+  },
+  {
+   "name": "odile",
+   "typ": "enum",
+   "werte": [
+    "unbekannt",
+    "gewonnen",
+    "getaeuscht",
+    "verletzt"
+   ],
+   "standard": "unbekannt",
+   "akt": "1",
+   "gesetzt_von": "Quest 1.2 (akt1_odile.dialogue)",
+   "gelesen_von": "Weg in die Mission (Abendandacht, Aufnahme), Akt 3 (Lager)",
+   "hinweis": "gewonnen = ehrlich als Bruder, getaeuscht = als Bekehrungswilliger, verletzt = Helfer eingeschüchtert"
+  },
+  {
+   "name": "orden_wachsam",
+   "typ": "int",
+   "min": 0,
+   "max": 5,
+   "standard": 0,
+   "akt": "1–2",
+   "gesetzt_von": "Odile eingeschüchtert, Einbruch in die Mission, weitere Akt-1-Szenen",
+   "gelesen_von": "Listen der Garde, Gegenzüge in Akt 2",
+   "hinweis": "wird mit GameState.erhoehen() gezählt"
+  },
+  {
+   "name": "juno_spur",
+   "typ": "int",
+   "min": 0,
+   "max": 5,
+   "standard": 0,
+   "akt": "1",
+   "gesetzt_von": "Quest 1 (Wohnung, Odile, Mission), Tauben",
+   "gelesen_von": "Junos Begegnung in Akt 2",
+   "hinweis": "wird mit GameState.erhoehen() gezählt"
+  },
+  {
+   "name": "juno_sachen_gerettet",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "1",
+   "gesetzt_von": "Quest 1.1/1.2 (Odile gibt sie zurück, beiseitegeschafft oder Helfer verjagt)",
+   "gelesen_von": "Unterschlupf (Kiste mit Junos Sachen), Juno in Akt 3–4",
+   "hinweis": ""
+  },
+  {
+   "name": "odile_moment_gesehen",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "1",
+   "gesetzt_von": "Quest 1.2 (Sprung ohne Anlass)",
+   "gelesen_von": "Schlägerei (Held erkennt das Muster), Corvins Notizbuch",
+   "hinweis": ""
+  },
+  {
+   "name": "odile_schluessel",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "1",
+   "gesetzt_von": "Quest 1.2 (Fingerfertigkeit 14)",
+   "gelesen_von": "Mission nachts (mission_weg = einbruch ohne Schlossprobe)",
+   "hinweis": ""
+  },
+  {
+   "name": "suppenmarke",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "1",
+   "gesetzt_von": "Quest 1.2 (Taschendiebstahl misslungen)",
+   "gelesen_von": "Mission (Suppenschlange ohne Warten)",
+   "hinweis": "Trostpreis: Odile hält den Helden für bedürftig"
   }
  ],
  "prototyp_flags": [

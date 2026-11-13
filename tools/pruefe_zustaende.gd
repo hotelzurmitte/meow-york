@@ -61,7 +61,7 @@ func _pruefe_register() -> void:
 
 # ---------- 2. Dialoge und Skripte durchsuchen ----------
 var _re_lesen := RegEx.create_from_string("(?<![A-Za-z_])flag\\(\\s*\"([^\"]+)\"")
-var _re_setzen := RegEx.create_from_string("set_flag\\(\\s*\"([^\"]+)\"")
+var _re_setzen := RegEx.create_from_string("(?:set_flag|erhoehen)\\(\\s*\"([^\"]+)\"")
 var _re_setzwert := RegEx.create_from_string("^\\s*(?:,\\s*([^()]*?))?\\s*\\)")
 var _re_vergleich := RegEx.create_from_string("gleich\\(\\s*(?:GameState\\.)?flag\\(\\s*\"([^\"]+)\"\\s*\\)\\s*,\\s*(\"[^\"]*\"|true|false|-?\\d+)\\s*\\)|flag\\(\\s*\"([^\"]+)\"\\s*\\)\\s*[!=]=\\s*(\"[^\"]*\"|true|false|-?\\d+)")
 
@@ -82,6 +82,11 @@ func _datei(pfad: String) -> void:
 		var ort := "%s:%d" % [kurz, _zeile(text, m.get_start())]
 		_merke(gesetzt, n, ort)
 		_pruefe_name(n, ort)
+		# erhoehen() zählt relativ: Typ muss eine Zahl sein, der Wert selbst wird zur Laufzeit begrenzt
+		if m.get_string(0).begins_with("erhoehen"):
+			if Zustaende.hat(n) and String(Zustaende.eintrag(n).get("typ", "")) != "int":
+				_fehler("%s: erhoehen(„%s“) braucht eine Zahl-Variable" % [ort, n])
+			continue
 		# Wert direkt hinter dem Namen; nur Literale werden geprüft
 		var w := _re_setzwert.search(text.substr(m.get_end(), 200))
 		if w == null: continue
@@ -152,6 +157,11 @@ func _teste_laufzeit() -> void:
 	GameState.zuneigung["dig"] = 0
 	GameState.set_flag("naeherinnen", "befreit")
 	_erwarte(GameState.flag("unruhen_hairlem") == true, "„unruhen_hairlem“ folgt aus „naeherinnen“")
+	# Zähler bleiben in ihren Grenzen
+	for i in 8: GameState.erhoehen("orden_wachsam")
+	_erwarte(GameState.flag("orden_wachsam") == 5, "erhoehen() stoppt bei max 5")
+	GameState.erhoehen("orden_wachsam", -9)
+	_erwarte(GameState.flag("orden_wachsam") == 0, "erhoehen() stoppt bei min 0")
 	# Werteprüfung erkennt Fehler
 	_erwarte(Zustaende.pruefe_wert("tauben", "vielleicht") != "", "ungültiger Wert wird erkannt")
 	_erwarte(Zustaende.pruefe_wert("malcolm_risse", 7) != "", "Zahl über dem Maximum wird erkannt")

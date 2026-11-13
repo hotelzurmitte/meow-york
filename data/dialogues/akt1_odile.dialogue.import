@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cgjuyxlsl08na"
+path="res://.godot/imported/akt1_odile.dialogue-37b9d80e83c709c699517ca0dc4ec237.tres"
+
+[deps]
+
+source_file="res://data/dialogues/akt1_odile.dialogue"
+dest_files=["res://.godot/imported/akt1_odile.dialogue-37b9d80e83c709c699517ca0dc4ec237.tres"]
+
+[params]
+
+defaults=true

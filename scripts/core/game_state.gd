@@ -47,6 +47,14 @@ func set_flag(name: String, wert = true) -> void:
 	flags[name] = wert
 	EventBus.flag_geaendert.emit(name, wert)
 
+## Zählt eine Zahl-Variable hoch (oder mit negativem d herunter), begrenzt auf min/max aus dem Register
+func erhoehen(name: String, d: int = 1) -> void:
+	var e := Zustaende.eintrag(name)
+	var wert: int = int(flag(name, 0)) + d
+	if e.get("min") != null: wert = maxi(wert, int(e.min))
+	if e.get("max") != null: wert = mini(wert, int(e.max))
+	set_flag(name, wert)
+
 ## Abgeleitete Story-Variablen werden berechnet, nicht gespeichert
 func _abgeleitet(name: String):
 	if name.ends_with("_in_gruppe"):

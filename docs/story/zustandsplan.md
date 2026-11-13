@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 96
+- **Variablen insgesamt:** 103
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 51
+- **Story-Variablen:** 58
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -71,6 +71,11 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `knaeuel_aufmerksamkeit` | 0–10 | 0 | + bei jedem Anknüpfen, − mit der Zeit (lange Rast) | Pfötchens Gegenzüge, held_verwachsung | 2–5 | Regelwerk D2: hohe Aufmerksamkeit löst Gegenzüge aus |
 | `held_hebel_genutzt` | 0–n | 0 | Muster erkannt → Nutzen | Zuneigung aller, Gefährten-Kommentare, Finale | 1–4 | ZUSATZ: kann gestrichen werden |
 | `unterschlupf` | cuckoos_nest, dig_keller, corvin_buero, ubahn_waggon, deltamae_station, acorn_wohnwagen, geisterbahn, hotel_cathattan, mercy_gemeinde, kanalzugang | cuckoos_nest | Wahl des Schlafplatzes / Aktübergang | Lange Rast (Ort und Eröffnungszeile der Lagerszenen) | alle | Hauptunterschlupf je Akt: cuckoos_nest, ubahn_waggon, acorn_wohnwagen, hotel_cathattan |
+| `odile` | unbekannt, gewonnen, getaeuscht, verletzt | unbekannt | Quest 1.2 (akt1_odile.dialogue) | Weg in die Mission (Abendandacht, Aufnahme), Akt 3 (Lager) | 1 | gewonnen = ehrlich als Bruder, getaeuscht = als Bekehrungswilliger, verletzt = Helfer eingeschüchtert |
+| `orden_wachsam` | 0–5 | 0 | Odile eingeschüchtert, Einbruch in die Mission, weitere Akt-1-Szenen | Listen der Garde, Gegenzüge in Akt 2 | 1–2 | wird mit GameState.erhoehen() gezählt |
+| `odile_moment_gesehen` | ja, nein | nein | Quest 1.2 (Sprung ohne Anlass) | Schlägerei (Held erkennt das Muster), Corvins Notizbuch | 1 |  |
+| `odile_schluessel` | ja, nein | nein | Quest 1.2 (Fingerfertigkeit 14) | Mission nachts (mission_weg = einbruch ohne Schlossprobe) | 1 |  |
+| `suppenmarke` | ja, nein | nein | Quest 1.2 (Taschendiebstahl misslungen) | Mission (Suppenschlange ohne Warten) | 1 | Trostpreis: Odile hält den Helden für bedürftig |
 
 ## Juno
 
@@ -80,6 +85,8 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `juno_knoten_lager` | 0–3 | 0 | +1 shiner_galerie angenommen, +1 deltamae_lager_auftritt, +1 fitz_show geflogen | juno_bogen (verknotete Bindung an den Orden erschwert den Bogen) | 3 |  |
 | `juno_offenheit` | -2–2 | 0 | Mercy-Urteil (hart −1 / gnädig +1), Delta-Mae-Szene (+1), Held-Szenen | juno_bogen | 3–4 |  |
 | `juno_bogen` | verloren, frei_bleibt, frei_kommt_mit | verloren | A4 berechnet aus juno_offenheit, Auftrennung, Kindheitsszenen | Finale (Gastfigur), Epilog | 4 | einmal setzen |
+| `juno_spur` | 0–5 | 0 | Quest 1 (Wohnung, Odile, Mission), Tauben | Junos Begegnung in Akt 2 | 1 | wird mit GameState.erhoehen() gezählt |
+| `juno_sachen_gerettet` | ja, nein | nein | Quest 1.1/1.2 (Odile gibt sie zurück, beiseitegeschafft oder Helfer verjagt) | Unterschlupf (Kiste mit Junos Sachen), Juno in Akt 3–4 | 1 |  |
 
 ## Big Dig
 

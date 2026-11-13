@@ -140,6 +140,13 @@ Spannung entsteht, wenn der Spieler Fragen hat, die das Spiel nach und nach bean
 - **Ihr Missionsschlüssel** (Fingerfertigkeit): Damit kommt er nachts hinein.
 - **Ihr folgen**, mit Corvin über die Dächer: Er sieht den Hintereingang der Mission.
 
+**Umgesetzt als Testszene** `data/dialogues/akt1_odile.dialogue` (Einstiege `odile_wohnung`, `odile_mission`, `wohnung_lauschen`):
+- Ein misslungenes Täuschen ist keine Sackgasse. Odile erkennt die Falte zwischen den Augen („wie Juno, wenn sie flunkert“), und das Gespräch läuft über den Bruder-Weg weiter.
+- Ehrlichkeit wird belohnt: Als Bruder bekommt er Junos Sachen zurück (`juno_sachen_gerettet`). Als Helfer muss er einen Karton heimlich beiseiteschieben, mit Einschüchtern bleiben die Sachen zwar da, aber Odile ist verletzt.
+- Ein misslungener Taschendiebstahl kostet nichts außer dem Schlüssel. Odile hält ihn für bedürftig und schenkt ihm eine Suppenmarke (`suppenmarke`). Komik statt Strafe, und die Szene bleibt warm.
+- Die Expedition am Freitag zählt nur einmal für `juno_spur`, egal ob gelauscht, mitgetragen oder gefragt.
+- Den Sprung ohne Anlass sieht jeder, der mit ihr redet, genau einmal (`odile_moment_gesehen`). Der Weg über die Dächer gehört in die Spielwelt, nicht in den Dialog.
+
 **Prüfung:**
 - *Spaß:* eine warme Figur, die man mögen will und der man misstrauen muss. Der seltsame Moment bleibt hängen.
 - *Nachvollziehbarkeit:* Sie ist der natürliche nächste Schritt nach der Wohnung.
@@ -560,7 +567,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 
 ## Neue Variablen für das Zustandsregister
 
-Erst eintragen, wenn die Szenen gebaut werden.
+Erst eintragen, wenn die Szenen gebaut werden. Schon im Register: `odile`, `juno_spur`, `orden_wachsam`, dazu neu `juno_sachen_gerettet`, `odile_moment_gesehen`, `odile_schluessel`, `suppenmarke`. Zahlen werden mit `GameState.erhoehen(name, d)` gezählt und bleiben in ihren Grenzen.
 
 | Variable | Werte | Gesetzt in | Gelesen von |
 | --- | --- | --- | --- |
@@ -607,7 +614,7 @@ Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die D
 
 Figuren begegnen sich über den Orden, das Knäuel, die Mission und den Bandenkrieg, denn die berühren ganz Hairlem. Verwandtschaften und alte Bekanntschaften sind Zufälle und werden sparsam eingesetzt, höchstens eine persönliche Verbindung pro Gefährte. Die meisten Figuren bleiben Fremde mit eigenem Leben.
 
-## Zur Freigabe
+## Entschieden (13.11.)
 
 - **Neue Figuren und Namen:** Schwester Odile (Gans), Bruder Ansgar (Dachs), Augustin „Gus“ Rook (Taubenzüchter).
 - **Corvins Hausverbot im Nest** wegen der Verhöre zum Fall Rook.
