@@ -1,6 +1,6 @@
 # Akt 1: Hairlem – „Die Stadt, die fühlt“
 
-Stand: 13.11.2026, Fassung 2 · Akt 1 als zusammenhängende Geschichte mit offenen Quests nach dem Vorbild von BG3. Baut auf GDD, Regelwerk, `docs/story/` und dem Prototyp (`data/dialogues/kapitel1_*.dialogue`) auf. Entschiedenes ist markiert, der Rest ist Vorschlag.
+Stand: 13.11.2026, Fassung 3 (nach Prüfung auf Logik, Dramaturgie und Spielbarkeit) · Akt 1 als zusammenhängende Geschichte mit offenen Quests nach dem Vorbild von BG3. Baut auf GDD, Regelwerk, `docs/story/` und dem Prototyp (`data/dialogues/kapitel1_*.dialogue`) auf. Entschiedenes ist markiert, der Rest ist Vorschlag.
 
 ---
 
@@ -163,17 +163,19 @@ Spannung entsteht, wenn der Spieler Fragen hat, die das Spiel nach und nach bean
 - **Das Aufnahmebuch:**
   - *Juno:* „Helferin, Rednerinnen-Ausbildung, Expedition Untergrund.“
   - *Pips:* „Weitergeleitet: Waisenhaus Cathattan.“
-  - *Lil' Riff:* „Nicht aufgenommen. Störer. An die Garde übergeben, Cpt. V.“ Das ist der erste Hinweis auf Vale.
+  - *Lil' Riff:* „Kam von selbst, verstört, wollte ‚den Meister warnen‘. Erzählt wirre Dinge über das Knäuel. Zu seinem Schutz an die Garde übergeben, Cpt. V.“ Riff hat also nach dem Lauschen genau das Richtige getan, er ist zum Orden gelaufen. Und der Orden hat ihn verschwinden lassen, weil niemand über das Knäuel reden darf. Das ist der erste Hinweis auf Vale.
 - **In der Kapelle:** Junos Stimme vom Band. Sie hat Andachten für die Mission aufgenommen. Sie klingt glücklich und stark: „Wir haben uns nicht gefunden. Wir wurden gefunden.“ Der Held hört ihre Stimme zum ersten Mal seit Monaten, und sie spricht zu Fremden.
 
-**Junos Nachricht (der Wendepunkt der Quest):** Juno hat erfahren, dass ihr Bruder nach ihr fragt: von Odile, von Ansgar oder über das Gerede in der Mulberry Street, je nachdem, mit wem der Held gesprochen hat. Juno ist am Morgen mit der Expedition gegangen, einen Tag früher als geplant. Für ihn liegt ein Zettel bereit:
+**Junos Nachricht (der Wendepunkt der Quest):** Juno hat erfahren, dass ihr Bruder nach ihr fragt: von Odile, von Ansgar oder über das Gerede in der Mulberry Street, je nachdem, mit wem der Held gesprochen hat. Sie war heute in der Mission, um Andachten aufzunehmen. Als der Held vorne hereinkommt, geht sie hinten hinaus, zur Expedition, einen Tag früher als geplant. Für ihn liegt ein Zettel bereit, die Tinte ist noch feucht:
 > „Such mich nicht. Mir geht es gut. Ich bin zu Hause.“
 
 Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und daneben eine kleine Kritzelei aus ihrer Kindheit.
 
 - **Was gezeigt statt erklärt wird:** Sie flieht vor ihm, weil es wehtut, ihn zu sehen. Das durchgestrichene Wort zeigt: Etwas in ihr hält noch an ihm fest. Nach dem Regelwerk ist es der Knoten aus der Kindheit, den niemand verschieben kann. Das erfährt der Spieler erst später.
-- **Wer sofort losrennt**, sieht am Ende der Straße das Gittertor der stillgelegten U-Bahn, eine Gruppe in Weiß und eine Waschbärin, die sich einmal umdreht. Das Tor schließt sich, Wachen der Garde stehen davor. Ein Gespräch gibt es nicht, die erste Begegnung bleibt in Akt 2 (GDD).
+- **Wer sofort losrennt** (zum Hinterhof, über die Dächer mit Corvin oder durch die Küche), sieht am Ende der Straße das Gittertor der stillgelegten U-Bahn, eine Gruppe in Weiß und eine Waschbärin, die sich einmal umdreht. Das Tor schließt sich, Wachen der Garde stehen davor. Ein Gespräch gibt es nicht, die erste Begegnung bleibt in Akt 2 (GDD).
 - **Warum der Orden nach unten geht,** gezeigt durch das Aufnahmebuch und Odiles Begeisterung: Die Ausgestoßenen in den Subfurs kennen den Orden nicht. Die Expedition bringt ihnen Suppe und Predigten. Nach dem Regelwerk entstehen dadurch Schlingen, an denen Pfötchen später ziehen kann. Für den Spieler bleibt es zunächst Barmherzigkeit mit unheimlichem Beigeschmack.
+
+**Big Dig im Aufnahmebuch** (wenn dabei): Er liest „Pips: weitergeleitet, Waisenhaus Cathattan“. Er sagt nichts, faltet die Zeichnung auf und wieder zu. Später, auf dem Heimweg, redet er zum ersten Mal von sich aus: „Cathattan. Da komm ich nicht hin. Da kommt keiner von uns hin.“
 
 **Zustand:** `juno_spur` steigt. Ab jetzt ist das Ziel klar: die Tunnel. Das Tor ist bewacht, ein anderer Weg muss her.
 
@@ -204,7 +206,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 - Rucksack, Ausrüstung und Geld des Helden
 - das Geld anderer Neuankömmlinge
 - Roachs Namensliste mit „Mantel – Do.“, darauf **Juno** („fragt nach dem Orden, allein“) und **Pips** („Waise, Karton hinter der Garage“)
-- **nicht die Papiere.** In Roachs Buchführung steht: „Papiere: verkauft, bar, an den mit den teuren Schuhen.“
+- **nicht die Papiere.** In Roachs Buchführung steht: „Papiere: verkauft, bar, an den mit den teuren Schuhen.“ Weiter oben stehen ältere Einträge derselben Art: Der Käufer nimmt seit Monaten die Papiere aller Neuankömmlinge, die allein kommen und um die 25 sind. Er sucht jemanden. (Malcolm hat Pfötchens Schlinge ins Leere gespürt und sucht den verschwundenen Sohn.)
 
 **Big Dig:** Er gräbt von unten hinein, weil er Roachs Liste sucht. Danach schließt er sich an (`dig_beigetreten`): „Du suchst wen. Ich such wen. Und du lässt dich hier sonst umbringen.“
 
@@ -285,6 +287,8 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 
 **Einstieg:** Nugget im Nest bietet Geld für den Ghettoblaster, den die Breaking Cats auf ihrem Platz spielen. Er lügt über den Besitzer (`nuggetLie`).
 
+**Warum Nugget ihn will (zeigt sich erst später):** Malcolm weiß, dass Riff ihn belauscht hat. Bei Riff wurde kein Band gefunden, also muss es im Ghettoblaster stecken. Malcolm zahlt Nugget dafür. Nugget weiß nicht, was er sucht, nur dass es viel Geld bringt.
+
 **Die beiden Seiten:**
 - **Künstlerviertel, Breaking Cats:** Der Ghettoblaster gehörte **Lil' Riff**, Adikatz' kleinem Bruder. Riff kam vor zwei Monaten nicht nach Hause. **Shiner** malt kopfüber an einer Wand und fordert jeden zum Wettklettern heraus.
 - **Industrie und Hafen, Nomapes:** Don Orango, Nugget, **Knuckles** unter einem Motorrad. **Benny Hopkins** bringt das Kreditangebot aus Hazels Programm, wenn die Nomapes Frieden schließen. Malcolm war letzte Woche da, mit teuren Schuhen.
@@ -314,7 +318,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 *Basketballplatz · beide Gangs, die Gefährten, halb Hairlem als Publikum · der Kern des Akts*
 
 - Es beginnt als Tanz-Battle, mit Musik und Jubel.
-- **Dann kippt es ohne Anlass.** Erst Nugget, dann alle auf einmal: Zuschauer werfen Flaschen, Big Dig packt einen Nomapen an der Kehle, Corvin hackt nach einem Gesicht. Der Spieler sieht dasselbe wie bei Odile, nur bei Hunderten gleichzeitig.
+- **Dann kippt es ohne Anlass, und zwar als Welle.** Erst Nugget, dann die Leute um ihn herum, dann der ganze Platz. Zuschauer werfen Flaschen, Big Dig packt einen Nomapen an der Kehle, Corvin hackt nach einem Gesicht. Der Spieler sieht dasselbe wie bei Odile, nur bei Hunderten, und er sieht, dass es von einem Punkt ausgeht. (Regelwerk: Pfötchen zieht an wenigen Schlüsselpersonen, den Rest erledigt die Resonanz.)
 - **Nur der Held bleibt ruhig.** Der Kampf hat drei Aufgaben zugleich:
   - **Gefährten zurückholen:** Mit Proben auf Überzeugen und Einsicht bringt er Big Dig oder Corvin aus dem Rausch. Wer zurückkommt, sieht ihn an, als würde er erst jetzt begreifen, wer neben ihm steht. Danach erscheint **die erste Meldung „Knoten geknüpft“**.
   - **Schützen, wen man schützen will:** Mimi steht am Rand. Benny geht unter. Pounce wird eingekesselt. Wen der Held rettet, hat Folgen für Ansehen, Knuckles' Quest (Benny) und Big Dig (Mimi).
@@ -339,6 +343,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 - Er spricht den Helden an. Kurz lauscht er, als würde etwas fehlen: „Bei dir ist es still. Weißt du, wie selten das ist?“
 - Er bietet Hilfe an: „Die Expedition? Ich weiß, wie man nach unten kommt. Die Gangs kennen die alten Tunnel. Such dir die richtigen Freunde.“ Damit schickt er den Helden tiefer in den Bandenkrieg.
 - **Teure Schuhe:** Wer Roachs Buchführung gelesen hat, kann es ahnen (Wahrnehmung).
+- **Er will den kaputten Ghettoblaster,** ganz beiläufig: „Den kann ich reparieren lassen, ich kenn einen Elektriker.“ Wer ihn hergibt, bekommt die Kassette nicht über diesen Weg (siehe Sicherungen der Kassette). Wer zögert, sieht einen winzigen Moment Ungeduld in Malcolms Gesicht (Einsicht).
 - Corvin vertraut ihm, er ist sein bester Informant. Big Dig brummt nur.
 
 ### Die Kassette
@@ -390,9 +395,9 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 *Corvins Büro, dann die Straße*
 
 - An der Pinnwand hängt jetzt alles: Roachs Liste, das Siegel, das Aufnahmebuch, Pips' Zeichnung, die Kassette, Vincenzos Foto. Corvin fasst zusammen, denn ein Detektiv darf das: „Die holen Kinder und Gläubige, ganz freundlich. Die bringen Leute zum Kippen. Und Malcolm bezahlt beide Gangs. Aber wer zieht die Fäden?“
-- **Die Antwort kommt durch ein Ereignis.** Der Fernseher im Pfandhaus unten läuft, Pfötchen ruft nach den Unruhen zur Ruhe. Draußen schreien sich noch Leute an. Innerhalb einer Minute wird die ganze Straße friedlich, alle gleichzeitig, mitten im Satz.
-- Der Held sieht es als Einziger als das, was es ist: Odiles Moment, Nuggets Kippen, die Schlägerei, und jetzt umgekehrt, bei Hunderten.
-- Corvin, sehr leise: „Das Rathaus regiert nicht.“
+- **Die Antwort kommt durch ein Ereignis.** Der Fernseher im Pfandhaus unten läuft, Pfötchen ruft nach den Unruhen zur Ruhe. Draußen schreien sich noch Leute an. Dann wird es still, als Welle wie auf dem Platz, nur umgekehrt: Zuerst beruhigt sich die Ordensschwester an der Ecke, dann der Kreis um sie, dann die ganze Straße, mitten im Satz.
+- Der Held sieht es als Einziger als das, was es ist: Odiles Moment, Nuggets Kippen, die Schlägerei, und jetzt das Gegenteil. **Derselbe, der das Feuer gelegt hat, löscht es auch, und am Ende lieben ihn alle dafür.** Gezeigt wird das nur durch die Reihenfolge: erst die Schlägerei, dann die Predigt, dann Menschen, die am Fernseher weinen vor Dankbarkeit.
+- Corvin, sehr leise: „Das Rathaus regiert nicht.“ Mehr Erklärung braucht es nicht.
 
 ### Abstieg
 *über den Tunnel der gewählten Gang*
@@ -400,6 +405,64 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 - **Warnung vor dem Übergang**, als Kommentar der Gefährten: Corvin erinnert an offene Tauben, Big Dig sagt: „Wenn wir runtergehen, sind wir eine Weile weg.“ Hummel gibt Honig mit, wenn ihre Quest erledigt ist.
 - Über die Brücken kommt der Held nicht: Er hat keine Papiere, und „der Fadenlose“ steht jetzt auf den Listen der Garde. Unten sind Juno, Riffs Spur und das, was „noch da unten liegt“.
 - `akt_wechseln(2)`.
+
+---
+
+## Prüfung des Akts
+
+### 1. Logik
+
+| Loch | Lösung |
+| --- | --- |
+| Warum will Nugget den Ghettoblaster? | Malcolm sucht Riffs Band und zahlt Nugget, ohne zu sagen, was drin ist |
+| Wie kommt Riff ins Aufnahmebuch der Mission? | Er ist nach dem Lauschen selbst zum Orden gelaufen, um „den Meister zu warnen“, und der Orden hat ihn der Garde übergeben |
+| Warum kauft jemand gestohlene Papiere? | Malcolm kauft seit Monaten die Papiere aller allein angereisten Neuankömmlinge um die 25. Er sucht den Sohn |
+| Warum schürt Pfötchen den Bandenkrieg? | Brandstifter und Feuerwehr: Erst heizt er an, dann beruhigt er per Predigt. Danach lieben ihn mehr Menschen, und jede neue Schlinge ist mehr Hebel |
+| Eine ganze Straße kippt gleichzeitig? | Nach dem Regelwerk geht das nicht. Es ist eine Welle, die von wenigen Schlüsselpersonen ausgeht. Das ist sogar besser, denn der Held sieht, wo sie anfängt |
+| Juno ging „am Morgen“, aber der Held soll sie noch sehen? | Sie geht in genau dem Moment, in dem er die Mission betritt. Die Tinte auf dem Zettel ist noch feucht |
+| Kassette weg, wenn Malcolm oder Nugget den Ghettoblaster bekommen? | Das Band ist eine Pflicht-Spur und kommt immer an, siehe „Sicherungen“ |
+
+### 2. Dramaturgie
+
+**Kurve:** Ankunft und Verlust (Prolog) → Rätsel (Wohnung, Odile) → emotionaler Mittelpunkt (Junos Zettel) → Eskalation (Ghettoblaster) → Höhepunkt (Schlägerei) → Wendung (Kassette) → Entscheidung (Auftrag) → Enthüllung (Predigt) → Aufbruch.
+
+**Druck von außen:** Bisher wehrt sich der Orden nie. Neu: `orden_wachsam` hat spürbare Folgen.
+- **Ab 2:** Eine Streife der Garde hält den Helden auf der Straße an. Er hat keine Papiere. Er kann fliehen, bluffen, oder Corvin zeigt einen alten Dienstausweis, was ihn etwas kostet.
+- **Ab 4:** Bruder Ansgar sitzt abends im Nest und beobachtet den Helden. Hummel warnt ihn leise. Am nächsten Tag lädt ihn Odile „ganz unverbindlich“ in die Mission ein.
+- **Nach der Schlägerei immer:** „Der Fadenlose“ steht auf den Listen der Garde.
+
+**Rhythmus von Ernst und Komik:** Nach jedem schweren Moment kommt ein leichter, damit der Ernst wirkt und nicht erdrückt.
+
+| Schwerer Moment | Danach, leicht |
+| --- | --- |
+| Überfall in der Gasse | Ilse schimpft auf Roach wie eine Großmutter |
+| Erste Nacht, Erinnerung | Hummel am Morgen, verschlafen, mit zu viel Honig im Kaffee |
+| Junos Zettel | Big Dig versucht zu trösten, ungeschickt. Er bietet einen Stein an: „Der hier hilft mir manchmal.“ |
+| Pips im Aufnahmebuch | Mimi will Big Dig beibringen, wie man „Fang mich doch“ spielt |
+| Die Schlägerei | Knuckles entschuldigt sich bei jedem, den sie getroffen hat, einzeln |
+| Die Kassette | Corvins Monolog über Vertrauen, so übertrieben noir, dass Shiner ihn nachäfft |
+| Die Predigt | keiner. Hier soll es kalt bleiben bis zum Abstieg |
+
+### 3. Spielbarkeit
+
+**Wenn der Spieler … dann …**
+
+| Situation | Was passiert |
+| --- | --- |
+| zuerst in die Mission geht, ohne Gefährten | nur Wege für einen: Einladung, Küche mit Armband, Suppenschlange mit Einbruch. Big Dig und Corvin fehlen dort, alles andere funktioniert |
+| die Garage nie macht | Er kämpft mit improvisierter Ausrüstung, und die Schlägerei ist darauf abgestimmt. Big Dig trifft er bei der Schlägerei, die Garage bleibt danach offen |
+| Quest 4 nie anfängt | Die Schlägerei kommt am Samstag nach Junos Zettel. Der Ghettoblaster ist trotzdem auf dem Platz, denn die Cats spielen ihn immer |
+| Odile verletzt | Andere Wege in die Mission bleiben offen. Odile taucht in Akt 3 im Lager wieder auf und erinnert sich |
+| Hummels Vertrauen verliert | Kein Zimmer auf Pump mehr. Big Digs Keller oder Corvins Büro werden zum Unterschlupf |
+| Big Dig Ansgar verprügeln lässt | Mimi meidet Big Dig bis Akt 2. Big Digs Zuneigung zum Helden steigt trotzdem, das ist seine unschöne Seite |
+| den Auftrag ausführt | Der Gefährte der Gegenseite ist verloren, die andere Gang bleibt bis Akt 4 feindlich |
+
+**Sicherungen der Kassette (Pflicht-Spur):**
+- Hat der Held den Ghettoblaster: Er findet das Band im aufgesprungenen Gehäuse.
+- Hat Malcolm ihn mitgenommen: Mimi hat im Gedränge gesehen, wie „was Kleines“ herausfiel, und bringt es am nächsten Morgen.
+- Hat Nugget ihn: Knuckles (falls gewonnen) oder Shiner (falls gewonnen) haben das Band schon aufgehoben und spielen es dem Helden vor. Ohne beide findet es Mimi.
+
+**Auslöser der Schlägerei:** am nächsten Samstag, nachdem Quest 4 entschieden ist oder Junos Zettel gefunden wurde, je nachdem, was zuerst kommt. Es gibt keinen Zeitdruck, aber auch kein Warten ohne Ende.
 
 ---
 
