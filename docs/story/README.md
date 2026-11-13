@@ -25,7 +25,8 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 - Shiner, Knuckles und Fitz haben weniger Trauma. Delta Maes Kanal-Legende ist zur Hälfte erfunden.
 - Der Held kann Pfötchen auch „platt machen“ (Ende „Der Richter“). Dazu kommen weitere Enden: Erbe, Heimkehrer, Werkzeug.
 - Figuren fallen in ernsten Momenten aus ihrer Sprechweise. Daran zeigt sich ihr Wachstum.
-- **Point of no Return:** Persönliche Quests sind Ketten mit einem Kapitel pro Akt. Offene Kapitel werden beim Aktwechsel auf „verpasst“ gesetzt, und die Kette läuft weiter.
+- **Point of no Return nach dem Vorbild von BG3:** Die Geschichte kommt zum Spieler. Jeder Gefährte hat pro Akt eine Pflicht-Lagerszene, die nachgeholt wird, falls sie fehlt. Ortsgebundene Kapitel haben ein Fenster über zwei Akte, Schlüsselfiguren wandern mit, und „verpasst“ gibt es nur für Nebenzweige.
+- **Kein festes Lager:** Die Gruppe rastet in wechselnden Unterschlüpfen, etwa im Zimmer über dem Cuckoo's Nest, im U-Bahn-Waggon, im Wohnwagen der Acorns oder im Hotel in Cathattan. Die Figuren tragen ihre Requisiten bei sich. Corvin hat unterwegs ein Notizbuch statt der Pinnwand, die in seinem Büro bleibt.
 
 ## Noch offen
 

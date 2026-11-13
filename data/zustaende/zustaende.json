@@ -41,10 +41,10 @@
   },
   {
    "name": "tauben",
-   "akt": "1",
+   "akt": "1–2",
    "gesetzt_von": "Corvin K1 (Tauben-Quest)",
    "gelesen_von": "Corvin K4 (Beweise), Finale (Taubennetz), Juno-Spur A1",
-   "hinweis": "verpasst = Züchter behält Netz, keine Hilfe im Finale; beim Aktübergang: offen → verpasst",
+   "hinweis": "Fenster Akt 1–2 (A2: Botentaube in die Subfurs); verpasst = Züchter behält Netz, keine Hilfe im Finale; beim Aktübergang: offen → verpasst",
    "typ": "enum",
    "werte": [
     "offen",
@@ -53,14 +53,14 @@
     "verpasst"
    ],
    "standard": "offen",
-   "verfaellt_nach_akt": 1
+   "verfaellt_nach_akt": 2
   },
   {
    "name": "naeherinnen",
-   "akt": "2",
+   "akt": "2–3",
    "gesetzt_von": "Weberin K2",
    "gelesen_von": "unruhen_hairlem, Pfötchen-Gegenzüge, Nebenwirkungs-Begegnungen A3–A4",
-   "hinweis": "verpasst wirkt wie zurueckgelassen; beim Aktübergang: offen → verpasst",
+   "hinweis": "Fenster Akt 2–3 (A3: Botin findet die Gruppe auf Boney Island); verpasst wirkt wie zurueckgelassen; beim Aktübergang: offen → verpasst",
    "typ": "enum",
    "werte": [
     "offen",
@@ -69,7 +69,7 @@
     "verpasst"
    ],
    "standard": "offen",
-   "verfaellt_nach_akt": 2
+   "verfaellt_nach_akt": 3
   },
   {
    "name": "unruhen_hairlem",
@@ -190,6 +190,27 @@
    "standard": 0
   },
   {
+   "name": "unterschlupf",
+   "typ": "enum",
+   "werte": [
+    "cuckoos_nest",
+    "dig_keller",
+    "corvin_buero",
+    "ubahn_waggon",
+    "deltamae_station",
+    "acorn_wohnwagen",
+    "geisterbahn",
+    "hotel_cathattan",
+    "mercy_gemeinde",
+    "kanalzugang"
+   ],
+   "standard": "cuckoos_nest",
+   "akt": "alle",
+   "gesetzt_von": "Wahl des Schlafplatzes / Aktübergang",
+   "gelesen_von": "Lange Rast (Ort und Eröffnungszeile der Lagerszenen)",
+   "hinweis": "Hauptunterschlupf je Akt: cuckoos_nest, ubahn_waggon, acorn_wohnwagen, hotel_cathattan"
+  },
+  {
    "name": "juno_kontakt",
    "akt": "3",
    "gesetzt_von": "Fitz K3 (Bote)",
@@ -282,6 +303,30 @@
    "hinweis": ""
   },
   {
+   "name": "dig_beigetreten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung",
+   "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
+   "hinweis": "beigetreten ≠ in der aktiven Gruppe"
+  },
+  {
+   "name": "dig_lagerszene",
+   "typ": "int",
+   "min": 0,
+   "max": 4,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "Pflicht-Lagerszene des Akts (Wert = Akt)",
+   "gelesen_von": "offene_lagerszenen()",
+   "hinweis": "Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt"
+  },
+  {
    "name": "corvin_in_gruppe",
    "typ": "bool",
    "werte": [
@@ -322,6 +367,30 @@
    "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
    "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
    "hinweis": ""
+  },
+  {
+   "name": "corvin_beigetreten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung",
+   "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
+   "hinweis": "beigetreten ≠ in der aktiven Gruppe"
+  },
+  {
+   "name": "corvin_lagerszene",
+   "typ": "int",
+   "min": 0,
+   "max": 4,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "Pflicht-Lagerszene des Akts (Wert = Akt)",
+   "gelesen_von": "offene_lagerszenen()",
+   "hinweis": "Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt"
   },
   {
    "name": "shiner_in_gruppe",
@@ -366,6 +435,30 @@
    "hinweis": ""
   },
   {
+   "name": "shiner_beigetreten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung",
+   "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
+   "hinweis": "beigetreten ≠ in der aktiven Gruppe"
+  },
+  {
+   "name": "shiner_lagerszene",
+   "typ": "int",
+   "min": 0,
+   "max": 4,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "Pflicht-Lagerszene des Akts (Wert = Akt)",
+   "gelesen_von": "offene_lagerszenen()",
+   "hinweis": "Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt"
+  },
+  {
    "name": "knuckles_in_gruppe",
    "typ": "bool",
    "werte": [
@@ -406,6 +499,30 @@
    "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
    "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
    "hinweis": ""
+  },
+  {
+   "name": "knuckles_beigetreten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung",
+   "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
+   "hinweis": "beigetreten ≠ in der aktiven Gruppe"
+  },
+  {
+   "name": "knuckles_lagerszene",
+   "typ": "int",
+   "min": 0,
+   "max": 4,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "Pflicht-Lagerszene des Akts (Wert = Akt)",
+   "gelesen_von": "offene_lagerszenen()",
+   "hinweis": "Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt"
   },
   {
    "name": "weberin_in_gruppe",
@@ -450,6 +567,30 @@
    "hinweis": ""
   },
   {
+   "name": "weberin_beigetreten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung",
+   "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
+   "hinweis": "beigetreten ≠ in der aktiven Gruppe"
+  },
+  {
+   "name": "weberin_lagerszene",
+   "typ": "int",
+   "min": 0,
+   "max": 4,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "Pflicht-Lagerszene des Akts (Wert = Akt)",
+   "gelesen_von": "offene_lagerszenen()",
+   "hinweis": "Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt"
+  },
+  {
    "name": "barkley_in_gruppe",
    "typ": "bool",
    "werte": [
@@ -490,6 +631,30 @@
    "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
    "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
    "hinweis": ""
+  },
+  {
+   "name": "barkley_beigetreten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung",
+   "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
+   "hinweis": "beigetreten ≠ in der aktiven Gruppe"
+  },
+  {
+   "name": "barkley_lagerszene",
+   "typ": "int",
+   "min": 0,
+   "max": 4,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "Pflicht-Lagerszene des Akts (Wert = Akt)",
+   "gelesen_von": "offene_lagerszenen()",
+   "hinweis": "Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt"
   },
   {
    "name": "deltamae_in_gruppe",
@@ -534,6 +699,30 @@
    "hinweis": ""
   },
   {
+   "name": "deltamae_beigetreten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung",
+   "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
+   "hinweis": "beigetreten ≠ in der aktiven Gruppe"
+  },
+  {
+   "name": "deltamae_lagerszene",
+   "typ": "int",
+   "min": 0,
+   "max": 4,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "Pflicht-Lagerszene des Akts (Wert = Akt)",
+   "gelesen_von": "offene_lagerszenen()",
+   "hinweis": "Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt"
+  },
+  {
    "name": "mercy_in_gruppe",
    "typ": "bool",
    "werte": [
@@ -576,6 +765,30 @@
    "hinweis": ""
   },
   {
+   "name": "mercy_beigetreten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung",
+   "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
+   "hinweis": "beigetreten ≠ in der aktiven Gruppe"
+  },
+  {
+   "name": "mercy_lagerszene",
+   "typ": "int",
+   "min": 0,
+   "max": 4,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "Pflicht-Lagerszene des Akts (Wert = Akt)",
+   "gelesen_von": "offene_lagerszenen()",
+   "hinweis": "Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt"
+  },
+  {
    "name": "fitz_in_gruppe",
    "typ": "bool",
    "werte": [
@@ -616,6 +829,30 @@
    "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
    "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
    "hinweis": ""
+  },
+  {
+   "name": "fitz_beigetreten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "alle",
+   "gesetzt_von": "Rekrutierung",
+   "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
+   "hinweis": "beigetreten ≠ in der aktiven Gruppe"
+  },
+  {
+   "name": "fitz_lagerszene",
+   "typ": "int",
+   "min": 0,
+   "max": 4,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "Pflicht-Lagerszene des Akts (Wert = Akt)",
+   "gelesen_von": "offene_lagerszenen()",
+   "hinweis": "Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt"
   },
   {
    "name": "dig_k2_wendung",
@@ -694,10 +931,10 @@
   },
   {
    "name": "corvin_vale_ermittlung",
-   "akt": "3",
+   "akt": "3–4",
    "gesetzt_von": "Corvin K3 mit Barkley",
    "gelesen_von": "vale, Bogen Corvin/Barkley",
-   "hinweis": "beim Aktübergang: offen → verpasst",
+   "hinweis": "Fenster Akt 3–4 (A4 mit weniger Beweisen); beim Aktübergang: offen → verpasst",
    "typ": "enum",
    "werte": [
     "offen",
@@ -706,7 +943,7 @@
     "verpasst"
    ],
    "standard": "offen",
-   "verfaellt_nach_akt": 3
+   "verfaellt_nach_akt": 4
   },
   {
    "name": "corvin_ausgang",
@@ -738,10 +975,10 @@
   },
   {
    "name": "shiner_galerie",
-   "akt": "3",
+   "akt": "3–4",
    "gesetzt_von": "Shiner K3",
    "gelesen_von": "juno_knoten_lager, Bogen Shiner/Delta Mae",
-   "hinweis": "beim Aktübergang: offen → verpasst",
+   "hinweis": "Fenster Akt 3–4 (A4: Porträt statt Banner, wirkt nicht auf Juno); beim Aktübergang: offen → verpasst",
    "typ": "enum",
    "werte": [
     "offen",
@@ -750,7 +987,7 @@
     "verpasst"
    ],
    "standard": "offen",
-   "verfaellt_nach_akt": 3
+   "verfaellt_nach_akt": 4
   },
   {
    "name": "shiner_uebermalt_gestanden",

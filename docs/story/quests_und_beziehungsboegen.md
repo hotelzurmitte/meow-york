@@ -6,13 +6,66 @@ Stand: 13.11.2026 · Baut auf Biografien, Steckbriefen und „Stimmen und Bezieh
 
 ## Grundsätze
 
-1. **Jede Quest läuft über mehrere Akte.** Weil es keine Rückkehr in frühere Areale gibt, wandern die Konflikte mit: Was in Hairlem beginnt, wird in den Subfurs, auf Boney Island oder in Cathattan aufgelöst.
+1. **Jede Quest läuft über mehrere Akte, und ihr Kern lässt sich nicht verpassen.** Wie in BG3 kommt die Geschichte zum Spieler: Einstiege und Hauptmomente passieren als Lagerszenen oder auf dem Hauptweg. Ortsgebundene Kapitel haben ein Fenster über zwei Akte. Details im Abschnitt „Unterschlupf, Rast und Lagerszenen“.
 2. **Jede Quest hat drei Pflichtpunkte:** eine Spur zum Orden, einen Moment mit dem Knäuel (Knoten, Anknüpfen, Fadensicht oder Heftung) und eine Rolle im Finale, die von den Entscheidungen abhängt.
 3. **Jede Quest zeigt eine unschöne Seite.** Jede Figur bekommt einen Moment, in dem sie selbstsüchtig, ungerecht oder feige handelt, und der Spieler kann sie dabei unterstützen oder bremsen.
 4. **Quests kreuzen sich.** Keine Quest steht allein. Mindestens eine andere Figur ist betroffen, und eine Entscheidung in einer Quest verändert eine andere.
 5. **Die Hauptfiguren laufen mit.** Malcolm, Juno und Hazel sind keine Gefährten, tauchen aber in den Quests der Gefährten auf. So bekommen sie Verbindungen zur Gruppe, ohne am Lagerfeuer zu sitzen.
 
 **Wie sich ein Knoten löst (Vorschlag für das Regelwerk):** Von außen kann niemand einen Knoten verschieben oder auftrennen, weder Pfötchen noch die Weberin. Ein Knoten löst sich nur von innen: wenn einer der Verknoteten das gemeinsame Erleben selbst bricht, durch Verrat. Dann rutscht der Knoten. Das Gefühl verschwindet nicht, denn das Knäuel nimmt nichts weg und erschafft nichts. Es legt sich um das Nächste, was der Person etwas bedeutet. So wird Barkley frei, als Vale ihn opfert, und seine ganze Treue legt sich um die Hunde.
+
+## Unterschlupf, Rast und Lagerszenen
+
+*Nach dem Vorbild von BG3, angepasst an eine Stadt.*
+
+### Kein Lager, sondern wechselnde Unterschlüpfe
+
+Meow York ist eine Stadt, keine Wildnis. Die Gruppe schlägt kein Zelt auf. Sie schläft dort, wo sie gerade unterkommt. Jeder Akt hat einen Hauptunterschlupf und ein paar Ausweichorte.
+
+| Akt | Hauptunterschlupf | Ausweichorte |
+| --- | --- | --- |
+| 1, Hairlem | Zimmer über dem Cuckoo's Nest (kostet Collar, wie im Prototyp) | Big Digs Keller (ab seinem Beitritt, kostenlos), Corvins Büro über dem Pfandhaus |
+| 2, The Subfurs | ein ausrangierter U-Bahn-Waggon in einer toten Station | Delta Maes Station |
+| 3, Boney Island | der Wohnwagen der Familie Acorn (nach Fitz' Einladung) | vorher die verlassene Geisterbahn |
+| 4, Cathattan | ein heruntergekommenes Hotelzimmer unter falschem Namen | Mercys Gemeinde (wenn sie Reformerin ist), ein Kanalzugang |
+
+- **Lange Rast** nur im Unterschlupf. Dabei passieren die Lagerszenen.
+- **Kurze Rast** überall, zum Heilen, ohne Szenen.
+- **Wer nicht in der aktiven Gruppe ist**, wartet im Unterschlupf, wie die Gefährten im Lager von BG3. Bei der langen Rast sind alle Gefährten da.
+
+### Szenen, die überall spielen
+
+Lagerszenen werden ortsunabhängig geschrieben. Der Ort kommt nur in einer austauschbaren Eröffnungszeile oder der Umgebung vor, nicht im Dialog. Für die Produktion heißt das: eine Szene, viele Orte. Für die Tests heißt das: Eine Szene muss nicht an jedem Ort einzeln geprüft werden.
+
+### Was die Figuren bei sich tragen
+
+Statt Möbeln, die nur an einem Ort stehen, haben die Figuren tragbare Dinge. Sie sind die Requisiten der Lagerszenen und erzählen den Bogen mit.
+
+- **Corvin:** ein abgegriffenes Notizbuch, in das Rooks Foto eingeklebt ist. Die Pinnwand bleibt in seinem Büro in Hairlem. Er schreibt das ganze Spiel über Einträge hinein. Nach „Ganze Wahrheit“ lautet der letzte: „Ich war das.“
+- **Big Dig:** Pips Zeichnung vom Tunnel mit den zwei Figuren, ab Akt 2, immer zusammengefaltet in der Brusttasche.
+- **Shiner:** ein Skizzenbuch voller Entwürfe für das größte Bild der Stadt.
+- **Knuckles:** eine Werkzeugrolle. Sie repariert nebenbei, was die anderen kaputt machen.
+- **Die Weberin:** Strickzeug, die Abschrift des Musterbuchs und ab Akt 3 die Dose mit dem Faden.
+- **Barkley:** eine Polizei-Taschenuhr von 1906. Sie geht nach.
+- **Delta Mae:** ein Koffergrammophon, das sie überall hin mitschleppt. Niemand darf es tragen.
+- **Mercy:** eine Gebetsschnur und ihre Krankenakten.
+- **Fitz:** Nüsse in allen Taschen und Flickzeug für die Flughaut.
+
+### Pflicht-Lagerszenen
+
+Jeder Gefährte hat pro Akt eine Lagerszene, die man nicht verpassen kann. Sie startet bei der ersten langen Rast, sobald ihre Bedingungen erfüllt sind. Wurde sie bis zum Point of no Return nicht gezeigt, wird sie bei der ersten Rast im nächsten Akt nachgeholt, mit angepasster erster Zeile. Verloren geht sie nie.
+
+Die Einstiege der Gefährten sind solche Pflichtszenen. Corvin zum Beispiel holt bei der ersten Rast nach seinem Beitritt das Notizbuch heraus und erzählt von Rook.
+
+### Zeitfenster und mitwandernde Figuren
+
+- **Ortsgebundene Kapitel haben ein Fenster über zwei Akte.** Wer den Taubenzüchter in Hairlem nicht findet, bekommt in den Subfurs eine Botentaube.
+- **Schlüsselfiguren wandern mit**, wie Dammon in BG3: der Taubenzüchter, Pip, Captain Vale, Lucien und die Botin der Näherinnen.
+- **Die Hauptmomente der Gefährten liegen auf dem Hauptweg**, an den Knotenpunkten jedes Akts: Cuckoo's Nest, Delta Maes Station, das Lager auf Boney Island, der Tempel.
+- **„Verpasst“ gibt es nur für Nebenzweige.** Sie färben den Ausgang, nehmen aber nie den Bogen weg.
+
+
+---
 
 **Aufbau jeder Quest:** Auslöser · Stationen nach Akt · Entscheidung · Ausgänge · Rolle im Finale · Unschöne Seite · Kreuzungen
 
@@ -50,15 +103,16 @@ Stand: 13.11.2026 · Baut auf Biografien, Steckbriefen und „Stimmen und Bezieh
 
 ## Corvin: „Der Fall Rook“
 
-**Auslöser (Akt 1):** Corvin übernimmt den Fall des Helden gegen Bezahlung. An seiner Pinnwand hängt ein Foto, das nie abgenommen wurde: Rook, ein Taubenhändler, seit zwölf Jahren im Gefängnis.
+**Auslöser (Akt 1):** Corvin übernimmt den Fall des Helden gegen Bezahlung. In seinem Büro über dem Pfandhaus hängt eine Pinnwand voller Fäden und Fotos. Das wichtigste Foto trägt er aber bei sich, eingeklebt in sein Notizbuch: Rook, ein Taubenhändler, seit zwölf Jahren im Gefängnis.
 
 **Stationen:**
 
-- **Akt 1, Hairlem:** Corvin öffnet die Dachebene. Dort stößt die Gruppe auf den Taubenzüchter. Sein Name verrät mehr, als Corvin lieb ist: Er ist Rooks Bruder. *Tauben-Quest aus dem GDD:* das Netz des Züchters für die Juno-Spur nutzen oder die Tauben befreien.
+- **Akt 1, Lagerszene (fest):** Bei der ersten langen Rast nach seinem Beitritt schlägt Corvin das Notizbuch auf, zeigt Rooks Foto und erzählt den Fall, noch als Geschichte über einen Fehler der Justiz, nicht über seinen eigenen.
+- **Akt 1 oder 2, die Tauben:** Corvin öffnet die Dachebene. Dort stößt die Gruppe auf den Taubenzüchter. Sein Name verrät mehr, als Corvin lieb ist: Er ist Rooks Bruder. *Tauben-Quest aus dem GDD:* das Netz des Züchters für die Juno-Spur nutzen oder die Tauben befreien. Wer den Züchter in Hairlem nicht findet, bekommt in Akt 2 eine Botentaube: Der Orden lässt die Tauben jagen, und der Züchter hat sich mit seinen Tieren in einem Lüftungsschacht der Subfurs versteckt. Gleiche Entscheidung, anderer Ort. Für die Juno-Spur ist es dann zu spät, das Netz hilft nur noch im Finale.
 - **Akt 1, Malcolm:** Malcolm ist Corvins bester Informant, charmant und immer zu gut informiert. Corvin traut ihm, weil seine Informationen stimmen. Das ist sein blinder Fleck.
 - **Akt 2, The Subfurs:** Die Weberin hat eine Abschrift ihres Musterbuchs bei sich. Corvin verlangt, den Fall Rook nachzuschlagen. Ergebnis: Unter dem Datum des Lagerhausbrandes steht ein Eintrag, aber nicht über Corvin. Die Wut der ganzen Stadt wurde damals auf die Tauben verschoben. Corvins eigenes Vorurteil war schon vorher da. Der Orden hat es nur genutzt.
 - **Akt 2, Wendepunkt:** Corvin hat seine Ausrede verloren. Der Noir-Erzähler verstummt für einige Szenen.
-- **Akt 3, Boney Island:** Barkley erkennt in den Ermittlungsakten den Namen seines letzten Herrn: Captain Vale, damals Corvins Vorgesetzter, heute Kommandant der Ordensgarde. Vale hat den Brand legen lassen, um ein Vorgehen gegen die Tauben zu rechtfertigen. Corvin und Barkley ermitteln gemeinsam.
+- **Akt 3 oder 4, die Ermittlung:** Barkley erkennt in den Ermittlungsakten den Namen seines letzten Herrn: Captain Vale, damals Corvins Vorgesetzter, heute Kommandant der Ordensgarde. Vale hat den Brand legen lassen, um ein Vorgehen gegen die Tauben zu rechtfertigen. Corvin und Barkley ermitteln gemeinsam. Am besten auf Boney Island, wo Vales Garde das Lager bewacht. Wer es dort verpasst, findet die Spur in Akt 4 in Cathattan, mit weniger Beweisen.
 - **Akt 4, Cathattan:** Rook sitzt im Gefängnis von Cathattan. Corvin kann den Fall neu aufrollen, braucht aber Beweise, die er nur durch das Taubennetz bekommt, falls es in Akt 1 nicht befreit wurde, oder durch eine Begnadigung von Hazel.
 
 **Entscheidung:** Vor Gericht die ganze Wahrheit sagen, also auch die gefälschte Aussage und das eigene Vorurteil, oder nur Vale belasten und sich selbst schonen.
@@ -87,7 +141,7 @@ Stand: 13.11.2026 · Baut auf Biografien, Steckbriefen und „Stimmen und Bezieh
 
 - **Akt 1, Hairlem:** Malcolm finanziert ihre Farben. Er „glaubt an Kunst“. Shiner bemerkt nicht, dass Malcolm beide Gangs aufrüstet, damit der Krieg eskaliert und der Orden abgelenkt ist.
 - **Akt 2, The Subfurs:** Shiner entdeckt die Gemeinschaften der Ausgestoßenen und malt mit ihnen eine ganze verfallene Station aus. Zum ersten Mal malt sie nicht für Ruhm, sondern mit anderen. **Knotenmoment:** Die Meldung „Knoten geknüpft“ erscheint nicht beim Helden, sondern zwischen den Malenden. Die Weberin sieht es durch ihre Fäden und ist fasziniert: „So schnell knotet nicht einmal das Lager.“
-- **Akt 3, Boney Island:** Ein Kunstmäzen des Ordens bietet ihr eine Galerie in Cathattan. Die Bedingung: Sie malt die riesigen Banner für das Erweckungslager. Neben ihr malt man Juno, die Rednerin. Shiner merkt, dass ihre Bilder das Lager noch mitreißender machen, also besser knoten.
+- **Akt 3 oder 4, das Angebot:** Ein Kunstmäzen des Ordens bietet ihr eine Galerie in Cathattan. Die Bedingung: Sie malt die riesigen Banner für das Erweckungslager. Neben ihr malt man Juno, die Rednerin. Shiner merkt, dass ihre Bilder das Lager noch mitreißender machen, also besser knoten. Kommt das Angebot erst in Akt 4, geht es um ein Porträt Pfötchens für den Tempel statt um die Banner.
 - **Akt 4, Cathattan:** Adikatz wird als Zwischenperson des Ordens enttarnt und tritt beschämt zurück. Shiner soll die Crew führen.
 
 **Entscheidung:** In Akt 3 die Galerie annehmen oder ablehnen. In Akt 4 die Crew führen oder allein bleiben.
@@ -141,7 +195,7 @@ Stand: 13.11.2026 · Baut auf Biografien, Steckbriefen und „Stimmen und Bezieh
 **Stationen:**
 
 - **Akt 2, Schutz:** Die Gruppe verteidigt sie gegen Malcolms Leute. Zum ersten Mal sieht man Malcolm hart und ohne Charme. Die Weberin schließt sich an, weil sie sonst tot ist.
-- **Akt 2, die Näherinnen:** Eine Botin bringt einen Hilferuf. Ihre Lehrlinge, junge Spinnen, sitzen noch in den Kammern unter dem Tempel und werden für ihren Verrat bestraft.
+- **Akt 2 oder 3, die Näherinnen:** Eine Botin bringt einen Hilferuf. Wer ihn in den Subfurs nicht annimmt, wird von der Botin auf Boney Island noch einmal gefunden. Ihre Lehrlinge, junge Spinnen, sitzen noch in den Kammern unter dem Tempel und werden für ihren Verrat bestraft.
   - **Herausholen:** Niemand heftet mehr. Was nicht verknotet ist, federt in der ganzen Stadt zurück. In Hairlem wissen alte Feinde plötzlich nicht mehr, warum sie sich hassen, und es gibt Unruhen. Hazel gerät unter Druck, Pfötchen muss mehr Gegenzüge einsetzen.
   - **Zurücklassen:** Die Näherinnen heften weiter, aber schlampig. Gefühle rutschen an falsche Stellen, mit merkwürdigen und manchmal komischen Nebenwirkungen: ein Ordenswächter, der sich in seinen Spieß verliebt, ein Bäcker, der seine Brote fürchtet.
 - **Akt 3, Boney Island (Beichte):** Die Weberin sieht das Erweckungslager, die Knotenfabrik, die ohne ihre Heftungen nie funktioniert hätte. Sie zeigt dem Helden die Dose mit dem Faden und gesteht, dass sie die Schere gehalten hat. Und sie gesteht noch etwas: Junos Verschiebung hat sie selbst geheftet.

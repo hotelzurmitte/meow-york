@@ -66,6 +66,18 @@ func akt_wechseln(neuer_akt: int) -> void:
 		if flag(n) == "offen": set_flag(n, "verpasst")
 	set_flag("akt", neuer_akt)
 
+## Lange Rast: Gefährten, deren Pflicht-Lagerszene noch aussteht (auch aus früheren Akten, dann nachgeholt)
+func offene_lagerszenen() -> Array:
+	var r := []
+	var akt: int = mini(int(flag("akt")), 4)   # im Finale (Akt 5) keine neuen Lagerszenen
+	for g in Zustaende.gefaehrten():
+		if flag(g + "_beigetreten") and int(flag(g + "_lagerszene")) < akt: r.append(g)
+	return r
+
+## Nach einer Pflicht-Lagerszene aufrufen
+func lagerszene_gezeigt(gefaehrte: String) -> void:
+	set_flag(gefaehrte + "_lagerszene", mini(int(flag("akt")), 4))
+
 ## Test-Spielstand laden (data/zustaende/szenarien/<name>.json), z. B. über --szenario=<name>
 func szenario_laden(name: String) -> void:
 	var d := Zustaende.szenario(name)

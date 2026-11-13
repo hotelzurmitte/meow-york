@@ -318,7 +318,7 @@ Dann kam der Fall Rook. Ein Lagerhausbrand mit drei Toten in den Docks. Corvin w
 
 Zwei Jahre später fand Corvin heraus, dass Rook unschuldig war. Er gestand, flog aus dem Dienst und eröffnete ein Büro als Privatdetektiv über einem Pfandhaus. Seither glaubt er keinem Gefühl mehr, am wenigsten seinem eigenen. Er sammelt Spuren, schreibt alles auf, verlässt sich nur auf Belege.
 
-Über die Jahre fielen ihm Muster auf: Fälle, in denen Menschen plötzlich etwas hassten oder liebten, ohne Anlass. Eine Mutter, die ihren Sohn anzeigte. Ein Streik, der über Nacht zusammenbrach. Corvin führt eine Pinnwand voller Fäden und Fotos, und er weiß nicht, was er da eigentlich sieht.
+Über die Jahre fielen ihm Muster auf: Fälle, in denen Menschen plötzlich etwas hassten oder liebten, ohne Anlass. Eine Mutter, die ihren Sohn anzeigte. Ein Streik, der über Nacht zusammenbrach. Corvin führt in seinem Büro eine Pinnwand voller Fäden und Fotos, und er weiß nicht, was er da eigentlich sieht. Unterwegs trägt er ein abgegriffenes Notizbuch mit Rooks Foto bei sich.
 
 ### Persönlichkeit
 

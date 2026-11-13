@@ -168,6 +168,20 @@ func _teste_laufzeit() -> void:
 			if GameState.flag(n) == "offen": _fehler("Aktübergang %d → %d lässt „%s“ offen" % [akt, akt + 1, n])
 	_erwarte(GameState.flag("tauben") == "befreit", "erledigtes Kapitel bleibt beim Aktübergang erhalten")
 	_erwarte(GameState.flag("naeherinnen") == "verpasst", "offenes Kapitel wird beim Aktübergang „verpasst“")
+	# Zeitfenster: „tauben“ ist in Akt 2 noch offen und verfällt erst danach
+	GameState.aus_dict({})
+	GameState.akt_wechseln(2)
+	_erwarte(GameState.flag("tauben") == "offen", "Kapitel mit Fenster über zwei Akte bleibt nach Akt 1 offen")
+	GameState.akt_wechseln(3)
+	_erwarte(GameState.flag("tauben") == "verpasst", "Kapitel verfällt nach dem zweiten Akt seines Fensters")
+	# Pflicht-Lagerszenen werden nachgeholt, nie verloren
+	GameState.aus_dict({})
+	GameState.set_flag("corvin_beigetreten", true)
+	_erwarte(GameState.offene_lagerszenen() == ["corvin"], "neuer Gefährte hat eine offene Lagerszene")
+	GameState.akt_wechseln(2)
+	_erwarte(GameState.offene_lagerszenen() == ["corvin"], "verpasste Lagerszene wird im nächsten Akt nachgeholt")
+	GameState.lagerszene_gezeigt("corvin")
+	_erwarte(GameState.offene_lagerszenen().is_empty(), "gezeigte Lagerszene ist erledigt")
 	GameState.aus_dict(vorher)
 
 func _erwarte(ok: bool, was: String) -> void:

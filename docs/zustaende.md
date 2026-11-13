@@ -12,7 +12,11 @@ Alle Story-Variablen von Meow York stehen in `data/zustaende/zustaende.json`: Na
 
 ## Point of no Return
 
-`GameState.akt_wechseln(neuer_akt)` setzt alle Kapitel des alten Akts, die noch `offen` sind, auf `verpasst` und erhöht `akt`. Welche Kapitel betroffen sind, steht im Register unter `verfaellt_nach_akt`. Akt 5 ist das Finale.
+Wie in BG3 kommt die Geschichte zum Spieler, statt an einem Ort zu verfallen.
+
+- `GameState.akt_wechseln(neuer_akt)` erhöht `akt`. Kapitel, deren Zeitfenster mit dem alten Akt endet (`verfaellt_nach_akt`), werden von `offen` auf `verpasst` gesetzt. Ortsgebundene Kapitel haben in der Regel ein Fenster über zwei Akte. Akt 5 ist das Finale.
+- Pflicht-Lagerszenen: Bei jeder langen Rast liefert `GameState.offene_lagerszenen()` die Gefährten, deren Szene für den aktuellen Akt noch aussteht. Fehlende Szenen aus früheren Akten werden nachgeholt. Nach der Szene `GameState.lagerszene_gezeigt(gefaehrte)` aufrufen.
+- Der aktuelle Schlafplatz steht in `unterschlupf`. Lagerszenen werden ortsunabhängig geschrieben.
 
 ## Prüfwerkzeug
 
