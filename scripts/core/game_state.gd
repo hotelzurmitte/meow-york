@@ -111,6 +111,15 @@ func _abgeleitet(name: String):
 		if k >= 2 or flag("viertel_cathattan") == "kippt": return "cathattan_brennt"
 		if k == 1: return "viertel"
 		return "funken" if w <= 1 else "strassen"
+	# Haltung der Gangs im Finale
+	if name.begins_with("haltung_"):
+		var gang := "breaking_cats" if name == "haltung_cats" else "nomapes"
+		var wahl: String = flag("gang_wahl")
+		if "gangs_gemeinsam" in (flag("grosse_knoten") as Array): return "verbuendet"
+		if gang == "nomapes" and flag("knuckles_ausgang") == "treue_nichte" and wahl == "breaking_cats": return "feindlich"
+		if wahl == gang: return "verbuendet"
+		if wahl == "keine": return "neutral"
+		return "feindlich" if flag("auftrag_ausgang") in ["ausgefuehrt", "gewarnt", "doppelt"] else "neutral"
 	if name == "verknotung_moeglich":
 		var h := 0
 		for v in GROSSE_KNOTEN.viertel:

@@ -96,7 +96,7 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 | 4 | Der Richter tötet Pfötchen, und dann? | Das Knäuel ist herrenlos. Malcolm greift sofort danach. Der Held hat einen Zug: es selbst nehmen (Wächter), zerstören oder Malcolm lassen (Raffung) |
 | 5 | Einwebung als Scheitern kann sich unfair anfühlen | Vorher spürbar machen: Ab mittlerer `held_verwachsung` warnen Gefährten, Junos Stimme wird lauter, die Fadensicht flackert. Im Finale fragt die Weberin (wenn dabei) direkt: „Willst du das wirklich?“ |
 | 6 | Heimkehrer ohne Juno? | Möglich, aber dann geht er allein. Bei `juno_bogen = verloren` heißt der Weg nicht Heimkehr, sondern Flucht. Eigener Epilog-Satz |
-| 7 | Hazel herausgeschnitten (Weberin, Akt 4): Pfötchens Plan, sie zur Leitung zu machen, scheitert | Gewollt. Dann muss Pfötchen im Finale einen Gefährten als Leitung nehmen, und zwar den, der den Helden am meisten liebt. Der härteste Finalkampf |
+| 7 | Hazel herausgeschnitten oder unlenkbar: Pfötchens Leitung fällt weg | *(korrigiert)* Leitung ist nach dem Regelwerk, wer den **Halter** am meisten liebt, nicht den Helden. Dann fließt der Nachhall durch Juno (wenn ihr Bogen verloren ist) oder durch Malcolm. Man sieht im Finale, wie es sie zerreißt |
 | 8 | Das Finale spiegelt die Schlägerei aus Akt 1 noch nicht ausdrücklich | *(entschieden)* gleiche Mechanik, höchster Einsatz: Der Held holt gewendete Gefährten mit Worten zurück, nur zieht jetzt Pfötchen selbst. Wie schwer das ist, entscheidet die Knotenstärke |
 
 ---
@@ -110,26 +110,71 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 2. **Der Kampf ist ein Kampf um Liebe, nicht um Kontrolle.** Pfötchen steuert niemanden fremd. Er schiebt echte Gefühle, und die Gefährten greifen an, weil sie etwas anderes noch mehr lieben. Zurück holt man sie mit Worten, nicht mit Schaden.
 3. **Am Ende wird es klein, wie im Noir.** Das Feuer ist Kulisse. Der Höhepunkt spielt in einem Raum: Vater und Sohn, das Knäuel zwischen ihnen. Der Held ist der Einzige, der ruhig durch den Aufruhr geht. Man kann das Finale beenden, ohne Pfötchen zu besiegen.
 
-### Der Weg zum Tempel
-Verbündete öffnen Wege, statt mitzukämpfen. Jeder hat eine Aufgabe, wenn er gewonnen wurde:
+### Ablauf in der Maximalfassung *(entschieden 13.11.)*
 
-| Verbündeter | Beitrag | Voraussetzung |
-| --- | --- | --- |
-| Roach | fährt durch die Sperren der Garde | `roach` = erpresst |
-| Big Dig | Tunnel unter den Tempel | `dig_ausgang` = neu_verknotet |
-| Tauben | melden jede Patrouille | `tauben` = befreit oder netz_genutzt |
-| Fitz | über die Dächer, schaltet den Flügel der Garde aus, oder lenkt mit dem Zirkus die Menge ab | `fitz_ausgang` |
-| Mercy | öffnet eine Tür im Tempel | `mercy_ausgang` = schweigende |
-| Gangs | halten die Brücke gegen die Monsterhunde | Gang-Wahl, `knuckles_ausgang` |
-| befreite Hunde | Barkley führt sie gegen die Garde | `barkley_ausgang` = fanatiker oder mehr_als_eine_liebe |
-| Viertel, die halten | Löschketten, offene Hinterhöfe, Schutz vor der Menge | `viertel_*` = haelt |
+**Methode:** Das Finale wird einmal vollständig gebaut, so als hätte der Spieler keinen einzigen Verbündeten. Das ist die Maximalfassung, die schwerste Version. Alles, was der Spieler über das Spiel gewonnen hat, nimmt davon etwas weg, erleichtert es oder öffnet einen anderen Weg. Was er sich verscherzt hat, macht es schwerer oder stellt sich auf Pfötchens Seite. So muss jede Station nur einmal gebaut werden, und jede Entscheidung des Spiels wird im Finale sichtbar.
 
-**Das Opfer:** Sind die Nomapes mit dem Helden verbündet, hält Don Orango an der Brücke die Monsterhunde auf und stirbt dabei. Knuckles wird Anführerin, ihr Ausgang „Nachfolgerin“ bekommt seinen Moment. Bei den Cats hängt das Opfer an Adikatz, je nachdem, was aus Riff geworden ist (wird mit Akt 2 festgelegt). Wie in BG3 kann der Spieler das Opfer mit sehr guter Vorbereitung verhindern (etwa wenn die Hunde unter Barkley die Brücke halten), aber dann fehlt diese Hilfe woanders.
+**Station 0 · Die letzte Nacht** *(Unterschlupf in Cathattan)*
+- Letzte Lagergespräche, die letzte Gelegenheit für Knötchen.
+- **Aufstellung:** Vier gehen mit dem Helden. **Die übrigen Gefährten bekommen eine Aufgabe in der Stadt** (Tunnel, Dächer, Brücke, Löschketten) und tauchen an ihrer Station wieder auf. Niemand sitzt untätig im Lager, das unterscheidet uns von BG3.
 
-### Der Endkampf in drei Phasen
-1. **Das Tor:** Garde und Monsterhunde. Wie viele durchkommen, entscheiden die Verbündeten und die Viertel.
-2. **Die Gefährten:** Pfötchen wendet sie gegen den Helden. Wer wie schwer zurückzuholen ist, entscheidet die Knotenstärke. Delta Maes letztes Lied erschwert Pfötchens Wendungen.
-3. **Vater und Sohn:** Pfötchen und das Knäuel, je nach Weg mit Malcolm. Danach die Entscheidung.
+**Station 1 · Der Sperrring** *(die Avenue vor dem Tempelbezirk)*
+- **Maximal:** Straßensperre und zwei Trupps der Ordensgarde, Kampf.
+
+**Station 2 · Die Menge** *(Tails Square, die Unruhen gegen Hazel)*
+- **Maximal (`viertel_cathattan` = kippt):** Die Menge richtet sich gegen den Helden. Ein Kampf, in dem er niemanden töten darf, nur bewusstlos schlagen oder durchkommen. Es tut weh, weil das keine Feinde sind.
+- **Wankt:** ein Abschnitt mit Proben (Schleichen, Überzeugen, Einschüchtern) statt Kampf.
+- **Hält:** Eimerketten öffnen ihm eine Gasse. Die Station entfällt, und sie ist das schönste Bild auf dem Weg.
+
+**Station 3 · Die Brücke zum Tempelberg**
+- **Maximal:** drei Wellen Monsterhunde, angeführt von Captain Vale.
+- **Das Opfer:** Bleibt nach allen Erleichterungen eine Welle übrig, hält sie ein Anführer einer verbündeten Gang auf und stirbt dabei.
+  - **Nomapes:** Don Orango. Knuckles wird Anführerin, ihr Ausgang „Nachfolgerin“ bekommt seinen Moment.
+  - **Breaking Cats:** Wurde Riff gerettet (`riff` = gerettet), ist es Riff. Er wirft den Ghettoblaster an („Riff, Take vier!“), legt mitten auf der Brücke einen Windmill hin, der so lächerlich gut ist, dass die Monsterhunde einen Moment lang verwirrt stehen bleiben, und reißt die vorderen mit über das Geländer. Komisch und furchtbar zugleich. Sonst ist es Adikatz: „Sag meinem Bruder, ich hab ihn gesucht.“
+  - Sind beide Gangs verbündet, entscheidet der Spieler, wer geht, oder er verhindert es durch genug andere Hilfe.
+- **Feindliche Gang:** Steht eine Gang gegen den Helden, kämpft sie an Vales Seite, als zusätzliche Welle mit ihrem Boss. Ist ihr Gefährte (Shiner oder Knuckles) dabei, steht er seiner eigenen Familie gegenüber und kann sie mit einer Probe zum Abzug bewegen.
+
+**Station 4 · Das Tempeltor**
+- **Maximal:** das Haupttor mit der Elite der Garde, Kampf.
+- **Andere Wege:** Big Digs Tunnel unter den Tempel, über die Dächer mit Fitz, Mercys Seitentür, ein Lüftungsschacht, den die Tauben gefunden haben. Jeder ersetzt den Kampf durch eine kurze eigene Szene.
+
+**Station 5 · Die Halle der Gläubigen**
+- **Maximal:** Pfötchen wendet die Gefährten gegen den Helden (Knotenstärke entscheidet), die Gläubigen singen, und jede Strophe macht das Zurückholen schwerer.
+- **Juno:** Ist ihr Bogen verloren, steht sie als Rednerin neben Pfötchen und spricht zur Halle. Der Held kann sie nicht bekämpfen, nur zu ihr reden. Dabei zählt der Kindheitsknoten, und das angefangene „Schraubensch…“ aus Akt 1 bekommt sein Echo.
+- **Die Leitung:** Hat Pfötchen Hazel verloren (herausgeschnitten oder unlenkbar geworden), fließt der Nachhall durch den, der ihn jetzt am meisten liebt: Juno, wenn sie verloren ist, sonst Malcolm. Man sieht ihn leiden, während Pfötchen zieht.
+
+**Station 6 · Vater und Sohn** *(der Raum mit dem Knäuel)*
+- Ein Gespräch, das zum Kampf werden kann, aber nicht muss. Pfötchen kämpft nicht mit Klauen, sondern mit den Ketten der Stadt: Er zieht an den Gefährten, die noch nicht festgezurrt sind.
+- **Malcolm** kommt dazu. Bruderschaft verknotet: Er steht beim Helden und hält Wort. Nur gebunden: Pfötchen zieht ihn zurück. Ohne Bruderschaft: Er bittet, das Knäuel zerstören zu dürfen (die Falle aus Fund 2).
+- **Dann die Entscheidung** (Schicht 1 und 2), das Schlussbild und der Epilog.
+
+### Was die Maximalfassung verändert
+
+| Verbündeter oder Zustand | Wirkung |
+| --- | --- |
+| **Roach** (`roach` = erpresst) | Station 1 entfällt: Er fährt mit Vollgas durch die Sperre |
+| **Tauben** (befreit oder Netz genutzt) | Station 1 leichter (nur ein Trupp), Station 4: Lüftungsschacht |
+| **Hazel** (`hazel_status` = wissend oder verraten) | Station 1 leichter: Die Polizei zieht ab |
+| **Fitz** | Station 2 entfällt (der Zirkus lenkt die Menge ab) oder Station 4 über die Dächer |
+| **Viertel Cathattan** | hält: Station 2 entfällt · wankt: Proben · kippt: Kampf gegen Bürger |
+| **Juno** (`juno_bogen` = frei_kommt_mit) | Station 2 leichter: Sie spricht zur Menge, gegen den Orden. Station 5: Sie kämpft mit |
+| **Juno** (verloren) | Station 2 schwerer (sie predigt auf dem Platz), Station 5: Sie steht neben Pfötchen |
+| **verbündete Gang** | Station 3: hält eine Welle Monsterhunde |
+| **beide Gangs gemeinsam** (`gangs_gemeinsam`) | Station 3: hält zwei Wellen |
+| **feindliche Gang** | Station 1 und 3: eine zusätzliche Welle mit ihrem Boss |
+| **Barkley, Fanatiker** | Station 3 fast leer: Die befreiten Hunde überrennen Vales Meute. Dafür jagen sie danach Katzen (Epilog) |
+| **Barkley, mehr als eine Liebe** | Station 3: eine Welle weniger, Barkley ruft die Hunde einzeln zu sich |
+| **Vale** vor Gericht oder tot | Station 3 ohne Vale, die Meute ohne Führung ist leichter |
+| **Big Dig** (neu verknotet) | Station 4 entfällt: Tunnel |
+| **Mercy** | Schweigende: Station 4 entfällt (Seitentür) · Reformerin: Station 5 leichter (sie stellt Pfötchen vor den Gläubigen) |
+| **Weberin** (Hüterin) | Station 5 und 6 leichter: Sie sagt an, an welcher Kette Pfötchen gerade zieht |
+| **Delta Mae** | Station 5 leichter: Ihr letztes Lied übertönt die Gläubigen |
+| **Corvin** (ganze Wahrheit) | Station 1 bis 3: Das Taubennetz meldet jede Bewegung, Hinterhalte entfallen |
+| **Shiner** (Knotenmalerin) | Station 2: Die Menge erkennt ihre Wand und zögert |
+| **Knotenstärke der Gefährten** | Station 5 und 6: wer gewendet wird und wie schwer er zurückzuholen ist |
+| **Malcolm** | Station 6 (siehe oben) |
+
+**Gangs:** Ob eine Gang verbündet, neutral oder feindlich ist, berechnet das Spiel aus Gang-Wahl, Auftrag und Knuckles' Bogen (`haltung_nomapes`, `haltung_cats`).
 
 ## Die Schlussbilder *(entschieden 13.11.)*
 

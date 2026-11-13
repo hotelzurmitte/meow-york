@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 137
+- **Variablen insgesamt:** 140
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 92
+- **Story-Variablen:** 95
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -99,6 +99,9 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `viertel_cathattan` | haelt, wankt, kippt | wankt | berechnet | Finale: Verbündete, Brand, Menge | 5 | abgeleitet: Bilanz der großen Knoten in Cathattan: ab +2 hält, 0 bis +1 wankt, unter 0 kippt |
 | `stadt_brand` | funken, strassen, viertel, cathattan_brennt | strassen | berechnet | Finale (Kulisse), Epilog | 5 | abgeleitet: aus viertel_*: kein Viertel kippt und höchstens eins wankt → funken; keins kippt → strassen; eins kippt → viertel; zwei oder mehr kippen oder Cathattan kippt → cathattan_brennt |
 | `verknotung_moeglich` | ja, nein | nein | berechnet | Finale: lässt der Held los, hält die Stadt (Verknotung) oder Pfötchen gewinnt (Status quo) | 5 | abgeleitet: mindestens drei Viertel halten und keins kippt; wird dem Spieler nie angezeigt |
+| `riff` | verschollen, gerettet, tot | verschollen | Ermittlung gegen Vale (Corvin und Barkley, Akt 3), Akt 2 | Finale: Opfer der Breaking Cats (Riff oder Adikatz), Adikatz, Epilog | 2–4 | Was genau mit Riff passiert, wird mit Akt 2 festgelegt |
+| `haltung_nomapes` | verbuendet, neutral, feindlich | neutral | berechnet | Finale: Station 1 und 3 (Welle halten, Opfer, oder an Vales Seite) | 5 | abgeleitet: gangs_gemeinsam → verbündet; gewählte Gang → verbündet; ohne Wahl → neutral; andere Gang: Auftrag ausgeführt, gewarnt oder doppelt → feindlich, sonst neutral; Nomapes zusätzlich feindlich, wenn Knuckles treue Nichte ist und der Held bei den Cats steht; Nomapes |
+| `haltung_cats` | verbuendet, neutral, feindlich | neutral | berechnet | Finale: Station 1 und 3 (Welle halten, Opfer, oder an Vales Seite) | 5 | abgeleitet: gangs_gemeinsam → verbündet; gewählte Gang → verbündet; ohne Wahl → neutral; andere Gang: Auftrag ausgeführt, gewarnt oder doppelt → feindlich, sonst neutral; Nomapes zusätzlich feindlich, wenn Knuckles treue Nichte ist und der Held bei den Cats steht; Breaking Cats |
 
 ## Juno
 

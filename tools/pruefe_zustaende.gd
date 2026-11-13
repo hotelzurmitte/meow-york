@@ -173,6 +173,14 @@ func _teste_laufzeit() -> void:
 	GameState.set_flag("grosse_knoten", ["gang_hass", "unruhen_ungebremst"])
 	_erwarte(GameState.flag("stadt_brand") == "cathattan_brennt", "Cathattan kippt: Cathattan brennt")
 	_erwarte(GameState.flag("verknotung_moeglich") == false, "ein Viertel kippt: keine Verknotung")
+	# Haltung der Gangs
+	GameState.set_flag("grosse_knoten", [])
+	GameState.set_flag("gang_wahl", "nomapes"); GameState.set_flag("auftrag_ausgang", "ausgefuehrt")
+	_erwarte(GameState.flag("haltung_nomapes") == "verbuendet" and GameState.flag("haltung_cats") == "feindlich", "Auftrag ausgeführt: gewählte Gang verbündet, andere feindlich")
+	GameState.set_flag("auftrag_ausgang", "nugget_entlarvt")
+	_erwarte(GameState.flag("haltung_cats") == "neutral", "Nugget entlarvt: andere Gang neutral")
+	GameState.grosser_knoten("gangs_gemeinsam")
+	_erwarte(GameState.flag("haltung_cats") == "verbuendet", "Gangs gemeinsam: beide verbündet")
 	# Zähler bleiben in ihren Grenzen
 	for i in 8: GameState.erhoehen("orden_wachsam")
 	_erwarte(GameState.flag("orden_wachsam") == 5, "erhoehen() stoppt bei max 5")

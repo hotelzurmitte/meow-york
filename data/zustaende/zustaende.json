@@ -2086,6 +2086,50 @@
    "gesetzt_von": "berechnet",
    "gelesen_von": "Finale: lässt der Held los, hält die Stadt (Verknotung) oder Pfötchen gewinnt (Status quo)",
    "hinweis": "wird dem Spieler nie angezeigt"
+  },
+  {
+   "name": "riff",
+   "typ": "enum",
+   "werte": [
+    "verschollen",
+    "gerettet",
+    "tot"
+   ],
+   "standard": "verschollen",
+   "akt": "2–4",
+   "gesetzt_von": "Ermittlung gegen Vale (Corvin und Barkley, Akt 3), Akt 2",
+   "gelesen_von": "Finale: Opfer der Breaking Cats (Riff oder Adikatz), Adikatz, Epilog",
+   "hinweis": "Was genau mit Riff passiert, wird mit Akt 2 festgelegt"
+  },
+  {
+   "name": "haltung_nomapes",
+   "typ": "enum",
+   "werte": [
+    "verbuendet",
+    "neutral",
+    "feindlich"
+   ],
+   "standard": "neutral",
+   "abgeleitet": "gangs_gemeinsam → verbündet; gewählte Gang → verbündet; ohne Wahl → neutral; andere Gang: Auftrag ausgeführt, gewarnt oder doppelt → feindlich, sonst neutral; Nomapes zusätzlich feindlich, wenn Knuckles treue Nichte ist und der Held bei den Cats steht",
+   "akt": "5",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: Station 1 und 3 (Welle halten, Opfer, oder an Vales Seite)",
+   "hinweis": "Nomapes"
+  },
+  {
+   "name": "haltung_cats",
+   "typ": "enum",
+   "werte": [
+    "verbuendet",
+    "neutral",
+    "feindlich"
+   ],
+   "standard": "neutral",
+   "abgeleitet": "gangs_gemeinsam → verbündet; gewählte Gang → verbündet; ohne Wahl → neutral; andere Gang: Auftrag ausgeführt, gewarnt oder doppelt → feindlich, sonst neutral; Nomapes zusätzlich feindlich, wenn Knuckles treue Nichte ist und der Held bei den Cats steht",
+   "akt": "5",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: Station 1 und 3 (Welle halten, Opfer, oder an Vales Seite)",
+   "hinweis": "Breaking Cats"
   }
  ],
  "prototyp_flags": [
