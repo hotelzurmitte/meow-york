@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 120
+- **Variablen insgesamt:** 121
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 75
+- **Story-Variablen:** 76
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -91,6 +91,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `auftrag_ausgang` | offen, ausgefuehrt, vorgetaeuscht, gewarnt, doppelt, nugget_entlarvt | offen | Der Auftrag | Gang-Wahl, Bosse in Akt 4 | 1 | Ausgang der Hauptquest „Der Auftrag“ (nicht verwechseln mit dem Prototyp-Flag „auftrag“ = Auftraggeber) |
 | `held_art` | katzenartige, voegel, krokodile, kaengurus, maeuse_ratten, fuechse, marder, insekten, spinnen, primaten | fuechse | Charaktererstellung (Taxi) | Startansehen, Preise, Garde-Kontrollen, Anrede, Schlüsselzeilen (Roach, Hummel, Ilse, Odile, Malcolm, Adikatz, Don Orango, Gus), eigener Weg je Akt | alle | Zehn Gruppen, Daten: data/characters/tierarten.json, Erklärung: docs/story/tierarten.md. Hunde sind gesperrt. Verwandtschaftsoptionen in Dialogen: flag("held_art") == "<gruppe>"; einmal setzen |
 | `held_unterart` | Katze, Schwarzkatze, Tigerkatze, Siamkatze, Perserkatze, Ragdoll, Loewe, Tiger, Leopard, Puma, Panther, Luchs, Rabe, Spatz, Eule, Moewe, Taube, Alligator, Krokodil, Kaiman, Kaenguru, Wallaby, Quokka, Maus, Ratte, Hamster, Maulwurf, Rotfuchs, Polarfuchs, Fennek, Dachs, Marder, Otter, Stinktier, Waschbaer, Kakerlake, Ameise, Biene, Kaefer, Motte, Grille, Webspinne, Springspinne, Vogelspinne, Tarantel, Schimpanse, Gorilla, OrangUtan | Rotfuchs | Charaktererstellung (Taxi) | Aussehen, Form (Hauskatze/Großkatze, Taube, Waschbär, Dachs), Bild von Pfötchens Frau (Rückblenden, Archiv, Foto) | alle | Pfötchens Frau hat genau diese Unterart; einmal setzen |
+| `malcolm_knoten` | ja, nein | nein | genug gemeinsames Erleben mit Malcolm (Bruderschaft) | Finale: Malcolm wendbar? Hält er bei der Zerstörung Wort oder vollzieht er die Raffung? | 2–4 | Ohne Knoten ist die Bruderschaft Malcolms Schwachstelle: Pfötchen schiebt sie zurück in die Treue zum Vater |
 
 ## Juno
 

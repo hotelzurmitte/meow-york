@@ -1868,6 +1868,19 @@
    "gesetzt_von": "Charaktererstellung (Taxi)",
    "gelesen_von": "Aussehen, Form (Hauskatze/Großkatze, Taube, Waschbär, Dachs), Bild von Pfötchens Frau (Rückblenden, Archiv, Foto)",
    "hinweis": "Pfötchens Frau hat genau diese Unterart"
+  },
+  {
+   "name": "malcolm_knoten",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "akt": "2–4",
+   "gesetzt_von": "genug gemeinsames Erleben mit Malcolm (Bruderschaft)",
+   "gelesen_von": "Finale: Malcolm wendbar? Hält er bei der Zerstörung Wort oder vollzieht er die Raffung?",
+   "hinweis": "Ohne Knoten ist die Bruderschaft Malcolms Schwachstelle: Pfötchen schiebt sie zurück in die Treue zum Vater"
   }
  ],
  "prototyp_flags": [

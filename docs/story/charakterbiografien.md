@@ -153,6 +153,7 @@ Heute macht er Geschäfte mit beiden Gangs, handelt mit Informationen, kennt jed
 - **Was er sagt:** Die Stadt befreien.
 - **Was ihn antreibt:** Rache an Pfötchen. Und der Wunsch, dass alle anderen erleben, was er erlebt hat.
 - **Die Wende:** Er erkennt am Helden, dass Zerstörung niemanden leer machen würde. Der Held liebt ohne Resonanz. Die Stadt würde weiter lieben, nur ohne Mitgefühl. Seine Rache wäre also keine. Er schwenkt auf die Raffung um. Bei der Raffung schiebt er mit dem Knäuel alle unverknotete Länge der Stadt in die Schlingen um sich selbst, bis alle nur noch eine Schlinge haben, wie er. Knoten verhindern das, also zerstört er sie vorher mit weltlichen Mitteln: Er stiftet Verrat und sät Misstrauen.
+- **Wann die Wende kommt** *(entschieden 13.11.)*: **in Akt 3 auf Boney Island.** Mitten im Erweckungslager sieht Malcolm, wie der Held Menschen liebt, ohne mitzuschwingen, und versteht seinen Irrtum. Von da an hat er einen ganzen Akt lang etwas anderes vor, als er sagt. Im Finale bittet er: „Lass mich das Knäuel zerstören.“ Wer ihm das überlässt, bekommt die Raffung, außer die Bruderschaft ist verknotet. So trifft der Verrat härter, weil der Spieler ihm einen Akt lang vertraut hat.
 
 ### Warum er den Helden braucht
 
@@ -163,6 +164,8 @@ Malcolm erkennt ihn beim ersten Treffen, weil er ihn als Einzigen nicht lesen ka
 Alles, was der Held über Menschen weiß, hat er von Juno: Wer warm ist, hängt an etwas, wer verbindet, ist gebunden. Bei Malcolm läuft dieses Wissen ins Leere. Seine Wärme ist in jedem Moment echt, Junos Stimme sagt deshalb zu Recht „Der meint jedes Wort“, aber es hängt nichts daran. Er schwingt mit allen mit und hat nur eine einzige Schlinge, und die gehört Pfötchen.
 
 Damit gibt es zwei Menschen, auf die Junos Regeln nicht passen: Malcolm, der mitschwingt, ohne sich zu binden, und den Helden, der sich bindet, ohne mitzuschwingen. **Wenn der Held in Akt 3 begreift, dass Juno sich bei Malcolm geirrt hat, begreift er im selben Moment etwas über sich: Auch ihn hat Juno nie ganz lesen können. Sie hat ihn nur geliebt.** Das ist der Punkt, an dem Junos Stimme auf Stufe 3 kippt (`juno_stimme`) und der Held anfängt, ihr zu widersprechen.
+
+**Warum die Bruderschaft ihn angreifbar macht** *(entschieden 13.11.)*: Malcolm ist Pfötchens Leitung, jede Verschiebung fließt zuerst durch ihn. Pfötchen erreicht ihn direkt, ohne Kette über andere. Solange Malcolm nur eine Schlinge hat (den Vater), gibt es nichts zu verschieben. Wird der Held seine zweite Schlinge, kann Pfötchen zum ersten Mal ziehen: Er schiebt die Liebe zum Bruder zurück in die Treue zum Vater und richtet Malcolm gegen den Helden. Über den Helden selbst kommt Pfötchen nie an ihn heran, denn der Held ist kein Glied einer Kette. **Schutz gibt es nur über einen Knoten:** Haben beide genug gemeinsam erlebt (`malcolm_knoten`), ist die Bruderschaft zugenäht. Wer Malcolm retten will, muss sich vorher Zeit für ihn nehmen.
 
 Für Malcolm gilt dasselbe von der anderen Seite: Der Held ist der Einzige, den er nicht lesen kann, und darum der Einzige, dessen Zuneigung er nicht als Echo abtun kann. Variante A (Bruderschaft) lebt von dieser doppelten Blindheit.
 

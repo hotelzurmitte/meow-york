@@ -21,7 +21,7 @@ Das Ende besteht aus vier Schichten, die der Spieler unabhängig voneinander bee
 | **Verknotung** *(das verdiente Ende)* | Das Knäuel bleibt, kann aber kaum noch etwas bewegen, weil die Stadt zu fest verknotet ist | Auch Fehden und schlechte Bindungen werden starr | genug Knoten in Gruppe und Stadt (siehe unten) |
 | **Wächter** | Der Held nimmt das Knäuel an sich. Er kann es nicht benutzen, also benutzt es niemand | Nur vertagt. Seine Freunde bleiben Druckmittel, er bleibt allein | immer wählbar |
 | **Einwebung** | Der Held lässt sich an seiner Narbe wieder einspleißen oder wird beim Anknüpfen eingesponnen. Er fühlt zum ersten Mal die Stadt und seinen Vater | Er wird lenkbar. Als Herrscher (Weg „Der Erbe“) würde Juno seine Leitung | gewählt, oder als Scheitern bei hoher `held_verwachsung` |
-| **Raffung** | Malcolm gewinnt. Alle haben nur noch eine Schlinge, um ihn | Malcolms eigene Leere bleibt. Er hat alle und fühlt nichts | Malcolm bekommt das Knäuel (siehe Prüfung, Fund 2) |
+| **Raffung** | Malcolm schiebt alle unverknoteten Gefühle der Stadt in Schlingen um sich selbst. Alle haben nur noch eine Schlinge, um ihn | Malcolms eigene Leere bleibt. Er hat alle und fühlt nichts | Malcolm bekommt das Knäuel: Weg „Das Werkzeug“, oder der Held überlässt ihm die Zerstörung ohne verknotete Bruderschaft (Fund 2) |
 | **Status quo** | Pfötchen behält das Knäuel | Ordnung durch Feindbilder, die Stadt kühlt weiter aus | Pfötchen siegt, oder der Held geht (Weg „Der Heimkehrer“) |
 
 **Messbar machen, was „genug Knoten“ heißt** *(Vorschlag)*: eine berechnete Variable `stadt_verknotung` aus Punkten:
@@ -91,7 +91,8 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 | # | Fund | Lösung *(Vorschlag)* |
 | --- | --- | --- |
 | 1 | „Verknotung: genug Knoten“ war nicht messbar | `stadt_verknotung` mit Punkten (oben) |
-| 2 | Regelwerk: Zerstörung, „der Held öffnet alle Übergänge **oder lässt Malcolm es tun**“. Aber Malcolm schwenkt in Akt 3 auf die Raffung um | **Das ist eine Falle, keine Lücke:** Wer Malcolm die Zerstörung überlässt, bekommt die Raffung. Nur bei Bruderschaft (Malcolms Variante A) hält Malcolm Wort. Wer `malcolm_risse` hoch hat, wird von einem Gefährten gewarnt |
+| 2 | Regelwerk: Zerstörung, „der Held öffnet alle Übergänge **oder lässt Malcolm es tun**“. Aber Malcolm schwenkt auf die Raffung um | *(entschieden)* **Eine Falle:** Malcolm schwenkt in Akt 3 um und verbirgt es einen Akt lang. Wer ihm im Finale die Zerstörung überlässt, bekommt die Raffung. Nur wenn die Bruderschaft verknotet ist (`malcolm_knoten`), hält Malcolm Wort. Ist sie nur gebunden, aber nicht verknotet, zieht Pfötchen sie im Finale zurück in die Treue zum Vater. Wer `malcolm_risse` hoch hat, wird von einem Gefährten gewarnt |
+| 9 | GDD (Akt 4) und Regelwerk (Akt 3) nannten verschiedene Zeitpunkte für Malcolms Umschwung | *(entschieden)* Akt 3, Boney Island |
 | 3 | Der Held „kann das Knäuel nicht benutzen“, soll es aber zerstören können | Kein Widerspruch: Benutzen heißt Gefühle verschieben, dafür braucht man Resonanz. Übergänge öffnen kann nach Axiom 5 jeder, der es berührt. Die Zerstörung ist das Öffnen aller Übergänge |
 | 4 | Der Richter tötet Pfötchen, und dann? | Das Knäuel ist herrenlos. Malcolm greift sofort danach. Der Held hat einen Zug: es selbst nehmen (Wächter), zerstören oder Malcolm lassen (Raffung) |
 | 5 | Einwebung als Scheitern kann sich unfair anfühlen | Vorher spürbar machen: Ab mittlerer `held_verwachsung` warnen Gefährten, Junos Stimme wird lauter, die Fadensicht flackert. Im Finale fragt die Weberin (wenn dabei) direkt: „Willst du das wirklich?“ |
