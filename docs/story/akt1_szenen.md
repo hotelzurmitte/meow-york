@@ -324,7 +324,11 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
   - **Schützen, wen man schützen will:** Mimi steht am Rand. Benny geht unter. Pounce wird eingekesselt. Wen der Held rettet, hat Folgen für Ansehen, Knuckles' Quest (Benny) und Big Dig (Mimi).
   - **Nugget beobachten:** Wer ihn im Auge behält, sieht, dass er als Erster kippt.
 - **Nach dem Kampf:** Ein Kind starrt den Helden an und sagt: „Der hat keine Fäden.“ Ab jetzt heißt er **„Fadenlos“** (`fadenlos`).
-- **Der Ghettoblaster** ist im Gedränge zu Boden gegangen. Das Gehäuse ist gesprungen, ein doppelter Boden ist zu sehen.
+- **Die Kassette fällt heraus.** Mitten im Kampf geht der Ghettoblaster zu Boden, das Gehäuse springt auf, und aus einem doppelten Boden rutscht eine Kassette über den Asphalt. Die Kamera zeigt es kurz, wer gut hinsieht (Wahrnehmung), erkennt die Beschriftung: „Riff, Take 3“.
+  - **Der Spieler entscheidet im Kampf**, ob er sie aufhebt. Das kostet eine Bonusaktion und liegt mitten zwischen Kämpfenden.
+  - **Wie er sie holt**, hängt an der Gruppe: selbst hinlaufen, heimlich mit Fingerfertigkeit, Corvin stößt herab, Big Dig zieht sie von unten durch einen Gully, Mimi zuwerfen lassen.
+  - **Wer es sieht**, hängt an der Probe: Gelingt sie, sieht es niemand. Misslingt sie, sehen es Nugget, Adikatz oder Malcolm, je nachdem, wer gerade in der Nähe ist.
+  - **Wer sie nicht aufhebt,** überlässt sie anderen (siehe „Wer die Kassette bekommt“).
 - **Wer Big Dig oder Corvin noch nicht hat,** sieht sie jetzt: Big Dig sucht Pips' Gesicht in der Menge, Corvin beobachtet für seinen Fall. Beide schließen sich an.
 
 **Prüfung:**
@@ -346,10 +350,24 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 - **Er will den kaputten Ghettoblaster,** ganz beiläufig: „Den kann ich reparieren lassen, ich kenn einen Elektriker.“ Wer ihn hergibt, bekommt die Kassette nicht über diesen Weg (siehe Sicherungen der Kassette). Wer zögert, sieht einen winzigen Moment Ungeduld in Malcolms Gesicht (Einsicht).
 - Corvin vertraut ihm, er ist sein bester Informant. Big Dig brummt nur.
 
-### Die Kassette
-*Unterschlupf, in der Nacht*
+### Der Ärger um die Kassette
+*Nacht und nächster Tag · nur wenn der Held die Kassette hat und jemand es gesehen hat*
 
-- Big Dig, Corvin oder Knuckles öffnen den doppelten Boden. Darin liegt ein Band: „Lil' Riff, Take drei …“, ein selbstgebauter Beat mit Tunnelhall.
+| Wer es gesehen hat | Was passiert | Wege |
+| --- | --- | --- |
+| **Nugget** | Seine Leute passen den Helden am nächsten Abend in einer Gasse ab, oder sie warten im Nest | kämpfen, bluffen (eine falsche Kassette, Knuckles kann eine bespielen), über die Dächer fliehen (Corvin), Hummel versteckt ihn im Keller (wenn er ihm vertraut), die Kassette herausgeben |
+| **Adikatz** | Er steht nachts vor dem Unterschlupf: „Das ist von meinem Bruder.“ Er will sie haben, nicht kaufen | geben (er hört sie allein und zweifelt danach an Malcolm), zusammen anhören (stärkste Szene, siehe unten), verweigern (die Cats werden feindlich) |
+| **Malcolm** | Er wird nicht laut. Er bietet Geld, „als Andenken für Adikatz“. Am nächsten Tag tauchen Nuggets Leute auf | wie bei Nugget, dazu `malcolm_risse` +1, weil er zum ersten Mal Druck zeigt |
+| **niemand** | kein Ärger, aber auch keiner weiß, dass der Held etwas Wichtiges hat | – |
+
+**Versteckt man die Kassette**, gibt es mehrere Orte: Big Dig vergräbt sie, Corvin legt sie auf einen Wasserturm, Hummel nimmt sie hinter die Theke. Wer sie bei sich trägt, verliert sie bei einem verlorenen Kampf.
+
+### Die Kassette anhören
+*ein ruhiger Ort mit Abspielgerät · freiwillig, jederzeit bis zum Ende des Akts*
+
+- **Der Held hat kein Abspielgerät.** Er braucht eins: Hummels Küchenradio, das Tonbandgerät in Corvins Büro, die Werkstatt der Nomapes oder einen Walkman, den man kaufen oder stehlen kann. Anhören ist also ein bewusster Schritt an einem ruhigen Ort, nicht etwas, das im Kampf passiert.
+- **Wer sie nicht anhört,** trägt sie herum. Die Gefährten fragen nach: Corvin („Wir haben ein Band und hören es nicht?“), Big Dig („Vielleicht ist der Kleine drauf“, er meint Pips). Es bleibt trotzdem freiwillig.
+- **Was drauf ist:** „Lil' Riff, Take drei …“, ein selbstgebauter Beat mit Tunnelhall.
 - **Zwei Stimmen.** Die kühle gehört Malcolm, das erkennt die Gruppe sofort. Die raue ist eine fremde Frau, in Wahrheit die Weberin (GDD):
   - „Die Tagebücher sagen, es liegt noch da unten.“
   - „Warum trägt er dann Tag und Nacht einen Schlüssel um den Hals?“
@@ -357,7 +375,18 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
   - „Die Affen erledigen meine Drecksarbeit, die Katzen glauben an mich.“
   - Dann ein Knacken, „Da ist jemand“, und das Band bricht ab.
 - **Was gezeigt statt erklärt wird:** Der Mann, der eben Verletzte verbunden hat, bezahlt beide Gangs. Riff hat ihn belauscht, und Riff ist verschwunden. Corvin will es nicht glauben, sein bester Informant.
-- **Entscheidung:** die Kassette Adikatz geben (er zweifelt danach an Malcolm), Nugget geben (Malcolm erfährt, dass sie gefunden wurde) oder behalten (als Beweis). Wenn Corvin danach misstrauisch ist, steigt `malcolm_risse` um 1.
+- **Zusammen mit Adikatz anhören** (wenn er gekommen ist): Der Tiger hört die Stimme seines Bruders zum ersten Mal seit zwei Monaten, dann Malcolm. Er sagt lange nichts. Dann: „Der war bei Riffs Beerdigung. Ohne Leiche. Er hat die Rede gehalten.“ Das ist die stärkste Fassung der Szene.
+- **Danach:** die Kassette behalten (Beweis), Adikatz geben oder Nugget geben (dann erfährt Malcolm, dass sie gehört wurde). Wenn Corvin danach misstrauisch ist, steigt `malcolm_risse` um 1.
+
+### Wer die Kassette bekommt, wenn der Held sie nicht aufhebt
+
+| Wer | Wann | Folge |
+| --- | --- | --- |
+| **Mimi** | wenn sie auf dem Platz war und nicht gerettet werden musste | Kinder heben auf, was glänzt. Nuggets Leute suchen sie danach. Mimi versteckt sich und kommt zu Big Dig, wenn sie ihm vertraut. Hat er Ansgar verprügelt, geht sie zu Adikatz. Kurze Nebenquest: Mimi finden, bevor Nugget sie findet |
+| **Adikatz** | wenn er nah dran stand | Er hört sie allein. Er zweifelt danach an Malcolm, und die Cats verhalten sich beim Auftrag anders. Der Held erfährt den Inhalt nur, wenn er Adikatz' Vertrauen gewinnt |
+| **Nugget** | sonst | Sie geht an Malcolm. Der Beweis ist für Akt 1 verloren, Malcolms Maske hält länger, `malcolm_risse` bleibt niedrig. Der Inhalt kommt in Akt 2 auf anderem Weg ans Licht: über die Weberin, deren Stimme drauf ist, oder über Riff selbst |
+
+**Die Kassette ist keine Pflicht-Spur.** Die Enthüllung des Akts (die Predigt) hängt nicht an ihr. Sie verändert, was der Spieler über Malcolm weiß, wem Corvin vertraut und welche Wege es beim Auftrag gibt.
 
 ---
 
@@ -420,7 +449,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | Warum schürt Pfötchen den Bandenkrieg? | Brandstifter und Feuerwehr: Erst heizt er an, dann beruhigt er per Predigt. Danach lieben ihn mehr Menschen, und jede neue Schlinge ist mehr Hebel |
 | Eine ganze Straße kippt gleichzeitig? | Nach dem Regelwerk geht das nicht. Es ist eine Welle, die von wenigen Schlüsselpersonen ausgeht. Das ist sogar besser, denn der Held sieht, wo sie anfängt |
 | Juno ging „am Morgen“, aber der Held soll sie noch sehen? | Sie geht in genau dem Moment, in dem er die Mission betritt. Die Tinte auf dem Zettel ist noch feucht |
-| Kassette weg, wenn Malcolm oder Nugget den Ghettoblaster bekommen? | Das Band ist eine Pflicht-Spur und kommt immer an, siehe „Sicherungen“ |
+| Wie hört man im Tumult eine Kassette? | Gar nicht. Sie fällt im Kampf heraus, der Spieler entscheidet, ob er sie aufhebt. Anhören ist ein eigener Schritt an einem ruhigen Ort mit Abspielgerät |
 
 ### 2. Dramaturgie
 
@@ -440,7 +469,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | Junos Zettel | Big Dig versucht zu trösten, ungeschickt. Er bietet einen Stein an: „Der hier hilft mir manchmal.“ |
 | Pips im Aufnahmebuch | Mimi will Big Dig beibringen, wie man „Fang mich doch“ spielt |
 | Die Schlägerei | Knuckles entschuldigt sich bei jedem, den sie getroffen hat, einzeln |
-| Die Kassette | Corvins Monolog über Vertrauen, so übertrieben noir, dass Shiner ihn nachäfft |
+| Die Kassette | Corvins Monolog über Vertrauen, so übertrieben noir, dass Shiner ihn nachäfft. Bei Nuggets Hinterhalt: Knuckles' falsche Kassette spielt ihr Lieblingslied aus der Telenovela |
 | Die Predigt | keiner. Hier soll es kalt bleiben bis zum Abstieg |
 
 ### 3. Spielbarkeit
@@ -457,10 +486,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | Big Dig Ansgar verprügeln lässt | Mimi meidet Big Dig bis Akt 2. Big Digs Zuneigung zum Helden steigt trotzdem, das ist seine unschöne Seite |
 | den Auftrag ausführt | Der Gefährte der Gegenseite ist verloren, die andere Gang bleibt bis Akt 4 feindlich |
 
-**Sicherungen der Kassette (Pflicht-Spur):**
-- Hat der Held den Ghettoblaster: Er findet das Band im aufgesprungenen Gehäuse.
-- Hat Malcolm ihn mitgenommen: Mimi hat im Gedränge gesehen, wie „was Kleines“ herausfiel, und bringt es am nächsten Morgen.
-- Hat Nugget ihn: Knuckles (falls gewonnen) oder Shiner (falls gewonnen) haben das Band schon aufgehoben und spielen es dem Helden vor. Ohne beide findet es Mimi.
+**Die Kassette:** keine Pflicht-Spur mehr, siehe „Wer die Kassette bekommt“. Ohne sie fehlt beim Auftrag der Weg „Nugget bloßstellen“ mit dem Band als Beweis. Er bleibt mit Beobachtungen allein möglich, ist dann aber deutlich schwerer.
 
 **Auslöser der Schlägerei:** am nächsten Samstag, nachdem Quest 4 entschieden ist oder Junos Zettel gefunden wurde, je nachdem, was zuerst kommt. Es gibt keinen Zeitdruck, aber auch kein Warten ohne Ende.
 
@@ -474,7 +500,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | Manipulation | Odiles Moment, Nuggets Kippen, die Schlägerei, die Predigt | nein |
 | Was der Orden mit Menschen macht | Grille Grimm, Junos Zettel | nein |
 | Der Orden holt Kinder | Roachs Liste, Zimmer 7, Aufnahmebuch | nur als Gerede (Ilse) |
-| Malcolm ist nicht, wer er scheint | Kassette nach seinem warmen Auftritt | nein |
+| Malcolm ist nicht, wer er scheint | Kassette nach seinem warmen Auftritt, nur wenn gehört | nein |
 | Wer regiert | die Predigt | Corvin zieht die Summe, ein Satz |
 | Warum der Held so ist | – | erst in Akt 2, durch die Weberin |
 
@@ -527,7 +553,9 @@ Erst eintragen, wenn die Szenen gebaut werden.
 | `ghettoblaster` | gestohlen, gekauft, gewonnen, gefaelscht, zurueckgegeben | Quest 4 | Ansehen, Auftrag |
 | `fadenlos` | ja, nein | Schlägerei | Anrede der NPCs |
 | `gerettet` | Liste: mimi, benny, pounce | Schlägerei | Big Dig, Knuckles, Cats |
-| `kassette` | behalten, nugget, adikatz | Nacht danach | Auftrag, Malcolm in Akt 2 |
+| `kassette` | liegen_gelassen, aufgehoben_heimlich, aufgehoben_gesehen, mimi, adikatz, nugget | Schlägerei | Ärger danach, Auftrag, Malcolm in Akt 2 |
+| `kassette_gesehen_von` | niemand, nugget, adikatz, malcolm | Schlägerei | Ärger um die Kassette |
+| `kassette_gehoert` | ja, nein | Anhören | Corvins Vertrauen, Auftrag, Weberin in Akt 2 (Stimme erkannt) |
 | `auftrag` | ausgefuehrt, vorgetaeuscht, gewarnt, doppelt, nugget_entlarvt | Der Auftrag | Gang-Wahl, Bosse in Akt 4 |
 | `orden_wachsam` | 0–5 | mehrere | Listen der Garde, Gegenzüge in Akt 2 |
 
