@@ -64,9 +64,9 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 *Maulwurf · Akt 1 · Bruiser, Street Saint · Graben, Erschütterungssinn*
 - **Kern:** Ehemaliger Tunnelbauer, sanfter Brocken, halb blind.
 - **Wesen:** wortkarg, warmherzig, stur. Spricht mit Steinen und gräbt sich an falschen Stellen hoch.
-- **Will:** Pip finden. **Braucht:** endlich da sein.
-- **Wunde:** Er hielt Abstand zu Pip („Ich bin nicht dein Vater“), deshalb war ihre Bindung nicht verknotet.
-- **Knäuel:** Pips Liebe zu ihm wurde auf Pfötchen verschoben. In Akt 2 wird Big Dig gegen den Helden gewendet.
+- **Will:** Pips finden. **Braucht:** endlich da sein.
+- **Wunde:** Er hielt Abstand zu Pips („Ich bin nicht dein Vater“), deshalb war ihre Bindung nicht verknotet.
+- **Knäuel:** Pips' Liebe zu ihm wurde auf Pfötchen verschoben. In Akt 2 wird Big Dig gegen den Helden gewendet.
 - **Bogen:** gewendet in Akt 2, dann neu verknoten. „Ich bin nicht dein Vater. Aber ich bin da.“
 - **Spiegel:** Corvin.
 

@@ -154,11 +154,11 @@
    "name": "weberin_herausgeschnitten",
    "akt": "4",
    "gesetzt_von": "Weberin K4 (höchstens 2)",
-   "gelesen_von": "Finale (nicht wendbar), Hazel als Leitung, Pip, Epilog (keine Resonanz)",
+   "gelesen_von": "Finale (nicht wendbar), Hazel als Leitung, Pips, Epilog (keine Resonanz)",
    "hinweis": "Herausgeschnittene sind unlenkbar und fühlen nie wieder mit. Nur in Meow York Geborene: nicht juno, nicht fitz",
    "typ": "liste",
    "werte": [
-    "pip",
+    "pips",
     "hazel",
     "dig",
     "corvin",
@@ -908,7 +908,7 @@
    "standard": false
   },
   {
-   "name": "dig_pip_szenen",
+   "name": "dig_pips_szenen",
    "akt": "3",
    "gesetzt_von": "Big Dig K3 Strand-Szenen",
    "gelesen_von": "dig_ausgang",
@@ -1105,7 +1105,7 @@
    "name": "weberin_luege_gestanden",
    "akt": "3",
    "gesetzt_von": "Bogen Weberin/Corvin A3 oder Mercy-Akten",
-   "gelesen_von": "mercy_weberin_behandelt, Auftrennung pip",
+   "gelesen_von": "mercy_weberin_behandelt, Musterbuch-Szene zu Pips",
    "hinweis": "",
    "typ": "bool",
    "werte": [

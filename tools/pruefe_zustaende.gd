@@ -155,7 +155,7 @@ func _teste_laufzeit() -> void:
 	# Werteprüfung erkennt Fehler
 	_erwarte(Zustaende.pruefe_wert("tauben", "vielleicht") != "", "ungültiger Wert wird erkannt")
 	_erwarte(Zustaende.pruefe_wert("malcolm_risse", 7) != "", "Zahl über dem Maximum wird erkannt")
-	_erwarte(Zustaende.pruefe_wert("weberin_herausgeschnitten", ["pip", "hazel", "dig"]) != "", "mehr als zwei Herausgeschnittene werden erkannt")
+	_erwarte(Zustaende.pruefe_wert("weberin_herausgeschnitten", ["pips", "hazel", "dig"]) != "", "mehr als zwei Herausgeschnittene werden erkannt")
 	_erwarte(Zustaende.pruefe_wert("weberin_herausgeschnitten", ["juno"]) != "", "außerhalb Geborene können nicht herausgeschnitten werden")
 	_erwarte(Zustaende.pruefe_wert("dig_in_gruppe", true) != "", "Setzen einer abgeleiteten Variable wird erkannt")
 	_erwarte(Zustaende.pruefe_einmal("dig_ausgang", "entfuehrt", "losgelassen") != "", "Änderung eines Ausgangs wird erkannt")

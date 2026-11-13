@@ -21,7 +21,7 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 1. **Pflicht-Lagerszenen:** Jeder Gefährte hat pro Akt eine Lagerszene bei der langen Rast im Unterschlupf. Sie lässt sich nicht verpassen. Wurde sie bis zum Aktende nicht gezeigt, wird sie im nächsten Akt nachgeholt (`<gefährte>_lagerszene`, `offene_lagerszenen()`). Die Einstiege der Gefährten sind solche Szenen, etwa Corvin mit seinem Notizbuch.
 2. **Zeitfenster über zwei Akte:** Ortsgebundene Kapitel verfallen erst nach dem zweiten Akt ihres Fensters (`verfaellt_nach_akt`). Beispiel: Den Taubenzüchter findet man in Hairlem oder, per Botentaube, in den Subfurs.
-3. **Mitwandernde Figuren:** Taubenzüchter, Pip, Captain Vale, Lucien und die Botin der Näherinnen ziehen mit, so wie Dammon in BG3.
+3. **Mitwandernde Figuren:** Taubenzüchter, Pips, Captain Vale, Lucien und die Botin der Näherinnen ziehen mit, so wie Dammon in BG3.
 4. **Hauptmomente auf dem Hauptweg:** Die wichtigen Szenen der Gefährten liegen an den Knotenpunkten jedes Akts, wo der Spieler ohnehin hinkommt.
 5. **„Verpasst“ nur für Nebenzweige:** Erst nach Ablauf des Fensters setzt `akt_wechseln()` ein offenes Kapitel auf `verpasst`. Das färbt den Ausgang, nimmt aber nie den Bogen weg.
 6. **Warnung vor dem Übergang:** Offene Kapitel werden als Kommentar der Gefährten angezeigt, wie in BG3.
@@ -87,7 +87,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | --- | --- | --- | --- | --- | --- | --- |
 | `dig_k2_wendung` | zurueckgeholt, verlassen | verlassen | Big Dig K2 (abhängig von dig_knoten) | dig_in_gruppe A2–A3 | 2 | einmal setzen |
 | `dig_fitz_einsicht` | ja, nein | nein | Bogen Big Dig/Fitz A3 | dig_ausgang (Voraussetzung neu_verknotet) | 3 |  |
-| `dig_pip_szenen` | 0–3 | 0 | Big Dig K3 Strand-Szenen | dig_ausgang | 3 |  |
+| `dig_pips_szenen` | 0–3 | 0 | Big Dig K3 Strand-Szenen | dig_ausgang | 3 |  |
 | `dig_ausgang` | neu_verknotet, entfuehrt, losgelassen | losgelassen | Big Dig K4 | Finale (Tunnel / fehlt / wendbar) | 4 | neu_verknotet braucht dig_fitz_einsicht UND (pip_szenen==3 ODER Musterbuch-Szene mit der Weberin); einmal setzen |
 
 ## Corvin
@@ -120,7 +120,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 
 | Variable | Werte | Standard | Gesetzt von | Gelesen von | Akt | Hinweis |
 | --- | --- | --- | --- | --- | --- | --- |
-| `weberin_herausgeschnitten` | pip, hazel, dig, corvin, shiner, knuckles, barkley, deltamae, mercy | leer | Weberin K4 (höchstens 2) | Finale (nicht wendbar), Hazel als Leitung, Pip, Epilog (keine Resonanz) | 4 | Herausgeschnittene sind unlenkbar und fühlen nie wieder mit. Nur in Meow York Geborene: nicht juno, nicht fitz |
+| `weberin_herausgeschnitten` | pips, hazel, dig, corvin, shiner, knuckles, barkley, deltamae, mercy | leer | Weberin K4 (höchstens 2) | Finale (nicht wendbar), Hazel als Leitung, Pips, Epilog (keine Resonanz) | 4 | Herausgeschnittene sind unlenkbar und fühlen nie wieder mit. Nur in Meow York Geborene: nicht juno, nicht fitz |
 | `weberin_luege_gestanden` | ja, nein | nein | Bogen Weberin/Corvin A3 oder Mercy-Akten | mercy_weberin_behandelt, Auftrennung pip | 3 |  |
 | `weberin_ausgang` | hueterin, zerstoererin, schneiderin | hueterin | Weberin K4 | Finale (liest Pfötchens Ketten), Ende ‚Wegsperren‘/‚Zerstörung‘ | 4 | einmal setzen |
 
@@ -218,6 +218,6 @@ Was wegfallen kann, ohne dass etwas bricht, falls die Zeit knapp wird:
 2. „Muster erkannt“ mit `held_hebel_genutzt`
 3. Nebenwirkungen der schlampigen Näherinnen
 4. Die graue Variante der Barkley-Befreiung
-5. Die dritte Strand-Szene mit Pip (`bigdig_pip_szenen` maximal 2)
+5. Die dritte Strand-Szene mit Pips (`bigdig_pips_szenen` maximal 2)
 
 Nicht streichbar, weil andere Bögen daran hängen: die Pflicht-Lagerszenen, `bigdig_fitz_einsicht`, `barkley_zweite_schlinge`, `juno_knoten_lager`, `weberin_luege_gestanden`, `fitz_weberin_trost`.

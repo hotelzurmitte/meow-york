@@ -270,7 +270,7 @@ Big Dig hieß einmal Douglas und war Tunnelbauer der städtischen U-Bahn, bis di
 
 Nach der Stilllegung blieb er in Hairlem hängen, arbeitete als Abrissmann, Türsteher, Möbelpacker. Er ist riesig für einen Maulwurf, langsam im Reden, schnell mit den Fäusten, und er hat ein Herz für Straßenkinder, die er nie zugeben würde.
 
-Eines dieser Kinder war **Pip**, ein kleiner Mäuserich, der vor zwei Jahren in seinem Keller auftauchte und blieb. Big Dig gab ihm Essen, ein Bett, Prügel für die, die Pip etwas taten. Aber er hielt Abstand. „Ich bin nicht dein Vater, Kleiner.“ Er sagte es oft, weil er Angst hatte, es doch zu sein. Er ging nie mit ihm zum Fluss, wie Pip es wollte. Er kam nie zu seinem Schulfest. Dann war Pip weg.
+Eines dieser Kinder war **Pips**, ein kleiner Mäuserich, der vor zwei Jahren in seinem Keller auftauchte und blieb. Big Dig gab ihm Essen, ein Bett, Prügel für die, die Pips etwas taten. Aber er hielt Abstand. „Ich bin nicht dein Vater, Kleiner.“ Er sagte es oft, weil er Angst hatte, es doch zu sein. Er ging nie mit ihm zum Fluss, wie Pips es wollte. Er kam nie zu seinem Schulfest. Dann war Pips weg.
 
 ### Persönlichkeit
 
@@ -281,22 +281,22 @@ Eines dieser Kinder war **Pip**, ein kleiner Mäuserich, der vor zwei Jahren in 
 
 ### Beweggründe
 
-- **Irdisch:** Pip finden. Er schließt sich dem Helden an, weil der auch jemanden sucht und weil der Neue sich in Hairlem garantiert umbringen lässt, wenn ihm keiner hilft.
+- **Irdisch:** Pips finden. Er schließt sich dem Helden an, weil der auch jemanden sucht und weil der Neue sich in Hairlem garantiert umbringen lässt, wenn ihm keiner hilft.
 - **Tiefer:** Wiedergutmachen, dass er nicht genug da war.
 
 ### Das Geheimnis (Vorschlag)
 
-Der Orden zieht Waisen so auf, dass sie Pfötchen lieben, als künftige Leitungen. Pip ist dort. Er ist glücklich und begegnet Big Dig mit höflicher Gleichgültigkeit.
+Der Orden zieht Waisen so auf, dass sie Pfötchen lieben, als künftige Leitungen. Pips ist dort. Er ist glücklich und begegnet Big Dig mit höflicher Gleichgültigkeit.
 
-Die bittere Wahrheit nach den Axiomen: Das Knäuel kann nichts erschaffen. Pips Liebe zu Pfötchen war vorher Pips Liebe zu Big Dig. Sie wurde verschoben. Und sie konnte verschoben werden, weil sie nie verknotet war, weil Big Dig nie mit ihm zum Fluss ging. Seine Schuld liegt nicht in einer Tat, sondern in all den Erlebnissen, die er vermieden hat.
+Die bittere Wahrheit nach den Axiomen: Das Knäuel kann nichts erschaffen. Pips' Liebe zu Pfötchen war vorher Pips' Liebe zu Big Dig. Sie wurde verschoben. Und sie konnte verschoben werden, weil sie nie verknotet war, weil Big Dig nie mit ihm zum Fluss ging. Seine Schuld liegt nicht in einer Tat, sondern in all den Erlebnissen, die er vermieden hat.
 
 ### Mögliche Entwicklungen
 
-**A. Neu verknoten.** Big Dig kann Pip nicht zwingen. Er kann nur endlich das tun, was er nie getan hat: Zeit mit ihm verbringen, Erlebnisse schaffen. Langsam, gegen Pfötchens Gegenzüge.
+**A. Neu verknoten.** Big Dig kann Pips nicht zwingen. Er kann nur endlich das tun, was er nie getan hat: Zeit mit ihm verbringen, Erlebnisse schaffen. Langsam, gegen Pfötchens Gegenzüge.
 
-**B. Der Gewendete.** In Akt 2 verschiebt Pfötchen Big Digs Trauer um Pip in Wut auf den Helden, weil der Held die Suche gefährdet hat. Big Dig ist der Gefährte, der sich gegen die Gruppe wendet. Er kommt zurück, aber nur, wenn der Spieler vorher Knoten mit ihm geknüpft hat.
+**B. Der Gewendete.** In Akt 2 verschiebt Pfötchen Big Digs Trauer um Pips in Wut auf den Helden, weil der Held die Suche gefährdet hat. Big Dig ist der Gefährte, der sich gegen die Gruppe wendet. Er kommt zurück, aber nur, wenn der Spieler vorher Knoten mit ihm geknüpft hat.
 
-**C. Loslassen.** Big Dig erkennt, dass Pip glücklich ist, und lässt ihn. Er schützt ihn aus der Ferne, wie zuvor.
+**C. Loslassen.** Big Dig erkennt, dass Pips glücklich ist, und lässt ihn. Er schützt ihn aus der Ferne, wie zuvor.
 
 | Variante | Tragik | Wendepunkt | Philosophie |
 | --- | --- | --- | --- |
@@ -304,7 +304,7 @@ Die bittere Wahrheit nach den Axiomen: Das Knäuel kann nichts erschaffen. Pips 
 | B. Der Gewendete | 4 | 5 | 3 |
 | C. Loslassen | 5 | 2 | 4 |
 
-**Empfehlung: B als Wendepunkt in Akt 2, A als Auflösung.** Big Dig ist der Gefährte, an dem der Spieler das Knotensystem fühlt. Er ist früh dabei, der Spieler mag ihn, und dann wird er gegen ihn gerichtet. Ob er zurückkehrt, hängt an den Knoten. Danach lernt Big Dig von sich selbst, was er an Pip versäumt hat. Der letzte Satz seines Bogens: „Ich bin nicht dein Vater. Aber ich bin da.“
+**Empfehlung: B als Wendepunkt in Akt 2, A als Auflösung.** Big Dig ist der Gefährte, an dem der Spieler das Knotensystem fühlt. Er ist früh dabei, der Spieler mag ihn, und dann wird er gegen ihn gerichtet. Ob er zurückkehrt, hängt an den Knoten. Danach lernt Big Dig von sich selbst, was er an Pips versäumt hat. Der letzte Satz seines Bogens: „Ich bin nicht dein Vater. Aber ich bin da.“
 
 ---
 
@@ -699,7 +699,7 @@ Was er nicht weiß: Er fliegt seit dem Umzug besser als je zuvor, weil die Menge
 
 | Figur | Irdischer Beweggrund | Tieferer Beweggrund | Neigt zum Ende |
 | --- | --- | --- | --- |
-| Big Dig | Pip finden | Wiedergutmachen, was er versäumt hat | Verknotung |
+| Big Dig | Pips finden | Wiedergutmachen, was er versäumt hat | Verknotung |
 | Corvin | Geld, zurück in den Dienst | Eine Ausrede suchen und sie nicht finden | Zerstörung |
 | Shiner | Ruhm, Ehre der Crew | Echtheit ihrer Kunst | Verknotung |
 | Knuckles | Schulden, Frieden | Familie vor sich selbst schützen | Verknotung |
@@ -752,4 +752,4 @@ Ab Akt 2 spürt Pfötchen, dass sein Sohn lebt. Bald weiß er auch, dass er Freu
 4. **Der Preis trifft Hazel.** Jede Verschiebung fließt durch seine Leitung. Mitten in Wahlkampf und Unruhen kann er sich ihren Zusammenbruch nicht leisten. Ist die Weberin übergelaufen, pflegt er außerdem blind: Teure Verschiebungen spinnt das Leben zurück, und jeder Weg kostet ihn mehr Zeit.
 5. **Er greift das Umfeld an, nicht die Gruppe.** Er hetzt die Stadt gegen die Gefährten: Kopfgeld, Gerüchte, Hass. Er will sie zu Ausgestoßenen machen, damit der Sohn keinen anderen Ort hat als den Orden. Ironischerweise schweißt genau das die Gruppe zusammen und schafft die Knoten, die ihn später aussperren.
 
-**Im Spiel:** Pfötchen versucht es trotzdem, einmal gezielt in Akt 2 mit Big Dig, dessen Trauer um Pip ungeschützt liegt. Der Versuch soll den Sohn zermürben, nicht die Gruppe zerstören. Dass er nicht dauerhaft wirkt, wenn der Spieler Knoten geknüpft hat, wird Teil von Pfötchens Verzweiflung im Finale. Dort setzt er alles auf einmal ein, weil ihm nichts anderes mehr bleibt.
+**Im Spiel:** Pfötchen versucht es trotzdem, einmal gezielt in Akt 2 mit Big Dig, dessen Trauer um Pips ungeschützt liegt. Der Versuch soll den Sohn zermürben, nicht die Gruppe zerstören. Dass er nicht dauerhaft wirkt, wenn der Spieler Knoten geknüpft hat, wird Teil von Pfötchens Verzweiflung im Finale. Dort setzt er alles auf einmal ein, weil ihm nichts anderes mehr bleibt.

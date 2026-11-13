@@ -140,7 +140,7 @@ Die Beispielsätze sind Tonproben, keine fertigen Dialogzeilen. Sie sollen zeige
 | **Malcolm** | Wenn jemand ihn wirklich meint, nicht seine Rolle | Er verliert die Ironie und weiß nicht, womit er sie ersetzen soll. Wird still, fast unhöflich | Er lässt die Stille stehen, statt sie mit Charme zu füllen |
 | **Hazel** | Wenn sie die Wahrheit über Pfötchen erfährt | Keine Aufzählungen mehr. Ein einziger Satz, dann Schweigen | Sie hält öffentlich eine Rede ohne Struktur, nur ehrlich |
 | **Juno** | Wenn die Kindheit durchbricht | Die Ordenssprache fällt weg, sie redet wie mit zwölf | Sie findet eine eigene Sprache zwischen beiden |
-| **Big Dig** | Wenn es um Pip geht | Er wird nicht leiser, sondern gesprächiger. Er redet zu viel, um nicht zu weinen | Am Ende sagt er das Wichtige in einem Satz |
+| **Big Dig** | Wenn es um Pips geht | Er wird nicht leiser, sondern gesprächiger. Er redet zu viel, um nicht zu weinen | Am Ende sagt er das Wichtige in einem Satz |
 | **Corvin** | Wenn er an Rook denkt oder einem Opfer gegenübersteht | Kein Noir, keine Vergleiche. Schlichte, fast kindliche Sätze | Er gibt das Erzählen über sich selbst auf und sagt „Ich war das“ |
 | **Shiner** | Bei einer Niederlage, die sie wirklich trifft | Sie sagt nichts. Kein Spruch, keine Revanche. Sie geht weg und klettert allein | Später verliert sie vor anderen und bleibt stehen |
 | **Knuckles** | Wenn ihre Familie zerbricht | Sie redet mehr als sonst, schnell und durcheinander. Die Ruhe war ihr Halt | Sie bittet zum ersten Mal selbst um Hilfe |
@@ -181,13 +181,13 @@ Die Beispielsätze sind Tonproben, keine fertigen Dialogzeilen. Sie sollen zeige
 | Corvin und Fitz | Was bedeutet „fliegen“? Ein Streit, der das ganze Spiel durchzieht | Running Gag. Am Ende gibt Corvin ihm recht, nur ein einziges Mal |
 | Shiner und Delta Mae | Zwei Bühnenmenschen, die beide der Star sein wollen | Rivalität, die in einem gemeinsamen Auftritt endet |
 | Mercy und die Weberin | Die Heilerin, die den Schaden behandelt hat, und die Frau, die ihn verursacht hat | Mercy vergibt nicht schnell. Sie verlangt Wiedergutmachung durch Taten |
-| Big Dig und Mercy | Pip lebt in einem Ordenswaisenhaus, Mercy hat für den Orden gearbeitet | Sie hilft ihm, Pip zu sehen, ohne dass der Orden es merkt |
+| Big Dig und Mercy | Pips lebt in einem Ordenswaisenhaus, Mercy hat für den Orden gearbeitet | Sie hilft ihm, Pips zu sehen, ohne dass der Orden es merkt |
 
 ### Zuneigungen
 
 | Paar | Worum es geht | Entwicklung |
 | --- | --- | --- |
-| Big Dig und Fitz | Der Brummbär und das Kind, das er nie haben wollte. Fitz klettert auf ihn wie auf einen Baum | Was Big Dig bei Pip versäumt hat, holt er bei Fitz nach, ohne es zu merken |
+| Big Dig und Fitz | Der Brummbär und das Kind, das er nie haben wollte. Fitz klettert auf ihn wie auf einen Baum | Was Big Dig bei Pips versäumt hat, holt er bei Fitz nach, ohne es zu merken |
 | Barkley und Fitz | Der Alte, der achtzig Jahre verloren hat, und der Junge, der jeden Tag ausschöpft. Barkley hält ihn für eine Prüfung Gottes | Fitz bringt Barkley das Lachen bei, Barkley bringt Fitz bei, wann man ernst sein muss |
 | Knuckles und Big Dig | Zwei wortkarge Kraftpakete, die sich ohne Worte verstehen | Gemeinsames Schweigen am Feuer. Die ruhigste Freundschaft im Spiel |
 | Shiner und Corvin | Sie klettert, er fliegt. Beide kennen die Dächer | Wettbewerb über den Dächern, aus dem Freundschaft wird |

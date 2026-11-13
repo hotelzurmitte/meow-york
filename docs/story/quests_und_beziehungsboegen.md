@@ -44,7 +44,7 @@ Lagerszenen werden ortsunabhängig geschrieben. Der Ort kommt nur in einer austa
 Statt Möbeln, die nur an einem Ort stehen, haben die Figuren tragbare Dinge. Sie sind die Requisiten der Lagerszenen und erzählen den Bogen mit.
 
 - **Corvin:** ein abgegriffenes Notizbuch, in das Rooks Foto eingeklebt ist. Die Pinnwand bleibt in seinem Büro in Hairlem. Er schreibt das ganze Spiel über Einträge hinein. Nach „Ganze Wahrheit“ lautet der letzte: „Ich war das.“
-- **Big Dig:** Pips Zeichnung vom Tunnel mit den zwei Figuren, ab Akt 2, immer zusammengefaltet in der Brusttasche.
+- **Big Dig:** Pips' Zeichnung vom Tunnel mit den zwei Figuren, ab Akt 2, immer zusammengefaltet in der Brusttasche.
 - **Shiner:** ein Skizzenbuch voller Entwürfe für das größte Bild der Stadt.
 - **Knuckles:** eine Werkzeugrolle. Sie repariert nebenbei, was die anderen kaputt machen.
 - **Die Weberin:** Strickzeug, die Abschrift des Musterbuchs und ab Akt 3 die Dose mit dem Faden.
@@ -62,7 +62,7 @@ Die Einstiege der Gefährten sind solche Pflichtszenen. Corvin zum Beispiel holt
 ### Zeitfenster und mitwandernde Figuren
 
 - **Ortsgebundene Kapitel haben ein Fenster über zwei Akte.** Wer den Taubenzüchter in Hairlem nicht findet, bekommt in den Subfurs eine Botentaube.
-- **Schlüsselfiguren wandern mit**, wie Dammon in BG3: der Taubenzüchter, Pip, Captain Vale, Lucien und die Botin der Näherinnen.
+- **Schlüsselfiguren wandern mit**, wie Dammon in BG3: der Taubenzüchter, Pips, Captain Vale, Lucien und die Botin der Näherinnen.
 - **Die Hauptmomente der Gefährten liegen auf dem Hauptweg**, an den Knotenpunkten jedes Akts: Cuckoo's Nest, Delta Maes Station, das Lager auf Boney Island, der Tempel.
 - **„Verpasst“ gibt es nur für Nebenzweige.** Sie färben den Ausgang, nehmen aber nie den Bogen weg.
 
@@ -75,31 +75,31 @@ Die Einstiege der Gefährten sind solche Pflichtszenen. Corvin zum Beispiel holt
 
 ## Big Dig: „Der Junge mit den Tunnelträumen“
 
-**Auslöser (Akt 1):** Big Dig sucht Pip, seit drei Wochen. Er schließt sich dem Helden an, weil auch der jemanden sucht.
+**Auslöser (Akt 1):** Big Dig sucht Pips, seit drei Wochen. Er schließt sich dem Helden an, weil auch der jemanden sucht.
 
 **Stationen:**
 
-- **Akt 1, Hairlem:** Spuren im Viertel. Pip wurde zuletzt bei einer Armenspeisung des Ordens gesehen. Ein Nachbarskind erzählt, Pip habe gesagt, er habe „endlich einen Vater gefunden“. Big Dig versteht das als Entführung.
-- **Akt 2, The Subfurs (Wendepunkt):** Big Dig findet ein Kinderbild von Pip, ein Tunnel mit zwei Figuren. Pfötchen nutzt den Moment. Über einen alten Kollegen Big Digs als Zwischenperson verschiebt er dessen Trauer in Wut auf den Helden: Der Fremde habe die Suche aufgehalten, nur für seine Schwester. Big Dig wendet sich gegen die Gruppe.
+- **Akt 1, Hairlem:** Spuren im Viertel. Pips wurde zuletzt bei einer Armenspeisung des Ordens gesehen. Ein Nachbarskind erzählt, Pips habe gesagt, er habe „endlich einen Vater gefunden“. Big Dig versteht das als Entführung.
+- **Akt 2, The Subfurs (Wendepunkt):** Big Dig findet ein Kinderbild von Pips, ein Tunnel mit zwei Figuren. Pfötchen nutzt den Moment. Über einen alten Kollegen Big Digs als Zwischenperson verschiebt er dessen Trauer in Wut auf den Helden: Der Fremde habe die Suche aufgehalten, nur für seine Schwester. Big Dig wendet sich gegen die Gruppe.
   - Mit genug Knoten erkennt der Held die Spuren (Gefühlssprung ohne Anlass) und kann Big Dig zurückholen, im Gespräch oder im Kampf.
   - Ohne Knoten verlässt Big Dig die Gruppe und kehrt erst auf Boney Island zurück, verletzt und beschämt.
-- **Akt 3, Boney Island:** Pip ist im Lazarettzelt von Schwester Mercy. Er schläft schlecht, wacht nachts auf und legt sich auf den nackten Boden, als würde er auf etwas horchen. Mercy hält es für Heimweh. Es ist die Leere an der Stelle, an der seine Liebe zu Big Dig saß. Pip begegnet Big Dig höflich und gleichgültig.
-- **Akt 3, Knotenmoment:** Big Dig kann Pip nicht zwingen. Er kann nur endlich das tun, was er nie getan hat. Er nimmt ihn mit zum Strand, gräbt mit ihm, erzählt von Gertrud. Ob daraus ein Knoten wird, hängt an mehreren kleinen Szenen, die der Spieler ermöglichen muss.
-- **Akt 4, Cathattan:** Pip soll ins Ordenswaisenhaus am Tempel gebracht werden, als künftige Leitung.
+- **Akt 3, Boney Island:** Pips ist im Lazarettzelt von Schwester Mercy. Er schläft schlecht, wacht nachts auf und legt sich auf den nackten Boden, als würde er auf etwas horchen. Mercy hält es für Heimweh. Es ist die Leere an der Stelle, an der seine Liebe zu Big Dig saß. Pips begegnet Big Dig höflich und gleichgültig.
+- **Akt 3, Knotenmoment:** Big Dig kann Pips nicht zwingen. Er kann nur endlich das tun, was er nie getan hat. Er nimmt ihn mit zum Strand, gräbt mit ihm, erzählt von Gertrud. Ob daraus ein Knoten wird, hängt an mehreren kleinen Szenen, die der Spieler ermöglichen muss.
+- **Akt 4, Cathattan:** Pips soll ins Ordenswaisenhaus am Tempel gebracht werden, als künftige Leitung.
 
-**Entscheidung:** Pip gegen seinen Willen aus dem Waisenhaus holen, ihn dort lassen und aus der Ferne schützen oder ihn selbst wählen lassen, nachdem genug Knoten geknüpft sind.
+**Entscheidung:** Pips gegen seinen Willen aus dem Waisenhaus holen, ihn dort lassen und aus der Ferne schützen oder ihn selbst wählen lassen, nachdem genug Knoten geknüpft sind.
 
 **Ausgänge:**
 
-- **Neu verknotet:** Pip entscheidet sich für Big Dig. Er erinnert sich nicht an das Verschobene, aber er hat Neues erlebt.
-- **Entführt:** Pip ist in Sicherheit, aber er hasst Big Dig dafür. Big Dig hat ihn gerettet und verloren.
-- **Losgelassen:** Pip bleibt beim Orden. Big Dig bewacht das Waisenhaus von unten, durch die Erde.
+- **Neu verknotet:** Pips entscheidet sich für Big Dig. Er erinnert sich nicht an das Verschobene, aber er hat Neues erlebt.
+- **Entführt:** Pips ist in Sicherheit, aber er hasst Big Dig dafür. Big Dig hat ihn gerettet und verloren.
+- **Losgelassen:** Pips bleibt beim Orden. Big Dig bewacht das Waisenhaus von unten, durch die Erde.
 
-**Rolle im Finale:** Bei „Neu verknotet“ hält Big Dig den Tunnel unter dem Tempel offen, durch den die Gruppe eindringt. Bei „Entführt“ fehlt er im Finale, weil er Pip vor dem Orden versteckt. Bei „Losgelassen“ ist er der erste Gefährte, den Pfötchen gegen den Helden richten kann, denn seine Bindung zu Pip läuft jetzt über den Orden.
+**Rolle im Finale:** Bei „Neu verknotet“ hält Big Dig den Tunnel unter dem Tempel offen, durch den die Gruppe eindringt. Bei „Entführt“ fehlt er im Finale, weil er Pips vor dem Orden versteckt. Bei „Losgelassen“ ist er der erste Gefährte, den Pfötchen gegen den Helden richten kann, denn seine Bindung zu Pips läuft jetzt über den Orden.
 
 **Unschöne Seite:** In Akt 1 verprügelt Big Dig einen Ordensbruder, der nichts weiß, nur weil er Weiß trägt. Der Spieler kann ihn anstacheln oder stoppen.
 
-**Kreuzungen:** Mercy (Pip ist ihr Patient) · Fitz (Big Dig holt an ihm nach, was er bei Pip versäumt hat) · Hazel (Big Dig arbeitet als Abrissmann für ihr Wohnungsprogramm und hält sie für die einzige ehrliche Politikerin)
+**Kreuzungen:** Mercy (Pips ist ihr Patient) · Fitz (Big Dig holt an ihm nach, was er bei Pips versäumt hat) · Hazel (Big Dig arbeitet als Abrissmann für ihr Wohnungsprogramm und hält sie für die einzige ehrliche Politikerin)
 
 ---
 
@@ -206,7 +206,7 @@ Die Einstiege der Gefährten sind solche Pflichtszenen. Corvin zum Beispiel holt
 
 **Entscheidung:** Wen schneidet sie heraus? Höchstens zwei, bevor die Ordensgarde kommt. Wer herausgeschnitten ist, kann von Pfötchen nie mehr gelenkt werden, fühlt aber auch nie wieder mit, so wie der Held. Möglich sind nur Menschen, die in Meow York geboren sind:
 
-- **Pip:** Er wird nie Pfötchens Leitung. Aber er wird Big Dig nie mitfühlen können.
+- **Pips:** Er wird nie Pfötchens Leitung. Aber er wird Big Dig nie mitfühlen können.
 - **Hazel:** Pfötchen verliert seine Leitung im entscheidenden Moment. Hazel verliert die Gabe, die die Presse an ihr feiert.
 - **Ein Gefährte:** Er kann im Finale nicht gegen den Helden gewendet werden, und er bezahlt mit der Resonanz.
 - **Niemand:** Sie weigert sich, Pfötchens Tat zu wiederholen.
@@ -223,7 +223,7 @@ Juno und Fitz kann sie nicht herausschneiden, weil beide außerhalb von Meow Yor
 
 **Unschöne Seite:** Selbstschutz. Sie behauptet lange, Malcolms Aushöhlung sei allein Pfötchens Schuld. Erst Mercys Krankenakten oder Corvins Ermittlung zwingen sie zuzugeben, dass sie die Wege durch ihn berechnet hat.
 
-**Kreuzungen:** Malcolm (sie kannte ihn als Kind) · Juno (sie hat den Weg zu ihr berechnet) · Corvin (Musterbuch) · Barkley (das System, das ihn gefangen hielt) · Mercy (die Heilerin, die den Schaden behandelt hat) · Big Dig (Pip) · Hazel (Leitung)
+**Kreuzungen:** Malcolm (sie kannte ihn als Kind) · Juno (sie hat den Weg zu ihr berechnet) · Corvin (Musterbuch) · Barkley (das System, das ihn gefangen hielt) · Mercy (die Heilerin, die den Schaden behandelt hat) · Big Dig (Pips) · Hazel (Leitung)
 
 ---
 
@@ -290,7 +290,7 @@ Juno und Fitz kann sie nicht herausschneiden, weil beide außerhalb von Meow Yor
 
 **Stationen:**
 
-- **Akt 3, das Zelt:** Mercy zeigt ihre Notizen: Gläubige mit Leere an anderer Stelle, junge Menschen mit rätselhafter Erschöpfung. Ein Patient ist Pip. Eine regelmäßige Besucherin ist Juno, die nach jeder Rede mit Kopfschmerzen kommt. Mercy ahnt, dass Junos Zerrissenheit kein Kopfschmerz ist.
+- **Akt 3, das Zelt:** Mercy zeigt ihre Notizen: Gläubige mit Leere an anderer Stelle, junge Menschen mit rätselhafter Erschöpfung. Ein Patient ist Pips. Eine regelmäßige Besucherin ist Juno, die nach jeder Rede mit Kopfschmerzen kommt. Mercy ahnt, dass Junos Zerrissenheit kein Kopfschmerz ist.
 - **Akt 3, Wendepunkt:** Der Lagerprediger befiehlt Mercy, zweifelnde Gläubige mit Beruhigungsmitteln „zur Ruhe zu bringen“, damit sie die nächste Predigt aufnehmen. Mercy weigert sich und flieht mit ihren Akten.
 - **Akt 3, unschöner Moment:** Die Weberin ist verletzt. Mercy weigert sich zuerst, sie zu behandeln: „Du hast genug Wunden verursacht.“ Der Spieler kann sie umstimmen oder ihr recht geben.
 - **Akt 4, Cathattan:** Mercy will ihre Akten vor dem Ordensrat vorlegen, nicht vor dem Rathaus. Sie glaubt, dass der Orden sich selbst reinigen muss.
@@ -307,7 +307,7 @@ Juno und Fitz kann sie nicht herausschneiden, weil beide außerhalb von Meow Yor
 
 **Unschöne Seite:** Unbarmherziges Urteilen. Sie hält Juno für mitschuldig, weil sie mit Überzeugung predigt, und sagt es ihr ins Gesicht.
 
-**Kreuzungen:** Big Dig (Pip) · Juno (Patientin) · Weberin (Schuld) · Knuckles (Fürsorge) · Pfötchen (Glaube gegen Glaube) · Hazel (die Akten)
+**Kreuzungen:** Big Dig (Pips) · Juno (Patientin) · Weberin (Schuld) · Knuckles (Fürsorge) · Pfötchen (Glaube gegen Glaube) · Hazel (die Akten)
 
 ---
 
@@ -355,10 +355,10 @@ Jeder Bogen hat eine **Ausgangslage**, einen **Wendepunkt**, der an einen Quest-
 - **Wirkt auf:** Mercy beobachtet, dass Barkley der Weberin eine Chance gibt, und überdenkt ihre eigene Härte.
 
 ### Big Dig und Fitz · Brummbär → Ersatzvater
-- **Ausgangslage:** Fitz klettert auf Big Dig wie auf einen Baum. Big Dig knurrt: „Ich bin nicht dein Vater, Kleiner.“ Derselbe Satz wie bei Pip.
-- **Wendepunkt (Akt 3):** Nachdem Pip ihn gleichgültig abgewiesen hat, ist Big Dig zu Fitz hart und verletzend. Fitz antwortet nicht. Er setzt sich einfach neben ihn und bleibt (Stimmbruch von Fitz).
+- **Ausgangslage:** Fitz klettert auf Big Dig wie auf einen Baum. Big Dig knurrt: „Ich bin nicht dein Vater, Kleiner.“ Derselbe Satz wie bei Pips.
+- **Wendepunkt (Akt 3):** Nachdem Pips ihn gleichgültig abgewiesen hat, ist Big Dig zu Fitz hart und verletzend. Fitz antwortet nicht. Er setzt sich einfach neben ihn und bleibt (Stimmbruch von Fitz).
 - **Veränderung:** Big Dig erkennt, dass er dabei ist, denselben Fehler zu wiederholen.
-- **Wirkt auf:** Diese Einsicht macht den Ausgang „Neu verknotet“ bei Pip erst möglich. Ohne den Bogen mit Fitz findet Big Dig keinen Zugang zu Pip.
+- **Wirkt auf:** Diese Einsicht macht den Ausgang „Neu verknotet“ bei Pips erst möglich. Ohne den Bogen mit Fitz findet Big Dig keinen Zugang zu Pips.
 
 ### Barkley und Fitz · Prüfung Gottes → zweite Liebe
 - **Ausgangslage:** Fitz nervt Barkley mit allem, was jung ist.
@@ -387,12 +387,12 @@ Jeder Bogen hat eine **Ausgangslage**, einen **Wendepunkt**, der an einen Quest-
 ### Mercy und die Weberin · Verurteilung → Wiedergutmachung
 - **Ausgangslage:** Mercy verweigert ihr die Behandlung.
 - **Wendepunkt (Akt 3/4):** Die Weberin gesteht, dass sie die Wege durch Malcolm berechnet hat, nicht nur Pfötchen ist schuld. Mercy behandelt sie, aber sie verlangt eine Tat.
-- **Veränderung:** Die Weberin schlägt das Musterbuch für Big Dig auf: Dort steht, woher Pips Liebe genommen wurde und welche gemeinsamen Momente fehlten. Damit weiß Big Dig, welche Erlebnisse er nachholen muss.
-- **Wirkt auf:** Big Digs Quest. Mit diesem Wissen wird „Neu verknotet“ leichter. Und es stellt die Frage, ob sie Pip herausschneiden soll, um ihn zu schützen.
+- **Veränderung:** Die Weberin schlägt das Musterbuch für Big Dig auf: Dort steht, woher Pips' Liebe genommen wurde und welche gemeinsamen Momente fehlten. Damit weiß Big Dig, welche Erlebnisse er nachholen muss.
+- **Wirkt auf:** Big Digs Quest. Mit diesem Wissen wird „Neu verknotet“ leichter. Und es stellt die Frage, ob sie Pips herausschneiden soll, um ihn zu schützen.
 
 ### Big Dig und Mercy · Verdacht → Verbündete
 - **Ausgangslage:** Mercy trägt Weiß. Big Dig hat in Akt 1 schon einmal jemanden in Weiß verprügelt.
-- **Wendepunkt (Akt 3):** Mercy lässt ihn nachts zu Pip, gegen ihre Vorschriften.
+- **Wendepunkt (Akt 3):** Mercy lässt ihn nachts zu Pips, gegen ihre Vorschriften.
 - **Veränderung:** Big Dig betet zum ersten Mal mit ihr, unbeholfen, zur Erde.
 - **Wirkt auf:** Mercys Bruch mit dem Lager kommt früher, weil sie schon einmal eine Regel gebrochen hat.
 
@@ -463,12 +463,12 @@ Malcolm, Juno und Hazel sind keine Gefährten. Sie bekommen keine Pflicht aus Re
 
 Die wichtigsten Ketten, bei denen eine Entscheidung mehrere Bögen verschiebt:
 
-1. **Big Dig und Fitz → Pip.** Ohne die Einsicht am Lagerfeuer gibt es kein „Neu verknotet“.
+1. **Big Dig und Fitz → Pips.** Ohne die Einsicht am Lagerfeuer gibt es kein „Neu verknotet“.
 2. **Fitz oder Delta Mae → Barkley → Finale.** Wer Barkleys zweite Schlinge wird, über den kann Pfötchen ihn im Finale greifen.
 3. **Näherinnen befreit → Unruhen → Hazel.** Pfötchen pflegt blind, teure Verschiebungen spinnt der Alltag zurück, und das schwächt Hazel früher. Pfötchen lenkt den Zorn eher auf sie, und Benny gerät in Gefahr.
 4. **Shiner oder Delta Mae auf Boney Island → Juno.** Jeder Auftritt für das Lager knotet die Gläubigen stärker, auch Juno. Was sie im Lager gemeinsam erlebt, ist verknotet und schützt ihre Bindung an den Orden. Dann wird ihr Bogen schwerer.
 5. **Barkley tötet Vale → Rook.** Ohne Prozess gegen Vale bleibt Rooks Unschuld schwer beweisbar. „Keine Wahrheit“ wird für Corvin wahrscheinlicher.
-6. **Corvin gesteht der Weberin ihre Lüge ab → Mercy → Pip.** Erst ihr Geständnis führt dazu, dass sie Big Dig das Musterbuch zu Pip aufschlägt.
+6. **Corvin gesteht der Weberin ihre Lüge ab → Mercy → Pips.** Erst ihr Geständnis führt dazu, dass sie Big Dig das Musterbuch zu Pips aufschlägt.
 7. **Mercy gibt Hazel die Akten → Hazel → Pfötchen.** Hazel weiß früher Bescheid. Pfötchen verliert seine Leitung, bevor er sie opfern kann.
 
 ---
@@ -485,7 +485,7 @@ Der Held fühlt nicht mit, aber er liest Muster. Deshalb erkennt er Beziehungen 
 
 **Beispiele:**
 
-- Big Dig nennt Fitz „Kleiner“, wie früher Pip. Der Held merkt es vor Big Dig.
+- Big Dig nennt Fitz „Kleiner“, wie früher Pips. Der Held merkt es vor Big Dig.
 - Knuckles verlagert ihr Gewicht, wenn sie lügt. Big Dig spürt es, der Held sieht es.
 - Corvin fliegt immer dort, wo Shiner klettert, und behauptet, es sei Zufall.
 - Juno nennt ihn bei einem Spitznamen aus der Kindheit und erschrickt. Der Held erkennt, dass der Knoten hält.
@@ -506,8 +506,8 @@ Die Gruppe hat bis zu vier Figuren inklusive Held, also drei Gefährten. Szenen 
 | Junos Rede (Akt 3) | Fitz | Juno sieht ihn und verhaspelt sich |
 | | Mercy | Mercy verurteilt sie laut und Juno verschließt sich, oder Mercy schweigt, wenn ihr Bogen weiter ist |
 | | Delta Mae | Sie singt danach etwas, das Juno zum Weinen bringt |
-| Pip im Lazarett (Akt 3) | Mercy | Sie erklärt seine Symptome. Fadensicht wird möglich |
-| | Fitz | Pip mag Fitz sofort. Big Dig ist eifersüchtig |
+| Pips im Lazarett (Akt 3) | Mercy | Sie erklärt seine Symptome. Fadensicht wird möglich |
+| | Fitz | Pips mag Fitz sofort. Big Dig ist eifersüchtig |
 | Vale an der Brücke (Akt 4) | Corvin und Barkley | Gemeinsame Konfrontation, nur so ist ein Prozess möglich |
 | | nur Barkley | Er greift sofort an |
 | | nur Corvin | Vale versucht ihn zu erpressen, mit dem Fall Rook |
