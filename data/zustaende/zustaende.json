@@ -325,7 +325,7 @@
     "hoch"
    ],
    "standard": "mittel",
-   "abgeleitet": "GameState.zuneigung[\"dig\"]: < -3 niedrig, > 5 hoch",
+   "abgeleitet": "GameState.zuneigung[\"dig\"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe",
    "akt": "alle",
    "gesetzt_von": "Gefährten-Reaktionen",
    "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
@@ -333,16 +333,15 @@
   },
   {
    "name": "dig_knoten",
-   "typ": "bool",
-   "werte": [
-    true,
-    false
-   ],
-   "standard": false,
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0,
+   "abgeleitet": "dig_knoetchen / 3 (abgerundet)",
    "akt": "alle",
-   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
-   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
-   "hinweis": ""
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase",
+   "hinweis": "Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist"
   },
   {
    "name": "dig_beigetreten",
@@ -391,7 +390,7 @@
     "hoch"
    ],
    "standard": "mittel",
-   "abgeleitet": "GameState.zuneigung[\"corvin\"]: < -3 niedrig, > 5 hoch",
+   "abgeleitet": "GameState.zuneigung[\"corvin\"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe",
    "akt": "alle",
    "gesetzt_von": "Gefährten-Reaktionen",
    "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
@@ -399,16 +398,15 @@
   },
   {
    "name": "corvin_knoten",
-   "typ": "bool",
-   "werte": [
-    true,
-    false
-   ],
-   "standard": false,
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0,
+   "abgeleitet": "corvin_knoetchen / 3 (abgerundet)",
    "akt": "alle",
-   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
-   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
-   "hinweis": ""
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase",
+   "hinweis": "Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist"
   },
   {
    "name": "corvin_beigetreten",
@@ -457,7 +455,7 @@
     "hoch"
    ],
    "standard": "mittel",
-   "abgeleitet": "GameState.zuneigung[\"shiner\"]: < -3 niedrig, > 5 hoch",
+   "abgeleitet": "GameState.zuneigung[\"shiner\"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe",
    "akt": "alle",
    "gesetzt_von": "Gefährten-Reaktionen",
    "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
@@ -465,16 +463,15 @@
   },
   {
    "name": "shiner_knoten",
-   "typ": "bool",
-   "werte": [
-    true,
-    false
-   ],
-   "standard": false,
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0,
+   "abgeleitet": "shiner_knoetchen / 3 (abgerundet)",
    "akt": "alle",
-   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
-   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
-   "hinweis": ""
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase",
+   "hinweis": "Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist"
   },
   {
    "name": "shiner_beigetreten",
@@ -523,7 +520,7 @@
     "hoch"
    ],
    "standard": "mittel",
-   "abgeleitet": "GameState.zuneigung[\"knuckles\"]: < -3 niedrig, > 5 hoch",
+   "abgeleitet": "GameState.zuneigung[\"knuckles\"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe",
    "akt": "alle",
    "gesetzt_von": "Gefährten-Reaktionen",
    "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
@@ -531,16 +528,15 @@
   },
   {
    "name": "knuckles_knoten",
-   "typ": "bool",
-   "werte": [
-    true,
-    false
-   ],
-   "standard": false,
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0,
+   "abgeleitet": "knuckles_knoetchen / 3 (abgerundet)",
    "akt": "alle",
-   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
-   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
-   "hinweis": ""
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase",
+   "hinweis": "Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist"
   },
   {
    "name": "knuckles_beigetreten",
@@ -589,7 +585,7 @@
     "hoch"
    ],
    "standard": "mittel",
-   "abgeleitet": "GameState.zuneigung[\"weberin\"]: < -3 niedrig, > 5 hoch",
+   "abgeleitet": "GameState.zuneigung[\"weberin\"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe",
    "akt": "alle",
    "gesetzt_von": "Gefährten-Reaktionen",
    "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
@@ -597,16 +593,15 @@
   },
   {
    "name": "weberin_knoten",
-   "typ": "bool",
-   "werte": [
-    true,
-    false
-   ],
-   "standard": false,
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0,
+   "abgeleitet": "weberin_knoetchen / 3 (abgerundet)",
    "akt": "alle",
-   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
-   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
-   "hinweis": ""
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase",
+   "hinweis": "Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist"
   },
   {
    "name": "weberin_beigetreten",
@@ -655,7 +650,7 @@
     "hoch"
    ],
    "standard": "mittel",
-   "abgeleitet": "GameState.zuneigung[\"barkley\"]: < -3 niedrig, > 5 hoch",
+   "abgeleitet": "GameState.zuneigung[\"barkley\"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe",
    "akt": "alle",
    "gesetzt_von": "Gefährten-Reaktionen",
    "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
@@ -663,16 +658,15 @@
   },
   {
    "name": "barkley_knoten",
-   "typ": "bool",
-   "werte": [
-    true,
-    false
-   ],
-   "standard": false,
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0,
+   "abgeleitet": "barkley_knoetchen / 3 (abgerundet)",
    "akt": "alle",
-   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
-   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
-   "hinweis": ""
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase",
+   "hinweis": "Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist"
   },
   {
    "name": "barkley_beigetreten",
@@ -721,7 +715,7 @@
     "hoch"
    ],
    "standard": "mittel",
-   "abgeleitet": "GameState.zuneigung[\"deltamae\"]: < -3 niedrig, > 5 hoch",
+   "abgeleitet": "GameState.zuneigung[\"deltamae\"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe",
    "akt": "alle",
    "gesetzt_von": "Gefährten-Reaktionen",
    "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
@@ -729,16 +723,15 @@
   },
   {
    "name": "deltamae_knoten",
-   "typ": "bool",
-   "werte": [
-    true,
-    false
-   ],
-   "standard": false,
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0,
+   "abgeleitet": "deltamae_knoetchen / 3 (abgerundet)",
    "akt": "alle",
-   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
-   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
-   "hinweis": ""
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase",
+   "hinweis": "Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist"
   },
   {
    "name": "deltamae_beigetreten",
@@ -787,7 +780,7 @@
     "hoch"
    ],
    "standard": "mittel",
-   "abgeleitet": "GameState.zuneigung[\"mercy\"]: < -3 niedrig, > 5 hoch",
+   "abgeleitet": "GameState.zuneigung[\"mercy\"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe",
    "akt": "alle",
    "gesetzt_von": "Gefährten-Reaktionen",
    "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
@@ -795,16 +788,15 @@
   },
   {
    "name": "mercy_knoten",
-   "typ": "bool",
-   "werte": [
-    true,
-    false
-   ],
-   "standard": false,
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0,
+   "abgeleitet": "mercy_knoetchen / 3 (abgerundet)",
    "akt": "alle",
-   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
-   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
-   "hinweis": ""
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase",
+   "hinweis": "Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist"
   },
   {
    "name": "mercy_beigetreten",
@@ -853,7 +845,7 @@
     "hoch"
    ],
    "standard": "mittel",
-   "abgeleitet": "GameState.zuneigung[\"fitz\"]: < -3 niedrig, > 5 hoch",
+   "abgeleitet": "GameState.zuneigung[\"fitz\"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe",
    "akt": "alle",
    "gesetzt_von": "Gefährten-Reaktionen",
    "gelesen_von": "Quest-Ausgänge, Romanzen, Finale",
@@ -861,16 +853,15 @@
   },
   {
    "name": "fitz_knoten",
-   "typ": "bool",
-   "werte": [
-    true,
-    false
-   ],
-   "standard": false,
+   "typ": "int",
+   "min": 0,
+   "max": 3,
+   "standard": 0,
+   "abgeleitet": "fitz_knoetchen / 3 (abgerundet)",
    "akt": "alle",
-   "gesetzt_von": "‚Knoten geknüpft‘-Ereignis",
-   "gelesen_von": "Finale: kann Pfötchen ihn wenden?",
-   "hinweis": ""
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase",
+   "hinweis": "Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist"
   },
   {
    "name": "fitz_beigetreten",
@@ -1881,6 +1872,220 @@
    "gesetzt_von": "genug gemeinsames Erleben mit Malcolm (Bruderschaft)",
    "gelesen_von": "Finale: Malcolm wendbar? Hält er bei der Zerstörung Wort oder vollzieht er die Raffung?",
    "hinweis": "Ohne Knoten ist die Bruderschaft Malcolms Schwachstelle: Pfötchen schiebt sie zurück in die Treue zum Vater"
+  },
+  {
+   "name": "dig_knoetchen",
+   "typ": "int",
+   "min": 0,
+   "max": 9,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0",
+   "gelesen_von": "dig_knoten (3 Knötchen = 1 Knoten)",
+   "hinweis": "siehe docs/story/zuneigung_und_knoten.md"
+  },
+  {
+   "name": "corvin_knoetchen",
+   "typ": "int",
+   "min": 0,
+   "max": 9,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0",
+   "gelesen_von": "corvin_knoten (3 Knötchen = 1 Knoten)",
+   "hinweis": "siehe docs/story/zuneigung_und_knoten.md"
+  },
+  {
+   "name": "shiner_knoetchen",
+   "typ": "int",
+   "min": 0,
+   "max": 9,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0",
+   "gelesen_von": "shiner_knoten (3 Knötchen = 1 Knoten)",
+   "hinweis": "siehe docs/story/zuneigung_und_knoten.md"
+  },
+  {
+   "name": "knuckles_knoetchen",
+   "typ": "int",
+   "min": 0,
+   "max": 9,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0",
+   "gelesen_von": "knuckles_knoten (3 Knötchen = 1 Knoten)",
+   "hinweis": "siehe docs/story/zuneigung_und_knoten.md"
+  },
+  {
+   "name": "weberin_knoetchen",
+   "typ": "int",
+   "min": 0,
+   "max": 9,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0",
+   "gelesen_von": "weberin_knoten (3 Knötchen = 1 Knoten)",
+   "hinweis": "siehe docs/story/zuneigung_und_knoten.md"
+  },
+  {
+   "name": "barkley_knoetchen",
+   "typ": "int",
+   "min": 0,
+   "max": 9,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0",
+   "gelesen_von": "barkley_knoten (3 Knötchen = 1 Knoten)",
+   "hinweis": "siehe docs/story/zuneigung_und_knoten.md"
+  },
+  {
+   "name": "deltamae_knoetchen",
+   "typ": "int",
+   "min": 0,
+   "max": 9,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0",
+   "gelesen_von": "deltamae_knoten (3 Knötchen = 1 Knoten)",
+   "hinweis": "siehe docs/story/zuneigung_und_knoten.md"
+  },
+  {
+   "name": "mercy_knoetchen",
+   "typ": "int",
+   "min": 0,
+   "max": 9,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0",
+   "gelesen_von": "mercy_knoten (3 Knötchen = 1 Knoten)",
+   "hinweis": "siehe docs/story/zuneigung_und_knoten.md"
+  },
+  {
+   "name": "fitz_knoetchen",
+   "typ": "int",
+   "min": 0,
+   "max": 9,
+   "standard": 0,
+   "akt": "alle",
+   "gesetzt_von": "GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0",
+   "gelesen_von": "fitz_knoten (3 Knötchen = 1 Knoten)",
+   "hinweis": "siehe docs/story/zuneigung_und_knoten.md"
+  },
+  {
+   "name": "grosse_knoten",
+   "typ": "liste",
+   "werte": [
+    "waffenstillstand",
+    "platz_gerettet",
+    "tauben_frei",
+    "gang_hass",
+    "tauben_gepresst",
+    "hunde_frei",
+    "deltamae_konzert",
+    "expedition_ungestoert",
+    "knotenwand",
+    "fitz_show",
+    "lager_ungestoert",
+    "gangs_gemeinsam",
+    "hazel_liebe",
+    "unruhen_ungebremst"
+   ],
+   "standard": [],
+   "akt": "1–4",
+   "gesetzt_von": "Quest-Ausgänge und Massenereignisse (data/zustaende/grosse_knoten.json)",
+   "gelesen_von": "viertel_*, stadt_brand, verknotung_moeglich",
+   "hinweis": "positive und negative große Knoten"
+  },
+  {
+   "name": "viertel_hairlem",
+   "typ": "enum",
+   "werte": [
+    "haelt",
+    "wankt",
+    "kippt"
+   ],
+   "standard": "wankt",
+   "abgeleitet": "Bilanz der großen Knoten in Hairlem: ab +2 hält, 0 bis +1 wankt, unter 0 kippt",
+   "akt": "5",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: Verbündete, Brand, Menge",
+   "hinweis": ""
+  },
+  {
+   "name": "viertel_subfurs",
+   "typ": "enum",
+   "werte": [
+    "haelt",
+    "wankt",
+    "kippt"
+   ],
+   "standard": "wankt",
+   "abgeleitet": "Bilanz der großen Knoten in Subfurs: ab +2 hält, 0 bis +1 wankt, unter 0 kippt",
+   "akt": "5",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: Verbündete, Brand, Menge",
+   "hinweis": ""
+  },
+  {
+   "name": "viertel_boney",
+   "typ": "enum",
+   "werte": [
+    "haelt",
+    "wankt",
+    "kippt"
+   ],
+   "standard": "wankt",
+   "abgeleitet": "Bilanz der großen Knoten in Boney Island: ab +2 hält, 0 bis +1 wankt, unter 0 kippt",
+   "akt": "5",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: Verbündete, Brand, Menge",
+   "hinweis": ""
+  },
+  {
+   "name": "viertel_cathattan",
+   "typ": "enum",
+   "werte": [
+    "haelt",
+    "wankt",
+    "kippt"
+   ],
+   "standard": "wankt",
+   "abgeleitet": "Bilanz der großen Knoten in Cathattan: ab +2 hält, 0 bis +1 wankt, unter 0 kippt",
+   "akt": "5",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: Verbündete, Brand, Menge",
+   "hinweis": ""
+  },
+  {
+   "name": "stadt_brand",
+   "typ": "enum",
+   "werte": [
+    "funken",
+    "strassen",
+    "viertel",
+    "cathattan_brennt"
+   ],
+   "standard": "strassen",
+   "abgeleitet": "aus viertel_*: kein Viertel kippt und höchstens eins wankt → funken; keins kippt → strassen; eins kippt → viertel; zwei oder mehr kippen oder Cathattan kippt → cathattan_brennt",
+   "akt": "5",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale (Kulisse), Epilog",
+   "hinweis": ""
+  },
+  {
+   "name": "verknotung_moeglich",
+   "typ": "bool",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "abgeleitet": "mindestens drei Viertel halten und keins kippt",
+   "akt": "5",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale: lässt der Held los, hält die Stadt (Verknotung) oder Pfötchen gewinnt (Status quo)",
+   "hinweis": "wird dem Spieler nie angezeigt"
   }
  ],
  "prototyp_flags": [

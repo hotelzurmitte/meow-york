@@ -55,6 +55,37 @@ func erhoehen(name: String, d: int = 1) -> void:
 	if e.get("max") != null: wert = mini(wert, int(e.max))
 	set_flag(name, wert)
 
+## Große Knoten (Daten: data/zustaende/grosse_knoten.json)
+static var GROSSE_KNOTEN: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/zustaende/grosse_knoten.json"))
+
+## Summe der Vorzeichen aller erreichten großen Knoten eines Viertels
+func bilanz(viertel: String) -> int:
+	var b := 0
+	var erreicht: Array = flag("grosse_knoten")
+	for k in GROSSE_KNOTEN.knoten:
+		if k.viertel == viertel and k.id in erreicht: b += int(k.vorzeichen)
+	return b
+
+## Einen großen Knoten eintragen (einmalig)
+func grosser_knoten(id: String) -> void:
+	var l: Array = (flag("grosse_knoten") as Array).duplicate()
+	if id in l: return
+	l.append(id); set_flag("grosse_knoten", l)
+
+## Knötchen mit einem Gefährten: +1 für einen Knotenmoment, −1 für einen negativen gemeinsamen Moment
+func knoetchen(wer: String, d: int = 1) -> void:
+	var vorher: int = flag(wer + "_knoten")
+	erhoehen(wer + "_knoetchen", d)
+	if int(flag(wer + "_knoten")) > vorher:
+		EventBus.hinweis.emit("Knoten geknüpft", "knoten")
+	elif d > 0:
+		EventBus.hinweis.emit("Knötchen", "knoten")
+
+## Verrat: der Knoten rutscht ganz (Regelwerk, Axiom 4)
+func knoten_reisst(wer: String) -> void:
+	set_flag(wer + "_knoetchen", 0)
+	EventBus.hinweis.emit("Ein Knoten ist gerissen", "schlecht")
+
 ## Abgeleitete Story-Variablen werden berechnet, nicht gespeichert
 func _abgeleitet(name: String):
 	if name.ends_with("_in_gruppe"):
@@ -64,6 +95,28 @@ func _abgeleitet(name: String):
 		return "niedrig" if z < -3 else ("hoch" if z > 5 else "mittel")
 	if name == "unruhen_hairlem":
 		return flag("naeherinnen") == "befreit"
+	# Knotenstärke der Gefährten: 3 Knötchen = 1 Knoten
+	if name.ends_with("_knoten") and Zustaende.hat(name.trim_suffix("_knoten") + "_knoetchen"):
+		return int(flag(name.trim_suffix("_knoten") + "_knoetchen")) / 3
+	# Große Knoten: Bilanz je Viertel
+	if name.begins_with("viertel_"):
+		var b := bilanz(name.trim_prefix("viertel_"))
+		return "haelt" if b >= 2 else ("wankt" if b >= 0 else "kippt")
+	if name == "stadt_brand":
+		var k := 0; var w := 0
+		for v in GROSSE_KNOTEN.viertel:
+			match flag("viertel_" + v):
+				"kippt": k += 1
+				"wankt": w += 1
+		if k >= 2 or flag("viertel_cathattan") == "kippt": return "cathattan_brennt"
+		if k == 1: return "viertel"
+		return "funken" if w <= 1 else "strassen"
+	if name == "verknotung_moeglich":
+		var h := 0
+		for v in GROSSE_KNOTEN.viertel:
+			if flag("viertel_" + v) == "kippt": return false
+			if flag("viertel_" + v) == "haelt": h += 1
+		return h >= 3
 	push_warning("Zustand: keine Berechnung für „%s“" % name)
 	return Zustaende.standard(name)
 
@@ -144,7 +197,7 @@ func geld_aendern(betrag: int) -> void:
 		EventBus.hinweis.emit(("+%d" % betrag if betrag > 0 else "%d" % betrag) + " Collar", "gut" if betrag > 0 else "schlecht")
 
 func zuneigung_aendern(wer: String, d: int) -> void:
-	zuneigung[wer] = zuneigung.get(wer, 0) + d
+	zuneigung[wer] = clampi(int(zuneigung.get(wer, 0)) + d, -10, 10)
 	var n: String = {"dig": "Big Dig", "corvin": "Corvin", "ren": "Ren"}.get(wer, wer)
 	var t: String = ("gefällt das sehr." if d > 1 else "gefällt das.") if d > 0 else ("missbilligt das stark." if d < -1 else "missbilligt das.")
 	EventBus.hinweis.emit("%s %s" % [n, t], "gut" if d > 0 else "schlecht")

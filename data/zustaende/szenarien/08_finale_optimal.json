@@ -1,6 +1,6 @@
 {
  "titel": "Finale, alles optimal",
- "erwartet": "Ende „Verknotung“ ist erreichbar",
+ "erwartet": "Alle vier Viertel halten, stadt_brand = funken, verknotung_moeglich = true: Lässt der Held los, gelingt die Verknotung. Alle Gefährten festgezurrt (9 Knötchen)",
  "gruppe": [
   "ren",
   "shiner",
@@ -33,15 +33,25 @@
   "mercy_ausgang": "reformerin",
   "fitz_weberin_trost": true,
   "fitz_ausgang": "letzter_flug",
-  "dig_knoten": true,
-  "corvin_knoten": true,
-  "shiner_knoten": true,
-  "weberin_knoten": true,
-  "barkley_knoten": true,
-  "deltamae_knoten": true,
-  "mercy_knoten": true,
-  "fitz_knoten": true,
-  "auftrag_ausgang": "nugget_entlarvt"
+  "auftrag_ausgang": "nugget_entlarvt",
+  "dig_knoetchen": 9,
+  "corvin_knoetchen": 9,
+  "shiner_knoetchen": 9,
+  "weberin_knoetchen": 9,
+  "barkley_knoetchen": 9,
+  "deltamae_knoetchen": 9,
+  "mercy_knoetchen": 9,
+  "fitz_knoetchen": 9,
+  "grosse_knoten": [
+   "waffenstillstand",
+   "platz_gerettet",
+   "hunde_frei",
+   "deltamae_konzert",
+   "knotenwand",
+   "fitz_show",
+   "gangs_gemeinsam",
+   "hazel_liebe"
+  ]
  },
  "zuneigung": {
   "dig": 8,

@@ -60,7 +60,8 @@ func _pruefe_register() -> void:
 	print("%d Story-Variablen, %d Prototyp-Flags geduldet" % [Zustaende.alle().size(), Zustaende.prototyp_flags().size()])
 
 # ---------- 2. Dialoge und Skripte durchsuchen ----------
-var _re_lesen := RegEx.create_from_string("(?<![A-Za-z_])flag\\(\\s*\"([^\"]+)\"")
+## Nur feste Namen: zusammengesetzte wie flag("viertel_" + v) werden übersprungen
+var _re_lesen := RegEx.create_from_string("(?<![A-Za-z_])flag\\(\\s*\"([^\"]+)\"(?=\\s*[,)])")
 var _re_setzen := RegEx.create_from_string("(?:set_flag|erhoehen)\\(\\s*\"([^\"]+)\"")
 var _re_setzwert := RegEx.create_from_string("^\\s*(?:,\\s*([^()]*?))?\\s*\\)")
 var _re_vergleich := RegEx.create_from_string("gleich\\(\\s*(?:GameState\\.)?flag\\(\\s*\"([^\"]+)\"\\s*\\)\\s*,\\s*(\"[^\"]*\"|true|false|-?\\d+)\\s*\\)|flag\\(\\s*\"([^\"]+)\"\\s*\\)\\s*[!=]=\\s*(\"[^\"]*\"|true|false|-?\\d+)")
@@ -157,6 +158,21 @@ func _teste_laufzeit() -> void:
 	GameState.zuneigung["dig"] = 0
 	GameState.set_flag("naeherinnen", "befreit")
 	_erwarte(GameState.flag("unruhen_hairlem") == true, "„unruhen_hairlem“ folgt aus „naeherinnen“")
+	# Knötchen und große Knoten
+	for i in 7: GameState.knoetchen("dig")
+	_erwarte(GameState.flag("dig_knoten") == 2, "7 Knötchen ergeben Knotenstärke 2")
+	GameState.knoten_reisst("dig")
+	_erwarte(GameState.flag("dig_knoten") == 0, "Verrat setzt den Knoten auf 0")
+	for id in ["waffenstillstand", "platz_gerettet", "hunde_frei", "deltamae_konzert", "knotenwand", "fitz_show", "gangs_gemeinsam"]:
+		GameState.grosser_knoten(id)
+	_erwarte(GameState.flag("viertel_hairlem") == "haelt", "zwei positive Knoten: Hairlem hält")
+	_erwarte(GameState.flag("viertel_cathattan") == "wankt", "ein positiver Knoten: Cathattan wankt")
+	_erwarte(GameState.flag("verknotung_moeglich") == true, "drei Viertel halten, keins kippt: Verknotung möglich")
+	GameState.grosser_knoten("unruhen_ungebremst"); GameState.grosser_knoten("unruhen_ungebremst")
+	_erwarte(GameState.flag("viertel_cathattan") == "wankt", "großer Knoten zählt nur einmal")
+	GameState.set_flag("grosse_knoten", ["gang_hass", "unruhen_ungebremst"])
+	_erwarte(GameState.flag("stadt_brand") == "cathattan_brennt", "Cathattan kippt: Cathattan brennt")
+	_erwarte(GameState.flag("verknotung_moeglich") == false, "ein Viertel kippt: keine Verknotung")
 	# Zähler bleiben in ihren Grenzen
 	for i in 8: GameState.erhoehen("orden_wachsam")
 	_erwarte(GameState.flag("orden_wachsam") == 5, "erhoehen() stoppt bei max 5")

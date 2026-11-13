@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 121
+- **Variablen insgesamt:** 137
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 76
+- **Story-Variablen:** 92
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -48,8 +48,8 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | --- | --- | --- | --- | --- | --- |
 | `<gefährte>_beigetreten` | ja, nein | nein | Rekrutierung | Lange Rast (wer im Unterschlupf ist), offene_lagerszenen() | beigetreten ≠ in der aktiven Gruppe |
 | `<gefährte>_in_gruppe` | ja, nein | nein | Rekrutierung / Verlassen | Szenen, Paarmomente | abgeleitet: GameState.mitglied("<gefährte>") |
-| `<gefährte>_zuneigung` | niedrig, mittel, hoch | mittel | Gefährten-Reaktionen | Quest-Ausgänge, Romanzen, Finale | abgeleitet: GameState.zuneigung["<gefährte>"]: < -3 niedrig, > 5 hoch |
-| `<gefährte>_knoten` | ja, nein | nein | ‚Knoten geknüpft‘-Ereignis | Finale: kann Pfötchen ihn wenden? |  |
+| `<gefährte>_zuneigung` | niedrig, mittel, hoch | mittel | Gefährten-Reaktionen | Quest-Ausgänge, Romanzen, Finale | abgeleitet: GameState.zuneigung["<gefährte>"] (−10 bis +10): < −3 niedrig, > 5 hoch; bei −8 verlässt der Gefährte die Gruppe |
+| `<gefährte>_knoten` | 0–3 | 0 | berechnet | Finale: 3 sicher, 2 schwankt (leichte Probe), 1 gewendet (schwere Probe), 0 gewendet für die ganze Phase | Knotenstärke: wie viel der Schlinge zum Helden zugenäht ist |
 | `<gefährte>_lagerszene` | 0–4 | 0 | Pflicht-Lagerszene des Akts (Wert = Akt) | offene_lagerszenen() | Akt der zuletzt gezeigten Pflicht-Lagerszene; fehlende werden im nächsten Akt nachgeholt |
 
 ## Welt
@@ -92,6 +92,13 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `held_art` | katzenartige, voegel, krokodile, kaengurus, maeuse_ratten, fuechse, marder, insekten, spinnen, primaten | fuechse | Charaktererstellung (Taxi) | Startansehen, Preise, Garde-Kontrollen, Anrede, Schlüsselzeilen (Roach, Hummel, Ilse, Odile, Malcolm, Adikatz, Don Orango, Gus), eigener Weg je Akt | alle | Zehn Gruppen, Daten: data/characters/tierarten.json, Erklärung: docs/story/tierarten.md. Hunde sind gesperrt. Verwandtschaftsoptionen in Dialogen: flag("held_art") == "<gruppe>"; einmal setzen |
 | `held_unterart` | Katze, Schwarzkatze, Tigerkatze, Siamkatze, Perserkatze, Ragdoll, Loewe, Tiger, Leopard, Puma, Panther, Luchs, Rabe, Spatz, Eule, Moewe, Taube, Alligator, Krokodil, Kaiman, Kaenguru, Wallaby, Quokka, Maus, Ratte, Hamster, Maulwurf, Rotfuchs, Polarfuchs, Fennek, Dachs, Marder, Otter, Stinktier, Waschbaer, Kakerlake, Ameise, Biene, Kaefer, Motte, Grille, Webspinne, Springspinne, Vogelspinne, Tarantel, Schimpanse, Gorilla, OrangUtan | Rotfuchs | Charaktererstellung (Taxi) | Aussehen, Form (Hauskatze/Großkatze, Taube, Waschbär, Dachs), Bild von Pfötchens Frau (Rückblenden, Archiv, Foto) | alle | Pfötchens Frau hat genau diese Unterart; einmal setzen |
 | `malcolm_knoten` | ja, nein | nein | genug gemeinsames Erleben mit Malcolm (Bruderschaft) | Finale: Malcolm wendbar? Hält er bei der Zerstörung Wort oder vollzieht er die Raffung? | 2–4 | Ohne Knoten ist die Bruderschaft Malcolms Schwachstelle: Pfötchen schiebt sie zurück in die Treue zum Vater |
+| `grosse_knoten` | waffenstillstand, platz_gerettet, tauben_frei, gang_hass, tauben_gepresst, hunde_frei, deltamae_konzert, expedition_ungestoert, knotenwand, fitz_show, lager_ungestoert, gangs_gemeinsam, hazel_liebe, unruhen_ungebremst | leer | Quest-Ausgänge und Massenereignisse (data/zustaende/grosse_knoten.json) | viertel_*, stadt_brand, verknotung_moeglich | 1–4 | positive und negative große Knoten |
+| `viertel_hairlem` | haelt, wankt, kippt | wankt | berechnet | Finale: Verbündete, Brand, Menge | 5 | abgeleitet: Bilanz der großen Knoten in Hairlem: ab +2 hält, 0 bis +1 wankt, unter 0 kippt |
+| `viertel_subfurs` | haelt, wankt, kippt | wankt | berechnet | Finale: Verbündete, Brand, Menge | 5 | abgeleitet: Bilanz der großen Knoten in Subfurs: ab +2 hält, 0 bis +1 wankt, unter 0 kippt |
+| `viertel_boney` | haelt, wankt, kippt | wankt | berechnet | Finale: Verbündete, Brand, Menge | 5 | abgeleitet: Bilanz der großen Knoten in Boney Island: ab +2 hält, 0 bis +1 wankt, unter 0 kippt |
+| `viertel_cathattan` | haelt, wankt, kippt | wankt | berechnet | Finale: Verbündete, Brand, Menge | 5 | abgeleitet: Bilanz der großen Knoten in Cathattan: ab +2 hält, 0 bis +1 wankt, unter 0 kippt |
+| `stadt_brand` | funken, strassen, viertel, cathattan_brennt | strassen | berechnet | Finale (Kulisse), Epilog | 5 | abgeleitet: aus viertel_*: kein Viertel kippt und höchstens eins wankt → funken; keins kippt → strassen; eins kippt → viertel; zwei oder mehr kippen oder Cathattan kippt → cathattan_brennt |
+| `verknotung_moeglich` | ja, nein | nein | berechnet | Finale: lässt der Held los, hält die Stadt (Verknotung) oder Pfötchen gewinnt (Status quo) | 5 | abgeleitet: mindestens drei Viertel halten und keins kippt; wird dem Spieler nie angezeigt |
 
 ## Juno
 
@@ -114,6 +121,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `dig_fitz_einsicht` | ja, nein | nein | Bogen Big Dig/Fitz A3 | dig_ausgang (Voraussetzung neu_verknotet) | 3 |  |
 | `dig_pips_szenen` | 0–3 | 0 | Big Dig K3 Strand-Szenen | dig_ausgang | 3 |  |
 | `dig_ausgang` | neu_verknotet, entfuehrt, losgelassen | losgelassen | Big Dig K4 | Finale (Tunnel / fehlt / wendbar) | 4 | neu_verknotet braucht dig_fitz_einsicht UND (pip_szenen==3 ODER Musterbuch-Szene mit der Weberin); einmal setzen |
+| `dig_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | dig_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
 
 ## Corvin
 
@@ -122,6 +130,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `corvin_k2_musterbuch` | ja, nein | nein | Corvin K2 | Corvin-Stimmbruch, Weberin-Bogen | 2 |  |
 | `corvin_vale_ermittlung` | offen, gemeinsam, allein, verpasst | offen | Corvin K3 mit Barkley | vale, Bogen Corvin/Barkley | 3–4 | Fenster Akt 3–4 (A4 mit weniger Beweisen); beim Aktübergang: offen → verpasst |
 | `corvin_ausgang` | ganze_wahrheit, halbe_wahrheit, keine_wahrheit | keine_wahrheit | Corvin K4 | Finale (Taubennetz / wendbar) | 4 | Beweise: tauben==netz_genutzt ODER Hazel-Begnadigung; einmal setzen |
+| `corvin_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | corvin_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
 
 ## Shiner
 
@@ -131,6 +140,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `shiner_galerie` | offen, angenommen, abgelehnt, verpasst | offen | Shiner K3 | juno_knoten_lager, Bogen Shiner/Delta Mae | 3–4 | Fenster Akt 3–4 (A4: Porträt statt Banner, wirkt nicht auf Juno); beim Aktübergang: offen → verpasst |
 | `shiner_uebermalt_gestanden` | ja, nein | nein | Bogen Shiner/Corvin A3 | shiner_galerie (Ablehnung leichter) | 3 |  |
 | `shiner_ausgang` | knotenmalerin, ausverkauft, einzelgaengerin | einzelgaengerin | Shiner K4 | Ende ‚Verknotung‘ | 4 | einmal setzen |
+| `shiner_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | shiner_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
 
 ## Knuckles
 
@@ -140,6 +150,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `knuckles_vertrag` | behalten, gekuendigt | behalten | Knuckles K3 | knuckles_ausgang | 3 | einmal setzen |
 | `knuckles_luege_gebeichtet` | ja, nein | nein | Bogen Knuckles/Big Dig A3 | knuckles_zuneigung | 3 |  |
 | `knuckles_ausgang` | nachfolgerin, geschaeftsfrau, treue_nichte | treue_nichte | Knuckles K4 | Finale (Gangs) | 4 | einmal setzen |
+| `knuckles_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | knuckles_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
 
 ## Weberin
 
@@ -148,6 +159,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `weberin_herausgeschnitten` | pips, hazel, dig, corvin, shiner, knuckles, barkley, deltamae, mercy | leer | Weberin K4 (höchstens 2) | Finale (nicht wendbar), Hazel als Leitung, Pips, Epilog (keine Resonanz) | 4 | Herausgeschnittene sind unlenkbar und fühlen nie wieder mit. Nur in Meow York Geborene: nicht juno, nicht fitz |
 | `weberin_luege_gestanden` | ja, nein | nein | Bogen Weberin/Corvin A3 oder Mercy-Akten | mercy_weberin_behandelt, Musterbuch-Szene zu Pips | 3 |  |
 | `weberin_ausgang` | hueterin, zerstoererin, schneiderin | hueterin | Weberin K4 | Finale (liest Pfötchens Ketten), Ende ‚Wegsperren‘/‚Zerstörung‘ | 4 | einmal setzen |
+| `weberin_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | weberin_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
 
 ## Barkley
 
@@ -157,6 +169,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `barkley_zweite_schlinge` | keine, fitz, deltamae | keine | Bögen Barkley/Fitz bzw. Barkley/Delta Mae | barkley_ausgang, Finale (über wen Pfötchen greift) | 3–4 |  |
 | `barkley_verrate_inszeniert` | ja, nein | nein | Barkley K3 | Zuneigung, barkley_ausgang | 3 |  |
 | `barkley_ausgang` | mehr_als_eine_liebe, fanatiker, raecher | fanatiker | Barkley K4 | Finale, Epilog | 4 | mehr_als_eine_liebe braucht zweite_schlinge != keine; einmal setzen |
+| `barkley_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | barkley_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
 
 ## Delta Mae
 
@@ -165,6 +178,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `deltamae_pakt` | fremde_stimme, eigene_stimme, andere_loesung | eigene_stimme | Delta Mae K2 | Zuneigung, Finale (Stimme behalten?) | 2 | einmal setzen |
 | `deltamae_lager_auftritt` | ja, nein | nein | Delta Mae K3 | juno_knoten_lager, Bogen Shiner/Delta Mae | 3 |  |
 | `deltamae_ausgang` | ehrliches_lied, legende, verkaufte | legende | Delta Mae K4 | Finale (letztes Lied) | 4 | einmal setzen |
+| `deltamae_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | deltamae_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
 
 ## Mercy
 
@@ -174,6 +188,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `mercy_weberin_behandelt` | ja, nein | nein | Mercy K3 | Auftrennung pip möglich | 3 |  |
 | `mercy_akten` | ordensrat, presse_hazel, zurueckgehalten | zurueckgehalten | Mercy K4 | hazel_status, mercy_ausgang | 4 |  |
 | `mercy_ausgang` | reformerin, abtruennige, schweigende | schweigende | Mercy K4 | Finale | 4 | einmal setzen |
+| `mercy_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | mercy_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
 
 ## Fitz
 
@@ -182,6 +197,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `fitz_show` | geflogen, sabotiert, umgedeutet | geflogen | Fitz K3 | juno_knoten_lager, Zirkus-Vertrag | 3 | einmal setzen |
 | `fitz_weberin_trost` | ja, nein | nein | Bogen Fitz/Weberin A4 | fitz_ausgang | 4 |  |
 | `fitz_ausgang` | letzter_flug, trotzig, bodenstaendig | trotzig | Fitz K4 | Finale | 4 | letzter_flug braucht fitz_weberin_trost; einmal setzen |
+| `fitz_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | fitz_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
 
 ---
 

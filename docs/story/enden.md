@@ -18,16 +18,15 @@ Das Ende besteht aus vier Schichten, die der Spieler unabhängig voneinander bee
 | Ende | Was passiert | Preis | Voraussetzung |
 | --- | --- | --- | --- |
 | **Zerstörung** | Der Held öffnet alle Übergänge. Jeder in Meow York Geborene wird ein eigener Faden. Keine Manipulation mehr, auch nicht durch fremde Herrscher | Keine Resonanz mehr für Meow-Yorker: Niemand fühlt mehr mit, ohne hinzusehen | immer wählbar, wenn der Held das Knäuel erreicht |
-| **Verknotung** *(das verdiente Ende)* | Das Knäuel bleibt, kann aber kaum noch etwas bewegen, weil die Stadt zu fest verknotet ist | Auch Fehden und schlechte Bindungen werden starr | genug Knoten in Gruppe und Stadt (siehe unten) |
+| **Verknotung** *(das verdiente Ende)* | Das Knäuel bleibt, kann aber kaum noch etwas bewegen, weil die Stadt zu fest verknotet ist | Auch Fehden und schlechte Bindungen werden starr: Jeder negative große Knoten erscheint im Epilog als erstarrte Fehde | der Held lässt los, und mindestens drei Viertel halten (siehe unten) |
 | **Wächter** | Der Held nimmt das Knäuel an sich. Er kann es nicht benutzen, also benutzt es niemand | Nur vertagt. Seine Freunde bleiben Druckmittel, er bleibt allein | immer wählbar |
 | **Einwebung** | Der Held lässt sich an seiner Narbe wieder einspleißen oder wird beim Anknüpfen eingesponnen. Er fühlt zum ersten Mal die Stadt und seinen Vater | Er wird lenkbar. Als Herrscher (Weg „Der Erbe“) würde Juno seine Leitung | gewählt, oder als Scheitern bei hoher `held_verwachsung` |
 | **Raffung** | Malcolm schiebt alle unverknoteten Gefühle der Stadt in Schlingen um sich selbst. Alle haben nur noch eine Schlinge, um ihn | Malcolms eigene Leere bleibt. Er hat alle und fühlt nichts | Malcolm bekommt das Knäuel: Weg „Das Werkzeug“, oder der Held überlässt ihm die Zerstörung ohne verknotete Bruderschaft (Fund 2) |
 | **Status quo** | Pfötchen behält das Knäuel | Ordnung durch Feindbilder, die Stadt kühlt weiter aus | Pfötchen siegt, oder der Held geht (Weg „Der Heimkehrer“) |
 
-**Messbar machen, was „genug Knoten“ heißt** *(Vorschlag)*: eine berechnete Variable `stadt_verknotung` aus Punkten:
+**Wie die Verknotung zustande kommt** *(entschieden 13.11.)*: Sie ist kein Knopf. Im Tempel kann der Held das Knäuel weder nehmen noch zerstören, sondern **loslassen und der Stadt vertrauen**. Dann zieht Pfötchen mit aller Kraft. Ist die Stadt fest genug verknotet (`verknotung_moeglich`: mindestens drei Viertel halten, keins kippt), bewegt sich nichts. Das ist die Verknotung. Sonst gewinnt Pfötchen, und es bleibt beim Status quo. Ein Wagnis, dessen Ausgang sich der Spieler über das ganze Spiel verdient hat, ohne die Zahl zu sehen. Wie die großen Knoten und Viertel gerechnet werden: `zuneigung_und_knoten.md`.
 
-| Punkt | Quelle |
-| --- | --- |
+--- | --- |
 | je 1 | jeder Gefährte mit Knoten zum Helden (`<g>_knoten`) |
 | 2 | Shiner als Knotenmalerin (die Stadt malt ihre gemeinsamen Momente) |
 | 2 | Knuckles als Nachfolgerin (die Gangs ziehen gemeinsam ein) |
@@ -90,7 +89,7 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 
 | # | Fund | Lösung *(Vorschlag)* |
 | --- | --- | --- |
-| 1 | „Verknotung: genug Knoten“ war nicht messbar | `stadt_verknotung` mit Punkten (oben) |
+| 1 | „Verknotung: genug Knoten“ war nicht messbar | *(entschieden)* große Knoten mit Vorzeichen je Viertel, `verknotung_moeglich` (siehe `zuneigung_und_knoten.md`) |
 | 2 | Regelwerk: Zerstörung, „der Held öffnet alle Übergänge **oder lässt Malcolm es tun**“. Aber Malcolm schwenkt auf die Raffung um | *(entschieden)* **Eine Falle:** Malcolm schwenkt in Akt 3 um und verbirgt es einen Akt lang. Wer ihm im Finale die Zerstörung überlässt, bekommt die Raffung. Nur wenn die Bruderschaft verknotet ist (`malcolm_knoten`), hält Malcolm Wort. Ist sie nur gebunden, aber nicht verknotet, zieht Pfötchen sie im Finale zurück in die Treue zum Vater. Wer `malcolm_risse` hoch hat, wird von einem Gefährten gewarnt |
 | 9 | GDD (Akt 4) und Regelwerk (Akt 3) nannten verschiedene Zeitpunkte für Malcolms Umschwung | *(entschieden)* Akt 3, Boney Island |
 | 3 | Der Held „kann das Knäuel nicht benutzen“, soll es aber zerstören können | Kein Widerspruch: Benutzen heißt Gefühle verschieben, dafür braucht man Resonanz. Übergänge öffnen kann nach Axiom 5 jeder, der es berührt. Die Zerstörung ist das Öffnen aller Übergänge |
@@ -98,17 +97,41 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 | 5 | Einwebung als Scheitern kann sich unfair anfühlen | Vorher spürbar machen: Ab mittlerer `held_verwachsung` warnen Gefährten, Junos Stimme wird lauter, die Fadensicht flackert. Im Finale fragt die Weberin (wenn dabei) direkt: „Willst du das wirklich?“ |
 | 6 | Heimkehrer ohne Juno? | Möglich, aber dann geht er allein. Bei `juno_bogen = verloren` heißt der Weg nicht Heimkehr, sondern Flucht. Eigener Epilog-Satz |
 | 7 | Hazel herausgeschnitten (Weberin, Akt 4): Pfötchens Plan, sie zur Leitung zu machen, scheitert | Gewollt. Dann muss Pfötchen im Finale einen Gefährten als Leitung nehmen, und zwar den, der den Helden am meisten liebt. Der härteste Finalkampf |
-| 8 | Das Finale spiegelt die Schlägerei aus Akt 1 noch nicht ausdrücklich | Vorschlag: gleiche Mechanik, höchster Einsatz. Wie auf dem Basketballplatz holt der Held gewendete Gefährten mit Worten zurück, nur dass es jetzt Pfötchen selbst ist, der zieht |
+| 8 | Das Finale spiegelt die Schlägerei aus Akt 1 noch nicht ausdrücklich | *(entschieden)* gleiche Mechanik, höchster Einsatz: Der Held holt gewendete Gefährten mit Worten zurück, nur zieht jetzt Pfötchen selbst. Wie schwer das ist, entscheidet die Knotenstärke |
 
 ---
 
-## Das Bild des Endes *(zur Klärung)*
+## Das Finale *(entschieden 13.11.)*
 
-**Vorschlag: eine Nacht, ein Schauplatz, sechs Schlussbilder.**
+**Eine Nacht, ein Schauplatz.** Akt 4 heißt „Die Stadt, die zerreißt“. Pfötchen lenkt den Zorn der Stadt auf Hazel, die Unruhen kippen in die letzte Nacht. Unten brennt Cathattan, oben im Tempel des Ordens hält Pfötchen das Knäuel. Wie viel brennt, zeigt `stadt_brand`: die sichtbare Summe aller großen Knoten, bevor der Spieler die letzte Entscheidung trifft.
 
-Akt 4 heißt „Die Stadt, die zerreißt“. Pfötchen lenkt den Zorn der Stadt auf Hazel, die Unruhen kippen in die letzte Nacht. Das Finale findet in dieser Nacht statt: unten brennt Cathattan, oben im Tempel des Ordens hält Pfötchen das Knäuel.
+**Grundsätze, damit es kein BG3-Klon wird:**
+1. **Verbündete werden nicht gerufen, die Stadt rettet sich selbst.** Keine Beschwörung im Kampf. Was der Spieler geknüpft hat, zeigt sich daran, ob Viertel halten oder kippen: Eimerketten, Leute, die ihm einen Hinterhof öffnen, oder eine Menge, die sich gegen ihn dreht.
+2. **Der Kampf ist ein Kampf um Liebe, nicht um Kontrolle.** Pfötchen steuert niemanden fremd. Er schiebt echte Gefühle, und die Gefährten greifen an, weil sie etwas anderes noch mehr lieben. Zurück holt man sie mit Worten, nicht mit Schaden.
+3. **Am Ende wird es klein, wie im Noir.** Das Feuer ist Kulisse. Der Höhepunkt spielt in einem Raum: Vater und Sohn, das Knäuel zwischen ihnen. Der Held ist der Einzige, der ruhig durch den Aufruhr geht. Man kann das Finale beenden, ohne Pfötchen zu besiegen.
 
-**Wie viel brennt, entscheidet der Spieler** (`stadt_brand`, berechnet aus Gang-Frieden, Tauben, Hunden, Hazel, Delta Maes Lied, Fitz' Zirkus): von ein paar Feuern, die gelöscht werden, bis zu „Cathattan brennt“. Der Brand ist die sichtbare Summe seiner Entscheidungen, bevor er die letzte trifft.
+### Der Weg zum Tempel
+Verbündete öffnen Wege, statt mitzukämpfen. Jeder hat eine Aufgabe, wenn er gewonnen wurde:
+
+| Verbündeter | Beitrag | Voraussetzung |
+| --- | --- | --- |
+| Roach | fährt durch die Sperren der Garde | `roach` = erpresst |
+| Big Dig | Tunnel unter den Tempel | `dig_ausgang` = neu_verknotet |
+| Tauben | melden jede Patrouille | `tauben` = befreit oder netz_genutzt |
+| Fitz | über die Dächer, schaltet den Flügel der Garde aus, oder lenkt mit dem Zirkus die Menge ab | `fitz_ausgang` |
+| Mercy | öffnet eine Tür im Tempel | `mercy_ausgang` = schweigende |
+| Gangs | halten die Brücke gegen die Monsterhunde | Gang-Wahl, `knuckles_ausgang` |
+| befreite Hunde | Barkley führt sie gegen die Garde | `barkley_ausgang` = fanatiker oder mehr_als_eine_liebe |
+| Viertel, die halten | Löschketten, offene Hinterhöfe, Schutz vor der Menge | `viertel_*` = haelt |
+
+**Das Opfer:** Sind die Nomapes mit dem Helden verbündet, hält Don Orango an der Brücke die Monsterhunde auf und stirbt dabei. Knuckles wird Anführerin, ihr Ausgang „Nachfolgerin“ bekommt seinen Moment. Bei den Cats hängt das Opfer an Adikatz, je nachdem, was aus Riff geworden ist (wird mit Akt 2 festgelegt). Wie in BG3 kann der Spieler das Opfer mit sehr guter Vorbereitung verhindern (etwa wenn die Hunde unter Barkley die Brücke halten), aber dann fehlt diese Hilfe woanders.
+
+### Der Endkampf in drei Phasen
+1. **Das Tor:** Garde und Monsterhunde. Wie viele durchkommen, entscheiden die Verbündeten und die Viertel.
+2. **Die Gefährten:** Pfötchen wendet sie gegen den Helden. Wer wie schwer zurückzuholen ist, entscheidet die Knotenstärke. Delta Maes letztes Lied erschwert Pfötchens Wendungen.
+3. **Vater und Sohn:** Pfötchen und das Knäuel, je nach Weg mit Malcolm. Danach die Entscheidung.
+
+## Die Schlussbilder *(entschieden 13.11.)*
 
 **Jedes Ende hat sein eigenes Bild derselben brennenden Nacht:**
 

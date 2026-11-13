@@ -11,7 +11,7 @@
   "akt": 4,
   "barkley_zweite_schlinge": "fitz",
   "barkley_ausgang": "mehr_als_eine_liebe",
-  "fitz_knoten": false,
-  "barkley_knoten": true
+  "fitz_knoetchen": 0,
+  "barkley_knoetchen": 9
  }
 }
