@@ -22,6 +22,8 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 - „Der Erbe“ ist ein Weg im Einwebungs-Ende, denn ein Herausgeschnittener kann das Knäuel nicht benutzen.
 - Big Digs vermisstes Kind heißt Pips (ein kleiner Mäuserich). Das Mädchen, das in Akt 1 hilft, heißt Mimi.
 - Keine Monsterhunde als sichtbare Wächter: Kontrollposten der Ordensgarde an den Brücken, Monsterhunde nur im Verborgenen, „BEWARE OF THE BEASTS!“ als Graffiti.
+- Malcolm hat die gestohlenen Papiere des Helden bei Roach gekauft. Er gibt sie später scheinbar freundlich zurück.
+- Was der Spieler wann über den Helden erfährt: siehe die Enthüllungstreppe in `akt1_szenen.md`.
 - Das Bild für Spieler: Schlingen sind Taschen, Gefühl ist Geld, Pfötchen schiebt nur zwischen den eigenen Taschen einer Person, Knoten nähen Taschen zu.
 - Hazels Bogen: Erst weiß sie die Wahrheit und liebt trotzdem weiter. Dann verrät Pfötchen sie, ihr Knoten rutscht, und ihre Liebe legt sich auf die Stadt.
 - **Wie sich ein Knoten löst:** Von außen kann niemand einen Knoten lösen. Er löst sich nur von innen, durch Verrat. Das Gefühl verschwindet dabei nicht, sondern legt sich um das Nächste, was der Person etwas bedeutet.

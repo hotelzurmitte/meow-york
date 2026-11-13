@@ -327,6 +327,7 @@ Das Phänomen muss früh klar sein, weil das Anknüpfen in Akt 2 sonst nichts be
 
 - **Der Held kommt allein.** Big Dig kommt in Szene 5 dazu, Corvin in Szene 8.
 - **Der Brief wird im Taxi gelesen**, die Charaktererstellung ist in Roachs Fragen eingebaut.
+- **Malcolm hat die Papiere gekauft** (entschieden 13.11.). Darin stehen Geburtsdatum und Pflegefamilie, so erkennt er den Helden sicher. Er behält es für sich und gibt die Papiere später zurück, scheinbar aus Freundlichkeit, wenn er den Helden nach Cathattan bringen will.
 - **Der Überfall nimmt auch Papiere und Ausrüstung.** Das macht Roachs Garage zur Pflicht. Die Ausrüstung findet er dort, die Papiere nicht.
 - **Big Digs vermisstes Kind heißt Pips**, das Mädchen, das hilft, heißt Mimi. Im Prototyp ist es umgekehrt.
 - **Die Branx gibt es nicht mehr.** Die Breaking Cats sitzen im Künstlerviertel, die Nomapes in Industrie und Hafen.
@@ -358,5 +359,4 @@ Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die D
 
 ## Noch offen
 
-- **Wer hat die Papiere gekauft?** Vorschlag: Malcolm. Er hat Pfötchens Schlinge ins Leere gespürt und gesucht. In den Papieren stehen das Geburtsdatum und die Pflegefamilie, so erkennt er den Helden sicher. Er behält es für sich und gibt die Papiere später zurück, als scheinbare Freundlichkeit, wenn er ihn nach Cathattan bringen will.
 - **Vincenzo Frankinetti:** Vincenzo aus dem Prototyp und Fitz sind beide Flughörnchen. Vorschlag: Vincenzo ist Fitz' Onkel, der den Zirkus verlassen hat, um Fotograf zu werden.
