@@ -2192,6 +2192,21 @@
    "gesetzt_von": "Finale, Station 5",
    "gelesen_von": "Epilog (Gedenktafel)",
    "hinweis": ""
+  },
+  {
+   "name": "pfoetchen_griff",
+   "typ": "enum",
+   "werte": [
+    "stark",
+    "bruechig",
+    "verzweifelt"
+   ],
+   "standard": "stark",
+   "abgeleitet": "Zahl der Bedrohungen: Hunde befreit (barkley_ausgang fanatiker oder mehr_als_eine_liebe), Tauben befreit, Näherinnen befreit, Gangs im Frieden (waffenstillstand oder gangs_gemeinsam), Pips neu verknotet, Hazel wissend oder verraten, Mercy Reformerin oder Abtrünnige. 0–2 stark, 3–4 brüchig, 5+ verzweifelt",
+   "akt": "4",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Pfötchens Züge in Akt 4 (Tempo des Verrats an Hazel, Pips), Härte in der Gründungsnacht",
+   "hinweis": "siehe akt4_rueckgrat.md, Abschnitt 4"
   }
  ],
  "prototyp_flags": [

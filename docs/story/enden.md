@@ -111,7 +111,7 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 
 ## Das Finale *(entschieden 13.11.)*
 
-**Eine Nacht, ein Schauplatz.** Akt 4 heißt „Die Stadt, die zerreißt“. Pfötchen lenkt den Zorn der Stadt auf Hazel, die Unruhen kippen in die letzte Nacht. Unten brennt Cathattan, oben im Tempel des Ordens hält Pfötchen das Knäuel. Wie viel brennt, zeigt `stadt_brand`: die sichtbare Summe aller großen Knoten, bevor der Spieler die letzte Entscheidung trifft.
+**Eine Nacht, ein Schauplatz: die Gründungsnacht.** Einmal im Jahr feiert der Orden die Nacht, in der Meow York um das goldene Knäuel entstand. Die ganze Stadt ist auf den Straßen, die Resonanz ist so stark wie nie. Pfötchen hat den alten Hass auf die Insekten auf ihre Schutzherrin Hazel gelenkt, und in dieser Nacht kippt alles (siehe `akt4_rueckgrat.md`). Unten brennt Cathattan, oben im Tempel des Ordens hält Pfötchen das Knäuel. Wie viel brennt, zeigt `stadt_brand`: die sichtbare Summe aller großen Knoten, bevor der Spieler die letzte Entscheidung trifft.
 
 **Grundsätze, damit es kein BG3-Klon wird:**
 1. **Verbündete werden nicht gerufen, die Stadt rettet sich selbst.** Keine Beschwörung im Kampf. Was der Spieler geknüpft hat, zeigt sich daran, ob Viertel halten oder kippen: Eimerketten, Leute, die ihm einen Hinterhof öffnen, oder eine Menge, die sich gegen ihn dreht.
@@ -134,6 +134,7 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
   - **Nicht tödlich** bleibt immer möglich, kostet aber: Es dauert länger, das Feuer frisst sich weiter (`stadt_brand` eine Stufe höher), eine Aufgabe eines Gefährten in der Stadt scheitert, und die Gruppe geht verletzt weiter.
   - **Töten** ist schnell. Der Held kann es ohne Zögern, weil er nicht mitfühlt. Das Spiel kommentiert es nicht, die Gefährten schon: Mercy wendet sich ab, Big Dig hilft wortlos, Barkley nickt.
   - Wie viele sterben, merkt sich das Spiel: `buerger_getoetet` = keine, einige, viele.
+  - **Ist der Held ein Insekt oder eine Taube,** richtet sich die Menge gezielt gegen ihn: Er ist das Feindbild, das Pfötchen ihr gegeben hat.
 - **Wankt:** ein Abschnitt mit Proben (Schleichen, Überzeugen, Einschüchtern) statt Kampf.
 - **Hält:** Eimerketten öffnen ihm eine Gasse. Die Station entfällt, und sie ist das schönste Bild auf dem Weg.
 

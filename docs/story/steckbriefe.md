@@ -23,7 +23,7 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 - **Kern:** Frommer Pflichtmensch. Die Stadt geht vor, mit einer Ausnahme: sein Sohn.
 - **Wesen:** würdevoll, langsam, sanft im Ton, unerbittlich in der Sache. Mitleid ändert nie seine Entscheidungen.
 - **Will:** Frieden, kein zweiter Hundekrieg. **Braucht:** seinen Sohn zurück.
-- **Wunde:** Seine Frau war seine erste Leitung und nahm sich, zermürbt vom Nachhall, das Leben. Sie hatte die Art des Helden, die der Spieler wählt.
+- **Wunde:** Seine heimliche Geliebte war seine erste Leitung und nahm sich, zermürbt vom Nachhall, das Leben. Sie hatte die Art des Helden, die der Spieler wählt. Er lebt ehelos, der Sohn ist unehelich.
 - **Knäuel:** schnitt den Sohn heraus, nahm Malcolm als Leitung, ohne ihn je zu lieben. Zog Hazel als nächste Leitung heran.
 - **Bogen:** B „Der verzweifelte Vater“ im Finale. Ausgänge: verschonen, bekehren, besiegen.
 - **Spiegel:** Mercy.
@@ -103,7 +103,7 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 - **Kern:** Pflegerin des Knäuels und die Hälfte der Macht des Ordens.
 - **Wesen:** geduldig, präzise, pedantisch, streng mütterlich. Strickt mit vier Armen und korrigiert jeden.
 - **Will:** überleben. **Braucht:** ihr Lebenswerk vor Missbrauch retten.
-- **Wunde:** Sie hat Pfötchen die Stelle gezeigt, an der er seinen Sohn herausschnitt. Sie hat die Wege berechnet, die Malcolm ausgehöhlt haben.
+- **Wunde:** Sie hat Pfötchen die Stelle gezeigt, an der er seinen Sohn herausschnitt, ohne zu wissen, dass es sein Sohn war. Sie hat die Wege berechnet, die Malcolm ausgehöhlt haben.
 - **Knäuel:** Sie ist die Kartografin: Sie kennt die Übergänge, berechnet die billigsten Ketten und plant Pfötchens Pflege. Ihr Musterbuch ist der Beweis für das System. In Akt 4 kann sie Menschen herausschneiden.
 - **Bogen:** A „Die Beichte“ in Akt 3, in Akt 4 die Frage, wen sie herausschneidet. Im Finale wird sie Hüterin, Zerstörerin oder Schneiderin.
 

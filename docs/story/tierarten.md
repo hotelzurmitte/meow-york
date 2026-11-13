@@ -91,7 +91,7 @@ Die Stadt gehört den Katzen, aber nicht allen gleich.
 ### Vögel
 - **Roach:** „Vogel. Warum nimmst du überhaupt ein Taxi?“ (Running Gag: Fliegen entscheidet die Klasse.)
 - **Verwandt: Corvin.** Er öffnet sich schneller (Zuneigung +2 zu Beginn), redet über das Fliegen und über Rook. Gus lässt einen Vogel ohne Corvin aufs Dach.
-- **Taube, die schwerste Wahl:** Beim Wählen erscheint „Tauben haben es in Meow York schwer. Manche Türen bleiben zu.“ **Roach:** „Eine Taube. Na, dich vermisst wenigstens keiner.“ Manche Läden bedienen ihn nicht. Bei der Schlägerei richtet sich ein Teil der Welle gegen ihn, denn Hass auf Tauben ist Pfötchens liebster Sündenbock. Die Tauben-Quest wird seine persönlichste: Befreit er sie, befreit er seine Art. Die Tauben selbst erzählen ihm, wohin die Expedition geht (`juno_spur` +1).
+- **Taube, die schwerste Wahl:** Beim Wählen erscheint „Tauben haben es in Meow York schwer. Manche Türen bleiben zu.“ **Roach:** „Eine Taube. Na, dich vermisst wenigstens keiner.“ Manche Läden bedienen ihn nicht. Bei der Schlägerei richtet sich ein Teil der Welle gegen ihn, denn Tauben sind nach den Insekten Pfötchens zweitliebster Sündenbock. Die Tauben-Quest wird seine persönlichste: Befreit er sie, befreit er seine Art. Die Tauben selbst erzählen ihm, wohin die Expedition geht (`juno_spur` +1).
 
 ### Krokodile
 In Hairlem erzählt man sich von Krokodilen im Kanal. Jetzt steht eins an der Theke.
@@ -125,9 +125,10 @@ Die Gestrandeten der Straße.
 - **Verwandt: Juno** (Waschbär) **und Ansgar** (Dachs). Für die übrigen Marder gilt die Straßengemeinschaft der Gestrandeten.
 
 ### Insekten
-Die Ärmsten von Hairlem. Unten hält man zusammen, und man wird übersehen, was ein Vorteil sein kann.
+Die Ärmsten von Hairlem und der größte Sündenbock der Stadt, noch vor den Tauben. Unten hält man zusammen, und man wird übersehen, was ein Vorteil sein kann.
 - **Roach:** „Einer von uns.“ Er raubt ihn trotzdem aus, und das ist härter als bei jedem anderen: „Geschäft ist Geschäft, Bruder. Du hättest dasselbe gemacht.“
 - Ilse gibt mehr Hinweise ohne Probe, Hummel gibt Rabatt, Antonia öffnet die Garage ohne Probe. Der Orden nimmt ihn sofort auf („Gerade die Kleinsten nehmen wir zuerst“), und das passt bedrückend zu Roachs Liste. Die Garde hält ihn schon bei `orden_wachsam` 1 an.
+- **Sündenbock:** Pfötchen lenkt Wut am liebsten auf Insekten, denn der Hass auf sie ist alt, abstrakt und kaum verknotet. Bei der Schlägerei und in der Gründungsnacht richtet sich ein Teil der Welle gegen den Helden selbst, wie bei der Taube.
 - **Verwandt: Mercy** (Gottesanbeterin, Akt 3). Sie spricht mit ihm über Glauben, wie mit keinem anderen.
 
 ### Spinnen
@@ -189,14 +190,12 @@ Das ist zugleich der erste Hinweis auf den Hundekrieg, auf das Graffiti am Brüc
 
 ---
 
-## Die Herkunft des Helden *(entschieden 13.11.)*
+## Die Herkunft des Helden *(entschieden 13.11., geändert 14.11.)*
 
-**In Meow York kommen Kinder nach einem Elternteil.** Der Held ist Pfötchens leiblicher Sohn und hat die Art seiner Mutter. **Pfötchens Frau war von genau der Unterart, die der Spieler wählt:** Ist der Held ein Rotfuchs, war sie eine Rotfüchsin. Ist er eine Vogelspinne, war sie eine Vogelspinne. Ist er eine Perserkatze, war sie eine Perserkatze. (`held_unterart` bestimmt ihr Bild in Rückblenden, im Archiv des Ordens und auf dem Foto, das Pfötchen versteckt hält.)
+**In Meow York kommen Kinder nach einem Elternteil.** Der Held ist Pfötchens unehelicher Sohn und hat die Art seiner Mutter. **Pfötchens heimliche Geliebte war von genau der Unterart, die der Spieler wählt:** Ist der Held ein Rotfuchs, war sie eine Rotfüchsin. Ist er eine Vogelspinne, war sie eine Vogelspinne. Ist er eine Perserkatze, war sie eine Perserkatze. (`held_unterart` bestimmt ihr Bild in Rückblenden und auf dem Foto, das Pfötchen in seiner Kammer versteckt hält.)
 
 **Was das für die Geschichte bedeutet:**
-- **Hauskatze:** kein Skandal. Er sieht aus wie einer von ihnen und ist es doch nicht.
-- **Großkatze:** ein kleiner Skandal, eine „Straßenkatze“ an der Seite des Ordensoberhaupts.
-- **Jede andere Art:** Das Oberhaupt der Katzen hat eine Nicht-Katze geheiratet. Der Orden hat es verschwiegen, Cathattan hat sie nie als eine der Ihren angesehen. Zermürbt hat sie der Nachhall (fest), aber sie war dabei allein.
-- **Ein zweiter Grund, den Sohn zu verstecken:** Er sollte vor dem Knäuel geschützt werden (fest). Und ein Erbe, der keine Katze ist, hätte den Orden gespalten.
-- **Für Malcolm:** Ein Luchs, aufgenommen als Ersatz für einen Sohn, der vielleicht nicht einmal eine Katze war. Das macht seine Wut noch bitterer.
-- **Für den Spieler:** Seine Wahl im Taxi bekommt in Akt 3 oder 4 eine Bedeutung, die er nicht erwartet hat, wenn er das Foto seiner Mutter sieht und sie aussieht wie er.
+- **Der eigentliche Skandal ist das uneheliche Kind.** Das Oberhaupt des Ordens lebt ehelos. Eine heimliche Geliebte und ein versteckter Sohn würden sein Amt beenden, egal welcher Art sie war. Das Foto ist in Akt 4 eine Waffe gegen ihn.
+- **Die Art verstärkt es:** War sie keine Katze, kommt ein zweiter Skandal dazu. War sie eine Großkatze, eine „Straßenkatze“. War sie eine Hauskatze, bleibt es beim ersten.
+- **Für Malcolm:** Die Stadt sieht in ihm das Findelkind, das ein Heiliger allein großzieht. In Wahrheit war er der Ersatz für einen Sohn, den niemand kennen durfte.
+- **Für den Spieler:** Seine Wahl im Taxi bekommt in Akt 4 eine Bedeutung, die er nicht erwartet hat, wenn er das Foto seiner Mutter sieht und sie aussieht wie er.

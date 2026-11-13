@@ -129,6 +129,18 @@ func _abgeleitet(name: String):
 		if flag("odile") in ["gewonnen", "getaeuscht"]: return "odile"
 		if not flag("mantelmann") in ["verpruegelt", "unbekannt"]: return "ansgar"
 		return "junger_kater"
+	# Wie fest Pfötchen die Stadt noch im Griff hat (Akt 4)
+	if name == "pfoetchen_griff":
+		var knoten: Array = flag("grosse_knoten")
+		var n := 0
+		if flag("barkley_ausgang") in ["fanatiker", "mehr_als_eine_liebe"]: n += 1
+		if flag("tauben") == "befreit": n += 1
+		if flag("naeherinnen") == "befreit": n += 1
+		if "waffenstillstand" in knoten or "gangs_gemeinsam" in knoten: n += 1
+		if flag("dig_ausgang") == "neu_verknotet": n += 1
+		if flag("hazel_status") in ["wissend", "verraten"]: n += 1
+		if flag("mercy_ausgang") in ["reformerin", "abtruennige"]: n += 1
+		return "stark" if n <= 2 else ("bruechig" if n <= 4 else "verzweifelt")
 	if name == "verknotung_moeglich":
 		var h := 0
 		for v in GROSSE_KNOTEN.viertel:

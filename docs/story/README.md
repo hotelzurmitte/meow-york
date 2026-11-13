@@ -15,9 +15,11 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 
 ## Vom Nutzer im Chat entschieden
 
-- Pfötchens Frau war seine erste Leitung und nahm sich, zermürbt vom Nachhall, das Leben.
-- Pfötchen hat Malcolm nach dem Tod seiner Frau bewusst als neue Leitung gewählt: ein Waisenkind ohne andere Bindungen, das als Ziehsohn des Ordensoberhaupts der Liebling der Stadt werden würde. Er hat ihn nie geliebt. Die Liebe zum Sohn blieb eine Schlinge ins Leere, und Malcolm spürt das.
-- Pfötchen hat den Sohn selbst herausgeschnitten. Die Weberin hat ihm die Stelle gezeigt.
+- Pfötchens heimliche Geliebte war seine erste Leitung und nahm sich, zermürbt vom Nachhall, das Leben. Das Ordensoberhaupt lebt ehelos, der Held ist ein uneheliches Kind. Die Stadt verehrt Pfötchen als Heiligen, der allein ein Findelkind (Malcolm) großzieht. *(14.11.)*
+- Pfötchen hat Malcolm nach dem Tod seiner Geliebten bewusst als neue Leitung gewählt: ein Waisenkind ohne andere Bindungen, das als Ziehsohn des Ordensoberhaupts der Liebling der Stadt werden würde. Er hat ihn nie geliebt. Die Liebe zum Sohn blieb eine Schlinge ins Leere, und Malcolm spürt das.
+- Pfötchen hat den Sohn selbst herausgeschnitten. Die Weberin hat ihm die Stelle gezeigt, ohne zu wissen, wessen Kind es war: Er sagte ihr, das Kind sei eine Gefahr für die Stadt.
+- **Enthüllung in drei Stufen** (14.11.): Akt 2 die Narbe (er wurde vom Halter herausgeschnitten), Akt 3 die Beichte der Weberin (angeblich als Gefahr), Akt 4 Mitte das Foto der Mutter in Pfötchens Kammer (er ist der Sohn und wurde aus Liebe herausgeschnitten).
+- **Insekten sind der größte Sündenbock der Stadt,** die Tauben der zweite. In Akt 4 lenkt Pfötchen den Hass auf die Insekten auf ihre Schutzherrin Hazel. *(14.11.)*
 - Die Weberin ist die Kartografin des Knäuels: Sie kennt die Übergänge, berechnet die billigsten Wege und plant Pfötchens Pflege. Es gibt keine neue Regel dafür. In Akt 4 kann sie Menschen herausschneiden.
 - „Der Erbe“ ist ein Weg im Einwebungs-Ende, denn ein Herausgeschnittener kann das Knäuel nicht benutzen.
 - Big Digs vermisstes Kind heißt Pips (ein kleiner Mäuserich). Das Mädchen, das in Akt 1 hilft, heißt Mimi.
@@ -51,7 +53,7 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 - [ ] **Bekannte Gesichter im Finale erweitern:** Bisher kommen nur Figuren aus Akt 1 in Frage (Station 5, `bekanntes_gesicht_wer`: Benny, Pounce, Odile, Ansgar, Malcolms junger Kater). Beim Schreiben von Akt 2, 3 und 4 prüfen, welche neue Nebenfigur dort stark genug wird, um im Finale gegen den Helden zu stehen. Dann die Liste in `enden.md` und die Berechnung in `GameState` ergänzen. *(Wunsch des Nutzers, 13.11.)*
 - [x] **Riff:** entschieden 14.11. (`quests_und_beziehungsboegen.md`, Abschnitt Lil' Riff). Offen bleibt nur der genaue Ort in Akt 3.
 - [ ] **Malcolm und die Ankunft des Helden (Akt 2):** Das Regelwerk sagt, Malcolm hat ihn hergelockt. In Akt 1 kauft er die Papiere aller allein Angereisten, „er sucht jemanden“. Klären, wie viel er wusste.
-- [ ] **Akt 4:** Rückgrat als Entwurf in `akt4_rueckgrat.md`, wartet auf Freigabe.
+- [x] **Akt 4:** Rückgrat in `akt4_rueckgrat.md`. Entschieden 14.11.: Cathattan als eigenes Areal, Gründungsnacht mit fairer Uhr (Zeit nur über lange Rast) und Point of no Return, Pfötchen mit dem Rücken zur Wand, Foto der Mutter in der Mitte des Akts. Einzelheiten noch Entwurf.
 - [ ] **Große Knoten:** Liste in `data/zustaende/grosse_knoten.json` mit jedem Akt erweitern, Cathattan braucht mehr als zwei positive.
 
 ## Namen (freigegeben)

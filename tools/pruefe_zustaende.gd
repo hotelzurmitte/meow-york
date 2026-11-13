@@ -189,6 +189,14 @@ func _teste_laufzeit() -> void:
 	_erwarte(GameState.flag("bekanntes_gesicht_wer") == "benny", "Benny gerettet: Benny kommt zuerst")
 	GameState.set_flag("riff", "geheilt")
 	_erwarte(GameState.flag("bekanntes_gesicht_wer") == "riff", "Riff geheilt: Riff kommt vor allen anderen")
+	# Pfötchens Griff
+	GameState.aus_dict({})
+	_erwarte(GameState.flag("pfoetchen_griff") == "stark", "ohne Taten des Helden: Griff stark")
+	GameState.set_flag("tauben", "befreit"); GameState.set_flag("naeherinnen", "befreit"); GameState.set_flag("dig_ausgang", "neu_verknotet")
+	_erwarte(GameState.flag("pfoetchen_griff") == "bruechig", "drei Bedrohungen: Griff brüchig")
+	GameState.set_flag("hazel_status", "verraten"); GameState.set_flag("mercy_ausgang", "reformerin")
+	_erwarte(GameState.flag("pfoetchen_griff") == "verzweifelt", "fünf Bedrohungen: Griff verzweifelt")
+	GameState.aus_dict({})
 	# Zähler bleiben in ihren Grenzen
 	for i in 8: GameState.erhoehen("orden_wachsam")
 	_erwarte(GameState.flag("orden_wachsam") == 5, "erhoehen() stoppt bei max 5")

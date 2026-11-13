@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 144
+- **Variablen insgesamt:** 145
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 99
+- **Story-Variablen:** 100
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -106,6 +106,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `andere_wahl` | nicht_da, zurueckgeholt, bewusstlos, getoetet | nicht_da | Finale, Station 3b | Epilog, Gang im Epilog | 5 | die in Akt 1 nicht gewählte Gefährtin (Shiner oder Knuckles) |
 | `bekanntes_gesicht_wer` | riff, benny, pounce, odile, ansgar, junger_kater | junger_kater | berechnet | Finale, Station 5 | 5 | abgeleitet: riff = geheilt → riff; dann gerettet enthält benny → benny, pounce → pounce; odile gewonnen oder getaeuscht → odile; mantelmann nicht verpruegelt und nicht unbekannt → ansgar; sonst junger_kater |
 | `bekanntes_gesicht` | keins, zurueckgeholt, bewusstlos, getoetet | keins | Finale, Station 5 | Epilog (Gedenktafel) | 5 |  |
+| `pfoetchen_griff` | stark, bruechig, verzweifelt | stark | berechnet | Pfötchens Züge in Akt 4 (Tempo des Verrats an Hazel, Pips), Härte in der Gründungsnacht | 4 | abgeleitet: Zahl der Bedrohungen: Hunde befreit (barkley_ausgang fanatiker oder mehr_als_eine_liebe), Tauben befreit, Näherinnen befreit, Gangs im Frieden (waffenstillstand oder gangs_gemeinsam), Pips neu verknotet, Hazel wissend oder verraten, Mercy Reformerin oder Abtrünnige. 0–2 stark, 3–4 brüchig, 5+ verzweifelt; siehe akt4_rueckgrat.md, Abschnitt 4 |
 
 ## Juno
 
