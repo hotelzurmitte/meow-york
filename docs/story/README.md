@@ -50,6 +50,8 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 
 - [ ] **Bekannte Gesichter im Finale erweitern:** Bisher kommen nur Figuren aus Akt 1 in Frage (Station 5, `bekanntes_gesicht_wer`: Benny, Pounce, Odile, Ansgar, Malcolms junger Kater). Beim Schreiben von Akt 2, 3 und 4 prüfen, welche neue Nebenfigur dort stark genug wird, um im Finale gegen den Helden zu stehen. Dann die Liste in `enden.md` und die Berechnung in `GameState` ergänzen. *(Wunsch des Nutzers, 13.11.)*
 - [x] **Riff:** entschieden 14.11. (`quests_und_beziehungsboegen.md`, Abschnitt Lil' Riff). Offen bleibt nur der genaue Ort in Akt 3.
+- [ ] **Malcolm und die Ankunft des Helden (Akt 2):** Das Regelwerk sagt, Malcolm hat ihn hergelockt. In Akt 1 kauft er die Papiere aller allein Angereisten, „er sucht jemanden“. Klären, wie viel er wusste.
+- [ ] **Akt 4:** Rückgrat als Entwurf in `akt4_rueckgrat.md`, wartet auf Freigabe.
 - [ ] **Große Knoten:** Liste in `data/zustaende/grosse_knoten.json` mit jedem Akt erweitern, Cathattan braucht mehr als zwei positive.
 
 ## Namen (freigegeben)
