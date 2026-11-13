@@ -63,9 +63,25 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 *Zimmer über dem Nest · Held allein · neu*
 
 - Der Held ist am Ende: weit gereist, beklaut, verprügelt. Er schläft sofort ein. **Die Nacht ist Pflicht** und beendet den ersten Tag.
-- **Traum, kurz spielbar: „Das Fest“.** Ein Dorffest in seiner Kindheit. Alle lachen über denselben Witz, nur das Kind steht still. Juno, damals sieben, zieht ihn am Ärmel und flüstert: „Die lachen, weil der Bürgermeister in den Teich gefallen ist. Das ist lustig. Du musst jetzt auch lachen.“ Dann das Ratespiel der Pflegemutter: „Wie steht jemand, der lügt?“
-- **Was der Spieler damit lernt,** ohne Erklärung: Der Held fühlt nicht mit, er liest. Und Juno war seine Dolmetscherin. Woher das kommt, bleibt offen. Die Herkunft wird erst in Akt 4 enthüllt.
-- **Am Morgen:** Wer zugesagt hat, wird beim Verlassen des Zimmers von Hummel angesprochen. Daraus entsteht das erste richtige Gespräch mit ihm: über die Schicht, über Hairlem und darüber, dass man hier besser nichts fragt.
+- **Erinnerung in drei Teilen, kurz spielbar.** Sie soll ohne Erklärung klar machen: Er liebt, aber er fühlt nicht mit. Er liest stattdessen. Und Juno war sein Übersetzer.
+
+**a) Das Dorffest (Kind, etwa sieben).** Ein Mann fällt in den Teich, und alle lachen gleichzeitig. Nur das Kind steht still und schaut von Gesicht zu Gesicht. Zwei Erwachsene flüstern: „Der Kleine ist kalt. Unheimlich.“ Juno zieht ihn am Ärmel:
+> Juno: Die lachen, weil er sich so erschrocken hat. Das ist lustig.
+> Kind: Woher weißt du das?
+> Juno: Das spürt man doch!
+> Kind: Ich nicht.
+> Juno: *überlegt kurz* Dann sag ich's dir. Immer. Okay?
+
+**b) Das Ratespiel (Kind, etwa zehn).** Die Pflegemutter sitzt mit ihm am Küchentisch und zeigt Fotos von Gesichtern. „Wer lügt?“ Der Spieler spielt mit und lernt dabei das Spurenlesen: Hände, Blick, Haltung. Nebenbei sagt die Pflegemutter: „Als Baby konnte dich niemand beruhigen. Nicht einmal ich. Als käme nichts bei dir an.“ Er fragt, ob er kaputt ist. Sie: „Du bist anders angeschlossen. Du musst hinschauen, wo andere fühlen. Dafür sieht man dir nichts vor.“
+
+**c) Der Abschied (beide erwachsen).** Juno zieht nach Meow York. Sie umarmt ihn und weint. Er hält sie fest, weil er weiß, dass man das tut, und weil er sie liebt. Spüren kann er ihren Kummer nicht.
+> Juno: Du merkst nie, wenn ich traurig bin.
+> Held: Ich weiß.
+> Juno: Aber du bist immer da. Das ist besser. *lacht unter Tränen* Wenn ich mich da verlaufe, holst du mich.
+
+- **Was der Spieler danach weiß:** Der Held liebt wirklich, er fühlt nur nicht mit, sondern liest. Juno hat für ihn übersetzt, und jetzt fehlt sie. Das ist die Formel „Bindung ohne Resonanz“, gezeigt statt erklärt.
+- **Was er noch nicht weiß:** warum. Das erfährt er Schritt für Schritt (siehe „Was der Spieler wann über den Helden erfährt“).
+- **Am Morgen:** Wer zugesagt hat, wird beim Verlassen des Zimmers von Hummel angesprochen. Daraus wird das erste richtige Gespräch mit ihm: über die Schicht, über Hairlem und darüber, dass man hier besser nichts fragt.
 
 ### 4 · Junos Wohnung
 *Mulberry Street · Nachbarin, Mimi · neu, mit Prototyp-Figur Mimi*
@@ -83,14 +99,15 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 ### 5 · Roachs Garage
 *Garage im Süden · Antonia, Big Dig · Prototyp: `kapitel1_strasse`, umgebaut*
 
-- **Ziel:** Papiere, Ausrüstung und Geld zurückholen. Ohne Papiere keine Brücke, ohne Ausrüstung keine Klasse.
+- **Ziel:** Papiere, Ausrüstung und Geld zurückholen. Ohne Ausrüstung keine Klasse, ohne Papiere keine Brücke.
 - Antonia bewacht die Kellertür. Es gibt drei Wege: überreden, schleichen oder durch die Kanalisation. So lernt der Spieler, dass jede Aufgabe mehrere Wege hat.
 - **Im Keller trifft der Held Big Dig.** Der Maulwurf hat sich von unten in Roachs Keller gegraben. Er sucht nicht Geld, sondern Roachs Liste. Er hat gehört, dass Roach Namen verkauft, und Pips ist verschwunden.
 - **Gemeinsam knacken sie den Geldschrank.** Darin liegen:
-  - Papiere, Rucksack und Geld des Helden
+  - Rucksack und Geld des Helden, **aber nicht seine Papiere.** Sie sind verschwunden. Roachs Buchführung verrät nur: „Papiere Fuchs: verkauft, bar, an den mit den teuren Schuhen.“ (Die Tierart passt sich an.)
   - das Geld anderer Neuankömmlinge
   - die **Namensliste.** Ein Eintrag lautet „Mantel – Do.“. Weiter unten stehen **Juno** („fragt nach dem Orden, allein, keine Familie in der Stadt“) und **Pips** („Waise, Karton hinter der Garage, Waisenhaus“).
 - Roachs Leute kommen zurück. **Erster Kampf zu zweit,** jetzt mit der eigenen Ausrüstung: Big Dig taucht hinter den Gegnern aus dem Boden auf.
+- **Ohne Papiere** bleibt der Weg über die Brücken zu. Damit ist früh gesetzt, dass es später nur durch den Untergrund weitergeht.
 - **Big Dig schließt sich an** (`dig_beigetreten`): „Du suchst wen. Ich such wen. Und du lässt dich hier sonst umbringen.“
 - **Entscheidung:** Das Geld der anderen Ilse bringen oder behalten (Prototyp: `pilgerGeld`). Big Dig reagiert darauf.
 - **Unschöne Seite, angelegt:** Auf dem Rückweg sieht Big Dig einen Ordensbruder in Weiß und will ihn verprügeln. Der Held kann ihn anstacheln oder bremsen. Der Bruder weiß von nichts.
@@ -191,7 +208,7 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 ### 16 · Malcolm
 *Nach der Schlägerei, zwischen Verletzten · Malcolm Snax · neu*
 
-- Ein Luchs im teuren Mantel verbindet Verletzte beider Seiten. Er weiß, was jeder braucht, bevor der es sagt. Die Leute lieben ihn.
+- Ein Luchs im teuren Mantel und mit teuren Schuhen verbindet Verletzte beider Seiten. Wer Roachs Notiz gelesen hat, kann es ahnen (Wahrnehmung). Er weiß, was jeder braucht, bevor der es sagt. Die Leute lieben ihn.
 - Er spricht den Helden an, charmant und hilfsbereit, und bietet Hilfe bei der Suche nach Juno an: „Ich kenne Leute im Orden. Ich war mal einer.“
 - **Der kleine Bruch:** Einen Moment lang sieht Malcolm ihn an, als würde er auf etwas lauschen. Dann: „Bei dir ist es still. Weißt du, wie selten das ist?“ Er erkennt ihn und sagt nichts.
 - **Corvin** traut ihm sofort, weil Malcolm sein bester Informant ist. Das ist sein blinder Fleck. **Big Dig** brummt nur.
@@ -244,12 +261,31 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 ### 22 · Point of no Return
 *stillgelegter U-Bahn-Eingang Whisker Avenue · Gruppe*
 
-- Über die Brücken nach Cathattan kommt der Held nicht mehr. Seit der Schlägerei steht „der Fadenlose“ auf den Listen der Ordensgarde an den Kontrollposten. Der einzige Weg führt nach unten.
+- Über die Brücken nach Cathattan kommt der Held nicht: Er hat keine Papiere, und seit der Schlägerei steht „der Fadenlose“ auf den Listen der Ordensgarde. Der einzige Weg führt nach unten.
 - **Warnung vor dem Übergang**, als Kommentar der Gefährten (Zustandsplan):
   - Corvin: „Auf den Dächern ist noch was offen.“ Das gilt, wenn die Tauben-Quest offen ist. Sie verfällt nicht, das Fenster reicht bis Akt 2.
   - Big Dig: „Wenn wir runtergehen, sind wir eine Weile weg.“
   - Hummel gibt beim Abschied einen letzten Honig mit, wenn ihre Nebenquest erledigt ist.
 - Abstieg in die Subfurs. **`akt_wechseln(2)`**.
+
+---
+
+## Was der Spieler wann über den Helden erfährt
+
+Das Phänomen muss früh klar sein, weil das Anknüpfen in Akt 2 sonst nichts bedeutet. Erst die Herkunft bleibt bis zum Schluss geheim.
+
+| Wann | Was | Wie |
+| --- | --- | --- |
+| Akt 1, Szene 3 | **Was mit ihm ist:** Er liebt, fühlt aber nicht mit, er liest | Erinnerung an Fest, Ratespiel und Abschied |
+| Akt 1, Szene 15 | **Dass es mit dem Knäuel zu tun hat:** Er ist immun, die Stadt nennt ihn „Fadenlos“ | Massenschlägerei |
+| Akt 1, Szene 16 | Malcolm bemerkt es: „Bei dir ist es still.“ | Andeutung, keine Erklärung |
+| Akt 2, Lagerszene der Weberin | **Warum:** Er ist nicht aus dem Faden der Stadt, jemand hat ihn herausgeschnitten. Mit dem Taschen-Bild erklärt sie, was das heißt | Gespräch, bevor das Anknüpfen kritisch wird |
+| Akt 2, Mitte | **Was es kostet:** Das erste Anknüpfen geschieht unabsichtlich (Regelwerk), etwa wenn er einen sterbenden Freund festhält. Danach warnt die Weberin, Malcolm erklärt es scheinbar hilfsbereit | Wendepunkt in der Mitte von Akt 2 |
+| Akt 2 | **Dass er von hier ist:** Im Knäuel liegt eine Narbe mit seinem Geburtsdatum | Musterbuch der Weberin |
+| Akt 3 | **Wer geschnitten hat:** Die Weberin beichtet, dass sie dem Meister vor 25 Jahren die Stelle zeigte. Wessen Kind es war, sagte er ihr nie | Beichte der Weberin |
+| Akt 4 | **Wessen Sohn er ist:** Pfötchens | Die Wahrheit (GDD) |
+
+*Hinweis:* Im Regelwerk steht die Herkunft schon in Akt 3, im GDD in Akt 4. Mit dieser Treppe passt beides: In Akt 3 erfährt man, dass Pfötchen ein Kind herausgeschnitten hat, in Akt 4, dass es das eigene war.
 
 ---
 
@@ -273,7 +309,7 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 | P1 | Charaktererstellung, Dialogwahl, Wahrnehmungsprobe |
 | P2 | Kampf allein, Verlust der Ausrüstung |
 | 1–2 | Erkundung, Würfelproben, Unterschlupf, Resonanz-Szene |
-| 3 | lange Rast, Traum: der Held fühlt nicht mit |
+| 3 | lange Rast, Erinnerung: der Held fühlt nicht mit, er liest (Ratespiel als Vorübung zum Spurenlesen) |
 | 4 | Spurenlesen (Beobachtung statt Bauchgefühl) |
 | 5 | mehrere Wege pro Aufgabe, Kampf zu zweit, Gefährte rekrutieren |
 | 6 | Lagerszene |
@@ -291,7 +327,7 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 
 - **Der Held kommt allein.** Big Dig kommt in Szene 5 dazu, Corvin in Szene 8.
 - **Der Brief wird im Taxi gelesen**, die Charaktererstellung ist in Roachs Fragen eingebaut.
-- **Der Überfall nimmt auch Papiere und Ausrüstung.** Das macht Roachs Garage zur Pflicht.
+- **Der Überfall nimmt auch Papiere und Ausrüstung.** Das macht Roachs Garage zur Pflicht. Die Ausrüstung findet er dort, die Papiere nicht.
 - **Big Digs vermisstes Kind heißt Pips**, das Mädchen, das hilft, heißt Mimi. Im Prototyp ist es umgekehrt.
 - **Die Branx gibt es nicht mehr.** Die Breaking Cats sitzen im Künstlerviertel, die Nomapes in Industrie und Hafen.
 - **Die raue Stimme auf der Kassette** gehört der Weberin.
@@ -322,4 +358,5 @@ Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die D
 
 ## Noch offen
 
+- **Wer hat die Papiere gekauft?** Vorschlag: Malcolm. Er hat Pfötchens Schlinge ins Leere gespürt und gesucht. In den Papieren stehen das Geburtsdatum und die Pflegefamilie, so erkennt er den Helden sicher. Er behält es für sich und gibt die Papiere später zurück, als scheinbare Freundlichkeit, wenn er ihn nach Cathattan bringen will.
 - **Vincenzo Frankinetti:** Vincenzo aus dem Prototyp und Fitz sind beide Flughörnchen. Vorschlag: Vincenzo ist Fitz' Onkel, der den Zirkus verlassen hat, um Fotograf zu werden.
