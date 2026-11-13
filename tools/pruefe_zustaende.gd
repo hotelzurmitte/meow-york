@@ -181,6 +181,12 @@ func _teste_laufzeit() -> void:
 	_erwarte(GameState.flag("haltung_cats") == "neutral", "Nugget entlarvt: andere Gang neutral")
 	GameState.grosser_knoten("gangs_gemeinsam")
 	_erwarte(GameState.flag("haltung_cats") == "verbuendet", "Gangs gemeinsam: beide verbündet")
+	# Das bekannte Gesicht
+	_erwarte(GameState.flag("bekanntes_gesicht_wer") == "junger_kater", "ohne Vorgeschichte: Malcolms junger Kater")
+	GameState.set_flag("odile", "gewonnen")
+	_erwarte(GameState.flag("bekanntes_gesicht_wer") == "odile", "Odile gewonnen: Odile")
+	GameState.set_flag("gerettet", ["benny"])
+	_erwarte(GameState.flag("bekanntes_gesicht_wer") == "benny", "Benny gerettet: Benny kommt zuerst")
 	# Zähler bleiben in ihren Grenzen
 	for i in 8: GameState.erhoehen("orden_wachsam")
 	_erwarte(GameState.flag("orden_wachsam") == 5, "erhoehen() stoppt bei max 5")

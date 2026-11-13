@@ -81,6 +81,14 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 - **Malcolm:** sein Bogen (Bruderschaft, der Gefallene, Leere als Wahl)
 - **Herausgeschnittene:** `weberin_herausgeschnitten`. Sie fühlen nie wieder mit, egal welches Ende.
 
+**Die Toten der letzten Nacht** (`buerger_getoetet`, `andere_wahl`, `bekanntes_gesicht`):
+- **Keine:** Der Epilog erwähnt die Nacht als die, in der niemand starb, der nicht musste. Ein Kind fragt, warum der Fadenlose niemanden geschlagen hat, der liegen blieb.
+- **Einige oder viele:** Eine Gedenktafel in Cathattan mit Namen. Bei „viele“ steht dort auch ein Name, den der Spieler kennt. Hat er die andere Wahl oder das bekannte Gesicht getötet, steht ihr Name ganz oben.
+- **Je nach Ende:**
+  - **Zerstörung:** Die Überlebenden begreifen, dass ihre Wut nie ihre eigene war. Die Toten sind für ein Gefühl gestorben, das ihnen jemand untergeschoben hat.
+  - **Verknotung:** Die Trauer wird selbst zum Knoten. Cathattan hält zusammen und hält dabei auch am Hass auf den Fadenlosen fest.
+  - **Der Richter:** Wer Pfötchen tötet und vorher Bürger getötet hat, bekommt im Epilog eine Frage ohne Antwort: Was unterscheidet ihn von seinem Vater?
+
 **Wichtig für die Zerstörung:** Sie trifft nur in Meow York Geborene. Juno und Fitz kamen von außerhalb und behalten ihre Resonanz. In einer Stadt, in der niemand mehr mitfühlt, sind sie plötzlich die Einzigen, die es noch können. Der Held war es immer.
 
 ---
@@ -122,7 +130,10 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 - **Maximal:** Straßensperre und zwei Trupps der Ordensgarde, Kampf.
 
 **Station 2 · Die Menge** *(Tails Square, die Unruhen gegen Hazel)*
-- **Maximal (`viertel_cathattan` = kippt):** Die Menge richtet sich gegen den Helden. Ein Kampf, in dem er niemanden töten darf, nur bewusstlos schlagen oder durchkommen. Es tut weh, weil das keine Feinde sind.
+- **Maximal (`viertel_cathattan` = kippt):** Die Bürger werden fanatisch. Sie stehen wieder auf, werfen Brandsätze und reißen Gefährten zu Boden. **Der Held muss nicht töten, aber er kann.**
+  - **Nicht tödlich** bleibt immer möglich, kostet aber: Es dauert länger, das Feuer frisst sich weiter (`stadt_brand` eine Stufe höher), eine Aufgabe eines Gefährten in der Stadt scheitert, und die Gruppe geht verletzt weiter.
+  - **Töten** ist schnell. Der Held kann es ohne Zögern, weil er nicht mitfühlt. Das Spiel kommentiert es nicht, die Gefährten schon: Mercy wendet sich ab, Big Dig hilft wortlos, Barkley nickt.
+  - Wie viele sterben, merkt sich das Spiel: `buerger_getoetet` = keine, einige, viele.
 - **Wankt:** ein Abschnitt mit Proben (Schleichen, Überzeugen, Einschüchtern) statt Kampf.
 - **Hält:** Eimerketten öffnen ihm eine Gasse. Die Station entfällt, und sie ist das schönste Bild auf dem Weg.
 
@@ -134,12 +145,25 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
   - Sind beide Gangs verbündet, entscheidet der Spieler, wer geht, oder er verhindert es durch genug andere Hilfe.
 - **Feindliche Gang:** Steht eine Gang gegen den Helden, kämpft sie an Vales Seite, als zusätzliche Welle mit ihrem Boss. Ist ihr Gefährte (Shiner oder Knuckles) dabei, steht er seiner eigenen Familie gegenüber und kann sie mit einer Probe zum Abzug bewegen.
 
+**Station 3b · Die andere Wahl** *(nur wenn die Gefährtin aus Akt 1, die der Spieler nicht gewählt hat, nicht in der Gruppe ist)*
+- Shiner oder Knuckles, die der Spieler in Akt 1 nicht genommen hat, steht auf der Brücke gegen ihn.
+  - **Ihre Gang ist feindlich:** Sie führt sie an, an Vales Seite.
+  - **Ihre Gang ist neutral:** Sie kommt allein. Pfötchen hat an ihr gezogen, und es war leicht, denn mit dem Helden verbindet sie nichts Verknotetes. „Du hast uns damals stehen lassen. Er hat gesagt, du würdest es wieder tun.“
+- **Wege:** zurückholen (Überzeugen, leichter, wenn der Held in Akt 1 fair zu ihrer Gang war), bewusstlos schlagen oder töten (`andere_wahl`).
+- Es tut weh, weil der Spieler weiß: Hätte er damals anders gewählt, stünde sie neben ihm.
+
 **Station 4 · Das Tempeltor**
 - **Maximal:** das Haupttor mit der Elite der Garde, Kampf.
 - **Andere Wege:** Big Digs Tunnel unter den Tempel, über die Dächer mit Fitz, Mercys Seitentür, ein Lüftungsschacht, den die Tauben gefunden haben. Jeder ersetzt den Kampf durch eine kurze eigene Szene.
 
 **Station 5 · Die Halle der Gläubigen**
 - **Maximal:** Pfötchen wendet die Gefährten gegen den Helden (Knotenstärke entscheidet), die Gläubigen singen, und jede Strophe macht das Zurückholen schwerer.
+- **Ein bekanntes Gesicht zuerst.** Bevor Pfötchen die Gefährten wendet, schickt er jemanden vor, den der Held kennt und der ihm einmal wohlgesonnen war. Fanatisch, aber nicht verloren. Wer es ist, ergibt sich aus dem Spiel (`bekanntes_gesicht_wer`), in dieser Reihenfolge:
+  1. **Benny oder Pounce,** wenn der Held ihn bei der Schlägerei in Akt 1 gerettet hat. Der, dem er das Leben gerettet hat, will es ihm jetzt nehmen.
+  2. **Schwester Odile,** wenn er sie gewonnen oder getäuscht hat. „Herzchen. Bitte. Lass ihn dich doch lieben.“
+  3. **Bruder Ansgar,** wenn der Held ihn in Akt 1 nicht verprügelt hat.
+  4. **Der junge Kater aus Malcolms Bewegung,** der ihn in Akt 1 ins Lazarett geführt und vor Nugget gewarnt hat.
+- **Wege:** zurückholen (Überzeugen oder Einsicht, leichter mit Junos Stimme), bewusstlos schlagen oder töten (`bekanntes_gesicht`). Danach sind die Gefährten dran.
 - **Juno:** Ist ihr Bogen verloren, steht sie als Rednerin neben Pfötchen und spricht zur Halle. Der Held kann sie nicht bekämpfen, nur zu ihr reden. Dabei zählt der Kindheitsknoten, und das angefangene „Schraubensch…“ aus Akt 1 bekommt sein Echo.
 - **Die Leitung:** Hat Pfötchen Hazel verloren (herausgeschnitten oder unlenkbar geworden), fließt der Nachhall durch den, der ihn jetzt am meisten liebt: Juno, wenn sie verloren ist, sonst Malcolm. Man sieht ihn leiden, während Pfötchen zieht.
 
@@ -171,6 +195,9 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 | **Delta Mae** | Station 5 leichter: Ihr letztes Lied übertönt die Gläubigen |
 | **Corvin** (ganze Wahrheit) | Station 1 bis 3: Das Taubennetz meldet jede Bewegung, Hinterhalte entfallen |
 | **Shiner** (Knotenmalerin) | Station 2: Die Menge erkennt ihre Wand und zögert |
+| **nicht tödlich gekämpft** (Station 2) | Station 3 bis 6 mit verletzter Gruppe, ein Gefährten-Auftrag in der Stadt scheitert, `stadt_brand` eine Stufe höher |
+| **die nicht gewählte Gefährtin** | Station 3b: gegen den Helden, an der Spitze ihrer Gang oder allein |
+| **gerettet in Akt 1, Odile, Ansgar, Malcolms Kater** | Station 5: das bekannte Gesicht, das zuerst kommt |
 | **Knotenstärke der Gefährten** | Station 5 und 6: wer gewendet wird und wie schwer er zurückzuholen ist |
 | **Malcolm** | Station 6 (siehe oben) |
 

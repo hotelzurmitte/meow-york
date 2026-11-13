@@ -2130,6 +2130,67 @@
    "gesetzt_von": "berechnet",
    "gelesen_von": "Finale: Station 1 und 3 (Welle halten, Opfer, oder an Vales Seite)",
    "hinweis": "Breaking Cats"
+  },
+  {
+   "name": "buerger_getoetet",
+   "typ": "enum",
+   "werte": [
+    "keine",
+    "einige",
+    "viele"
+   ],
+   "standard": "keine",
+   "akt": "5",
+   "gesetzt_von": "Finale, Station 2 (Die Menge)",
+   "gelesen_von": "Epilog (Gedenktafel, je nach Ende), Gefährten-Reaktionen",
+   "hinweis": "Töten ist nie Pflicht, nicht tödlich kostet Zeit, Brand und Kraft"
+  },
+  {
+   "name": "andere_wahl",
+   "typ": "enum",
+   "werte": [
+    "nicht_da",
+    "zurueckgeholt",
+    "bewusstlos",
+    "getoetet"
+   ],
+   "standard": "nicht_da",
+   "akt": "5",
+   "gesetzt_von": "Finale, Station 3b",
+   "gelesen_von": "Epilog, Gang im Epilog",
+   "hinweis": "die in Akt 1 nicht gewählte Gefährtin (Shiner oder Knuckles)"
+  },
+  {
+   "name": "bekanntes_gesicht_wer",
+   "typ": "enum",
+   "werte": [
+    "benny",
+    "pounce",
+    "odile",
+    "ansgar",
+    "junger_kater"
+   ],
+   "standard": "junger_kater",
+   "abgeleitet": "Reihenfolge: gerettet enthält benny → benny, pounce → pounce; odile gewonnen oder getaeuscht → odile; mantelmann nicht verpruegelt und nicht unbekannt → ansgar; sonst junger_kater",
+   "akt": "5",
+   "gesetzt_von": "berechnet",
+   "gelesen_von": "Finale, Station 5",
+   "hinweis": ""
+  },
+  {
+   "name": "bekanntes_gesicht",
+   "typ": "enum",
+   "werte": [
+    "keins",
+    "zurueckgeholt",
+    "bewusstlos",
+    "getoetet"
+   ],
+   "standard": "keins",
+   "akt": "5",
+   "gesetzt_von": "Finale, Station 5",
+   "gelesen_von": "Epilog (Gedenktafel)",
+   "hinweis": ""
   }
  ],
  "prototyp_flags": [

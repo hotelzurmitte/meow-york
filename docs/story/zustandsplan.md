@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 140
+- **Variablen insgesamt:** 144
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 95
+- **Story-Variablen:** 99
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -102,6 +102,10 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `riff` | verschollen, gerettet, tot | verschollen | Ermittlung gegen Vale (Corvin und Barkley, Akt 3), Akt 2 | Finale: Opfer der Breaking Cats (Riff oder Adikatz), Adikatz, Epilog | 2–4 | Was genau mit Riff passiert, wird mit Akt 2 festgelegt |
 | `haltung_nomapes` | verbuendet, neutral, feindlich | neutral | berechnet | Finale: Station 1 und 3 (Welle halten, Opfer, oder an Vales Seite) | 5 | abgeleitet: gangs_gemeinsam → verbündet; gewählte Gang → verbündet; ohne Wahl → neutral; andere Gang: Auftrag ausgeführt, gewarnt oder doppelt → feindlich, sonst neutral; Nomapes zusätzlich feindlich, wenn Knuckles treue Nichte ist und der Held bei den Cats steht; Nomapes |
 | `haltung_cats` | verbuendet, neutral, feindlich | neutral | berechnet | Finale: Station 1 und 3 (Welle halten, Opfer, oder an Vales Seite) | 5 | abgeleitet: gangs_gemeinsam → verbündet; gewählte Gang → verbündet; ohne Wahl → neutral; andere Gang: Auftrag ausgeführt, gewarnt oder doppelt → feindlich, sonst neutral; Nomapes zusätzlich feindlich, wenn Knuckles treue Nichte ist und der Held bei den Cats steht; Breaking Cats |
+| `buerger_getoetet` | keine, einige, viele | keine | Finale, Station 2 (Die Menge) | Epilog (Gedenktafel, je nach Ende), Gefährten-Reaktionen | 5 | Töten ist nie Pflicht, nicht tödlich kostet Zeit, Brand und Kraft |
+| `andere_wahl` | nicht_da, zurueckgeholt, bewusstlos, getoetet | nicht_da | Finale, Station 3b | Epilog, Gang im Epilog | 5 | die in Akt 1 nicht gewählte Gefährtin (Shiner oder Knuckles) |
+| `bekanntes_gesicht_wer` | benny, pounce, odile, ansgar, junger_kater | junger_kater | berechnet | Finale, Station 5 | 5 | abgeleitet: Reihenfolge: gerettet enthält benny → benny, pounce → pounce; odile gewonnen oder getaeuscht → odile; mantelmann nicht verpruegelt und nicht unbekannt → ansgar; sonst junger_kater |
+| `bekanntes_gesicht` | keins, zurueckgeholt, bewusstlos, getoetet | keins | Finale, Station 5 | Epilog (Gedenktafel) | 5 |  |
 
 ## Juno
 

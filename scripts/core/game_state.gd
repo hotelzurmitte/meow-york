@@ -120,6 +120,14 @@ func _abgeleitet(name: String):
 		if wahl == gang: return "verbuendet"
 		if wahl == "keine": return "neutral"
 		return "feindlich" if flag("auftrag_ausgang") in ["ausgefuehrt", "gewarnt", "doppelt"] else "neutral"
+	# Das bekannte Gesicht im Finale (Station 5)
+	if name == "bekanntes_gesicht_wer":
+		var gerettet: Array = flag("gerettet")
+		if "benny" in gerettet: return "benny"
+		if "pounce" in gerettet: return "pounce"
+		if flag("odile") in ["gewonnen", "getaeuscht"]: return "odile"
+		if not flag("mantelmann") in ["verpruegelt", "unbekannt"]: return "ansgar"
+		return "junger_kater"
 	if name == "verknotung_moeglich":
 		var h := 0
 		for v in GROSSE_KNOTEN.viertel:
