@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 94
+- **Variablen insgesamt:** 96
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 49
+- **Story-Variablen:** 51
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -59,7 +59,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `akt` | 1–5 (5 = Finale) | 1 | Aktübergang | überall | alle | 5 = Finale (nach dem letzten Point of no Return) |
 | `gang_wahl` | keine, breaking_cats, nomapes | keine | Hauptquest A1: Gang-Wahl | Gefährte Shiner/Knuckles, Finale (Gangs) | 1 |  |
 | `tauben` | offen, netz_genutzt, befreit, verpasst | offen | Corvin K1 (Tauben-Quest) | Corvin K4 (Beweise), Finale (Taubennetz), Juno-Spur A1 | 1–2 | Fenster Akt 1–2 (A2: Botentaube in die Subfurs); verpasst = Züchter behält Netz, keine Hilfe im Finale; beim Aktübergang: offen → verpasst |
-| `naeherinnen` | offen, befreit, zurueckgelassen, verpasst | offen | Weberin K2 | unruhen_hairlem, Pfötchen-Gegenzüge, Nebenwirkungs-Begegnungen A3–A4 | 2–3 | Fenster Akt 2–3 (A3: Botin findet die Gruppe auf Boney Island); verpasst wirkt wie zurueckgelassen; beim Aktübergang: offen → verpasst |
+| `naeherinnen` | offen, befreit, zurueckgelassen, verpasst | offen | Weberin K2 | unruhen_hairlem, Pfötchen-Gegenzüge (blinde Pflege), Fehlgriff-Begegnungen A3–A4 | 2–3 | Fenster Akt 2–3 (A3: Botin findet die Gruppe auf Boney Island); verpasst wirkt wie zurueckgelassen; beim Aktübergang: offen → verpasst |
 | `unruhen_hairlem` | ja, nein | nein | abgeleitet: naeherinnen == befreit | hazel_status (früher unter Druck), Benny-Gefahr A4 | 2–4 | abgeleitet: GameState.flag("naeherinnen") == "befreit" |
 | `pfoetchen_gegenzuege` | 0–5 | 3 | Aktbeginn; +1 wenn unruhen_hairlem | Gegenzug-Ereignisse | 2–4 |  |
 | `vale` | lebt, vor_gericht, tot | lebt | Barkley K4 / Corvin K4 | rook, Corvin-Ausgang, Barkley-Ausgang | 4 | einmal setzen |
@@ -67,6 +67,8 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `malcolm_risse` | 0–3 | 0 | Corvin misstraut (+1), Gang-Enttarnung (+1), Weberin-Gespräch (+1) | Malcolm-Szenen A3, Erlösungsmöglichkeit A4 | 1–4 |  |
 | `hazel_status` | ahnungslos, wissend, verraten | ahnungslos | mercy_akten / Hauptquest A4 | Hazel-Szenen, Finale, Pfötchens Leitung | 3–4 | verraten = Knoten gerutscht, unlenkbar |
 | `held_anknuepfen` | 0–n | 0 | jedes Anknüpfen | Fadensicht-Freischaltung, Finale (Ende ‚Der Sohn‘) | 2–4 |  |
+| `held_verwachsung` | 0–10 | 0 | jedes Anknüpfen (steigt mit Dauer und Aufmerksamkeit) | Gefahr der Einwebung, Ende ‚Einwebung‘ | 2–5 | Regelwerk D2: Risiko, dauerhaft eingesponnen zu werden |
+| `knaeuel_aufmerksamkeit` | 0–10 | 0 | + bei jedem Anknüpfen, − mit der Zeit (lange Rast) | Pfötchens Gegenzüge, held_verwachsung | 2–5 | Regelwerk D2: hohe Aufmerksamkeit löst Gegenzüge aus |
 | `held_hebel_genutzt` | 0–n | 0 | Muster erkannt → Nutzen | Zuneigung aller, Gefährten-Kommentare, Finale | 1–4 | ZUSATZ: kann gestrichen werden |
 | `unterschlupf` | cuckoos_nest, dig_keller, corvin_buero, ubahn_waggon, deltamae_station, acorn_wohnwagen, geisterbahn, hotel_cathattan, mercy_gemeinde, kanalzugang | cuckoos_nest | Wahl des Schlafplatzes / Aktübergang | Lange Rast (Ort und Eröffnungszeile der Lagerszenen) | alle | Hauptunterschlupf je Akt: cuckoos_nest, ubahn_waggon, acorn_wohnwagen, hotel_cathattan |
 
@@ -75,7 +77,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | Variable | Werte | Standard | Gesetzt von | Gelesen von | Akt | Hinweis |
 | --- | --- | --- | --- | --- | --- | --- |
 | `juno_kontakt` | ja, nein | nein | Fitz K3 (Bote) | Juno-Szenen A3–A4 | 3 |  |
-| `juno_knoten_lager` | 0–3 | 0 | +1 shiner_galerie angenommen, +1 deltamae_lager_auftritt, +1 fitz_show geflogen | Weberin kann Juno nur auftrennen wenn < 2 | 3 |  |
+| `juno_knoten_lager` | 0–3 | 0 | +1 shiner_galerie angenommen, +1 deltamae_lager_auftritt, +1 fitz_show geflogen | juno_bogen (verknotete Bindung an den Orden erschwert den Bogen) | 3 |  |
 | `juno_offenheit` | -2–2 | 0 | Mercy-Urteil (hart −1 / gnädig +1), Delta-Mae-Szene (+1), Held-Szenen | juno_bogen | 3–4 |  |
 | `juno_bogen` | verloren, frei_bleibt, frei_kommt_mit | verloren | A4 berechnet aus juno_offenheit, Auftrennung, Kindheitsszenen | Finale (Gastfigur), Epilog | 4 | einmal setzen |
 
@@ -86,7 +88,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `dig_k2_wendung` | zurueckgeholt, verlassen | verlassen | Big Dig K2 (abhängig von dig_knoten) | dig_in_gruppe A2–A3 | 2 | einmal setzen |
 | `dig_fitz_einsicht` | ja, nein | nein | Bogen Big Dig/Fitz A3 | dig_ausgang (Voraussetzung neu_verknotet) | 3 |  |
 | `dig_pip_szenen` | 0–3 | 0 | Big Dig K3 Strand-Szenen | dig_ausgang | 3 |  |
-| `dig_ausgang` | neu_verknotet, entfuehrt, losgelassen | losgelassen | Big Dig K4 | Finale (Tunnel / fehlt / wendbar) | 4 | neu_verknotet braucht dig_fitz_einsicht UND (pip_szenen==3 ODER 'pip' in weberin_auftrennungen); einmal setzen |
+| `dig_ausgang` | neu_verknotet, entfuehrt, losgelassen | losgelassen | Big Dig K4 | Finale (Tunnel / fehlt / wendbar) | 4 | neu_verknotet braucht dig_fitz_einsicht UND (pip_szenen==3 ODER Musterbuch-Szene mit der Weberin); einmal setzen |
 
 ## Corvin
 
@@ -118,9 +120,9 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 
 | Variable | Werte | Standard | Gesetzt von | Gelesen von | Akt | Hinweis |
 | --- | --- | --- | --- | --- | --- | --- |
-| `weberin_auftrennungen` | juno, tauben, gangs, garde, pip | leer | Weberin K4 (max. 2) | Juno-Bogen, Gangs, Barkley-Plan, Big-Dig-Ausgang | 4 | nur wenn weberin_ausgang != verweigerin |
+| `weberin_herausgeschnitten` | pip, hazel, dig, corvin, shiner, knuckles, barkley, deltamae, mercy | leer | Weberin K4 (höchstens 2) | Finale (nicht wendbar), Hazel als Leitung, Pip, Epilog (keine Resonanz) | 4 | Herausgeschnittene sind unlenkbar und fühlen nie wieder mit. Nur in Meow York Geborene: nicht juno, nicht fitz |
 | `weberin_luege_gestanden` | ja, nein | nein | Bogen Weberin/Corvin A3 oder Mercy-Akten | mercy_weberin_behandelt, Auftrennung pip | 3 |  |
-| `weberin_ausgang` | hueterin, zerstoererin, verweigerin | verweigerin | Weberin K4 | Finale (Ketten lockern), Ende ‚Wegsperren‘/‚Zerstörung‘ | 4 | einmal setzen |
+| `weberin_ausgang` | hueterin, zerstoererin, schneiderin | hueterin | Weberin K4 | Finale (liest Pfötchens Ketten), Ende ‚Wegsperren‘/‚Zerstörung‘ | 4 | einmal setzen |
 
 ## Barkley
 
@@ -185,7 +187,7 @@ Mit diesen Spielständen springst du direkt an kritische Stellen, ohne 40 Stunde
 | 1 | Ende Akt 1 | alles `offen` | Kapitel mit Fenster bleiben offen, Lagerszenen werden nachgeholt |
 | 2 | Akt 2, Big Dig K2 | bigdig_knoten = false | Big Dig verlässt die Gruppe, kehrt in A3 zurück |
 | 3 | Akt 2, Weberin K2 | naeherinnen = befreit | Unruhen, Hazel unter Druck, mehr Gegenzüge |
-| 4 | Akt 3, Lager | shiner_galerie = angenommen, dm_lager_auftritt = true, fitz_show = geflogen | juno_knoten_lager = 3, Juno nicht mehr auftrennbar |
+| 4 | Akt 3, Lager | shiner_galerie = angenommen, deltamae_lager_auftritt = true, fitz_show = geflogen | juno_knoten_lager = 3, Junos Bogen wird deutlich schwerer |
 | 5 | Akt 4, Brücke | corvin + barkley in Gruppe, vale = lebt | gemeinsame Konfrontation, Prozess möglich |
 | 6 | Akt 4, Brücke | nur barkley in Gruppe | Barkley greift sofort an, vale = tot |
 | 7 | Akt 4, Finale | alle Ausgänge auf Standard | „schlechtester“ Durchlauf ohne Abstürze |

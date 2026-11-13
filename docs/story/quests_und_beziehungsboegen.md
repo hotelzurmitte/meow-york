@@ -7,12 +7,14 @@ Stand: 13.11.2026 · Baut auf Biografien, Steckbriefen und „Stimmen und Bezieh
 ## Grundsätze
 
 1. **Jede Quest läuft über mehrere Akte, und ihr Kern lässt sich nicht verpassen.** Wie in BG3 kommt die Geschichte zum Spieler: Einstiege und Hauptmomente passieren als Lagerszenen oder auf dem Hauptweg. Ortsgebundene Kapitel haben ein Fenster über zwei Akte. Details im Abschnitt „Unterschlupf, Rast und Lagerszenen“.
-2. **Jede Quest hat drei Pflichtpunkte:** eine Spur zum Orden, einen Moment mit dem Knäuel (Knoten, Anknüpfen, Fadensicht oder Heftung) und eine Rolle im Finale, die von den Entscheidungen abhängt.
+2. **Jede Quest hat drei Pflichtpunkte:** eine Spur zum Orden, einen Moment mit dem Knäuel (Knoten, Anknüpfen, Fadensicht oder Herausschneiden) und eine Rolle im Finale, die von den Entscheidungen abhängt.
 3. **Jede Quest zeigt eine unschöne Seite.** Jede Figur bekommt einen Moment, in dem sie selbstsüchtig, ungerecht oder feige handelt, und der Spieler kann sie dabei unterstützen oder bremsen.
 4. **Quests kreuzen sich.** Keine Quest steht allein. Mindestens eine andere Figur ist betroffen, und eine Entscheidung in einer Quest verändert eine andere.
 5. **Die Hauptfiguren laufen mit.** Malcolm, Juno und Hazel sind keine Gefährten, tauchen aber in den Quests der Gefährten auf. So bekommen sie Verbindungen zur Gruppe, ohne am Lagerfeuer zu sitzen.
 
-**Wie sich ein Knoten löst (Vorschlag für das Regelwerk):** Von außen kann niemand einen Knoten verschieben oder auftrennen, weder Pfötchen noch die Weberin. Ein Knoten löst sich nur von innen: wenn einer der Verknoteten das gemeinsame Erleben selbst bricht, durch Verrat. Dann rutscht der Knoten. Das Gefühl verschwindet nicht, denn das Knäuel nimmt nichts weg und erschafft nichts. Es legt sich um das Nächste, was der Person etwas bedeutet. So wird Barkley frei, als Vale ihn opfert, und seine ganze Treue legt sich um die Hunde.
+**Wie das Knäuel funktioniert, in einem Bild:** Jede Schlinge ist eine Tasche, das Gefühl darin ist Geld. Pfötchen ist ein Taschendieb, der nichts stehlen und nichts hinzufügen kann. Er kann nur Geld von einer deiner Taschen in eine andere schieben. Ein Knoten heißt: Diese Tasche ist zugenäht. Wer viele Taschen mit losem Geld hat, ist leicht zu lenken. Wer nur eine Tasche hat, wie Malcolm, ist nicht zu lenken, weil es nichts zu verschieben gibt. Wer viel mit anderen erlebt hat, hat viele zugenähte Taschen und ist geschützt. Gefährlich ist, wer viel fühlt und wenig mit anderen erlebt hat.
+
+**Wie sich ein Knoten löst (Regelwerk, Abschnitt A):** Von außen kann niemand einen Knoten lösen, weder Pfötchen noch die Weberin. Ein Knoten hält nur, solange beide die Geschichte als gemeinsame halten. Verrat zeigt, dass einer sie nie gehalten hat, und dann rutscht der Knoten. Das Gefühl verschwindet nicht, denn das Knäuel nimmt nichts weg. Was der Verratene danach erlebt, bestimmt, wohin es sich legt. Barkley erlebt, dass ein Katzenherr ihn opfert, und seine ganze Treue legt sich um die Hunde. Hazel erlebt, dass Pfötchen sie der Stadt zum Fraß vorwirft, und ihre Liebe legt sich um die Stadt.
 
 ## Unterschlupf, Rast und Lagerszenen
 
@@ -195,31 +197,33 @@ Die Einstiege der Gefährten sind solche Pflichtszenen. Corvin zum Beispiel holt
 **Stationen:**
 
 - **Akt 2, Schutz:** Die Gruppe verteidigt sie gegen Malcolms Leute. Zum ersten Mal sieht man Malcolm hart und ohne Charme. Die Weberin schließt sich an, weil sie sonst tot ist.
-- **Akt 2 oder 3, die Näherinnen:** Eine Botin bringt einen Hilferuf. Wer ihn in den Subfurs nicht annimmt, wird von der Botin auf Boney Island noch einmal gefunden. Ihre Lehrlinge, junge Spinnen, sitzen noch in den Kammern unter dem Tempel und werden für ihren Verrat bestraft.
-  - **Herausholen:** Niemand heftet mehr. Was nicht verknotet ist, federt in der ganzen Stadt zurück. In Hairlem wissen alte Feinde plötzlich nicht mehr, warum sie sich hassen, und es gibt Unruhen. Hazel gerät unter Druck, Pfötchen muss mehr Gegenzüge einsetzen.
-  - **Zurücklassen:** Die Näherinnen heften weiter, aber schlampig. Gefühle rutschen an falsche Stellen, mit merkwürdigen und manchmal komischen Nebenwirkungen: ein Ordenswächter, der sich in seinen Spieß verliebt, ein Bäcker, der seine Brote fürchtet.
-- **Akt 3, Boney Island (Beichte):** Die Weberin sieht das Erweckungslager, die Knotenfabrik, die ohne ihre Heftungen nie funktioniert hätte. Sie zeigt dem Helden die Dose mit dem Faden und gesteht, dass sie die Schere gehalten hat. Und sie gesteht noch etwas: Junos Verschiebung hat sie selbst geheftet.
-- **Akt 4, Cathattan (Kammern unter dem Tempel):** Die Weberin kann Heftungen gezielt auftrennen, aber nur wenige, bevor die Ordensgarde kommt. Was schon verknotet ist, kann sie nicht lösen.
+- **Akt 2, Lagerszene (fest):** Sie schlägt das Musterbuch auf und erklärt dem Helden zum ersten Mal, wie das Knäuel funktioniert, mit dem Bild von den Taschen und dem Geld.
+- **Akt 2 oder 3, die Näherinnen:** Eine Botin bringt einen Hilferuf. Ihre Lehrlinge, junge Spinnen, sitzen noch in den Kammern unter dem Tempel und werden für ihren Verrat bestraft. Wer den Ruf in den Subfurs nicht annimmt, wird von der Botin auf Boney Island noch einmal gefunden.
+  - **Herausholen:** Pfötchen verliert seine Beobachterinnen und pflegt blind. Teure Verschiebungen spinnt der Alltag zurück. In Hairlem wissen alte Feinde plötzlich nicht mehr, warum sie sich hassen, und es gibt Unruhen. Hazel gerät unter Druck, Pfötchen braucht mehr Gegenzüge.
+  - **Zurücklassen:** Die Näherinnen arbeiten weiter, aber ohne ihre Meisterin lesen sie die Wicklung falsch. Pfötchen zieht an den falschen Stellen, mit merkwürdigen und manchmal komischen Folgen: ein Ordenswächter, der seinen Spieß verehrt, ein Bäcker, der Angst vor seinen Broten hat.
+- **Akt 3, Boney Island (Beichte):** Die Weberin sieht das Erweckungslager, das ohne ihre Karten nie so viele Menschen erreicht hätte. Sie zeigt dem Helden die Dose mit dem Faden und gesteht, dass sie seinem Vater die Stelle gezeigt hat, an der er ihn herausschnitt. Und sie gesteht noch etwas: Sie hat den Weg zu Juno berechnet.
+- **Akt 4, Cathattan (Kammern unter dem Tempel):** Am Knäuel kann sie kaum etwas verschieben, ihr Hebel ist zu klein. Aber sie kann Übergänge öffnen, also Menschen herausschneiden, und niemand findet die Stellen so sicher wie sie.
 
-**Entscheidung:** Welche Heftungen trennt sie auf? Das ist eine begrenzte Auswahl mit echten Folgen:
+**Entscheidung:** Wen schneidet sie heraus? Höchstens zwei, bevor die Ordensgarde kommt. Wer herausgeschnitten ist, kann von Pfötchen nie mehr gelenkt werden, fühlt aber auch nie wieder mit, so wie der Held. Möglich sind nur Menschen, die in Meow York geboren sind:
 
-- Junos Heftung, wenn sie noch nicht ganz verknotet ist
-- die Hetze gegen die Tauben
-- die Wut in den Gangs
-- die Treue der Ordensgarde
-- Pips Verschiebung, wenn Big Dig noch nicht neu verknotet hat
+- **Pip:** Er wird nie Pfötchens Leitung. Aber er wird Big Dig nie mitfühlen können.
+- **Hazel:** Pfötchen verliert seine Leitung im entscheidenden Moment. Hazel verliert die Gabe, die die Presse an ihr feiert.
+- **Ein Gefährte:** Er kann im Finale nicht gegen den Helden gewendet werden, und er bezahlt mit der Resonanz.
+- **Niemand:** Sie weigert sich, Pfötchens Tat zu wiederholen.
+
+Juno und Fitz kann sie nicht herausschneiden, weil beide außerhalb von Meow York geboren sind.
 
 **Ausgänge:**
 
-- **Hüterin:** Sie will das Knäuel bewahren und bewachen. Wegsperren-Ende.
-- **Zerstörerin:** Sie zerstört ihr Lebenswerk eigenhändig. Nur sie weiß, wie das geht, ohne die Stadt dabei zu zerreißen.
-- **Verweigerin:** Sie trennt nichts auf und bleibt Handwerkerin. Das Knäuel ist ihr wichtiger als jede Person.
+- **Hüterin:** Sie will das Knäuel bewahren und bewachen. Wegsperren-Ende (im Regelwerk „Wächter“).
+- **Zerstörerin:** Sie zerstört ihr Lebenswerk eigenhändig, indem sie alle Übergänge öffnet. Nur sie weiß, wie das in einem Zug geht.
+- **Schneiderin:** Sie schneidet heraus, wen der Spieler wählt, und wiederholt damit aus Liebe, was Pfötchen getan hat.
 
-**Rolle im Finale:** Als Hüterin oder Zerstörerin kann sie während des Kampfes Pfötchens Ketten lockern, also die Gefährten schneller zurückholen, die er gegen den Helden richtet. Als Verweigerin bleibt sie neutral und repariert nur, was im Kampf am Knäuel beschädigt wird.
+**Rolle im Finale:** Sie liest das Knäuel in Pfötchens Händen und sagt der Gruppe, an welcher Kette er gerade zieht. So kann der Held die Zwischenperson erkennen und gezielt anknüpfen oder eingreifen. Wer herausgeschnitten wurde, ist im Finale nicht wendbar.
 
-**Unschöne Seite:** Selbstschutz. Sie behauptet lange, Malcolms Aushöhlung sei allein Pfötchens Schuld. Erst Mercys Krankenakten oder Corvins Ermittlung zwingen sie, ihre eigenen Heftungen einzugestehen.
+**Unschöne Seite:** Selbstschutz. Sie behauptet lange, Malcolms Aushöhlung sei allein Pfötchens Schuld. Erst Mercys Krankenakten oder Corvins Ermittlung zwingen sie zuzugeben, dass sie die Wege durch ihn berechnet hat.
 
-**Kreuzungen:** Malcolm (sie kannte ihn als Kind) · Juno (ihre Heftung) · Corvin (Musterbuch) · Barkley (das System, das ihn gefangen hielt) · Mercy (die Heilerin, die den Schaden behandelt hat) · Big Dig (Pips Heftung)
+**Kreuzungen:** Malcolm (sie kannte ihn als Kind) · Juno (sie hat den Weg zu ihr berechnet) · Corvin (Musterbuch) · Barkley (das System, das ihn gefangen hielt) · Mercy (die Heilerin, die den Schaden behandelt hat) · Big Dig (Pip) · Hazel (Leitung)
 
 ---
 
@@ -346,7 +350,7 @@ Jeder Bogen hat eine **Ausgangslage**, einen **Wendepunkt**, der an einen Quest-
 
 ### Barkley und die Weberin · Hass → Duldung
 - **Ausgangslage:** Sie hat das System gepflegt, das ihn achtzig Jahre gefangen hielt. Er würde sie opfern.
-- **Wendepunkt (Akt 3):** Sie erklärt ihm, dass der Gehorsam der Monsterhunde verknotet ist. Sie kann ihn nicht auftrennen, das kann nur der Verrat des Herrn. Sie bietet stattdessen an, in Akt 4 die geheftete Treue der Ordensgarde aufzutrennen. Ohne diese Treue opfern die Gardisten ihre Hunde eher, und das erleichtert seinen Plan.
+- **Wendepunkt (Akt 3):** Sie erklärt ihm, dass der Gehorsam der Monsterhunde verknotet ist. Niemand kann ihn lösen, nur der Verrat des Herrn. Aber in ihrem Musterbuch steht, welche Herren nur eine lose, ungeknotete Schlinge zu ihrem Hund haben. Die opfern ihn zuerst, wenn es eng wird. Damit kann Barkley seinen Plan bauen, ohne Unschuldige in Verrate zu treiben.
 - **Veränderung:** Keine Freundschaft. Aber ein Bündnis zweier Schuldiger aus derselben Geschichte.
 - **Wirkt auf:** Mercy beobachtet, dass Barkley der Weberin eine Chance gibt, und überdenkt ihre eigene Härte.
 
@@ -382,9 +386,9 @@ Jeder Bogen hat eine **Ausgangslage**, einen **Wendepunkt**, der an einen Quest-
 
 ### Mercy und die Weberin · Verurteilung → Wiedergutmachung
 - **Ausgangslage:** Mercy verweigert ihr die Behandlung.
-- **Wendepunkt (Akt 3/4):** Die Weberin gesteht, dass auch ihre Heftungen Malcolm ausgehöhlt haben, nicht nur Pfötchen. Mercy behandelt sie, aber sie verlangt eine Tat.
-- **Veränderung:** Die Weberin trennt in Akt 4 Pips Heftung auf, wenn Mercy sie darum bittet.
-- **Wirkt auf:** Big Digs Quest. Mit dieser Auftrennung wird „Neu verknotet“ leichter.
+- **Wendepunkt (Akt 3/4):** Die Weberin gesteht, dass sie die Wege durch Malcolm berechnet hat, nicht nur Pfötchen ist schuld. Mercy behandelt sie, aber sie verlangt eine Tat.
+- **Veränderung:** Die Weberin schlägt das Musterbuch für Big Dig auf: Dort steht, woher Pips Liebe genommen wurde und welche gemeinsamen Momente fehlten. Damit weiß Big Dig, welche Erlebnisse er nachholen muss.
+- **Wirkt auf:** Big Digs Quest. Mit diesem Wissen wird „Neu verknotet“ leichter. Und es stellt die Frage, ob sie Pip herausschneiden soll, um ihn zu schützen.
 
 ### Big Dig und Mercy · Verdacht → Verbündete
 - **Ausgangslage:** Mercy trägt Weiß. Big Dig hat in Akt 1 schon einmal jemanden in Weiß verprügelt.
@@ -435,7 +439,7 @@ Malcolm, Juno und Hazel sind keine Gefährten. Sie bekommen keine Pflicht aus Re
 | Delta Mae | Gemeinsame Bühne, sie durchschaut Juno | Ihre Wärme öffnet Juno. Sie ist die Erste, die Juno ohne Urteil anspricht |
 | Mercy | Juno ist ihre Patientin | Mercys hartes Urteil verschließt Juno. Ihre Gnade öffnet sie |
 | Shiner | Arbeitet an den Bannern neben Junos Bildnis | Nimmt Shiner die Galerie an, knotet das Lager stärker, und Juno ist schwerer zu erreichen |
-| Die Weberin | Hat Junos Verschiebung geheftet | Sie kann sie in Akt 4 auftrennen, wenn noch nicht alles verknotet ist |
+| Die Weberin | Hat den Weg zu Juno berechnet | Ihr Musterbuch zeigt dem Helden, woher Junos Sehnsucht genommen wurde. Herausschneiden kann sie Juno nicht, weil Juno außerhalb geboren ist |
 
 ### Malcolm
 | Gefährte | Verbindung | Wirkung |
@@ -461,10 +465,10 @@ Die wichtigsten Ketten, bei denen eine Entscheidung mehrere Bögen verschiebt:
 
 1. **Big Dig und Fitz → Pip.** Ohne die Einsicht am Lagerfeuer gibt es kein „Neu verknotet“.
 2. **Fitz oder Delta Mae → Barkley → Finale.** Wer Barkleys zweite Schlinge wird, über den kann Pfötchen ihn im Finale greifen.
-3. **Näherinnen befreit → Unruhen → Hazel.** Das Zurückfedern der Heftungen schwächt Hazel früher. Pfötchen lenkt den Zorn eher auf sie, und Benny gerät in Gefahr.
-4. **Shiner oder Delta Mae auf Boney Island → Juno.** Jeder Auftritt für das Lager knotet die Gläubigen stärker, auch Juno. Dann kann die Weberin sie in Akt 4 nicht mehr auftrennen.
+3. **Näherinnen befreit → Unruhen → Hazel.** Pfötchen pflegt blind, teure Verschiebungen spinnt der Alltag zurück, und das schwächt Hazel früher. Pfötchen lenkt den Zorn eher auf sie, und Benny gerät in Gefahr.
+4. **Shiner oder Delta Mae auf Boney Island → Juno.** Jeder Auftritt für das Lager knotet die Gläubigen stärker, auch Juno. Was sie im Lager gemeinsam erlebt, ist verknotet und schützt ihre Bindung an den Orden. Dann wird ihr Bogen schwerer.
 5. **Barkley tötet Vale → Rook.** Ohne Prozess gegen Vale bleibt Rooks Unschuld schwer beweisbar. „Keine Wahrheit“ wird für Corvin wahrscheinlicher.
-6. **Corvin gesteht der Weberin ihre Lüge ab → Mercy → Pip.** Erst ihr Geständnis ermöglicht Mercys Bitte, Pips Heftung aufzutrennen.
+6. **Corvin gesteht der Weberin ihre Lüge ab → Mercy → Pip.** Erst ihr Geständnis führt dazu, dass sie Big Dig das Musterbuch zu Pip aufschlägt.
 7. **Mercy gibt Hazel die Akten → Hazel → Pfötchen.** Hazel weiß früher Bescheid. Pfötchen verliert seine Leitung, bevor er sie opfern kann.
 
 ---

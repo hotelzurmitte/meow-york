@@ -59,7 +59,7 @@
    "name": "naeherinnen",
    "akt": "2–3",
    "gesetzt_von": "Weberin K2",
-   "gelesen_von": "unruhen_hairlem, Pfötchen-Gegenzüge, Nebenwirkungs-Begegnungen A3–A4",
+   "gelesen_von": "unruhen_hairlem, Pfötchen-Gegenzüge (blinde Pflege), Fehlgriff-Begegnungen A3–A4",
    "hinweis": "Fenster Akt 2–3 (A3: Botin findet die Gruppe auf Boney Island); verpasst wirkt wie zurueckgelassen; beim Aktübergang: offen → verpasst",
    "typ": "enum",
    "werte": [
@@ -151,18 +151,22 @@
    "standard": "ahnungslos"
   },
   {
-   "name": "weberin_auftrennungen",
+   "name": "weberin_herausgeschnitten",
    "akt": "4",
-   "gesetzt_von": "Weberin K4 (max. 2)",
-   "gelesen_von": "Juno-Bogen, Gangs, Barkley-Plan, Big-Dig-Ausgang",
-   "hinweis": "nur wenn weberin_ausgang != verweigerin",
+   "gesetzt_von": "Weberin K4 (höchstens 2)",
+   "gelesen_von": "Finale (nicht wendbar), Hazel als Leitung, Pip, Epilog (keine Resonanz)",
+   "hinweis": "Herausgeschnittene sind unlenkbar und fühlen nie wieder mit. Nur in Meow York Geborene: nicht juno, nicht fitz",
    "typ": "liste",
    "werte": [
-    "juno",
-    "tauben",
-    "gangs",
-    "garde",
-    "pip"
+    "pip",
+    "hazel",
+    "dig",
+    "corvin",
+    "shiner",
+    "knuckles",
+    "barkley",
+    "deltamae",
+    "mercy"
    ],
    "standard": [],
    "max_eintraege": 2
@@ -177,6 +181,28 @@
    "min": 0,
    "max": null,
    "standard": 0
+  },
+  {
+   "name": "held_verwachsung",
+   "typ": "int",
+   "min": 0,
+   "max": 10,
+   "standard": 0,
+   "akt": "2–5",
+   "gesetzt_von": "jedes Anknüpfen (steigt mit Dauer und Aufmerksamkeit)",
+   "gelesen_von": "Gefahr der Einwebung, Ende ‚Einwebung‘",
+   "hinweis": "Regelwerk D2: Risiko, dauerhaft eingesponnen zu werden"
+  },
+  {
+   "name": "knaeuel_aufmerksamkeit",
+   "typ": "int",
+   "min": 0,
+   "max": 10,
+   "standard": 0,
+   "akt": "2–5",
+   "gesetzt_von": "+ bei jedem Anknüpfen, − mit der Zeit (lange Rast)",
+   "gelesen_von": "Pfötchens Gegenzüge, held_verwachsung",
+   "hinweis": "Regelwerk D2: hohe Aufmerksamkeit löst Gegenzüge aus"
   },
   {
    "name": "held_hebel_genutzt",
@@ -227,7 +253,7 @@
    "name": "juno_knoten_lager",
    "akt": "3",
    "gesetzt_von": "+1 shiner_galerie angenommen, +1 deltamae_lager_auftritt, +1 fitz_show geflogen",
-   "gelesen_von": "Weberin kann Juno nur auftrennen wenn < 2",
+   "gelesen_von": "juno_bogen (verknotete Bindung an den Orden erschwert den Bogen)",
    "hinweis": "",
    "typ": "int",
    "min": 0,
@@ -897,7 +923,7 @@
    "akt": "4",
    "gesetzt_von": "Big Dig K4",
    "gelesen_von": "Finale (Tunnel / fehlt / wendbar)",
-   "hinweis": "neu_verknotet braucht dig_fitz_einsicht UND (pip_szenen==3 ODER 'pip' in weberin_auftrennungen)",
+   "hinweis": "neu_verknotet braucht dig_fitz_einsicht UND (pip_szenen==3 ODER Musterbuch-Szene mit der Weberin)",
    "typ": "enum",
    "werte": [
     "neu_verknotet",
@@ -1092,16 +1118,25 @@
    "name": "weberin_ausgang",
    "akt": "4",
    "gesetzt_von": "Weberin K4",
-   "gelesen_von": "Finale (Ketten lockern), Ende ‚Wegsperren‘/‚Zerstörung‘",
+   "gelesen_von": "Finale (liest Pfötchens Ketten), Ende ‚Wegsperren‘/‚Zerstörung‘",
    "hinweis": "",
    "typ": "enum",
    "werte": [
     "hueterin",
     "zerstoererin",
-    "verweigerin"
+    "schneiderin"
    ],
-   "standard": "verweigerin",
-   "einmal": true
+   "standard": "hueterin",
+   "einmal": true,
+   "voraussetzungen": {
+    "schneiderin": [
+     [
+      "weberin_herausgeschnitten",
+      "!=",
+      []
+     ]
+    ]
+   }
   },
   {
    "name": "barkley_befreiung",

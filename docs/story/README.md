@@ -2,7 +2,7 @@
 
 Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das Game Design Document (GDD, Stand 13.11.2026). Das GDD selbst und das Regelwerk „Das Knäuel“ liegen nicht im Repository.
 
-**Status:** Was hier steht, ist **Vorschlag**, außer es ist ausdrücklich als festgelegt markiert. Das GDD bleibt die zentrale Quelle. Stellen mit ⚠ müssen noch gegen das Regelwerk geprüft werden, weil es beim Schreiben nicht erreichbar war.
+**Status:** Am 13.11.2026 vom Nutzer vollständig freigegeben und mit dem Regelwerk „Das Knäuel“ abgeglichen. Das GDD bleibt die zentrale Quelle. Details können sich beim Ausarbeiten noch ändern.
 
 ## Reihenfolge zum Lesen
 
@@ -15,7 +15,11 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 ## Vom Nutzer im Chat entschieden
 
 - Pfötchens Frau war seine erste Leitung und nahm sich, zermürbt vom Nachhall, das Leben.
-- Pfötchen hat Malcolm nie geliebt. Malcolm aber ihn, und genau das machte ihn zur Leitung.
+- Pfötchen hat Malcolm nach dem Tod seiner Frau bewusst als neue Leitung gewählt: ein Waisenkind ohne andere Bindungen, das als Ziehsohn des Ordensoberhaupts der Liebling der Stadt werden würde. Er hat ihn nie geliebt. Die Liebe zum Sohn blieb eine Schlinge ins Leere, und Malcolm spürt das.
+- Pfötchen hat den Sohn selbst herausgeschnitten. Die Weberin hat ihm die Stelle gezeigt.
+- Die Weberin ist die Kartografin des Knäuels: Sie kennt die Übergänge, berechnet die billigsten Wege und plant Pfötchens Pflege. Es gibt keine neue Regel dafür. In Akt 4 kann sie Menschen herausschneiden.
+- „Der Erbe“ ist ein Weg im Einwebungs-Ende, denn ein Herausgeschnittener kann das Knäuel nicht benutzen.
+- Das Bild für Spieler: Schlingen sind Taschen, Gefühl ist Geld, Pfötchen schiebt nur zwischen den eigenen Taschen einer Person, Knoten nähen Taschen zu.
 - Hazels Bogen: Erst weiß sie die Wahrheit und liebt trotzdem weiter. Dann verrät Pfötchen sie, ihr Knoten rutscht, und ihre Liebe legt sich auf die Stadt.
 - **Wie sich ein Knoten löst:** Von außen kann niemand einen Knoten lösen. Er löst sich nur von innen, durch Verrat. Das Gefühl verschwindet dabei nicht, sondern legt sich um das Nächste, was der Person etwas bedeutet.
 - Die Katzen fürchteten die Hunde, weil Hunde treu sind: starke Schlingen, die schnell und fest verknoten und damit nicht zu lenken sind.
@@ -28,9 +32,6 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 - **Point of no Return nach dem Vorbild von BG3:** Die Geschichte kommt zum Spieler. Jeder Gefährte hat pro Akt eine Pflicht-Lagerszene, die nachgeholt wird, falls sie fehlt. Ortsgebundene Kapitel haben ein Fenster über zwei Akte, Schlüsselfiguren wandern mit, und „verpasst“ gibt es nur für Nebenzweige.
 - **Kein festes Lager:** Die Gruppe rastet in wechselnden Unterschlüpfen, etwa im Zimmer über dem Cuckoo's Nest, im U-Bahn-Waggon, im Wohnwagen der Acorns oder im Hotel in Cathattan. Die Figuren tragen ihre Requisiten bei sich. Corvin hat unterwegs ein Notizbuch statt der Pinnwand, die in seinem Büro bleibt.
 
-## Noch offen
+## Namen (freigegeben)
 
-- Neue Namen freigeben: Captain Vale, Benny Hopkins, Rook, Lucien, die Näherinnen, Gertrud
-- Namensvorschläge: Tessa Strand (Weberin), Delta Mae (Alligatorin), Schwester Mercy (Gottesanbeterin), Fitz Acorn (Flughörnchen)
-- Die Knoten-Regel ins Regelwerk übernehmen
-- Alle ⚠-Stellen gegen das Regelwerk prüfen
+Tessa Strand (Weberin), Delta Mae (Alligatorin), Schwester Mercy (Gottesanbeterin), Fitz Acorn (Flughörnchen), Captain Vale, Benny Hopkins, Rook, Lucien, Pip, die Näherinnen, Gertrud.

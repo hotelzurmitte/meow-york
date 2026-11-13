@@ -15,7 +15,7 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 - **Will:** Juno finden. **Braucht:** entscheiden, ob er so bleiben will.
 - **Wunde:** Juno war seine Dolmetscherin für die Welt. Ohne sie ist er blind.
 - **Knäuel:** unlenkbar. Anknüpfen macht ihn kurz fühlend und erreichbar.
-- **Bogen:** C „Der Sohn“, das Anknüpfen an den Vater. Dunkelstes Gegenstück: E „Der Erbe“ mit Juno als Leitung.
+- **Bogen:** C „Der Sohn“, das Anknüpfen an den Vater. Dunkelstes Gegenstück: E „Der Erbe“, ein Weg im Einwebungs-Ende. Wieder eingesponnen könnte er herrschen, aber dann würde Juno seine Leitung.
 - **Spiegel:** Malcolm.
 
 ### Meister Pfötchen
@@ -33,7 +33,7 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 - **Kern:** Resonanz ohne Bindung. Fühlt alles mit und hängt an nichts.
 - **Wesen:** charmant, witzig, spöttisch, innerlich hungrig.
 - **Will:** Rache an Pfötchen. **Braucht:** wieder binden dürfen.
-- **Wunde:** liebte einen Vater, der ihn nie liebte. „Wie sein eigenes Blut“ war ein Satz für die Gläubigen.
+- **Wunde:** liebte einen Vater, der ihn nie liebte und ihn bewusst als Leitung wählte. Er spürt, dass Pfötchens stärkste Liebe ins Leere zeigt. „Wie sein eigenes Blut“ war ein Satz für die Gläubigen.
 - **Knäuel:** ehemalige Leitung, vom Nachhall ausgehöhlt. Erkennt den Helden, weil er ihn nicht lesen kann.
 - **Bogen:** A „Bruderschaft“. Der Held wird seine zweite Bindung, und Malcolm wird dadurch lenkbar.
 - **Spiegel:** der Held.
@@ -103,9 +103,9 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 - **Kern:** Pflegerin des Knäuels und die Hälfte der Macht des Ordens.
 - **Wesen:** geduldig, präzise, pedantisch, streng mütterlich. Strickt mit vier Armen und korrigiert jeden.
 - **Will:** überleben. **Braucht:** ihr Lebenswerk vor Missbrauch retten.
-- **Wunde:** Sie hielt die Schere, als der Held herausgeschnitten wurde. Ihre Heftungen haben Malcolm ausgehöhlt.
-- **Knäuel:** Die Heftung hält Verschiebungen fest, bis sie sich verknoten. Ihr Musterbuch ist der Beweis für das System.
-- **Bogen:** A „Die Beichte“ in Akt 3. Im Finale wird sie Hüterin oder Zerstörerin.
+- **Wunde:** Sie hat Pfötchen die Stelle gezeigt, an der er seinen Sohn herausschnitt. Sie hat die Wege berechnet, die Malcolm ausgehöhlt haben.
+- **Knäuel:** Sie ist die Kartografin: Sie kennt die Übergänge, berechnet die billigsten Ketten und plant Pfötchens Pflege. Ihr Musterbuch ist der Beweis für das System. In Akt 4 kann sie Menschen herausschneiden.
+- **Bogen:** A „Die Beichte“ in Akt 3, in Akt 4 die Frage, wen sie herausschneidet. Im Finale wird sie Hüterin, Zerstörerin oder Schneiderin.
 
 ### Barkley
 *Hund · Akt 2 · Street Ranger, Gumshoe, Bruiser · Spürnase, Verkleidung, Monsterform*

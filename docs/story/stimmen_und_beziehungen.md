@@ -86,8 +86,8 @@ Die Beispielsätze sind Tonproben, keine fertigen Dialogzeilen. Sie sollen zeige
 - **Eigenheit:** Sie korrigiert jeden, der das Knäuel falsch beschreibt, auch im Kampf.
 - **Tonproben:**
   - „Es heißt nicht ‚Faden ziehen‘. Es heißt ‚verschieben‘. Wir sind doch keine Barbaren.“
-  - „Ich habe vierzig Jahre geheftet. Ich weiß, wie lange etwas hält, und wann nicht mehr.“
-  - „Ich habe die Schere gehalten. Er hat mich nur gebeten. Das ist keine Ausrede, nur der Ablauf.“
+  - „Ich habe vierzig Jahre Wege berechnet. Ich weiß, wo etwas reißt, bevor es reißt.“
+  - „Er hat geschnitten. Ich habe ihm nur gezeigt, wo. Das ist keine Ausrede, nur der Ablauf.“
 
 ### Barkley
 - **Grundton:** förmlich, altmodisch, militärisch knapp. Siezt alle. Wortschatz von 1906.
@@ -144,7 +144,7 @@ Die Beispielsätze sind Tonproben, keine fertigen Dialogzeilen. Sie sollen zeige
 | **Corvin** | Wenn er an Rook denkt oder einem Opfer gegenübersteht | Kein Noir, keine Vergleiche. Schlichte, fast kindliche Sätze | Er gibt das Erzählen über sich selbst auf und sagt „Ich war das“ |
 | **Shiner** | Bei einer Niederlage, die sie wirklich trifft | Sie sagt nichts. Kein Spruch, keine Revanche. Sie geht weg und klettert allein | Später verliert sie vor anderen und bleibt stehen |
 | **Knuckles** | Wenn ihre Familie zerbricht | Sie redet mehr als sonst, schnell und durcheinander. Die Ruhe war ihr Halt | Sie bittet zum ersten Mal selbst um Hilfe |
-| **Die Weberin** | Bei Malcolm und bei der Schere | Keine Fachbegriffe. Unvollständige Sätze, die Hände stricken nicht mehr | Sie lässt sich korrigieren, ein einziges Mal |
+| **Die Weberin** | Bei Malcolm und bei der Narbe des Helden | Keine Fachbegriffe. Unvollständige Sätze, die Hände stricken nicht mehr | Sie lässt sich korrigieren, ein einziges Mal |
 | **Barkley** | Bei den toten Hunden und in der Monsterform danach | Kein Siezen, kein „Junge“. Er redet wie der Achtzehnjährige, der er war | Er duzt zum ersten Mal jemanden aus der Gruppe |
 | **Delta Mae** | Wenn niemand zuschaut | Keine Bühnenstimme. Leise, unsicher, fast schüchtern | Sie zeigt diese Stimme dem Helden absichtlich |
 | **Mercy** | Wenn ein Patient stirbt, den sie hätte retten können | Keine Milde. Kurz, hart, wütend auf Sofa | Sie lässt Zweifel zu, ohne den Glauben aufzugeben |

@@ -2,7 +2,7 @@
 
 Stand: 13.11.2026 · Arbeitsfassung zum GDD
 
-**Status:** Alles, was über das GDD hinausgeht, ist **Vorschlag**. Festgelegtes aus dem GDD wird nicht verändert, nur ausgedeutet. Stellen, die vom vollständigen Regelwerk abhängen, sind mit ⚠ markiert. Grundlage war die Kurzfassung des Knäuels im GDD, weil das Regelwerk beim Schreiben nicht erreichbar war.
+**Status:** Am 13.11.2026 vom Nutzer freigegeben und mit dem Regelwerk „Das Knäuel“ abgeglichen. Was über das GDD hinausgeht, ist inzwischen im GDD eingetragen. Details können sich beim Ausarbeiten noch ändern.
 
 ---
 
@@ -55,7 +55,7 @@ Die Persönlichkeit formt der Spieler. Fest stehen nur die Grundzüge, die aus d
 
 **D. Der Richter.** Der Held macht Pfötchen platt. Für die Mutter, die sich das Leben nahm, für Malcolm, für Juno, für jede verschobene Seele der Stadt. Er zögert nicht, denn er kann nicht fühlen, was sein Vater fühlt, als er stirbt. Das ist die gerechteste und zugleich unheimlichste Version des Helden: Fadenlos als Henker. Die Gefährten reagieren gespalten. Barkley jubelt, Mercy wendet sich ab, Big Dig sagt nichts. Danach ist der Orden kopflos, das Knäuel herrenlos, und jemand wird danach greifen.
 
-**E. Der Erbe.** Der Held nimmt das Knäuel an sich. Er ist der ideale Halter: Niemand kann ihn lenken. Doch das Gesetz der Leitung gilt auch für ihn. Wer ihn am meisten liebt, wird seine Leitung und trägt den Nachhall. Das ist Juno. Der Held müsste ihr antun, was Pfötchen Malcolm angetan hat, oder er schneidet auch sie heraus und wird zu seinem Vater. ⚠ *Prüfen, ob ein Herausgeschnittener überhaupt eine Leitung hat.*
+**E. Der Erbe (ein Weg im Einwebungs-Ende).** Als Herausgeschnittener kann der Held das Knäuel nicht benutzen, nur bewachen. Herrschen kann er erst, wenn er sich an seiner Narbe wieder einspleißen lässt. Dann fühlt er zum ersten Mal die Stadt und seinen Vater, und er ist lenkbar wie alle. Hält er das Knäuel, gilt auch für ihn das Gesetz der Leitung: Wer ihn am meisten liebt, trägt den Nachhall. Das ist Juno. Er müsste ihr antun, was Pfötchen Malcolm angetan hat. Oder er sucht sich, wie sein Vater, bewusst jemand anderen aus.
 
 **F. Der Heimkehrer.** Der Held holt Juno, wenn sie mitkommt, und verlässt die Stadt. Pfötchen bleibt an der Macht. Es ist das Status-quo-Ende, aber aus Sicht des Helden kein Scheitern: Er kam nie, um die Stadt zu retten. Die Frage bleibt, ob er damit leben kann, etwas gewusst und nichts getan zu haben.
 
@@ -89,7 +89,7 @@ Er wurde Halter, weil er der Frömmste war, nicht der Ehrgeizigste. Das ist wich
 
 Pfötchen begriff, was kommen würde: Sein Sohn würde ihn lieben, mehr als alle anderen, und damit die nächste Leitung werden. Also schnitt er ihn aus dem Faden, um ihn unerreichbar zu machen, und brachte ihn selbst fort, damit er nie der Nächste wird. Es ist die einzige Entscheidung seines Lebens, bei der er sein Herz über die Stadt gestellt hat.
 
-Danach stellte er die Stadt nie wieder hintenan. Er brauchte eine Leitung, also nahm er sich ein Waisenkind: Malcolm. **Er hat ihn nie geliebt.** Anfangs tat ihm leid, was er dem Jungen antat, wie einem Arzt eine Amputation leidtut. Aber es war das unerlässliche Übel, damit die Stadt weiterlebt. Malcolms Gefühle waren nie eine Größe in dieser Rechnung. Pfötchen war korrekt zu ihm, pflichtbewusst, nie grausam, nie warm. Und gerade diese Kälte machte Malcolm zur perfekten Leitung: Ein Kind, das um Liebe wirbt, liebt umso mehr, je weniger es zurückbekommt. *(Festgelegt)*
+Danach stellte er die Stadt nie wieder hintenan. Nach dem Tod seiner Frau brauchte er eine neue Leitung, und er wusste genau, was er suchte. Er wählte Malcolm, ein Waisenkind, das man vor dem Tempel gefunden hatte. Das Kind hatte niemanden sonst, an den es seine Liebe hängen konnte. Und als Ziehsohn des Ordensoberhaupts würde es der Liebling der Stadt werden, mit unzähligen Schlingen um sich, also der Weg mit dem geringsten Widerstand. **Er hat ihn nie geliebt.** Seine Liebe zum Sohn hat er nicht auf Malcolm übertragen. Sie blieb, wo sie war: eine Schlinge ins Leere. Anfangs tat ihm leid, was er dem Jungen antat, wie einem Arzt eine Amputation leidtut. Aber es war das unerlässliche Übel, damit die Stadt weiterlebt. Malcolms Gefühle waren nie eine Größe in dieser Rechnung. Pfötchen war korrekt zu ihm, pflichtbewusst, nie grausam, nie warm. Und gerade diese Kälte machte Malcolm zur perfekten Leitung: Ein Kind, das um Liebe wirbt, liebt umso mehr, je weniger es zurückbekommt. *(Festgelegt)*
 
 ### Persönlichkeit
 
@@ -135,6 +135,8 @@ Zu Hause war davon nichts zu spüren. Pfötchen war korrekt, gerecht, abwesend. 
 
 Was dann kam, verstand er erst später. Durch ihn floss jede Verschiebung des Ordens. Er spürte die Wut, die in Trauer umgesetzt wurde, die Angst, die zu Ehrfurcht wurde, Tausende fremde Gefühle, jeden Tag. Der Nachhall schliff ihn ab wie Wasser einen Stein. Seine eigenen Schlingen wurden dünn, bis er niemanden mehr wirklich binden konnte. **Resonanz ohne Bindung:** Er fühlt alles mit und hängt an nichts.
 
+Und noch etwas spürte Malcolm, lange bevor er es verstand: Die stärkste Schlinge seines Vaters zeigte auf etwas, das nicht da war. Pfötchen liebte jemanden mit ganzer Kraft, nur nicht ihn.
+
 Als Jugendlicher fand er die Wahrheit in den Archiven des Ordens: dass Pfötchen einen leiblichen Sohn hatte. Dass dieser Sohn geschützt wurde, und er, Malcolm, nicht. Dass er nie geliebt worden war, sondern ausgewählt, *weil* er so bedingungslos lieben würde. „Wie sein eigenes Blut“ war keine Lüge gewesen. Es war die Wahrheit, nur anders herum: Das eigene Blut wurde gerettet, er wurde verbraucht. Malcolm verließ den Orden in derselben Nacht.
 
 Heute macht er Geschäfte mit beiden Gangs, handelt mit Informationen, kennt jeden in Hairlem und gehört zu niemandem. Er ist der charmanteste Mann der Stadt, weil er buchstäblich spürt, was jeder hören will.
@@ -150,7 +152,7 @@ Heute macht er Geschäfte mit beiden Gangs, handelt mit Informationen, kennt jed
 
 - **Was er sagt:** Die Stadt befreien.
 - **Was ihn antreibt:** Rache an Pfötchen. Und der Wunsch, dass alle anderen erleben, was er erlebt hat.
-- **Die Wende:** Er erkennt am Helden, dass Zerstörung niemanden leer machen würde. Der Held liebt ohne Resonanz. Die Stadt würde weiter lieben, nur ohne Mitgefühl. Seine Rache wäre also keine. Er schwenkt auf die Raffung um. ⚠ *Inhalt der Raffung mit dem Regelwerk abgleichen.*
+- **Die Wende:** Er erkennt am Helden, dass Zerstörung niemanden leer machen würde. Der Held liebt ohne Resonanz. Die Stadt würde weiter lieben, nur ohne Mitgefühl. Seine Rache wäre also keine. Er schwenkt auf die Raffung um. Bei der Raffung schiebt er mit dem Knäuel alle unverknotete Länge der Stadt in die Schlingen um sich selbst, bis alle nur noch eine Schlinge haben, wie er. Knoten verhindern das, also zerstört er sie vorher mit weltlichen Mitteln: Er stiftet Verrat und sät Misstrauen.
 
 ### Warum er den Helden braucht
 
@@ -254,7 +256,7 @@ Juno ist jetzt eine der überzeugendsten Rednerinnen des Ordens. Sie spricht üb
 | B. Bleiben trotz Wahrheit | 4 | 5 | 5 |
 | C. Verloren | 5 | 3 | 3 |
 
-**Empfehlung: B als gelungener Bogen, C als Scheitern.** Der Held kam, um seine Schwester heimzuholen. Die reifste Auflösung ist, dass sie frei wird und trotzdem nicht mitkommt. Die Sehnsucht war ihre, nur die Richtung war fremd. Wer gerettet wird, entscheidet selbst, wohin. Im Finale kämpft sie dann an seiner Seite, nicht als seine gerettete Schwester, sondern als Ordensfrau, die gegen ihren eigenen Hohepriester aufsteht. ⚠ *Prüfen, ob Juno als außerhalb Geborene von der Zerstörung betroffen wäre.*
+**Empfehlung: B als gelungener Bogen, C als Scheitern.** Der Held kam, um seine Schwester heimzuholen. Die reifste Auflösung ist, dass sie frei wird und trotzdem nicht mitkommt. Die Sehnsucht war ihre, nur die Richtung war fremd. Wer gerettet wird, entscheidet selbst, wohin. Im Finale kämpft sie dann an seiner Seite, nicht als seine gerettete Schwester, sondern als Ordensfrau, die gegen ihren eigenen Hohepriester aufsteht. Weil Juno außerhalb von Meow York geboren ist, würde die Zerstörung sie nicht vom Faden trennen. Sie behielte als eine der wenigen ihre Resonanz, in einer Stadt, die keine mehr hat.
 
 ---
 
@@ -431,7 +433,7 @@ Don Orangos Hass auf die Breaking Cats wird über Nugget, seine rechte Hand, vom
 | B. Beschützerin | 3 | 3 | 3 |
 | C. Der Zweifel | 4 | 4 | 4 |
 
-**Empfehlung: A.** Knuckles' Bogen handelt von Familie als Last und Halt, mit warmem Ausgang. Sie liebt Don Orango, und gerade deshalb muss sie ihm widersprechen. Der Unterschied zu Hazel: Hazel liebt jemanden, der sie benutzt. Knuckles liebt jemanden, der benutzt wird. ⚠ *Prüfen, ob das Regelwerk erlaubt, dass Pfötchen über eine verknotete Person als Zwischenperson wirkt (Variante C).*
+**Empfehlung: A.** Knuckles' Bogen handelt von Familie als Last und Halt, mit warmem Ausgang. Sie liebt Don Orango, und gerade deshalb muss sie ihm widersprechen. Der Unterschied zu Hazel: Hazel liebt jemanden, der sie benutzt. Knuckles liebt jemanden, der benutzt wird. Nach dem Regelwerk geht das: Wer verknotet ist, ist nicht lenkbar, aber trotzdem als Leitung nutzbar. Lenkbarkeit und Leitfähigkeit sind zwei verschiedene Dinge.
 
 ---
 
@@ -442,33 +444,30 @@ Don Orangos Hass auf die Breaking Cats wird über Nugget, seine rechte Hand, vom
 
 ### Biografie
 
-Die Weberin hat ihr ganzes Leben im Inneren des Ordens verbracht, in den Kammern unter dem Tempel, wo das Knäuel aufbewahrt wird. Offiziell ist sie seine Pflegerin. In Wahrheit ist sie die Hälfte der Macht des Ordens: Pfötchen verschiebt, sie sorgt dafür, dass es hält. Sie versteht das Knäuel besser als jeder andere, Pfötchen eingeschlossen. Pfötchen hält es. Sie kennt es.
+Die Weberin hat ihr ganzes Leben im Inneren des Ordens verbracht, in den Kammern unter dem Tempel, wo das Knäuel aufbewahrt wird. Offiziell ist sie seine Pflegerin. In Wahrheit ist sie die Hälfte der Macht des Ordens: Pfötchen zieht, sie sagt ihm, wo. Sie versteht das Knäuel besser als jeder andere, Pfötchen eingeschlossen. Pfötchen hält es. Sie kennt es.
 
-**Vorschlag:** Vor fünfundzwanzig Jahren hielt sie die Schere, als Pfötchen seinen Sohn herausschnitt. Er bat sie darum, weil ihre Hände ruhiger waren. Sie hat nie darüber gesprochen. Sie hat den losen Faden aufbewahrt, ein winziges Stück, in einer Dose in ihrer Werkstatt.
+Vor fünfundzwanzig Jahren hat Pfötchen seinen Sohn herausgeschnitten. Den Schnitt hat er selbst gesetzt, aber die Stelle hat sie ihm gezeigt: Einen einzelnen Übergang unter Hunderttausenden zu finden, konnte damals nur sie. Sie hat nie darüber gesprochen. Sie hat den losen Faden aufbewahrt, ein winziges Stück, in einer Dose in ihrer Werkstatt.
 
-Malcolm kannte sie seit seiner Kindheit. Sie mochte den Jungen, der in den Kammern spielte, und sie sah zu, wie der Nachhall ihn aushöhlte. Als er Jahre später zurückkam und sie um Hilfe bat, sagte sie Ja. Die Stimme auf der Kassette ist ihre. Sie glaubte, er wolle das Knäuel befreien, nicht zerstören. Als sie begreift, was er wirklich will, wechselt sie die Seiten.
+Malcolm kannte sie seit seiner Kindheit. Sie mochte den Jungen, der in den Kammern spielte, und sie sah zu, wie der Nachhall ihn aushöhlte, über Wege, die sie selbst berechnet hatte. Als er Jahre später zurückkam und sie um Hilfe bat, sagte sie Ja. Die Stimme auf der Kassette ist ihre. Sie glaubte, er wolle das Knäuel befreien, nicht zerstören. Als sie begreift, was er wirklich will, wechselt sie die Seiten.
 
-### Was die Weberin tut: die Heftung (Vorschlag)
+### Was die Weberin tut: die Kartografin des Knäuels
 
-**Das Problem des Halters.** Eine Verschiebung ist wie ein Faden, den man an eine andere Stelle legt: Er federt zurück. Pfötchen hält eine Kette pro Berührung. Lässt er los, wandert das verschobene Gefühl langsam an seinen Ursprung zurück, über Tage oder Wochen. Dauerhaft wird eine Verschiebung nur, wenn die Person das neue Gefühl lange genug mit anderen erlebt, bis es sich verknotet. So war es beim Gehorsam der Monsterhunde, der sich verknotete, weil sie nur noch mit ihren Herren lebten.
+**Im Rahmen der Axiome, ohne neue Regel.** Das Knäuel lässt sich nur benutzen, wenn man sich in ihm zurechtfindet. Das Regelwerk sagt: Einen bestimmten Übergang unter Hunderttausenden zu finden, braucht jahrzehntelange Übung. Zug nimmt den Weg des geringsten Widerstands, Pfötchen hält nur eine Kette pro Berührung, und Zeit ist seine knappste Ressource. Manipulation muss außerdem gepflegt werden, denn wo das Erleben ihr widerspricht, spinnt das Leben sie zurück.
 
-**Die Heftung.** Hier setzt die Weberin an. Sie fixiert verschobene Fäden im Knäuel mit feinen Heftstichen, damit sie halten, ohne dass Pfötchen sie festhält. Eine Heftung ist kein Knoten. Sie ist vorläufig, muss nachgezogen werden und hält nur so lange, bis das Leben der Person die Verschiebung verknotet hat. Die Weberin erschafft nichts und verschiebt nichts. Sie verhindert nur, dass etwas zurückkehrt, wohin es gehört.
+Die Weberin ist die Frau, die all das lesbar macht:
 
-**Die Maschinerie des Ordens.** Damit hat die Macht des Ordens drei Stufen:
+- **Sie kartiert die Wicklung.** Sie weiß, wer an wem hängt, welche Schlingen verknotet sind und welche lose liegen. Sie kennt die Übergänge.
+- **Sie berechnet die Wege.** Für jede Verschiebung sucht sie die Kette mit der geringsten Reibung, damit Pfötchen seine knappe Zeit nicht verschwendet.
+- **Sie plant die Pflege.** Sie sieht, wo das Leben eine Verschiebung zurückspinnt, und sagt Pfötchen, wo er nachziehen muss, bevor es jemand merkt.
+- **Ihre Näherinnen** sind junge Spinnen, die sie ausgebildet hat. Sie beobachten die Stadt und melden, wo es wackelt.
 
-1. **Verschieben:** Pfötchen legt ein Gefühl um, über eine Zwischenperson.
-2. **Heften:** Die Weberin und ihre Näherinnen, junge Spinnen, die sie ausgebildet hat, halten es fest.
-3. **Verknoten:** Der Orden sorgt für gemeinsames Erleben, das die Verschiebung endgültig macht. Gottesdienste, Ordensschulen, Waisenhäuser, und vor allem das Erweckungslager auf Boney Island. Das Lager ist eine Knotenfabrik: Massen von Menschen erleben gemeinsam Ekstase, Gesang und Gemeinschaft, und was vorher geheftet war, wird für immer.
+**Das Musterbuch** ist ihre Karte: jede Verschiebung, jede Kette, jede Pflege, mit Datum. Es ist der vollständige Beweis für das System. Für Corvin ist es der heilige Gral.
 
-So erhält der Orden die Machtstrukturen der Stadt: die Loyalität des Rathauses, die Feindschaft der Gangs, den Hass auf die Tauben, die Treue der Gläubigen. Nichts davon muss Pfötchen täglich neu erzwingen. Es läuft.
+**Ihre eigentliche Schuld.** Der billigste Weg durch die Stadt lief jahrelang über ein Kind: Malcolm hatte die engste Schlinge um Pfötchen und war der Liebling der Stadt. Die Weberin hat diese Wege berechnet. Sie hat den Jungen, der in ihren Kammern spielte, verblassen sehen und weitergerechnet.
 
-**Der Preis.** Jede Heftung steht unter Spannung, und diese Spannung fließt über die Leitung ab. Malcolm wurde also nicht nur von Pfötchens Verschiebungen ausgehöhlt, sondern von Tausenden Heftstichen, die Tag und Nacht durch ihn hindurchsummten. Die Weberin hat das gewusst. Sie hat zugesehen, wie der Junge, der in ihren Kammern spielte, verblasste, und hat weitergeheftet. Das ist ihre eigentliche Schuld, schwerer als die Schere.
+**Folgen im Spiel.** Läuft die Weberin über, pflegt Pfötchen blind. Billige Verschiebungen halten von selbst, etwa der Hass auf die Tauben oder auf ferne Politiker, weil ihnen kein Erleben widerspricht. Teure verlieren gegen den Alltag, etwa Gefühle in Familien und Gangs, wo man sich täglich sieht. In Hairlem wissen alte Feinde plötzlich nicht mehr, warum sie sich hassen.
 
-**Das Musterbuch.** Die Weberin führt Buch über jede Heftung: wer, was, von wo nach wo, seit wann. Es ist der vollständige Beweis für das System. Für Corvin ist es der heilige Gral. Ob der Fall Rook darin steht oder gerade nicht, entscheidet über seinen Bogen.
-
-**Folgen im Spiel.** Wenn die Weberin überläuft, zieht niemand mehr ihre Heftungen nach. Was noch nicht verknotet ist, federt in Akt 2 und 3 nach und nach zurück. Menschen wachen auf, alte Feinde wissen nicht mehr, warum sie sich hassen, und es gibt Unruhen. Pfötchen muss mehr seiner begrenzten Gegenzüge einsetzen. Die Näherinnen heften weiter, aber schlampig: Gefühle rutschen an falsche Stellen, mit merkwürdigen und manchmal komischen Nebenwirkungen. In Akt 4 kann die Weberin Heftungen gezielt auftrennen. Was schon verknotet ist, kann aber auch sie nicht lösen.
-
-⚠ *Prüfen: Federn unverknotete Verschiebungen im Regelwerk zurück? Ist die Heftung mit der Regel „eine Kette pro Berührung“ vereinbar? Fließt die Spannung gehaltener Verschiebungen als Nachhall über die Leitung?*
+**Was sie in Akt 4 kann.** Verschieben kann sie kaum, dafür ist ihr Hebel zu klein, denn ihr bedeuten zu wenige etwas. Aber jeder, der das Knäuel berührt, kann Übergänge öffnen, also Menschen herausschneiden, und niemand findet die Stellen so sicher wie sie. Das ist ihre letzte, schwerste Entscheidung: Wen schneidet sie heraus, um ihn vor Pfötchen zu schützen? Der Preis ist, dass er nie wieder mitfühlt.
 
 ### Persönlichkeit
 
@@ -484,19 +483,22 @@ So erhält der Orden die Machtstrukturen der Stadt: die Loyalität des Rathauses
 
 ### Mögliche Entwicklungen
 
-**A. Die Beichte.** Sie gesteht dem Helden, dass sie ihn herausgeschnitten hat. Sie zeigt ihm den Faden in der Dose. Er muss entscheiden, ob er ihr vergibt, und ob er sich wieder einknüpfen lassen will, wenn das überhaupt möglich ist. ⚠ *Prüfen, ob das Regelwerk ein Wiedereinknüpfen erlaubt.*
+**A. Die Beichte.** Sie gesteht dem Helden, dass sie seinem Vater die Stelle gezeigt hat. Sie zeigt ihm den Faden in der Dose. Er muss entscheiden, ob er ihr vergibt. Und sie sagt ihm, dass man ihn wieder einspleißen könnte, an seiner Narbe. Damit öffnet sie den Weg zum Einwebungs-Ende.
 
 **B. Die Hüterin.** Sie kämpft gegen das Zerstörungsende. Sie will das Knäuel wegsperren und bewachen, das Wegsperren-Ende ist ihr Ende.
 
 **C. Die Zerstörerin.** Sie erkennt, dass ihr Lebenswerk vernichtet werden muss, und tut es selbst. Nur sie weiß, wie es geht.
+
+**D. Die Schneiderin.** In Akt 4 schneidet sie Menschen heraus, um sie vor Pfötchen zu schützen, so wie Pfötchen einst seinen Sohn. Sie wiederholt seine Tat aus Liebe und nimmt den Geretteten damit für immer das Mitgefühl.
 
 | Variante | Tragik | Wendepunkt | Philosophie |
 | --- | --- | --- | --- |
 | A. Die Beichte | 5 | 5 | 5 |
 | B. Die Hüterin | 3 | 3 | 4 |
 | C. Die Zerstörerin | 5 | 4 | 5 |
+| D. Die Schneiderin | 5 | 5 | 5 |
 
-**Empfehlung: A als Wendepunkt in Akt 3, B oder C als Haltung im Finale.** Die Weberin ist die Figur, die beide Seiten des Fadens kennt. Ihre Beichte gibt dem Helden die Wahrheit über sich, bevor er sie von Pfötchen erfährt, oder danach, je nach Reihenfolge. Ihr Konflikt am Ende: das eigene Lebenswerk zerstören oder bewahren.
+**Empfehlung: A als Wendepunkt in Akt 3, D als Entscheidung in Akt 4, B oder C als Haltung im Finale.** Die Weberin ist die Figur, die beide Seiten des Fadens kennt. Ihre Beichte gibt dem Helden die Wahrheit über sich, bevor er sie von Pfötchen erfährt, oder danach, je nach Reihenfolge. Ihr Konflikt am Ende: das eigene Lebenswerk zerstören oder bewahren.
 
 ---
 
@@ -519,7 +521,7 @@ Der Zauber aus dem Hundekrieg wirkt auf den Körper, das Knäuel auf den Gehorsa
 - **Der Preis:** Jede Verwandlung holt achtzig Jahre zurück. Er hasst diese Gestalt. In Gesprächen danach ist er still, gereizt oder nachtragend. Der Spieler entscheidet, wie oft er ihn darum bittet, und Barkley merkt sich das.
 - **Dramaturgisch:** Die Form, in der er versklavt war, wird zu seiner stärksten Waffe für die Befreiung. Für die anderen Monsterhunde ist er in dieser Gestalt einer von ihnen. Das macht ihn zu ihrem möglichen Anführer, aber auch zum Beweis, dass in jedem Monster noch ein Hund steckt.
 
-⚠ *Die Monsterform ist keine Klasse, sondern Barkleys persönliche Fähigkeit. Falls sie klassenbasiert sein soll, könnte eine seiner Klassen durch Hoodoo ersetzt werden.* An den Krieg, an die Verwandlung, an jeden Befehl, den er befolgt hat. Er hat Hunde gejagt, die fliehen wollten. Er hat seine eigenen Leute bewacht.
+*Hinweis: Die Monsterform ist keine Klasse, sondern Barkleys persönliche Fähigkeit. Falls sie klassenbasiert sein soll, könnte eine seiner Klassen durch Hoodoo ersetzt werden.* An den Krieg, an die Verwandlung, an jeden Befehl, den er befolgt hat. Er hat Hunde gejagt, die fliehen wollten. Er hat seine eigenen Leute bewacht.
 
 In Akt 2 befreit der Held ihn: Sein Herr opfert ihn in einer Falle in den Subfurs, um selbst zu entkommen. Der Knoten rutscht, und Barkleys ganze Treue legt sich um die Hunde, die lebenden und die toten. Er ist frei, und er hat nur noch eine Schlinge. Unlenkbar. Fanatisch.
 
@@ -570,7 +572,7 @@ In den Subfurs veränderte sie sich. Die Abwässer des Zaubers aus dem Hundekrie
 
 ### Der Pakt (Vorschlag)
 
-Das Alte in der Tiefe ist etwas, das älter ist als die Stadt und das Knäuel. Es nährt sich von Stimmen. Mit jedem Lied gibt Delta Mae ein Stück davon ab. Sie weiß, dass sie irgendwann verstummt. ⚠ *Prüfen, ob das Regelwerk Wesen vor dem Knäuel kennt.*
+Das Alte in der Tiefe ist etwas, das älter ist als die Stadt und das Knäuel. Es nährt sich von Stimmen. Mit jedem Lied gibt Delta Mae ein Stück davon ab. Sie weiß, dass sie irgendwann verstummt. Das passt zum Regelwerk: Das Alte gehört zum Weltfaden und lebt von Spannung. Stimmen tragen Resonanz, deshalb nährt es sich von ihnen. Beim Helden endet die Spannung am fremden Faden, er schmeckt nach nichts.
 
 ### Persönlichkeit
 
@@ -671,7 +673,7 @@ Was er nicht weiß: Er fliegt seit dem Umzug besser als je zuvor, weil die Menge
 ### Beweggründe
 
 - **Irdisch:** Endlich die Stadt sehen. Und Geld für seine Familie, damit der Zirkus nicht vom Orden abhängt.
-- **Tiefer:** Er erfährt, dass seine Höhenflüge von der Resonanz der Menge abhängen. Das Zerstörungsende würde ihm einen Teil seiner Kunst nehmen. ⚠ *Prüfen, ob Fitz als Wandergeborener zum Faden von Meow York gehört.*
+- **Tiefer:** Er erfährt, dass seine Höhenflüge von der Resonanz der Menge abhängen. Das Zerstörungsende würde ihm einen Teil seiner Kunst nehmen. Fitz ist unterwegs geboren und würde selbst nicht vom Faden getrennt. Aber die Menge aus Meow Yorkern könnte nicht mehr mitschwingen, und damit trägt ihn niemand mehr.
 
 ### Mögliche Entwicklungen
 
@@ -722,7 +724,7 @@ So hat jedes Ende Fürsprecher und Gegner in der Gruppe. Keine Entscheidung ist 
 
 - **Komik verteilen:** Big Dig, Corvin, Fitz und Mercy tragen humorvolle Züge. Barkley bleibt ernst, komisch ist nur, wie er die junge Welt missversteht. Shiner und Delta Mae sind witzig im Ton, aber ernst im Kern. Knuckles ist komisch, ohne es zu wollen: Ihr Humor entsteht aus Situationen, nie aus Sprüchen. Die Weberin ist trocken. Die Geschichte selbst bleibt ernst.
 - **Zwischenpersonen:** Pfötchen braucht für jede Manipulation eine Zwischenperson. Jede Figur hat eine benannte Zwischenperson in ihrem Umfeld (Ordensschwester bei Juno, Nugget bei Don Orango, Adikatz bei den Breaking Cats). Die Gefährten-Quests können diese Personen aufdecken.
-- **Offene Fragen ans Regelwerk:** Zurückfedern unverknoteter Verschiebungen und die Heftung · Nachhall durch gehaltene Verschiebungen · Leitung eines herausgeschnittenen Halters · Wirkung auf außerhalb Geborene · Wiedereinknüpfen nach dem Herausschneiden · Inhalt der Raffung · Wirken über verknotete Zwischenpersonen.
+- **Abgleich mit dem Regelwerk (13.11.):** erledigt. Die Weberin ist Kartografin statt Näherin, „Der Erbe“ ist ein Weg im Einwebungs-Ende, Pfötchen hat Malcolm bewusst gewählt und nie geliebt. Wer außerhalb von Meow York geboren ist (Juno, Fitz), wird von der Zerstörung nicht getrennt, verliert aber die Resonanz der Meow Yorker um sich.
 
 ---
 
@@ -747,7 +749,7 @@ Ab Akt 2 spürt Pfötchen, dass sein Sohn lebt. Bald weiß er auch, dass er Freu
 1. **Die Gefährten sind seine Tür zum Sohn.** Der Held ist nur erreichbar, wenn er an einen Vertrauten anknüpft. Pfötchen will also, dass er seinen Freunden vertraut. Ein gewendeter Freund würde den Sohn warnen und das Anknüpfen beenden. Pfötchen wartet geduldig auf den Moment, in dem der Sohn sich öffnet. Das ist der Hauptgrund, und er macht jede Szene des Anknüpfens gefährlich.
 2. **Jede Verschiebung ist ein Beweis.** Pfötchen weiß, dass sein Sohn Spuren liest: falsche Färbung, Gefühlssprung ohne Anlass, Leere an anderer Stelle, Nachhall. Jeder Eingriff verrät ihm, wo der Vater steht und wie er vorgeht.
 3. **Es fehlen Wege.** Jede Verschiebung braucht eine Zwischenperson, Material und ein Ziel. Die Gefährten sind Außenseiter mit wenigen Bindungen in der Stadt. Barkley ist mit nur einer Schlinge gar nicht lenkbar. Und Pfötchens Gegenzüge pro Kapitel sind begrenzt.
-4. **Der Preis trifft Hazel.** Jede Verschiebung fließt durch seine Leitung. Mitten in Wahlkampf und Unruhen kann er sich ihren Zusammenbruch nicht leisten. Ist die Weberin übergelaufen, federt außerdem alles Ungeheftete zurück, und jede Verschiebung kostet doppelt.
+4. **Der Preis trifft Hazel.** Jede Verschiebung fließt durch seine Leitung. Mitten in Wahlkampf und Unruhen kann er sich ihren Zusammenbruch nicht leisten. Ist die Weberin übergelaufen, pflegt er außerdem blind: Teure Verschiebungen spinnt das Leben zurück, und jeder Weg kostet ihn mehr Zeit.
 5. **Er greift das Umfeld an, nicht die Gruppe.** Er hetzt die Stadt gegen die Gefährten: Kopfgeld, Gerüchte, Hass. Er will sie zu Ausgestoßenen machen, damit der Sohn keinen anderen Ort hat als den Orden. Ironischerweise schweißt genau das die Gruppe zusammen und schafft die Knoten, die ihn später aussperren.
 
 **Im Spiel:** Pfötchen versucht es trotzdem, einmal gezielt in Akt 2 mit Big Dig, dessen Trauer um Pip ungeschützt liegt. Der Versuch soll den Sohn zermürben, nicht die Gruppe zerstören. Dass er nicht dauerhaft wirkt, wenn der Spieler Knoten geknüpft hat, wird Teil von Pfötchens Verzweiflung im Finale. Dort setzt er alles auf einmal ein, weil ihm nichts anderes mehr bleibt.

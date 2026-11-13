@@ -1,6 +1,6 @@
 {
  "titel": "Akt 3, das Lager knotet voll",
- "erwartet": "juno_knoten_lager = 3, die Weberin kann Juno nicht mehr auftrennen",
+ "erwartet": "juno_knoten_lager = 3: Junos Bindung an den Orden ist verknotet, ihr Bogen wird deutlich schwerer",
  "gruppe": [
   "ren",
   "shiner",
