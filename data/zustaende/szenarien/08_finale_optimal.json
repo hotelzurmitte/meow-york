@@ -40,7 +40,8 @@
   "barkley_knoten": true,
   "deltamae_knoten": true,
   "mercy_knoten": true,
-  "fitz_knoten": true
+  "fitz_knoten": true,
+  "auftrag_ausgang": "nugget_entlarvt"
  },
  "zuneigung": {
   "dig": 8,

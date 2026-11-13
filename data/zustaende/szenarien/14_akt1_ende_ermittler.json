@@ -1,0 +1,43 @@
+{
+ "titel": "Ende Akt 1, der neugierige Ermittler",
+ "erwartet": "Alles an der Pinnwand, Tauben genutzt, Kassette gehört, teure Schuhe bemerkt: trotzdem nur Zweifel an Malcolm (malcolm_risse höchstens 2), Juno-Stimme bleibt bei 1",
+ "gruppe": [
+  "ren",
+  "dig",
+  "corvin",
+  "shiner"
+ ],
+ "flags": {
+  "akt": 1,
+  "ch1robbed": true,
+  "dig_beigetreten": true,
+  "corvin_beigetreten": true,
+  "shiner_beigetreten": true,
+  "odile": "gewonnen",
+  "odile_moment_gesehen": true,
+  "juno_sachen_gerettet": true,
+  "mission_weg": "oben",
+  "juno_zettel_gesehen": true,
+  "juno_spur": 5,
+  "tauben": "netz_genutzt",
+  "schicht": "angenommen",
+  "roach": "corvin",
+  "mantelmann": "beschattet",
+  "zimmer7_weg": "feuertreppe",
+  "ghettoblaster": "gewonnen",
+  "kassette": "geheimfach",
+  "kassette_gesehen_von": "niemand",
+  "kassette_gehoert": true,
+  "mimi_vertraut": true,
+  "gerettet": [
+   "mimi",
+   "pounce"
+  ],
+  "fadenlos": true,
+  "gang_wahl": "breaking_cats",
+  "malcolm_risse": 2,
+  "orden_wachsam": 0,
+  "juno_stimme": 1,
+  "auftrag_ausgang": "nugget_entlarvt"
+ }
+}

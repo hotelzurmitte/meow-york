@@ -1,0 +1,38 @@
+{
+ "titel": "Ende Akt 1, der Opportunist",
+ "erwartet": "Odile getäuscht, Malcolms Geld genommen, Kassette ungehört an Nugget verkauft, beide Aufträge angenommen: Malcolm weiß, dass das Band existierte, malcolm_risse 0, die betrogene Gang wird in Akt 2 zum Feind",
+ "gruppe": [
+  "ren",
+  "dig",
+  "corvin",
+  "knuckles"
+ ],
+ "flags": {
+  "akt": 1,
+  "ch1robbed": true,
+  "dig_beigetreten": true,
+  "corvin_beigetreten": true,
+  "knuckles_beigetreten": true,
+  "odile": "getaeuscht",
+  "odile_schluessel": true,
+  "mission_weg": "aufnahme",
+  "juno_zettel_gesehen": true,
+  "juno_spur": 2,
+  "schicht": "abgelehnt",
+  "roach": "erpresst",
+  "mantelmann": "abgeschrieben",
+  "zimmer7_weg": "schluessel",
+  "ghettoblaster": "gefaelscht",
+  "kassette": "geheimfach",
+  "kassette_gesehen_von": "nugget",
+  "kassette_gehoert": false,
+  "gerettet": [
+   "benny"
+  ],
+  "fadenlos": true,
+  "gang_wahl": "nomapes",
+  "malcolm_risse": 0,
+  "orden_wachsam": 1,
+  "auftrag_ausgang": "doppelt"
+ }
+}

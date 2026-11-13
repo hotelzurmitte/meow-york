@@ -11,6 +11,7 @@
   "akt": 2,
   "gang_wahl": "breaking_cats",
   "tauben": "befreit",
-  "dig_knoten": false
+  "dig_knoten": false,
+  "auftrag_ausgang": "vorgetaeuscht"
  }
 }

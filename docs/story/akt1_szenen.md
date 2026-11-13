@@ -6,7 +6,7 @@ Stand: 13.11.2026, Fassung 3 (nach Prüfung auf Logik, Dramaturgie und Spielbark
 
 ## Das Rückgrat in einem Absatz
 
-Der Held kommt nach Hairlem, um Juno zu finden, und wird am ersten Abend ausgeraubt. Er findet ihre Wohnung leer und folgt ihrer Spur zu einer freundlichen Ordensschwester und in die Ordensmission. Dort erfährt er, dass Juno nicht entführt wurde, sondern vor ihm flieht. Nebenbei stößt er auf eine stille Maschine: Männer in guten Mänteln holen Straßenkinder und Knäuel-Gläubige ab, legal und freundlich. Gleichzeitig kocht Hairlem. Zwei Gangs streiten um einen goldenen Ghettoblaster, und der Streit wird immer heißer, als würde jemand nachlegen. Bei einer Massenschlägerei rastet die ganze Straße aus, nur der Held nicht. Danach steht ein charmanter Luchs zwischen den Verletzten, und in derselben Nacht hört die Gruppe auf einem versteckten Band genau diese Stimme, wie sie mit einer Fremden einen Plan schmiedet. Am Ende sieht der Held eine Predigt im Fernsehen, die eine ganze Straße auf einen Schlag beruhigt, und begreift: Nicht das Rathaus regiert. Juno ist nach unten gegangen, in die Tunnel. Er folgt ihr.
+Der Held kommt nach Hairlem, um Juno zu finden, und wird am ersten Abend ausgeraubt. Er findet ihre Wohnung leer und folgt ihrer Spur zu einer freundlichen Ordensschwester und in die Ordensmission. Dort erfährt er, dass Juno nicht entführt wurde, sondern vor ihm flieht. Nebenbei stößt er auf eine stille Maschine: Männer in guten Mänteln holen Straßenkinder und Knäuel-Gläubige ab, legal und freundlich. Gleichzeitig kocht Hairlem. Zwei Gangs streiten um einen goldenen Ghettoblaster, und der Streit wird immer heißer, als würde jemand nachlegen. Bei einer Massenschlägerei rastet die ganze Straße aus, nur der Held nicht. Danach verbindet ein charmanter Luchs, der gegen den Orden kämpft, die Verletzten beider Seiten und hilft dem Helden, ohne etwas zu verlangen. Wer will, hört auf einem versteckten Band genau diese Stimme, wie sie mit einer Fremden über Geld für beide Gangs spricht und über etwas, das „da unten“ liegt. Ein Zweifel, kein Urteil. Am Ende sieht der Held eine Predigt im Fernsehen, die eine ganze Straße auf einen Schlag beruhigt, und begreift: Nicht das Rathaus regiert. Juno ist nach unten gegangen, in die Tunnel. Er folgt ihr.
 
 ---
 
@@ -19,8 +19,8 @@ Spannung entsteht, wenn der Spieler Fragen hat, die das Spiel nach und nach bean
 | Wo ist Juno? | Prolog | Quest 1, Ordensmission | Sie ist freiwillig beim Orden und flieht vor ihm, weil es ihr wehtut, ihn zu sehen |
 | Wer holt die Kinder und die Gläubigen? | Ilse, Prolog | Quests 2, 3 und 1 | Die Mantelmänner des Ordens, ganz legal: Waisenhaus und Aufnahme |
 | Was stimmt mit dem Helden nicht? | erste Nacht | Massenschlägerei | Er fühlt nicht mit und kann nicht gelenkt werden: „Fadenlos“ |
-| Warum kocht Hairlem? | Quest 4 | Massenschlägerei, Kassette | Jemand schürt, Malcolm bezahlt beide Gangs |
-| Wer hat die Papiere gekauft? | Roachs Garage | Malcolm-Szene (für Aufmerksame) | „Der mit den teuren Schuhen“: Malcolm *(entschieden)* |
+| Warum kocht Hairlem? | Quest 4 | Massenschlägerei, Kassette | Jemand schürt. Geld fließt in beide Gangs, auch Malcolms. Ob er schürt oder schlichtet, bleibt in Akt 1 offen |
+| Wer hat die Papiere gekauft? | Roachs Garage | Malcolm-Szene (für Aufmerksame) | „Der mit den teuren Schuhen“: Malcolm *(entschieden)*. Seine Leute erklären es als Schutz vor den Listen der Garde, die wahre Absicht (er sucht den Sohn) bleibt bis Akt 2 verborgen |
 | Was ist mit Lil' Riff passiert? | Quest 4 | offen bis Akt 2 | Er hat etwas aufgenommen und ist verschwunden. Die Spur führt zur Ordensgarde und nach unten |
 | Wer regiert die Stadt? | überall angedeutet | Ende des Akts | Der Orden |
 
@@ -359,10 +359,10 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 
 - **Dann kippt es ohne Anlass, und zwar als Welle.** Erst Nugget, dann die Leute um ihn herum, dann der ganze Platz. Zuschauer werfen Flaschen, Big Dig packt einen Nomapen an der Kehle, Corvin hackt nach einem Gesicht. Der Spieler sieht dasselbe wie bei Odile, nur bei Hunderten, und er sieht, dass es von einem Punkt ausgeht. (Regelwerk: Pfötchen zieht an wenigen Schlüsselpersonen, den Rest erledigt die Resonanz.)
 - **Nur der Held bleibt ruhig.** Der Kampf hat drei Aufgaben zugleich:
-  - **Gefährten zurückholen:** Mit Proben auf Überzeugen und Einsicht bringt er Big Dig oder Corvin aus dem Rausch. Wer zurückkommt, sieht ihn an, als würde er erst jetzt begreifen, wer neben ihm steht. Danach erscheint **die erste Meldung „Knoten geknüpft“**.
+  - **Gefährten zurückholen:** Mit Proben auf Überzeugen und Einsicht bringt er Big Dig oder Corvin aus dem Rausch. Wer zurückkommt, sieht ihn an, als würde er erst jetzt begreifen, wer neben ihm steht. Danach erscheint **die erste Meldung „Knoten geknüpft“**. Sie darf nicht wie Erfahrungspunkte aussehen: eigener Klang (ein leiser Ton, als würde eine Saite gestimmt), eigenes Bild (ein Faden, der sich zwischen den beiden Porträts zuzieht), und das Spiel hält dafür eine Sekunde an. *(Für die Umsetzung.)*
   - **Schützen, wen man schützen will:** Mimi steht am Rand. Benny geht unter. Pounce wird eingekesselt. Wen der Held rettet, hat Folgen für Ansehen, Knuckles' Quest (Benny) und Big Dig (Mimi).
   - **Nugget beobachten:** Wer ihn im Auge behält, sieht, dass er als Erster kippt.
-- **Nach dem Kampf:** Ein Kind starrt den Helden an und sagt: „Der hat keine Fäden.“ Ab jetzt heißt er **„Fadenlos“** (`fadenlos`).
+- **Nach dem Kampf** sagt niemand etwas über den Helden. Es ist zu laut, zu viel Blut, alle suchen ihre Leute. Was er ist, kommt erst am nächsten Morgen an (siehe *Der Morgen danach*).
 - **Wer Big Dig oder Corvin noch nicht hat,** sieht sie jetzt: Big Dig sucht Pips' Gesicht in der Menge, Corvin beobachtet für seinen Fall. Beide schließen sich an.
 
 **Prüfung:**
@@ -377,22 +377,26 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 ### Malcolm
 *ein Hinterhof im Künstlerviertel · nach der Schlägerei*
 
+**Ziel der Szene:** Der Spieler soll Malcolm mögen und ihm glauben wollen. Malcolm ist in Akt 1 der Köder: der einzige Erwachsene, der gegen den Orden steht, der Verletzte beider Seiten verbindet und dem Helden hilft, ohne etwas zu verlangen. Jeder Zweifel an ihm muss sich gegen dieses Bild durchsetzen. *(entschieden 13.11.)*
+
 - **Malcolm war nicht auf dem Platz.** Er ist gesucht und zeigt sich nicht offen. Er hat von einem Fenster aus zugesehen. Ein junger Kater aus seiner Bewegung spricht den Helden nach dem Kampf an: „Ihr habt Verletzte. Kommt mit, da hinten fragt keiner nach Namen.“
-- In einem Hinterhof hat Malcolms Bewegung ein Lazarett eingerichtet, wo keine Polizei hinkommt. Ein Luchs im teuren Mantel verbindet Verletzte beider Seiten. Er beendet die Sätze der Leute, bevor sie sie zu Ende sprechen. Alle lieben ihn sofort, auch die, die ihn eben noch verprügeln wollten.
+- In einem Hinterhof hat Malcolms Bewegung ein Lazarett eingerichtet, wo keine Polizei hinkommt. Ein Luchs im teuren Mantel verbindet Verletzte beider Seiten, auch den Nomapen, der ihn eben noch „Katzenprediger“ genannt hat. Er beendet die Sätze der Leute, bevor sie sie zu Ende sprechen. Alle lieben ihn sofort.
 - Er spricht den Helden an. Kurz lauscht er, als würde etwas fehlen: „Bei dir ist es still. Weißt du, wie selten das ist?“
-- Er bietet Hilfe an: „Die Expedition? Ich weiß, wie man nach unten kommt. Die Gangs kennen die alten Tunnel. Such dir die richtigen Freunde.“ Damit schickt er den Helden tiefer in den Bandenkrieg.
-- **Teure Schuhe:** Wer Roachs Buchführung gelesen hat, kann es ahnen (Wahrnehmung).
-- **Ganz beiläufig fragt er:** „Bei eurem Tanz ist doch was aus dem Ghettoblaster gefallen, oder?“ Sein Späher hat etwas gesehen, aber nicht genau. Wer lügt, braucht Täuschen gegen Malcolm, und das ist schwer, denn er liest jeden. **Beim Helden kann er es nicht lesen**, und das irritiert ihn sichtbar (Einsicht). Wer die Wahrheit sagt, bekommt ein Angebot: Geld, „als Andenken für Adikatz“.
-- **Corvin** vertraut ihm, er ist sein bester Informant. Dass er sich regelmäßig mit einem gesuchten Mann trifft, hat er nie jemandem erzählt. Big Dig brummt nur.
+- **Er sagt dem Spieler, was der Spieler schon ahnt, und es stimmt:** „Der Orden holt die Kinder. Ganz freundlich, mit Suppe und Formularen. Ich kämpfe seit Jahren dagegen, deshalb hänge ich an jeder Laterne.“ Wer Odile, das Aufnahmebuch oder Roachs Liste kennt, erlebt: Dieser Mann sieht dasselbe wie ich. Das ist der stärkste Köder, weil er wahr ist.
+- **Er hilft, ohne zu fragen:** „Die Expedition? Die Gangs kennen die alten Tunnel. Such dir die richtigen Freunde.“ Und wer keine Papiere hat: „Wir machen dir neue. Dauert eine Woche.“ Die Ironie, dass er die echten längst hat, versteht man erst in Akt 2. Die neuen Papiere sind vor dem Abstieg nicht fertig.
+- **Teure Schuhe:** Wer Roachs Buchführung gelesen hat, bemerkt die Schuhe (Wahrnehmung). Fragt er nach, erklärt der junge Kater stolz: „Malcolm kauft die Papiere der Neuen, bevor die Garde sie kriegt. Wer keine Papiere hat, steht auf keiner Liste.“ Ein Zweifel, sofort entschärft. Er kehrt erst in Akt 2 zurück.
+- **Ganz beiläufig fragt er,** aber nur, wenn er etwas wissen kann (`kassette_gesehen_von` ist nicht „niemand“, oder die Kassette fiel beim Battle heraus): „Bei eurem Tanz ist doch was aus dem Ghettoblaster gefallen, oder?“ beziehungsweise „Nugget sagt, in dem Ghettoblaster war was drin.“ Weiß er nichts, fragt er auch nichts. Wer lügt, braucht Täuschen gegen Malcolm, und das ist schwer, denn er liest jeden. **Beim Helden kann er es nicht lesen**, und das irritiert ihn kurz (Einsicht). Wer die Wahrheit sagt, bekommt ein Angebot: Geld, „als Andenken für Adikatz, der Junge war wie ein kleiner Bruder für uns alle“.
+- **Junos Stimme** (Einsicht gelingt): „Juno hätte gesagt: Der meint jedes Wort.“ Sie hat recht, und genau das ist das Problem. Malcolm meint es ernst, nur nicht so, wie der Held denkt. Es ist der erste Moment, in dem ihre Deutung später kippt (siehe *Junos Stimme*).
+- **Corvin** vertraut ihm, er ist sein bester Informant, seit zwölf Jahren. Dass er sich regelmäßig mit einem gesuchten Mann trifft, hat er nie jemandem erzählt. **Big Dig** brummt nur, aber er lässt sich die Pfote verbinden und bedankt sich.
 
 ### Der Ärger um die Kassette
 *ab dem Moment, in dem jemand sieht, dass der Held sie hat · beim Geheimfach in Quest 4 oder beim Battle*
 
 | Wer es gesehen hat | Was passiert | Wege |
 | --- | --- | --- |
-| **Nugget** | Seine Leute passen den Helden am nächsten Abend in einer Gasse ab, oder sie warten im Nest | kämpfen, bluffen (eine falsche Kassette, Knuckles kann eine bespielen), über die Dächer fliehen (Corvin), Hummel versteckt ihn im Keller (wenn er ihm vertraut), die Kassette herausgeben |
-| **Adikatz** | Er steht nachts vor dem Unterschlupf: „Das ist von meinem Bruder.“ Er will sie haben, nicht kaufen | geben (er hört sie allein und zweifelt danach an Malcolm), zusammen anhören (stärkste Szene, siehe unten), verweigern (die Cats werden feindlich) |
-| **Malcolm, über Nugget oder seinen Späher** | Er wird nicht laut. Lehnt der Held sein Geldangebot im Lazarett ab, tauchen am nächsten Tag Nuggets Leute auf | wie bei Nugget, dazu `malcolm_risse` +1, weil er zum ersten Mal Druck zeigt |
+| **Nugget** | Seine Leute passen den Helden am nächsten Abend in einer Gasse ab, oder sie warten im Nest. Verkauft der Held ihm die Kassette freiwillig, schmeißt Nugget am Abend Runden im Nest, und Hummel fragt: „Von wem hat der das Geld?“ | kämpfen, bluffen (eine falsche Kassette, Knuckles kann eine bespielen), über die Dächer fliehen (Corvin), Hummel versteckt ihn im Keller (wenn er ihm vertraut), die Kassette herausgeben |
+| **Adikatz** | Er steht nachts vor dem Unterschlupf: „Das ist von meinem Bruder.“ Er will sie haben, nicht kaufen | geben (er hört sie allein und grübelt danach), zusammen anhören (stärkste Szene, siehe unten), verweigern (die Cats werden feindlich) |
+| **Malcolm, über Nugget oder seinen Späher** | Er wird nicht laut. Lehnt der Held sein Geldangebot ab, kommt am nächsten Morgen der junge Kater: „Nugget sucht dich. Malcolm sagt, pass auf dich auf.“ Am Abend tauchen Nuggets Leute auf | wie bei Nugget. Malcolm wirkt wie der Warner, nicht wie der Auftraggeber. Dass er Nugget den Tipp gegeben hat, erfährt man erst in Akt 2 |
 | **niemand** | kein Ärger, aber auch keiner weiß, dass der Held etwas Wichtiges hat | – |
 
 **Versteckt man die Kassette**, gibt es mehrere Orte: Big Dig vergräbt sie, Corvin legt sie auf einen Wasserturm, Hummel nimmt sie hinter die Theke. Wer sie bei sich trägt, verliert sie bei einem verlorenen Kampf.
@@ -403,25 +407,47 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 - **Der Held hat kein Abspielgerät.** Er braucht eins: Hummels Küchenradio, das Tonbandgerät in Corvins Büro, die Werkstatt der Nomapes oder einen Walkman, den man kaufen oder stehlen kann. Anhören ist also ein bewusster Schritt an einem ruhigen Ort, nicht etwas, das im Kampf passiert.
 - **Wer sie nicht anhört,** trägt sie herum. Die Gefährten fragen nach: Corvin („Wir haben ein Band und hören es nicht?“), Big Dig („Vielleicht ist der Kleine drauf“, er meint Pips). Es bleibt trotzdem freiwillig.
 - **Was drauf ist:** „Lil' Riff, Take drei …“, ein selbstgebauter Beat mit Tunnelhall.
-- **Zwei Stimmen.** Die kühle gehört Malcolm, das erkennt die Gruppe sofort. Die raue ist eine fremde Frau, in Wahrheit die Weberin (GDD):
-  - „Die Tagebücher sagen, es liegt noch da unten.“
+- **Zwei Stimmen.** Die kühle gehört Malcolm, das erkennt die Gruppe sofort. Die raue ist eine fremde Frau, in Wahrheit die Weberin (GDD). **Jede Zeile lässt sich gut und schlecht lesen** *(entschieden 13.11.: die Kassette sät Zweifel, sie liefert kein Urteil)*:
+  - Frau: „Die Tagebücher sagen, es liegt noch da unten.“ – Malcolm: „Dann hole ich es, bevor er es tut.“ *(Gute Lesart: Er will es vor dem Orden retten.)*
   - „Warum trägt er dann Tag und Nacht einen Schlüssel um den Hals?“
-  - „Er hat dich aufgezogen wie sein eigenes Blut.“ – „Wie sein eigenes Blut. Ja. So kann man's sagen.“
-  - „Die Affen erledigen meine Drecksarbeit, die Katzen glauben an mich.“
+  - „Er hat dich aufgezogen wie sein eigenes Blut.“ – „Wie sein eigenes Blut. Ja. So kann man's sagen.“ *(Wer ist „er“? Das weiß der Spieler noch nicht.)*
+  - Malcolm: „Das Geld für die Werkstatt ist raus. Die Katzen kriegen ihres morgen.“ – Frau: „Und wenn sie sich davon Eisenstangen kaufen?“ – Malcolm, nach einer Pause: „Dann wissen sie wenigstens, wofür sie kämpfen.“ *(Gute Lesart: Er hilft beiden Seiten. Schlechte: Er bezahlt den Krieg.)*
   - Dann ein Knacken, „Da ist jemand“, und das Band bricht ab.
-- **Was gezeigt statt erklärt wird:** Der Mann, der eben Verletzte verbunden hat, bezahlt beide Gangs. Riff hat ihn belauscht, und Riff ist verschwunden. Corvin will es nicht glauben, sein bester Informant.
-- **Zusammen mit Adikatz anhören** (wenn er gekommen ist): Der Tiger hört die Stimme seines Bruders zum ersten Mal seit zwei Monaten, dann Malcolm. Er sagt lange nichts. Dann: „Der war bei Riffs Beerdigung. Ohne Leiche. Er hat die Rede gehalten.“ Das ist die stärkste Fassung der Szene.
-- **Danach:** die Kassette behalten (Beweis), Adikatz geben oder Nugget geben (dann erfährt Malcolm, dass sie gehört wurde). Wenn Corvin danach misstrauisch ist, steigt `malcolm_risse` um 1.
+- **Was gezeigt statt erklärt wird:** Malcolm gibt beiden Gangs Geld und spricht mit einer Fremden über etwas, das „da unten“ liegt. Riff hat das aufgenommen, und Riff ist verschwunden. Mehr steht nicht fest. Ob Malcolm Riff zum Schweigen gebracht hat oder ob Riff vor jemand anderem fliehen musste, kann der Spieler nicht entscheiden.
+- **Die Gefährten streiten, statt zu urteilen:** Corvin verteidigt ihn: „Der kauft Frieden. So macht er das seit zwölf Jahren.“ Big Dig: „Wer beiden Geld gibt, will, dass beide ihn brauchen.“ Der Spieler wählt, wem er recht gibt, und nichts davon ist falsch.
+- **Junos Stimme** (Einsicht gelingt, beim Abhören): „Juno hätte gesagt: Der hat Angst. Nicht vor der Frau. Um jemanden.“ Das stimmt, und es macht Malcolm noch sympathischer.
+- **Zusammen mit Adikatz anhören** (wenn er gekommen ist): Der Tiger hört die Stimme seines Bruders zum ersten Mal seit zwei Monaten, dann Malcolm. Er sagt lange nichts. Dann: „Der war bei Riffs Beerdigung. Ohne Leiche. Er hat die Rede gehalten. Er hat als Einziger geweint.“ Das ist die stärkste Fassung der Szene, weil sie beide Lesarten in einem Satz trägt.
+- **Danach:** die Kassette behalten (Beweis), Adikatz geben oder Nugget geben (dann erfährt Malcolm, dass sie gehört wurde). Gibt der Spieler Big Dig recht statt Corvin, steigt `malcolm_risse` um 1. Mehr nicht: In Akt 1 bekommt Malcolms Maske höchstens einen Riss.
 
 ### Wer die Kassette bekommt, wenn der Held sie nicht aufhebt
 
 | Wer | Wann | Folge |
 | --- | --- | --- |
 | **Mimi** | wenn sie auf dem Platz war und der Held die Kassette nicht gesehen oder liegen gelassen hat | Kinder heben auf, was glänzt. Nuggets Leute suchen sie danach. Mimi versteckt sich und kommt zu Big Dig, wenn sie ihm vertraut. Hat er Ansgar verprügelt, geht sie zu Adikatz. Kurze Nebenquest: Mimi finden, bevor Nugget sie findet |
-| **Adikatz** | wenn er nah dran stand | Er hört sie allein. Er zweifelt danach an Malcolm, und die Cats verhalten sich beim Auftrag anders. Der Held erfährt den Inhalt nur, wenn er Adikatz' Vertrauen gewinnt |
+| **Adikatz** | wenn er nah dran stand | Er hört sie allein. Er grübelt danach, wem er glauben soll, und die Cats verhalten sich beim Auftrag vorsichtiger. Der Held erfährt den Inhalt nur, wenn er Adikatz' Vertrauen gewinnt |
 | **Nugget** | sonst | Sie geht an Malcolm. Der Beweis ist für Akt 1 verloren, Malcolms Maske hält länger, `malcolm_risse` bleibt niedrig. Der Inhalt kommt in Akt 2 auf anderem Weg ans Licht: über die Weberin, deren Stimme drauf ist, oder über Riff selbst |
 
-**Die Kassette ist keine Pflicht-Spur.** Die Enthüllung des Akts (die Predigt) hängt nicht an ihr. Sie verändert, was der Spieler über Malcolm weiß, wem Corvin vertraut und welche Wege es beim Auftrag gibt.
+**Die Kassette ist keine Pflicht-Spur.** Die Enthüllung des Akts (die Predigt) hängt nicht an ihr. Sie verändert, was der Spieler über Malcolm ahnt, worüber die Gefährten streiten und welche Wege es beim Auftrag gibt.
+
+---
+
+## Der Morgen danach
+
+### Fadenlos
+*Whisker Avenue und das Cuckoo's Nest · am Morgen nach der Schlägerei · fest, ein stiller Atemzug*
+
+**Ziel:** Der Spieler soll merken, dass sich etwas verändert hat, bevor ihm jemand sagt, was. Keine Erklärung, keine Entscheidung, nur Reaktionen. *(entschieden 13.11.)*
+
+- **Die Straße flüstert.** Auf dem Weg zum Nest verstummen Gespräche, wenn er vorbeigeht, und setzen hinter ihm wieder ein. Leute treten einen halben Schritt zur Seite. Nicht feindlich, eher so, wie man einem Hund ausweicht, den man nicht kennt.
+- **Ein Kind zeigt auf ihn.** Es zupft seine Mutter am Ärmel und sagt laut, wie Kinder es tun: „Das ist der ohne Fäden.“ Die Mutter zieht es weg. Mehr nicht.
+- **Hummel stellt ihm wortlos einen Kaffee hin.** Ohne Honig, zum ersten Mal. Er nimmt kein Geld dafür und sieht ihn nicht an. Auch dann, wenn Hummel wegen der verpassten Schicht eigentlich nicht mit ihm redet: Dann ist das Schweigen echt, und der Kaffee sagt mehr. Wer mit ihm redet, bekommt nur: „Trink. Du warst gestern der Einzige, der nicht geschrien hat.“
+- **Die Gefährten reagieren verschieden:** Big Dig setzt sich näher zu ihm als sonst. Corvin wartet draußen (Hausverbot im Nest) und schreibt am Fenster „Fadenlos?“ in sein Notizbuch, streicht das Fragezeichen durch und schreibt es wieder hin.
+- **Von hier an** sprechen ihn manche NPCs als „Fadenlos“ an (`fadenlos`), manche meiden ihn. Was das Wort bedeutet, erfährt er erst in Akt 2 von der Weberin.
+
+**Prüfung:**
+- *Spaß:* Eine ruhige Szene nach dem lautesten Moment des Akts. Der Spieler kann sich frei bewegen und sammelt Reaktionen, statt eine Aufgabe zu erfüllen.
+- *Nachvollziehbarkeit:* Wer auf dem Platz war, hat gesehen, dass nur der Held ruhig blieb. Die Straße hat es auch gesehen.
+- *Was die Schlägerei dadurch verliert:* nichts. Sie bleibt Kampf, Rettung und erster Knoten. Die Bedeutung kommt hier, wenn es still ist.
 
 ---
 
@@ -431,7 +457,19 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 *Werkstatt der Nomapes, Hauptquartier der Breaking Cats*
 
 - Nach der Schlägerei verlangen beide Bosse dasselbe: Der andere muss weg. Der Held ist neu, keiner kennt ihn, und seit dem Platz hat er einen Ruf.
-- **Der Weg nach unten führt über die Gangs:** Die Cats kennen die Graffiti-Tunnel, die Nomapes ihre Schmuggelstrecken. Wer in die Subfurs will, braucht eine Seite.
+- **Der Weg nach unten führt über die Gangs:** Die Cats kennen die Graffiti-Tunnel, die Nomapes ihre Schmuggelstrecken. Wer in die Subfurs will, braucht eine Seite. Das ist der Anlass, aber nicht der Grund, warum die Wahl wehtut. *(entschieden 13.11.: von der Zugangskarte zur sozialen Folge)*
+
+**Was jede Seite unter Schutz versteht.** Beide wollen ihre Leute schützen, aber sie meinen etwas anderes damit:
+
+| | Breaking Cats | Nomapes |
+| --- | --- | --- |
+| **Was sie verlieren können** | jemanden, der nicht ersetzt werden kann | ihre Existenz |
+| **Das Gesicht dafür** | Riffs Platz im Studio: Sein Bandgerät steht noch aufgebaut, keiner traut sich, es abzubauen. Pounce stellt jeden Abend eine Cola daneben | die Werkstatt am Lohntag: Benny zahlt die Löhne aus einer Keksdose aus, und für zwei Familien reicht es diesen Monat nicht |
+| **Schutz heißt für sie** | Zusammenhalt und Antwort. Adikatz: „Wer einen von uns nimmt, nimmt uns alle. Wenn wir nicht antworten, sind wir die Nächsten.“ | Weitermachen. Don Orango: „Stolz zahlt keine Miete. Wer tot ist, schraubt nicht.“ |
+| **Was ein Krieg für sie bedeutet** | eine Ehrensache, die man gewinnen muss | ein Geschäftsrisiko, das man beenden muss, notfalls schmutzig |
+
+- **Beide Gesichter sieht der Spieler vor der Wahl**, ohne dass ein Pflichtschritt daraus wird: das Studio beim Battle oder beim Ärger um die Kassette, die Werkstatt bei Knuckles oder über Benny. Wer eine Seite nie besucht hat, bekommt sie von dem Gefährten der anderen Seite beschrieben, damit niemand blind entscheidet.
+- **Die Warnung vor dem Verlust.** Nimmt der Held den Auftrag gegen einen Boss an, sagt es ihm die Figur der Gegenseite selbst, wenn er sie schon kennt: Knuckles, ruhig und ohne Drohung, „Wenn du das machst, bin ich weg. Nicht wütend. Einfach weg.“ Shiner, lauter: „Dann kletter ich ab morgen allein.“ Kennt er sie noch nicht, warnt Big Dig: „Da drüben hängen auch Leute dran.“ Danach ist der Verlust eine Entscheidung und keine Strafe.
 
 **Wege:**
 
@@ -458,9 +496,10 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 ### Die Predigt
 *Corvins Büro, dann die Straße*
 
-- An der Pinnwand hängt jetzt alles: Roachs Liste, das Siegel, das Aufnahmebuch, Pips' Zeichnung, die Kassette, Vincenzos Foto. Corvin fasst zusammen, denn ein Detektiv darf das: „Die holen Kinder und Gläubige, ganz freundlich. Die bringen Leute zum Kippen. Und Malcolm bezahlt beide Gangs. Aber wer zieht die Fäden?“
+- An der Pinnwand hängt jetzt alles: Roachs Liste, das Siegel, das Aufnahmebuch, Pips' Zeichnung, die Kassette, Vincenzos Foto. Corvin fasst zusammen, denn ein Detektiv darf das: „Die holen Kinder und Gläubige, ganz freundlich. Die bringen Leute zum Kippen. Und Geld fließt in beide Gangs.“ Er sieht die Kassette an, falls sie dort hängt, und nimmt sie ab. „Das ist Malcolms Sache. Der kauft Frieden. Aber wer zieht die Fäden?“
 - **Die Antwort kommt durch ein Ereignis.** Der Fernseher im Pfandhaus unten läuft, Pfötchen ruft nach den Unruhen zur Ruhe. Draußen schreien sich noch Leute an. Dann wird es still, als Welle wie auf dem Platz, nur umgekehrt: Zuerst beruhigt sich die Ordensschwester an der Ecke, dann der Kreis um sie, dann die ganze Straße, mitten im Satz.
 - Der Held sieht es als Einziger als das, was es ist: Odiles Moment, Nuggets Kippen, die Schlägerei, und jetzt das Gegenteil. **Derselbe, der das Feuer gelegt hat, löscht es auch, und am Ende lieben ihn alle dafür.** Gezeigt wird das nur durch die Reihenfolge: erst die Schlägerei, dann die Predigt, dann Menschen, die am Fernseher weinen vor Dankbarkeit.
+- **Junos Gesicht im Fernsehen.** Am Ende der Predigt segnet Pfötchen „unsere Expedition in die Tiefe“. Bilder vom Aufbruch am U-Bahn-Gitter, und für zwei Sekunden Juno in Weiß, ruhig, mit einem Lächeln, das der Held nicht kennt. Wer den Zettel gefunden hat, bekommt die Bestätigung. Wer die Mission nie betreten hat, erfährt hier, wohin sie gegangen ist. So funktioniert das Ende auch für Spieler, die Quest 1 ausgelassen haben.
 - Corvin, sehr leise: „Das Rathaus regiert nicht.“ Mehr Erklärung braucht es nicht.
 
 ### Abstieg
@@ -489,11 +528,11 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 
 ### 2. Dramaturgie
 
-**Kurve:** Ankunft und Verlust (Prolog) → Rätsel (Wohnung, Odile) → emotionaler Mittelpunkt (Junos Zettel) → Eskalation (Ghettoblaster) → Höhepunkt (Schlägerei) → Wendung (Kassette) → Entscheidung (Auftrag) → Enthüllung (Predigt) → Aufbruch.
+**Kurve:** Ankunft und Verlust (Prolog) → Rätsel (Wohnung, Odile) → emotionaler Mittelpunkt (Junos Zettel) → Eskalation (Ghettoblaster) → Höhepunkt (Schlägerei) → Atemzug (Morgen danach, Fadenlos) → Zweifel (Malcolm und die Kassette) → Entscheidung (Auftrag) → Enthüllung (Predigt) → Aufbruch.
 
 **Druck von außen:** Bisher wehrt sich der Orden nie. Neu: `orden_wachsam` hat spürbare Folgen.
 - **Ab 2:** Eine Streife der Garde hält den Helden auf der Straße an. Er hat keine Papiere. Er kann fliehen, bluffen, oder Corvin zeigt einen alten Dienstausweis, was ihn etwas kostet.
-- **Ab 4:** Bruder Ansgar sitzt abends im Nest und beobachtet den Helden. Hummel warnt ihn leise. Am nächsten Tag lädt ihn Odile „ganz unverbindlich“ in die Mission ein.
+- **Ab 4:** Bruder Ansgar sitzt abends im Nest und beobachtet den Helden. Hummel warnt ihn leise. Am nächsten Tag lädt ihn Odile „ganz unverbindlich“ in die Mission ein. Ist Odile verletzt, kommt eine andere Schwester, die ihn nicht kennt, und das ist unheimlicher.
 - **Nach der Schlägerei immer:** „Der Fadenlose“ steht auf den Listen der Garde.
 
 **Rhythmus von Ernst und Komik:** Nach jedem schweren Moment kommt ein leichter, damit der Ernst wirkt und nicht erdrückt.
@@ -516,7 +555,8 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | --- | --- |
 | zuerst in die Mission geht, ohne Gefährten | nur Wege für einen: Einladung, Küche mit Armband, Suppenschlange mit Einbruch. Big Dig und Corvin fehlen dort, alles andere funktioniert |
 | die Garage nie macht | Er kämpft mit improvisierter Ausrüstung, und die Schlägerei ist darauf abgestimmt. Big Dig trifft er bei der Schlägerei, die Garage bleibt danach offen |
-| Quest 4 nie anfängt | Die Schlägerei kommt am Samstag nach Junos Zettel. Der Ghettoblaster ist trotzdem auf dem Platz, denn die Cats spielen ihn immer |
+| die Mission nie betritt | Er sieht Juno am Ende in der Predigt im Fernsehen, beim Aufbruch der Expedition. Das Ziel „nach unten“ ist damit klar |
+| Quest 4 nie anfängt | Die Schlägerei kommt am Samstag nach Junos Zettel, spätestens an Tag 7. Der Ghettoblaster ist trotzdem auf dem Platz, denn die Cats spielen ihn immer |
 | Odile verletzt | Andere Wege in die Mission bleiben offen. Odile taucht in Akt 3 im Lager wieder auf und erinnert sich |
 | Hummels Vertrauen verliert | Kein Zimmer auf Pump mehr. Big Digs Keller oder Corvins Büro werden zum Unterschlupf |
 | Big Dig Ansgar verprügeln lässt | Mimi meidet Big Dig bis Akt 2. Big Digs Zuneigung zum Helden steigt trotzdem, das ist seine unschöne Seite |
@@ -524,7 +564,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 
 **Die Kassette:** keine Pflicht-Spur mehr, siehe „Wer die Kassette bekommt“. Ohne sie fehlt beim Auftrag der Weg „Nugget bloßstellen“ mit dem Band als Beweis. Er bleibt mit Beobachtungen allein möglich, ist dann aber deutlich schwerer.
 
-**Auslöser der Schlägerei:** am nächsten Samstag, nachdem Quest 4 entschieden ist oder Junos Zettel gefunden wurde, je nachdem, was zuerst kommt. Es gibt keinen Zeitdruck, aber auch kein Warten ohne Ende.
+**Auslöser der Schlägerei:** am nächsten Samstag, nachdem Quest 4 entschieden ist oder Junos Zettel gefunden wurde, je nachdem, was zuerst kommt. Es gibt keinen Zeitdruck, aber auch kein Warten ohne Ende: Spätestens an Tag 7 nach dem Überfall findet der Battle statt, die Gangs haben ihn überall plakatiert.
 
 ---
 
@@ -536,7 +576,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | Manipulation | Odiles Moment, Nuggets Kippen, die Schlägerei, die Predigt | nein |
 | Was der Orden mit Menschen macht | Grille Grimm, Junos Zettel | nein |
 | Der Orden holt Kinder | Roachs Liste, Zimmer 7, Aufnahmebuch | nur als Gerede (Ilse) |
-| Malcolm ist nicht, wer er scheint | Kassette nach seinem warmen Auftritt, nur wenn gehört | nein |
+| Malcolm ist vielleicht nicht nur, wer er scheint | Kassette nach seinem warmen Auftritt, nur wenn gehört, und nur als Zweifel | nein |
 | Wer regiert | die Predigt | Corvin zieht die Summe, ein Satz |
 | Warum der Held so ist | – | erst in Akt 2, durch die Weberin |
 
@@ -574,7 +614,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 
 ## Neue Variablen für das Zustandsregister
 
-Erst eintragen, wenn die Szenen gebaut werden. Schon im Register: `odile`, `juno_spur`, `orden_wachsam`, dazu neu `juno_sachen_gerettet`, `odile_moment_gesehen`, `odile_schluessel`, `suppenmarke`. Zahlen werden mit `GameState.erhoehen(name, d)` gezählt und bleiben in ihren Grenzen.
+Alle stehen jetzt im Register (für die Papier-Spieltests), dazu `mimi_vertraut` und `juno_stimme`. Der Ausgang des Auftrags heißt dort `auftrag_ausgang`, weil `auftrag` im Prototyp schon den Auftraggeber meint. Zahlen werden mit `GameState.erhoehen(name, d)` gezählt.
 
 | Variable | Werte | Gesetzt in | Gelesen von |
 | --- | --- | --- | --- |
@@ -592,7 +632,7 @@ Erst eintragen, wenn die Szenen gebaut werden. Schon im Register: `odile`, `juno
 | `kassette` | im_geraet, geheimfach, battle_heimlich, battle_gesehen, mimi, adikatz, nugget | Quest 4, Battle | Ärger danach, Auftrag, Malcolm in Akt 2 |
 | `kassette_gesehen_von` | niemand, nugget, adikatz | Quest 4, Battle | Ärger um die Kassette, Malcolm erfährt es über Nugget |
 | `kassette_gehoert` | ja, nein | Anhören | Corvins Vertrauen, Auftrag, Weberin in Akt 2 (Stimme erkannt) |
-| `auftrag` | ausgefuehrt, vorgetaeuscht, gewarnt, doppelt, nugget_entlarvt | Der Auftrag | Gang-Wahl, Bosse in Akt 4 |
+| `auftrag_ausgang` | offen, ausgefuehrt, vorgetaeuscht, gewarnt, doppelt, nugget_entlarvt | Der Auftrag | Gang-Wahl, Bosse in Akt 4 |
 | `orden_wachsam` | 0–5 | mehrere | Listen der Garde, Gegenzüge in Akt 2 |
 
 Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die Dialoge umgebaut sind.
@@ -616,6 +656,38 @@ Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die D
 - Juno sieht der Held in Akt 1 nur aus der Ferne. Die erste Begegnung bleibt in Akt 2.
 
 ---
+
+## Junos Stimme *(entschieden 13.11.)*
+
+**Die Idee:** Der Held liest Menschen, aber er fühlt nicht mit. Früher hat Juno ihm übersetzt, was andere fühlen. Ihre Übersetzungen sind in ihm geblieben. Gelingt eine Einsicht-Probe, erscheint statt einer neutralen Auskunft ihr Satz:
+> *Juno hätte gesagt: Der ist nicht wütend. Der hat Angst.*
+
+So ist Juno in jedem Gespräch dabei, auch wenn sie fehlt, und der Spieler spürt, warum der Held sie sucht: Ohne sie ist er halb blind.
+
+**Regeln, damit sie keine allwissende Kommentarfunktion wird:**
+1. **Sie bietet eine Deutung an, kein Urteil.** Sie sagt, was Juno gesehen hätte, nicht, was wahr ist.
+2. **Sie kann sich irren.** Fehldeutungen sind geschrieben, nie zufällig. Die wichtigste in Akt 1 betrifft Malcolm: „Der meint jedes Wort.“ Das stimmt, aber es führt in die falsche Richtung.
+3. **Manchmal bleibt sie aus.** Bei misslungener Probe kommt nichts, nur die Beschreibung. Und bei manchen Menschen schweigt sie auch bei Erfolg, weil Juno so jemanden nie kennengelernt hat (etwa bei der Weberin in Akt 2).
+4. **Manche Menschen tragen zwei Deutungen.** „Juno hätte gesagt: Die ist glücklich. Oder sie hätte gesagt: Die hat Angst, es nicht zu sein.“
+5. **Ihre Stimme verändert sich mit dem Helden:**
+   - Akt 1: „Juno hätte gesagt: …“ Er verlässt sich darauf.
+   - Akt 2, nachdem er Juno begegnet ist und sie ihn abweist: „Ich glaube, Juno hätte gesagt: …“ Er ist unsicher, ob er sie noch kennt.
+   - Akt 3, nachdem er gesehen hat, dass sie sich bei Malcolm geirrt hat: Manchmal widerspricht er ihr. „Juno hätte gesagt: Die lügt. Ich glaube nicht.“ Je nach `juno_offenheit` und den Knoten seiner Gruppe.
+   - Akt 4 und Ende: Bei einem guten Bogen sagt er es selbst, ohne Juno. Er hat nicht gelernt, mitzufühlen, aber er hat von seinen Gefährten gelernt, anders zu lesen. Bei einem schlechten Bogen bleibt ihre Stimme die einzige, oder sie verstummt ganz.
+6. **Der Kern:** Juno ist nicht unfehlbar, und der Held darf nicht für immer von ihrer Deutung abhängen. Sein Bogen ist nicht, Gefühle zu bekommen, sondern zu verstehen, was Verbindung ist, auch wenn er nicht mitschwingt.
+
+**Feste Stellen in Akt 1:**
+
+| Wo | Junos Satz | Richtig? |
+| --- | --- | --- |
+| Odiles Moment (Einsicht 12) | „Die weint nicht um den Jungen. Die weint, weil sie nicht weiß, um wen.“ | ja |
+| Hummel am ersten Abend | „Der redet viel, damit keiner fragt, wie's ihm geht.“ | ja |
+| Nugget vor der Schlägerei | „Der will nicht den Ghettoblaster. Der will, was jemand ihm dafür gibt.“ | ja |
+| Malcolm im Lazarett | „Der meint jedes Wort.“ | ja, aber irreführend |
+| Malcolm auf der Kassette | „Der hat Angst. Nicht vor der Frau. Um jemanden.“ | ja |
+| Big Dig, wenn er nach Pips fragt | keine Stimme. Juno kannte niemanden, der ein Kind verloren hat | – |
+
+**Umsetzung:** Sprecher „Juno (Erinnerung)“ in den Dialogen, eigene Schrift (kursiv, etwas blasser) und ein eigener leiser Ton. Der Fortschritt läuft über `juno_stimme` (1 bis 4).
 
 ## Grundsatz: Verbindungen über Systeme, nicht über Zufälle *(entschieden)*
 

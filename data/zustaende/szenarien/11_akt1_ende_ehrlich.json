@@ -1,0 +1,40 @@
+{
+ "titel": "Ende Akt 1, der ehrliche Spieler",
+ "erwartet": "Odile lädt zur Andacht ein, Juno-Zettel gefunden, Kassette mit Adikatz gehört und ihm gegeben, Nugget bloßgestellt: kurzer Waffenstillstand, malcolm_risse höchstens 1 (Corvin verteidigt Malcolm)",
+ "gruppe": [
+  "ren",
+  "dig",
+  "corvin",
+  "shiner"
+ ],
+ "flags": {
+  "akt": 1,
+  "ch1robbed": true,
+  "dig_beigetreten": true,
+  "corvin_beigetreten": true,
+  "shiner_beigetreten": true,
+  "odile": "gewonnen",
+  "juno_sachen_gerettet": true,
+  "odile_moment_gesehen": true,
+  "mission_weg": "einladung",
+  "juno_zettel_gesehen": true,
+  "juno_spur": 3,
+  "schicht": "angenommen",
+  "roach": "corvin",
+  "mantelmann": "beschattet",
+  "zimmer7_weg": "kellner",
+  "ghettoblaster": "zurueckgegeben",
+  "kassette": "battle_gesehen",
+  "kassette_gesehen_von": "adikatz",
+  "kassette_gehoert": true,
+  "mimi_vertraut": true,
+  "gerettet": [
+   "mimi"
+  ],
+  "fadenlos": true,
+  "gang_wahl": "breaking_cats",
+  "malcolm_risse": 1,
+  "orden_wachsam": 0,
+  "auftrag_ausgang": "nugget_entlarvt"
+ }
+}

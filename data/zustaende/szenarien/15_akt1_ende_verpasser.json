@@ -1,0 +1,21 @@
+{
+ "titel": "Ende Akt 1, der Spieler, der alles verpasst",
+ "erwartet": "Keine Quest beendet, Schlägerei spätestens an Tag 7, Big Dig und Corvin kommen dort dazu; Kassette geht an Nugget, Juno erfährt er aus der Predigt im Fernsehen; Ende bleibt verständlich",
+ "gruppe": [
+  "ren",
+  "dig",
+  "corvin",
+  "knuckles"
+ ],
+ "flags": {
+  "akt": 1,
+  "ch1robbed": true,
+  "dig_beigetreten": true,
+  "corvin_beigetreten": true,
+  "knuckles_beigetreten": true,
+  "fadenlos": true,
+  "kassette": "nugget",
+  "gang_wahl": "nomapes",
+  "auftrag_ausgang": "gewarnt"
+ }
+}

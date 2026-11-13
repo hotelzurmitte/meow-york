@@ -25,6 +25,10 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 - Malcolm hat die gestohlenen Papiere des Helden bei Roach gekauft. Er gibt sie später scheinbar freundlich zurück.
 - Was der Spieler wann über den Helden erfährt: siehe die Enthüllungstreppe in `akt1_szenen.md`.
 - **Akt 1, freigegeben am 13.11.:** Schwester Odile (Gans), Bruder Ansgar (Dachs), Gus Rook. Corvin hat Hausverbot im Nest. Lil' Riff wurde der Garde unter Vale übergeben. Der Orden geht nach unten, um bei den Ausgestoßenen Schlingen zu knüpfen.
+- **Malcolm in Akt 1 ist der Köder** (13.11.): Er kämpft sichtbar gegen den Orden, sagt dabei die Wahrheit über ihn und hilft dem Helden ohne Gegenleistung. Die Kassette sät nur Zweifel, jede Zeile lässt eine gute Lesart zu. `malcolm_risse` steigt in Akt 1 höchstens auf 2.
+- **Junos Stimme** (13.11.): Bei gelungener Einsicht deutet Juno in seinem Kopf, was andere fühlen. Sie kann sich irren, schweigt manchmal und verändert sich über die Akte (`juno_stimme`).
+- **Fadenlos** bekommt eine eigene stille Szene am Morgen nach der Schlägerei. **Die Gang-Wahl** hängt an Menschen (Riffs Platz im Studio, der Lohntag in der Werkstatt), und wer einen Gefährten verlieren kann, wird vorher gewarnt.
+- **Papier-Spieltests** für fünf Spielstile: `akt1_spieltests.md`, Test-Spielstände `11_` bis `15_`.
 - **Verbindungen über Systeme, nicht über Zufälle:** Vincenzo ist kein Onkel von Fitz, Benny nicht Hazels Bruder, Vale nicht Corvins früherer Chef. Der Lagerhausbrand war ein Versicherungsbetrug, Corvin kennt Gus Rook seit zwölf Jahren.
 - Das Bild für Spieler: Schlingen sind Taschen, Gefühl ist Geld, Pfötchen schiebt nur zwischen den eigenen Taschen einer Person, Knoten nähen Taschen zu.
 - Hazels Bogen: Erst weiß sie die Wahrheit und liebt trotzdem weiter. Dann verrät Pfötchen sie, ihr Knoten rutscht, und ihre Liebe legt sich auf die Stadt.

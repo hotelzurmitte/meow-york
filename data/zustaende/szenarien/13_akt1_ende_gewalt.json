@@ -1,0 +1,37 @@
+{
+ "titel": "Ende Akt 1, der gewalttätige Spieler",
+ "erwartet": "orden_wachsam 4: Garde-Streife und Ansgar im Nest; Odile verletzt (Einladung kommt von einer anderen Schwester), Mimi meidet Big Dig, Shiner für immer verloren, Cats feindlich bis Akt 4",
+ "gruppe": [
+  "ren",
+  "dig",
+  "corvin",
+  "knuckles"
+ ],
+ "flags": {
+  "akt": 1,
+  "ch1robbed": true,
+  "dig_beigetreten": true,
+  "corvin_beigetreten": true,
+  "knuckles_beigetreten": true,
+  "odile": "verletzt",
+  "juno_sachen_gerettet": true,
+  "mission_weg": "einbruch",
+  "juno_zettel_gesehen": true,
+  "juno_spur": 2,
+  "schicht": "verpasst",
+  "roach": "blossgestellt",
+  "mantelmann": "verpruegelt",
+  "zimmer7_weg": "feuertreppe",
+  "ghettoblaster": "gestohlen",
+  "kassette": "battle_gesehen",
+  "kassette_gesehen_von": "nugget",
+  "kassette_gehoert": true,
+  "mimi_vertraut": false,
+  "gerettet": [],
+  "fadenlos": true,
+  "gang_wahl": "nomapes",
+  "malcolm_risse": 1,
+  "orden_wachsam": 4,
+  "auftrag_ausgang": "ausgefuehrt"
+ }
+}

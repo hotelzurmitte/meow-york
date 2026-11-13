@@ -157,6 +157,8 @@ if not GameState.flag("odile_moment_gesehen")
 	Odile: *Draußen im Hof läuft ein fremder Junge vorbei. Odile verstummt mitten im Satz.*
 	Odile: *Ihre Augen werden feucht. Sie sieht ihm nach, wie man einem eigenen Kind nachsieht.*
 	Odile: *blinzelt* Verzeihung. Das passiert mir in letzter Zeit öfter. Ich weiß nicht, was mit mir los ist.
+	if GameState.probe("ren", "Einsicht", 12)
+		Juno (Erinnerung): Juno hätte gesagt: Die weint nicht um den Jungen. Die weint, weil sie nicht weiß, um wen.
 	if GameState.mitglied("corvin")
 		Corvin: *schreibt etwas in sein Notizbuch, ohne aufzusehen* Hab ich bei drei anderen auch gesehen. Alle aus der Mission.
 		do GameState.notiz("Odile hat grundlos geweint, als ein fremder Junge vorbeiging. Corvin kennt drei solche Fälle, alle aus der Mission.")

@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 103
+- **Variablen insgesamt:** 118
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 58
+- **Story-Variablen:** 73
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -76,6 +76,19 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `odile_moment_gesehen` | ja, nein | nein | Quest 1.2 (Sprung ohne Anlass) | Schlägerei (Held erkennt das Muster), Corvins Notizbuch | 1 |  |
 | `odile_schluessel` | ja, nein | nein | Quest 1.2 (Fingerfertigkeit 14) | Mission nachts (mission_weg = einbruch ohne Schlossprobe) | 1 |  |
 | `suppenmarke` | ja, nein | nein | Quest 1.2 (Taschendiebstahl misslungen) | Mission (Suppenschlange ohne Warten) | 1 | Trostpreis: Odile hält den Helden für bedürftig |
+| `schicht` | offen, angenommen, abgelehnt, verpasst | offen | Nest (Hummel) | Hummel, Zimmer 7 (als Kellner) | 1 |  |
+| `mission_weg` | keiner, einladung, aufnahme, kueche, oben, unten, einbruch | keiner | Quest 1.3 | Odile, orden_wachsam | 1 |  |
+| `roach` | offen, blossgestellt, erpresst, laufen_gelassen, corvin | offen | Quest 2 | Roach als Fahrer oder Informant | 1 |  |
+| `mantelmann` | unbekannt, beschattet, gestellt, abgeschrieben, verpruegelt | unbekannt | Quest 3 | Big Dig, Mimi, Ansgar im Lager (Akt 3) | 1 |  |
+| `zimmer7_weg` | keiner, kellner, schluessel, feuertreppe, keller, anwerbung | keiner | Quest 3 | Hummel, Ansgar erkennt ihn wieder | 1 |  |
+| `ghettoblaster` | offen, gestohlen, gekauft, gewonnen, gefaelscht, zurueckgegeben | offen | Quest 4 | Ansehen, Auftrag | 1 |  |
+| `fadenlos` | ja, nein | nein | Der Morgen danach (fest) | Anrede der NPCs, Listen der Garde | 1 |  |
+| `gerettet` | mimi, benny, pounce | leer | Schlägerei | Big Dig (Mimi), Knuckles (Benny), Cats (Pounce) | 1 |  |
+| `mimi_vertraut` | ja, nein | nein | Quest 1.1 (Hof), Big Dig | Mimi holt die Kassette, versteckt sich bei Big Dig | 1 | fällt weg, wenn Ansgar verprügelt wurde |
+| `kassette` | im_geraet, geheimfach, battle_heimlich, battle_gesehen, mimi, adikatz, nugget | im_geraet | Quest 4 (Geheimfach), Battle | Ärger danach, Auftrag, Malcolm in Akt 2 | 1 | nach dem Battle ist im_geraet nicht mehr möglich (dann nugget) |
+| `kassette_gesehen_von` | niemand, nugget, adikatz | niemand | Quest 4, Battle | Ärger um die Kassette; über Nugget erfährt es Malcolm | 1 |  |
+| `kassette_gehoert` | ja, nein | nein | Anhören (Abspielgerät nötig) | Streit Corvin/Big Dig, Auftrag, Weberin in Akt 2 (Stimme erkannt) | 1 |  |
+| `auftrag_ausgang` | offen, ausgefuehrt, vorgetaeuscht, gewarnt, doppelt, nugget_entlarvt | offen | Der Auftrag | Gang-Wahl, Bosse in Akt 4 | 1 | Ausgang der Hauptquest „Der Auftrag“ (nicht verwechseln mit dem Prototyp-Flag „auftrag“ = Auftraggeber) |
 
 ## Juno
 
@@ -87,6 +100,8 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `juno_bogen` | verloren, frei_bleibt, frei_kommt_mit | verloren | A4 berechnet aus juno_offenheit, Auftrennung, Kindheitsszenen | Finale (Gastfigur), Epilog | 4 | einmal setzen |
 | `juno_spur` | 0–5 | 0 | Quest 1 (Wohnung, Odile, Mission), Tauben | Junos Begegnung in Akt 2 | 1 | wird mit GameState.erhoehen() gezählt |
 | `juno_sachen_gerettet` | ja, nein | nein | Quest 1.1/1.2 (Odile gibt sie zurück, beiseitegeschafft oder Helfer verjagt) | Unterschlupf (Kiste mit Junos Sachen), Juno in Akt 3–4 | 1 |  |
+| `juno_stimme` | 1–4 | 1 | Akt 2 (Juno weist ihn ab) → 2, Akt 3 (Irrtum bei Malcolm erkannt) → 3, Akt 4 (guter Bogen) → 4 | Einsicht-Proben: Form von Junos Stimme („Juno hätte gesagt“ / „Ich glaube …“ / Widerspruch / eigene Stimme) | 1–5 | siehe docs/story/akt1_szenen.md, Abschnitt Junos Stimme |
+| `juno_zettel_gesehen` | ja, nein | nein | Quest 1.3 | Junos erste Worte in Akt 2 | 1 |  |
 
 ## Big Dig
 

@@ -37,7 +37,23 @@
     "breaking_cats",
     "nomapes"
    ],
-   "standard": "keine"
+   "standard": "keine",
+   "voraussetzungen": {
+    "breaking_cats": [
+     [
+      "auftrag_ausgang",
+      "!=",
+      "offen"
+     ]
+    ],
+    "nomapes": [
+     [
+      "auftrag_ausgang",
+      "!=",
+      "offen"
+     ]
+    ]
+   }
   },
   {
    "name": "tauben",
@@ -1442,6 +1458,334 @@
    "gesetzt_von": "Quest 1.2 (Taschendiebstahl misslungen)",
    "gelesen_von": "Mission (Suppenschlange ohne Warten)",
    "hinweis": "Trostpreis: Odile hält den Helden für bedürftig"
+  },
+  {
+   "name": "juno_stimme",
+   "typ": "int",
+   "min": 1,
+   "max": 4,
+   "standard": 1,
+   "akt": "1–5",
+   "gesetzt_von": "Akt 2 (Juno weist ihn ab) → 2, Akt 3 (Irrtum bei Malcolm erkannt) → 3, Akt 4 (guter Bogen) → 4",
+   "gelesen_von": "Einsicht-Proben: Form von Junos Stimme („Juno hätte gesagt“ / „Ich glaube …“ / Widerspruch / eigene Stimme)",
+   "hinweis": "siehe docs/story/akt1_szenen.md, Abschnitt Junos Stimme",
+   "voraussetzungen": {
+    "2": [
+     [
+      "akt",
+      "!=",
+      1
+     ]
+    ],
+    "3": [
+     [
+      "akt",
+      "!=",
+      1
+     ]
+    ],
+    "4": [
+     [
+      "akt",
+      "!=",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "name": "schicht",
+   "typ": "enum",
+   "akt": "1",
+   "gesetzt_von": "Nest (Hummel)",
+   "gelesen_von": "Hummel, Zimmer 7 (als Kellner)",
+   "hinweis": "",
+   "werte": [
+    "offen",
+    "angenommen",
+    "abgelehnt",
+    "verpasst"
+   ],
+   "standard": "offen"
+  },
+  {
+   "name": "mission_weg",
+   "typ": "enum",
+   "akt": "1",
+   "gesetzt_von": "Quest 1.3",
+   "gelesen_von": "Odile, orden_wachsam",
+   "hinweis": "",
+   "werte": [
+    "keiner",
+    "einladung",
+    "aufnahme",
+    "kueche",
+    "oben",
+    "unten",
+    "einbruch"
+   ],
+   "standard": "keiner",
+   "voraussetzungen": {
+    "einladung": [
+     [
+      "odile",
+      "==",
+      "gewonnen"
+     ]
+    ]
+   }
+  },
+  {
+   "name": "juno_zettel_gesehen",
+   "typ": "bool",
+   "akt": "1",
+   "gesetzt_von": "Quest 1.3",
+   "gelesen_von": "Junos erste Worte in Akt 2",
+   "hinweis": "",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "roach",
+   "typ": "enum",
+   "akt": "1",
+   "gesetzt_von": "Quest 2",
+   "gelesen_von": "Roach als Fahrer oder Informant",
+   "hinweis": "",
+   "werte": [
+    "offen",
+    "blossgestellt",
+    "erpresst",
+    "laufen_gelassen",
+    "corvin"
+   ],
+   "standard": "offen",
+   "voraussetzungen": {
+    "corvin": [
+     [
+      "corvin_beigetreten",
+      "==",
+      true
+     ]
+    ]
+   }
+  },
+  {
+   "name": "mantelmann",
+   "typ": "enum",
+   "akt": "1",
+   "gesetzt_von": "Quest 3",
+   "gelesen_von": "Big Dig, Mimi, Ansgar im Lager (Akt 3)",
+   "hinweis": "",
+   "werte": [
+    "unbekannt",
+    "beschattet",
+    "gestellt",
+    "abgeschrieben",
+    "verpruegelt"
+   ],
+   "standard": "unbekannt",
+   "voraussetzungen": {
+    "verpruegelt": [
+     [
+      "dig_beigetreten",
+      "==",
+      true
+     ]
+    ],
+    "beschattet": [
+     [
+      "corvin_beigetreten",
+      "==",
+      true
+     ]
+    ]
+   }
+  },
+  {
+   "name": "zimmer7_weg",
+   "typ": "enum",
+   "akt": "1",
+   "gesetzt_von": "Quest 3",
+   "gelesen_von": "Hummel, Ansgar erkennt ihn wieder",
+   "hinweis": "",
+   "werte": [
+    "keiner",
+    "kellner",
+    "schluessel",
+    "feuertreppe",
+    "keller",
+    "anwerbung"
+   ],
+   "standard": "keiner",
+   "voraussetzungen": {
+    "kellner": [
+     [
+      "schicht",
+      "==",
+      "angenommen"
+     ]
+    ],
+    "keller": [
+     [
+      "dig_beigetreten",
+      "==",
+      true
+     ]
+    ]
+   }
+  },
+  {
+   "name": "ghettoblaster",
+   "typ": "enum",
+   "akt": "1",
+   "gesetzt_von": "Quest 4",
+   "gelesen_von": "Ansehen, Auftrag",
+   "hinweis": "",
+   "werte": [
+    "offen",
+    "gestohlen",
+    "gekauft",
+    "gewonnen",
+    "gefaelscht",
+    "zurueckgegeben"
+   ],
+   "standard": "offen"
+  },
+  {
+   "name": "fadenlos",
+   "typ": "bool",
+   "akt": "1",
+   "gesetzt_von": "Der Morgen danach (fest)",
+   "gelesen_von": "Anrede der NPCs, Listen der Garde",
+   "hinweis": "",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "gerettet",
+   "typ": "liste",
+   "akt": "1",
+   "gesetzt_von": "Schlägerei",
+   "gelesen_von": "Big Dig (Mimi), Knuckles (Benny), Cats (Pounce)",
+   "hinweis": "",
+   "werte": [
+    "mimi",
+    "benny",
+    "pounce"
+   ],
+   "standard": []
+  },
+  {
+   "name": "mimi_vertraut",
+   "typ": "bool",
+   "akt": "1",
+   "gesetzt_von": "Quest 1.1 (Hof), Big Dig",
+   "gelesen_von": "Mimi holt die Kassette, versteckt sich bei Big Dig",
+   "hinweis": "fällt weg, wenn Ansgar verprügelt wurde",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false
+  },
+  {
+   "name": "kassette",
+   "typ": "enum",
+   "akt": "1",
+   "gesetzt_von": "Quest 4 (Geheimfach), Battle",
+   "gelesen_von": "Ärger danach, Auftrag, Malcolm in Akt 2",
+   "hinweis": "nach dem Battle ist im_geraet nicht mehr möglich (dann nugget)",
+   "werte": [
+    "im_geraet",
+    "geheimfach",
+    "battle_heimlich",
+    "battle_gesehen",
+    "mimi",
+    "adikatz",
+    "nugget"
+   ],
+   "standard": "im_geraet"
+  },
+  {
+   "name": "kassette_gesehen_von",
+   "typ": "enum",
+   "akt": "1",
+   "gesetzt_von": "Quest 4, Battle",
+   "gelesen_von": "Ärger um die Kassette; über Nugget erfährt es Malcolm",
+   "hinweis": "",
+   "werte": [
+    "niemand",
+    "nugget",
+    "adikatz"
+   ],
+   "standard": "niemand",
+   "voraussetzungen": {
+    "nugget": [
+     [
+      "kassette",
+      "!=",
+      "im_geraet"
+     ]
+    ],
+    "adikatz": [
+     [
+      "kassette",
+      "!=",
+      "im_geraet"
+     ]
+    ]
+   }
+  },
+  {
+   "name": "kassette_gehoert",
+   "typ": "bool",
+   "akt": "1",
+   "gesetzt_von": "Anhören (Abspielgerät nötig)",
+   "gelesen_von": "Streit Corvin/Big Dig, Auftrag, Weberin in Akt 2 (Stimme erkannt)",
+   "hinweis": "",
+   "werte": [
+    true,
+    false
+   ],
+   "standard": false,
+   "voraussetzungen": {
+    "true": [
+     [
+      "kassette",
+      "!=",
+      "im_geraet"
+     ],
+     [
+      "kassette",
+      "!=",
+      "nugget"
+     ]
+    ]
+   }
+  },
+  {
+   "name": "auftrag_ausgang",
+   "typ": "enum",
+   "akt": "1",
+   "gesetzt_von": "Der Auftrag",
+   "gelesen_von": "Gang-Wahl, Bosse in Akt 4",
+   "hinweis": "Ausgang der Hauptquest „Der Auftrag“ (nicht verwechseln mit dem Prototyp-Flag „auftrag“ = Auftraggeber)",
+   "werte": [
+    "offen",
+    "ausgefuehrt",
+    "vorgetaeuscht",
+    "gewarnt",
+    "doppelt",
+    "nugget_entlarvt"
+   ],
+   "standard": "offen"
   }
  ],
  "prototyp_flags": [
