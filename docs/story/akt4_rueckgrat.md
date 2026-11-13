@@ -38,18 +38,38 @@ Die Stadt reagiert auf die Art des Helden (`tierarten.md`): Hauskatzen gehen dur
 
 ---
 
-## 3. Die Uhr: die Gründungsnacht *(entschieden)*
+## 3. Zwei Hälften: frei, dann die Uhr *(entschieden 14.11.)*
 
-**Meow York entstand um das goldene Knäuel herum. Einmal im Jahr feiert der Orden die Gründungsnacht:** Die ganze Stadt ist auf den Straßen, die Resonanz ist so stark wie in keiner anderen Nacht, und Pfötchen spricht zu allen. Das ist die Nacht des Finales. Sie kommt aus unserem Magiesystem und erklärt, warum alles genau dann passiert: In keiner Nacht kann Pfötchen so weit ziehen.
+### Erste Hälfte: Cathattan ohne Zeitdruck
+Cathattan funktioniert wie Hairlem, die Subfurs und Boney Island: erkunden, Nebenquests, persönliche Quests der Gefährten, so lange der Spieler will. Es gibt keine Uhr. Die Stimmung ist angespannt (Plakate, Kundgebungen, Garde an den Brücken), aber nichts verfällt.
 
-**Fair, nicht hektisch:**
-- **Die Zeit vergeht nur mit langer Rast.** Bis zur Gründungsnacht sind es fünf Rasten. Was der Spieler zwischen zwei Rasten tut, kostet keine Zeit. So ist die Uhr sichtbar und berechenbar, nie ein Zeitdruck im Nacken.
-- **Jede Rast treibt die Unruhen eine Stufe weiter** (`unruhen_stufe`): andere Plakate, schärfere Nachrichten, lautere Straßen, und einige Quests verändern sich.
-- **Einige Quests haben ein Fenster,** das im Tagebuch steht, etwa „Pips wird nach der dritten Nacht ins Waisenhaus gebracht“ oder „Rooks Anhörung ist am vierten Tag“. Nichts verfällt unangekündigt.
-- **Kreuzungen sparen Rasten:** Corvin und Barkley stellen Vale gemeinsam, Knuckles nimmt Mercy zum Tisch mit, Shiner und Delta Mae machen ihr Mural mit Gesang. Wer seine Gefährten zusammenbringt, schafft mehr. Die Uhr belohnt Bindungen, nicht Hektik.
-- **Wer eine Quest nicht schafft,** bekommt im Finale ihre schwächere Fassung, keine Lücke.
+### Der Auslöser: die letzte Hauptquest
+Die Uhr startet erst, wenn der Spieler die letzte Hauptquest beginnt: **das Gespräch mit dem Vater** (nach dem Foto der Mutter). Vorher warnt das Spiel deutlich: „Wenn du jetzt zu ihm gehst, beginnt die Zeit bis zur Gründungsnacht zu laufen. Was du in der Stadt noch erledigen willst, erledige vorher.“
 
-**Der Point of no Return** *(entschieden)*: Das Finale beginnt mit der Hauptquest „Die Gründungsnacht“, die der Spieler selbst startet. Vorher fragt das Spiel deutlich: „Wenn du jetzt aufbrichst, gibt es kein Zurück.“ Erst dann beginnt die Nacht, und die Stadt brennt. Wer die fünfte Rast nimmt, ohne aufzubrechen, wird am Abend davor gewarnt: „Morgen Abend ist die Gründungsnacht. Wenn du jetzt schläfst, wachst du in ihr auf.“
+Nach dem Gespräch verkündet Pfötchen die **Gründungsnacht**: „In fünf Nächten feiern wir die Gründung.“ Meow York entstand um das goldene Knäuel herum, und einmal im Jahr feiert der Orden diese Nacht. Das Datum legt der Orden jedes Jahr selbst fest, wie Ostern. Diesmal legt Pfötchen es so früh wie möglich, weil sein Sohn in der Stadt ist und sein Griff bröckelt. In dieser Nacht ist die ganze Stadt auf den Straßen und die Resonanz so stark wie nie. Keine Nacht eignet sich besser, um zu ziehen.
+
+### Zweite Hälfte: die Uhr und die Krisen
+- **Zeit vergeht nur mit langer Rast.** Fünf Rasten bis zur Gründungsnacht. Was der Spieler zwischen zwei Rasten tut, kostet keine Zeit.
+- **Mit jeder Rast spitzt es sich zu** (`unruhen_stufe`): Plakate gegen Hazel → Insekten werden angepöbelt, Läden schließen vor ihnen → erste Kundgebung auf dem Tails Square, Steine fliegen → die Garde zieht auf, Brücken werden kontrolliert → Ausgangssperre, nachts Rauch aus einem Fenster. **Gebrannt wird erst in der Gründungsnacht.**
+- **Krisenquests:** Mit der Uhr tauchen neue Quests auf, die es nur jetzt gibt. Jede hat ein Fenster von ein bis zwei Rasten und wirkt aufs Finale. **Alle zu schaffen ist kaum möglich.** Der Spieler muss entscheiden, wen er rettet und was er geschehen lässt.
+
+| Krisenquest | Fenster | Wirkt auf |
+| --- | --- | --- |
+| **Hazel auf dem Tails Square beistehen** | Rast 2–3 | großer Knoten „Hazels Liebe“ oder „Unruhen ungebremst“ |
+| **Benny aus der Menge holen** | Rast 3 | bekanntes Gesicht im Finale, Knuckles, Nomapes |
+| **Das Dienstbotenviertel schützen,** in dem die Insekten von Cathattan leben | Rast 2–4 | Viertel Cathattan, die Insekten als Verbündete in der Gründungsnacht (Lieferantenwege, Hintereingänge) |
+| **Pips' Überführung abfangen,** falls Big Digs Quest noch offen ist | Rast 1–2 | Big Digs Ausgang, Pfötchens Leitung |
+| **Der Ordensrat stimmt über Pfötchen ab** (Mercys Akten, das Foto) | Rast 3–4 | Pfötchens Griff, Bekehrbarkeit, Mercy |
+| **Vales Razzia:** „Der Fadenlose“ steht auf der Liste, ein Unterschlupf wird gestürmt | Rast 2 | Corvin, Barkley, Station 3 |
+| **Malcolms Bewegung plant einen Aufstand** für die Gründungsnacht | Rast 3–5 | Malcolms Weg, Station 6 |
+| **Feuer im Theaterviertel,** Lucien sitzt fest | Rast 4 | Delta Mae, Viertel Cathattan |
+| **Die Kammern unter dem Tempel:** die letzte Gelegenheit für die Weberin | Rast 1–5, wird jede Nacht schwerer | Herausschneiden, Station 5 |
+
+- **Malcolms letzte Nacht** ist keine Quest, sondern kommt mit der letzten Rast von selbst.
+- **Wer eine Krisenquest verpasst,** sieht ihre Folge: Hazel allein vor der Menge im Fernsehen, das gestürmte Hotelzimmer, Bennys leerer Platz in der Werkstatt. Nichts verschwindet stumm.
+
+### Der Point of no Return
+Am sechsten Tag hat der Spieler den Tag noch frei. Bricht er zum Fest auf, fragt das Spiel: „Wenn du jetzt aufbrichst, gibt es kein Zurück.“ Eine weitere Rast gibt es nicht: „Heute Nacht ist die Gründungsnacht.“
 
 *BG3 hat soweit bekannt keine solche Uhr im letzten Akt. Sie ist ein Unterschied, keine Kopie.*
 
@@ -77,8 +97,8 @@ In Akt 4 ist Pfötchens Macht von vier Seiten bedroht. Daraus folgen seine Züge
 - **Unterschlupf:** ein Hotelzimmer, zu teuer, zu weich, mit einer Minibar, die Fitz in der ersten Nacht leert.
 - **Fitz' erster Tag in der großen Stadt** (leicht, nach dem Ernst von Akt 3): Pizza, Subway, Plattenläden, alles auf einmal. Die Flughaut spannt.
 
-### Die offene Stadt
-Die persönlichen Quests laufen parallel, jede mit ihrer Station im Finale:
+### Die offene Stadt *(ohne Uhr)*
+Die persönlichen Quests laufen parallel, jede mit ihrer Station im Finale. Sie sollten vor dem Gespräch mit dem Vater erledigt werden, danach werden manche zur Krisenquest oder schwerer:
 
 | Quest | In Akt 4 | Im Finale |
 | --- | --- | --- |
@@ -98,15 +118,15 @@ Die persönlichen Quests laufen parallel, jede mit ihrer Station im Finale:
 - **Damit dreht sich die Enthüllung aus Akt 3 um:** Die Weberin glaubte, das herausgeschnittene Baby sei eine Gefahr gewesen. Jetzt ist klar, dass es geliebt wurde, und von wem. Der Mann, der ihn zum Gefahrenfall erklärt hat, ist sein Vater.
 - **Das Foto ist zugleich eine Waffe** (Bedrohung 4): öffentlich machen, dem Rat geben oder behalten.
 
-### Direkt danach · Der Vater
+### Direkt danach · Der Vater *(startet die Uhr)*
 - **Pfötchen lädt ihn ein.** Er weiß seit Akt 2, dass sein Sohn lebt, und spürt, dass er in der Stadt ist. Ein Gespräch im Tempelgarten im Central Bark, ohne Garde. Ein alter Mann, der seinen Sohn zum ersten Mal sieht. Er bietet ihm an, nach Hause zu kommen: sich einspleißen zu lassen und zu fühlen, was er nie fühlen konnte. Das ist das erste Angebot der Einwebung.
 - **Was der Spieler hier tut, bereitet Schicht 2 vor:** Beweise zeigen (Kassette, Akten, Musterbuch, Foto), ihn anknüpfen lassen, drohen oder schweigen. Ohne dieses Gespräch ist Pfötchen im Finale nicht bekehrbar.
 
-### Hazel
+### Hazel *(Krisenquest)*
 - Pfötchen verrät sie, ihr Knoten rutscht.
 - **Wohin ihre Liebe fällt, entscheidet der Held:** Steht er mit ihr vor der Menge auf dem Tails Square (Big Dig verteidigt sie als Erster, Benny ist in Gefahr), legt sich ihre Liebe um die Stadt, und sie wird unlenkbar. Das ist der große Knoten „Hazels Liebe“. Lässt er sie allein, laufen die Unruhen ungebremst.
 
-### Vor der letzten Rast · Malcolms letzte Nacht
+### Mit der letzten Rast · Malcolms letzte Nacht
 - Malcolm kommt ins Hotel, allein. Seit Akt 3 plant er die Raffung. Er bittet um das, was er im Finale wieder erbitten wird: „Lass mich das Knäuel zerstören.“
 - **Die letzte Gelegenheit für die Bruderschaft:** ein ehrliches Gespräch, ein letzter Gang durch die Stadt, aus der sie beide kommen. Hier entscheiden sich die letzten Knötchen mit ihm.
 
@@ -147,7 +167,7 @@ Jede Stufe der Herkunft dreht die vorige um: erst Opfer, dann Gefahr, dann gelie
 | 1 | GDD (Akt 4) und Regelwerk (Akt 3) widersprachen sich beim Zeitpunkt der Enthüllung. Außerdem verrät „dein Vater“ in Akt 3 sofort, wer es ist, denn nur Pfötchen hält das Knäuel | *(entschieden)* drei Stufen: Narbe (Akt 2), Beichte mit falschem Grund (Akt 3), Foto (Akt 4 Mitte). Regelwerk angepasst |
 | 2 | Regelwerk: „Malcolm hat ihn hergelockt“. Akt 1: Malcolm kauft die Papiere aller allein Angereisten | für Akt 2 klären (offene Punkte in der README) |
 | 3 | Pips als „künftige Leitung“ | passt: Das Waisenhaus soll ihn zu einem Kind machen, das Pfötchen über alles liebt. Neu verknotet mit Big Dig oder herausgeschnitten ist der Plan vorbei |
-| 4 | Die Uhr kann frustrieren | Zeit vergeht nur mit langer Rast, Fenster stehen im Tagebuch, verpasste Quests haben eine schwächere Fassung |
+| 4 | Die Uhr kann frustrieren | *(entschieden)* Die erste Hälfte von Cathattan hat keine Uhr. Sie startet erst mit dem Gespräch mit dem Vater, mit Warnung vorher. Danach vergeht Zeit nur mit langer Rast, Fenster stehen im Tagebuch, verpasste Krisenquests zeigen ihre Folge |
 | 5 | Woher Pfötchen weiß, dass sein Sohn lebt | Akt 2 (Regelwerk): Beim ersten Anknüpfen des Helden spürt Pfötchen die Narbe zucken |
 | 6 | Warum Pfötchen jetzt Hazel opfert | seine Macht ist von vier Seiten bedroht (Abschnitt 4), Hazel ist das Feindbild, das Katzen und Orden eint |
 
@@ -157,7 +177,9 @@ Jede Stufe der Herkunft dreht die vorige um: erst Opfer, dann Gefahr, dann gelie
 
 | Variable | Werte | Gelesen von |
 | --- | --- | --- |
-| `akt4_rast` | 0–5 | Uhr, Fenster, Warnung vor der Gründungsnacht |
+| `akt4_uhr` | false, true | ob die Uhr läuft (ab dem Gespräch mit dem Vater) |
+| `akt4_rast` | 0–5 | Fenster der Krisenquests, Warnung vor der Gründungsnacht |
+| `krisen` | Liste der geschafften Krisenquests | Finale, Epilog |
 | `unruhen_stufe` | 0–4 | Plakate, Nachrichten, `unruhen_ungebremst` |
 | `pfoetchen_griff` | stark, bruechig, verzweifelt (berechnet) | Pfötchens Züge, Tempo des Verrats an Hazel |
 | `foto_mutter` | nicht_gefunden, behalten, veroeffentlicht, dem_rat | Gespräch mit dem Vater, Rat, Bekehrung |
