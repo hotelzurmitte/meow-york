@@ -12,6 +12,16 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 
 **Dauer:** etwa 10 bis 12 Stunden.
 
+**Aufbau: ab Szene 5 ist Hairlem offen.** Prolog und Szenen 1 bis 4 laufen fest: Ankunft, Nest, erste Nacht, Junos Wohnung. Danach öffnen sich drei Fäden, die man in beliebiger Reihenfolge und auch verschränkt spielen kann:
+
+| Faden | Gefährte | Beginnt mit |
+| --- | --- | --- |
+| Roachs Garage (Teil A, Szenen 5–7) | Big Dig | Ilses Hinweis, Roachs Funkspruch |
+| Der Mantelmann (Teil B) | Corvin | fünf mögliche Einstiege |
+| Der Ghettoblaster (Teil C, Szenen 12–14) | Shiner oder Knuckles später | Nuggets Auftrag im Nest |
+
+**Was dabei gesichert sein muss:** Big Dig und Corvin lassen sich nicht ganz verpassen. Wer ihre Fäden auslässt, trifft beide spätestens bei der Massenschlägerei (Szene 15): Big Dig sucht dort nach Pips, Corvin beobachtet für seinen Fall. Sie schließen sich dann an, mit weniger Vorgeschichte und anderen Dialogen. Die Massenschlägerei selbst beginnt, sobald der Ghettoblaster-Faden weit genug ist (siehe Teil C).
+
 **Warum der Orden Kinder holt.** Legal und freundlich: Mantelmänner bringen Straßenkinder ins Ordenswaisenhaus, und niemand meldet ein Straßenkind als vermisst. Dort wachsen sie mit Pfötchen als Vaterfigur auf. Eine Leitung braucht zwei Dinge: Sie muss Pfötchen mehr lieben als irgendwen, und sehr viele Menschen müssen Schlingen um sie haben. Ein Kind hat das Erste schnell, das Zweite erst nach Jahren. Deshalb fördert der Orden die Begabtesten, bis sie in der Stadt etwas bedeuten. Hazel ist genau so entstanden, sie kam über ein Stipendium der Ordensschule. Die Kinder von heute sind Hazels Nachfolger in zehn oder zwanzig Jahren, denn jede Leitung verschleißt. Darum holt Pfötchen nicht ständig neue Kinder als Leitung, sondern zieht sie heran.
 
 **Warum Knäuel-Gläubige verschwinden.** Für die meisten ist das Knäuel eine Verschwörungstheorie, wie die geheimen Bücher im Vatikan. Wer daran glaubt, wird belächelt. Die wenigen, die es suchen, sind gefährlich, weil sie recht haben. Der Orden nimmt sie auf: Sie glauben ja schon, und mit ein wenig Zug werden sie fromm. Ermordet wird niemand. Sie tauchen im Erweckungslager auf Boney Island wieder auf, glücklich.
@@ -57,7 +67,7 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 
 - Der Held kommt erschöpft an, ohne Geld. Hummel bietet ein Bett auf Pump an, wenn er morgen Abend eine Schicht übernimmt. Er kann auch ablehnen und das Zimmer über eine Nebenquest verdienen, etwa „Honig für Hummel“. **Hauptunterschlupf von Akt 1** (`unterschlupf = cuckoos_nest`).
 - **Resonanz-Szene (Regelwerk):** In der Jukebox läuft ein alter Song, und die ganze Bar wiegt sich im selben Takt, ohne Absprache. Der Held steht still und bemerkt nur, dass alle es gleichzeitig tun. Hummel: „Du bist ja ein ganz Fröhlicher.“
-- **Ein Detail für Aufmerksame, kein Gerücht:** Am Schlüsselbrett fehlt immer der Schlüssel zu Zimmer 7. Wer Hummel danach fragt (Wahrnehmung), hört nur: „Dauermieter. Zahlt bar, donnerstags. Schläft nie hier.“ Erst mit Roachs Liste wird das eine Spur (Szene 8).
+- **Ein Detail für Aufmerksame, kein Gerücht:** Am Schlüsselbrett fehlt immer der Schlüssel zu Zimmer 7. Wer Hummel danach fragt (Wahrnehmung), hört nur: „Dauermieter. Zahlt bar, donnerstags. Schläft nie hier.“ Erst mit Roachs Liste wird das eine Spur (Teil B).
 
 ### 3 · Die erste Nacht
 *Zimmer über dem Nest · Held allein · neu*
@@ -81,7 +91,7 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 
 - **Was der Spieler danach weiß:** Der Held liebt wirklich, er fühlt nur nicht mit, sondern liest. Juno hat für ihn übersetzt, und jetzt fehlt sie. Das ist die Formel „Bindung ohne Resonanz“, gezeigt statt erklärt.
 - **Was er noch nicht weiß:** warum. Das erfährt er Schritt für Schritt (siehe „Was der Spieler wann über den Helden erfährt“).
-- **Am Morgen:** Wer zugesagt hat, wird beim Verlassen des Zimmers von Hummel angesprochen. Daraus wird das erste richtige Gespräch mit ihm: über die Schicht, über Hairlem und darüber, dass man hier besser nichts fragt.
+- **Am Morgen:** Wer die Schicht zugesagt hat, wird beim Verlassen des Zimmers von Hummel angesprochen. Daraus wird das erste richtige Gespräch mit ihm: über die Schicht, über Hairlem und darüber, dass man hier besser nichts fragt.
 
 ### 4 · Junos Wohnung
 *Mulberry Street · Nachbarin, Mimi · neu, mit Prototyp-Figur Mimi*
@@ -129,48 +139,94 @@ Stand: 13.11.2026 · Szene für Szene. Baut auf GDD, Regelwerk und `docs/story/`
 
 ---
 
-## Teil B: Corvin und die Dächer
+## Teil B: Der Mantelmann (offene Quest, Corvin)
 
+**Kein fester Ablauf.** Die Quest kann zu jedem Zeitpunkt nach Szene 4 beginnen, mit oder ohne Big Dig, mit oder ohne Job im Nest. Sie hat mehrere Einstiege, mehrere Wege in Zimmer 7 und mehrere Ausgänge. Am Ende ist Corvin immer dabei.
 
-### 8 · Die Schicht und Zimmer 7
-*Cuckoo's Nest, am Abend · Hummel, Nomapes, Corvin · Prototyp, umgebaut*
+### B1 · Einstiege
+*Eine der folgenden Situationen startet die Quest. Jede führt zu einem anderen ersten Treffen mit Corvin.*
 
-- Die Schicht ist ein kleines Spiel mit Bestellungen, Gesprächsfetzen und Gästen, die man beruhigen muss. Wer sie verpasst, verliert Hummels Vertrauen (`shiftMissed`).
-- **Es ist Donnerstag.** Auf Roachs Liste stand „Mantel – Do.“, und Hummel sagte, der Dauermieter von Zimmer 7 zahlt donnerstags. Wer beides weiß, kann die Schicht nutzen. Ein Nomape lallt: „Zimmer 7 war wieder offen. Der Mantelmann war oben.“
-- **Auftritt Corvin:** Ein Rabe sitzt draußen am Fenster von Zimmer 7, auf der Feuertreppe. Er ist Privatdetektiv und wird von der Familie eines verschwundenen Knäuel-Gläubigen bezahlt, die als Einzige noch nach ihm sucht. Ins Nest darf er nicht, Hummel hat dem Ex-Cop Hausverbot erteilt.
-- **Erste große Probe zu dritt:** Der Held kommt als Angestellter ins Zimmer. Big Dig hält Wache, Corvin dirigiert von draußen. Im Zimmer liegen eine Liste mit Namen von Roachs Liste, daneben „aufgenommen“ oder „Waisenhaus“, und ein Siegel aus weißem Wachs mit einem eingeprägten Knäuel.
-- Auf der Liste steht Pips, „Waisenhaus“. Juno steht nicht darauf, sie war keine Waise. Sie ging freiwillig.
-- **Corvin schließt sich an** (`corvin_beigetreten`). Er sagt es nicht so: „Ich brauch einen, der reinkommt, wo ich nicht reinkomme. Und du kannst mich nicht bezahlen. Also bezahlst du mich später.“
-- **Erster Knoten-Moment:** Wer die Szene ohne Verluste und gemeinsam schafft, bekommt bei Corvin oder Big Dig die erste Meldung „Knoten geknüpft“. Der Spieler soll sie früh sehen, ohne sie schon zu verstehen.
+| Einstieg | Voraussetzung | Erstes Treffen mit Corvin |
+| --- | --- | --- |
+| **Roachs Liste:** „Mantel – Do.“ | Garage erledigt (Szene 5) | Am Donnerstagabend auf der Feuertreppe vor Zimmer 7. Beide wollen dasselbe Fenster |
+| **Das Schlüsselbrett:** Haken 7 ist immer leer | Wahrnehmung im Nest (Szene 2) | Ebenso auf der Feuertreppe, wenn der Held Hummels Hinweis folgt |
+| **Zu laut gefragt** | Der Held hat an zwei Orten nach Juno oder dem Orden gefragt (Nachbarin, Ilse, Mira, Grimm) | Ein Rabe folgt ihm. Corvin spricht ihn auf der Straße an: „Du fragst zu laut. So fragen die, die danach verschwinden.“ Er hat den Helden als Köder benutzt und gibt das zu, wenn man nachbohrt |
+| **Das Büro** | Ilse oder die Nachbarin empfehlen „den Detektiv über dem Pfandhaus, der Verschwundene sucht“ | Im Büro vor der Pinnwand. Corvin nimmt den Fall an, sofern er ihn später bezahlt bekommt |
+| **Mimi** | Mimi getroffen (Szene 4) | Mimi hat „einen Raben auf dem Dach“ gesehen, der jeden Donnerstag den Mantelmann beobachtet |
 
-### 9 · Lagerszene Corvin (Pflicht)
-*erste lange Rast danach · Corvins Büro über dem Pfandhaus wird als Unterschlupf frei*
+**Corvins Angebot ist immer dasselbe:** Am Donnerstag liegt in Zimmer 7 eine Liste. Er selbst kommt nicht hinein, weil Hummel ihm Hausverbot erteilt hat.
 
-- Im Büro hängt die Pinnwand mit Fäden und Fotos: verschwundene Knäuel-Gläubige, Kinder, Mantelmänner. Pips' Zeichnung passt hinein. Corvin: „Mantel, Auto, Knäuel. Das sieht aus wie meine Akte.“
-- Dann holt er das **Notizbuch** heraus und zeigt Rooks Foto. Er erzählt den Fall Rook noch als Justizirrtum, nicht als eigene Schuld.
+**Warum Hausverbot** *(Vorschlag)*: Vor zwölf Jahren, beim Lagerhausbrand, hat Corvin Hummel stundenlang verhört, weil Rook Stammgast im Nest war. Hummel hat ihm das nie verziehen und weiß mehr über Rook, als Corvin lieb ist. So hängt der Fall Rook schon in Akt 1 im Raum.
+
+**Zeit:** Der Mantelmann kommt jeden Donnerstag. Es gibt keinen Zeitdruck (GDD), aber eine Woche ohne Donnerstag ist eine Woche ohne Liste.
+
+### B2 · Wege in Zimmer 7
+*Am Donnerstagabend. Je nach Gruppe, Klasse und Vorgeschichte stehen andere Wege offen.*
+
+| Weg | Voraussetzung | Besonderheit |
+| --- | --- | --- |
+| **Als Kellner** | Schicht angenommen | Der einfachste Weg. Der Held räumt „das Zimmer auf“. Wird er erwischt, ist Hummels Vertrauen weg |
+| **Mit dem Schlüssel** | Stehlen (Fingerfertigkeit) oder geliehen bekommen, wenn „Honig für Hummel“ erledigt ist | Wer ihn geliehen bekommt, enttäuscht Hummel, falls es herauskommt |
+| **Über die Feuertreppe** | Akrobatik oder Klettern (etwa als Breaker). Corvin öffnet den Riegel von außen | Nur mit Corvin oder mit passender Klasse |
+| **Von unten** | Big Dig ist dabei | Er gräbt sich durch den Keller in den alten Speiseaufzug. Laut und schmutzig, aber niemand sieht etwas |
+| **Durch den Mantelmann selbst** | Täuschen oder Überzeugen in der Bar | Der Held gibt sich als Knäuel-Gläubiger aus. Der Mantelmann lädt ihn nach oben ein, um ihn anzuwerben. Dabei stutzt er: „Seltsam. Normalerweise spüren die Leute was, wenn ich vom Orden erzähle.“ Das ist die erste Andeutung der Immunität. Der Held steht danach als Interessent auf der Liste |
+
+**Im Zimmer:** Eine Liste mit Namen von Roachs Liste, daneben steht jeweils „aufgenommen“ oder „Waisenhaus“. Darauf auch **Pips, „Waisenhaus“**. Juno steht nicht darauf, sie ging freiwillig. Dazu ein Siegel aus weißem Wachs mit eingeprägtem Knäuel.
+
+**Ist Big Dig dabei** und liest „Pips“, will er sofort hinunter und den Mantelmann zur Rede stellen. Das ist seine unschöne Seite. Der Held kann ihn bremsen oder lassen. **Ist er nicht dabei**, kann der Held ihm den Namen später sagen, und Big Digs Quest springt dann ein Stück weiter.
+
+### B3 · Der Mantelmann: Bruder Ansgar *(Name: Vorschlag)*
+*Was tun mit dem Mann, der die Listen bringt?*
+
+Bruder Ansgar ist kein Schurke. Er ist ein freundlicher, gläubiger Ordensbruder, der überzeugt ist, Verlorene zu retten. Was das Knäuel ist, weiß er nicht.
+
+| Wahl | Ergebnis | Folge |
+| --- | --- | --- |
+| **Beschatten** (braucht Corvin) | Über die Dächer bis zur **Ordensmission** in Hairlem, einer Suppenküche mit Aufnahmestelle | Öffnet die Dachebene ganz natürlich. In der Mission findet man Aufnahmebögen: Pips wurde „weitergeleitet“, Juno „freiwillig, Expedition“ (`juno_spur` +1) |
+| **Stellen und befragen** | Einschüchtern oder Überzeugen. Ansgar erzählt bereitwillig, er hat nichts zu verbergen | Er meldet das Gespräch dem Orden. `orden_wachsam` +1, der Held steht früher auf den Listen |
+| **Nur die Liste abschreiben** | Corvins Pinnwand wächst | Kein Alarm, aber auch keine Spur zur Mission |
+| **Big Dig lässt man gewähren** | Ansgar wird verprügelt. Er versteht nicht, warum | `orden_wachsam` +2. Big Digs unschöne Seite hat Folgen, und Mimi hat danach Angst vor ihm |
+
+**Am Ende jeder Variante schließt sich Corvin an** (`corvin_beigetreten`): „Ich brauch einen, der reinkommt, wo ich nicht reinkomme. Und du kannst mich nicht bezahlen. Also bezahlst du mich später.“
+
+**Kein erster Knoten hier** *(Vorschlag)*: Die beiden kennen sich erst seit Stunden. Es erscheint nur „Corvin wird sich daran erinnern“. Die erste Meldung „Knoten geknüpft“ kommt nach der Massenschlägerei (Szene 15).
+
+### B4 · Lagerszene Corvin (Pflicht)
+*erste lange Rast nach seinem Beitritt · ab jetzt ist auch sein Büro als Unterschlupf frei*
+
+- Corvin holt das Notizbuch heraus, zeigt Rooks Foto und erzählt den Fall noch als Justizirrtum.
+- **Rastet man im Büro**, steht er dabei vor der Pinnwand. Ist Pips' Zeichnung schon gefunden, passt sie hinein: „Mantel, Auto, Knäuel. Wie meine Akte.“
 - **Zustand:** `corvin_lagerszene = 1`.
 
-### 10 · Die Dächer
-*zweite Ebene über Hairlem · Corvin · neu*
+### B5 · Die freundliche Schwester (optional) *(Vorschlag)*
+*Mulberry Street · Corvin · lehrt „Ketten verfolgen“*
 
-- Corvin öffnet die Dachebene mit Feuertreppen, Wäscheleinen, Wassertürmen und Reklametafeln. Er fliegt voraus, findet Wege und lässt Leitern herunter.
-- **Erkundung lernen:** Fähigkeiten der Gefährten öffnen eigene Wege, wie die Pfadaktionen in Octopath. Big Dig gräbt unten, Corvin klärt oben auf.
-- Überall sind Tauben, und alle scheuchen sie weg. Corvin „verachtet“ sie laut und legt heimlich Krümel hin.
-- **Vorschlag:** Hier oben fotografiert Vincenzo Frankinetti die Stadt. Er ist ein Flughörnchen mit Kamera, aus dem Prototyp, und Fitz' Onkel. Damit ist Boney Island vorbereitet.
+- Corvin findet die Ordensschwester aus Junos Nachbarschaft, über die Juno zum Orden kam. Sie ist herzlich und ehrlich und glaubt, was sie sagt.
+- Aber sie hat seltsame Stimmungen, die sie sich nicht erklären kann: plötzliche Wärme für Menschen, die sie kaum kennt. Das ist der **Nachhall bei einer Zwischenperson** (Regelwerk).
+- **Mechanik:** Wer solchen Stimmungen nachgeht, kann eine Kette rückwärts verfolgen. Der Spieler lernt: Sie ist kein Täter, sondern ein Glied.
+- **Zustand:** `juno_spur` +1.
 
-### 11 · Die Tauben (Nebenquest, Fenster Akt 1–2)
-*Taubenschläge auf den Dächern · der Taubenzüchter · neu, aus dem GDD*
+### B6 · Die Dächer
+*zweite Ebene über Hairlem · frei, sobald Corvin dabei ist*
 
-- Corvin entdeckt den Züchter. Sein Name verrät ihn: Er ist Rooks Bruder. Corvin wird still.
-- Das Taubennetz weiß, wohin Juno gebracht wurde. **Entscheidung** (GDD):
-  - **Netz nutzen** (`tauben = netz_genutzt`): Die Tauben berichten, dass Juno mit einer Expedition des Ordens in die stillgelegten Tunnel gegangen ist. Das ist die stärkste Spur in die Subfurs.
+- Corvin fliegt voraus, findet Wege und lässt Leitern herunter. Big Dig gräbt unten, Corvin klärt oben auf. So lernt der Spieler die Erkundungsfähigkeiten, wie die Pfadaktionen in Octopath.
+- Überall sind Tauben. Corvin „verachtet“ sie laut und legt heimlich Krümel hin.
+- **Vincenzo Frankinetti** fotografiert die Stadt von oben (Vorschlag: Fitz' Onkel).
+
+### B7 · Die Tauben (Fenster Akt 1–2)
+*Taubenschläge · der Taubenzüchter Augustin „Gus“ Rook (Name: Vorschlag)*
+
+- Corvin entdeckt den Züchter. Als er den Nachnamen hört, wird er still.
+- **Entscheidung (GDD):**
+  - **Netz nutzen** (`tauben = netz_genutzt`): Juno ist mit einer Expedition des Ordens in die stillgelegten Tunnel gegangen. Das ist die stärkste Spur nach unten.
   - **Tauben befreien** (`tauben = befreit`): Die Spur ist verloren, aber die Tauben werden Verbündete in der ganzen Stadt.
-- **Unschöne Seite, angelegt:** Corvin schlägt vor, eine Taube unter Druck zu setzen, damit sie gegen den Züchter aussagt. Es ist dieselbe Methode wie im Fall Rook.
+- **Unschöne Seite:** Corvin schlägt vor, eine Taube unter Druck zu setzen, damit sie gegen Gus aussagt. Es ist dieselbe Methode wie im Fall Rook.
 - Wer die Dächer auslässt, bekommt in Akt 2 die Botentaube.
 
 ---
 
 ## Teil C: Der Bandenkrieg
+
 
 ### 12 · Nuggets Auftrag
 *Cuckoo's Nest · Nugget · Prototyp*
@@ -278,6 +334,7 @@ Das Phänomen muss früh klar sein, weil das Anknüpfen in Akt 2 sonst nichts be
 | --- | --- | --- |
 | Akt 1, Szene 3 | **Was mit ihm ist:** Er liebt, fühlt aber nicht mit, er liest | Erinnerung an Fest, Ratespiel und Abschied |
 | Akt 1, Szene 15 | **Dass es mit dem Knäuel zu tun hat:** Er ist immun, die Stadt nennt ihn „Fadenlos“ | Massenschlägerei |
+| Akt 1, B2 | Der Mantelmann stutzt, wenn der Held sich anwerben lässt: „Normalerweise spüren die Leute was.“ | Andeutung |
 | Akt 1, Szene 16 | Malcolm bemerkt es: „Bei dir ist es still.“ | Andeutung, keine Erklärung |
 | Akt 2, Lagerszene der Weberin | **Warum:** Er ist nicht aus dem Faden der Stadt, jemand hat ihn herausgeschnitten. Mit dem Taschen-Bild erklärt sie, was das heißt | Gespräch, bevor das Anknüpfen kritisch wird |
 | Akt 2, Mitte | **Was es kostet:** Das erste Anknüpfen geschieht unabsichtlich (Regelwerk), etwa wenn er einen sterbenden Freund festhält. Danach warnt die Weberin, Malcolm erklärt es scheinbar hilfsbereit | Wendepunkt in der Mitte von Akt 2 |
@@ -313,10 +370,11 @@ Das Phänomen muss früh klar sein, weil das Anknüpfen in Akt 2 sonst nichts be
 | 4 | Spurenlesen (Beobachtung statt Bauchgefühl) |
 | 5 | mehrere Wege pro Aufgabe, Kampf zu zweit, Gefährte rekrutieren |
 | 6 | Lagerszene |
-| 8 | Probe zu dritt, Gefährten würfeln für den Helden, erste Meldung „Knoten geknüpft“ |
-| 10 | Erkundungsfähigkeiten, Dachebene |
+| B2 | mehrere Wege je nach Gruppe und Klasse, Gefährten würfeln für den Helden |
+| B5 | Ketten rückwärts verfolgen (Nachhall bei Zwischenpersonen) |
+| B6 | Erkundungsfähigkeiten, Dachebene |
 | 12–14 | Ansehen bei Gangs |
-| 15 | Manipulation sehen: Sprung ohne Anlass, der Held ist immun |
+| 15 | Manipulation sehen: Sprung ohne Anlass, der Held ist immun, erste Meldung „Knoten geknüpft“ |
 | 17 | Beweise sammeln und weitergeben |
 | 19 | große Entscheidung mit Langzeitfolgen |
 | 22 | Point of no Return |
@@ -325,7 +383,7 @@ Das Phänomen muss früh klar sein, weil das Anknüpfen in Akt 2 sonst nichts be
 
 ## Was sich gegenüber dem Prototyp ändert
 
-- **Der Held kommt allein.** Big Dig kommt in Szene 5 dazu, Corvin in Szene 8.
+- **Der Held kommt allein.** Ab Szene 5 ist Hairlem offen. Big Dig und Corvin kommen in beliebiger Reihenfolge dazu, spätestens bei der Massenschlägerei.
 - **Der Brief wird im Taxi gelesen**, die Charaktererstellung ist in Roachs Fragen eingebaut.
 - **Malcolm hat die Papiere gekauft** (entschieden 13.11.). Darin stehen Geburtsdatum und Pflegefamilie, so erkennt er den Helden sicher. Er behält es für sich und gibt die Papiere später zurück, scheinbar aus Freundlichkeit, wenn er den Helden nach Cathattan bringen will.
 - **Der Überfall nimmt auch Papiere und Ausrüstung.** Das macht Roachs Garage zur Pflicht. Die Ausrüstung findet er dort, die Papiere nicht.
@@ -348,10 +406,14 @@ Erst eintragen, wenn die Szenen gebaut werden:
 
 | Variable | Werte | Gesetzt in | Gelesen von |
 | --- | --- | --- | --- |
-| `juno_spur` | 0–4 | Szenen 4, 5, 11, 21 | Junos Begegnung in Akt 2 |
+| `juno_spur` | 0–5 | Szenen 4, 5, B3, B5, B7, 21 | Junos Begegnung in Akt 2 |
 | `fadenlos` | ja, nein | Szene 15 | Anrede der NPCs, Malcolm |
 | `kassette` | keine, behalten, nugget, adikatz | Szene 17 | Szenen 18, 21, Malcolm in Akt 2 und 3 |
 | `auftrag` | abgelehnt, angenommen, verhandelt | Szene 18 | Gang-Wahl, Ansehen |
+| `mantelmann` | unbekannt, beschattet, gestellt, abgeschrieben, verpruegelt | B3 | Ordensmission, Big Digs Quest, Akt 3 (Ansgar im Lager) |
+| `zimmer7_weg` | kellner, schluessel, feuertreppe, keller, anwerbung | B2 | Hummels Vertrauen, Mantelmann erkennt den Helden wieder |
+| `orden_wachsam` | 0–5 | B3, Szene 15 | wann „der Fadenlose“ auf den Listen steht, Gegenzüge in Akt 2 |
+| `schicht` | angenommen, abgelehnt, verpasst | Szene 2, 3 | Hummels Vertrauen, Weg in Zimmer 7 |
 
 Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die Dialoge umgebaut sind.
 
@@ -359,4 +421,6 @@ Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die D
 
 ## Noch offen
 
+- **Namen:** Bruder Ansgar (der Mantelmann), Augustin „Gus“ Rook (der Taubenzüchter).
+- **Hummels Hausverbot für Corvin** wegen der Verhöre im Fall Rook.
 - **Vincenzo Frankinetti:** Vincenzo aus dem Prototyp und Fitz sind beide Flughörnchen. Vorschlag: Vincenzo ist Fitz' Onkel, der den Zirkus verlassen hat, um Fotograf zu werden.
