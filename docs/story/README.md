@@ -49,7 +49,7 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 ## Offene Punkte (bei jedem neuen Akt prüfen)
 
 - [ ] **Bekannte Gesichter im Finale erweitern:** Bisher kommen nur Figuren aus Akt 1 in Frage (Station 5, `bekanntes_gesicht_wer`: Benny, Pounce, Odile, Ansgar, Malcolms junger Kater). Beim Schreiben von Akt 2, 3 und 4 prüfen, welche neue Nebenfigur dort stark genug wird, um im Finale gegen den Helden zu stehen. Dann die Liste in `enden.md` und die Berechnung in `GameState` ergänzen. *(Wunsch des Nutzers, 13.11.)*
-- [ ] **Riff:** was mit ihm passiert und wo man ihn rettet (Akt 2), entscheidet das Opfer der Cats im Finale.
+- [x] **Riff:** entschieden 14.11. (`quests_und_beziehungsboegen.md`, Abschnitt Lil' Riff). Offen bleibt nur der genaue Ort in Akt 3.
 - [ ] **Große Knoten:** Liste in `data/zustaende/grosse_knoten.json` mit jedem Akt erweitern, Cathattan braucht mehr als zwei positive.
 
 ## Namen (freigegeben)

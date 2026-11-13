@@ -122,6 +122,7 @@ func _abgeleitet(name: String):
 		return "feindlich" if flag("auftrag_ausgang") in ["ausgefuehrt", "gewarnt", "doppelt"] else "neutral"
 	# Das bekannte Gesicht im Finale (Station 5)
 	if name == "bekanntes_gesicht_wer":
+		if flag("riff") == "geheilt": return "riff"
 		var gerettet: Array = flag("gerettet")
 		if "benny" in gerettet: return "benny"
 		if "pounce" in gerettet: return "pounce"

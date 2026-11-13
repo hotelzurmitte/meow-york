@@ -187,6 +187,8 @@ func _teste_laufzeit() -> void:
 	_erwarte(GameState.flag("bekanntes_gesicht_wer") == "odile", "Odile gewonnen: Odile")
 	GameState.set_flag("gerettet", ["benny"])
 	_erwarte(GameState.flag("bekanntes_gesicht_wer") == "benny", "Benny gerettet: Benny kommt zuerst")
+	GameState.set_flag("riff", "geheilt")
+	_erwarte(GameState.flag("bekanntes_gesicht_wer") == "riff", "Riff geheilt: Riff kommt vor allen anderen")
 	# Zähler bleiben in ihren Grenzen
 	for i in 8: GameState.erhoehen("orden_wachsam")
 	_erwarte(GameState.flag("orden_wachsam") == 5, "erhoehen() stoppt bei max 5")

@@ -141,7 +141,7 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 - **Maximal:** drei Wellen Monsterhunde, angeführt von Captain Vale.
 - **Das Opfer:** Bleibt nach allen Erleichterungen eine Welle übrig, hält sie ein Anführer einer verbündeten Gang auf und stirbt dabei.
   - **Nomapes:** Don Orango. Knuckles wird Anführerin, ihr Ausgang „Nachfolgerin“ bekommt seinen Moment.
-  - **Breaking Cats:** Wurde Riff gerettet (`riff` = gerettet), ist es Riff. Er wirft den Ghettoblaster an („Riff, Take vier!“), legt mitten auf der Brücke einen Windmill hin, der so lächerlich gut ist, dass die Monsterhunde einen Moment lang verwirrt stehen bleiben, und reißt die vorderen mit über das Geländer. Komisch und furchtbar zugleich. Sonst ist es Adikatz: „Sag meinem Bruder, ich hab ihn gesucht.“
+  - **Breaking Cats:** Wurde Riff gerettet (`riff` = gerettet), ist es Riff. Er wirft den Ghettoblaster an („Riff, Take vier!“), legt mitten auf der Brücke einen Windmill hin, der so lächerlich gut ist, dass die Monsterhunde einen Moment lang verwirrt stehen bleiben, und reißt die vorderen mit über das Geländer. Komisch und furchtbar zugleich. Sonst ist es Adikatz, auch wenn er in Akt 4 die Führung an Shiner abgegeben hat: „Sag meinem Bruder, ich hab ihn gesucht.“
   - Sind beide Gangs verbündet, entscheidet der Spieler, wer geht, oder er verhindert es durch genug andere Hilfe.
 - **Feindliche Gang:** Steht eine Gang gegen den Helden, kämpft sie an Vales Seite, als zusätzliche Welle mit ihrem Boss. Ist ihr Gefährte (Shiner oder Knuckles) dabei, steht er seiner eigenen Familie gegenüber und kann sie mit einer Probe zum Abzug bewegen.
 
@@ -159,6 +159,7 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 **Station 5 · Die Halle der Gläubigen**
 - **Maximal:** Pfötchen wendet die Gefährten gegen den Helden (Knotenstärke entscheidet), die Gläubigen singen, und jede Strophe macht das Zurückholen schwerer.
 - **Ein bekanntes Gesicht zuerst.** Bevor Pfötchen die Gefährten wendet, schickt er jemanden vor, den der Held kennt und der ihm einmal wohlgesonnen war. Fanatisch, aber nicht verloren. Wer es ist, ergibt sich aus dem Spiel (`bekanntes_gesicht_wer`), in dieser Reihenfolge:
+  0. **Lil' Riff,** wenn er gefunden, aber nicht befreit wurde (`riff` = geheilt). Steht Shiner in der Gruppe, steht er ihr gegenüber.
   1. **Benny oder Pounce,** wenn der Held ihn bei der Schlägerei in Akt 1 gerettet hat. Der, dem er das Leben gerettet hat, will es ihm jetzt nehmen.
   2. **Schwester Odile,** wenn er sie gewonnen oder getäuscht hat. „Herzchen. Bitte. Lass ihn dich doch lieben.“
   3. **Bruder Ansgar,** wenn der Held ihn in Akt 1 nicht verprügelt hat.
@@ -189,6 +190,7 @@ Jede Gefährtin, jede Fraktion und jede offene Figur bekommt ein Bild und ein bi
 | **feindliche Gang** | Station 1 und 3: eine zusätzliche Welle mit ihrem Boss |
 | **Barkley, Fanatiker** | Station 3 fast leer: Die befreiten Hunde überrennen Vales Meute. Dafür jagen sie danach Katzen (Epilog) |
 | **Barkley, mehr als eine Liebe** | Station 3: eine Welle weniger, Barkley ruft die Hunde einzeln zu sich |
+| **Riff** (`riff`) | gerettet: Er kann sich an der Brücke opfern (oder überlebt) · geheilt: Er ist das bekannte Gesicht in Station 5 · verschollen: Adikatz opfert sich |
 | **Vale** vor Gericht oder tot | Station 3 ohne Vale, die Meute ohne Führung ist leichter |
 | **Big Dig** (neu verknotet) | Station 4 entfällt: Tunnel |
 | **Mercy** | Schweigende: Station 4 entfällt (Seitentür) · Reformerin: Station 5 leichter (sie stellt Pfötchen vor den Gläubigen) |

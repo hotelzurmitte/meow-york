@@ -159,6 +159,10 @@ Heute macht er Geschäfte mit beiden Gangs, handelt mit Informationen, kennt jed
 
 Malcolm erkennt ihn beim ersten Treffen, weil er ihn als Einzigen nicht lesen kann. Für Malcolm ist das eine Offenbarung und eine Beleidigung zugleich: der geschützte Sohn, der in Frieden aufwuchs, während Malcolm ausgehöhlt wurde. Er will ihn als Werkzeug. Aber er ist auch fasziniert. Der Held ist der Einzige, bei dem Malcolm nichts mitfühlt, und in seiner Nähe ist es zum ersten Mal still.
 
+### Malcolm und Riff *(entschieden 14.11.)*
+
+Malcolm wusste, dass Lil' Riff lebt und beim Orden „geheilt“ wurde. Er hielt die Rede bei der Beerdigung ohne Leiche, damit die Cats aufhören zu suchen und niemand nach dem Band fragt. Seine Tränen waren echt, denn er schwingt mit der Trauer aller mit und trauerte um etwas, das er selbst zugelassen hat. Der Spieler erfährt es in Akt 3.
+
 ### Malcolm und Junos Stimme *(entschieden 13.11.)*
 
 Alles, was der Held über Menschen weiß, hat er von Juno: Wer warm ist, hängt an etwas, wer verbindet, ist gebunden. Bei Malcolm läuft dieses Wissen ins Leere. Seine Wärme ist in jedem Moment echt, Junos Stimme sagt deshalb zu Recht „Der meint jedes Wort“, aber es hängt nichts daran. Er schwingt mit allen mit und hat nur eine einzige Schlinge, und die gehört Pfötchen.

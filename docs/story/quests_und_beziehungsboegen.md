@@ -460,6 +460,24 @@ Malcolm, Juno und Hazel sind keine Gefährten. Sie bekommen keine Pflicht aus Re
 
 ---
 
+### Lil' Riff *(entschieden 14.11.)*
+
+**Was geschah:** Riff, Adikatz' kleiner Bruder, sammelte Geräusche für seine Beats und ließ nachts einen Rekorder in einem stillgelegten Tunnel laufen. Dort trafen sich Malcolm und die Weberin. Als Riff den Rekorder holte, bemerkte ihn die Weberin, er rannte. Er hörte das Band, verstand nur „Knäuel“ und „es liegt noch da unten“ und lief zur Mission, um den Meister zu warnen. Über das Knäuel darf niemand reden. Ansgar übergab ihn an Vales Garde, und die hat ihn „geheilt“ wie Grille Grimm: Alles, was nicht verknotet war, liegt jetzt beim Orden. Riff lächelt, betet und tanzt nicht mehr. Seine Liebe zur Musik war keine Bindung an einen Menschen und ist weg. Nur der Knoten zu Adikatz ist geblieben, deshalb hält ihn die Garde von seinem Bruder fern. Das Band hatte er vorher im Ghettoblaster versteckt.
+
+**Malcolm wusste, dass Riff lebt.** Die Beerdigung ohne Leiche sollte die Cats vom Suchen abhalten, damit niemand nach dem Band fragt. Seine Tränen bei der Rede waren trotzdem echt: Er trauerte um etwas, das er selbst zugelassen hat. Der Spieler erfährt es in Akt 3, und es macht den Verrat bitterer.
+
+**Stationen:**
+- **Akt 1:** Aufnahmebuch („an die Garde übergeben, Cpt. V.“), die Kassette, Vincenzos Foto.
+- **Akt 2, Subfurs:** In Vales Patrouille läuft ein junger Tiger in Weiß und führt einen Monsterhund an der Leine. Ist Shiner dabei, erkennt sie ihn: „Riff?!“ Er lächelt höflich: „Der Meister segne dich.“
+- **Akt 3:** Corvin und Barkley ermitteln gegen Vale und finden, wo die „Geheilten“ gehalten werden. Rausholen allein reicht nicht, Riff muss zu sich zurückfinden:
+  - **über Adikatz:** Der Knoten zum Bruder hält, gemeinsames Erleben weckt ihn. Nur möglich, wenn die Cats dem Helden nicht feindlich sind.
+  - **über die Kassette:** Er hört „Riff, Take drei“ und seinen eigenen Beat. Langsamer, aber der schönste Moment, den die Kassette haben kann.
+
+**Ausgänge** (`riff`):
+- **gerettet:** Er tanzt wieder. Der Windmill auf der Brücke im Finale ist der Beweis, dass er sich zurückgeholt hat, was der Orden ihm genommen hatte. Er kann dort sterben oder, wenn das Opfer verhindert wird, überleben.
+- **geheilt:** gefunden, aber nicht befreit. Im Finale steht er als bekanntes Gesicht in der Halle der Gläubigen, Shiner gegenüber, wenn sie dabei ist.
+- **verschollen:** nie gefunden. An der Brücke opfert sich Adikatz.
+
 ## Das Netz der Wirkungen
 
 Die wichtigsten Ketten, bei denen eine Entscheidung mehrere Bögen verschiebt:

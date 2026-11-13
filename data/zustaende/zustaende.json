@@ -2092,14 +2092,14 @@
    "typ": "enum",
    "werte": [
     "verschollen",
-    "gerettet",
-    "tot"
+    "geheilt",
+    "gerettet"
    ],
    "standard": "verschollen",
    "akt": "2–4",
-   "gesetzt_von": "Ermittlung gegen Vale (Corvin und Barkley, Akt 3), Akt 2",
-   "gelesen_von": "Finale: Opfer der Breaking Cats (Riff oder Adikatz), Adikatz, Epilog",
-   "hinweis": "Was genau mit Riff passiert, wird mit Akt 2 festgelegt"
+   "gesetzt_von": "Akt 2 (Begegnung in Vales Patrouille → geheilt), Akt 3 (Befreiung über Adikatz oder die Kassette → gerettet)",
+   "gelesen_von": "Finale: Opfer an der Brücke (gerettet: Riff, sonst Adikatz), bekanntes Gesicht (geheilt), Epilog",
+   "hinweis": "siehe quests_und_beziehungsboegen.md, Abschnitt Lil' Riff"
   },
   {
    "name": "haltung_nomapes",
@@ -2164,6 +2164,7 @@
    "name": "bekanntes_gesicht_wer",
    "typ": "enum",
    "werte": [
+    "riff",
     "benny",
     "pounce",
     "odile",
@@ -2171,7 +2172,7 @@
     "junger_kater"
    ],
    "standard": "junger_kater",
-   "abgeleitet": "Reihenfolge: gerettet enthält benny → benny, pounce → pounce; odile gewonnen oder getaeuscht → odile; mantelmann nicht verpruegelt und nicht unbekannt → ansgar; sonst junger_kater",
+   "abgeleitet": "riff = geheilt → riff; dann gerettet enthält benny → benny, pounce → pounce; odile gewonnen oder getaeuscht → odile; mantelmann nicht verpruegelt und nicht unbekannt → ansgar; sonst junger_kater",
    "akt": "5",
    "gesetzt_von": "berechnet",
    "gelesen_von": "Finale, Station 5",

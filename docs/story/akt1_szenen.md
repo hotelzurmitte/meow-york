@@ -406,13 +406,13 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 
 - **Der Held hat kein Abspielgerät.** Er braucht eins: Hummels Küchenradio, das Tonbandgerät in Corvins Büro, die Werkstatt der Nomapes oder einen Walkman, den man kaufen oder stehlen kann. Anhören ist also ein bewusster Schritt an einem ruhigen Ort, nicht etwas, das im Kampf passiert.
 - **Wer sie nicht anhört,** trägt sie herum. Die Gefährten fragen nach: Corvin („Wir haben ein Band und hören es nicht?“), Big Dig („Vielleicht ist der Kleine drauf“, er meint Pips). Es bleibt trotzdem freiwillig.
-- **Was drauf ist:** „Lil' Riff, Take drei …“, ein selbstgebauter Beat mit Tunnelhall.
+- **Was drauf ist:** „Lil' Riff, Take drei … ich lass ihn laufen, für den Hall.“ Ein selbstgebauter Beat, dann lange nur Tropfen, fernes Zugdröhnen und Rauschen. Riff hat für seine Beats Geräusche gesammelt und den Rekorder nachts in einem stillgelegten Tunnel versteckt laufen lassen. Malcolm und die Weberin haben sich später genau dort getroffen, weil dort nie jemand ist, und den Rekorder hinter den Trümmern nicht gesehen. *(entschieden 14.11.)*
 - **Zwei Stimmen.** Die kühle gehört Malcolm, das erkennt die Gruppe sofort. Die raue ist eine fremde Frau, in Wahrheit die Weberin (GDD). **Jede Zeile lässt sich gut und schlecht lesen** *(entschieden 13.11.: die Kassette sät Zweifel, sie liefert kein Urteil)*:
   - Frau: „Die Tagebücher sagen, es liegt noch da unten.“ – Malcolm: „Dann hole ich es, bevor er es tut.“ *(Gute Lesart: Er will es vor dem Orden retten.)*
   - „Warum trägt er dann Tag und Nacht einen Schlüssel um den Hals?“
   - „Er hat dich aufgezogen wie sein eigenes Blut.“ – „Wie sein eigenes Blut. Ja. So kann man's sagen.“ *(Wer ist „er“? Das weiß der Spieler noch nicht.)*
   - Malcolm: „Das Geld für die Werkstatt ist raus. Die Katzen kriegen ihres morgen.“ – Frau: „Und wenn sie sich davon Eisenstangen kaufen?“ – Malcolm, nach einer Pause: „Dann wissen sie wenigstens, wofür sie kämpfen.“ *(Gute Lesart: Er hilft beiden Seiten. Schlechte: Er bezahlt den Krieg.)*
-  - Dann ein Knacken, „Da ist jemand“, und das Band bricht ab.
+  - Dann Schritte, ein Knacken, „Da ist jemand“, und das Band bricht ab. Das ist Riff, der zurückkommt, um seinen Rekorder zu holen, und rennt. Vincenzos Foto (Riff am U-Bahn-Gitter neben einer Gestalt mit Kapuze und zu vielen Armen) zeigt genau diese Nacht.
 - **Was gezeigt statt erklärt wird:** Malcolm gibt beiden Gangs Geld und spricht mit einer Fremden über etwas, das „da unten“ liegt. Riff hat das aufgenommen, und Riff ist verschwunden. Mehr steht nicht fest. Ob Malcolm Riff zum Schweigen gebracht hat oder ob Riff vor jemand anderem fliehen musste, kann der Spieler nicht entscheiden.
 - **Die Gefährten streiten, statt zu urteilen:** Corvin verteidigt ihn: „Der kauft Frieden. So macht er das seit zwölf Jahren.“ Big Dig: „Wer beiden Geld gibt, will, dass beide ihn brauchen.“ Der Spieler wählt, wem er recht gibt, und nichts davon ist falsch.
 - **Junos Stimme** (Einsicht gelingt, beim Abhören): „Juno hätte gesagt: Der hat Angst. Nicht vor der Frau. Um jemanden.“ Das stimmt, und es macht Malcolm noch sympathischer.
