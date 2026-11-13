@@ -674,7 +674,8 @@ So ist Juno in jedem Gespräch dabei, auch wenn sie fehlt, und der Spieler spür
    - Akt 2, nachdem er Juno begegnet ist und sie ihn abweist: „Ich glaube, Juno hätte gesagt: …“ Er ist unsicher, ob er sie noch kennt.
    - Akt 3, nachdem er gesehen hat, dass sie sich bei Malcolm geirrt hat: Manchmal widerspricht er ihr. „Juno hätte gesagt: Die lügt. Ich glaube nicht.“ Je nach `juno_offenheit` und den Knoten seiner Gruppe.
    - Akt 4 und Ende: Bei einem guten Bogen sagt er es selbst, ohne Juno. Er hat nicht gelernt, mitzufühlen, aber er hat von seinen Gefährten gelernt, anders zu lesen. Bei einem schlechten Bogen bleibt ihre Stimme die einzige, oder sie verstummt ganz.
-6. **Der Kern:** Juno ist nicht unfehlbar, und der Held darf nicht für immer von ihrer Deutung abhängen. Sein Bogen ist nicht, Gefühle zu bekommen, sondern zu verstehen, was Verbindung ist, auch wenn er nicht mitschwingt.
+6. **Die Spiegelung:** Junos Regeln passen auf alle, nur nicht auf Malcolm und nicht auf den Helden selbst. Wer erkennt, dass sie sich bei Malcolm geirrt hat, erkennt, dass sie auch ihn nie ganz lesen konnte (siehe Malcolm in `charakterbiografien.md`).
+7. **Der Kern:** Juno ist nicht unfehlbar, und der Held darf nicht für immer von ihrer Deutung abhängen. Sein Bogen ist nicht, Gefühle zu bekommen, sondern zu verstehen, was Verbindung ist, auch wenn er nicht mitschwingt.
 
 **Feste Stellen in Akt 1:**
 

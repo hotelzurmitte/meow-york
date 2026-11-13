@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 118
+- **Variablen insgesamt:** 119
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 73
+- **Story-Variablen:** 74
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -89,6 +89,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `kassette_gesehen_von` | niemand, nugget, adikatz | niemand | Quest 4, Battle | Ärger um die Kassette; über Nugget erfährt es Malcolm | 1 |  |
 | `kassette_gehoert` | ja, nein | nein | Anhören (Abspielgerät nötig) | Streit Corvin/Big Dig, Auftrag, Weberin in Akt 2 (Stimme erkannt) | 1 |  |
 | `auftrag_ausgang` | offen, ausgefuehrt, vorgetaeuscht, gewarnt, doppelt, nugget_entlarvt | offen | Der Auftrag | Gang-Wahl, Bosse in Akt 4 | 1 | Ausgang der Hauptquest „Der Auftrag“ (nicht verwechseln mit dem Prototyp-Flag „auftrag“ = Auftraggeber) |
+| `held_art` | gestrandet, hauskatze, grosskatze, insekt, affe, vogel, taube, nager, hase | gestrandet | Charaktererstellung (Taxi) | Startansehen, Preise, Garde-Kontrollen, Anrede, Schlüsselzeilen (Roach, Hummel, Ilse, Odile, Malcolm, Adikatz, Don Orango, Gus), eigener Weg je Akt | alle | Daten: data/characters/tierarten.json, Erklärung: docs/story/tierarten.md. Hunde sind gesperrt; einmal setzen |
 
 ## Juno
 

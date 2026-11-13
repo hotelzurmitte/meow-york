@@ -158,6 +158,14 @@ Heute macht er Geschäfte mit beiden Gangs, handelt mit Informationen, kennt jed
 
 Malcolm erkennt ihn beim ersten Treffen, weil er ihn als Einzigen nicht lesen kann. Für Malcolm ist das eine Offenbarung und eine Beleidigung zugleich: der geschützte Sohn, der in Frieden aufwuchs, während Malcolm ausgehöhlt wurde. Er will ihn als Werkzeug. Aber er ist auch fasziniert. Der Held ist der Einzige, bei dem Malcolm nichts mitfühlt, und in seiner Nähe ist es zum ersten Mal still.
 
+### Malcolm und Junos Stimme *(entschieden 13.11.)*
+
+Alles, was der Held über Menschen weiß, hat er von Juno: Wer warm ist, hängt an etwas, wer verbindet, ist gebunden. Bei Malcolm läuft dieses Wissen ins Leere. Seine Wärme ist in jedem Moment echt, Junos Stimme sagt deshalb zu Recht „Der meint jedes Wort“, aber es hängt nichts daran. Er schwingt mit allen mit und hat nur eine einzige Schlinge, und die gehört Pfötchen.
+
+Damit gibt es zwei Menschen, auf die Junos Regeln nicht passen: Malcolm, der mitschwingt, ohne sich zu binden, und den Helden, der sich bindet, ohne mitzuschwingen. **Wenn der Held in Akt 3 begreift, dass Juno sich bei Malcolm geirrt hat, begreift er im selben Moment etwas über sich: Auch ihn hat Juno nie ganz lesen können. Sie hat ihn nur geliebt.** Das ist der Punkt, an dem Junos Stimme auf Stufe 3 kippt (`juno_stimme`) und der Held anfängt, ihr zu widersprechen.
+
+Für Malcolm gilt dasselbe von der anderen Seite: Der Held ist der Einzige, den er nicht lesen kann, und darum der Einzige, dessen Zuneigung er nicht als Echo abtun kann. Variante A (Bruderschaft) lebt von dieser doppelten Blindheit.
+
 ### Mögliche Entwicklungen
 
 **A. Erlösung durch Bruderschaft.** Der Held wird Malcolms zweite echte Bindung. Malcolm wird dadurch lenkbar, und Pfötchen nutzt das sofort. Erlöst sein heißt für Malcolm: wieder verwundbar werden, ausgerechnet für den Vater, der ihn zerstört hat.

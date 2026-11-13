@@ -1,0 +1,141 @@
+{
+ "beschreibung": "Wählbare Tierarten des Helden und wie die Welt auf sie reagiert. Erklärung: docs/story/tierarten.md. ansehen = Startwerte je Fraktion, preis = Faktor für Bar, Läden, Zimmer, garde_ab = ab welchem orden_wachsam die Garde ihn anhält.",
+ "arten": {
+  "gestrandet": {
+   "tiere": [
+    "Fuchs",
+    "Waschbaer",
+    "Otter"
+   ],
+   "ansehen": {},
+   "preis": 1.0,
+   "garde_ab": 2,
+   "anrede": "Fremder"
+  },
+  "hauskatze": {
+   "tiere": [
+    "Katze",
+    "Schwarzkatze",
+    "Tigerkatze",
+    "Siamkatze",
+    "Perserkatze",
+    "Ragdoll"
+   ],
+   "ansehen": {
+    "insekten": -1,
+    "breaking_cats": -1,
+    "nomapes": -1,
+    "orden": 1
+   },
+   "preis": 1.2,
+   "garde_ab": 4,
+   "anrede": "Sofakissen"
+  },
+  "grosskatze": {
+   "tiere": [
+    "Loewe",
+    "Leopard",
+    "Panther"
+   ],
+   "ansehen": {
+    "breaking_cats": 1,
+    "nomapes": -1
+   },
+   "preis": 1.0,
+   "garde_ab": 2,
+   "anrede": "Katze"
+  },
+  "insekt": {
+   "tiere": [
+    "Kakerlake",
+    "Ameise",
+    "Kaefer",
+    "Hummel"
+   ],
+   "ansehen": {
+    "insekten": 2
+   },
+   "preis": 1.0,
+   "preis_insekten": 0.8,
+   "garde_ab": 1,
+   "anrede": "Kleiner"
+  },
+  "affe": {
+   "tiere": [
+    "Schimpanse"
+   ],
+   "ansehen": {
+    "nomapes": 1,
+    "breaking_cats": -1
+   },
+   "preis": 1.0,
+   "garde_ab": 2,
+   "anrede": "Affe"
+  },
+  "vogel": {
+   "tiere": [
+    "Rabe",
+    "Spatz",
+    "Eule",
+    "Moewe"
+   ],
+   "ansehen": {
+    "tauben": 1
+   },
+   "zuneigung": {
+    "corvin": 2
+   },
+   "preis": 1.0,
+   "garde_ab": 2,
+   "anrede": "Vogel"
+  },
+  "taube": {
+   "tiere": [
+    "Taube"
+   ],
+   "ansehen": {
+    "tauben": 2,
+    "breaking_cats": -1,
+    "nomapes": -1
+   },
+   "preis": 1.5,
+   "garde_ab": 1,
+   "anrede": "Taube",
+   "hinweis_wahl": "Tauben haben es in Meow York schwer. Manche Türen bleiben zu."
+  },
+  "nager": {
+   "tiere": [
+    "Maus",
+    "Ratte",
+    "Eichhoernchen"
+   ],
+   "ansehen": {
+    "insekten": 1
+   },
+   "preis": 1.0,
+   "garde_ab": 2,
+   "anrede": "Kleiner"
+  },
+  "hase": {
+   "tiere": [
+    "Hase"
+   ],
+   "ansehen": {
+    "rathaus": 1
+   },
+   "preis": 1.0,
+   "garde_ab": 3,
+   "anrede": "Hase"
+  }
+ },
+ "gesperrt": {
+  "Hund": {
+   "grund": "Seit dem Hundekrieg gibt es in Meow York keine freien Hunde mehr.",
+   "roach": [
+    "Bruder. Einen Hund fahr ich nicht über die Brücke. Keiner tut das. Hunde gibt's nicht mehr, verstehst du? Nicht in Meow York. Nicht seit achtzig Jahren.",
+    "Hast du mich nicht gehört? Draußen am Pfeiler steht's dran: BEWARE OF THE BEASTS.",
+    "*schweigt eine Weile* Du bist mir unheimlich, Bruder."
+   ]
+  }
+ }
+}

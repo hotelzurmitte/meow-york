@@ -29,6 +29,7 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 - **Junos Stimme** (13.11.): Bei gelungener Einsicht deutet Juno in seinem Kopf, was andere fühlen. Sie kann sich irren, schweigt manchmal und verändert sich über die Akte (`juno_stimme`).
 - **Fadenlos** bekommt eine eigene stille Szene am Morgen nach der Schlägerei. **Die Gang-Wahl** hängt an Menschen (Riffs Platz im Studio, der Lohntag in der Werkstatt), und wer einen Gefährten verlieren kann, wird vorher gewarnt.
 - **Papier-Spieltests** für fünf Spielstile: `akt1_spieltests.md`, Test-Spielstände `11_` bis `15_`.
+- **Tierarten des Helden** (13.11.): Die Art ist ein Milieu, keine Fähigkeit. Jede öffnet und verschließt etwas, über Startansehen, Preise, Garde-Kontrollen und wenige Schlüsselzeilen (`tierarten.md`, `held_art`). Hunde sind nicht wählbar, Roach erklärt es im Taxi. Offen: Pfötchens Frau und die Art des Sohnes.
 - **Verbindungen über Systeme, nicht über Zufälle:** Vincenzo ist kein Onkel von Fitz, Benny nicht Hazels Bruder, Vale nicht Corvins früherer Chef. Der Lagerhausbrand war ein Versicherungsbetrug, Corvin kennt Gus Rook seit zwölf Jahren.
 - Das Bild für Spieler: Schlingen sind Taschen, Gefühl ist Geld, Pfötchen schiebt nur zwischen den eigenen Taschen einer Person, Knoten nähen Taschen zu.
 - Hazels Bogen: Erst weiß sie die Wahrheit und liebt trotzdem weiter. Dann verrät Pfötchen sie, ihr Knoten rutscht, und ihre Liebe legt sich auf die Stadt.

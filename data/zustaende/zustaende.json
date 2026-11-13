@@ -1786,6 +1786,27 @@
     "nugget_entlarvt"
    ],
    "standard": "offen"
+  },
+  {
+   "name": "held_art",
+   "typ": "enum",
+   "werte": [
+    "gestrandet",
+    "hauskatze",
+    "grosskatze",
+    "insekt",
+    "affe",
+    "vogel",
+    "taube",
+    "nager",
+    "hase"
+   ],
+   "standard": "gestrandet",
+   "akt": "alle",
+   "einmal": true,
+   "gesetzt_von": "Charaktererstellung (Taxi)",
+   "gelesen_von": "Startansehen, Preise, Garde-Kontrollen, Anrede, Schlüsselzeilen (Roach, Hummel, Ilse, Odile, Malcolm, Adikatz, Don Orango, Gus), eigener Weg je Akt",
+   "hinweis": "Daten: data/characters/tierarten.json, Erklärung: docs/story/tierarten.md. Hunde sind gesperrt"
   }
  ],
  "prototyp_flags": [
