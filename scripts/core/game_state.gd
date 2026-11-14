@@ -81,6 +81,17 @@ func knoetchen(wer: String, d: int = 1) -> void:
 	elif d > 0:
 		EventBus.hinweis.emit("Knötchen", "knoten")
 
+## Anknüpfen (Regelwerk D2, docs/story/anknuepfen.md): dauer 1 = berühren, 2 = halten, 3 = sich verlieren
+func anknuepfen(dauer: int) -> void:
+	var extra := 1 if int(flag("knaeuel_aufmerksamkeit")) >= 5 else 0
+	erhoehen("held_verwachsung", clampi(dauer, 1, 3) + extra)
+	erhoehen("knaeuel_aufmerksamkeit", 2 if dauer >= 3 else 1)
+	erhoehen("held_anknuepfen")
+
+## Lange Rast: die Aufmerksamkeit des Knäuels lässt nach, die Verwachsung bleibt
+func lange_rast() -> void:
+	erhoehen("knaeuel_aufmerksamkeit", -1)
+
 ## Verrat: der Knoten rutscht ganz (Regelwerk, Axiom 4)
 func knoten_reisst(wer: String) -> void:
 	set_flag(wer + "_knoetchen", 0)
@@ -129,6 +140,14 @@ func _abgeleitet(name: String):
 		if flag("odile") in ["gewonnen", "getaeuscht"]: return "odile"
 		if not flag("mantelmann") in ["verpruegelt", "unbekannt"]: return "ansgar"
 		return "junger_kater"
+	# Zustand des Helden nach seinen Anknüpfungen
+	if name == "held_zustand":
+		var v: int = flag("held_verwachsung")
+		if v <= 2: return "frei"
+		if v <= 4: return "nachklang"
+		if v <= 6: return "ausgefranst"
+		if v <= 8: return "verwachsen"
+		return "gefaehrdet"
 	# Wie fest Pfötchen die Stadt noch im Griff hat (Akt 4)
 	if name == "pfoetchen_griff":
 		var knoten: Array = flag("grosse_knoten")

@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 164
+- **Variablen insgesamt:** 166
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 119
+- **Story-Variablen:** 121
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -66,9 +66,9 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `rook` | in_haft, frei | in_haft | Corvin K4 | Epilog, Tauben im Finale | 4 | einmal setzen |
 | `malcolm_risse` | 0–3 | 0 | Corvin misstraut (+1), Gang-Enttarnung (+1), Weberin-Gespräch (+1) | Malcolm-Szenen A3, Erlösungsmöglichkeit A4 | 1–4 |  |
 | `hazel_status` | ahnungslos, wissend, verraten | ahnungslos | mercy_akten / Hauptquest A4 | Hazel-Szenen, Finale, Pfötchens Leitung | 3–4 | verraten = Knoten gerutscht, unlenkbar |
-| `held_anknuepfen` | 0–n | 0 | jedes Anknüpfen | Fadensicht-Freischaltung, Finale (Ende ‚Der Sohn‘) | 2–4 |  |
-| `held_verwachsung` | 0–10 | 0 | jedes Anknüpfen (steigt mit Dauer und Aufmerksamkeit) | Gefahr der Einwebung, Ende ‚Einwebung‘ | 2–5 | Regelwerk D2: Risiko, dauerhaft eingesponnen zu werden |
-| `knaeuel_aufmerksamkeit` | 0–10 | 0 | + bei jedem Anknüpfen, − mit der Zeit (lange Rast) | Pfötchens Gegenzüge, held_verwachsung | 2–5 | Regelwerk D2: hohe Aufmerksamkeit löst Gegenzüge aus |
+| `held_anknuepfen` | 0–n | 0 | GameState.anknuepfen() | Fadensicht-Freischaltung, Finale (Ende ‚Der Sohn‘) | 2–4 |  |
+| `held_verwachsung` | 0–10 | 0 | jedes Anknüpfen (steigt mit Dauer und Aufmerksamkeit) | Gefahr der Einwebung, Ende ‚Einwebung‘ | 2–5 | Regelwerk D2. Sinkt nicht von selbst, nur durch die Weberin (einmal pro Akt −2). Zustände: held_zustand |
+| `knaeuel_aufmerksamkeit` | 0–10 | 0 | GameState.anknuepfen() (+1, bei Stufe 3 +2), GameState.lange_rast() (−1) | Pfötchens Gegenzüge, held_verwachsung | 2–5 | Regelwerk D2: hohe Aufmerksamkeit löst Gegenzüge aus |
 | `held_hebel_genutzt` | 0–n | 0 | Muster erkannt → Nutzen | Zuneigung aller, Gefährten-Kommentare, Finale | 1–4 | ZUSATZ: kann gestrichen werden |
 | `unterschlupf` | cuckoos_nest, dig_keller, corvin_buero, ubahn_waggon, deltamae_station, acorn_wohnwagen, geisterbahn, hotel_cathattan, mercy_gemeinde, kanalzugang, kellerstadt | cuckoos_nest | Wahl des Schlafplatzes / Aktübergang | Lange Rast (Ort und Eröffnungszeile der Lagerszenen) | alle | Hauptunterschlupf je Akt: cuckoos_nest, ubahn_waggon, acorn_wohnwagen, hotel_cathattan |
 | `odile` | unbekannt, gewonnen, getaeuscht, verletzt | unbekannt | Quest 1.2 (akt1_odile.dialogue) | Weg in die Mission (Abendandacht, Aufnahme), Akt 3 (Lager) | 1 | gewonnen = ehrlich als Bruder, getaeuscht = als Bekehrungswilliger, verletzt = Helfer eingeschüchtert |
@@ -122,7 +122,8 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `hazel_lebt` | ja, nein | ja | K1 (verpasst und ohne Mercy in der Nacht → false) | Finale (Polizei, Leitung), Epilog | 4 |  |
 | `brunnen` | offen, gestuerzt, umgewidmet, gelassen | offen | Central Bark, Nebenquest Brunnen der Treue | große Knoten, Barkley | 4 |  |
 | `konzert_park` | offen, gelungen, aufgeloest | offen | Central Bark, Nebenquest Musikmuschel | großer Knoten konzert_park, Delta Mae, Fitz | 4 |  |
-| `kammer_resonanz` | offen, hingesehen, weggesehen | offen | Hauptquest 4.1, das Ziehen am Foto der Mutter | Einladung des Vaters (Zeitpunkt), erster Satz im Tempelgarten, held_verwachsung, knaeuel_aufmerksamkeit | 4 | hingesehen: drei Sekunden Gefühl (die Liebe des Vaters), Verwachsung und Aufmerksamkeit +2, Pfötchen spürt die Narbe |
+| `kammer_resonanz` | offen, weggelegt, beruehrt, gehalten | offen | Hauptquest 4.1, das Ziehen am Foto der Mutter | Einladung des Vaters (Zeitpunkt), erster Satz im Tempelgarten, held_verwachsung, knaeuel_aufmerksamkeit | 4 | drei Schritte am Foto der Mutter: ansehen (weggelegt), berühren (Stufe 1), halten (Stufe 2–3, Pfötchen am Knäuel). Siehe anknuepfen.md |
+| `held_zustand` | frei, nachklang, ausgefranst, verwachsen, gefaehrdet | frei | berechnet | Nachklang nach Anknüpfungen, Pfötchens Gegenzüge, unwillkürliches Anknüpfen, Fadenlos-Fähigkeiten im Finale, Einwebung | 2–5 | abgeleitet: aus held_verwachsung: 0–2 frei, 3–4 nachklang, 5–6 ausgefranst, 7–8 verwachsen, 9–10 gefaehrdet; siehe anknuepfen.md |
 
 ## Juno
 
@@ -184,6 +185,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `weberin_luege_gestanden` | ja, nein | nein | Bogen Weberin/Corvin A3 oder Mercy-Akten | mercy_weberin_behandelt, Musterbuch-Szene zu Pips | 3 |  |
 | `weberin_ausgang` | hueterin, zerstoererin, schneiderin | hueterin | Weberin K4 | Finale (liest Pfötchens Ketten), Ende ‚Wegsperren‘/‚Zerstörung‘ | 4 | einmal setzen |
 | `weberin_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | weberin_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
+| `weberin_faserschnitt` | 0–4 | 0 | Weberin schneidet ausgefranste Fasern ab (einmal pro Akt, Verwachsung −2) | ob sie es in diesem Akt noch kann | 2–4 | Preis: Der Held verliert die Erinnerung an das Gefühl der letzten Anknüpfung |
 
 ## Barkley
 

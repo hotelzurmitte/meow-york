@@ -203,12 +203,12 @@ Der Spieler erfährt das in Malcolms letzter Nacht, wenn er fragt, oder im Final
 - In einer Schublade unter dem Gebetbuch: **das Foto einer jungen Frau** von der Unterart des Helden (`held_unterart`), lachend, unscharf, als hätte der Fotograf selbst gelacht. Ein winziger Babyschuh. Ein Brief ohne Absender, nur ein Satz: „Er hat deine Ohren.“
 - **Keine Erklärung, kein Monolog.** Der Spieler setzt es selbst zusammen: die Geliebte, das Baby, der Meister, der ihn herausgeschnitten hat.
 
-**Das Ziehen** *(festgelegt 14.11.)*: Die Kammer liegt im Tempel, nah am Knäuel und an der Narbe, an der er herausgeschnitten wurde. Das Gesicht seiner Mutter ist der stärkste Reiz seines Lebens, und die Narbe beginnt fast von selbst zu ziehen.
-- **Inszenierung, leise:** keine Musik, der Ton wird dünner, der Bildrand verliert Farbe, ein feiner Faden spannt sich vom Foto zu seiner Brust. Junos Stimme schweigt. Kein Pathos: Wer beim Thema Mutter etwas fühlt, soll es selbst fühlen dürfen.
-- **Der Spieler entscheidet, nicht der Würfel** (`kammer_resonanz`):
-  - **Hinsehen:** Für drei Sekunden fühlt er zum ersten Mal in seinem Leben etwas. Nicht seine Mutter, sie ist tot. Er fühlt durch das Knäuel die Liebe seines Vaters, die ihn fünfundzwanzig Jahre lang gesucht hat und nie angekommen ist. Dann reißt es ab. Er weint nicht, er weiß nicht, wie das geht. Big Dig sieht nur, dass seine Hand zittert. **Preis:** `held_verwachsung` +2, `knaeuel_aufmerksamkeit` +2, und Pfötchen spürt die Narbe zucken. Er weiß jetzt, dass sein Sohn in seiner Kammer war.
-  - **Wegsehen:** Er legt das Foto mit dem Bild nach unten. Die Weberin (wenn dabei): „Das war klug. Und traurig.“ Pfötchen erfährt nichts.
-- **Warum nur drei Sekunden:** Es ist ein Vorgeschmack, keine Erfüllung. Wer hingesehen hat, weiß beim Angebot des Vaters, wie es sich anfühlt, und die Entscheidung wird zur echten Versuchung. Fühlte er hier schon alles, verpuffte das Angebot und die Einwebung im Finale.
+**Das Ziehen** *(festgelegt 14.11., ausführlich in `anknuepfen.md`)*: Als der Held begreift, dass er geliebt wurde, legt sich zum ersten Mal eine Schlinge von ihm zum Vater zurück. Die Beziehung ist gegenseitig, die Kammer liegt nah am Knäuel, und die Narbe zieht. Leise inszeniert, keine Musik: Wer beim Thema Mutter etwas fühlt, soll es selbst fühlen dürfen.
+
+**Drei Schritte, nach jedem kann er das Foto weglegen** (`kammer_resonanz`):
+1. **Ansehen:** nur das Bild, keine Verbindung, keine Kosten.
+2. **Länger ansehen, Berühren:** ein Atemzug lang die Liebe des Vaters, die ihn fünfundzwanzig Jahre gesucht hat. Big Digs Blick auf die zitternde Hand. Verwachsung +1, Pfötchen spürt, dass der Sohn nah ist.
+3. **Nicht loslassen, Halten:** Jetzt kommt alles, die Trauer des Vaters, die Nacht des Fortbringens, darunter die ganze Stadt wie Rauschen. Er weint, ohne zu wissen, dass es das ist. Pfötchen sitzt in dieser Stunde am Knäuel und könnte den Übergang schließen. Der Held hört: „Bleib.“ Dann lässt Pfötchen los, von selbst. Verwachsung +3, danach Nachklang bis zur nächsten Rast. Ist die Verwachsung schon sehr hoch, muss er sich selbst losreißen, und verknotete Gefährten ziehen ihn zurück.
 
 Dann erst kommen die Gefährten.
 
@@ -235,14 +235,14 @@ Dann erst kommen die Gefährten.
 ## Hauptquest 4.2 · Der Vater
 *Tempelgarten im Central Bark · am Tag nach dem Foto · startet die Uhr*
 
-**Die Einladung:** Ein Bote bringt einen Umschlag mit Ordenssiegel in den Unterschlupf, nach dem Hinsehen schon am nächsten Morgen, sonst einige Tage später. Ist Odile gewonnen, ist sie der Bote, ahnungslos und gerührt: „Der Meister will dich sehen, Herzchen. Persönlich!“ Die Einladung nennt keinen Grund.
+**Die Einladung:** Ein Bote bringt einen Umschlag mit Ordenssiegel in den Unterschlupf: nach dem Halten noch in derselben Nacht, nach dem Berühren am nächsten Morgen, sonst einige Tage später. Ist Odile gewonnen, ist sie der Bote, ahnungslos und gerührt: „Der Meister will dich sehen, Herzchen. Persönlich!“ Die Einladung nennt keinen Grund.
 
 **Die Warnung vorher:** „Wenn du jetzt zu ihm gehst, beginnt die Zeit bis zur Gründungsnacht zu laufen. Was du in der Stadt noch erledigen willst, erledige vorher.“
 
 **Ziel:** Kein Bösewicht-Monolog. Ein alter Mann, der seinen Sohn zum ersten Mal sieht, und ein Sohn, der nicht fühlen kann, was er sehen kann.
 
 **Ablauf:**
-1. **Pfötchen wartet allein** auf einer Bank, ohne Garde, die Hände im Schoß. Er sieht den Helden lange an. Hat der Held in der Kammer hingesehen, beginnt er: „Du warst in meiner Kammer. Ich hab dich gespürt. Zum ersten Mal seit fünfundzwanzig Jahren.“ Sonst: „Du hast ihre Augen.“ Er weiß von dem Foto, wenn der Held hingesehen hat, Malcolm den Schlüssel gab oder es veröffentlicht wurde.
+1. **Pfötchen wartet allein** auf einer Bank, ohne Garde, die Hände im Schoß. Er sieht den Helden lange an. Der erste Satz hängt am Foto: weggelegt „Du hast ihre Augen“, berührt „Du warst in meiner Nähe. Ich hab dich gespürt“, gehalten „Du warst in meiner Kammer. Ich hab dich gehalten. Zum ersten Mal seit fünfundzwanzig Jahren.“ Wer gehalten hat, hört das Angebot so: „Du hast es gefühlt. Ich kann es dir für immer geben.“
 2. **Er erzählt,** wenn der Held ihn lässt: von der Frau, vom Nachhall, von der Nacht, in der er ihn herausschnitt. „Ich habe dich unerreichbar gemacht, damit dich keiner benutzt. Auch ich nicht.“
 3. **Die Frage, die er nicht stellt:** Er fragt nie, ob der Held ihn hasst. Er fragt, ob er gut gegessen hat.
 
@@ -261,7 +261,7 @@ Dann erst kommen die Gefährten.
 
 | Er gewinnt | Er verliert |
 | --- | --- |
-| **Mitgefühl:** Er fühlt, was andere fühlen, ohne Übersetzung. Wer in der Kammer hingesehen hat, kennt die drei Sekunden schon | **Seine Unlenkbarkeit:** Ab dem Einspleißen kann das Knäuel seine Gefühle verschieben, wie bei allen anderen. Im Finale ist er dann selbst wendbar |
+| **Mitgefühl:** Er fühlt, was andere fühlen, ohne Übersetzung. Wer in der Kammer gehalten hat, weiß schon, wie es ist | **Seine Unlenkbarkeit:** Ab dem Einspleißen kann das Knäuel seine Gefühle verschieben, wie bei allen anderen. Im Finale ist er dann selbst wendbar |
 | **Seinen Vater und seine Mutter:** Er spürt die Liebe, die ihn sein Leben lang erreicht hat, ohne dass er sie bemerkte | **Junos Stimme:** Sie verstummt, denn er braucht keine Übersetzung mehr. Damit verliert er auch das, was er von ihr gelernt hat |
 | **Die Stadt:** Er schwingt mit, wie alle | **Die Fadenlos-Fähigkeiten:** kein ruhiger Gang durch den Aufruhr, keine Immunität gegen Pfötchens Ziehen, keine Sonderwege |
 | | **Die Gefahr seiner Mutter:** Wer Pfötchen am meisten liebt, wird seine Leitung. Fühlt der Sohn den Vater zum ersten Mal, kann er es werden, und dann fließt der Nachhall durch ihn wie damals durch sie |
@@ -405,7 +405,7 @@ Malcolm klopft, allein, ohne Mantel. Er hat Wein dabei, den er nicht trinkt.
 | --- | --- |
 | Malcolms Papiere abgelehnt hat | anderer Weg über die Brücke, Malcolm wirkt in Akt 4 kühler, kein Schlüssel zur Kammer |
 | keine Nebenquest in Cathattan macht | Das Foto bleibt über Weberin, Mercy, Dächer oder Malcolm erreichbar. Weniger Abkürzungen im Finale |
-| in der Kammer hinsieht | drei Sekunden Gefühl, Verwachsung und Aufmerksamkeit steigen, Pfötchen weiß Bescheid, die Einladung kommt am nächsten Morgen |
+| in der Kammer das Foto länger ansieht | Berühren oder Halten: Gefühl, Verwachsung, Pfötchen weiß Bescheid, die Einladung kommt früher (`anknuepfen.md`) |
 | das Foto nie findet | Er kann nicht zum Vater, die Uhr startet nicht von selbst. **Sicherung:** Nach langer Zeit (drei Rasten ohne Fortschritt in der Hauptquest) bringt die Weberin oder Mercy ihm den Weg, ohne Mitglied der Gruppe: ein Zettel unter der Tür |
 | das Gespräch mit dem Vater ablehnt | Die Einladung kommt zweimal. Beim dritten Mal verkündet Pfötchen die Gründungsnacht trotzdem: „Dann komme ich zu ihm.“ Ohne Gespräch ist im Finale keine Bekehrung möglich |
 | das Angebot des Vaters annimmt | Weg „Der Erbe“ oder Einwebung im Finale vorbereitet. Die Gefährten merken es: Mercy und Corvin sprechen ihn darauf an |
@@ -432,7 +432,7 @@ Malcolm klopft, allein, ohne Mantel. Er hat Wein dabei, den er nicht trinkt.
 | `akt4_rast` | 0–5 | lange Rast ab der Uhr | Fenster, Warnung |
 | `unruhen_stufe` | 0–5 | jede Rast | Plakate, Straße, Hazel |
 | `foto_mutter` | nicht_gefunden, behalten, dem_rat, veroeffentlicht | Hauptquest 4.1 | Vater, Rat, Unruhen |
-| `kammer_resonanz` | offen, hingesehen, weggesehen | Hauptquest 4.1, das Ziehen | Einladung, erster Satz des Vaters, Verwachsung |
+| `kammer_resonanz` | offen, weggelegt, beruehrt, gehalten | Hauptquest 4.1, das Ziehen | Einladung, erster Satz des Vaters, Verwachsung |
 | `vater_gespraech` | keins, beweise, angeknuepft, gedroht, geschwiegen | Hauptquest 4.2 | Schicht 2 im Finale |
 | `vater_angebot` | offen, angenommen, abgelehnt | Hauptquest 4.2 | Finale (Erbe, Einwebung) |
 | `hazel_beistand` | offen, ja, nein | K1 | große Knoten |

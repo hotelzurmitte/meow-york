@@ -197,6 +197,17 @@ func _teste_laufzeit() -> void:
 	GameState.set_flag("hazel_status", "verraten"); GameState.set_flag("mercy_ausgang", "reformerin")
 	_erwarte(GameState.flag("pfoetchen_griff") == "verzweifelt", "fünf Bedrohungen: Griff verzweifelt")
 	GameState.aus_dict({})
+	# Anknüpfen
+	GameState.aus_dict({})
+	GameState.anknuepfen(1)
+	_erwarte(GameState.flag("held_zustand") == "frei", "einmal berühren: frei")
+	GameState.anknuepfen(3); GameState.anknuepfen(2)
+	_erwarte(GameState.flag("held_verwachsung") == 6 and GameState.flag("held_zustand") == "ausgefranst", "berühren, verlieren, halten: Verwachsung 6, ausgefranst")
+	for i in 3: GameState.anknuepfen(1)
+	_erwarte(GameState.flag("knaeuel_aufmerksamkeit") >= 5 and GameState.flag("held_zustand") == "gefaehrdet", "hohe Aufmerksamkeit beschleunigt: gefährdet")
+	GameState.lange_rast()
+	_erwarte(GameState.flag("held_verwachsung") == 10, "Rast senkt die Verwachsung nicht")
+	GameState.aus_dict({})
 	# Zähler bleiben in ihren Grenzen
 	for i in 8: GameState.erhoehen("orden_wachsam")
 	_erwarte(GameState.flag("orden_wachsam") == 5, "erhoehen() stoppt bei max 5")
