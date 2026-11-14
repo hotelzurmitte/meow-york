@@ -93,7 +93,7 @@ Die Stadt wird nach Vierteln gerechnet, weil sie im Finale unterschiedlich reagi
 | **Hairlem** | Waffenstillstand (Nugget bloßgestellt) · Platz gerettet (Mimi, Benny, Pounce) · Tauben befreit | Gang-Hass (Auftrag ausgeführt) · Tauben unter Druck genutzt |
 | **Subfurs** | Hunde befreit · Delta Maes Konzert | Expedition ungestört |
 | **Boney Island** | Shiners Knotenwand · Fitz' Show | Erweckungslager ungestört |
-| **Cathattan** | Gangs ziehen gemeinsam ein · Hazels Liebe legt sich um die Stadt | Unruhen gegen Hazel ungebremst |
+| **Cathattan** | Gangs ziehen gemeinsam ein · Hazels Liebe legt sich um die Stadt · Konzert im Park · Gedenken am Brunnen | Unruhen gegen Hazel ungebremst · Brunnen gestürzt |
 
 **Bilanz je Viertel** (`viertel_<name>`):
 
@@ -107,6 +107,6 @@ Die Stadt wird nach Vierteln gerechnet, weil sie im Finale unterschiedlich reagi
 - `stadt_brand`: von „funken“ (nichts kippt, höchstens ein Viertel wankt) über „strassen“ und „viertel“ bis „cathattan_brennt“ (zwei Viertel kippen oder Cathattan kippt).
 - `verknotung_moeglich`: **mindestens drei Viertel halten und keins kippt.** Der Spieler sieht diesen Wert nie. Er erfährt ihn erst, wenn er im Finale loslässt.
 
-**Cathattan ist der Engpass:** Der Held kommt erst in Akt 4 dorthin, und es gibt dort nur zwei positive Knoten. Akt 4 wird so zum Wettlauf um Cathattan.
+**Cathattan ist der Engpass:** Der Held kommt erst in Akt 4 dorthin. Mit dem Central Bark gibt es dort vier positive Knoten (14.11.), zwei davon über Gefährten (Delta Mae, Barkley). Akt 4 bleibt ein Wettlauf um Cathattan, aber kein unfairer.
 
 Die Liste ist ein Anfang. Weitere große Knoten entstehen beim Schreiben von Akt 2 bis 4, immer mit Viertel und Vorzeichen in `grosse_knoten.json`.

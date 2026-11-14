@@ -244,7 +244,8 @@
     "geisterbahn",
     "hotel_cathattan",
     "mercy_gemeinde",
-    "kanalzugang"
+    "kanalzugang",
+    "kellerstadt"
    ],
    "standard": "cuckoos_nest",
    "akt": "alle",
@@ -1989,7 +1990,10 @@
     "lager_ungestoert",
     "gangs_gemeinsam",
     "hazel_liebe",
-    "unruhen_ungebremst"
+    "unruhen_ungebremst",
+    "konzert_park",
+    "brunnen_gedenken",
+    "brunnen_gestuerzt"
    ],
    "standard": [],
    "akt": "1–4",
@@ -2392,6 +2396,79 @@
     "offen",
     "pfoetchen_bleibt",
     "pfoetchen_verliert"
+   ]
+  },
+  {
+   "name": "akt4_phase",
+   "typ": "int",
+   "standard": 0,
+   "akt": "4",
+   "gesetzt_von": "jede Krise und jede Rast nach dem Gespräch mit dem Vater",
+   "gelesen_von": "Plan der fünf Tage (welche Krisen gerade möglich sind)",
+   "hinweis": "",
+   "min": 0,
+   "max": 10
+  },
+  {
+   "name": "ausgesandt",
+   "typ": "liste",
+   "standard": [],
+   "akt": "4",
+   "gesetzt_von": "Krisen (Gefährten aussenden)",
+   "gelesen_von": "Verletzungen, Zuneigung, Finale",
+   "hinweis": "höchstens einer pro Phase, Zuneigung mindestens mittel",
+   "werte": [
+    "dig",
+    "corvin",
+    "shiner",
+    "knuckles",
+    "weberin",
+    "barkley",
+    "deltamae",
+    "mercy",
+    "fitz"
+   ]
+  },
+  {
+   "name": "hazel_lebt",
+   "typ": "bool",
+   "standard": true,
+   "akt": "4",
+   "gesetzt_von": "K1 (verpasst und ohne Mercy in der Nacht → false)",
+   "gelesen_von": "Finale (Polizei, Leitung), Epilog",
+   "hinweis": "",
+   "werte": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "brunnen",
+   "typ": "enum",
+   "standard": "offen",
+   "akt": "4",
+   "gesetzt_von": "Central Bark, Nebenquest Brunnen der Treue",
+   "gelesen_von": "große Knoten, Barkley",
+   "hinweis": "",
+   "werte": [
+    "offen",
+    "gestuerzt",
+    "umgewidmet",
+    "gelassen"
+   ]
+  },
+  {
+   "name": "konzert_park",
+   "typ": "enum",
+   "standard": "offen",
+   "akt": "4",
+   "gesetzt_von": "Central Bark, Nebenquest Musikmuschel",
+   "gelesen_von": "großer Knoten konzert_park, Delta Mae, Fitz",
+   "hinweis": "",
+   "werte": [
+    "offen",
+    "gelungen",
+    "aufgeloest"
    ]
   }
  ],

@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 158
+- **Variablen insgesamt:** 163
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 113
+- **Story-Variablen:** 118
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -70,7 +70,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `held_verwachsung` | 0–10 | 0 | jedes Anknüpfen (steigt mit Dauer und Aufmerksamkeit) | Gefahr der Einwebung, Ende ‚Einwebung‘ | 2–5 | Regelwerk D2: Risiko, dauerhaft eingesponnen zu werden |
 | `knaeuel_aufmerksamkeit` | 0–10 | 0 | + bei jedem Anknüpfen, − mit der Zeit (lange Rast) | Pfötchens Gegenzüge, held_verwachsung | 2–5 | Regelwerk D2: hohe Aufmerksamkeit löst Gegenzüge aus |
 | `held_hebel_genutzt` | 0–n | 0 | Muster erkannt → Nutzen | Zuneigung aller, Gefährten-Kommentare, Finale | 1–4 | ZUSATZ: kann gestrichen werden |
-| `unterschlupf` | cuckoos_nest, dig_keller, corvin_buero, ubahn_waggon, deltamae_station, acorn_wohnwagen, geisterbahn, hotel_cathattan, mercy_gemeinde, kanalzugang | cuckoos_nest | Wahl des Schlafplatzes / Aktübergang | Lange Rast (Ort und Eröffnungszeile der Lagerszenen) | alle | Hauptunterschlupf je Akt: cuckoos_nest, ubahn_waggon, acorn_wohnwagen, hotel_cathattan |
+| `unterschlupf` | cuckoos_nest, dig_keller, corvin_buero, ubahn_waggon, deltamae_station, acorn_wohnwagen, geisterbahn, hotel_cathattan, mercy_gemeinde, kanalzugang, kellerstadt | cuckoos_nest | Wahl des Schlafplatzes / Aktübergang | Lange Rast (Ort und Eröffnungszeile der Lagerszenen) | alle | Hauptunterschlupf je Akt: cuckoos_nest, ubahn_waggon, acorn_wohnwagen, hotel_cathattan |
 | `odile` | unbekannt, gewonnen, getaeuscht, verletzt | unbekannt | Quest 1.2 (akt1_odile.dialogue) | Weg in die Mission (Abendandacht, Aufnahme), Akt 3 (Lager) | 1 | gewonnen = ehrlich als Bruder, getaeuscht = als Bekehrungswilliger, verletzt = Helfer eingeschüchtert |
 | `orden_wachsam` | 0–5 | 0 | Odile eingeschüchtert, Einbruch in die Mission, weitere Akt-1-Szenen | Listen der Garde, Gegenzüge in Akt 2 | 1–2 | wird mit GameState.erhoehen() gezählt |
 | `odile_moment_gesehen` | ja, nein | nein | Quest 1.2 (Sprung ohne Anlass) | Schlägerei (Held erkennt das Muster), Corvins Notizbuch | 1 |  |
@@ -92,7 +92,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `held_art` | katzenartige, voegel, krokodile, kaengurus, maeuse_ratten, fuechse, marder, insekten, spinnen, primaten | fuechse | Charaktererstellung (Taxi) | Startansehen, Preise, Garde-Kontrollen, Anrede, Schlüsselzeilen (Roach, Hummel, Ilse, Odile, Malcolm, Adikatz, Don Orango, Gus), eigener Weg je Akt | alle | Zehn Gruppen, Daten: data/characters/tierarten.json, Erklärung: docs/story/tierarten.md. Hunde sind gesperrt. Verwandtschaftsoptionen in Dialogen: flag("held_art") == "<gruppe>"; einmal setzen |
 | `held_unterart` | Katze, Schwarzkatze, Tigerkatze, Siamkatze, Perserkatze, Ragdoll, Loewe, Tiger, Leopard, Puma, Panther, Luchs, Rabe, Spatz, Eule, Moewe, Taube, Alligator, Krokodil, Kaiman, Kaenguru, Wallaby, Quokka, Maus, Ratte, Hamster, Maulwurf, Rotfuchs, Polarfuchs, Fennek, Dachs, Marder, Otter, Stinktier, Waschbaer, Kakerlake, Ameise, Biene, Kaefer, Motte, Grille, Webspinne, Springspinne, Vogelspinne, Tarantel, Schimpanse, Gorilla, OrangUtan | Rotfuchs | Charaktererstellung (Taxi) | Aussehen, Form (Hauskatze/Großkatze, Taube, Waschbär, Dachs), Bild von Pfötchens Frau (Rückblenden, Archiv, Foto) | alle | Pfötchens Frau hat genau diese Unterart; einmal setzen |
 | `malcolm_knoten` | ja, nein | nein | genug gemeinsames Erleben mit Malcolm (Bruderschaft) | Finale: Malcolm wendbar? Hält er bei der Zerstörung Wort oder vollzieht er die Raffung? | 2–4 | Ohne Knoten ist die Bruderschaft Malcolms Schwachstelle: Pfötchen schiebt sie zurück in die Treue zum Vater |
-| `grosse_knoten` | waffenstillstand, platz_gerettet, tauben_frei, gang_hass, tauben_gepresst, hunde_frei, deltamae_konzert, expedition_ungestoert, knotenwand, fitz_show, lager_ungestoert, gangs_gemeinsam, hazel_liebe, unruhen_ungebremst | leer | Quest-Ausgänge und Massenereignisse (data/zustaende/grosse_knoten.json) | viertel_*, stadt_brand, verknotung_moeglich | 1–4 | positive und negative große Knoten |
+| `grosse_knoten` | waffenstillstand, platz_gerettet, tauben_frei, gang_hass, tauben_gepresst, hunde_frei, deltamae_konzert, expedition_ungestoert, knotenwand, fitz_show, lager_ungestoert, gangs_gemeinsam, hazel_liebe, unruhen_ungebremst, konzert_park, brunnen_gedenken, brunnen_gestuerzt | leer | Quest-Ausgänge und Massenereignisse (data/zustaende/grosse_knoten.json) | viertel_*, stadt_brand, verknotung_moeglich | 1–4 | positive und negative große Knoten |
 | `viertel_hairlem` | haelt, wankt, kippt | wankt | berechnet | Finale: Verbündete, Brand, Menge | 5 | abgeleitet: Bilanz der großen Knoten in Hairlem: ab +2 hält, 0 bis +1 wankt, unter 0 kippt |
 | `viertel_subfurs` | haelt, wankt, kippt | wankt | berechnet | Finale: Verbündete, Brand, Menge | 5 | abgeleitet: Bilanz der großen Knoten in Subfurs: ab +2 hält, 0 bis +1 wankt, unter 0 kippt |
 | `viertel_boney` | haelt, wankt, kippt | wankt | berechnet | Finale: Verbündete, Brand, Menge | 5 | abgeleitet: Bilanz der großen Knoten in Boney Island: ab +2 hält, 0 bis +1 wankt, unter 0 kippt |
@@ -117,6 +117,11 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `hazel_beistand` | offen, ja, nein | offen | Krisenquest K1 | großer Knoten hazel_liebe oder unruhen_ungebremst | 4 |  |
 | `krisen` | hazel, benny, kellerstadt, pips, rat, razzia, aufstand, feuer, kammern | leer | Krisenquests (geschafft) | Finale, Epilog | 4 |  |
 | `rat_abstimmung` | offen, pfoetchen_bleibt, pfoetchen_verliert | offen | Krisenquest K5 | Pfötchens Griff, Auftreten im Finale | 4 |  |
+| `akt4_phase` | 0–10 | 0 | jede Krise und jede Rast nach dem Gespräch mit dem Vater | Plan der fünf Tage (welche Krisen gerade möglich sind) | 4 |  |
+| `ausgesandt` | dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz | leer | Krisen (Gefährten aussenden) | Verletzungen, Zuneigung, Finale | 4 | höchstens einer pro Phase, Zuneigung mindestens mittel |
+| `hazel_lebt` | ja, nein | ja | K1 (verpasst und ohne Mercy in der Nacht → false) | Finale (Polizei, Leitung), Epilog | 4 |  |
+| `brunnen` | offen, gestuerzt, umgewidmet, gelassen | offen | Central Bark, Nebenquest Brunnen der Treue | große Knoten, Barkley | 4 |  |
+| `konzert_park` | offen, gelungen, aufgeloest | offen | Central Bark, Nebenquest Musikmuschel | großer Knoten konzert_park, Delta Mae, Fitz | 4 |  |
 
 ## Juno
 

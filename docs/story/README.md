@@ -54,8 +54,9 @@ Erarbeitet am 13.11.2026 im Chat zu den Charakterbiografien. Grundlage war das G
 - [ ] **Bekannte Gesichter im Finale erweitern:** Bisher kommen nur Figuren aus Akt 1 in Frage (Station 5, `bekanntes_gesicht_wer`: Benny, Pounce, Odile, Ansgar, Malcolms junger Kater). Beim Schreiben von Akt 2, 3 und 4 prüfen, welche neue Nebenfigur dort stark genug wird, um im Finale gegen den Helden zu stehen. Dann die Liste in `enden.md` und die Berechnung in `GameState` ergänzen. *(Wunsch des Nutzers, 13.11.)*
 - [x] **Riff:** entschieden 14.11. (`quests_und_beziehungsboegen.md`, Abschnitt Lil' Riff). Offen bleibt nur der genaue Ort in Akt 3.
 - [ ] **Malcolm und die Ankunft des Helden (Akt 2):** Das Regelwerk sagt, Malcolm hat ihn hergelockt. In Akt 1 kauft er die Papiere aller allein Angereisten, „er sucht jemanden“. Klären, wie viel er wusste.
-- [x] **Akt 4:** Rückgrat in `akt4_rueckgrat.md`, Szene für Szene in `akt4_szenen.md` (Fassung 1 zur Prüfung). Entschieden 14.11.: Cathattan als eigenes Areal ohne Zeitdruck, erst das Gespräch mit dem Vater startet die Uhr bis zur Gründungsnacht (fünf Rasten, Krisenquests, nicht alle schaffbar), dann Point of no Return, Pfötchen mit dem Rücken zur Wand, Foto der Mutter in der Mitte des Akts. Einzelheiten noch Entwurf.
-- [ ] **Große Knoten:** Liste in `data/zustaende/grosse_knoten.json` mit jedem Akt erweitern, Cathattan braucht mehr als zwei positive.
+- [x] **Akt 4:** Rückgrat in `akt4_rueckgrat.md`, Szene für Szene in `akt4_szenen.md` (Fassung 2, nach externer Kritik, mit Central Bark, Zeitregel mit zwei Phasen pro Tag und Aussenden von Gefährten). Entschieden 14.11.: Cathattan als eigenes Areal ohne Zeitdruck, erst das Gespräch mit dem Vater startet die Uhr bis zur Gründungsnacht (fünf Rasten, Krisenquests, nicht alle schaffbar), dann Point of no Return, Pfötchen mit dem Rücken zur Wand, Foto der Mutter in der Mitte des Akts. Einzelheiten noch Entwurf.
+- [ ] **Große Knoten:** Liste in `data/zustaende/grosse_knoten.json` mit jedem Akt erweitern. Cathattan hat seit 14.11. vier positive (Central Bark).
+- [ ] **Übergänge prüfen (aus der Kritik zu Akt 4):** Sobald Akt 2 und 3 Szene für Szene stehen, prüfen, dass Entscheidungen aus Akt 1 bis 3 die Begegnungen in Cathattan wirklich verändern.
 
 ## Namen (freigegeben)
 

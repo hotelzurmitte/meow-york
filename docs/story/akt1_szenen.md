@@ -689,6 +689,8 @@ Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die D
 
 ## Junos Stimme *(entschieden 13.11.)*
 
+**Was sie ist** *(festgelegt 14.11.)*: weder Juno noch eine Verbindung zu ihr, kein Zauber. Sie ist die Art, Menschen zu lesen, die der Held von Juno gelernt hat, und sie spricht mit Junos Worten, weil er nie eigene gefunden hat. In Akt 4 entlarvt die echte Juno sie auf einem Dach (`akt4_szenen.md`).
+
 **Die Idee:** Der Held liest Menschen, aber er fühlt nicht mit. Früher hat Juno ihm übersetzt, was andere fühlen. Ihre Übersetzungen sind in ihm geblieben. Gelingt eine Einsicht-Probe, erscheint statt einer neutralen Auskunft ihr Satz:
 > *Juno hätte gesagt: Der ist nicht wütend. Der hat Angst.*
 

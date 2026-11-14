@@ -1,20 +1,130 @@
 {
  "beschreibung": "Große Knoten: Momente, in denen viele Menschen gemeinsam etwas erleben. Knoten halten alles fest, auch Hass, deshalb hat jeder ein Vorzeichen. Erreichte Knoten stehen in der Liste „grosse_knoten“. Die Bilanz je Viertel (Summe der Vorzeichen) ergibt viertel_<name>: ab +2 hält, 0 bis +1 wankt, unter 0 kippt. Erklärung: docs/story/zuneigung_und_knoten.md",
- "viertel": ["hairlem", "subfurs", "boney", "cathattan"],
+ "viertel": [
+  "hairlem",
+  "subfurs",
+  "boney",
+  "cathattan"
+ ],
  "knoten": [
-  {"id": "waffenstillstand", "viertel": "hairlem", "vorzeichen": 1, "akt": 1, "ausloeser": "Auftrag: Nugget vor beiden Bossen bloßgestellt"},
-  {"id": "platz_gerettet", "viertel": "hairlem", "vorzeichen": 1, "akt": 1, "ausloeser": "Schlägerei: Mimi, Benny und Pounce gerettet, der Platz hat es gesehen"},
-  {"id": "tauben_frei", "viertel": "hairlem", "vorzeichen": 1, "akt": 2, "ausloeser": "Tauben befreit (Fenster Akt 1–2)"},
-  {"id": "gang_hass", "viertel": "hairlem", "vorzeichen": -1, "akt": 1, "ausloeser": "Auftrag ausgeführt: die Gang des toten Bosses knotet ihren Hass"},
-  {"id": "tauben_gepresst", "viertel": "hairlem", "vorzeichen": -1, "akt": 2, "ausloeser": "Taubennetz unter Druck genutzt"},
-  {"id": "hunde_frei", "viertel": "subfurs", "vorzeichen": 1, "akt": 2, "ausloeser": "befreite Hunde und Ausgestoßene erleben die Befreiung gemeinsam"},
-  {"id": "deltamae_konzert", "viertel": "subfurs", "vorzeichen": 1, "akt": 2, "ausloeser": "Delta Maes Konzert für die Ausgestoßenen"},
-  {"id": "expedition_ungestoert", "viertel": "subfurs", "vorzeichen": -1, "akt": 2, "ausloeser": "die Expedition knotet die Ausgestoßenen ungestört an den Orden"},
-  {"id": "knotenwand", "viertel": "boney", "vorzeichen": 1, "akt": 3, "ausloeser": "Shiners Knotenwand: die Stadt malt ihre gemeinsamen Momente"},
-  {"id": "fitz_show", "viertel": "boney", "vorzeichen": 1, "akt": 3, "ausloeser": "Fitz' Show auf dem Jahrmarkt"},
-  {"id": "lager_ungestoert", "viertel": "boney", "vorzeichen": -1, "akt": 3, "ausloeser": "das Erweckungslager läuft ungestört"},
-  {"id": "gangs_gemeinsam", "viertel": "cathattan", "vorzeichen": 1, "akt": 4, "ausloeser": "Nomapes und Breaking Cats ziehen gemeinsam ein"},
-  {"id": "hazel_liebe", "viertel": "cathattan", "vorzeichen": 1, "akt": 4, "ausloeser": "Hazel verraten, ihre Liebe legt sich um die Stadt"},
-  {"id": "unruhen_ungebremst", "viertel": "cathattan", "vorzeichen": -1, "akt": 4, "ausloeser": "die Unruhen gegen Hazel laufen ungebremst"}
+  {
+   "id": "waffenstillstand",
+   "viertel": "hairlem",
+   "vorzeichen": 1,
+   "akt": 1,
+   "ausloeser": "Auftrag: Nugget vor beiden Bossen bloßgestellt"
+  },
+  {
+   "id": "platz_gerettet",
+   "viertel": "hairlem",
+   "vorzeichen": 1,
+   "akt": 1,
+   "ausloeser": "Schlägerei: Mimi, Benny und Pounce gerettet, der Platz hat es gesehen"
+  },
+  {
+   "id": "tauben_frei",
+   "viertel": "hairlem",
+   "vorzeichen": 1,
+   "akt": 2,
+   "ausloeser": "Tauben befreit (Fenster Akt 1–2)"
+  },
+  {
+   "id": "gang_hass",
+   "viertel": "hairlem",
+   "vorzeichen": -1,
+   "akt": 1,
+   "ausloeser": "Auftrag ausgeführt: die Gang des toten Bosses knotet ihren Hass"
+  },
+  {
+   "id": "tauben_gepresst",
+   "viertel": "hairlem",
+   "vorzeichen": -1,
+   "akt": 2,
+   "ausloeser": "Taubennetz unter Druck genutzt"
+  },
+  {
+   "id": "hunde_frei",
+   "viertel": "subfurs",
+   "vorzeichen": 1,
+   "akt": 2,
+   "ausloeser": "befreite Hunde und Ausgestoßene erleben die Befreiung gemeinsam"
+  },
+  {
+   "id": "deltamae_konzert",
+   "viertel": "subfurs",
+   "vorzeichen": 1,
+   "akt": 2,
+   "ausloeser": "Delta Maes Konzert für die Ausgestoßenen"
+  },
+  {
+   "id": "expedition_ungestoert",
+   "viertel": "subfurs",
+   "vorzeichen": -1,
+   "akt": 2,
+   "ausloeser": "die Expedition knotet die Ausgestoßenen ungestört an den Orden"
+  },
+  {
+   "id": "knotenwand",
+   "viertel": "boney",
+   "vorzeichen": 1,
+   "akt": 3,
+   "ausloeser": "Shiners Knotenwand: die Stadt malt ihre gemeinsamen Momente"
+  },
+  {
+   "id": "fitz_show",
+   "viertel": "boney",
+   "vorzeichen": 1,
+   "akt": 3,
+   "ausloeser": "Fitz' Show auf dem Jahrmarkt"
+  },
+  {
+   "id": "lager_ungestoert",
+   "viertel": "boney",
+   "vorzeichen": -1,
+   "akt": 3,
+   "ausloeser": "das Erweckungslager läuft ungestört"
+  },
+  {
+   "id": "gangs_gemeinsam",
+   "viertel": "cathattan",
+   "vorzeichen": 1,
+   "akt": 4,
+   "ausloeser": "Nomapes und Breaking Cats ziehen gemeinsam ein"
+  },
+  {
+   "id": "hazel_liebe",
+   "viertel": "cathattan",
+   "vorzeichen": 1,
+   "akt": 4,
+   "ausloeser": "Hazel verraten, ihre Liebe legt sich um die Stadt"
+  },
+  {
+   "id": "unruhen_ungebremst",
+   "viertel": "cathattan",
+   "vorzeichen": -1,
+   "akt": 4,
+   "ausloeser": "die Unruhen gegen Hazel laufen ungebremst"
+  },
+  {
+   "id": "konzert_park",
+   "viertel": "cathattan",
+   "vorzeichen": 1,
+   "akt": 4,
+   "ausloeser": "Delta Maes Konzert in der Musikmuschel im Central Bark, alle Ränge auf einer Wiese"
+  },
+  {
+   "id": "brunnen_gedenken",
+   "viertel": "cathattan",
+   "vorzeichen": 1,
+   "akt": 4,
+   "ausloeser": "Brunnen der Treue umgewidmet: die Namen der Hunde auf dem Sockel"
+  },
+  {
+   "id": "brunnen_gestuerzt",
+   "viertel": "cathattan",
+   "vorzeichen": -1,
+   "akt": 4,
+   "ausloeser": "Brunnen der Treue gestürzt: die Katzen Cathattans halten am Hass auf Hunde fest"
+  }
  ]
 }
