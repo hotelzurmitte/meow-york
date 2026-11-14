@@ -806,8 +806,8 @@
     false
    ],
    "standard": false,
-   "akt": "alle",
-   "gesetzt_von": "Rekrutierung",
+   "akt": "1",
+   "gesetzt_von": "Lazarett nach der Schlägerei (Akt 1), sonst Expedition (Akt 2) oder Lazarettzelt (Akt 3)",
    "gelesen_von": "Lange Rast (wer im Unterschlupf ist), offene_lagerszenen()",
    "hinweis": "beigetreten ≠ in der aktiven Gruppe"
   },
@@ -2207,6 +2207,50 @@
    "gesetzt_von": "berechnet",
    "gelesen_von": "Pfötchens Züge in Akt 4 (Tempo des Verrats an Hazel, Pips), Härte in der Gründungsnacht",
    "hinweis": "siehe akt4_rueckgrat.md, Abschnitt 4"
+  },
+  {
+   "name": "mercy_erstkontakt",
+   "typ": "enum",
+   "werte": [
+    "keiner",
+    "andacht",
+    "kueche",
+    "nacht",
+    "lazarett"
+   ],
+   "standard": "keiner",
+   "akt": "1",
+   "gesetzt_von": "Quest 1.3 (Krankenstube), Lazarett",
+   "gelesen_von": "Mercys erste Zeilen, Zuneigung, Lagerszene",
+   "hinweis": ""
+  },
+  {
+   "name": "mercy_schweigepflicht",
+   "typ": "enum",
+   "werte": [
+    "offen",
+    "respektiert",
+    "gebrochen"
+   ],
+   "standard": "offen",
+   "akt": "1",
+   "gesetzt_von": "Pflicht-Lagerszene Mercy (Akt 1)",
+   "gelesen_von": "Knötchen, juno_spur, Mercys Vertrauen in Akt 3",
+   "hinweis": "respektiert: Knötchen; gebrochen: juno_spur +1, Zuneigung −2"
+  },
+  {
+   "name": "mercy_expedition",
+   "typ": "enum",
+   "werte": [
+    "offen",
+    "geblieben",
+    "mitgegangen"
+   ],
+   "standard": "offen",
+   "akt": "2",
+   "gesetzt_von": "Akt 2, Befehl des Ordens",
+   "gelesen_von": "Mercy in Akt 2 und 3, großer Knoten ‚Expedition ungestört‘, Junos erste Nachricht",
+   "hinweis": "mitgegangen: verlässt die Gruppe für einen Teil von Akt 2"
   }
  ],
  "prototyp_flags": [

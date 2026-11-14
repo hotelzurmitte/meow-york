@@ -287,12 +287,28 @@ Juno und Fitz kann sie nicht herausschneiden, weil beide außerhalb von Meow Yor
 
 ## Schwester Mercy: „Die Krankenakte“
 
-**Auslöser (Akt 3):** Die Gruppe kommt mit einem Verletzten in Mercys Lazarettzelt auf Boney Island.
+**Auslöser (Akt 1, seit 14.11.):** Mercy ist die Ärztin der Ordensmission in Hairlem. Der Held trifft sie in der Mission (jeder Weg hinein führt an ihrer Krankenstube vorbei) oder spätestens nach der Schlägerei, wenn sie in Malcolms Lazarett die Verletzten beider Seiten versorgt. Dort schließt sie sich an (`mercy_beigetreten`): Sie will wissen, was mit ihren Patienten passiert, und warum der Puls des Helden ruhig blieb, als der Platz brannte.
+
+**Sicherungen, damit man sie nie ganz verpasst:**
+- **Akt 1:** in der Mission (erster Kontakt) und im Lazarett nach der Schlägerei (Beitritt).
+- **Weigert sie sich in Akt 1** (Zuneigung unter −3, etwa weil der Held Ansgar verprügeln ließ oder Odile verletzt hat): Sie bleibt in der Mission. Zweite Gelegenheit in Akt 2 bei der Expedition, dritte in Akt 3 im Lazarettzelt auf Boney Island (der alte Auslöser).
+- **Wer die Mission nie betritt,** trifft sie im Lazarett nach der Schlägerei zum ersten Mal.
 
 **Stationen:**
 
-- **Akt 3, das Zelt:** Mercy zeigt ihre Notizen: Gläubige mit Leere an anderer Stelle, junge Menschen mit rätselhafter Erschöpfung. Ein Patient ist Pips. Eine regelmäßige Besucherin ist Juno, die nach jeder Rede mit Kopfschmerzen kommt. Mercy ahnt, dass Junos Zerrissenheit kein Kopfschmerz ist.
-- **Akt 3, Wendepunkt:** Der Lagerprediger befiehlt Mercy, zweifelnde Gläubige mit Beruhigungsmitteln „zur Ruhe zu bringen“, damit sie die nächste Predigt aufnehmen. Mercy weigert sich und flieht mit ihren Akten.
+- **Akt 1, die Krankenstube:** Je nach Weg in die Mission begegnet sie dem Helden anders:
+  - **Zur Andacht oder Aufnahme:** Sie misst bei der Aufnahme den Puls der Neuen. Beim Helden stutzt sie: „Ruhig. Bei der Predigt. Interessant.“
+  - **Als Helfer in der Küche:** Sie erkennt Junos Armband und lässt ihn gewähren, ohne ein Wort.
+  - **Nachts eingebrochen:** Sie hat Nachtdienst bei einem Patienten und erwischt ihn. Lügen ist schwer (Täuschen gegen ihre Einsicht). Mit der Wahrheit deckt sie ihn und sagt nur: „Das Buch liegt im Büro. Ich habe es nicht gesagt.“
+  - **Über Juno** schweigt sie, denn sie hat Schweigepflicht. Über Riff redet sie, denn „wer verschwunden ist, hat keine Geheimnisse mehr, die ich schützen müsste“.
+- **Akt 1, nach der Schlägerei:** Sie ist im Hinterhof-Lazarett, eine Ordensärztin bei den Rebellen, weil sie jeden behandelt. Malcolm schätzt sie, sie traut ihm nicht: „Er redet wie ein Prediger. Ich kenne Prediger.“ Hier schließt sie sich an.
+- **Akt 1, Pflicht-Lagerszene:** Sie zeigt ihre ersten Notizen (Grimm, Riff, „Leere an anderer Stelle“). Drängt der Held sie wegen Juno, bricht sie die Schweigepflicht (`juno_spur` +1, Zuneigung −2): „Sie kam nach jeder Andacht mit Kopfschmerzen.“ Respektiert er sie, gibt es ein Knötchen.
+- **Akt 1, Ende:** Bei der Predigt im Fernsehen sagt sie leise: „Gnade fühlt sich anders an. Gnade kostet etwas.“ Am nächsten Morgen kommt der Befehl: Sie soll die Expedition als Ärztin begleiten.
+- **Akt 2, die Expedition** (`mercy_expedition`): Sie entscheidet, und der Spieler kann sie beeinflussen:
+  - **Bleibt bei der Gruppe:** Die Expedition geht ohne Ärztin, die Ausgestoßenen werden schlechter versorgt, und der große Knoten „Expedition ungestört“ wird wahrscheinlicher. Der Orden notiert ihren Ungehorsam, im Lager auf Boney Island steht sie unter Beobachtung.
+  - **Geht mit:** Sie verlässt die Gruppe für einen Teil von Akt 2. Der Held trifft sie unten wieder, auf der Seite des Ordens, bei Juno. Sie gibt ihm heimlich, was sie sieht, und kommt zurück, wenn er die Expedition erreicht. Von ihr hört er als Erstes, wie es Juno wirklich geht.
+- **Akt 3, das Zelt (hier nimmt ihre Geschichte Fahrt auf):** Der Orden schickt sie ins Lazarettzelt des Erweckungslagers. Mercy zeigt ihre Notizen: Gläubige mit Leere an anderer Stelle, junge Menschen mit rätselhafter Erschöpfung. Ein Patient ist Pips. Eine regelmäßige Besucherin ist Juno, die nach jeder Rede mit Kopfschmerzen kommt. Mercy ahnt, dass Junos Zerrissenheit kein Kopfschmerz ist.
+- **Akt 3, Wendepunkt:** Der Lagerprediger befiehlt Mercy, zweifelnde Gläubige mit Beruhigungsmitteln „zur Ruhe zu bringen“, damit sie die nächste Predigt aufnehmen. Mercy weigert sich und flieht mit ihren Akten. Weil der Spieler sie seit Akt 1 kennt, ist das kein Fremdenschicksal, sondern der Bruch einer Gefährtin mit allem, woran sie gearbeitet hat. War sie in Akt 2 mit der Expedition unterwegs, kennt der Prediger ihren Ungehorsam nicht, und sie kann vorher heimlich Patienten herausschmuggeln.
 - **Akt 3, unschöner Moment:** Die Weberin ist verletzt. Mercy weigert sich zuerst, sie zu behandeln: „Du hast genug Wunden verursacht.“ Der Spieler kann sie umstimmen oder ihr recht geben.
 - **Akt 4, Cathattan:** Mercy will ihre Akten vor dem Ordensrat vorlegen, nicht vor dem Rathaus. Sie glaubt, dass der Orden sich selbst reinigen muss.
 
@@ -308,7 +324,7 @@ Juno und Fitz kann sie nicht herausschneiden, weil beide außerhalb von Meow Yor
 
 **Unschöne Seite:** Unbarmherziges Urteilen. Sie hält Juno für mitschuldig, weil sie mit Überzeugung predigt, und sagt es ihr ins Gesicht.
 
-**Kreuzungen:** Big Dig (Pips) · Juno (Patientin) · Weberin (Schuld) · Knuckles (Fürsorge) · Pfötchen (Glaube gegen Glaube) · Hazel (die Akten)
+**Kreuzungen:** Big Dig (Pips, und das Weiß, das er hasst) · Juno (Patientin seit der Mission in Hairlem) · Riff (ihr Patient, bevor die Garde ihn holte) · Weberin (Schuld) · Knuckles (Fürsorge) · Malcolm (das Lazarett) · Pfötchen (Glaube gegen Glaube) · Hazel (die Akten)
 
 ---
 
@@ -392,7 +408,8 @@ Jeder Bogen hat eine **Ausgangslage**, einen **Wendepunkt**, der an einen Quest-
 - **Wirkt auf:** Big Digs Quest. Mit diesem Wissen wird „Neu verknotet“ leichter. Und es stellt die Frage, ob sie Pips herausschneiden soll, um ihn zu schützen.
 
 ### Big Dig und Mercy · Verdacht → Verbündete
-- **Ausgangslage:** Mercy trägt Weiß. Big Dig hat in Akt 1 schon einmal jemanden in Weiß verprügelt.
+- **Ausgangslage (Akt 1):** Mercy trägt Weiß, und Big Dig hasst Weiß, seit Pips verschwunden ist. Hat er Ansgar verprügelt, hat Mercy die Wunden versorgt. Die beiden beginnen den Akt als Gegner in derselben Gruppe.
+- **Erster Riss (Akt 1):** Sie verbindet ihm nach der Schlägerei die Pfote, ohne ein Wort über Ansgar. Er bedankt sich nicht.
 - **Wendepunkt (Akt 3):** Mercy lässt ihn nachts zu Pips, gegen ihre Vorschriften.
 - **Veränderung:** Big Dig betet zum ersten Mal mit ihr, unbeholfen, zur Erde.
 - **Wirkt auf:** Mercys Bruch mit dem Lager kommt früher, weil sie schon einmal eine Regel gebrochen hat.
@@ -546,7 +563,7 @@ Die Gruppe hat bis zu vier Figuren inklusive Held, also drei Gefährten. Szenen 
 | Weberin | Schiebt die Schuld an Malcolm auf Pfötchen | Akt 2–3 |
 | Barkley | Inszeniert Verrate auf Kosten Unschuldiger | Akt 3 |
 | Delta Mae | Will die Stimme eines Fremden opfern | Akt 2 |
-| Mercy | Verurteilt Juno und verweigert die Weberin | Akt 3 |
+| Mercy | Verurteilt Juno und verweigert die Weberin. In Akt 1 bricht sie unter Druck ihre Schweigepflicht | Akt 1, Akt 3 |
 | Fitz | Gefährdet ein Kind für einen Stunt | Akt 3 |
 
 ---

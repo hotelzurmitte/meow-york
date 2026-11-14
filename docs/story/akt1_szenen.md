@@ -46,7 +46,9 @@ Spannung entsteht, wenn der Spieler Fragen hat, die das Spiel nach und nach bean
 | 3 · Der Mantelmann | Corvins Fall | Corvin | Quest 1 (Mission), Quest 2 (Pips) |
 | 4 · Der goldene Ghettoblaster | Geld und Bandenkrieg | Shiner oder Knuckles später | Quest 1 (Riff im Aufnahmebuch), Malcolm |
 
-**Sicherungen:** Big Dig und Corvin kann man nicht ganz verpassen. Wer ihre Quests auslässt, trifft beide spätestens bei der Schlägerei, dann mit weniger gemeinsamer Vorgeschichte. Die Schlägerei beginnt, sobald Quest 4 entschieden ist. Wer Quest 4 liegen lässt, erlebt sie spätestens nach Junos Nachricht in der Mission (Quest 1), weil die Gangs dann ohne ihn losschlagen.
+**Mercy** *(seit 14.11. Gefährtin in Akt 1)* hat keine eigene Quest in Akt 1. Sie ist die Ärztin der Mission (Quest 1.3) und schließt sich nach der Schlägerei im Lazarett an. Sie bringt die erste Heilung und Magie in die Gruppe (Street Saint, Hoodoo).
+
+**Sicherungen:** Big Dig, Corvin und Mercy kann man nicht ganz verpassen. Mercy trifft jeder spätestens im Lazarett nach der Schlägerei, und lehnt sie dort ab, gibt es zwei weitere Gelegenheiten in Akt 2 und 3. Wer ihre Quests auslässt, trifft beide spätestens bei der Schlägerei, dann mit weniger gemeinsamer Vorgeschichte. Die Schlägerei beginnt, sobald Quest 4 entschieden ist. Wer Quest 4 liegen lässt, erlebt sie spätestens nach Junos Nachricht in der Mission (Quest 1), weil die Gangs dann ohne ihn losschlagen.
 
 ---
 
@@ -174,6 +176,19 @@ Spannung entsteht, wenn der Spieler Fragen hat, die das Spiel nach und nach bean
 | Nachts von unten | Big Dig gräbt sich in den Vorratskeller |
 | In der Suppenschlange | jeder, aber dann muss er hinten einbrechen (Schleichen oder Schloss) |
 
+**Die Krankenstube und Schwester Mercy** *(seit 14.11.)*: Neben der Suppenküche liegt Mercys kleine Krankenstube. Jeder Weg in die Mission führt an ihr vorbei (`mercy_erstkontakt`):
+
+| Weg | Mercy |
+| --- | --- |
+| Andacht oder Aufnahme | Sie misst den Puls der Neuen. Beim Helden stutzt sie: „Ruhig. Bei der Predigt. Interessant.“ |
+| Küche mit Junos Armband | Sie erkennt das Armband und lässt ihn gewähren, ohne ein Wort |
+| Nachts von oben, von unten oder durch die Schlange | Sie hat Nachtdienst und erwischt ihn. Lügen: Täuschen gegen ihre Einsicht, schwer. Mit der Wahrheit deckt sie ihn: „Das Buch liegt im Büro. Ich habe es nicht gesagt.“ |
+| Odile verletzt oder Ansgar verprügelt | Sie hat die Wunden versorgt. Sie ist kühl, Zuneigung beginnt bei −3, bei beidem bei −6 (dann lehnt sie im Lazarett ab) |
+
+- **Über Juno schweigt sie,** denn sie hat Schweigepflicht. Über Riff redet sie: „Er kam zu mir, verstört, redete vom Knäuel. Am Morgen war er weg. Wer verschwunden ist, hat keine Geheimnisse mehr, die ich schützen müsste.“ Damit bekommt der Eintrag im Aufnahmebuch ein Gesicht.
+- **Big Dig** (wenn dabei) stellt sich zwischen sie und den Helden: Sie trägt Weiß. Mercy sieht ihn nur an: „Setz dich. Du blutest.“ Er blutet tatsächlich, er hatte es nicht gemerkt.
+- **Komik:** Ein Patient flüstert dem Helden zu, sie habe drei Ehemänner gehabt, und alle seien „verschwunden“. Mercy hört es und widerspricht nicht.
+
 **Was er drinnen findet:**
 - **Das Aufnahmebuch:**
   - *Juno:* „Helferin, Rednerinnen-Ausbildung, Expedition Untergrund.“
@@ -280,7 +295,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | **Beschatten** (mit Corvin über die Dächer) | Er führt zur Ordensmission und öffnet so Quest 1.3. Die Dachebene ist danach frei |
 | **Stellen und befragen** | Er erzählt bereitwillig und meldet es dem Orden. `orden_wachsam` +1 |
 | **Nur die Liste abschreiben** | Corvins Pinnwand wächst, kein Alarm |
-| **Big Dig gewähren lassen** | Ansgar wird verprügelt, `orden_wachsam` +2. Mimi hat danach Angst vor Big Dig |
+| **Big Dig gewähren lassen** | Ansgar wird verprügelt, `orden_wachsam` +2. Mimi hat danach Angst vor Big Dig. Mercy versorgt Ansgar und weiß, wer es war (Zuneigung −3, wenn sie sich anschließt) |
 
 **Corvin schließt sich an** (`corvin_beigetreten`): „Du kannst mich nicht bezahlen. Also bezahlst du mich später.“ Es erscheint nur „Corvin wird sich daran erinnern“. Der erste Knoten kommt erst nach der Schlägerei.
 
@@ -387,6 +402,9 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 - **Teure Schuhe:** Wer Roachs Buchführung gelesen hat, bemerkt die Schuhe (Wahrnehmung). Fragt er nach, erklärt der junge Kater stolz: „Malcolm kauft die Papiere der Neuen, bevor die Garde sie kriegt. Wer keine Papiere hat, steht auf keiner Liste.“ Ein Zweifel, sofort entschärft. Er kehrt erst in Akt 2 zurück.
 - **Ganz beiläufig fragt er,** aber nur, wenn er etwas wissen kann (`kassette_gesehen_von` ist nicht „niemand“, oder die Kassette fiel beim Battle heraus): „Bei eurem Tanz ist doch was aus dem Ghettoblaster gefallen, oder?“ beziehungsweise „Nugget sagt, in dem Ghettoblaster war was drin.“ Weiß er nichts, fragt er auch nichts. Wer lügt, braucht Täuschen gegen Malcolm, und das ist schwer, denn er liest jeden. **Beim Helden kann er es nicht lesen**, und das irritiert ihn kurz (Einsicht). Wer die Wahrheit sagt, bekommt ein Angebot: Geld, „als Andenken für Adikatz, der Junge war wie ein kleiner Bruder für uns alle“.
 - **Junos Stimme** (Einsicht gelingt): „Juno hätte gesagt: Der meint jedes Wort.“ Sie hat recht, und genau das ist das Problem. Malcolm meint es ernst, nur nicht so, wie der Held denkt. Es ist der erste Moment, in dem ihre Deutung später kippt (siehe *Junos Stimme*).
+- **Mercy ist auch hier,** eine Ordensärztin bei den Rebellen, weil sie jeden behandelt. Malcolm schätzt sie, sie traut ihm nicht: „Er redet wie ein Prediger. Ich kenne Prediger.“ Sie verbindet Big Dig die Pfote, ohne ein Wort über Ansgar.
+- **Mercy schließt sich an** (`mercy_beigetreten`), wenn ihre Zuneigung nicht unter −3 liegt: „Ihr Puls war ruhig, als der Platz brannte. Meine Patienten verschwinden, und Sie sind der Einzige, der dabei ruhig bleibt. Ich will wissen, warum.“ Lehnt sie ab, bleibt sie in der Mission, und die nächste Gelegenheit kommt in Akt 2.
+- **Lagerszene Mercy (Pflicht):** Sie betet vier Stunden, die Gruppe schläft schlecht. Dann zeigt sie ihre ersten Notizen: Grimm, Riff, „Leere an anderer Stelle“. Drängt der Held sie wegen Juno, bricht sie die Schweigepflicht (`juno_spur` +1, Zuneigung −2): „Sie kam nach jeder Andacht mit Kopfschmerzen.“ Respektiert er sie, gibt es ein Knötchen (`mercy_schweigepflicht`).
 - **Corvin** vertraut ihm, er ist sein bester Informant, seit zwölf Jahren. Dass er sich regelmäßig mit einem gesuchten Mann trifft, hat er nie jemandem erzählt. **Big Dig** brummt nur, aber er lässt sich die Pfote verbinden und bedankt sich.
 
 ### Der Ärger um die Kassette
@@ -501,11 +519,13 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 - Der Held sieht es als Einziger als das, was es ist: Odiles Moment, Nuggets Kippen, die Schlägerei, und jetzt das Gegenteil. **Derselbe, der das Feuer gelegt hat, löscht es auch, und am Ende lieben ihn alle dafür.** Gezeigt wird das nur durch die Reihenfolge: erst die Schlägerei, dann die Predigt, dann Menschen, die am Fernseher weinen vor Dankbarkeit.
 - **Junos Gesicht im Fernsehen.** Am Ende der Predigt segnet Pfötchen „unsere Expedition in die Tiefe“. Bilder vom Aufbruch am U-Bahn-Gitter, und für zwei Sekunden Juno in Weiß, ruhig, mit einem Lächeln, das der Held nicht kennt. Wer den Zettel gefunden hat, bekommt die Bestätigung. Wer die Mission nie betreten hat, erfährt hier, wohin sie gegangen ist. So funktioniert das Ende auch für Spieler, die Quest 1 ausgelassen haben.
 - Corvin, sehr leise: „Das Rathaus regiert nicht.“ Mehr Erklärung braucht es nicht.
+- **Mercy** (wenn dabei) sieht zu, wie die Menschen am Fernseher weinen: „Gnade fühlt sich anders an. Gnade kostet etwas.“
 
 ### Abstieg
 *über den Tunnel der gewählten Gang*
 
-- **Warnung vor dem Übergang**, als Kommentar der Gefährten: Corvin erinnert an offene Tauben, Big Dig sagt: „Wenn wir runtergehen, sind wir eine Weile weg.“ Hummel gibt Honig mit, wenn ihre Quest erledigt ist.
+- **Warnung vor dem Übergang**, als Kommentar der Gefährten: Corvin erinnert an offene Tauben, Big Dig sagt: „Wenn wir runtergehen, sind wir eine Weile weg.“
+- **Mercys Befehl:** Am Morgen vor dem Abstieg bekommt Mercy (ob in der Gruppe oder in der Mission) den Befehl, die Expedition als Ärztin zu begleiten. Ob sie geht oder bei der Gruppe bleibt, entscheidet sich in Akt 2 (`mercy_expedition`). Hummel gibt Honig mit, wenn ihre Quest erledigt ist.
 - Über die Brücken kommt der Held nicht: Er hat keine Papiere, und „der Fadenlose“ steht jetzt auf den Listen der Garde. Unten sind Juno, Riffs Spur und das, was „noch da unten liegt“.
 - `akt_wechseln(2)`.
 
@@ -544,6 +564,7 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | Junos Zettel | Big Dig versucht zu trösten, ungeschickt. Er bietet einen Stein an: „Der hier hilft mir manchmal.“ |
 | Pips im Aufnahmebuch | Mimi will Big Dig beibringen, wie man „Fang mich doch“ spielt |
 | Die Schlägerei | Knuckles entschuldigt sich bei jedem, den sie getroffen hat, einzeln |
+| Mercy im Lazarett | Corvin fragt sie nach den drei Ehemännern. Sie antwortet: „Welche drei?“ |
 | Die Kassette | Corvins Monolog über Vertrauen, so übertrieben noir, dass Shiner ihn nachäfft. Bei Nuggets Hinterhalt: Knuckles' falsche Kassette spielt ihr Lieblingslied aus der Telenovela |
 | Die Predigt | keiner. Hier soll es kalt bleiben bis zum Abstieg |
 
@@ -560,7 +581,11 @@ Darunter steht ein angefangenes „Schraubensch…“, durchgestrichen, und dane
 | Odile verletzt | Andere Wege in die Mission bleiben offen. Odile taucht in Akt 3 im Lager wieder auf und erinnert sich |
 | Hummels Vertrauen verliert | Kein Zimmer auf Pump mehr. Big Digs Keller oder Corvins Büro werden zum Unterschlupf |
 | Big Dig Ansgar verprügeln lässt | Mimi meidet Big Dig bis Akt 2. Big Digs Zuneigung zum Helden steigt trotzdem, das ist seine unschöne Seite |
-| den Auftrag ausführt | Der Gefährte der Gegenseite ist verloren, die andere Gang bleibt bis Akt 4 feindlich |
+| den Auftrag ausführt | Der Gefährte der Gegenseite ist verloren, die andere Gang bleibt bis Akt 4 feindlich. Mercy missbilligt stark (Zuneigung −3, ein negativer Knötchen-Moment). Sie bleibt, verbindet aber den toten Boss und betet für ihn |
+| Mercy nie in der Mission trifft | erster Kontakt im Lazarett nach der Schlägerei, ohne Vorgeschichte |
+| Mercy in der Mission erwischt ihn und er lügt | Gelingt es: Sie glaubt ihm, kühl. Misslingt es: Zuneigung −2, aber sie verrät ihn nicht |
+| Mercy ablehnt (Zuneigung unter −3) | Sie bleibt in der Mission. Zweite Gelegenheit bei der Expedition in Akt 2, dritte im Lazarettzelt in Akt 3 |
+| Big Dig und Mercy beide in der Gruppe sind | Reibung über das Weiß. Big Dig misstraut ihr bis zum ersten Riss (die verbundene Pfote) |
 
 **Die Kassette:** keine Pflicht-Spur mehr, siehe „Wer die Kassette bekommt“. Ohne sie fehlt beim Auftrag der Weg „Nugget bloßstellen“ mit dem Band als Beweis. Er bleibt mit Beobachtungen allein möglich, ist dann aber deutlich schwerer.
 
@@ -634,6 +659,9 @@ Alle stehen jetzt im Register (für die Papier-Spieltests), dazu `mimi_vertraut`
 | `kassette_gehoert` | ja, nein | Anhören | Corvins Vertrauen, Auftrag, Weberin in Akt 2 (Stimme erkannt) |
 | `auftrag_ausgang` | offen, ausgefuehrt, vorgetaeuscht, gewarnt, doppelt, nugget_entlarvt | Der Auftrag | Gang-Wahl, Bosse in Akt 4 |
 | `orden_wachsam` | 0–5 | mehrere | Listen der Garde, Gegenzüge in Akt 2 |
+| `mercy_erstkontakt` | keiner, andacht, kueche, nacht, lazarett | Quest 1.3, Lazarett | Mercys erste Zeilen, Zuneigung |
+| `mercy_schweigepflicht` | offen, respektiert, gebrochen | Lagerszene Mercy | Knötchen, Juno-Spur |
+| `mercy_expedition` | offen, geblieben, mitgegangen | Akt 2 | Mercy in Akt 2 und 3 |
 
 Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die Dialoge umgebaut sind.
 
@@ -651,6 +679,8 @@ Die Prototyp-Flags (`mimiFound`, `hasTape`, `pilgerGeld` …) bleiben, bis die D
 - Vincenzo ist ein Chamäleon statt eines Flughörnchens und sitzt auf den Dächern von Hairlem.
 
 ## Was sich gegenüber dem GDD ändert
+
+- **Mercy ist ab Akt 1 Gefährtin** (14.11.), als Ärztin der Mission in Hairlem. Damit hat schon Akt 1 Heilung und Magie. In Akt 3 kommt nur Fitz neu dazu.
 
 - Keine sichtbaren Monsterhunde: Kontrollposten der Ordensgarde an den Brücken, Monsterhunde nur im Verborgenen *(entschieden)*.
 - Juno sieht der Held in Akt 1 nur aus der Ferne. Die erste Begegnung bleibt in Akt 2.
@@ -685,6 +715,7 @@ So ist Juno in jedem Gespräch dabei, auch wenn sie fehlt, und der Spieler spür
 | Hummel am ersten Abend | „Der redet viel, damit keiner fragt, wie's ihm geht.“ | ja |
 | Nugget vor der Schlägerei | „Der will nicht den Ghettoblaster. Der will, was jemand ihm dafür gibt.“ | ja |
 | Malcolm im Lazarett | „Der meint jedes Wort.“ | ja, aber irreführend |
+| Mercy beim Gebet | „Die betet nicht. Die hält sich fest.“ | ja |
 | Malcolm auf der Kassette | „Der hat Angst. Nicht vor der Frau. Um jemanden.“ | ja |
 | Big Dig, wenn er nach Pips fragt | keine Stimme. Juno kannte niemanden, der ein Kind verloren hat | – |
 

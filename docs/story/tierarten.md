@@ -129,7 +129,7 @@ Die Ärmsten von Hairlem und der größte Sündenbock der Stadt, noch vor den Ta
 - **Roach:** „Einer von uns.“ Er raubt ihn trotzdem aus, und das ist härter als bei jedem anderen: „Geschäft ist Geschäft, Bruder. Du hättest dasselbe gemacht.“
 - Ilse gibt mehr Hinweise ohne Probe, Hummel gibt Rabatt, Antonia öffnet die Garage ohne Probe. Der Orden nimmt ihn sofort auf („Gerade die Kleinsten nehmen wir zuerst“), und das passt bedrückend zu Roachs Liste. Die Garde hält ihn schon bei `orden_wachsam` 1 an.
 - **Sündenbock:** Pfötchen lenkt Wut am liebsten auf Insekten, denn der Hass auf sie ist alt, abstrakt und kaum verknotet. Bei der Schlägerei und in der Gründungsnacht richtet sich ein Teil der Welle gegen den Helden selbst, wie bei der Taube.
-- **Verwandt: Mercy** (Gottesanbeterin, Akt 3). Sie spricht mit ihm über Glauben, wie mit keinem anderen.
+- **Verwandt: Mercy** (Gottesanbeterin, Akt 1). Sie spricht mit ihm über Glauben, wie mit keinem anderen.
 
 ### Spinnen
 Spinnen gelten in Meow York als unheimlich. Man fürchtet sie und braucht sie.

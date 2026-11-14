@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 145
+- **Variablen insgesamt:** 148
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 100
+- **Story-Variablen:** 103
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -197,6 +197,9 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `mercy_akten` | ordensrat, presse_hazel, zurueckgehalten | zurueckgehalten | Mercy K4 | hazel_status, mercy_ausgang | 4 |  |
 | `mercy_ausgang` | reformerin, abtruennige, schweigende | schweigende | Mercy K4 | Finale | 4 | einmal setzen |
 | `mercy_knoetchen` | 0–9 | 0 | GameState.knoetchen(): Knotenmomente +1 (Schlägerei, tiefe Gespräche, Lagerszenen mit Entscheidung, Höhepunkt der persönlichen Quest, außergewöhnliche Tat vor ihren Augen), negative gemeinsame Momente −1, Verrat → 0 | mercy_knoten (3 Knötchen = 1 Knoten) | alle | siehe docs/story/zuneigung_und_knoten.md |
+| `mercy_erstkontakt` | keiner, andacht, kueche, nacht, lazarett | keiner | Quest 1.3 (Krankenstube), Lazarett | Mercys erste Zeilen, Zuneigung, Lagerszene | 1 |  |
+| `mercy_schweigepflicht` | offen, respektiert, gebrochen | offen | Pflicht-Lagerszene Mercy (Akt 1) | Knötchen, juno_spur, Mercys Vertrauen in Akt 3 | 1 | respektiert: Knötchen; gebrochen: juno_spur +1, Zuneigung −2 |
+| `mercy_expedition` | offen, geblieben, mitgegangen | offen | Akt 2, Befehl des Ordens | Mercy in Akt 2 und 3, großer Knoten ‚Expedition ungestört‘, Junos erste Nachricht | 2 | mitgegangen: verlässt die Gruppe für einen Teil von Akt 2 |
 
 ## Fitz
 

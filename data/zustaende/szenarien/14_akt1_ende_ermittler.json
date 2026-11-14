@@ -38,6 +38,9 @@
   "malcolm_risse": 2,
   "orden_wachsam": 0,
   "juno_stimme": 1,
-  "auftrag_ausgang": "nugget_entlarvt"
+  "auftrag_ausgang": "nugget_entlarvt",
+  "mercy_beigetreten": true,
+  "mercy_erstkontakt": "nacht",
+  "mercy_schweigepflicht": "respektiert"
  }
 }

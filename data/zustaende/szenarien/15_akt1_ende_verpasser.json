@@ -16,6 +16,8 @@
   "fadenlos": true,
   "kassette": "nugget",
   "gang_wahl": "nomapes",
-  "auftrag_ausgang": "gewarnt"
+  "auftrag_ausgang": "gewarnt",
+  "mercy_beigetreten": true,
+  "mercy_erstkontakt": "lazarett"
  }
 }

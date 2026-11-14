@@ -277,7 +277,7 @@ Juno ist jetzt eine der überzeugendsten Rednerinnen des Ordens. Sie spricht üb
 
 ## Big Dig
 
-*Maulwurf · Akt 1 · Bruiser, Street Saint · Erkundung: Graben, Erschütterungssinn*
+*Maulwurf · Akt 1 · Bruiser (der Tank) · Erkundung: Graben, Erschütterungssinn*
 
 ### Biografie
 
@@ -519,7 +519,7 @@ Die Weberin ist die Frau, die all das lesbar macht:
 
 ## Barkley
 
-*Hund · Akt 2 · Street Ranger, Gumshoe, Bruiser · Erkundung: Spürnase, Verkleidung als andere Tierart*
+*Hund · Akt 2 · Bruiser, Street Ranger, Street Saint (Paladin der Treue) · Erkundung: Spürnase, Verkleidung als andere Tierart*
 
 ### Biografie
 
@@ -572,7 +572,7 @@ In Akt 2 befreit der Held ihn: Sein Herr opfert ihn in einer Falle in den Subfur
 ---
 ## Die Alligatorin
 
-*Alligator · Akt 2 · MC, Deal-Maker, Mutant · Erkundung: Schwimmen und Tauchen in den Kanälen*
+*Alligator · Akt 2 · MC, Deal-Maker · Erkundung: Schwimmen und Tauchen in den Kanälen*
 *Namensvorschlag: Delta Mae*
 
 ### Biografie
@@ -621,16 +621,16 @@ Das Alte in der Tiefe ist etwas, das älter ist als die Stadt und das Knäuel. E
 
 ## Die Gottesanbeterin
 
-*Gottesanbeterin · Akt 3 · Street Saint, Hoodoo, Breaker · Erkundung: unsichtbar zwischen Pflanzen, schneidet Zäune, Seile und Netze*
+*Gottesanbeterin · Akt 1 (seit 14.11., vorher Akt 3) · Street Saint, Hoodoo, Breaker · Erkundung: unsichtbar zwischen Pflanzen, schneidet Zäune, Seile und Netze*
 *Namensvorschlag: Schwester Mercy*
 
 ### Biografie
 
-Schwester Mercy ist Heilerin im Erweckungslager des Ordens auf Boney Island. Sie betreibt das Lazarettzelt am Rand des Jahrmarkts. Dort kommen die Kranken, die Erschöpften, die Ohnmächtigen nach den großen Predigten.
+Schwester Mercy ist die Ärztin der Ordensmission in Hairlem. Neben der Suppenküche betreibt sie eine kleine Krankenstube für alle, die sonst niemand behandelt: Insekten ohne Versicherung, Gangmitglieder mit Messerwunden, Gläubige, die nach der Aufnahme nicht mehr schlafen. Später schickt der Orden sie als Ärztin mit der Expedition in die Subfurs und danach ins Lazarettzelt des Erweckungslagers auf Boney Island.
 
 Sie ist tief gläubig, aber nicht an Pfötchen, sondern an die Lehre von Sofa, an Barmherzigkeit, Stille, Gebet. Sie ist in einem kleinen Kloster außerhalb der Stadt aufgewachsen, betet jeden Morgen vier Stunden und hat die Hände dabei so gefaltet, wie es ihr Körper ohnehin will.
 
-In ihrem Zelt sieht sie, was niemand sonst sieht: Gläubige, die nach der Bekehrung eine seltsame Leere an anderer Stelle haben. Eine Mutter, die plötzlich ihre Kinder nicht mehr vermisst. Und junge Leitungen mit Nachhall, die zusammenbrechen. Sie hat die Symptome aufgeschrieben, ohne zu wissen, was sie sind. Ihre Notizen sind ein medizinischer Beweis für das Knäuel.
+In ihrer Krankenstube sieht sie, was niemand sonst sieht: Grille Grimm kam „geheilt“ aus dem Ordenslager zurück und weiß nicht mehr, was ihm wichtig war. Ein verstörter junger Tiger, Lil' Riff, kam zu ihr und redete vom Knäuel, am nächsten Morgen war er weg, im Buch stand „an die Garde übergeben“. Später, im Lager, sieht sie es in großem Maßstab: Gläubige, die nach der Bekehrung eine seltsame Leere an anderer Stelle haben. Eine Mutter, die plötzlich ihre Kinder nicht mehr vermisst. Und junge Leitungen mit Nachhall, die zusammenbrechen. Sie hat die Symptome aufgeschrieben, ohne zu wissen, was sie sind. Ihre Notizen sind ein medizinischer Beweis für das Knäuel.
 
 ### Persönlichkeit
 
@@ -641,7 +641,7 @@ In ihrem Zelt sieht sie, was niemand sonst sieht: Gläubige, die nach der Bekehr
 
 ### Beweggründe
 
-- **Irdisch:** Ihre Patienten retten. Ein Kind in ihrem Zelt, eine junge Leitung, wird bald am Nachhall zerbrechen. Sie braucht Medizin, Wissen und jemanden, der den Orden nicht fürchtet.
+- **Irdisch:** Ihre Patienten retten und wissen, was mit ihnen passiert. In Akt 1 sind es Grimm und Riff, in Akt 3 ein Kind in ihrem Zelt, Pips, eine junge Leitung, die bald am Nachhall zerbrechen wird. Sie braucht Medizin, Wissen und jemanden, der den Orden nicht fürchtet. Am Helden interessiert sie zuerst etwas Medizinisches: Sein Puls blieb ruhig, während der Platz brannte.
 - **Tiefer:** Ihren Glauben vor der Kirche retten.
 
 ### Mögliche Entwicklungen

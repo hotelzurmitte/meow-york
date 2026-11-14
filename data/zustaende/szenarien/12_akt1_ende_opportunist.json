@@ -33,6 +33,9 @@
   "gang_wahl": "nomapes",
   "malcolm_risse": 0,
   "orden_wachsam": 1,
-  "auftrag_ausgang": "doppelt"
+  "auftrag_ausgang": "doppelt",
+  "mercy_beigetreten": true,
+  "mercy_erstkontakt": "andacht",
+  "mercy_schweigepflicht": "gebrochen"
  }
 }

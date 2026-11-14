@@ -61,7 +61,7 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 ## Gefährten
 
 ### Big Dig
-*Maulwurf · Akt 1 · Bruiser, Street Saint · Graben, Erschütterungssinn*
+*Maulwurf · Akt 1 · Bruiser (der Tank) · Graben, Erschütterungssinn*
 - **Kern:** Ehemaliger Tunnelbauer, sanfter Brocken, halb blind.
 - **Wesen:** wortkarg, warmherzig, stur. Spricht mit Steinen und gräbt sich an falschen Stellen hoch.
 - **Will:** Pips finden. **Braucht:** endlich da sein.
@@ -108,7 +108,7 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 - **Bogen:** A „Die Beichte“ in Akt 3, in Akt 4 die Frage, wen sie herausschneidet. Im Finale wird sie Hüterin, Zerstörerin oder Schneiderin.
 
 ### Barkley
-*Hund · Akt 2 · Street Ranger, Gumshoe, Bruiser · Spürnase, Verkleidung, Monsterform*
+*Hund · Akt 2 · Bruiser, Street Ranger, Street Saint (Paladin der Treue) · Spürnase, Verkleidung, Monsterform*
 - **Kern:** Ehemaliger Polizeihund, 80 Jahre Monster, Zeuge des Hundekriegs.
 - **Wesen:** ernst, förmlich, alter Mann. Komisch nur, weil er die jungen Leute nicht versteht: Breakdance hält er für einen Anfall, den Walkman für ein Abhörgerät.
 - **Will:** Rache am Herrn, Schuld begleichen. **Braucht:** mehr als eine Sache lieben.
@@ -118,7 +118,7 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 - **Spiegel:** Fitz.
 
 ### Die Alligatorin (Vorschlag: Delta Mae)
-*Alligator · Akt 2 · MC, Deal-Maker, Mutant · Schwimmen, Tauchen*
+*Alligator · Akt 2 · MC, Deal-Maker · Schwimmen, Tauchen*
 - **Kern:** Ex-Star eines Jazzclubs in Cathattan, jetzt Blues-Diva der Subfurs.
 - **Wesen:** theatralisch, sarkastisch, uralt wirkend. Ihre Kanal-Legende hat sie zur Hälfte erfunden.
 - **Will:** Comeback, Lucien in der ersten Reihe ärgern. **Braucht:** gehört statt gespürt werden.
@@ -128,8 +128,8 @@ Stand: 13.11.2026 · Kurzfassung der Charakterbiografien. Alles über das GDD hi
 - **Spiegel:** der Held.
 
 ### Die Gottesanbeterin (Vorschlag: Schwester Mercy)
-*Gottesanbeterin · Akt 3 · Street Saint, Hoodoo, Breaker · unsichtbar zwischen Pflanzen, schneidet*
-- **Kern:** Heilerin im Erweckungslager, gläubig an die Lehre, nicht an Pfötchen.
+*Gottesanbeterin · Akt 1 · Street Saint, Hoodoo, Breaker · unsichtbar zwischen Pflanzen, schneidet*
+- **Kern:** Ärztin der Ordensmission in Hairlem, später im Erweckungslager, gläubig an die Lehre, nicht an Pfötchen.
 - **Wesen:** still, mild, blitzschnell, wenn nötig. Drei Ehemänner „verschwunden“, sie lässt die Gerüchte stehen.
 - **Will:** ihre Patienten retten. **Braucht:** den Glauben vor der Kirche retten.
 - **Knäuel:** Ihre Krankenakten dokumentieren Nachhall und Leere als medizinischen Beweis.

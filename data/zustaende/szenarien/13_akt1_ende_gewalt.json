@@ -32,6 +32,8 @@
   "gang_wahl": "nomapes",
   "malcolm_risse": 1,
   "orden_wachsam": 4,
-  "auftrag_ausgang": "ausgefuehrt"
+  "auftrag_ausgang": "ausgefuehrt",
+  "mercy_beigetreten": false,
+  "mercy_erstkontakt": "nacht"
  }
 }
