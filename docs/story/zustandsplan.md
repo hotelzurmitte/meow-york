@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 148
+- **Variablen insgesamt:** 158
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 103
+- **Story-Variablen:** 113
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -107,6 +107,16 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `bekanntes_gesicht_wer` | riff, benny, pounce, odile, ansgar, junger_kater | junger_kater | berechnet | Finale, Station 5 | 5 | abgeleitet: riff = geheilt → riff; dann gerettet enthält benny → benny, pounce → pounce; odile gewonnen oder getaeuscht → odile; mantelmann nicht verpruegelt und nicht unbekannt → ansgar; sonst junger_kater |
 | `bekanntes_gesicht` | keins, zurueckgeholt, bewusstlos, getoetet | keins | Finale, Station 5 | Epilog (Gedenktafel) | 5 |  |
 | `pfoetchen_griff` | stark, bruechig, verzweifelt | stark | berechnet | Pfötchens Züge in Akt 4 (Tempo des Verrats an Hazel, Pips), Härte in der Gründungsnacht | 4 | abgeleitet: Zahl der Bedrohungen: Hunde befreit (barkley_ausgang fanatiker oder mehr_als_eine_liebe), Tauben befreit, Näherinnen befreit, Gangs im Frieden (waffenstillstand oder gangs_gemeinsam), Pips neu verknotet, Hazel wissend oder verraten, Mercy Reformerin oder Abtrünnige. 0–2 stark, 3–4 brüchig, 5+ verzweifelt; siehe akt4_rueckgrat.md, Abschnitt 4 |
+| `malcolm_papiere` | offen, angenommen, abgelehnt | offen | Akt 1 (Malcolms Angebot), Akt 4 (Brücke) | Ankunft in Cathattan, Malcolm | 1–4 |  |
+| `akt4_uhr` | ja, nein | nein | Hauptquest 4.2 (Gespräch mit dem Vater) oder dritte Einladung | Krisenquests, Rasten | 4 |  |
+| `akt4_rast` | 0–5 | 0 | lange Rast, sobald akt4_uhr läuft | Fenster der Krisenquests, Warnung vor der Gründungsnacht | 4 |  |
+| `unruhen_stufe` | 0–5 | 0 | jede Rast in der Krisenphase | Plakate, Straße, Hazel, Kellerstadt | 4 |  |
+| `foto_mutter` | nicht_gefunden, behalten, dem_rat, veroeffentlicht | nicht_gefunden | Hauptquest 4.1 | Gespräch mit dem Vater, Ordensrat, Unruhen | 4 |  |
+| `vater_gespraech` | keins, beweise, angeknuepft, gedroht, geschwiegen | keins | Hauptquest 4.2 | Schicht 2 im Finale (bekehrbar, erreichbar) | 4 |  |
+| `vater_angebot` | offen, angenommen, abgelehnt | offen | Hauptquest 4.2 | Finale (Erbe, Einwebung), Gefährten-Reaktionen | 4 |  |
+| `hazel_beistand` | offen, ja, nein | offen | Krisenquest K1 | großer Knoten hazel_liebe oder unruhen_ungebremst | 4 |  |
+| `krisen` | hazel, benny, kellerstadt, pips, rat, razzia, aufstand, feuer, kammern | leer | Krisenquests (geschafft) | Finale, Epilog | 4 |  |
+| `rat_abstimmung` | offen, pfoetchen_bleibt, pfoetchen_verliert | offen | Krisenquest K5 | Pfötchens Griff, Auftreten im Finale | 4 |  |
 
 ## Juno
 

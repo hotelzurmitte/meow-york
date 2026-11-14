@@ -2251,6 +2251,148 @@
    "gesetzt_von": "Akt 2, Befehl des Ordens",
    "gelesen_von": "Mercy in Akt 2 und 3, großer Knoten ‚Expedition ungestört‘, Junos erste Nachricht",
    "hinweis": "mitgegangen: verlässt die Gruppe für einen Teil von Akt 2"
+  },
+  {
+   "name": "malcolm_papiere",
+   "typ": "enum",
+   "standard": "offen",
+   "akt": "1–4",
+   "gesetzt_von": "Akt 1 (Malcolms Angebot), Akt 4 (Brücke)",
+   "gelesen_von": "Ankunft in Cathattan, Malcolm",
+   "hinweis": "",
+   "werte": [
+    "offen",
+    "angenommen",
+    "abgelehnt"
+   ]
+  },
+  {
+   "name": "akt4_uhr",
+   "typ": "bool",
+   "standard": false,
+   "akt": "4",
+   "gesetzt_von": "Hauptquest 4.2 (Gespräch mit dem Vater) oder dritte Einladung",
+   "gelesen_von": "Krisenquests, Rasten",
+   "hinweis": "",
+   "werte": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "akt4_rast",
+   "typ": "int",
+   "standard": 0,
+   "akt": "4",
+   "gesetzt_von": "lange Rast, sobald akt4_uhr läuft",
+   "gelesen_von": "Fenster der Krisenquests, Warnung vor der Gründungsnacht",
+   "hinweis": "",
+   "min": 0,
+   "max": 5
+  },
+  {
+   "name": "unruhen_stufe",
+   "typ": "int",
+   "standard": 0,
+   "akt": "4",
+   "gesetzt_von": "jede Rast in der Krisenphase",
+   "gelesen_von": "Plakate, Straße, Hazel, Kellerstadt",
+   "hinweis": "",
+   "min": 0,
+   "max": 5
+  },
+  {
+   "name": "foto_mutter",
+   "typ": "enum",
+   "standard": "nicht_gefunden",
+   "akt": "4",
+   "gesetzt_von": "Hauptquest 4.1",
+   "gelesen_von": "Gespräch mit dem Vater, Ordensrat, Unruhen",
+   "hinweis": "",
+   "werte": [
+    "nicht_gefunden",
+    "behalten",
+    "dem_rat",
+    "veroeffentlicht"
+   ]
+  },
+  {
+   "name": "vater_gespraech",
+   "typ": "enum",
+   "standard": "keins",
+   "akt": "4",
+   "gesetzt_von": "Hauptquest 4.2",
+   "gelesen_von": "Schicht 2 im Finale (bekehrbar, erreichbar)",
+   "hinweis": "",
+   "werte": [
+    "keins",
+    "beweise",
+    "angeknuepft",
+    "gedroht",
+    "geschwiegen"
+   ]
+  },
+  {
+   "name": "vater_angebot",
+   "typ": "enum",
+   "standard": "offen",
+   "akt": "4",
+   "gesetzt_von": "Hauptquest 4.2",
+   "gelesen_von": "Finale (Erbe, Einwebung), Gefährten-Reaktionen",
+   "hinweis": "",
+   "werte": [
+    "offen",
+    "angenommen",
+    "abgelehnt"
+   ]
+  },
+  {
+   "name": "hazel_beistand",
+   "typ": "enum",
+   "standard": "offen",
+   "akt": "4",
+   "gesetzt_von": "Krisenquest K1",
+   "gelesen_von": "großer Knoten hazel_liebe oder unruhen_ungebremst",
+   "hinweis": "",
+   "werte": [
+    "offen",
+    "ja",
+    "nein"
+   ]
+  },
+  {
+   "name": "krisen",
+   "typ": "liste",
+   "standard": [],
+   "akt": "4",
+   "gesetzt_von": "Krisenquests (geschafft)",
+   "gelesen_von": "Finale, Epilog",
+   "hinweis": "",
+   "werte": [
+    "hazel",
+    "benny",
+    "kellerstadt",
+    "pips",
+    "rat",
+    "razzia",
+    "aufstand",
+    "feuer",
+    "kammern"
+   ]
+  },
+  {
+   "name": "rat_abstimmung",
+   "typ": "enum",
+   "standard": "offen",
+   "akt": "4",
+   "gesetzt_von": "Krisenquest K5",
+   "gelesen_von": "Pfötchens Griff, Auftreten im Finale",
+   "hinweis": "",
+   "werte": [
+    "offen",
+    "pfoetchen_bleibt",
+    "pfoetchen_verliert"
+   ]
   }
  ],
  "prototyp_flags": [

@@ -1,6 +1,6 @@
 # Akt 4 · Cathattan – „Die Stadt, die zerreißt“
 
-*Rückgrat, rückwärts vom Finale geschrieben · Stand 14.11.2026 · Grundzüge entschieden, Einzelheiten Entwurf*
+*Rückgrat, rückwärts vom Finale geschrieben · Stand 14.11.2026 · Grundzüge entschieden · Szene für Szene: `akt4_szenen.md`*
 
 Akt 4 hat eine Aufgabe: alles in Stellung bringen, was das Finale abfragt. Jede Szene hier entscheidet über eine Station der letzten Nacht. Deshalb steht am Anfang, was das Finale braucht, und danach, wie der Akt es liefert.
 
