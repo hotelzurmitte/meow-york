@@ -2470,6 +2470,20 @@
     "gelungen",
     "aufgeloest"
    ]
+  },
+  {
+   "name": "kammer_resonanz",
+   "typ": "enum",
+   "werte": [
+    "offen",
+    "hingesehen",
+    "weggesehen"
+   ],
+   "standard": "offen",
+   "akt": "4",
+   "gesetzt_von": "Hauptquest 4.1, das Ziehen am Foto der Mutter",
+   "gelesen_von": "Einladung des Vaters (Zeitpunkt), erster Satz im Tempelgarten, held_verwachsung, knaeuel_aufmerksamkeit",
+   "hinweis": "hingesehen: drei Sekunden Gefühl (die Liebe des Vaters), Verwachsung und Aufmerksamkeit +2, Pfötchen spürt die Narbe"
   }
  ],
  "prototyp_flags": [

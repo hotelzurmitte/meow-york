@@ -32,9 +32,9 @@ Nach jedem Akt gibt es kein Zurück. Damit trotzdem kein Bogen verloren geht und
 
 ## Zahlen
 
-- **Variablen insgesamt:** 163
+- **Variablen insgesamt:** 164
 - **Davon Grundwerte der Gefährten:** 45 (je Gefährte: beigetreten, in der Gruppe, Zuneigung, Knoten, Lagerszene)
-- **Story-Variablen:** 118
+- **Story-Variablen:** 119
 
 Das sind die Zustände, die du testest. Nicht Millionen Wege, sondern diese Tabelle.
 
@@ -122,6 +122,7 @@ Gilt für dig, corvin, shiner, knuckles, weberin, barkley, deltamae, mercy, fitz
 | `hazel_lebt` | ja, nein | ja | K1 (verpasst und ohne Mercy in der Nacht → false) | Finale (Polizei, Leitung), Epilog | 4 |  |
 | `brunnen` | offen, gestuerzt, umgewidmet, gelassen | offen | Central Bark, Nebenquest Brunnen der Treue | große Knoten, Barkley | 4 |  |
 | `konzert_park` | offen, gelungen, aufgeloest | offen | Central Bark, Nebenquest Musikmuschel | großer Knoten konzert_park, Delta Mae, Fitz | 4 |  |
+| `kammer_resonanz` | offen, hingesehen, weggesehen | offen | Hauptquest 4.1, das Ziehen am Foto der Mutter | Einladung des Vaters (Zeitpunkt), erster Satz im Tempelgarten, held_verwachsung, knaeuel_aufmerksamkeit | 4 | hingesehen: drei Sekunden Gefühl (die Liebe des Vaters), Verwachsung und Aufmerksamkeit +2, Pfötchen spürt die Narbe |
 
 ## Juno
 
